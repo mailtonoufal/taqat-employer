@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<t:SlideMenuView  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArabWaha.Employee.Views.Menus.MenuMaster"
+              xmlns:t="clr-namespace:SlideOverKit" 
+             
+                          BackgroundColor="{StaticResource BluePageColor }">
+    <t:SlideMenuView.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" WinPhone="20,20,20,20" />
+    </t:SlideMenuView.Padding>
+    <StackLayout Padding="0" Orientation="Vertical" VerticalOptions="FillAndExpand">
+
+        <Grid Padding="0">
+            <BoxView BackgroundColor="White" HorizontalOptions="FillAndExpand" HeightRequest="100" />
+            <Image Source="LogoMenu.png" Aspect="AspectFit" />
+        </Grid>
+        <ContentView x:Name="menuContent" />
+        <StackLayout VerticalOptions="EndAndExpand">
+            <Grid Padding="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="English" Grid.Row="0" Grid.Column="0" MinimumWidthRequest="60" x:Name="ChangeEnglish" HorizontalOptions="EndAndExpand" Style="{StaticResource MenuButton}" />
+                <Button Text="عربى" Grid.Row="0" Grid.Column="1" MinimumWidthRequest="60"  x:Name="ChangeArabic" HorizontalOptions="StartAndExpand" Style="{StaticResource MenuButton}" />
+            </Grid>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand">
+            <Grid Padding="0">
+                <BoxView BackgroundColor="White" HorizontalOptions="FillAndExpand" HeightRequest="100" />
+                <Image Source="nav_footer.png" Aspect="AspectFit" />
+            </Grid>
+
+        </StackLayout>
+    </StackLayout>
+    </t:SlideMenuView>

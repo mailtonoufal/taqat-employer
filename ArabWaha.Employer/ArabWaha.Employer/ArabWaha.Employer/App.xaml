@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+                        xmlns:c="clr-namespace:Pillar;assembly=Pillar"
+                        x:Class="ArabWaha.Employer.App">
+    <prism:PrismApplication.Resources>
+        <ResourceDictionary>
+
+            <!-- converter for behaviors -->
+            <c:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
+
+
+            <Color x:Key="primary">#03A9F4</Color>
+            <Color x:Key="primary_dark">#0288D1</Color>
+            <Color x:Key="primary_light">#B3E5FC</Color>
+
+            <Color x:Key="WhiteTextColor">White</Color>
+            <Color x:Key="BlueTextColor">#00204A</Color>
+            <Color x:Key="GrayTextColor">#989696</Color>
+
+            <Color x:Key="GreenButtonColor">#4ace36</Color>
+            <Color x:Key="RedButtonColor">Red</Color>
+            <Color x:Key="BlueButtonColor">#00204A</Color>
+            <Color x:Key="LightBlueButtonColor">#66a8ff</Color>
+            <Color x:Key="BluePageColor">#00204A</Color>
+            <Color x:Key="GreyPageColor">#eae6e6</Color>
+
+            <Color x:Key="StackBorderColor">Gray</Color>
+            <Color x:Key="StackBorderColorLight">#e3dcdc</Color>
+
+
+
+            <Style x:Key="HeaderText" TargetType="Label" >
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+
+            <Style x:Key="HeaderTextLarge" TargetType="Label" BaseResourceKey="HeaderText">
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="60" Phone="40"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="HeaderTextMedium" TargetType="Label" BaseResourceKey="HeaderText">
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="50" Phone="30"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="HeaderTextSmall" TargetType="Label" BaseResourceKey="HeaderText">
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="45" Phone="25"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
+            <Style x:Key="HeaderTextLargeWhite" TargetType="Label" BaseResourceKey="HeaderTextLarge">
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+            </Style>
+
+            <Style x:Key="HeaderTextMediumWhite" TargetType="Label" BaseResourceKey="HeaderTextMedium">
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+            </Style>
+
+            <Style x:Key="HeaderTextSmallWhite" TargetType="Label" BaseResourceKey="HeaderTextSmall">
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+            </Style>
+
+            <Style x:Key="HeaderTextLargeBlue" TargetType="Label" BaseResourceKey="HeaderTextLarge">
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+            </Style>
+
+            <Style x:Key="HeaderTextMediumBlue" TargetType="Label" BaseResourceKey="HeaderTextMedium">
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+            </Style>
+
+            <Style x:Key="HeaderTextSmallBlue" TargetType="Label" BaseResourceKey="HeaderTextSmall">
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+            </Style>
+
+
+
+            <Style x:Key="InfoBodyText" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="30" Phone="20"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="InfoBodyTextSmall" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="InfoBodyTextBlue" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="30" Phone="20"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="InfoBodyTextSmallBlue" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="InfoBodyTextExtraSmallBlue" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="10"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="InfoHeaderTextSmallBlue" TargetType="Label" BaseResourceKey="HeaderTextSmall" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="FormHeaderLabelBlue" TargetType="Label" BaseResourceKey="InfoHeaderTextSmallBlue" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="HorizontalTextAlignment" Value="End" />
+                <Setter Property="VerticalTextAlignment" Value="End" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="SolidBodyTextBlue" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="30" Phone="20"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
+            <Style x:Key="CellBodyTextSmallGray" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource GrayTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="10"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="CellBodyTextMedGray" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource GrayTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="22" Phone="13"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="WhiteTextEntry" TargetType="Entry">
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="PlaceholderColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="WhiteTextEntryVerySmall" TargetType="Entry">
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="PlaceholderColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="10"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="BlackTextMediumEntry" TargetType="Entry">
+                <Setter Property="TextColor" Value="{StaticResource GrayTextColor}" />
+                <Setter Property="PlaceholderColor" Value="{StaticResource GrayTextColor}" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="BlackTextEntry" TargetType="Entry" BaseResourceKey="WhiteTextEntry">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="PlaceholderColor" Value="Gray" />
+            </Style>
+
+            <Style x:Key="BlueTextEntry" TargetType="Entry" BaseResourceKey="WhiteTextEntry">
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="PlaceholderColor" Value="Gray" />
+                <Setter Property="HorizontalTextAlignment" Value="End" />
+                <Setter Property="VerticalOptions" Value="End" />
+            </Style>
+
+            <Style x:Key="GreenButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource GreenButtonColor}" />
+                <Setter Property="BorderColor" Value="{StaticResource GreenButtonColor}" />
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="BorderRadius" Value="20" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="80" Phone="50"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
+            <Style x:Key="BlueButtonFlat" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource BlueButtonColor}" />
+                <Setter Property="BorderColor" Value="{StaticResource BlueButtonColor}" />
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="BorderRadius" Value="0" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="12"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="GreenButtonFlat" TargetType="Button" BaseResourceKey="BlueButtonFlat">
+                <Setter Property="BackgroundColor" Value="{StaticResource GreenButtonColor}" />
+                <Setter Property="BorderColor" Value="{StaticResource GreenButtonColor}" />
+            </Style>
+
+            <Style x:Key="RedButtonFlat" TargetType="Button" BaseResourceKey="BlueButtonFlat">
+                <Setter Property="BackgroundColor" Value="{StaticResource RedButtonColor}" />
+                <Setter Property="BorderColor" Value="{StaticResource RedButtonColor}" />
+            </Style>
+
+            <Style x:Key="TransparentButton" TargetType="Button" BaseResourceKey="GreenButton">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderColor" Value="White" />
+                <Setter Property="BorderWidth" Value="1" />
+            </Style>
+
+            <Style x:Key="TransparentButtonBlue" TargetType="Button" BaseResourceKey="GreenButton">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="BorderWidth" Value="1" />
+            </Style>
+
+            <Style x:Key="HyperlinkButton" TargetType="Button" BaseResourceKey="GreenButton">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="TextColor" Value="Blue" />
+                <Setter Property="WidthRequest" Value="100"/>
+
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="12"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Page styles -->
+            <Style x:Key="BluePage" TargetType="ContentPage" >
+                <Setter Property="BackgroundColor" Value="{StaticResource BluePageColor}" />
+            </Style>
+
+            <Style x:Key="TransparentButtonAsLabel" TargetType="Button" >
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="BorderRadius" Value="0" />
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- icon files -->
+            <FileImageSource x:Key="halfstarblue">halfstarbl.png</FileImageSource>
+            <FileImageSource x:Key="halfstaryellow">halfstary.png</FileImageSource>
+            <FileImageSource x:Key="startfilledblack">starfilled.png</FileImageSource>
+            <FileImageSource x:Key="startfilledyellow">starfilledy.png</FileImageSource>
+            <FileImageSource x:Key="startemptyblue">startblue.png</FileImageSource>
+            <FileImageSource x:Key="startemptyblack">startempty.png</FileImageSource>
+            <FileImageSource x:Key="startemptyyellow">startemptyy.png</FileImageSource>
+            <FileImageSource x:Key="mailicon">profile_licenses.png</FileImageSource>
+            <FileImageSource x:Key="phoneicon">contact_phone.png</FileImageSource>
+            <FileImageSource x:Key="tickicon">profile_references.png</FileImageSource>
+
+
+            <Style x:Key="MenuButton" TargetType="Button" >
+                <Setter Property="BackgroundColor" Value="{StaticResource primary_light}" />
+                <Setter Property="BorderColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="15" Phone="12"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="LightBlueButtonFlat" TargetType="Button" BaseResourceKey="BlueButtonFlat">
+                <Setter Property="BackgroundColor" Value="{StaticResource LightBlueButtonColor}" />
+                <Setter Property="BorderColor" Value="{StaticResource LightBlueButtonColor}" />
+            </Style>
+
+            <Style x:Key="SolidBodyTextBlueReduced" TargetType="Label"  BaseResourceKey="SolidBodyTextBlue">
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="SolidBodyTextLightBlueReduced" TargetType="Label"  BaseResourceKey="SolidBodyTextBlue">
+                <Setter Property="BackgroundColor" Value="{StaticResource LightBlueButtonColor}" />
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
+            <Style x:Key="TextExtraSmallWhite" TargetType="Label" >
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="10"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="TextSmallWhite" TargetType="Label" BaseResourceKey="HeaderTextSmall" >
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+          <Style x:Key="SearcherStyle" TargetType="SearchBar"  >
+            <Setter Property="FontSize">
+              <Setter.Value>
+                <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="10"/>
+              </Setter.Value>
+            </Setter>
+          </Style>
+
+
+        </ResourceDictionary>
+    </prism:PrismApplication.Resources>
+
+</prism:PrismApplication>

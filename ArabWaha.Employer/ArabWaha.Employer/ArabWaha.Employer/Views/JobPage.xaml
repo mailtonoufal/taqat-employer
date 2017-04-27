@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employer.Views.JobPage">
+
+    <ScrollView>
+        <StackLayout Spacing="10">
+            <Grid Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <ContentView  Grid.Row="0" Content="{Binding CurrentView}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                <Grid Padding="0" RowSpacing="0" ColumnSpacing="0" Grid.Row="1">
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="3" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="3" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="3" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="1" IsVisible="{Binding IsViewMode}"  Margin="0" Text="View Matching Candidates" Command="{Binding ViewCandidatesCommand}" Style="{StaticResource GreenButtonFlat}" />
+                    <Button Grid.Row="3" IsVisible="{Binding IsViewMode}"  Margin="0" Text="Edit Job Post" Command="{Binding EditJobCommand}" Style="{StaticResource BlueButtonFlat}" />
+                    <Button Grid.Row="5" IsVisible="{Binding IsViewMode}"  Margin="0" Text="Delete Job Post" Command="{Binding DeleteJobCommand}" Style="{StaticResource RedButtonFlat}" />
+
+                    <Button Grid.Row="1" IsVisible="{Binding IsEditMode}"  Margin="0"  Text="Save Changes" Command="{Binding SaveChangesJobCommand}" Style="{StaticResource GreenButtonFlat}" />
+                    <Button Grid.Row="3" IsVisible="{Binding IsEditMode}"  Margin="0" Text="Discard Changes" Command="{Binding DiscardChangesJobCommand}" Style="{StaticResource RedButtonFlat}" />
+
+                
+                
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:local="clr-namespace:ArabWaha.Employer.Controls"    
+             xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"                          
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employer.Views.ApplicationDetailsPage"
+             Title="{Binding Title}">
+    <StackLayout Padding="10">
+        <StackLayout VerticalOptions="Start" HorizontalOptions="Fill">
+            <Label Text="{Binding JobApplications.JobDetails.JobPostTitle}" Style="{StaticResource HeaderTextMediumBlue }" HorizontalOptions="End" HorizontalTextAlignment="End"></Label>
+            <Label Text="{Binding JobApplications.JobDetails.CompanyName}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+            <Image Source="{Binding JobApplications.JobDetails.CompanyLogo}" HeightRequest="60" BackgroundColor="{StaticResource BluePageColor}"></Image>
+            <Label Text="{Binding JobApplications.JobDetails.PublicationDate, StringFormat='Published: {0}'}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+            <Label Text="{Binding JobApplications.JobDetails.SalaryRange, StringFormat='Gross salary {0}'}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+        </StackLayout>
+        <ScrollView>
+            <StackLayout VerticalOptions="Start" HorizontalOptions="Fill">
+                <Label Text="Description" Style="{StaticResource HeaderTextMediumBlue }" HorizontalOptions="End" HorizontalTextAlignment="End"></Label>
+                <Label Text="{Binding JobApplications.JobDetails.JobDescription}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+            </StackLayout>
+            <StackLayout>
+            <Label Text="Applications" Style="{StaticResource HeaderTextMediumBlue }" HorizontalOptions="End" HorizontalTextAlignment="End"></Label>
+                <controls:RepeaterView ItemsSource="{Binding JobApplications.Applications}" Spacing="5">
+                    <controls:RepeaterView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Label Text="{Binding Occupation,StringFormat='{0}'}" Style="{StaticResource FormHeaderLabelBlue}"></Label>
+                                <Label Text="{Binding ApplicationDate,StringFormat='Applicaiton Date: {0:dd/MM/yyyy}'}" Style="{StaticResource InfoBodyTextSmallBlue}"></Label>
+                                <Label Text="{Binding Name,StringFormat='{0}'}" Style="{StaticResource InfoBodyTextSmallBlue}"></Label>
+                                <Label Text="{Binding Location,StringFormat='{0}'}" Style="{StaticResource InfoBodyTextSmallBlue}"></Label>
+                            </StackLayout>
+                        </DataTemplate>
+                    </controls:RepeaterView.ItemTemplate>
+                </controls:RepeaterView>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+    
+</ContentPage>

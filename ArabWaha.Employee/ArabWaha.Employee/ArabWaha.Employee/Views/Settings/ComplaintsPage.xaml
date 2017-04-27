@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+            xmlns:local="clr-namespace:ArabWaha.Employee.BaseClasses" 
+             x:Class="ArabWaha.Employee.Views.Settings.ComplaintsPage"
+             BackgroundColor="White">
+
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
+        <Label Text="Complaints" Style="{StaticResource SolidBodyTextBlue}" 
+               HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+        <!--<StackLayout VerticalOptions="StartAndExpand">-->
+
+            <ListView ItemsSource="{Binding ComplaintsSource}" 
+                      HorizontalOptions="FillAndExpand" 
+                      VerticalOptions="FillAndExpand"
+                      HasUnevenRows="True" 
+                      SeparatorVisibility="None" 
+                      CachingStrategy="RecycleElement"                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                            <Grid HorizontalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="5" />
+                                </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="20" />
+                                        <RowDefinition Height="20" />
+                                        <RowDefinition Height="20" />
+                                        <RowDefinition Height="20" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Label Text="{Binding Subject}" Style="{StaticResource SolidBodyTextLightBlueReduced}" 
+                                           HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="1"/>
+                                    <Label Text="{Binding Status, StringFormat='Status: {0}'}" Style="{StaticResource CellBodyTextMedGray}" 
+                                       HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="1"/>
+                                <Label Text="{Binding ComplaintId, StringFormat='Complaint ID: {0}'}" Style="{StaticResource CellBodyTextMedGray}" 
+                                       HorizontalTextAlignment="Start" Grid.Column="1"  Grid.Row="2"/>
+                                <Label Text="{Binding CreatedOn, StringFormat='Created On: {0}'}" Style="{StaticResource CellBodyTextMedGray}"
+                                       HorizontalTextAlignment="Start" Grid.Column="1"  Grid.Row="3"/>
+                                <Label Text="{Binding ClosedOn, StringFormat='Closed On: {0}'}" Style="{StaticResource CellBodyTextMedGray}" 
+                                       HorizontalTextAlignment="Start" Grid.Column="1"  Grid.Row="4"/>
+                                <Label Text="{Binding ComplaintText}" Style="{StaticResource CellBodyTextMedGray}" HorizontalTextAlignment="Start"  
+                                       Grid.Column="1" Grid.Row="5"/>
+                           
+                            </Grid>
+                        </StackLayout>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        <!--</StackLayout>-->
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions" 
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
+             xmlns:layout="clr-namespace:ArabWaha.Employer.Layouts;assembly=ArabWaha.Employer"                                   
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employer.Views.StartPage" 
+             Title="{Binding Title}"             
+             BackgroundImage="Background.png"
+             NavigationPage.HasNavigationBar="false"
+             >
+
+
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Image Source="Logo.png" Grid.Row="0" HeightRequest="90" VerticalOptions="Start" HorizontalOptions="End"></Image>
+        <StackLayout Grid.Row="1" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <cv:CarouselViewControl   x:Name="CarouselPics" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" InterPageSpacingColor="Transparent" BackgroundColor="Transparent" ShowIndicators="True" Position="{Binding PagePosition}"  >
+                <cv:CarouselViewControl.ItemsSource >
+                    <x:Array Type="{x:Type DataTemplate}">
+                        <DataTemplate>
+                            <Grid VerticalOptions="FillAndExpand" Padding="20">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="1*" />
+                                </Grid.RowDefinitions>
+                                <Label Text="" Grid.Row="0" ></Label>
+                                <StackLayout Grid.Row="1" VerticalOptions="End">
+                                    <StackLayout VerticalOptions="EndAndExpand">
+                                        <Label Text="Welcome"   HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" Style="{StaticResource HeaderTextLargeWhite}" />
+                                        <Label Text="Start now and post your job vacancies on Taqat to receive applications and find the best candidate" HorizontalOptions="EndAndExpand"   HorizontalTextAlignment="End" Style="{StaticResource InfoBodyText}" />
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="End">
+                                        <!-- bottom controls -->
+                                        <Label Text="Skip" VerticalOptions="End" HorizontalOptions="Start" Style="{StaticResource InfoBodyText}"  >
+                                            <Label.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                Command="{Binding SkipCommand}"
+                                                NumberOfTapsRequired="1" />
+                                            </Label.GestureRecognizers>
+                                        </Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </DataTemplate>
+                        <DataTemplate>
+                            <layout:LoginOptionsContent></layout:LoginOptionsContent>
+                        </DataTemplate>
+                    </x:Array>
+                </cv:CarouselViewControl.ItemsSource>
+            </cv:CarouselViewControl>
+        </StackLayout>
+
+    </Grid>
+
+
+
+</ContentPage>

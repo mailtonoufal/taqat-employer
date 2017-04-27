@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:layout="clr-namespace:ArabWaha.Employer.Layouts"
+    xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" 
+    xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"             
+    prism:ViewModelLocator.AutowireViewModel="True"
+    x:Class="ArabWaha.Employer.Views.ApplicationsPage" 
+    x:Name="AppPage"
+    Title="{Binding Title}"
+    >
+    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="10,0,10,0">
+
+        <Grid Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <layout:Tab3View Grid.Row="0" x:Name="tabCtrl" HorizontalOptions="FillAndExpand"  />
+
+            <layout:ApplicationsView Grid.Row="1"   IsVisible="{Binding IsTab1Selected}" HorizontalOptions="FillAndExpand"  />
+            <layout:HomeJobPostsContent Grid.Row="1" IsVisible="{Binding IsTab2Selected}"  HorizontalOptions="FillAndExpand"  />
+            <layout:ApplicationsWatchListView Grid.Row="1" IsVisible="{Binding IsTab3Selected}" HorizontalOptions="FillAndExpand"  />
+        </Grid>
+    </StackLayout>
+</local:AWMenuContainerPage>

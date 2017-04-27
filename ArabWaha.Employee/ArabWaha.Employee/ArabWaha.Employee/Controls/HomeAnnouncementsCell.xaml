@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+          x:Class="ArabWaha.Employee.Controls.HomeAnnouncementsCell">
+
+    <StackLayout Margin="5,5,5,5"  BackgroundColor="{StaticResource StackBorderColor}">
+        <Grid Margin="2,2,2,2" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="5" />
+            </Grid.ColumnDefinitions>
+            <BoxView  BackgroundColor="White" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" />
+            <Label Text="{Binding Ttle}" Grid.Row="0" Grid.Column="0" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+            <Label Text="{Binding Description}" Grid.Row="1" Grid.Column="0" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+        </Grid>
+    </StackLayout>
+    
+</ViewCell>

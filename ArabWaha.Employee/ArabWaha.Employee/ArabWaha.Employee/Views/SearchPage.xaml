@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:AWMenuContainerPage    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:local="clr-namespace:ArabWaha.Employee.BaseClasses" 
+             xmlns:lEx="clr-namespace:ArabWaha.Employee.Helpers"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             Style="{StaticResource BluePage}" 
+              NavigationPage.HasBackButton="False"
+             x:Class="ArabWaha.Employee.Views.SearchPage">
+
+
+    <Grid Padding="20,0,20,20" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Source="Logo.png" Grid.Row="0" HeightRequest="90" VerticalOptions="Start" HorizontalOptions="End"></Image>
+
+        <Label Text="{lEx:Translate StartTab1Text}" HorizontalTextAlignment="End"
+                   Grid.Row ="1" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Style="{StaticResource InfoBodyText}" />
+
+        <SearchBar x:Name="txtSearch" Grid.Row="2" Placeholder="{lEx:Translate SearchKeywordText}" HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="{Binding SearchText,Mode=TwoWay}"
+                       TextColor="Black" PlaceholderColor="Gray" BackgroundColor="White" FontSize="25"   />
+
+        <SearchBar  x:Name="txtLocation" Grid.Row="3" Placeholder="{lEx:Translate SearchLocationtext}" HorizontalOptions="FillAndExpand" VerticalOptions="End"  Text="{Binding SearchLocation,Mode=TwoWay}"
+                       TextColor="Black" PlaceholderColor="Gray" BackgroundColor="White" FontSize="25" SearchCommand="{Binding SearchCommand}"   />
+
+
+        <Button Grid.Row="4" HorizontalOptions= "FillAndExpand" VerticalOptions="End" Command="{Binding SearchCommand}"
+						Text="{lEx:Translate SearchText}" Style="{StaticResource GreenButton}" >
+        </Button>
+
+        <Label  Grid.Row="5" Text="{lEx:Translate SearchAlreadyHaveAccount}" VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="CenterAndExpand" TextColor="Gray" FontSize="20"  >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding SignInCommand}" NumberOfTapsRequired="1" />
+            </Label.GestureRecognizers>
+        </Label>
+
+    </Grid>
+
+
+</local:AWMenuContainerPage>

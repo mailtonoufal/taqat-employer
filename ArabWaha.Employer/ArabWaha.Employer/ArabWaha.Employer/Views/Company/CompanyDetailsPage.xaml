@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" 
+             x:Class="ArabWaha.Employer.Views.CompanyDetailsPage"
+             Title="{Binding CompanyInfo.CompanyName}"
+             >
+    <StackLayout Padding="10">
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Fill">
+            <Image Source="{Binding CompanyInfo.CompanyLogo}" HeightRequest="60" BackgroundColor="{StaticResource BluePageColor}"></Image>
+            <Label Text="{Binding CompanyInfo.CompanyName}" Style="{StaticResource HeaderTextMediumBlue}" HorizontalOptions="End"></Label>
+            <Label Text="{Binding CompanyInfo.CompanyURL}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+    </StackLayout>
+    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="Company Description" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"> </Label>
+                    <Label Text="{Binding CompanyInfo.CompanyDescription}" Style="{StaticResource InfoBodyTextSmallBlue}" ></Label>
+                </StackLayout>             
+                <StackLayout>
+                    <Label Text="Company Information" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="Industry"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="1" Grid.Column="0" Text="Company Size"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="2" Grid.Column="0" Text="Preferred Language" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="3" Grid.Column="0" Text="Profile ID" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+
+                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding CompanyInfo.Industry}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding CompanyInfo.CompanySize}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="2" Grid.Column="1" Text="{Binding CompanyInfo.PreferredLanguage}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="3" Grid.Column="1" Text="{Binding CompanyInfo.ProfileID}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                    </Grid>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Contact Details" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="Name"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="1" Grid.Column="0" Text="Position"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="2" Grid.Column="0" Text="Mobile Phone" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="3" Grid.Column="0" Text="Telephone Number" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="4" Grid.Column="0" Text="Email" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+
+                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding CompanyInfo.ContactName}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding CompanyInfo.ContactPosition}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="2" Grid.Column="1" Text="{Binding CompanyInfo.ContactMobile}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding CompanyInfo.CallCommand}" CommandParameter="{Binding CompanyInfo.ContactMobile}" NumberOfTapsRequired="1" />
+                            </Label.GestureRecognizers>                            
+                        </Label>
+                        <Label Grid.Row="3" Grid.Column="1" Text="{Binding CompanyInfo.ContactPhone}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding CompanyInfo.CallCommand}" CommandParameter="{Binding CompanyInfo.ContactPhone}" NumberOfTapsRequired="1" />
+                            </Label.GestureRecognizers>
+
+                        </Label>
+                        <Label Grid.Row="4" Grid.Column="1" Text="{Binding CompanyInfo.ContactEmail}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                    </Grid>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Location" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+                    <Grid>
+                     <BoxView Grid.Row="0" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver"></BoxView>
+                     <Label Grid.Row="0" Text="MAP GOES HERE" HorizontalOptions="Center" VerticalOptions="Center"></Label>  
+                    </Grid>
+                </StackLayout>
+                <Button Text="Manage Company Users" Style="{StaticResource GreenButton}" HorizontalOptions="FillAndExpand" Command="{Binding ManageCommand}"></Button>
+            </StackLayout>
+
+        </ScrollView>
+    </StackLayout>
+
+</local:AWMenuContainerPage>

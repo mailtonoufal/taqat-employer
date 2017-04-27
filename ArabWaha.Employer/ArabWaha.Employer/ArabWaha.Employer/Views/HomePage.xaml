@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<t:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:t="clr-namespace:ArabWaha.Employer.BaseCalsses"
+             xmlns:local="clr-namespace:ArabWaha.Employer.Views"
+             xmlns:controls="clr-namespace:ArabWaha.Employer.Controls"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:layouts="clr-namespace:ArabWaha.Employer.Layouts"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employer.Views.HomePage"
+             NavigationPage.HasBackButton="False"     >
+    <!--BackgroundColor="{StaticResource BluePageColor }"-->
+    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+        <Grid Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <controls:TabControl Grid.Row="0" x:Name="tabCtrl" HorizontalOptions="Start" />
+            <busyindicator:SfBusyIndicator 
+					Grid.Row="1"
+                    x:Name="BusyInd"
+					ViewBoxHeight="100"
+					ViewBoxWidth="100"
+					AnimationType="HorizontalPulsingBox" 
+					TextColor="Blue"
+					TextSize="10"
+					Title="Data Refresh.."
+					IsBusy="{Binding IsBusy}"
+					IsVisible="{Binding IsBusy}"
+				/>
+            <ContentView  Grid.Row="2" x:Name="tabContent" Content="{Binding CurrentView}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                         />
+
+        </Grid>
+
+    </StackLayout>    
+</t:AWMenuContainerPage>

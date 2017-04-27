@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArabWaha.Common.Forms", "ArabWaha.Common.Forms\ArabWaha.Common.Forms.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArabWaha.Common.iOS", "ArabWaha.Common.iOS\ArabWaha.Common.iOS.csproj", "{A0BC7FFF-F749-4211-9C78-8E222E1C5A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArabWaha.Common.Droid", "ArabWaha.Common.Driod\ArabWaha.Common.Droid.csproj", "{8CC2FF2C-6B90-48D1-A5A1-8FADE8B3DE81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0BC7FFF-F749-4211-9C78-8E222E1C5A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0BC7FFF-F749-4211-9C78-8E222E1C5A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0BC7FFF-F749-4211-9C78-8E222E1C5A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0BC7FFF-F749-4211-9C78-8E222E1C5A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC2FF2C-6B90-48D1-A5A1-8FADE8B3DE81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC2FF2C-6B90-48D1-A5A1-8FADE8B3DE81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC2FF2C-6B90-48D1-A5A1-8FADE8B3DE81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC2FF2C-6B90-48D1-A5A1-8FADE8B3DE81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://arabwaha.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ArabWaha.Common.Forms\\ArabWaha.Common.Forms.csproj
+		SccProjectName1 = ArabWaha.Common.Forms
+		SccLocalPath1 = ArabWaha.Common.Forms
+		SccProjectUniqueName2 = ArabWaha.Common.iOS\\ArabWaha.Common.iOS.csproj
+		SccProjectName2 = ArabWaha.Common.iOS
+		SccLocalPath2 = ArabWaha.Common.iOS
+		SccProjectUniqueName3 = ArabWaha.Common.Driod\\ArabWaha.Common.Droid.csproj
+		SccProjectName3 = ArabWaha.Common.Driod
+		SccLocalPath3 = ArabWaha.Common.Driod
+	EndGlobalSection
+EndGlobal

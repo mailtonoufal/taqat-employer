@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ArabWaha.Employer.Layouts.Company.CompanyTabView">
+    <ContentView.Content>
+
+
+        <Grid Padding="0" ColumnSpacing="0" RowSpacing="0" HorizontalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <!--<RowDefinition Height="*" />-->
+                <RowDefinition Height="*" />
+                <RowDefinition Height="5" />
+            </Grid.RowDefinitions>
+            <!--<SearchBar  x:Name="Searcher"   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Placeholder="Search Jobs" BackgroundColor="White"   
+                    VerticalOptions="StartAndExpand" SearchCommand="{Binding SearchBarCommand}"  IsVisible="{Binding SearchBarVisible}" />-->
+            <Button x:Name="Tab1"  Grid.Row="0" Grid.Column="0" Text="{Binding Tab1Text}"  Style="{StaticResource BlueButtonFlat}" VerticalOptions="CenterAndExpand" 
+                    Command="{Binding Tab1Command}" />
+            <Button x:Name="Tab2"  Grid.Row="0" Grid.Column="1" Text="{Binding Tab2Text}"   Style="{StaticResource BlueButtonFlat}" VerticalOptions="CenterAndExpand" 
+                    Command="{Binding Tab2Command}" />
+
+            <BoxView x:Name="tab1Selected"  Grid.Row="1" Grid.Column="0" BackgroundColor="Orange"  IsVisible="{Binding IsTab1Selected}"  HorizontalOptions="FillAndExpand" />
+            <BoxView x:Name="tab2Selected"   Grid.Row="1" Grid.Column="1" BackgroundColor="Orange" IsVisible="{Binding IsTab2Selected}"  HorizontalOptions="FillAndExpand" />
+
+        </Grid>
+
+    </ContentView.Content>
+</ContentView>

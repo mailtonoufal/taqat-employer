@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employee.Views.Details.EventsDetailPage">
+    <ScrollView>
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <Label Text="Event Info" Style="{StaticResource SolidBodyTextBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+            <StackLayout VerticalOptions="StartAndExpand">
+                <BoxView BackgroundColor="Gray" HeightRequest="200"  VerticalOptions="Start" />
+                <Grid VerticalOptions="Start">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- job info -->
+                    <Label Text="{Binding EventData.TitleInfo}" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+                    <Label Text="{Binding EventData.AddressInfo}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" Style="{StaticResource CellBodyTextMedGray}" />
+
+                    <Button Text="Accept" Style="{StaticResource LightBlueButtonFlat}" Grid.Row="2" Grid.Column="1" Command="{Binding AcceptCommand}" />
+                    <Button Text="Decline" Style="{StaticResource LightBlueButtonFlat}" Grid.Row="2" Grid.Column="2" Command="{Binding DeclineCommand}" />
+
+                    <Button Text="Propose New Time" Style="{StaticResource LightBlueButtonFlat}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Command="{Binding NewdateCommand}" />
+
+                    <Label Text="Time Options" VerticalOptions="Center" Style="{StaticResource SolidBodyTextBlueReduced}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding EventData.EventDateInfo}" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Start" Style="{StaticResource CellBodyTextMedGray}" />
+                    <Image Source="{StaticResource tickicon}" Grid.Row="5" Grid.Column="2" HeightRequest="24" WidthRequest="24" VerticalOptions="Start" HorizontalOptions="End" />
+
+                    <Label Text="Contact info" VerticalOptions="Center" Style="{StaticResource SolidBodyTextBlueReduced}" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding EventData.PhoneNumber}" Grid.Row="8" Grid.Column="1" HorizontalTextAlignment="Start" Style="{StaticResource CellBodyTextMedGray}" />
+                    <Label Text="{Binding EventData.Email}" Grid.Row="9" Grid.Column="1" HorizontalTextAlignment="Start" Style="{StaticResource CellBodyTextMedGray}" />
+
+                    <!-- icons -->
+                    <Image Source="{StaticResource phoneicon}" Grid.Row="8" Grid.Column="2" HeightRequest="24" WidthRequest="24" VerticalOptions="Start" HorizontalOptions="End" />
+                    <Image Source="{StaticResource mailicon}" Grid.Row="9" Grid.Column="2" HeightRequest="24" WidthRequest="24" VerticalOptions="Start" HorizontalOptions="End" />
+
+
+                    <Label Text="Additional Details" VerticalOptions="Center" Style="{StaticResource SolidBodyTextBlueReduced}" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding EventData.AdditionalInfo}" Grid.Row="11" Grid.Column="1" HorizontalTextAlignment="Start" Style="{StaticResource CellBodyTextMedGray}" />
+
+
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

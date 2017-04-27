@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:locals="clr-namespace:ArabWaha.Employee.Controls"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employee.Views.Jobs.DisplayJobPage">
+        
+    <ScrollView>
+       
+        
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <StackLayout>
+                <Button Text="Remove From WatchList" Command="{Binding RemoveWatchlistCommand}" IsVisible="{Binding IsRemoveWatchlistVisible}" />
+                <Button Text="Add To WatchList" Command="{Binding AddWatchlistCommand}" IsVisible="{Binding IsAddWatchlistVisible}"  />
+                <Button Text="Apply Now" Command="{Binding ApplyJobCommand}" IsVisible="{Binding IsApplyJobVisible}"  />
+            </StackLayout>
+            <!-- Job summary -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition>
+                        <RowDefinition.Height>
+                            <OnIdiom x:TypeArguments="GridLength" Tablet="20" Phone="15" />
+                        </RowDefinition.Height>
+                    </RowDefinition>
+                    <RowDefinition>
+                        <RowDefinition.Height>
+                            <OnIdiom x:TypeArguments="GridLength" Tablet="20" Phone="15" />
+                        </RowDefinition.Height>
+                    </RowDefinition>
+                    <RowDefinition Height="*" />
+                    <RowDefinition>
+                        <RowDefinition.Height>
+                            <OnIdiom x:TypeArguments="GridLength" Tablet="20" Phone="15" />
+                        </RowDefinition.Height>
+                    </RowDefinition>
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="5" />
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="7" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
+
+                <Label Text="{Binding JobDetails.JobPostTitle}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <Label Text="{Binding JobDetails.Posted, StringFormat='Posted: {0} Ago'}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                <Label Text="{Binding JobDetails.Status, StringFormat='Job Status: {0}'}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="Location" Grid.Row="4" Grid.Column="0" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                <Label Text="{Binding JobDetails.CompanyName}" Grid.Row="4" Grid.Column="1" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.CompanyLocation.LocationId}" Grid.Row="5" Grid.Column="0" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                <Label Text="{Binding JobDetails.CompanyIndustry}" Grid.Row="5" Grid.Column="1" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Image Source="{Binding JobDetails.CompanyLogo}" Grid.Row="4" Grid.RowSpan="3" Grid.Column="3" Aspect="AspectFit" />
+            </Grid>
+        </StackLayout>
+
+        <!-- description -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" />
+
+                <Label Text="Description" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="End" 
+                               Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <Label Text="{Binding JobDetails.JobDescription}" Grid.Row="2" Grid.Column="0"  
+                               Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+            </Grid>
+        </StackLayout>
+
+        <!-- General Information -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="14" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
+                <Label Text="General Information" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <Label Text="{Binding JobDetails.Status}" Grid.Row="2" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Job Post Status" Grid.Row="2" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.JobPostId}" Grid.Row="3" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Job Post ID" Grid.Row="3" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.JobType}" Grid.Row="4" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Job Type" Grid.Row="4" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.OpenPositions}" Grid.Row="5" Grid.Column="1"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Open Positions" Grid.Row="5" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.FilledPosition}" Grid.Row="6" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Filled Positions" Grid.Row="6" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.SalaryTo, StringFormat='{0} SAR'}" Grid.Row="7" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Salary" Grid.Row="7" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.CompanyIndustry}" Grid.Row="8" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Sector" Grid.Row="8" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.Experience}" Grid.Row="9" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Minimum Exp" Grid.Row="9" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.PublicationDate}" Grid.Row="10" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Applied Date" Grid.Row="10" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.StartDate}" Grid.Row="11" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Desired Start Date" Grid.Row="11" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+
+
+            </Grid>
+        </StackLayout>
+
+        <!-- Skills -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
+                <Label Text="Skills" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <Label Text="{Binding JobDetails.JobPostTitle}" Grid.Row="2" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Title" Grid.Row="2" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.CompanyName}" Grid.Row="3" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Company" Grid.Row="3" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.CompanyIndustry}" Grid.Row="4" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Sector" Grid.Row="4" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.OpenPositions}" Grid.Row="5" Grid.Column="1"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Years" Grid.Row="5" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.MonthlySalary}" Grid.Row="6" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Monthly Salary" Grid.Row="6" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.RolesResponsibilities}" Grid.Row="7" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Roles &amp; Responsibility" Grid.Row="7" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+            </Grid>
+        </StackLayout>
+
+
+        <!-- Language listview for list of languages -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}" >
+            <Grid Margin="2,2,2,2"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="3"  />
+                <Label Text="Language" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <StackLayout  Grid.Row="2" Grid.Column="1"  VerticalOptions="Start" >
+                    <ListView  ItemsSource="{Binding JobLanguages}"  HeightRequest="250" SeparatorVisibility="None"
+                              >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid HeightRequest="100" >
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.25*" />
+                                            <ColumnDefinition Width="0.25*" />
+                                            <ColumnDefinition Width="0.5*" />
+                                        </Grid.ColumnDefinitions>
+                                        <locals:HighProgressBar Rotation="180" BarHeight="10" IsHeader="False" BarColor="Orange" Progress="{Binding ProficiencyValue}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" 
+                                                          />
+                                        <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="End" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+                                        <Label Text="Expert"  Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Start" Style="{StaticResource CellBodyTextMedGray}" />
+                                        <Label Text="Beginner"  Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="End" Style="{StaticResource CellBodyTextMedGray}" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+
+            </Grid>
+        </StackLayout>
+
+        <!-- Licences -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="6" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="FillAndExpand" />
+                <Label Text="Licences" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <Label Text="{Binding JobDetails.RequiresDrivingLicence}" Grid.Row="2" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                <Label Text="Driving Licence" Grid.Row="2" Grid.Column="1" VerticalOptions="Start" HorizontalOptions="End" HorizontalTextAlignment="End" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+                <Label Text="{Binding JobDetails.DrivingLicenceType}" Grid.Row="3" Grid.Column="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Licence Type" Grid.Row="3" Grid.Column="1" HorizontalOptions="End" HorizontalTextAlignment="End" VerticalOptions="Start" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+
+
+                <StackLayout  Grid.Row="4" Grid.Column="1" Orientation="Vertical" VerticalOptions="Start" >
+                    <ListView  ItemsSource="{Binding JobLicenses}" HasUnevenRows="True" SeparatorVisibility="None" HeightRequest="150"  >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout VerticalOptions="Start">
+                                        <Grid VerticalOptions="Fill">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="0.5*" />
+                                                <ColumnDefinition Width="0.5*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding Value}" Grid.Row="0" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"  />
+                                            <Label Text="Licence Name" Grid.Row="0" Grid.Column="1" HorizontalOptions="End" HorizontalTextAlignment="End" VerticalTextAlignment="Center"  Style="{StaticResource InfoHeaderTextSmallBlue}" />
+                                            <Label Text="{Binding ExpiryValue}" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" />
+                                            <Label Text="Expiry" Grid.Row="1" Grid.Column="1" HorizontalOptions="End" 
+                                                       VerticalTextAlignment="Center" HorizontalTextAlignment="End" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+                                        </Grid>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+
+
+
+            </Grid>
+        </StackLayout>
+        <!-- Training -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="FillAndExpand" />
+                <Label Text="Training" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <StackLayout  Grid.Row="2" Grid.Column="1" Orientation="Vertical" >
+                    <ListView ItemsSource="{Binding JobTraining}" HeightRequest="200"  HasUnevenRows="True" SeparatorVisibility="None" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Grid VerticalOptions="Start">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="0.5*" />
+                                                <ColumnDefinition Width="0.5*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="0" HorizontalOptions="FillAndExpand"/>
+                                            <Label Text="Training Name" Grid.Row="0" Grid.Column="1" HorizontalOptions="End" HorizontalTextAlignment="End" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+
+                                            <Label Text="{Binding InstituteName}" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand"/>
+                                            <Label Text="Institute Name" Grid.Row="1" Grid.Column="1" HorizontalOptions="End" HorizontalTextAlignment="End" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+
+                                            <Label Text="Location" Grid.Row="2" Grid.Column="1" HorizontalOptions="End" HorizontalTextAlignment="End" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+                                            <Label Text="{Binding Location}" Grid.Row="2" Grid.Column="0" HorizontalOptions="FillAndExpand"/>
+
+                                            <Label Text="{Binding Validity}" Grid.Row="3" Grid.Column="0" HorizontalOptions="FillAndExpand" />
+                                            <Label Text="Validity" Grid.Row="3" Grid.Column="1" HorizontalOptions="End" HorizontalTextAlignment="End" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+                                        </Grid>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+
+
+        <!-- Location -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
+                <Label Text="Location" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <BoxView BackgroundColor="Gray" HeightRequest="150" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalOptions="Start" />
+
+
+                <Label Text="{Binding JobDetails.CompanyLocation.Address}" Grid.Row="3" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Address" Grid.Row="3" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.WorkTime}" Grid.Row="4" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Work Time" Grid.Row="4" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.Shifttype}" Grid.Row="5" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Shift Time" Grid.Row="5" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.Teleworking}" Grid.Row="6" Grid.Column="1"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Teleworking" Grid.Row="6" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.Mobility}" Grid.Row="7" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Mobility" Grid.Row="7" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding LocationNotes}" Grid.Row="8" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="Center" />
+
+            </Grid>
+        </StackLayout>
+
+        <!-- Benefits and advantages -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
+                <Label Text="Benefits &amp; Advantages" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <Label Text="{Binding JobDetails.SalaryRange}" Grid.Row="2" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Salary" Grid.Row="2" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.OtherBenefits}" Grid.Row="3" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Other" Grid.Row="3" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.Bonus}" Grid.Row="4" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Bonus" Grid.Row="4" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+            </Grid>
+        </StackLayout>
+        <!-- Method of application -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
+                <Label Text="Method of Application" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <Label Text="{Binding JobDetails.ApplicationRequirement}" Grid.Row="2" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Requirements" Grid.Row="2" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.SurveyUrl}" Grid.Row="3" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="Survey" Grid.Row="3" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+            </Grid>
+        </StackLayout>
+        <!-- Contact Person -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
+                <Label Text="Contact Person" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <Label Text="{Binding JobDetails.ContactPersonInd.Email}" Grid.Row="2" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+                <Label Text="{Binding JobDetails.ContactPersonInd.Name}" Grid.Row="2" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                <Label Text="{Binding JobDetails.CompanyLocation.LocationId}" Grid.Row="3" Grid.Column="2"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+            </Grid>
+        </StackLayout>
+
+        <!-- Attachments -->
+        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
+            <Grid Margin="2,2,2,2"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
+                <Label Text="Attachments" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                <Label Text="List of attachments here" Grid.Row="2" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
+
+            </Grid>
+        </StackLayout>
+     
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

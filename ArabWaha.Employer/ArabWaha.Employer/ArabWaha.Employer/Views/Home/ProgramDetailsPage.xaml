@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employer.Views.Home.ProgramDetailsPage">
+
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <ScrollView>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="1" Grid.Column="1" Text="Introduction" HorizontalTextAlignment="Start" Style="{StaticResource SolidBodyTextBlue}" />
+                <Label Grid.Row="2" Grid.Column="1"  Text="{Binding ProgramDetails.Description, StringFormat='{0}  '}" HorizontalTextAlignment="Start" 
+                       Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+
+                <Label Grid.Row="3"  Grid.Column="1" Text="Benefits" HorizontalTextAlignment="Start"  Style="{StaticResource SolidBodyTextBlue}" />
+                <Label Grid.Row="4"  Grid.Column="1" Text="{Binding ProgramDetails.WhoCanBenefit}" HorizontalTextAlignment="Start"  
+                       Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+
+                <Label Grid.Row="5"  Grid.Column="1" Text="Beneficiaries" HorizontalTextAlignment="Start"  Style="{StaticResource SolidBodyTextBlue}" />
+                <Label Grid.Row="6"  Grid.Column="1" Text="{Binding ProgramDetails.ProgramRequirements}" HorizontalTextAlignment="Start"  
+                       Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+
+                <Label Grid.Row="7"  Grid.Column="1" Text="How To Register" HorizontalTextAlignment="Start"  Style="{StaticResource SolidBodyTextBlue}" />
+                <Label Grid.Row="8"  Grid.Column="1" Text="{Binding ProgramDetails.HowToRegister}" HorizontalTextAlignment="Start"  
+                       Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+
+                <Label  Grid.Row="9" Grid.Column="1"  Text="Click Here To Register" VerticalOptions="End" HorizontalOptions="Center" HorizontalTextAlignment="Start" 
+                        Style="{StaticResource FormHeaderLabelBlue}"  >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding RegServiceCommand}" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                    <!--<Label.Effects>
+                        <local:UnderlineEffect/>
+                    </Label.Effects>-->
+                </Label>
+
+            </Grid>
+
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

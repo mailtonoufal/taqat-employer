@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:ArabWaha.Employer.Controls"
+            xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"   
+             x:Class="ArabWaha.Employer.Layouts.ApplicationsView">
+  <ContentView.Content>
+        <StackLayout Grid.Row="1" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                <ListView x:Name="ParentListView" ItemsSource="{Binding Jobs}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
+                      HasUnevenRows="True" SeparatorVisibility="None"
+                      SelectedItem ="{Binding SelectedItem, Mode=TwoWay}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell x:Name="myCell">
+                                <StackLayout Padding="10,10,10,10">
+                                    <Grid Margin="5,5,5,5" >
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="1" VerticalOptions="FillAndExpand"  />
+
+                                        <Label Text="{Binding JobDetails.JobPostTitle},StringFormat='Applications to {0}'}" Grid.Row="0"  Style="{StaticResource FormHeaderLabelBlue}"  HorizontalTextAlignment="End" BackgroundColor="Gray" HorizontalOptions="FillAndExpand">
+                                            <Label.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                                Command="{Binding Path=BindingContext.ApplicationDetailsCommand, Source={x:Reference AppPage}}"                                                                                                                              
+                                                                NumberOfTapsRequired="1" />
+                                            </Label.GestureRecognizers>
+                                        </Label>
+                                        <StackLayout Grid.Row="1" >
+                                            <controls:RepeaterView ItemsSource="{Binding Applications}" Spacing="5" x:Name="applications">
+                                                <controls:RepeaterView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <StackLayout>
+                                                            <Label Text="{Binding Occupation,StringFormat='{0}'}" Style="{StaticResource FormHeaderLabelBlue}"></Label>
+                                                            <Label Text="{Binding ApplicationDate,StringFormat='Applicaiton Date: {0:dd/MM/yyyy}'}" Style="{StaticResource InfoBodyTextSmallBlue}"></Label>
+                                                            <Label Text="{Binding Name,StringFormat='{0}'}" Style="{StaticResource InfoBodyTextSmallBlue}"></Label>
+                                                            <Label Text="{Binding Location,StringFormat='{0}'}" Style="{StaticResource InfoBodyTextSmallBlue}"></Label>
+                                                        </StackLayout>
+                                                    </DataTemplate>
+                                                </controls:RepeaterView.ItemTemplate>
+                                            </controls:RepeaterView>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentView.Content>
+</ContentView>

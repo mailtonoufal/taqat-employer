@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:lEx="clr-namespace:ArabWaha.Employee.Helpers"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employee.Views.NotificationsPage">
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
+        <Label Text="Notifications" Style="{StaticResource SolidBodyTextBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+        <ListView x:Name="ParentListView" ItemsSource="{Binding NotificationsSource}" 
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                      HasUnevenRows="True" SeparatorVisibility="Default"
+                      SelectedItem="{Binding NotificationItem, Mode=TwoWay}"
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell x:Name="myCell" >
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Mark All As Read" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
+                                          Command="{Binding MarkAsReadCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}"  />
+                        </ViewCell.ContextActions>
+
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="5"/>
+                            </Grid.ColumnDefinitions>
+                            <!-- change icon to use template based on status -->
+                            <Image Source="{StaticResource mailicon}" Grid.Row="0" Grid.Column="1" HeightRequest="24" WidthRequest="24" />
+                            <Label Text="{Binding Title}" Grid.Row="0" Grid.Column="2" TextColor="Blue" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
+                            <Label Text="{Binding ReceivedFormatted}" Grid.Row="0" Grid.Column="3" TextColor="Blue" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

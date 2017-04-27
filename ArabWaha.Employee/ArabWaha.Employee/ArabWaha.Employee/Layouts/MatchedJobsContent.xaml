@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:ArabWaha.Employee.BaseClasses" 
+             xmlns:controls="clr-namespace:ArabWaha.Employee.Controls"
+             x:Class="ArabWaha.Employee.Layouts.MatchedJobsContent">
+  <ContentView.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
+            <ListView x:Name="ParentListView2" ItemsSource="{Binding MatchedJobsSource}" 
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                      HasUnevenRows="True" SeparatorVisibility="None" CachingStrategy="RecycleElement"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<locals:HomeJobCustomViewCell />-->
+                        <ViewCell x:Name="myCell2" >
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="View Job Details" BindingContext="{Binding Source={x:Reference ParentListView2},Path=BindingContext}"  
+                                          Command="{Binding ViewJobCommandmatched}"  CommandParameter="{Binding Source={x:Reference myCell2}, Path=BindingContext}"  />
+                            </ViewCell.ContextActions>
+                            <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColor}">
+                                <Grid Margin="2,2,2,2" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="10" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnIdiom x:TypeArguments="GridLength" Tablet="20" Phone="15" />
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnIdiom x:TypeArguments="GridLength" Tablet="20" Phone="15" />
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnIdiom x:TypeArguments="GridLength" Tablet="20" Phone="15" />
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="50" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="7" Grid.Column="0" Grid.ColumnSpan="6" VerticalOptions="FillAndExpand" />
+
+                                    <Label Text="{Binding JobPostTitle}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+
+                                    <Label Text="{Binding Status, StringFormat='Job Status: {0}'}" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                                    <Label Text="{Binding Posted, StringFormat='Posted: {0}'}" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                                    <Label Text="{Binding CompanyIndustry}" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                                    <Label Text="{Binding CompanyLocation.LocationId}" Grid.Row="5"  Grid.Column="2" Grid.ColumnSpan="2"  Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                                    <Image Source="{Binding CompanyLogo}" Grid.Row="4" Grid.RowSpan="3" Grid.Column="4" Aspect="AspectFit" />
+
+                                    <!--<controls:GaugeControl Grid.Row="1" Grid.RowSpan="4" Grid.Column="1" Progress="{Binding MatchScore}"/>-->
+                                    <Label Text="{Binding MatchScore,StringFormat='{0}%'}" Grid.Row="1" Grid.RowSpan="4" Grid.Column="1"  
+                                           Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="Center" 
+                                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="3,0,0,0" />
+
+
+
+                                </Grid>
+                            </StackLayout>
+
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

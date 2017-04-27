@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employer.Views.CompanyUserDetailsPage"
+             Title="{Binding Title}">
+
+    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout Padding="10">
+            <StackLayout VerticalOptions="Start" HorizontalOptions="Fill">
+                <Label Text="{Binding UserDetails.FullName}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+                <Label Text="{Binding UserDetails.Position}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End"></Label>
+                <Label Text="NIN/Iqama" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+                <Label Text="{Binding UserDetails.NIN}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End"></Label>
+                <Label Text="{Binding UserDetails.MobileNumber}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding UserDetails.CallCommand}" CommandParameter="{Binding MobileNumber}" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="{Binding UserDetails.PhoneNumber}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding UserDetails.CallCommand}" CommandParameter="{Binding PhoneNumber}" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="{Binding EmailAddress}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End"></Label>
+            </StackLayout>
+
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="Account Information" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="Username"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="1" Grid.Column="0" Text="User Type"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="2" Grid.Column="0" Text="Assigned Role" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="3" Grid.Column="0" Text="Preffered Communication" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="4" Grid.Column="0" Text="Account Status" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+
+                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding UserDetails.UserName}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding UserDetails.UserType}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="2" Grid.Column="1" Text="{Binding UserDetails.AssignedRole}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="3" Grid.Column="1" Text="{Binding UserDetails.PreferredCommunication}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                        <Label Grid.Row="4" Grid.Column="1" Text="{Binding UserDetails.AccountStatus}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                    </Grid>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Location" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+                    <Grid>
+                        <BoxView Grid.Row="0" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver"></BoxView>
+                        <Label Grid.Row="0" Text="MAP GOES HERE" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                    </Grid>
+                </StackLayout>
+                <Button Text="Edit Personal Details" Style="{StaticResource GreenButton}" Command="{Binding EditCommand}" CommandParameter="{Binding UserDetails}"  HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

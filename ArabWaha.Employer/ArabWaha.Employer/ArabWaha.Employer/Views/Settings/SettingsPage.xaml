@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
+             x:Class="ArabWaha.Employer.Views.SettingsPage"
+             Title="{Binding Title}">
+
+    <!--<StackLayout Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                <ColumnDefinition Width="0.6*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Language" Grid.Row="0" Grid.Column="0" Style="{StaticResource HeaderTextMediumBlue}" HorizontalOptions="End"></Label>
+
+            <Label Text="English" Grid.Row="0" Grid.Column="1" Style="{StaticResource HeaderTextMediumBlue}" HorizontalOptions="End"></Label>
+
+            <Button Text="Logout" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding LogoutCommand}"></Button>
+            <Button Text="Reset Password" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding ResetPasswordCommad}"></Button>
+            <Button Text="Complaints" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding ComplaintsCommad}" ></Button>
+            <Button Text="About" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding AboutCommand}"></Button>
+        </Grid>
+
+    </StackLayout>-->
+    <StackLayout Padding="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="10" />
+
+            </Grid.ColumnDefinitions>
+
+            <Image Source="arrow_back.png" Rotation="180" Aspect="AspectFit" Grid.Row="1" Grid.Column="4" VerticalOptions="Start" />
+            <Image  IsVisible="{Binding IsAuth}"  Source="arrow_back.png" Rotation="180" Aspect="AspectFit" Grid.Row="2" Grid.Column="4" VerticalOptions="Start" />
+            <Image Source="arrow_back.png" Rotation="180" Aspect="AspectFit" Grid.Row="3" Grid.Column="4" VerticalOptions="Start" />
+            <Image Source="arrow_back.png" Rotation="180" Aspect="AspectFit" Grid.Row="4" Grid.Column="4" VerticalOptions="Start" />
+            <Image Source="arrow_back.png" Rotation="180" Aspect="AspectFit" Grid.Row="5" Grid.Column="4" VerticalOptions="Start" />
+
+
+            <Image HeightRequest="32" WidthRequest="32" Source="{StaticResource startemptyblue}" Aspect="AspectFit" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" />
+            <Image  IsVisible="{Binding IsAuth}"  Source="{StaticResource startemptyblue}"  Aspect="AspectFit" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" />
+            <Image Source="{StaticResource startemptyblue}" HeightRequest="32" WidthRequest="32"  Aspect="AspectFit" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" />
+            <Image Source="{StaticResource startemptyblue}"  HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" />
+            <Image Source="{StaticResource startemptyblue}"  HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" />
+
+
+
+            <Label Text="Language" Grid.Row="1" Grid.Column="2" Style="{StaticResource InfoBodyTextSmallBlue}" VerticalTextAlignment="Center" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+
+            <Label Text="English" Grid.Row="1" Grid.Column="3" Style="{StaticResource InfoBodyTextSmallBlue}" VerticalTextAlignment="Center" HorizontalOptions="End" HorizontalTextAlignment="End"/>
+
+
+            <Label IsVisible="{Binding IsAuth}" Text="Logout" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding LogoutCommand}" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+
+
+            <Label Text="Reset Password" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"  VerticalTextAlignment="Center"  HorizontalOptions="Start" HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ResetPasswordCommand}" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label Text="Complaints" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start"  VerticalTextAlignment="Center"  HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ComplaintsCommand}" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+
+
+            <Label Text="About" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start"  VerticalTextAlignment="Center"  HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding AboutCommand}" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+
+    </StackLayout>
+
+
+</local:AWMenuContainerPage>

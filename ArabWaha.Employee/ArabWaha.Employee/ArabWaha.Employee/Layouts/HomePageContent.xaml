@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             xmlns:locals="clr-namespace:ArabWaha.Employee.Controls"
+             x:Class="ArabWaha.Employee.Layouts.HomePageContent">
+  <ContentView.Content>
+        <StackLayout VerticalOptions="Start" >
+
+            <syncfusion:SfRotator x:Name="rotator" 
+                                  ItemsSource="{Binding SwipeSource}"
+                                  HeightRequest="120"
+                                  BackgroundColor="Transparent"
+                                  NavigationStripMode="Dots"
+                                  NavigationStripPosition="Bottom"
+                                  EnableAutoPlay="true"
+                                  NavigationDelay="2000"
+                                  />
+
+            <ListView ItemsSource="{Binding AnnouncementsSource}" HorizontalOptions="Start" VerticalOptions="Start" 
+                      CachingStrategy = "RecycleElement"
+                      HasUnevenRows="True" 
+                      SeparatorVisibility="None" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <locals:HomeAnnouncementsCell />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </ContentView.Content>
+</ContentView>

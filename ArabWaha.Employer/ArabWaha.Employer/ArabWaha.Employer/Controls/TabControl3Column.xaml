@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
+             x:Class="ArabWaha.Employer.Controls.TabControl3Column"
+             >
+    <Grid Padding="0" ColumnSpacing="0" RowSpacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="5" />
+        </Grid.RowDefinitions>
+        <SearchBar  x:Name="Searcher"   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Placeholder="{lEx:Translate TabControlSearchText}" BackgroundColor="White"  HorizontalOptions="FillAndExpand"  VerticalOptions="StartAndExpand" 
+             SearchCommand="{Binding SearchBarCommand}"  IsVisible="{Binding SearchBarVisible}" />
+        <Button x:Name="Tab1"   Grid.Row="1" Grid.Column="0" Style="{StaticResource BlueButtonFlat}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" 
+                    Command="{Binding Tab1Command}" />
+        <Button x:Name="Tab2"  Grid.Row="1" Grid.Column="1"  Style="{StaticResource BlueButtonFlat}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" 
+                    Command="{Binding Tab2Command}" />
+        <Button x:Name="Tab3"  Grid.Row="1" Grid.Column="2" Style="{StaticResource BlueButtonFlat}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" 
+                    Command="{Binding Tab3Command}" />
+
+        <BoxView x:Name="tab1Selected"  Grid.Row="2" Grid.Column="0" BackgroundColor="Orange" IsVisible="{Binding Tab1Visible}" HorizontalOptions="FillAndExpand" />
+        <BoxView x:Name="tab2Selected"   Grid.Row="2" Grid.Column="1" BackgroundColor="Orange" IsVisible="{Binding Tab2Visible}" HorizontalOptions="FillAndExpand" />
+        <BoxView x:Name="tab3Selected"   Grid.Row="2" Grid.Column="2" BackgroundColor="Orange" IsVisible="{Binding Tab3Visible}" HorizontalOptions="FillAndExpand" />
+
+    </Grid>
+</StackLayout>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employer.Views.CompanyAddUserPage"
+             Title="{Binding Title}">
+
+    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout Padding="10">
+            <StackLayout>
+                <Label Text="User Details" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.6*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Text="NIN or Iqama or Equivalent ID"  Style="{StaticResource FormHeaderLabelBlue}"  ></Label>
+                    <Label Grid.Row="1" Grid.Column="0" Text="NLG Username"  Style="{StaticResource FormHeaderLabelBlue}"></Label>
+                    <Label Grid.Row="2" Grid.Column="0" Text="Assign User Role" Style="{StaticResource FormHeaderLabelBlue}" ></Label>
+                    <Label Grid.Row="3" Grid.Column="0" Text="Email Address"  Style="{StaticResource FormHeaderLabelBlue}"></Label>
+
+                    <Entry Grid.Row="0" Grid.Column="1" Text="{Binding UserDetails.NIN, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}" ></Entry>
+                    <Entry Grid.Row="1" Grid.Column="1" Text="{Binding UserDetails.UserName, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
+                    <Entry Grid.Row="2" Grid.Column="1" Text="{Binding UserDetails.AssignedRole, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
+                    <Entry Grid.Row="3" Grid.Column="1" Text="{Binding UserDetails.EmailAddress, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
+                 </Grid>
+            </StackLayout>
+
+            <Button Text="Save New User" Style="{StaticResource GreenButton}" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
