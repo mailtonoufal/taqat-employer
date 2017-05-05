@@ -12,5 +12,17 @@ namespace ArabWaha.Core.ModelsEmployer.Programs
     {
         [JsonProperty("ProgramUrl")]
         public string ProgramUrl { get; set; }
+
+        [JsonIgnore]
+        public string StatusLabelText { get; set; }
+
+        [JsonIgnore]
+        public string GetStatusText
+        {
+            get
+            {
+                return $"{StatusLabelText} {Status} ";
+            }
+        }
     }
 }

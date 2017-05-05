@@ -4,10 +4,13 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              x:Class="ArabWaha.Employer.Views.ContactUsPage"
-             Title="{Binding Title}">
+             Title="{lEx:Translate TextContactPageTitle}">
 
 
-    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="Contact us details here" Style="{StaticResource HeaderTextLargeBlue}" HorizontalTextAlignment="Center"></Label>
-  
+    <Label HorizontalOptions="CenterAndExpand" 
+           VerticalOptions="CenterAndExpand" 
+           Text="{lEx:Translate  TextContactPageDefault}" Style="{StaticResource HeaderTextLargeBlue}" HorizontalTextAlignment="Center"/>
+
 </local:AWMenuContainerPage>

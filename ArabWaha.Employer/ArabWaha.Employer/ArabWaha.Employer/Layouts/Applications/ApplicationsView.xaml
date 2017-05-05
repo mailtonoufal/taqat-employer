@@ -2,8 +2,9 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
             xmlns:local="clr-namespace:ArabWaha.Employer.Controls"
+            xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"              
             xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"   
-             x:Class="ArabWaha.Employer.Layouts.ApplicationsView">
+            x:Class="ArabWaha.Employer.Layouts.ApplicationsView">
   <ContentView.Content>
         <StackLayout Grid.Row="1" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
@@ -27,7 +28,8 @@
                                         <Label Text="{Binding JobDetails.JobPostTitle},StringFormat='Applications to {0}'}" Grid.Row="0"  Style="{StaticResource FormHeaderLabelBlue}"  HorizontalTextAlignment="End" BackgroundColor="Gray" HorizontalOptions="FillAndExpand">
                                             <Label.GestureRecognizers>
                                                 <TapGestureRecognizer
-                                                                Command="{Binding Path=BindingContext.ApplicationDetailsCommand, Source={x:Reference AppPage}}"                                                                                                                              
+                                                                Command="{Binding Path=BindingContext.ApplicationDetailsCommand, Source={x:Reference AppPage}}"
+                                                                CommandParameter="{Binding .}"
                                                                 NumberOfTapsRequired="1" />
                                             </Label.GestureRecognizers>
                                         </Label>

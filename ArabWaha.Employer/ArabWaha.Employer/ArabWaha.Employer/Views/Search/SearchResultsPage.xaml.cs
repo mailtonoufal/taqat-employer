@@ -1,4 +1,6 @@
 ﻿using ArabWaha.Employer.BaseCalsses;
+using ArabWaha.Employer.Helpers;
+using ArabWaha.Employer.ViewModels;
 using ArabWaha.Employer.Views.Menus;
 using Prism.Navigation;
 using SlideOverKit;
@@ -16,21 +18,17 @@ namespace ArabWaha.Employer.Views
             AddFilterMenu();
         }
 
-
         private void AddFilterMenu()
         {
             // should only be shown when we've got results. (use a message)
             var tbarItem = new ToolbarItem()
             {
-                Text = "Filter",
-                Command = new Command((sender) => { ShowFilter(); }),
-                
+                Text = TranslateExtension.GetString("LabelFilter"),
+                Command = (this.BindingContext as SearchResultsPageViewModel).FilterCommand                
             };
             this.ToolbarItems.Add(tbarItem);
         }
 
-        private void ShowFilter()
-        {
-        }
+
     }
 }

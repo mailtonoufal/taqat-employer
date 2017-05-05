@@ -3,10 +3,11 @@
                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                         xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
                         xmlns:c="clr-namespace:Pillar;assembly=Pillar"
+                        xmlns:converter="clr-namespace:ArabWaha.Employer.Converters"             
                         x:Class="ArabWaha.Employer.App">
     <prism:PrismApplication.Resources>
         <ResourceDictionary>
-
+            <converter:JobTypeConverter x:Key="JobTypeConverter"/>
             <!-- converter for behaviors -->
             <c:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
 
@@ -14,6 +15,8 @@
             <Color x:Key="primary">#03A9F4</Color>
             <Color x:Key="primary_dark">#0288D1</Color>
             <Color x:Key="primary_light">#B3E5FC</Color>
+
+            <Color x:Key="BlueToolBarColor">#00204A</Color>
 
             <Color x:Key="WhiteTextColor">White</Color>
             <Color x:Key="BlueTextColor">#00204A</Color>
@@ -38,7 +41,7 @@
             <Style x:Key="HeaderTextLarge" TargetType="Label" BaseResourceKey="HeaderText">
                 <Setter Property="FontSize">
                     <Setter.Value>
-                        <OnIdiom x:TypeArguments="x:Double" Tablet="60" Phone="40"/>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="50" Phone="30"/>
                     </Setter.Value>
                 </Setter>
             </Style>
@@ -46,7 +49,7 @@
             <Style x:Key="HeaderTextMedium" TargetType="Label" BaseResourceKey="HeaderText">
                 <Setter Property="FontSize">
                     <Setter.Value>
-                        <OnIdiom x:TypeArguments="x:Double" Tablet="50" Phone="30"/>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="40" Phone="20"/>
                     </Setter.Value>
                 </Setter>
             </Style>
@@ -54,7 +57,7 @@
             <Style x:Key="HeaderTextSmall" TargetType="Label" BaseResourceKey="HeaderText">
                 <Setter Property="FontSize">
                     <Setter.Value>
-                        <OnIdiom x:TypeArguments="x:Double" Tablet="45" Phone="25"/>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="35" Phone="15"/>
                     </Setter.Value>
                 </Setter>
             </Style>
@@ -386,6 +389,8 @@
               </Setter.Value>
             </Setter>
           </Style>
+          
+          
 
 
         </ResourceDictionary>

@@ -21,8 +21,6 @@ namespace ArabWaha.Employer.ViewModels
 
         public SettingsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            Title = "Settings";
-
             LogoutCommand = new DelegateCommand(Logout);
             ResetPasswordCommand = new DelegateCommand(ResetPassword);
             ComplaintsCommand = new DelegateCommand(ComplaintsNavigate);
@@ -47,7 +45,20 @@ namespace ArabWaha.Employer.ViewModels
 
         private void Logout()
         {
-            _nav.NavigateAsync(nameof(StartPage));
+            _nav.NavigateAsync(nameof(LoginPage));
         }
+                
+        public string CurrentLanguage
+        {
+            get {
+
+                if (CultureCode == "ar")
+                    return "عربى";
+                else
+                    return "English";
+
+            }
+        }
+
     }
 }

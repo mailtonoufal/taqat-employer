@@ -58,14 +58,10 @@ namespace ArabWaha.Employee.ViewModels
             SignupCommand = new DelegateCommand(ProcessSignupCommand);
         }
 
+
         public LayoutOptions AlignLayoutOptions
         {
             get { return GlobalSetting.HorizontalLayoutOptions; }
-        }
-
-        public LayoutAlignment AlignText
-        {
-            get { return GlobalSetting.AlignLabel; }
         }
 
         private bool CanSignIn()

@@ -17,7 +17,7 @@ using HockeyApp.Android;
 
 namespace ArabWaha.Employee.Droid
 {
-    [Activity(Label = "ArabWaha.Employee", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, 
+    [Activity(Label = "TARAQ Individual",Theme = "@style/MainTheme", MainLauncher = true, 
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity//, ISQLPlatformHandle
     {

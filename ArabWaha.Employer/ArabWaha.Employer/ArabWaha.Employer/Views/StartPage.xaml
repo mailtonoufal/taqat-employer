@@ -33,12 +33,12 @@
                                 <Label Text="" Grid.Row="0" ></Label>
                                 <StackLayout Grid.Row="1" VerticalOptions="End">
                                     <StackLayout VerticalOptions="EndAndExpand">
-                                        <Label Text="Welcome"   HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" Style="{StaticResource HeaderTextLargeWhite}" />
-                                        <Label Text="Start now and post your job vacancies on Taqat to receive applications and find the best candidate" HorizontalOptions="EndAndExpand"   HorizontalTextAlignment="End" Style="{StaticResource InfoBodyText}" />
+                                        <Label Text="{lEx:Translate WelcomeTitle}"   HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" Style="{StaticResource HeaderTextLargeWhite}" />
+                                        <Label Text="{lEx:Translate StartTab1Text}" HorizontalOptions="EndAndExpand"   HorizontalTextAlignment="End" Style="{StaticResource InfoBodyText}" />
                                     </StackLayout>
                                     <StackLayout VerticalOptions="End">
                                         <!-- bottom controls -->
-                                        <Label Text="Skip" VerticalOptions="End" HorizontalOptions="Start" Style="{StaticResource InfoBodyText}"  >
+                                        <Label Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="End" HorizontalOptions="Start" Style="{StaticResource InfoBodyText}"  >
                                             <Label.GestureRecognizers>
                                                 <TapGestureRecognizer
                                                 Command="{Binding SkipCommand}"

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+              xmlns:gb="clr-namespace:ArabWaha.Employer"
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
+             xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
+              xmlns:bh="clr-namespace:Pillar;assembly=Pillar"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             BackgroundColor="White"
+             x:Class="ArabWaha.Employer.Views.ProgramsPage">
+
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
+        <Label Text="{lEx:Translate TextAvailablePrograms}" Style="{StaticResource SolidBodyTextBlue}" 
+               HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+
+
+        <ListView ItemsSource="{Binding ProgramsSource}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
+                      HasUnevenRows="True" SeparatorVisibility="None" >
+            <ListView.Behaviors>
+                <bh:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ProgramSelectedCommand}" 
+                                               EventArgsConverter="{StaticResource ItemTappedConverter}" />
+            </ListView.Behaviors>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell >
+                        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColor}">
+
+
+                            <Grid Margin="2,2,2,2" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15" />
+                                    <RowDefinition Height="2*" />
+                                    <RowDefinition Height="1*" />
+                                    <RowDefinition Height="15" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="8*" />
+                                    <ColumnDefinition Width="2*" />
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2"  VerticalOptions="FillAndExpand" />
+
+                                <Label Text="{Binding ProgramName}" Grid.Row="1" Grid.Column="0"  
+                                           HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End" />
+
+                                <Label Text="{Binding Status, StringFormat='Program Status: {0} Ago'}" 
+                                           Grid.Row="2" Grid.Column="0"  Style="{StaticResource CellBodyTextSmallGray}" 
+                                           HorizontalOptions="End" HorizontalTextAlignment="End" />
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </StackLayout>
+
+</ContentPage>

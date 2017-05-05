@@ -3,8 +3,8 @@
     public enum ShiftTypeEnum
     {
         Null = 0,
-        Day = 1,
-        Night= 2,
-        TwoShifts = 3
+        SHF_Day = 1,
+        SHF_Night= 2,
+        SHF_TwoShifts = 3
     }
 }

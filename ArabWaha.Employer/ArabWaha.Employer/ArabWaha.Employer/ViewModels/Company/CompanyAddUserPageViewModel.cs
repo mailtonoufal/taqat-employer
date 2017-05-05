@@ -26,10 +26,8 @@ namespace ArabWaha.Employer.ViewModels
         public DelegateCommand SaveCommand { get; set; }
         public CompanyAddUserPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            Title = "Add User";
+            SetDefaultColumn(0, 1);
             SaveCommand = new DelegateCommand(Save);
-
-
         }
 
         private async void Save()

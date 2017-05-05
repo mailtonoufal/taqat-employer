@@ -10,7 +10,6 @@ namespace ArabWaha
 		{
 			OTPRequest = 1,
 			ValidateOTP = 2
-
 		}
 
 		/// <summary>
@@ -99,6 +98,68 @@ namespace ArabWaha
 		{
 			Add,
 			Remove
+		}
+
+		public enum MaritalStatus
+		{
+			MAR_Single = 0,
+			MAR_Married = 1,
+			MAR_Divorced = 2,
+			MAR_Widowed = 3
+		}
+
+		public enum DrivingLicense
+		{
+			DRLIC_Yes = 1,
+			DRLIC_No = 2,
+			DRLIC_Yes_Commercial = 3
+		}
+
+		public enum General
+		{
+			COMMON_Yes = 1,
+			COMMON_No = 2
+		}
+
+		/// <summary>
+		/// Login mode.
+		/// </summary>
+		public enum LoginMode
+		{
+			Guest_Search,
+			Guest_ForgotPassword,
+			Individual_Login,
+			Individual_Mobile,
+		}
+
+		/// <summary>
+		/// University Type
+		/// </summary>
+		public enum UniversityTypeID
+		{
+			GOV,
+			PRIV
+		}
+
+		public enum GPAScale
+		{
+			GPA,
+			PERC
+		}
+
+		public enum SkillLevel
+		{
+			BEG = 10,
+			INT = 50,
+			ADV = 100
+		}
+
+		public enum RegistrationStatus
+		{
+			REGPNVAL,
+			REGFAILV,
+			REPEEMAI,
+			REGCOMP
 		}
 	}
 }

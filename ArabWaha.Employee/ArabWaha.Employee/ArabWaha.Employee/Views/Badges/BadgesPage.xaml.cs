@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace ArabWaha.Employee.Views.Badges
 {
@@ -6,7 +7,14 @@ namespace ArabWaha.Employee.Views.Badges
     {
         public BadgesPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch(Exception ex)
+            {
+                var t = ex.Message;
+            }
         }
     }
 }

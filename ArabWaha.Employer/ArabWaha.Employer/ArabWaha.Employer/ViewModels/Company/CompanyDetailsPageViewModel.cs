@@ -30,6 +30,7 @@ namespace ArabWaha.Employer.ViewModels
 
         public CompanyDetailsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
+            SetDefaultColumn(0, 1);
             CallCommand = new DelegateCommand<string>(CallNumber);
             ManageCommand = new DelegateCommand(ManageCompany);
         }

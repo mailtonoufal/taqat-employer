@@ -13,8 +13,10 @@ namespace ArabWaha.Core.DBAccess
         [PrimaryKey, AutoIncrement]
         public Int32 id { get; set; }
         public string Key { get; set; }
+        public string ParentKey { get; set; }
         public string Value { get; set; }
-        public string LabelValue { get; set; }
-        public string LabelValueArabic { get; set; }
+        public string CatType { get; set; }
+        public string English { get; set; }
+        public string Arabic { get; set; }
     }
 }

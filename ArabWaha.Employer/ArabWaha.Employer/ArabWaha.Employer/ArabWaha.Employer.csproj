@@ -60,8 +60,13 @@
       <DependentUpon>TabControl3Column.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\UnderlineEffect.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Converters\JobTypeConverter.cs" />
     <Compile Include="Helpers\TranslateExtension.cs" />
     <Compile Include="Interfaces\IDBInfo.cs" />
+    <Compile Include="Layouts\Applications\ApplicationListView.xaml.cs">
+      <DependentUpon>ApplicationListView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\Applications\ApplicationsView.xaml.cs">
       <DependentUpon>ApplicationsView.xaml</DependentUpon>
     </Compile>
@@ -90,6 +95,9 @@
     <Compile Include="Layouts\Home\HomeServicesContent.xaml.cs">
       <DependentUpon>HomeServicesContent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Layouts\Home\NotLoggedInContent.xaml.cs">
+      <DependentUpon>NotLoggedInContent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\Tabs\Tab3View.xaml.cs">
       <DependentUpon>Tab3View.xaml</DependentUpon>
     </Compile>
@@ -113,10 +121,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="StaticData\EntryBase.cs" />
+    <Compile Include="StaticData\EntryBase1.cs" />
+    <Compile Include="StaticData\GenderEntry.cs" />
+    <Compile Include="StaticData\JobTypeEntry.cs" />
+    <Compile Include="StaticData\PostedSinceEntry.cs" />
+    <Compile Include="StaticData\RequiredEducationEntry.cs" />
+    <Compile Include="StaticData\ShiftTypeEntry.cs" />
+    <Compile Include="StaticData\SortByEntry.cs" />
+    <Compile Include="StaticData\SpecializationEntry.cs" />
+    <Compile Include="StaticData\StaticEntryHelper.cs" />
+    <Compile Include="StaticData\TeleWorkingEntry.cs" />
+    <Compile Include="StaticData\TravellingRequiredEntry.cs" />
+    <Compile Include="StaticData\WorkTypeEntry.cs" />
+    <Compile Include="ViewModels\AddNewComplaintPageViewModel.cs" />
     <Compile Include="ViewModels\Application\ApplicationDetailsPageViewModel.cs" />
     <Compile Include="ViewModels\Application\ApplicationsPageViewModel.cs" />
+    <Compile Include="ViewModels\Application\CandidateInvitePageViewModel.cs" />
+    <Compile Include="ViewModels\EventsDetailPageViewModel.cs" />
+    <Compile Include="ViewModels\Search\FiltersPageViewModel.cs" />
     <Compile Include="ViewModels\Jobs\JobNewPostPageViewModel.cs" />
     <Compile Include="ViewModels\Jobs\JobNewPostTypePageViewModel.cs" />
+    <Compile Include="ViewModels\Application\MatchingCandidatesPageViewModel.cs" />
+    <Compile Include="ViewModels\ProgramsPageViewModel.cs" />
+    <Compile Include="ViewModels\ServicesPageViewModel.cs" />
     <Compile Include="ViewModels\Settings\AboutPageViewModel.cs" />
     <Compile Include="ViewModels\CalendarPageViewModel.cs" />
     <Compile Include="ViewModels\Company\CompanyAddUserPageViewModel.cs" />
@@ -146,14 +174,35 @@
     <Compile Include="Views\CalendarPage.xaml.cs">
       <DependentUpon>CalendarPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Application\CandidateInvitePage.xaml.cs">
+      <DependentUpon>CandidateInvitePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Detail\EventsDetailPage.xaml.cs">
+      <DependentUpon>EventsDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Search\FiltersPage.xaml.cs">
+      <DependentUpon>FiltersPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Jobs\JobNewPostPage.xaml.cs">
       <DependentUpon>JobNewPostPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Jobs\JobNewPostTypePage.xaml.cs">
       <DependentUpon>JobNewPostTypePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Application\MatchingCandidatesPage.xaml.cs">
+      <DependentUpon>MatchingCandidatesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsPage.xaml.cs">
+      <DependentUpon>ProgramsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServicesPage.xaml.cs">
+      <DependentUpon>ServicesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Settings\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\AddNewComplaintPage.xaml.cs">
+      <DependentUpon>AddNewComplaintPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Settings\ContactUsPage.xaml.cs">
       <DependentUpon>ContactUsPage.xaml</DependentUpon>
@@ -304,7 +353,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.2.3.3.193\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Maps, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -312,11 +361,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.2.3.3.193\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Platform.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.2.3.3.193\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="XLabs.Forms">
@@ -599,14 +648,72 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Views\ProgramsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ServicesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Detail\EventsDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Settings\AddNewComplaintPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="database\20170427_appValue.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="database\20170428_watchedJobs.sql" />
     <Content Include="database\employerdb.db3.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Application\CandidateInvitePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Application\MatchingCandidatesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Layouts\Applications\ApplicationListView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Search\FiltersPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Layouts\Home\NotLoggedInContent.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <Import Project="..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets'))" />
   </Target>
 </Project>

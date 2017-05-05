@@ -1,9 +1,11 @@
 ﻿namespace ArabWaha.Enums
 {
-    public enum TravellingRequiredEnum
-    {
-        Null = 0,
-        True = 1,
-        False = 2
-    }
+	public enum TravellingRequiredEnum
+	{
+		Day = 2,
+		Night = 3,
+		TwoShifts = 4,
+		TwoShifts1 = 5,
+		TwoShifts2 = 6
+	}
 }

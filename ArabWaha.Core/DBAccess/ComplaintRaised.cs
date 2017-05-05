@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using ArabWaha.Core.Helpers;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,5 +18,30 @@ namespace ArabWaha.Core.DBAccess
         public string CreatedOn { get; set; }
         public string ClosedOn { get; set; }
         public string ComplaintText { get; set; }
+        public string Category { get; set; }
+        public string DOB { get; set; } // stored as YYYY-MM-DD
+        public string NIN { get; set; }
+
+        [Ignore]
+        public DateTime DateOfBirth
+        {
+            get
+            {
+                return UtilHelper.GetDateFormatFromString(DOB);
+            }
+            set
+            {
+                DOB = UtilHelper.GetStringFormatFromDate(value);
+            }
+        }
+
+        [Ignore]
+        public DateTime CreateDateCast
+        {
+            get
+            {
+                return UtilHelper.GetDateFormatFromString(CreatedOn);
+            }
+        }
     }
 }

@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace ArabWaha.Employer.BaseCalsses
 {
@@ -25,6 +26,7 @@ namespace ArabWaha.Employer.BaseCalsses
         // Private - due to fact we should pass at least NavigationService to intialise otherwise Slideout menu can fail.
         private AWMVVMBase()
         {
+            SetDefaultColumn();
         }
 
 
@@ -32,12 +34,31 @@ namespace ArabWaha.Employer.BaseCalsses
         public AWMVVMBase(INavigationService navigationService)
         {
             _nav = navigationService;
+            SetDefaultColumn();
         }
 
         public AWMVVMBase(INavigationService navigationService, IPageDialogService dialog)
         {
             _nav = navigationService;
             _dialog = dialog;
+
+            SetDefaultColumn();
+        }
+
+
+        protected void SetDefaultColumn(int labelCol = 1, int dataCol = 2)
+        {
+            // pass in dfaults for EN (and then swap for AR)
+            LabelColumn = labelCol;
+            DataColumn = dataCol;
+            ImageColumn = 3;
+
+            if (CultureCode == "ar")
+            {
+                DataColumn = labelCol;
+                LabelColumn = dataCol;
+                ImageColumn = 1;
+            }
         }
 
         public async void NavigateAsync(MasterPageItem obj)
@@ -80,6 +101,75 @@ namespace ArabWaha.Employer.BaseCalsses
 
             return true;
         }
+
+        #region setup layout options here
+
+        public TextAlignment AlignText
+        {
+            get
+            {
+                return GlobalSetting.AlignText;
+            }
+        }
+
+        public TextAlignment AlignLabelText
+        {
+            get
+            {
+                return GlobalSetting.AlignLabelText;
+            }
+        }
+
+        public LayoutOptions AlignLayoutOptions
+        {
+            get { return GlobalSetting.HorizontalLayoutOptions; }
+        }
+
+        // setup columns 
+        private int _LabelColumns;
+
+        public int LabelColumn
+        {
+            get { return _LabelColumns; }
+            set
+            {
+                SetProperty<int>(ref _LabelColumns, value);
+                GlobalSetting.LabelColumn = value;
+            }
+        }
+
+        private int _dataColumn;
+    
+        public int DataColumn
+        {
+            get { return _dataColumn; }
+            set {
+                SetProperty<int>(ref _dataColumn, value);
+                GlobalSetting.DataColumn = value;
+            }
+        }
+
+        private int _imageColumn;
+
+        public int ImageColumn
+        {
+            get { return _imageColumn; }
+            set {
+                SetProperty<int>(ref _imageColumn, value);
+                GlobalSetting.ImageColumn = value;
+            }
+        }
+
+        public string CultureCode
+        {
+            get
+            {
+                return GlobalSetting.CultureCode;
+            }
+        }
+
+        #endregion
+
 
     }
 }

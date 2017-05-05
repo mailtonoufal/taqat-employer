@@ -117,11 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ButtonAddNewPost" xml:space="preserve">
+    <value>+ Add a New Job post</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ButtonApply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="ButtonOk" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="ButtonConfirmDelete" xml:space="preserve">
+    <value>Confirm Delete!!</value>
+  </data>
+  <data name="ButtonDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ButtonDeleteJobPost" xml:space="preserve">
+    <value>Delete Job Post</value>
+  </data>
+  <data name="ButtonDiscardChanges" xml:space="preserve">
+    <value>Discard Changes</value>
+  </data>
+  <data name="ButtonEditJobPost" xml:space="preserve">
+    <value>Edit Job Post</value>
+  </data>
+  <data name="ButtonInfoConfirmSaveChanges" xml:space="preserve">
+    <value>Confirm Save Changes!!</value>
+  </data>
+  <data name="ButtonInfoDiscardChanges" xml:space="preserve">
+    <value>Confirm you want to Discard All Changes!!</value>
+  </data>
+  <data name="ButtonSaveEdits" xml:space="preserve">
+    <value>Save Edits</value>
+  </data>
   <data name="ButtonSignIn" xml:space="preserve">
     <value>Sign In</value>
   </data>
   <data name="ButtonSignUp" xml:space="preserve">
     <value>Sign Up</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="ClosedOn" xml:space="preserve">
+    <value>Closed On</value>
+  </data>
+  <data name="ComplaintId" xml:space="preserve">
+    <value>Complaint Id</value>
+  </data>
+  <data name="CreatedOn" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="Dateofbirth" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
   </data>
   <data name="EMAIL" xml:space="preserve">
     <value>Email</value>
@@ -131,6 +185,123 @@
   </data>
   <data name="IndicatorRefreshText" xml:space="preserve">
     <value>Data Refresh..</value>
+  </data>
+  <data name="LabelAccept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="LabelAdditionalDetails" xml:space="preserve">
+    <value>Additional Details</value>
+  </data>
+  <data name="LabelContactInfo" xml:space="preserve">
+    <value>Contact info</value>
+  </data>
+  <data name="LabelDecline" xml:space="preserve">
+    <value>Decline</value>
+  </data>
+  <data name="LabelEventInfo" xml:space="preserve">
+    <value>Event Info</value>
+  </data>
+  <data name="LabelJobApplicationStatus" xml:space="preserve">
+    <value>Application Status</value>
+  </data>
+  <data name="LabelJobAppliedDate" xml:space="preserve">
+    <value>Applied Date</value>
+  </data>
+  <data name="LabelJobBeginner" xml:space="preserve">
+    <value>Beginner</value>
+  </data>
+  <data name="LabelJobCompany" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="LabelJobCompanyIndustry" xml:space="preserve">
+    <value>Company Industry</value>
+  </data>
+  <data name="LabelJobCompanyLogo" xml:space="preserve">
+    <value>Company Logo</value>
+  </data>
+  <data name="LabelJobCompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="LabelJobDesiredStartDate" xml:space="preserve">
+    <value>Desired Start Date</value>
+  </data>
+  <data name="LabelJobDrivingLicence" xml:space="preserve">
+    <value>Driving Licence</value>
+  </data>
+  <data name="LabelJobExpert" xml:space="preserve">
+    <value>Expert</value>
+  </data>
+  <data name="LabelJobExpiry" xml:space="preserve">
+    <value>Expiry</value>
+  </data>
+  <data name="LabelJobFilledPositions" xml:space="preserve">
+    <value>Filled Positions</value>
+  </data>
+  <data name="LabelJobGeneralInformation" xml:space="preserve">
+    <value>General Information</value>
+  </data>
+  <data name="LabelJobJobPostID" xml:space="preserve">
+    <value>Job Post ID</value>
+  </data>
+  <data name="LabelJobJobTitle" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="LabelJobJobType" xml:space="preserve">
+    <value>Job Type</value>
+  </data>
+  <data name="LabelJobLanguagehere" xml:space="preserve">
+    <value>Language here</value>
+  </data>
+  <data name="LabelJobLicenceName" xml:space="preserve">
+    <value>Licence name</value>
+  </data>
+  <data name="LabelJobLicences" xml:space="preserve">
+    <value>Licences</value>
+  </data>
+  <data name="LabelJobLicenceType" xml:space="preserve">
+    <value>Licence Type</value>
+  </data>
+  <data name="LabelJobMinimumExp" xml:space="preserve">
+    <value>Minimum Exp</value>
+  </data>
+  <data name="LabelJobMonthlySalary" xml:space="preserve">
+    <value>Monthly Salary</value>
+  </data>
+  <data name="LabelJobOpenPositions" xml:space="preserve">
+    <value>Open Positions</value>
+  </data>
+  <data name="LabelJobPosted" xml:space="preserve">
+    <value>Posted</value>
+  </data>
+  <data name="LabelJobRequiresDrivingLicence" xml:space="preserve">
+    <value>Requires driving Licence</value>
+  </data>
+  <data name="LabelJobRolesResponsib" xml:space="preserve">
+    <value>Roles &amp; Responsibility</value>
+  </data>
+  <data name="LabelJobSalary" xml:space="preserve">
+    <value>Salary</value>
+  </data>
+  <data name="LabelJobSector" xml:space="preserve">
+    <value>Sector</value>
+  </data>
+  <data name="LabelJobSkills" xml:space="preserve">
+    <value>Skills</value>
+  </data>
+  <data name="LabelJobStatus" xml:space="preserve">
+    <value>Job Status</value>
+  </data>
+  <data name="LabelJobTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="LabelJobYears" xml:space="preserve">
+    <value>Years</value>
+  </data>
+  <data name="LabelProposeNewTime" xml:space="preserve">
+    <value>Propose New Time</value>
+  </data>
+  <data name="LabelTimeOptions" xml:space="preserve">
+    <value>Time Options</value>
   </data>
   <data name="LoginEnterPassword" xml:space="preserve">
     <value>Enter password</value>
@@ -150,8 +321,35 @@
   <data name="LoginUserText" xml:space="preserve">
     <value>Username</value>
   </data>
+  <data name="MenuDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="MenuEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="MenuHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MenuJobPosts" xml:space="preserve">
+    <value>Jobs Posts</value>
+  </data>
+  <data name="MenuPrograms" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="MenuServices" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="MenuView" xml:space="preserve">
+    <value>View</value>
+  </data>
   <data name="MobileSMS" xml:space="preserve">
     <value>Mobile SMS</value>
+  </data>
+  <data name="NINorIqama" xml:space="preserve">
+    <value>NIN or Iqama</value>
+  </data>
+  <data name="RaiseAComplaint" xml:space="preserve">
+    <value>Raise A Complaint</value>
   </data>
   <data name="SearchAlreadyHaveAccount" xml:space="preserve">
     <value>Already have an account? Sign in</value>
@@ -177,10 +375,516 @@
   <data name="StartTab2Text" xml:space="preserve">
     <value>Check out the thousands of vacancies currently available across KSA to find the one ideal for you</value>
   </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="SubCategory2" xml:space="preserve">
+    <value>Sub Category 2</value>
+  </data>
+  <data name="SubCategory3" xml:space="preserve">
+    <value>Sub Category 3</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
   <data name="TabControlSearchText" xml:space="preserve">
     <value>Search Jobs</value>
   </data>
+  <data name="TextAboutPageDefault" xml:space="preserve">
+    <value>About details here</value>
+  </data>
+  <data name="TextAboutPageTitle" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="TextAvailablePrograms" xml:space="preserve">
+    <value>Available Programs</value>
+  </data>
+  <data name="TextAvailableServices" xml:space="preserve">
+    <value>Available Services</value>
+  </data>
+  <data name="TextComplaints" xml:space="preserve">
+    <value>Complaints</value>
+  </data>
+  <data name="TextContactPageDefault" xml:space="preserve">
+    <value>Contact us details here</value>
+  </data>
+  <data name="TextContactPageTitle" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="TextLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="TextNotLoggedIn" xml:space="preserve">
+    <value>You must be logged in to view this data</value>
+  </data>
+  <data name="TextSettingPageTitle" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="TextSettingsResetPassword" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="TextSignOut" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="TextWatch" xml:space="preserve">
+    <value>Watch</value>
+  </data>
+  <data name="TextWatching" xml:space="preserve">
+    <value>Watching</value>
+  </data>
+  <data name="WelcomeEmployerSignin" xml:space="preserve">
+    <value>Sign in as an employer using your MoL or NGL login, sign up, or continue as a guest</value>
+  </data>
   <data name="WelcomeTitle" xml:space="preserve">
     <value>Welcome</value>
+  </data>
+  <data name="JobTypeFilterText" xml:space="preserve">
+    <value>Job Type</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_PERM" xml:space="preserve">
+    <value>Permanent</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_PERM_DESC" xml:space="preserve">
+    <value>Long-term employment with unspecified end</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_CONTR" xml:space="preserve">
+    <value>Contract</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_CONTR_DESC" xml:space="preserve">
+    <value>Temporary Employment on pre-agreed terms</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_MINJOB" xml:space="preserve">
+    <value>Mini job</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_MINJOB_DESC" xml:space="preserve">
+    <value>Short-term employment up to 6 months for students (is this for students only)</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_INTERN" xml:space="preserve">
+    <value>Internship</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_INTERN_DESC" xml:space="preserve">
+    <value>Temporary employment for students</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_SUMMJOB" xml:space="preserve">
+    <value>Summer job</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_SUMMJOB_DESC" xml:space="preserve">
+    <value>Temporary employment during the summer months</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_JOBTRNO" xml:space="preserve">
+    <value>On-the-job training</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_JOBTRNO_DESC" xml:space="preserve">
+    <value>Temporary employment with focus on training</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_EMPDVNAC" xml:space="preserve">
+    <value>Employement driven academy</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_EMPDVNAC_DESC" xml:space="preserve">
+    <value />
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_TAMOJT" xml:space="preserve">
+    <value>Tamheer</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_TAMOJT_DESC" xml:space="preserve">
+    <value>On-the-Job Training</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="SortByFilterText" xml:space="preserve">
+    <value>Sort by</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_DISTANCE" xml:space="preserve">
+    <value>Distance</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_RELEVANCE" xml:space="preserve">
+    <value>Relevance</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_SCORE_HIGH" xml:space="preserve">
+    <value>Match Score (High to Low)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_SCORE_LOW" xml:space="preserve">
+    <value>Match Score (Low to High)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_STARTDATE_RECENT" xml:space="preserve">
+    <value>Start Date (Recent first)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_STARTDATE_FUTURE" xml:space="preserve">
+    <value>Start Date (Future first)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_GENDER_MALEFIRST" xml:space="preserve">
+    <value>Gender (Male first)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_GENDER_FEMALEFIRST" xml:space="preserve">
+    <value>Gender (Female first)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="WorkTypeFilterText" xml:space="preserve">
+    <value>Work Type</value>
+    <comment>Work Type</comment>
+  </data>
+  <data name="FULLT" xml:space="preserve">
+    <value>Full-time</value>
+    <comment>Work Type</comment>
+  </data>
+  <data name="PART" xml:space="preserve">
+    <value>Part-time</value>
+    <comment>Work Type</comment>
+  </data>
+  <data name="ShiftTypeFilterText" xml:space="preserve">
+    <value>Shift Type</value>
+    <comment>Shift Type</comment>
+  </data>
+  <data name="SHF_Day" xml:space="preserve">
+    <value>Day</value>
+    <comment>Shift Type</comment>
+  </data>
+  <data name="SHF_Night" xml:space="preserve">
+    <value>Night</value>
+    <comment>Shift Type</comment>
+  </data>
+  <data name="SHF_TwoShifts" xml:space="preserve">
+    <value>Two Shifts</value>
+    <comment>Shift Type</comment>
+  </data>
+  <data name="TravelingRequiredFilterText" xml:space="preserve">
+    <value>Traveling Required</value>
+  </data>
+  <data name="TRAV_Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="TRAV_Night" xml:space="preserve">
+    <value>Night</value>
+  </data>
+  <data name="TRAV_TwoShifts" xml:space="preserve">
+    <value>Two Shifts</value>
+  </data>
+  <data name="TeleWorkingFilterText" xml:space="preserve">
+    <value>Teleworking</value>
+  </data>
+  <data name="TELEW" xml:space="preserve">
+    <value>Yes</value>
+    <comment>Teleworking</comment>
+  </data>
+  <data name="NOTELEW" xml:space="preserve">
+    <value>No</value>
+    <comment>Teleworking</comment>
+  </data>
+  <data name="RequiredEducationFilterText" xml:space="preserve">
+    <value>Required Education</value>
+  </data>
+  <data name="TCD" xml:space="preserve">
+    <value>Technical diploma or equivalent</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="HTC" xml:space="preserve">
+    <value>Higher technical education, associate degree or equivalent</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="LES" xml:space="preserve">
+    <value>Less than elementary school</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="ESH" xml:space="preserve">
+    <value>Elementary school</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="MSH" xml:space="preserve">
+    <value>Middle school</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="HSH" xml:space="preserve">
+    <value>High school or equivalent</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="BDG" xml:space="preserve">
+    <value>Bachelor's degree or equivalent</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="MDG" xml:space="preserve">
+    <value>Master's degree or equivalent postgraduate education</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="DDG" xml:space="preserve">
+    <value>Doctorate degree or equivalent</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="DUMMY" xml:space="preserve">
+    <value>Dummy Education</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="SpecializationFilterText" xml:space="preserve">
+    <value>Specialization</value>
+  </data>
+  <data name="GenericProgrammesAndQualifications" xml:space="preserve">
+    <value>Generic Programmes And Qualifications</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Services</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>Education</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="ArtsAndHumanities" xml:space="preserve">
+    <value>Arts And Humanities</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="SocialSciences" xml:space="preserve">
+    <value>Social Sciences</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="BusinessAdministration" xml:space="preserve">
+    <value>Business Administration</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="NaturalSciencesMathematics" xml:space="preserve">
+    <value>Natural Sciences Mathematics</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="InformationAndCommunicationTechnologies" xml:space="preserve">
+    <value>Information And Communication Technologies (ICT)</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="EngineeringManufacturingConstruction" xml:space="preserve">
+    <value>Engineering Manufacturing Construction</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="AgricultureForestryFisheriesVeterinary" xml:space="preserve">
+    <value>Agriculture Forestry Fisheries Veterinary</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="HealthWelfare" xml:space="preserve">
+    <value>Health Welfare</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="GenderFilterText" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="GENDER_M" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="GENDER_F" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="GENDER_BOTH" xml:space="preserve">
+    <value>Both</value>
+  </data>
+  <data name="PostedSinceFilterText" xml:space="preserve">
+    <value>Posted Since</value>
+  </data>
+  <data name="POSTED_TWODAYS" xml:space="preserve">
+    <value>Two Days</value>
+  </data>
+  <data name="POSTED_ONEWEEK" xml:space="preserve">
+    <value>One Week</value>
+  </data>
+  <data name="POSTED_TWOWEEKS" xml:space="preserve">
+    <value>Two Weeks</value>
+  </data>
+  <data name="POSTED_THREEWEEKS" xml:space="preserve">
+    <value>Three Weeks</value>
+  </data>
+  <data name="POSTED_FOURORMORE" xml:space="preserve">
+    <value>Four Weeks or More</value>
+  </data>
+  <data name="LabelFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="LabelNoKeywordsEntered" xml:space="preserve">
+    <value>No Keywords have been entered in the fields yet</value>
+  </data>
+  <data name="ButtonNextStep" xml:space="preserve">
+    <value>Next Step</value>
+  </data>
+  <data name="LabelJobApplicationMethodText" xml:space="preserve">
+    <value>Method of Application</value>
+  </data>
+  <data name="LabelJobApplicationRequirementText" xml:space="preserve">
+    <value>Requirements</value>
+  </data>
+  <data name="LabelJobApplicationSurveyText" xml:space="preserve">
+    <value>Survey</value>
+  </data>
+  <data name="LabelJobAttachmentsListText" xml:space="preserve">
+    <value>List of attachments here</value>
+  </data>
+  <data name="LabelJobAttachmentsText" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="LabelJobBenefitsBonusText" xml:space="preserve">
+    <value>Bonus</value>
+  </data>
+  <data name="LabelJobBenefitsOtherText" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="LabelJobBenefitsSalaryFromText" xml:space="preserve">
+    <value>Salary From</value>
+  </data>
+  <data name="LabelJobBenefitsSalaryToText" xml:space="preserve">
+    <value>Salary To</value>
+  </data>
+  <data name="LabelJobBenefitsText" xml:space="preserve">
+    <value>Benefits &amp; Advantages</value>
+  </data>
+  <data name="LabelJobContactCompanyLocationText" xml:space="preserve">
+    <value>Company Location</value>
+  </data>
+  <data name="LabelJobContactNameText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="LabelJobContactText" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="LabelJobLocationAddressText" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="LabelJobLocationMobilityNotesText" xml:space="preserve">
+    <value>Mobility Notes</value>
+  </data>
+  <data name="LabelJobLocationMobilityText" xml:space="preserve">
+    <value>Mobility</value>
+  </data>
+  <data name="LabelJobLocationShiftTimeText" xml:space="preserve">
+    <value>Shift Time</value>
+  </data>
+  <data name="LabelJobLocationTeleworkingText" xml:space="preserve">
+    <value>Teleworking</value>
+  </data>
+  <data name="LabelJobLocationWorkTimeText" xml:space="preserve">
+    <value>Work Time</value>
+  </data>
+  <data name="LabelJobTrainingInstituteText" xml:space="preserve">
+    <value>Institute Name</value>
+  </data>
+  <data name="LabelJobTrainingLocationText" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="LabelJobTrainingNameText" xml:space="preserve">
+    <value>Training Name</value>
+  </data>
+  <data name="LabelJobTrainingText" xml:space="preserve">
+    <value>Training</value>
+  </data>
+  <data name="LabelJobTrainingValidityText" xml:space="preserve">
+    <value>Validity</value>
+  </data>
+  <data name="LabelNewJobHeaderText" xml:space="preserve">
+    <value>Select a Job Type</value>
+  </data>
+  <data name="LabelNewJobTitleText" xml:space="preserve">
+    <value>Create New Job Post</value>
+  </data>
+  <data name="Applications" xml:space="preserve">
+    <value>Applications</value>
+  </data>
+  <data name="LabelJobApplications" xml:space="preserve">
+    <value>Job Applications</value>
+  </data>
+  <data name="LabelJobPosts" xml:space="preserve">
+    <value>Job Posts</value>
+  </data>
+  <data name="LabelWatchList" xml:space="preserve">
+    <value>Watch List</value>
+  </data>
+  <data name="ApplicationsInviteToApply" xml:space="preserve">
+    <value>+ Invite to Apply</value>
+  </data>
+  <data name="LabelApplicationsTitle" xml:space="preserve">
+    <value>Jobs</value>
+  </data>
+  <data name="LabelCandidateInviteTitle" xml:space="preserve">
+    <value>Assign Candidate to Job</value>
+  </data>
+  <data name="CanadidateSendInvite" xml:space="preserve">
+    <value>Send Invite</value>
+  </data>
+  <data name="CandidateSendInviteMessage" xml:space="preserve">
+    <value>Your invitation has been Sent</value>
+  </data>
+  <data name="CandidateInvitePersonLabel" xml:space="preserve">
+    <value>The Candidate above will be invited to apply for the job:</value>
+  </data>
+  <data name="CandidateMessageLabel" xml:space="preserve">
+    <value>Message to the Candidate</value>
+  </data>
+  <data name="ButtonSendInvite" xml:space="preserve">
+    <value>Send Invitation</value>
+  </data>
+  <data name="LabelProgramsBeneficiaries" xml:space="preserve">
+    <value>Beneficiaries</value>
+  </data>
+  <data name="LabelProgramsBenefits" xml:space="preserve">
+    <value>Benefits</value>
+  </data>
+  <data name="LabelProgramsClickHereToRegister" xml:space="preserve">
+    <value>Click Here To Register</value>
+  </data>
+  <data name="LabelProgramsHowToRegister" xml:space="preserve">
+    <value>How To Register</value>
+  </data>
+  <data name="LabelProgramsIntroduction" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="LabelProgramsProgStatus" xml:space="preserve">
+    <value>Program Status</value>
+  </data>
+  <data name="LabelBadgeLockedStatus" xml:space="preserve">
+    <value>Locked!</value>
+  </data>
+  <data name="LabelBadgeUNLockedStatus" xml:space="preserve">
+    <value>Unlocked!</value>
+  </data>
+  <data name="LabelBadgesTitleText" xml:space="preserve">
+    <value>Unlock Badges &amp; Rewards!</value>
+  </data>
+  <data name="LabelBadgesDetailIntroduction" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="LabelNotificationsHeaderText" xml:space="preserve">
+    <value>Notification Message</value>
+  </data>
+  <data name="LabelNotificationsMarkAsReadText" xml:space="preserve">
+    <value>Mark All As Read</value>
+  </data>
+  <data name="LabelNotificationsReceivedText" xml:space="preserve">
+    <value>Received:</value>
+  </data>
+  <data name="LabelNotificationsStatusText" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="LabelNotificationsSubjectText" xml:space="preserve">
+    <value>Subject:</value>
+  </data>
+  <data name="LabelNotificationsTitleText" xml:space="preserve">
+    <value>Notifications</value>
   </data>
 </root>

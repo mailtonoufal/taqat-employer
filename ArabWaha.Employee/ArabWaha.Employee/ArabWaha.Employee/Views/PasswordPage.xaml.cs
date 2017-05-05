@@ -1,5 +1,4 @@
 ﻿using ArabWaha.Employee.ViewModels;
-using System;
 using Xamarin.Forms;
 
 namespace ArabWaha.Employee.Views
@@ -8,15 +7,7 @@ namespace ArabWaha.Employee.Views
     {
         public PasswordPage()
         {
-            try
-            {
-                InitializeComponent();
-            }
-            catch(Exception ex)
-            {
-                var t = ex.Message;
-
-            }
+            InitializeComponent();
         }
         protected override void OnAppearing()
         {

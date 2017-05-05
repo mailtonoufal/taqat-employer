@@ -1,6 +1,7 @@
 ﻿using ArabWaha.Core.ModelsEmployer.Company;
 using ArabWaha.Core.Services;
 using ArabWaha.Employer.BaseCalsses;
+using ArabWaha.Employer.Helpers;
 using ArabWaha.Employer.Views;
 using Prism.Commands;
 using Prism.Mvvm;
@@ -27,7 +28,8 @@ namespace ArabWaha.Employer.ViewModels
 
         public CompanyUserDetailsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            Title = "Personal Details";
+            SetDefaultColumn(0, 1);
+            Title = TranslateExtension.GetString("PersonalDetailsTitle");
 
             CallCommand = new DelegateCommand<string>(CallNumber);
             EditCommand = new DelegateCommand<CompanyUserDetails>(EditUser);

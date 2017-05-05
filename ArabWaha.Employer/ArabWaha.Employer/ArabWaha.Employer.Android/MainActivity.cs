@@ -15,7 +15,7 @@ using System.IO;
 
 namespace ArabWaha.Employer.Droid
 {
-    [Activity(Label = "ArabWaha.Employer", Theme = "@style/MainTheme", 
+    [Activity(Label = "ArabWaha.Employer", Theme = "@style/MainTheme",
          ScreenOrientation = ScreenOrientation.Portrait, ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
+             x:Class="ArabWaha.Employer.Layouts.Home.NotLoggedInContent">
+    <ContentView.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+            <Label Text="{lEx:Translate TextNotLoggedIn}" Style="{Binding InfoBodyTextBlue}"
+                   VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+
+
+
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

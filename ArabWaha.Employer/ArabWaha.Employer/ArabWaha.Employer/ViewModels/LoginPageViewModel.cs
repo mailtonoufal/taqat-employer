@@ -33,18 +33,18 @@ namespace ArabWaha.Employer.ViewModels
 
         }
 
-        public TextAlignment AlignText
-        {
-            get
-            {
-                return GlobalSetting.AlignText;
-            }
-        }
+        //public TextAlignment AlignText
+        //{
+        //    get
+        //    {
+        //        return GlobalSetting.AlignText;
+        //    }
+        //}
 
-        public LayoutOptions AlignLayoutOptions
-        {
-            get { return GlobalSetting.HorizontalLayoutOptions; }
-        }
+        //public LayoutOptions AlignLayoutOptions
+        //{
+        //    get { return GlobalSetting.HorizontalLayoutOptions; }
+        //}
 
         string _username;
         string _password;

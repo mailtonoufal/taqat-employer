@@ -1,14 +1,32 @@
-﻿using Prism.Commands;
+﻿using ArabWaha.Employee.BaseClasses;
+using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Navigation;
+using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace ArabWaha.Employee.ViewModels
 {
-    public class ProfilePageViewModel : BindableBase
+    public class ProfilePageViewModel : AWMVVMBase, INavigationAware
     {
-        public ProfilePageViewModel()
+        public ProfilePageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
+        {
+
+        }
+
+        public void OnNavigatedFrom(NavigationParameters parameters)
+        {
+
+        }
+
+        public void OnNavigatedTo(NavigationParameters parameters)
+        {
+
+        }
+
+        public void OnNavigatingTo(NavigationParameters parameters)
         {
 
         }

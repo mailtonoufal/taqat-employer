@@ -2,7 +2,81 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:gb="clr-namespace:ArabWaha.Employer"
+             xmlns:bh="clr-namespace:Pillar;assembly=Pillar"
+             xmlns:lEx="clr-namespace:ArabWaha.Employee.Helpers"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="ArabWaha.Employee.Views.Badges.BadgesPage">
-  
+             x:Class="ArabWaha.Employee.Views.Badges.BadgesPage"
+             Title="{lEx:Translate LabelBadgesTitleText}">
+
+
+    <StackLayout VerticalOptions="Fill" Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="2,2,2,2" >
+        <Grid VerticalOptions="Fill">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="380" />
+            </Grid.RowDefinitions>
+            <!-- header here -->
+            <StackLayout  Grid.Row="0" Margin="2,2,2,2" BackgroundColor="{StaticResource StackBorderColor}" HeightRequest="80">
+                <StackLayout Margin="2,2,2,2" BackgroundColor="White" VerticalOptions="FillAndExpand">
+                    <Label Text="Name Here" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                    <Label Text="{lEx:Translate LabelBadgesTitleText}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+
+            <!-- grid here for stars -->
+                <syncfusion:SfListView ItemsSource="{Binding BadgeSource}"
+                         ItemSpacing="3" Grid.Row="1" VerticalOptions="FillAndExpand" SelectedItem="{Binding SelectedBadge}"  >
+
+                <!--<syncfusion:SfListView.Behaviors>
+                    <bh:EventToCommandBehavior EventName="ItemTapped" Command="{Binding BadgeSelectedCommand}" CommandParameter="{Binding SelectedItem}"
+                                               EventArgsConverter="{StaticResource ItemTappedConverter}" />
+                </syncfusion:SfListView.Behaviors>-->
+                    <syncfusion:SfListView.ItemSize>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <OnPlatform.Android>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="120" Tablet="130" />
+                            </OnPlatform.Android>
+                            <OnPlatform.iOS>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="120" Tablet="140" />
+                            </OnPlatform.iOS>
+                        </OnPlatform>
+                    </syncfusion:SfListView.ItemSize>
+
+                    <syncfusion:SfListView.LayoutManager>
+                        <syncfusion:GridLayout SpanCount="3" />
+                    </syncfusion:SfListView.LayoutManager>
+
+                    <syncfusion:SfListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Margin="2,2,2,2" BackgroundColor="{StaticResource StackBorderColor}">
+                                <Grid RowSpacing="2" ColumnSpacing="2" Margin="1,1,1,1" BackgroundColor="White">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="3" />
+                                        <RowDefinition Height="40" />
+                                        <RowDefinition Height="30" />
+                                        <RowDefinition Height="30" />
+                                        <RowDefinition Height="3" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding BadgeIcon}" Grid.Row="1"
+                           Aspect="AspectFit"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="FillAndExpand" />
+
+                                    <Label Grid.Row="2" Text="{Binding BadgeName}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                    <Label Grid.Row="3" Text="{Binding BadgeStatus}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+                                </Grid>
+                            </StackLayout>
+                        </DataTemplate>
+                    </syncfusion:SfListView.ItemTemplate>
+                </syncfusion:SfListView>
+        </Grid>
+    </StackLayout>
 </ContentPage>

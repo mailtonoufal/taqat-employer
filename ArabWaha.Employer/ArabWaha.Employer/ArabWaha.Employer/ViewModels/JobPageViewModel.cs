@@ -1,7 +1,10 @@
 ﻿using ArabWaha.Core.ModelsEmployer.Jobs;
 using ArabWaha.Core.Services;
 using ArabWaha.Employer.BaseCalsses;
+using ArabWaha.Employer.Helpers;
 using ArabWaha.Employer.Layouts.Jobs;
+using ArabWaha.Employer.StaticData;
+using ArabWaha.Employer.Views;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -26,6 +29,8 @@ namespace ArabWaha.Employer.ViewModels
             _nav = navigationService;
             _dialog = dialog;
 
+            WatchText = "";
+            WatchCommand = new DelegateCommand(ProcessWatchCommand);
             ViewCandidatesCommand = new DelegateCommand(ProcessViewCandidatesCommand);
             EditJobCommand = new DelegateCommand(ProcessEditJobCommand);
             DeleteJobCommand = new DelegateCommand(ProcessDeleteJobCommand);
@@ -48,6 +53,12 @@ namespace ArabWaha.Employer.ViewModels
             // save / discard commands
             DiscardChangesJobCommand = new DelegateCommand(ProcessDiscardChangesJobCommand);
             SaveChangesJobCommand = new DelegateCommand(ProcessSaveChangesJobCommand);
+
+            // Static data 
+            JobTypeList = StaticEntryHelper.GetJobTypeEntries();
+
+            // setup the positions here
+
 
     }
 
@@ -75,13 +86,13 @@ namespace ArabWaha.Employer.ViewModels
 
         async void ProcessViewCandidatesCommand()
         {
-            var res = await _dialog.DisplayActionSheetAsync("Will goto matching candiates!! (demo action)", "Cancel","Ok", "" );
+            await _nav.NavigateAsync($"{nameof(MatchingCandidatesPage)}?JobPostId={JobDetails.JobPostId}");
         }
 
         public DelegateCommand EditJobCommand { get; set; }
         async void ProcessEditJobCommand()
         {
-            var res = await _dialog.DisplayActionSheetAsync("Will open edit mode!! (demo action)", "Cancel", "Ok", "");
+            SetEditMode();
         }
 
         public DelegateCommand DeleteJobCommand { get; set; }
@@ -92,14 +103,79 @@ namespace ArabWaha.Employer.ViewModels
         }
 
 
+        private bool _isWatching;
+        public bool IsWatching
+        {
+            get { return _isWatching; }
+            set { SetProperty(ref _isWatching, value); }
+        }
+        private string _watchText;
+        public string WatchText
+        {
+            get { return _watchText; }
+            set { SetProperty(ref _watchText, value); }
+        }
+        public DelegateCommand WatchCommand { get; set; }
+
+        //Watch When clicked, it will add the job post to the user’s watch list(EMP_MOB_04/04)
+        //Icon should refelect that post was added by changing the color or shape
+
+        async void ProcessWatchCommand()
+        {
+            if (!IsViewMode)
+                return;
+
+            // Add current Job Post to watch list.
+            ApiService api = new ApiService();
+            bool watching = false;
+
+            if (IsWatching)
+            {
+                bool removed = await api.DeleteJobPostFromWatchListAsync(JobDetails.JobPostId);
+                IsWatching = false;
+            }
+            else
+            {
+                  IsWatching = await api.AddJobPostToWatchListAsync(JobDetails.JobPostId);
+            }
+
+            // Need to change the text of toolbar item - need to do this at page load too.
+            SetWatchText();
+
+            MessagingCenter.Send(this, "WatchEntryUpdated");
+
+        }
+
+        private void SetWatchText()
+        {
+            TranslateExtension tran = new TranslateExtension();
+            
+
+            if (IsWatching)
+            {
+                WatchText = tran.GetProviderValueString("TextWatching");
+            }
+            else
+            {
+                WatchText = tran.GetProviderValueString("TextWatch");
+            }
+        }
+
+
 
         // DiscardChangesJobCommand
         public DelegateCommand DiscardChangesJobCommand { get; set; }
 
         async void ProcessDiscardChangesJobCommand()
         {
-            var res = await _dialog.DisplayActionSheetAsync("Confirm you want to Discard All Changes!!", "Cancel", "Discard Changes", "");
-            if(res!="Cancel")
+            TranslateExtension tran = new TranslateExtension();
+            string info = tran.GetProviderValueString("ButtonInfoDiscardChanges");
+            string discard = tran.GetProviderValueString("ButtonDiscardChanges"); 
+            string cancel = tran.GetProviderValueString("ButtonCancel"); 
+
+
+            var res = await _dialog.DisplayActionSheetAsync(info, cancel, discard, "");
+            if(res!=cancel)
             {
                 ApiService apiServ = new ApiService();
                 var tmp = await apiServ.GetEmployerPostedJobsAsync(1);
@@ -113,11 +189,19 @@ namespace ArabWaha.Employer.ViewModels
         public DelegateCommand SaveChangesJobCommand { get; set; }
         async void ProcessSaveChangesJobCommand()
         {
+            TranslateExtension tran = new TranslateExtension();
+            string info = tran.GetProviderValueString("ButtonInfoConfirmSaveChanges");
+            string save = tran.GetProviderValueString("ButtonSaveEdits");
+            string cancel = tran.GetProviderValueString("ButtonCancel");
 
-            var res = await _dialog.DisplayActionSheetAsync("Confirm Save Changes!!", "Cancel", "Save Edits", "");
+            var res = await _dialog.DisplayActionSheetAsync(info, cancel, save, "");
 
-            if (res != "Cancel")
+            if (res != cancel)
             {
+                // JobTypeList is a picker - and the Data class needs to store the enum text (we don't know for sure yet but current Individual does similar)
+                JobDetails.JobType = JobTypeList[JobTypeSelected].JobTypeText;
+
+
                 // save data here 
                 ApiService apiServ = new ApiService();
                 await apiServ.UpdateEmployerJob(JobDetails);
@@ -148,25 +232,47 @@ namespace ArabWaha.Employer.ViewModels
             set { SetProperty<bool>(ref _isViewMode, value); }
         }
 
+        private bool _isNewMode;
+        public bool IsNewMode
+        {
+            get { return _isNewMode; }
+            set { SetProperty(ref _isNewMode, value); }
+        }
+
 
         void SetEditMode()
         {
             IsEditMode = true;
             IsViewMode = false;
+            IsNewMode = false;
+
+            // set up picker selected indexes
+            JobTypeSelected = JobTypeList.FindIndex(JobDetails.JobType);
+
             JobEditContent = new JobEditContent();
             CurrentView = JobEditContent;
         }
 
         void SetNewMode()
         {
+            IsEditMode = false;
+            IsViewMode = false;
+            IsNewMode = true;
+
             JobNewContent = new JobEditContent();
             CurrentView = JobNewContent;
         }
 
-        void SetViewMode()
+        async void SetViewMode()
         {
             IsEditMode = false;
             IsViewMode = true;
+            IsNewMode = false;
+
+
+            ApiService api = new ApiService();
+            IsWatching = await api.IsJobPostInWatchListAsync(JobDetails.JobPostId);
+            SetWatchText();
 
             JobDisplayContent = new JobDisplayContent();
             CurrentView = JobDisplayContent;
@@ -510,12 +616,26 @@ namespace ArabWaha.Employer.ViewModels
         }
         // end test
 
+        private ObservableCollection<JobTypeEntry> _jobTypeList;
+        public ObservableCollection<JobTypeEntry> JobTypeList
+        {
+            get { return _jobTypeList; }
+            set { SetProperty(ref _jobTypeList, value); }
+        }
+
+        private int _jobTypeSelected;
+        public int JobTypeSelected
+        {
+            get { return _jobTypeSelected; }
+            set { SetProperty(ref _jobTypeSelected, value); }
+        }
+
+
         private EmployerJobDetail _jobDetails;
         public EmployerJobDetail JobDetails
         {
             get { return _jobDetails; }
             set { SetProperty<EmployerJobDetail>(ref _jobDetails, value); }
-
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
@@ -525,39 +645,40 @@ namespace ArabWaha.Employer.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            var mode = parameters.Where(x => x.Key == "MODE").FirstOrDefault();
-            if (mode.Value != null && (!string.IsNullOrEmpty(mode.Value.ToString())))
+            var mode = parameters["MODE"];
+            if (mode != null && (!string.IsNullOrEmpty(mode.ToString())))
             {
-                var jobDetails = parameters.Where(x => x.Key == "JOB").FirstOrDefault();
+                var jobDetails = parameters["JOB"];
 
-                var modeVal = mode.Value.ToString();
+                var modeVal = mode.ToString();
                 switch(modeVal)
                 {
                     case "NEW":
+                        JobDetails = new EmployerJobDetail();
                         SetNewMode();
                         break;
 
                     case "EDIT":
-                        if(jobDetails.Value==null)
+                        if(jobDetails==null)
                         {
                             _dialog.DisplayAlertAsync("Error", "No job to edit.", "OK");
                             _nav.GoBackAsync();
                         }
                         else
                         {
-                            JobDetails = jobDetails.Value as EmployerJobDetail;
+                            JobDetails = jobDetails as EmployerJobDetail;
                             SetEditMode();
                         }
                         break;
                     case "VIEW":
-                        if (jobDetails.Value == null)
+                        if (jobDetails == null)
                         {
                             _dialog.DisplayAlertAsync("Error", "No job to View.", "OK");
                             _nav.GoBackAsync();
                         }
                         else
                         {
-                            JobDetails = jobDetails.Value as EmployerJobDetail;
+                            JobDetails = jobDetails as EmployerJobDetail;
                             SetViewMode();
                         }
                         break;

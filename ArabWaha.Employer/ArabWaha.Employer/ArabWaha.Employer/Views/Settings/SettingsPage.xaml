@@ -3,36 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
              x:Class="ArabWaha.Employer.Views.SettingsPage"
-             Title="{Binding Title}">
+             Title="{lEx:Translate TextSettingPageTitle}">
 
-    <!--<StackLayout Padding="10">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="Auto"></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.6*"></ColumnDefinition>
-                <ColumnDefinition Width="0.6*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-
-            <Label Text="Language" Grid.Row="0" Grid.Column="0" Style="{StaticResource HeaderTextMediumBlue}" HorizontalOptions="End"></Label>
-
-            <Label Text="English" Grid.Row="0" Grid.Column="1" Style="{StaticResource HeaderTextMediumBlue}" HorizontalOptions="End"></Label>
-
-            <Button Text="Logout" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding LogoutCommand}"></Button>
-            <Button Text="Reset Password" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding ResetPasswordCommad}"></Button>
-            <Button Text="Complaints" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding ComplaintsCommad}" ></Button>
-            <Button Text="About" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding AboutCommand}"></Button>
-        </Grid>
-
-    </StackLayout>-->
     <StackLayout Padding="10">
         <Grid>
             <Grid.RowDefinitions>
@@ -68,32 +43,32 @@
 
 
 
-            <Label Text="Language" Grid.Row="1" Grid.Column="2" Style="{StaticResource InfoBodyTextSmallBlue}" VerticalTextAlignment="Center" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+            <Label Text="{lEx:Translate TextLanguage}" Grid.Row="1" Grid.Column="2" Style="{StaticResource InfoBodyTextSmallBlue}" VerticalTextAlignment="Center" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
 
-            <Label Text="English" Grid.Row="1" Grid.Column="3" Style="{StaticResource InfoBodyTextSmallBlue}" VerticalTextAlignment="Center" HorizontalOptions="End" HorizontalTextAlignment="End"/>
+            <Label Text="{Binding CurrentLanguage}" Grid.Row="1" Grid.Column="3" Style="{StaticResource InfoBodyTextSmallBlue}" VerticalTextAlignment="Center" HorizontalOptions="End" HorizontalTextAlignment="End"/>
 
 
-            <Label IsVisible="{Binding IsAuth}" Text="Logout" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
+            <Label IsVisible="{Binding IsAuth}" Text="{lEx:Translate TextSignOut}" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding LogoutCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>
             </Label>
 
 
-            <Label Text="Reset Password" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"  VerticalTextAlignment="Center"  HorizontalOptions="Start" HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
+            <Label Text="{lEx:Translate TextSettingsResetPassword}" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"  VerticalTextAlignment="Center"  HorizontalOptions="Start" HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding ResetPasswordCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>
             </Label>
 
-            <Label Text="Complaints" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start"  VerticalTextAlignment="Center"  HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
+            <Label Text="{lEx:Translate TextComplaints}" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start"  VerticalTextAlignment="Center"  HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding ComplaintsCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>
             </Label>
 
 
-            <Label Text="About" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start"  VerticalTextAlignment="Center"  HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
+            <Label Text="{lEx:Translate TextAboutPageTitle}" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start"  VerticalTextAlignment="Center"  HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding AboutCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>

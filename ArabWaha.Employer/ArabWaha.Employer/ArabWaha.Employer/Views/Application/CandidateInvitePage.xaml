@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"                          
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employer.Views.CandidateInvitePage"
+             Title="{Binding Title}">
+
+    <StackLayout Padding="10">
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Label Text="{Binding Candidate.Name}" Style="{StaticResource HeaderTextMediumBlue}"></Label>
+            <Label Text="{Binding Candidate.Occupation}" Style="{StaticResource HeaderTextSmallBlue}"></Label>
+            <Frame BackgroundColor="{StaticResource BlueTextColor}">
+                <StackLayout>
+                    <Label  Style="{StaticResource SolidBodyTextBlue}" Text="{lEx:Translate CandidateInvitePersonLabel}"></Label>
+                    <Label  Style="{StaticResource SolidBodyTextBlue}" Text="{Binding JobDetails.JobPostTitle}" FontAttributes="Bold"></Label>
+                </StackLayout>
+            </Frame>
+            <Label Text="{lEx:Translate CandidateMessageLabel}" Style="{StaticResource HeaderTextMediumBlue}"></Label>
+            <Frame BackgroundColor="{StaticResource StackBorderColorLight}" VerticalOptions="FillAndExpand">
+                <Editor VerticalOptions="FillAndExpand" ></Editor>
+            </Frame>
+        </StackLayout>
+        <Button Text="{lEx:Translate ButtonSendInvite}" Style="{StaticResource BlueButtonFlat}" Command="{Binding SendInviteCommand}"></Button>
+    </StackLayout>
+</ContentPage>

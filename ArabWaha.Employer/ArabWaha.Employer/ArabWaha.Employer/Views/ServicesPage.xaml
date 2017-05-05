@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:gb="clr-namespace:ArabWaha.Employer"
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
+             xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
+              xmlns:bh="clr-namespace:Pillar;assembly=Pillar"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             BackgroundColor="White"
+             x:Class="ArabWaha.Employer.Views.ServicesPage">
+
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
+        <Label Text="{lEx:Translate TextAvailableServices}" Style="{StaticResource SolidBodyTextBlue}" 
+               HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+
+        <ListView ItemsSource="{Binding ServicesSource}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
+                      HasUnevenRows="True" SeparatorVisibility="None" >
+            <ListView.Behaviors>
+                <bh:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ServicesSelectedCommand}" 
+                                               EventArgsConverter="{StaticResource ItemTappedConverter}" />
+            </ListView.Behaviors>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell x:Name="myCell" >
+                        <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColor}">
+                            <Grid Margin="2,2,2,2" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="15" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="4" VerticalOptions="FillAndExpand" />
+
+                                <Label Text="{Binding ServiceName}" Grid.Row="1"   
+                                           HorizontalTextAlignment="Center" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Center" />
+
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    
+</ContentPage>

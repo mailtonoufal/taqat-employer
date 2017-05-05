@@ -3,11 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
+              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"                           
+             xmlns:layout="clr-namespace:ArabWaha.Employer.Layouts"                           
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" 
              xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"
              x:Class="ArabWaha.Employer.Views.SearchResultsPage"
              NavigationPage.HasBackButton="False"                    
                      >
+
     <Grid>
         <Grid.RowDefinitions>
           <RowDefinition Height="Auto" />
@@ -18,49 +21,23 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-      <SearchBar Grid.Row="0"   x:Name="Searcher"   Placeholder="Enter keywords" BackgroundColor="White"
-                  SearchCommand="{Binding SearchBarCommand}" Style="{StaticResource SearcherStyle}"   />
-      <SearchBar Grid.Row="1"   x:Name="SearcherLoc"   Placeholder="Enter location" BackgroundColor="White"
-                  SearchCommand="{Binding SearchBarCommand}" Style="{StaticResource SearcherStyle}"   />
+      <SearchBar Grid.Row="0"   x:Name="Searcher"   Placeholder="{lEx:Translate SearchKeywordText}" BackgroundColor="White" Text="{Binding SearchText}"
+                  SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}"   />
+      <SearchBar Grid.Row="1"   x:Name="SearcherLoc"   Placeholder="{lEx:Translate SearchLocationText}" BackgroundColor="White" Text="{Binding SearchLocation}"
+                  SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}"   />
 
-      <StackLayout  Grid.Row="2"  >
-            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+      <StackLayout  Grid.Row="2" IsVisible="{Binding HasResults}"  >           
+              <layout:ApplicationListView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></layout:ApplicationListView>         
+      </StackLayout>
 
-                <ListView  ItemsSource="{Binding CandidateList}"  x:Name="ResultsList" BackgroundColor="{StaticResource GreyPageColor}"   CachingStrategy = "RecycleElement"                   
-                      HasUnevenRows="True" SeparatorVisibility="None" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Padding="10,10,10,10">
-                                <Grid Margin="5,5,5,5" >
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="1*" />
-                                        <RowDefinition Height="2*" />
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="0.2*" />
-                                        <ColumnDefinition Width="*" />
-                                    </Grid.ColumnDefinitions>
-                                    <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" />
-
-                                    <controls:GaugeControl Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Progress="{Binding MatchScore}"></controls:GaugeControl>
-                                    <Label Text="{Binding MatchScore,StringFormat='{0}%'}" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="3,0,0,0" />
-
-                                    <Label Text="{Binding Occupation}" Grid.Row="0" Grid.Column="1" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
-                                    <StackLayout Grid.Row="1" Grid.Column="1">
-                                        <Label Text="{Binding Gender}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
-                                        <Label Text="{Binding Location}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
-                                    </StackLayout>
-
-                                </Grid>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            </StackLayout>
+      <StackLayout  Grid.Row="2" IsVisible="{Binding NoResults}" >
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+          <Label Text="{lEx:Translate LabelNoKeywordsEntered}" Style="{StaticResource HeaderTextLargeBlue}" ></Label>
         </StackLayout>
+      </StackLayout>
+
 
     </Grid>
+
 
 </local:AWMenuContainerPage>

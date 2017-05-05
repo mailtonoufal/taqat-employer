@@ -29,23 +29,30 @@ namespace ArabWaha.Employee.Helpers
 
         public string Text { get; set; }
 
-        public object ProvideValue(IServiceProvider serviceProvider)
+        public string GetProviderValueString(string key)
         {
-            if (Text == null)
+            if (key == null)
                 return "";
 
             ResourceManager temp = new ResourceManager
             (ResourceId, typeof(TranslateExtension).GetTypeInfo().Assembly);
-            var translation = temp.GetString(Text, ci);
+            var translation = temp.GetString(key, ci);
             if (translation == null)
             {
-#if DEBUG
-                throw new ArgumentException(string.Format("Key '{0}' was not found in resources '{1}' for culture '{2}'.", Text, ResourceId, ci.Name), "Text");
-#else
-				translation = Text; 
-#endif
+                translation = key;
             }
             return translation;
+        }
+
+        public object ProvideValue(IServiceProvider serviceProvider)
+        {
+            return GetProviderValueString(Text);
+        }
+
+        public static string GetString(string key)
+        {
+            TranslateExtension tran = new TranslateExtension();
+            return tran.GetProviderValueString(key);
         }
     }
 }

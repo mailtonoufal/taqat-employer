@@ -1,5 +1,6 @@
 ﻿using ArabWaha.Core.DBAccess;
 using ArabWaha.Core.DBAccess.Employer;
+using ArabWaha.Core.Helpers;
 using ArabWaha.Core.ModelsEmployer;
 using ArabWaha.Core.ModelsEmployer.Company;
 using ArabWaha.Core.ModelsEmployer.Jobs;
@@ -18,7 +19,97 @@ namespace ArabWaha.Core.Services
 {
     public class ApiService
     {
-       
+
+        // mechanism to get default values for dropdowns
+        public async Task<ObservableCollection<AppValues>> GetDefaultValuesAsync(string Category, string parentKey = "")
+        {
+
+            // grab data from database
+            DbAccessor db = new DbAccessor();
+            var Source = UtilHelper.ConvertToObservable<AppValues>(db.GetTableItemsObservable<AppValues>().Where(x => x.CatType == Category).ToList());
+
+            // filter list if we just need root parent values. 
+            if (!string.IsNullOrEmpty(parentKey))
+                Source = UtilHelper.ConvertToObservable<AppValues>(Source.Where(x => x.ParentKey == parentKey).ToList()); 
+
+
+
+            // grab the current culture here and set the value field
+            var cult = this.GetCurrentCulture();
+
+            if (cult == "ar")
+                foreach (var item in Source) item.Value = item.Arabic;
+            else
+                foreach (var item in Source) item.Value = item.English;
+
+            return Source;
+        }
+
+        public string GetCurrentCulture()
+        {
+            DbAccessor db = new DbAccessor();
+            var culture = db.GetTableItemsObservable<AppSettings>().Where(x => x.Key == "culture").FirstOrDefault();
+
+            if (culture == null)
+            {
+                return "en";
+            }
+            return culture.Value;
+        }
+
+
+        public async Task<ObservableCollection<ComplaintRaised>> GetComplaintsAsync()
+        {
+            // grab data from database
+            DbAccessor db = new DbAccessor();
+            var Source = db.GetTableItemsObservable<ComplaintRaised>();
+
+            // order by date asc so we see latest first
+            var newsource = UtilHelper.ConvertToObservable<ComplaintRaised>(Source.OrderByDescending(x => x.CreateDateCast).ToList());
+
+            return newsource;
+        }
+
+        public async Task AddNewComplaint(ComplaintRaised newcompaint)
+        {
+            // first push to api to get a new complaint id
+            int complaintid = UtilHelper.getRandomIdInt();
+
+            // now add new complaint id to current complaint and insert into db.
+            newcompaint.ComplaintId = complaintid;
+            DbAccessor db = new DbAccessor();
+            db.InsertRecord<ComplaintRaised>(newcompaint);
+        }
+
+        public async Task SetEventStatus(int eventid, bool Status)
+        {
+            DbAccessor db = new DbAccessor();
+            var eventData = db.GetTableItemsObservable<EventDetails>().Where(x => x.EventId == eventid).FirstOrDefault();
+
+            if (eventData != null)
+            {
+                eventData.Status = Status == true ? "Accepted" : "Declined";
+                db.UpdateRecord<EventDetails>(eventData);
+            }
+
+            // push info to api here
+        }
+
+        public async Task<ObservableCollection<EventDetails>> GetEventsAsync()
+        {
+            // grab data from database
+            DbAccessor db = new DbAccessor();
+            var Source = db.GetTableItemsObservable<EventDetails>();
+            return Source;
+        }
+
+        public async Task<EventDetails> GetEventSingleAsync(string eventId)
+        {
+            // grab data from database
+            DbAccessor db = new DbAccessor();
+            var Source = db.GetTableItemsObservable<EventDetails>().Where(x => x.EventId.ToString() == eventId).FirstOrDefault();
+            return Source;
+        }
 
         public async Task SetCurrentCultureAsync(string culture)
         {
@@ -62,12 +153,39 @@ namespace ArabWaha.Core.Services
             return source;
         }
 
+        public async Task<ObservableCollection<EmployerService>> GetAllServicesAsync()
+        {
+            DbAccessor db = new DbAccessor();
+            var source = new ObservableCollection<EmployerService>();
+
+            var dbsource = db.GetTableItemsObservable<AllServices>();
+            foreach (var item in dbsource)
+            {
+                source.Add(JsonConvert.DeserializeObject<EmployerService>(item.JSON));
+            }
+            return source;
+        }
+
         public async Task<ObservableCollection<EmployerProgram>> GetCurrentProgramsAsync()
         {
             DbAccessor db = new DbAccessor();
             var source = new ObservableCollection<EmployerProgram>();
 
             var dbsource = db.GetTableItemsObservable<MyPrograms>();
+            foreach (var item in dbsource)
+            {
+                source.Add(JsonConvert.DeserializeObject<EmployerProgram>(item.JSON));
+            }
+            return source;
+        }
+
+        // Programs
+        public async Task<ObservableCollection<EmployerProgram>> GetAllProgramsAsync()
+        {
+            DbAccessor db = new DbAccessor();
+            var source = new ObservableCollection<EmployerProgram>();
+
+            var dbsource = db.GetTableItemsObservable<DBAccess.Programs>();
             foreach (var item in dbsource)
             {
                 source.Add(JsonConvert.DeserializeObject<EmployerProgram>(item.JSON));
@@ -100,9 +218,6 @@ namespace ArabWaha.Core.Services
             return true;
         }
 
-        // simulate db with a static set of data for jobs
-        static ObservableCollection<EmployerJobDetail> EmployerJobsLocalDb;
-
         public async Task<EmployerJobDetail> GetEmployerPostedJobsSingleAsync(string JobPostId)
         {
             DbAccessor db = new DbAccessor();
@@ -129,9 +244,29 @@ namespace ArabWaha.Core.Services
             return source;
         }
 
+        public async Task<ApplicationProfile> GetApplicationProfileAsync(string profileId)
+        {
+            DbAccessor db = new DbAccessor();
+            var source = new ApplicationProfile();
 
+            var dbsource = db.GetTableItemsObservable<JobApplicant>().Where( x=> x.ApplicantId == profileId).FirstOrDefault();
+            if (dbsource != null)
+            {
+                source = JsonConvert.DeserializeObject<ApplicationProfile>(dbsource.JSON);
+            }
+
+            return source;
+        }
         public async Task<ObservableCollection<ApplicationProfile>> GetSearchApplicationsAsync(string keyword, string location)
         {
+            // Test no results.
+            if (string.IsNullOrEmpty(keyword) && string.IsNullOrEmpty(location))
+                return new ObservableCollection<ApplicationProfile>();
+
+            // *************** TODO ************************
+            // call api to return the dynamic search data for candidates
+            
+            // DB is storing the static candidates, we need to call api for dynamic search results..
             DbAccessor db = new DbAccessor();
             var source = new ObservableCollection<ApplicationProfile>();
 
@@ -140,10 +275,26 @@ namespace ArabWaha.Core.Services
             {
                 source.Add(JsonConvert.DeserializeObject<ApplicationProfile>(item.JSON));
             }
-
             return source;
         }
 
+        public async Task<ObservableCollection<ApplicationProfile>> GetMatchingCandidatesForJobPost(string jobPostId)
+        {
+
+            // *************** TODO ************************
+            // call api to return the dynamic search data for matching candidates
+
+            // DB is storing the static candidates, we need to call api for dynamic search results..
+            DbAccessor db = new DbAccessor();
+            var source = new ObservableCollection<ApplicationProfile>();
+
+            var dbsource = db.GetTableItemsObservable<JobApplicant>().Where(x => x.JobPostId == jobPostId.ToString());
+            foreach (var item in dbsource)
+            {
+                source.Add(JsonConvert.DeserializeObject<ApplicationProfile>(item.JSON));
+            }
+            return source;
+        }
 
         public async Task<ApplicationsForCompanyJobs> GetCompanyJobApplicationsAsync(int companyId = 0)
         {
@@ -151,12 +302,13 @@ namespace ArabWaha.Core.Services
             // call api to return the jobs and Applications.
             ApplicationsForCompanyJobs companyJobs = new ApplicationsForCompanyJobs()
             {
+                CompanyId = companyId,
                 Jobs = new ObservableCollection<ApplicationsForJob>()                
             };
 
-            for(int i=0; i< 10; i++)
+            for(int i=1; i< 7; i++)
             {
-                companyJobs.Jobs.Add(await GetCompanyJobApplicationsByJobIdAsync(0, 0));
+                companyJobs.Jobs.Add(await GetCompanyJobApplicationsByJobIdAsync(companyId, i));
             }
             return companyJobs;
         }
@@ -169,7 +321,8 @@ namespace ArabWaha.Core.Services
 
             var jb = db.GetTableItems<EmployerJobs>().Where(x => x.JobPostId == jobPostId.ToString()).FirstOrDefault();
 
-            if (jb == null) return retVal; // no job so just return empty object
+            if (jb == null)
+                return retVal; // no job so just return empty object
 
             retVal.JobDetails = JsonConvert.DeserializeObject<EmployerJobDetail>(jb.JSON);
             retVal.Applications = new ObservableCollection<ApplicationProfile>();
@@ -183,60 +336,88 @@ namespace ArabWaha.Core.Services
             return retVal;
         }
 
-        // Add Applicaiton/Candidate to Watch list what do we need to pass in - JobPostId, ProfileId??
-        public async Task<bool> AddApplicantToWatchList(int JobPostId, int profileId)
+        public async Task<bool> IsJobPostInWatchListAsync(string jobPostId, string companyId = null, string userId = null)
         {
-            // pull profile and add to watched list
             DbAccessor db = new DbAccessor();
 
-            var client = db.GetTableItems<MatchedClients>().Where(x => x.ProfileId == profileId.ToString()).FirstOrDefault();
-            var jb = db.GetTableItems<WatchedClients>().Where(x => x.JobPostId == JobPostId.ToString()
-                                && x.ProfileId == profileId.ToString()).FirstOrDefault();
+            var jb = db.GetTableItems<WatchedJobs>().Where(x => x.JobPostId == jobPostId).FirstOrDefault();
+            if (jb != null)
+            {
+                return true;
+            }
+            return false;
+        }
+        public async Task<bool> AddJobPostToWatchListAsync(string jobPostId, string companyId = null, string userId = null)
+        {
+            
+            bool added = false;
+            // add the job to watch list
+            DbAccessor db = new DbAccessor();
 
-            if (jb != null) return false; // already exists
-
-            db.InsertRecord<WatchedClients>(new WatchedClients { JobPostId=JobPostId.ToString(), ProfileId=profileId.ToString() ,
-                  JSON=JsonConvert.SerializeObject(client)  });
-
-            // TODO **** Push to api here
-
-            // add to db table
-            return true;
+            var jb = db.GetTableItems<WatchedJobs>().Where(x => x.JobPostId == jobPostId).FirstOrDefault();
+            if (jb == null)
+            {
+                // isn't in the list add it
+                db.InsertRecord<WatchedJobs>(new WatchedJobs { JobPostId = jobPostId });
+                // TODO **** Push to api here - will need the postid/userid and company to uniquely identify for API
+                added = true;
+            }        
+            return added;
         }
 
-        // DONT UNDERSTAND WHAT THIS IS ACTUALLY BEING USED FOR????? OR TRYING TO DO.. DOESNT SEEM LOGICAL AT ALL. THIS LOOKS WRONG
-        // Get the Watch list for the user - returns a list of Applicaiton Profiles. do we we want all applications? 
-        public async Task<ObservableCollection<JobPostWatchList>> GetCompanyWatchListAsync(int companyId, int userId)
+        public async Task<bool> DeleteJobPostFromWatchListAsync(string jobPostId, string companyId = null, string userId = null)
+        {
+
+            bool removed = false;
+            // add the job to watch list
+            DbAccessor db = new DbAccessor();
+
+            var jb = db.GetTableItems<WatchedJobs>().Where(x => x.JobPostId == jobPostId).FirstOrDefault();
+            if (jb != null)
+            {
+                // isn't in the list add it
+                db.DeleteRecord<WatchedJobs>(jb);
+                // TODO **** Push to api here - will need the postid/userid and company to uniquely identify for API
+                removed = true;
+            }
+            return removed;
+        }
+
+        // Add Applicaiton/Candidate to Watch list what do we need to pass in - JobPostId, ProfileId??
+        //public async Task<bool> AddApplicantToWatchList(int JobPostId, int profileId)
+        //{
+        //    // pull profile and add to watched list
+        //    DbAccessor db = new DbAccessor();
+
+        //    var client = db.GetTableItems<MatchedClients>().Where(x => x.ProfileId == profileId.ToString()).FirstOrDefault();
+        //    var jb = db.GetTableItems<WatchedClients>().Where(x => x.JobPostId == JobPostId.ToString()
+        //                        && x.ProfileId == profileId.ToString()).FirstOrDefault();
+
+        //    if (jb != null) return false; // already exists
+
+        //    db.InsertRecord<WatchedClients>(new WatchedClients { JobPostId=JobPostId.ToString(), ProfileId=profileId.ToString() ,
+        //          JSON=JsonConvert.SerializeObject(client)  });
+
+        //    // TODO **** Push to api here
+
+        //    // add to db table
+        //    return true;
+        //}
+
+        // Get the Jobs Watch list for the user - returns a list of Applicaiton Profiles associated with the Job Post 
+        public async Task<ObservableCollection<ApplicationsForJob>> GetCompanyWatchListAsync(int companyId, int userId)
         {
 
             DbAccessor db = new DbAccessor();
-            var retVal = new ObservableCollection<JobPostWatchList>();
-
-            var watched = db.GetTableItems<WatchedClients>().Where(x => x.AddedById == userId.ToString()); // only get for added user??
+            var retVal = new ObservableCollection<ApplicationsForJob>();
+            var watched = db.GetTableItems<WatchedJobs>(); // .Where(x => x.AddedById == userId.ToString()); // only get for added user??
 
             foreach(var jbs in watched)
             {
-                var currentJob = db.GetTableItems<EmployerJobs>().Where(x => x.JobPostId == jbs.JobPostId).FirstOrDefault();
+                var currentJob = await GetCompanyJobApplicationsByJobIdAsync(0, Convert.ToInt32(jbs.JobPostId));
                 if(currentJob!=null)
                 {
-                    var details = JsonConvert.DeserializeObject<EmployerJobDetail>(jbs.JSON);
-
-                    var watch = new JobPostWatchList
-                    {
-                        AddedBy = userId.ToString(),
-                        JobPostID = currentJob.JobPostId,
-                        JobPostTitle = details.JobPostTitle,
-                        JobPostDate = details.PublicationDate
-                    };
-
-                    // now add applicants
-                    var applicatsx = db.GetTableItems<WatchedClients>().Where(x => x.JobPostId == jbs.JobPostId); // get list of applicants
-                    foreach(var appItem in applicatsx)
-                    {
-                        watch.Applications.Add(JsonConvert.DeserializeObject<ApplicationProfile>(appItem.JSON));
-                    }
-
-                    retVal.Add(watch);
+                    retVal.Add(currentJob);
                 }
             }
             return retVal;
@@ -259,7 +440,7 @@ namespace ArabWaha.Core.Services
         }
 
 
-        public async Task<bool> DeleteCompanyUser(int userId = 0)
+        public async Task<bool> DeleteCompanyUserAsync(int userId = 0)
         {
             // call api service to delete user
             // **************** TODO *********************
@@ -350,7 +531,7 @@ namespace ArabWaha.Core.Services
             return source;
         }
 
-        // basic sync for db items  
+        // basic sync for db items  .. NOTE uses dummy items at the moment for debugging
         public async void SyncAPiToDB()
         {
             // get db connection
@@ -497,7 +678,55 @@ namespace ArabWaha.Core.Services
                 }
             }
 
+            // event data we need
+            // add in any events from dummy data
+            var eventsDb = db.GetTableItems<EventDetails>();
 
+            if (eventsDb != null && eventsDb.Count == 0)
+            {
+                var eventList = DummyEmpData.GetEventsList();
+                foreach (var itemEv in eventList)
+                {
+                        // new item so add it in :) 
+                        EventDetails item = new EventDetails
+                        {
+                            EventId = itemEv.EventId,
+                            EventEnd = itemEv.EventEnd,
+                            EventLocation = itemEv.EventLocation,
+                            EventStart = itemEv.EventStart,
+                            EventTitle = itemEv.EventTitle,
+                            Status = itemEv.Status,
+                            AdditionalInfo = itemEv.AdditionalInfo,
+                            Email = itemEv.Email,
+                            PhoneNumber = itemEv.PhoneNumber,
+                            JobPostId = itemEv.JobPostId
+
+                        };
+
+                        db.InsertRecord<EventDetails>(item);
+                }
+            }
+
+            // insert dummy compaints data
+            var ComplaintsDb = db.GetTableItems<ComplaintRaised>();
+
+            if (ComplaintsDb != null && ComplaintsDb.Count == 0)
+            {
+                // fill with new data
+                var compaintsData = DummyEmpData.GetComplaintsList();
+                foreach (var itemEv in compaintsData)
+                {
+                        db.InsertRecord<ComplaintRaised>(new ComplaintRaised
+                        {
+                            ComplaintText = itemEv.ComplaintText,
+                            ComplaintId = itemEv.ComplaintId,
+                            Subject = itemEv.Subject,
+                            Status = itemEv.Status,
+                            CreatedOn = itemEv.CreatedOn,
+                            ClosedOn = itemEv.ClosedOn
+                        });
+                }
+            }
 
         }
     }

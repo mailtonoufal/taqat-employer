@@ -2,6 +2,8 @@
 <local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:gb="clr-namespace:ArabWaha.Employer"
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
              x:Class="ArabWaha.Employer.Views.SearchPage" 
@@ -25,21 +27,21 @@
 
         <Image Source="Logo.png" Grid.Row="0" HeightRequest="90" VerticalOptions="Start" HorizontalOptions="End"></Image>
 
-            <Label Text="Start now and post your job vacancies on TAQAT to receive applications and find the best candidates" HorizontalTextAlignment="End"
+        <Label Text="{lEx:Translate StartTab1Text}" HorizontalTextAlignment="End"
                    Grid.Row ="1" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Style="{StaticResource InfoBodyText}" />
 
-            <SearchBar x:Name="txtSearch" Grid.Row="2" Placeholder="Keyword" HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="{Binding SearchText,Mode=TwoWay}"
+        <SearchBar x:Name="txtSearch" Grid.Row="2" Placeholder="{lEx:Translate SearchKeywordText}" HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="{Binding SearchText,Mode=TwoWay}"
                        TextColor="Black" PlaceholderColor="Gray" BackgroundColor="White" FontSize="25"   />
 
-            <SearchBar  x:Name="txtLocation" Grid.Row="3" Placeholder="Location" HorizontalOptions="FillAndExpand" VerticalOptions="End"  Text="{Binding SearchLocation,Mode=TwoWay}"
+        <SearchBar  x:Name="txtLocation" Grid.Row="3" Placeholder="{lEx:Translate SearchLocationText}" HorizontalOptions="FillAndExpand" VerticalOptions="End"  Text="{Binding SearchLocation,Mode=TwoWay}"
                        TextColor="Black" PlaceholderColor="Gray" BackgroundColor="White" FontSize="25" SearchCommand="{Binding SearchCommand}"   />
 
 
             <Button Grid.Row="4" HorizontalOptions= "FillAndExpand" VerticalOptions="End" Command="{Binding SearchCommand}"
-						Text="Search" Style="{StaticResource GreenButton}" >
+						Text="{lEx:Translate SearchText}" Style="{StaticResource GreenButton}" >
             </Button>
 
-            <Label  Grid.Row="5" Text="Already have an account? Sign in" VerticalOptions="EndAndExpand" 
+        <Label  Grid.Row="5" Text="{lEx:Translate SearchAlreadyHaveAccount}" VerticalOptions="EndAndExpand" 
                     HorizontalOptions="CenterAndExpand" TextColor="Gray" FontSize="20"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SignInCommand}" NumberOfTapsRequired="1" />

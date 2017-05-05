@@ -23,7 +23,6 @@ namespace ArabWaha.Employer.ViewModels
 
         public CompanyEditUserDetailsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            Title = "Edit Personal Details";
             SaveCommand = new DelegateCommand(Save);
         }
 

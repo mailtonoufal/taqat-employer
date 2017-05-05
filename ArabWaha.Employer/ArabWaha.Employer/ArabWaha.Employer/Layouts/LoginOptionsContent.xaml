@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              x:Class="ArabWaha.Employer.Layouts.LoginOptionsContent">
     <ContentView.Content>
 
@@ -14,8 +15,8 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Label Text="Sign in" HorizontalOptions="End" Style="{StaticResource HeaderTextLargeWhite}" Grid.Row="1"  ></Label>
-            <Label Text="Sign in as an employer using your MoL or NGL login, sign up, or continue as a guest " HorizontalOptions="End" HorizontalTextAlignment="End"  Style="{StaticResource InfoBodyText}" FontAttributes="Bold" Grid.Row="2" ></Label>
+            <Label Text="{lEx:Translate ButtonSignIn}" HorizontalOptions="End" Style="{StaticResource HeaderTextLargeWhite}" Grid.Row="1"  ></Label>
+            <Label Text="{lEx:Translate WelcomeEmployerSignin}" HorizontalOptions="End" HorizontalTextAlignment="End"  Style="{StaticResource InfoBodyText}" FontAttributes="Bold" Grid.Row="2" ></Label>
             <StackLayout Grid.Row="3" VerticalOptions="Center" HorizontalOptions="Center" >
                 <Grid RowSpacing="0">
 
@@ -24,13 +25,13 @@
                         <ColumnDefinition Width=".5*" />
                     </Grid.ColumnDefinitions>
 
-                    <Button Grid.Row="0" Grid.Column="0" Text="MoL Login" HorizontalOptions="FillAndExpand"  Command="{Binding SignInExternalCommand}"  Style="{StaticResource GreenButton}" />
-                    <Button Grid.Row="0" Grid.Column="1" Text="NLG Login" HorizontalOptions="FillAndExpand"  Command="{Binding SignInCommand}"  Style="{StaticResource GreenButton}" />
-                    <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Don't have an account? Sign up" HorizontalOptions="FillAndExpand"  Command="{Binding SignUpCommand}" BackgroundColor="Transparent" TextColor="White" HeightRequest="40" />
+                    <Button Grid.Row="0" Grid.Column="0" Text="{lEx:Translate StartMoLLogin}" HorizontalOptions="FillAndExpand"  Command="{Binding SignInExternalCommand}"  Style="{StaticResource GreenButton}" />
+                    <Button Grid.Row="0" Grid.Column="1" Text="{lEx:Translate StartNLGLogin}" HorizontalOptions="FillAndExpand"  Command="{Binding SignInCommand}"  Style="{StaticResource GreenButton}" />
+                    <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="{lEx:Translate LoginNoAccountSignup}" HorizontalOptions="FillAndExpand"  Command="{Binding SignUpCommand}" BackgroundColor="Transparent" TextColor="White" HeightRequest="40" />
                 </Grid>
             </StackLayout>
             <StackLayout Grid.Row="4" VerticalOptions="FillAndExpand">
-                <Label Text="Continue As Guest" VerticalOptions="End" HorizontalOptions="Start" Style="{StaticResource InfoBodyText}"  >
+                <Label Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="End" HorizontalOptions="Start" Style="{StaticResource InfoBodyText}"  >
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer
                                             Command="{Binding ContinueAsGuestCommand}"

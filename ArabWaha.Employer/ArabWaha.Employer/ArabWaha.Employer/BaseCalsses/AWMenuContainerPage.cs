@@ -12,16 +12,26 @@ namespace ArabWaha.Employer.BaseCalsses
 {
     public partial class AWMenuContainerPage : MenuContainerPage
     {
+
+        private MenuMaster _mainMenu;
         public AWMenuContainerPage()
         {
-            this.SlideMenu = new MenuMaster();
+            _mainMenu = new MenuMaster();
+            this.SlideMenu = _mainMenu;
             var tbarItem = new ToolbarItem()
             {
                 Icon = "hamburger.png",
-                Command = new Command((sender) => { ShowMenu(); }),
+                Command = new Command((sender) => { ShowMainMenu(); }),
                 Priority = 100,
             };
             this.ToolbarItems.Add(tbarItem);
+        }
+
+        protected virtual void ShowMainMenu()
+        {
+            this.SlideMenu = _mainMenu;
+            // default 
+            this.ShowMenu();
         }
 
         protected override void OnAppearing()

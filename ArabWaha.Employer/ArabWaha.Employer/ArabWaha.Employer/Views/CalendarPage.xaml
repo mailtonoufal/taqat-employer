@@ -1,15 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-
-                           xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
-             xmlns:schedule="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"             
-             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:control="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+            prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.CalendarPage"
              Title="{Binding Title}" NavigationPage.HasBackButton="True">
 
-    <schedule:SfSchedule x:Name="calendar"  >
-    </schedule:SfSchedule>
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Padding="20" >
 
-</local:AWMenuContainerPage>
+        <control:SfSchedule Grid.Row="1" x:Name="Schedule" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+						DataSource="{Binding EventsCollection}"
+						ScheduleView = "MonthView"
+						ShowAppointmentsInline="True" 
+                        AppointmentViewLayout="Overlay"
+                        Locale="{Binding Locale}"
+                        FirstDayOfWeek="1"
+                        MonthInlineAppointmentTapped="Schedule_MonthInlineAppointmentTapped"
+                            
+                            />
+    </StackLayout>
+    
+</ContentPage>

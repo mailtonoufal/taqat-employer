@@ -2,6 +2,7 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
             xmlns:local="clr-namespace:ArabWaha.Employer.Controls"
+            xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"              
             xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"   
             x:Class="ArabWaha.Employer.Layouts.ApplicationsWatchListView">
     <ContentView.Content>
@@ -25,8 +26,8 @@
                                     <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="1" VerticalOptions="FillAndExpand"  />
 
                                     <StackLayout  Grid.Row="0">
-                                        <Label Text="{Binding JobPostTitle}"  Style="{StaticResource FormHeaderLabelBlue}"  HorizontalTextAlignment="End" HorizontalOptions="FillAndExpand"></Label>
-                                        <Label Text="{Binding JobPostInfo}"  Style="{StaticResource InfoBodyTextSmallBlue}"  HorizontalTextAlignment="End" HorizontalOptions="FillAndExpand"></Label>
+                                        <Label Text="{Binding JobDetails.JobPostTitle}"  Style="{StaticResource FormHeaderLabelBlue}"  HorizontalTextAlignment="End" HorizontalOptions="FillAndExpand"></Label>
+                                        <Label Text="{Binding JobDetails.JobPostInfo}"  Style="{StaticResource InfoBodyTextSmallBlue}"  HorizontalTextAlignment="End" HorizontalOptions="FillAndExpand"></Label>
                                     </StackLayout>
 
 
@@ -46,11 +47,12 @@
                                                         <Label Text="{Binding Name,StringFormat='{0}'}" Style="{StaticResource FormHeaderLabelBlue}"></Label>
                                                         <Label Text="{Binding Availability,StringFormat='Availability: {0}'}" Style="{StaticResource FormHeaderLabelBlue}"></Label>
                                                     </StackLayout>
-                                                    <Label Grid.Row="0" Grid.Column="1" Text="+ Invite to Apply" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" VerticalOptions="Center">
+                                                    <Label Grid.Row="0" Grid.Column="1" Text="{lEx:Translate ApplicationsInviteToApply}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" VerticalOptions="Center">
                                                         <Label.GestureRecognizers>
                                                             <TapGestureRecognizer 
-                                                                     Command="{Binding Path=BindingContext.InviteCommand, Source={x:Reference AppPage}}"     
-                                                                    NumberOfTapsRequired="1" />
+                                                                     Command="{Binding Path=BindingContext.InviteCommand, Source={x:Reference AppPage}}"  
+                                                                     CommandParameter="{Binding .}"
+                                                                     NumberOfTapsRequired="1" />
                                                         </Label.GestureRecognizers>
                                                     </Label>
                                                 </Grid>

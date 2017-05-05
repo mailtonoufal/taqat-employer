@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-              xmlns:bh="clr-namespace:Pillar;assembly=Pillar"                          
+             xmlns:bh="clr-namespace:Pillar;assembly=Pillar" 
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"             
              x:Class="ArabWaha.Employer.Layouts.Company.CompanyUsersRecruiters">
     <ContentView.Content>
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-            <Button Text="+ Add Recruiter" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding AddRecruiterCommand}"  />
+            <Button Text="{lEx:Translate AddRecruiterButton}" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding AddRecruiterCommand}"  />
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
                 <ListView x:Name="ParentListView" ItemsSource="{Binding RecruiterUsers}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
                       HasUnevenRows="True" SeparatorVisibility="None"
@@ -18,10 +19,10 @@
                         <DataTemplate>
                             <ViewCell x:Name="myCell">
                                 <ViewCell.ContextActions>
-                                    <MenuItem Text="Delete" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
+                                    <MenuItem Text="{lEx:Translate MenuDelete}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
                                       Command="{Binding DeleteRecCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}" 
                                       IsDestructive="True"  />
-                                    <MenuItem Text="Edit" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
+                                    <MenuItem Text="{lEx:Translate MenuEdit}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
                                           Command="{Binding EditRecCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}"  />
                                 </ViewCell.ContextActions>
 

@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:lEx="clr-namespace:ArabWaha.Employee.Helpers"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employee.Views.Details.NotificationDetailsPage"
              BackgroundColor="White">
     <StackLayout>
-        <Label Text="Notification Message" Style="{StaticResource SolidBodyTextBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+        <Label Text="{lEx:Translate LabelNotificationsHeaderText}" Style="{StaticResource SolidBodyTextBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
         <Grid >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5"/>
@@ -15,16 +16,16 @@
                 <ColumnDefinition Width="5"/>
             </Grid.ColumnDefinitions>
 
-            <Label Text="Subject:" Grid.Row="1" Grid.Column="1" TextColor="Blue" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            <Label Text="{lEx:Translate LabelNotificationsSubjectText}" Grid.Row="1" Grid.Column="1" TextColor="Blue" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
             <Label Text="{Binding NotifyItem.Title}" Grid.Row="1" Grid.Column="2" TextColor="Gray" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
 
-            <Label Text="Received:" Grid.Row="2" Grid.Column="1" TextColor="Blue" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            <Label Text="{lEx:Translate LabelNotificationsReceivedText}" Grid.Row="2" Grid.Column="1" TextColor="Blue" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
             <Label Text="{Binding NotifyItem.ReceivedFormatted}" Grid.Row="2" Grid.Column="2" TextColor="Gray" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
 
-            <Label Text="Status:" Grid.Row="3" Grid.Column="1" TextColor="Blue" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            <Label Text="{lEx:Translate LabelNotificationsStatusText}" Grid.Row="3" Grid.Column="1" TextColor="Blue" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
             <Label Text="{Binding NotifyItem.Status}" Grid.Row="3" Grid.Column="2" TextColor="Gray" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
 
-            <Label Text="Notification Message:" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" TextColor="Blue" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
+            <Label Text="{lEx:Translate LabelNotificationsHeaderText}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" TextColor="Blue" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
             <Label Text="{Binding NotifyItem.Body}" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" TextColor="Gray" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
 
         </Grid>

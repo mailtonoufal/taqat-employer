@@ -3,60 +3,101 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
+              xmlns:gb="clr-namespace:ArabWaha.Employee"
+             xmlns:lEx="clr-namespace:ArabWaha.Employee.Helpers"
             xmlns:local="clr-namespace:ArabWaha.Employee.BaseClasses" 
              x:Class="ArabWaha.Employee.Views.Settings.ComplaintsPage"
-             BackgroundColor="White">
+             BackgroundColor="White"
+             x:Name="ParentPage">
+
 
     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
-        <Label Text="Complaints" Style="{StaticResource SolidBodyTextBlue}" 
+        <Label Text="{lEx:Translate Complaints}" Style="{StaticResource SolidBodyTextBlue}" 
                HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
         <!--<StackLayout VerticalOptions="StartAndExpand">-->
 
-            <ListView ItemsSource="{Binding ComplaintsSource}" 
+        <ListView ItemsSource="{Binding ComplaintsSource}" 
                       HorizontalOptions="FillAndExpand" 
                       VerticalOptions="FillAndExpand"
                       HasUnevenRows="True" 
                       SeparatorVisibility="None" 
                       CachingStrategy="RecycleElement"                      >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
                             <Grid HorizontalOptions="FillAndExpand">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="5" />
                                     <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="5" />
                                 </Grid.ColumnDefinitions>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="35" />
-                                        <RowDefinition Height="20" />
-                                        <RowDefinition Height="20" />
-                                        <RowDefinition Height="20" />
-                                        <RowDefinition Height="20" />
-                                        <RowDefinition Height="*" />
-                                        <RowDefinition Height="5" />
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="5" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="5" />
                                 </Grid.RowDefinitions>
                                 <Label Text="{Binding Subject}" Style="{StaticResource SolidBodyTextLightBlueReduced}" 
-                                           HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="1"/>
-                                    <Label Text="{Binding Status, StringFormat='Status: {0}'}" Style="{StaticResource CellBodyTextMedGray}" 
-                                       HorizontalTextAlignment="Start"  Grid.Column="1" Grid.Row="1"/>
-                                <Label Text="{Binding ComplaintId, StringFormat='Complaint ID: {0}'}" Style="{StaticResource CellBodyTextMedGray}" 
-                                       HorizontalTextAlignment="Start" Grid.Column="1"  Grid.Row="2"/>
-                                <Label Text="{Binding CreatedOn, StringFormat='Created On: {0}'}" Style="{StaticResource CellBodyTextMedGray}"
-                                       HorizontalTextAlignment="Start" Grid.Column="1"  Grid.Row="3"/>
-                                <Label Text="{Binding ClosedOn, StringFormat='Closed On: {0}'}" Style="{StaticResource CellBodyTextMedGray}" 
-                                       HorizontalTextAlignment="Start" Grid.Column="1"  Grid.Row="4"/>
-                                <Label Text="{Binding ComplaintText}" Style="{StaticResource CellBodyTextMedGray}" HorizontalTextAlignment="Start"  
-                                       Grid.Column="1" Grid.Row="5"/>
-                           
+                                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+
+                                <Label Text="{lEx:Translate ComplaintId}" Style="{StaticResource InfoHeaderTextSmallBlue}" 
+                                    HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" 
+                                    Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}"  
+                                    Grid.Row="2"/>
+
+                                <Label Text="{Binding ComplaintId}" Style="{StaticResource CellBodyTextMedGray}" 
+                                    HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}"  Grid.Row="2"/>
+
+                                <Label Text="{lEx:Translate Category}" Style="{StaticResource InfoHeaderTextSmallBlue}" 
+                                    HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}"  Grid.Row="3"/>
+
+                                <Label Text="{Binding Category}" 
+                                       Style="{StaticResource CellBodyTextMedGray}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}"  
+                                       Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" Grid.Row="3"/>
+
+                                <Label Text="{lEx:Translate Description}" Style="{StaticResource InfoHeaderTextSmallBlue}" 
+                                    HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}"  Grid.Row="4"/>
+
+                                <Label Text="{Binding ComplaintText}" Style="{StaticResource CellBodyTextMedGray}" 
+                                       HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}"  
+                                       Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2"/>
+
+                                <Label Text="{lEx:Translate Status}" Style="{StaticResource InfoHeaderTextSmallBlue}" 
+                                    HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}"  Grid.Row="6"/>
+
+                                <Label Text="{Binding Status}" Style="{StaticResource CellBodyTextMedGray}" 
+                                       HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}"  Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" Grid.Row="6"/>
+
+                                <Label Text="{lEx:Translate CreatedOn}" Style="{StaticResource InfoHeaderTextSmallBlue}" 
+                                    HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}"  Grid.Row="7"/>
+
+                                <Label Text="{Binding CreatedOn}" Style="{StaticResource CellBodyTextMedGray}"
+                                       HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}"  Grid.Row="7"/>
+
+                                <Label Text="{lEx:Translate ClosedOn}" Style="{StaticResource InfoHeaderTextSmallBlue}" 
+                                    HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}"  Grid.Row="8"/>
+
+                                <Label Text="{Binding ClosedOn}" Style="{StaticResource CellBodyTextMedGray}" 
+                                       HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}"  Grid.Row="8"/>
+
+
                             </Grid>
                         </StackLayout>
-                        </ViewCell>
+                    </ViewCell>
 
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
 
         <!--</StackLayout>-->

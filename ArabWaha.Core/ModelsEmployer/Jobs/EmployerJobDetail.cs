@@ -11,8 +11,20 @@ namespace ArabWaha.Core.ModelsEmployer.Jobs
 {
     public class EmployerJobDetail
     {
+
+        public EmployerJobDetail()
+        {
+            // init for new object - ie add new job
+            JobLanguages = new ObservableCollection<JobDetailLanguage>();
+            JobLicenses = new ObservableCollection<JobDetailLicenses>();
+            JobTraining = new ObservableCollection<EmployerJobDetailTraining>();            
+        }
+
         [JsonProperty("jobPostId")]
         public string JobPostId { get; set; }
+
+        [JsonProperty("userId")]
+        public int UserId { get; set; }
 
         [JsonProperty("jobPostTitle")]
         public string JobPostTitle { get; set; }
@@ -201,5 +213,31 @@ namespace ArabWaha.Core.ModelsEmployer.Jobs
                 return val;
             }
         }
+
+        [JsonIgnore]
+        public string PostedText { get; set; }
+
+        [JsonIgnore]
+        public string GetPostedInfo
+        {
+            get
+            {
+                return $"{PostedText} {Posted}";
+            }
+        }
+
+        [JsonIgnore]
+        public string JobStatusText { get; set; }
+        [JsonIgnore]
+        public string GetJobStatusInfo
+        {
+            get
+            {
+                return $"{JobStatusText} {Status}";
+            }
+        }
+
+
+
     }
 }

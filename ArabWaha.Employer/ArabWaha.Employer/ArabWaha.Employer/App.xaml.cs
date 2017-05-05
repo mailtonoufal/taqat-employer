@@ -4,14 +4,13 @@ using Xamarin.Forms;
 using System;
 using ArabWaha.Core.Services;
 using ArabWaha.Employer.Views.Menus;
-using ArabWaha.Employer.Views;
 using ArabWaha.Employer.Views.Home;
-//using ArabWaha.Employer.Views.Company;
 using ArabWaha.Employer.ViewModels;
 using System.Linq;
-using ArabWaha.Employer.ViewModels;
 using ArabWaha.Employer.Interfaces;
 using System.Threading.Tasks;
+using ArabWaha.Employer.Views.Detail;
+using ArabWaha.Employer.Views.Settings;
 
 namespace ArabWaha.Employer
 {
@@ -22,18 +21,31 @@ namespace ArabWaha.Employer
         public static LayoutAlignment AlignData { get; set; }
 
         public static TextAlignment AlignText { get; set; }
+        public static TextAlignment AlignLabelText { get; set; }
 
         public static LayoutOptions HorizontalLayoutOptions { get; set; }
 
         public static void SetupCulture()
         {
-            ApiServiceIndividual svr = new ApiServiceIndividual();
+            ApiService svr = new ApiService();
             GlobalSetting.CultureCode = svr.GetCurrentCulture();
             GlobalSetting.AlignLabel = GlobalSetting.CultureCode == "ar" ? LayoutAlignment.End : LayoutAlignment.Start;
             GlobalSetting.AlignData = GlobalSetting.CultureCode == "ar" ? LayoutAlignment.Start : LayoutAlignment.End;
             GlobalSetting.HorizontalLayoutOptions = GlobalSetting.CultureCode == "ar" ? LayoutOptions.EndAndExpand : LayoutOptions.StartAndExpand;
-            GlobalSetting.AlignText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End : TextAlignment.Start;
+
+            GlobalSetting.AlignText = GlobalSetting.CultureCode == "ar" ? TextAlignment.Start : TextAlignment.End;
+            GlobalSetting.AlignLabelText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End: TextAlignment.Start;
+
         }
+
+        #region well hacky till i fix this correctly for view cell items
+
+        public static int LabelColumn { get; set; }
+        public static int DataColumn { get; set; }
+        public static int ImageColumn { get; set; }
+
+
+        #endregion
     }
 
 
@@ -64,8 +76,14 @@ namespace ArabWaha.Employer
 
         public async void SetStartPage()
         {
-            await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
-        }
+            try {
+                await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
+            }
+            catch(Exception ex)
+            {
+                var t = ex.Message;
+            }
+         }
 
         async Task SyncDbAsync()
         {
@@ -119,7 +137,14 @@ namespace ArabWaha.Employer
             Container.RegisterTypeForNavigation<ApplicationsPage>();
             Container.RegisterTypeForNavigation<ApplicationDetailsPage>();
             Container.RegisterTypeForNavigation<LoginPage, LoginPageViewModel>();
-        //    Container.RegisterTypeForNavigation<WatchListPage>();
+            //    Container.RegisterTypeForNavigation<WatchListPage>();
+            Container.RegisterTypeForNavigation<ProgramsPage, ProgramsPageViewModel>();
+            Container.RegisterTypeForNavigation<ServicesPage, ServicesPageViewModel>();
+            Container.RegisterTypeForNavigation<EventsDetailPage, EventsDetailPageViewModel>();
+            Container.RegisterTypeForNavigation<AddNewComplaintPage, AddNewComplaintPageViewModel>();
+            Container.RegisterTypeForNavigation<CandidateInvitePage>();
+            Container.RegisterTypeForNavigation<MatchingCandidatesPage>();
+            Container.RegisterTypeForNavigation<FiltersPage>();
         }
 
         #region Singleton instance for nav and user checking

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:local="clr-namespace:ArabWaha.Employer.Controls"    
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"                          
              xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"                          
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.ApplicationDetailsPage"
@@ -17,11 +18,11 @@
         </StackLayout>
         <ScrollView>
             <StackLayout VerticalOptions="Start" HorizontalOptions="Fill">
-                <Label Text="Description" Style="{StaticResource HeaderTextMediumBlue }" HorizontalOptions="End" HorizontalTextAlignment="End"></Label>
+                <Label Text="{lEx:Translate Description}" Style="{StaticResource HeaderTextMediumBlue }" HorizontalOptions="End" HorizontalTextAlignment="End"></Label>
                 <Label Text="{Binding JobApplications.JobDetails.JobDescription}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End"></Label>
             </StackLayout>
             <StackLayout>
-            <Label Text="Applications" Style="{StaticResource HeaderTextMediumBlue }" HorizontalOptions="End" HorizontalTextAlignment="End"></Label>
+                <Label Text="{lEx:Translate Applications}" Style="{StaticResource HeaderTextMediumBlue }" HorizontalOptions="End" HorizontalTextAlignment="End"></Label>
                 <controls:RepeaterView ItemsSource="{Binding JobApplications.Applications}" Spacing="5">
                     <controls:RepeaterView.ItemTemplate>
                         <DataTemplate>

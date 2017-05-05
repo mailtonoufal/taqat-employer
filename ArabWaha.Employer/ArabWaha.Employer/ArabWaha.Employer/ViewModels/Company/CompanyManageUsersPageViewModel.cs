@@ -2,6 +2,7 @@
 using ArabWaha.Core.Services;
 using ArabWaha.Employer.BaseCalsses;
 using ArabWaha.Employer.Controls;
+using ArabWaha.Employer.Helpers;
 using ArabWaha.Employer.Views;
 using Prism.Commands;
 using Prism.Mvvm;
@@ -18,6 +19,7 @@ namespace ArabWaha.Employer.ViewModels
 {
     public class CompanyManageUsersPageViewModel : AWMVVMBase, INavigationAware
     {
+        private int companyId;
 
         private string _tab1Test;
         public string Tab1Text
@@ -65,11 +67,11 @@ namespace ArabWaha.Employer.ViewModels
 
         public CompanyManageUsersPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            Title = "Manage Company Users";
+            Title = TranslateExtension.GetString("ManageCompanyUsersTitle");
             IsBusy = false;
 
-            Tab1Text = "Representatives";
-            Tab2Text = "Recruiters";
+            Tab1Text = TranslateExtension.GetString("RepresentativesTab"); 
+            Tab2Text = TranslateExtension.GetString("RecruitersTab");
 
             IsTab1Selected = true;
 
@@ -95,15 +97,38 @@ namespace ArabWaha.Employer.ViewModels
             _nav.NavigateAsync($"{nameof(CompanyUserDetailsPage)}?UserId={obj.UserId}");
         }
 
-        private void DeleteRec(CompanyUserDetails obj)
+        private async void DeleteRec(CompanyUserDetails obj)
         {
-            this._dialog.DisplayAlertAsync("Delete", "Delete Recruiter User?", "OK", "Cancel");
+            TranslateExtension trn = new TranslateExtension();
 
+            var delete = trn.GetProviderValueString("ButtonDelete");
+            var deleteMsg = trn.GetProviderValueString("DeleteUserRecruiterMessage");
+            var ok = trn.GetProviderValueString("ButtonOk");
+            var cancel = trn.GetProviderValueString("ButtonCancel");
+            var res = await this._dialog.DisplayAlertAsync(delete, deleteMsg, ok, cancel);
+            ApiService api = new ApiService();
+            if (res == true)
+            {
+                await api.DeleteCompanyUserAsync(obj.UserId);
+                UpdateRecruiters(companyId);
+            }
         }
+    
 
-        private void DeleteRep(CompanyUserDetails obj)
+        private async void DeleteRep(CompanyUserDetails obj)
         {
-            this._dialog.DisplayAlertAsync("Delete", "Delete Representative User?", "OK", "Cancel");
+            TranslateExtension trn = new TranslateExtension();
+            var delete = trn.GetProviderValueString("ButtonDelete");
+            var deleteMsg = trn.GetProviderValueString("DeleteUserRepresentativeMessage");
+            var ok = trn.GetProviderValueString("ButtonOk");
+            var cancel = trn.GetProviderValueString("ButtonCancel");
+            var res = await this._dialog.DisplayAlertAsync(delete, deleteMsg, ok, cancel);
+            ApiService api = new ApiService();
+            if (res == true)
+            {
+                await api.DeleteCompanyUserAsync(obj.UserId);
+                UpdateRepresentatives(companyId);
+            }
         }
 
         private void EditUser(CompanyUserDetails obj)
@@ -134,25 +159,33 @@ namespace ArabWaha.Employer.ViewModels
             IsTab2Selected = !IsTab1Selected;
         }
 
-        void LoadData()
+        void LoadData(int companyId)
         {
 
-            Task.Run(async () =>
-            {
-                // get data
-                ApiService apiServ = new ApiService();
-                RepresentativeUsers = await apiServ.GetCompanyRepresentativeUsersAsync(0);
-            });
-
-            Task.Run(async () =>
-            {
-                // get data
-                ApiService apiServ = new ApiService();
-                RecruiterUsers = await apiServ.GetCompanyRecruiterUserssAsync(100);
-            });
+            UpdateRepresentatives(companyId);
+            UpdateRecruiters(companyId);
 
         }
 
+        void UpdateRepresentatives(int companyId)
+        {
+            Task.Run(async () =>
+            {
+                // get data
+                ApiService apiServ = new ApiService();
+                RepresentativeUsers = await apiServ.GetCompanyRepresentativeUsersAsync(companyId);
+            });
+        }
+
+        void UpdateRecruiters(int companyId)
+        {
+            Task.Run(async () =>
+            {
+                // get data
+                ApiService apiServ = new ApiService();
+                RecruiterUsers = await apiServ.GetCompanyRecruiterUserssAsync(companyId);
+            });
+        }
 
 
         #region Commands
@@ -179,11 +212,13 @@ namespace ArabWaha.Employer.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
+            LoadData(0);
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            LoadData();
+            // In theory only one company id so we should set it globally when user has logged in..       
+            LoadData(0);
         }
 
         #endregion

@@ -17,6 +17,32 @@ namespace ArabWaha.Core.Services
 {
     public class ApiServiceIndividual
     {
+        // mechanism to get default values for dropdowns
+        public async Task<ObservableCollection<AppValues>> GetDefaultValuesAsync(string Category, string parentKey = "")
+        {
+
+            // grab data from database
+            DbAccessor db = new DbAccessor();
+            var Source = UtilHelper.ConvertToObservable<AppValues>(db.GetTableItemsObservable<AppValues>().Where(x => x.CatType == Category).ToList());
+
+            // filter list if we just need root parent values. 
+            if (!string.IsNullOrEmpty(parentKey))
+                Source = UtilHelper.ConvertToObservable<AppValues>(Source.Where(x => x.ParentKey == parentKey).ToList());
+
+
+
+            // grab the current culture here and set the value field
+            var cult = this.GetCurrentCulture();
+
+            if (cult == "ar")
+                foreach (var item in Source) item.Value = item.Arabic;
+            else
+                foreach (var item in Source) item.Value = item.English;
+
+            return Source;
+        }
+
+
         public async Task<ObservableCollection<Announcement>> GetAnnouncementsAsync()
         {
             // would call api async here and await it..
@@ -44,13 +70,52 @@ namespace ArabWaha.Core.Services
             return Source;
         }
 
+        public async Task<ObservableCollection<EmployerProgram>> GetAllProgramsAsync(string statusText="")
+        {
+            DbAccessor db = new DbAccessor();
+            var source = new ObservableCollection<EmployerProgram>();
+
+            var dbsource = db.GetTableItemsObservable<DBAccess.Programs>();
+            foreach (var item in dbsource)
+            {
+                var ix = JsonConvert.DeserializeObject<EmployerProgram>(item.JSON);
+                if (!string.IsNullOrEmpty(statusText)) ix.StatusLabelText = statusText;
+                source.Add(ix);
+            }
+            return source;
+        }
+
+        // just pull all the badges and identify the status etc 
+        public async Task<ObservableCollection<Badges>> GetBadgesAsync()
+        {
+            DbAccessor db = new DbAccessor();
+            var Source = db.GetTableItemsObservable<Badges>();
+            return Source;
+        }
+
         public async Task<ObservableCollection<ComplaintRaised>> GetComplaintsAsync()
         {
             // grab data from database
             DbAccessor db = new DbAccessor();
             var Source = db.GetTableItemsObservable<ComplaintRaised>();
-            return Source;
+
+            // order by date asc so we see latest first
+            var newsource = UtilHelper.ConvertToObservable<ComplaintRaised>(Source.OrderByDescending(x => x.CreateDateCast).ToList());
+
+            return newsource;
         }
+
+        public async Task AddNewComplaint(ComplaintRaised newcompaint)
+        {
+            // first push to api to get a new complaint id
+            int complaintid = UtilHelper.getRandomIdInt();
+
+            // now add new complaint id to current complaint and insert into db.
+            newcompaint.ComplaintId = complaintid;
+            DbAccessor db = new DbAccessor();
+            db.InsertRecord<ComplaintRaised>(newcompaint);
+        }
+
 
         public async Task<EventDetails> GetEventSingleAsync(string eventId)
         {
@@ -201,9 +266,6 @@ namespace ArabWaha.Core.Services
                 var prgApi = DummyData.getProgramList();
                 foreach (var pg in prgApi)
                 {
-                    var existing = progdb.Where(x => x.ProgramId == pg.ProgramId).FirstOrDefault();
-                    if (existing == null)
-                    {
                         // new item so add it in :) 
                         DBAccess.Programs item = new DBAccess.Programs
                         {
@@ -212,12 +274,6 @@ namespace ArabWaha.Core.Services
                         };
 
                         db.InsertRecord<DBAccess.Programs>(item);
-                    }
-                    else // update
-                    {
-                        existing.JSON = JsonConvert.SerializeObject(pg);
-                        db.UpdateRecord<DBAccess.Programs>(existing);
-                    }
                 }
             }
 
@@ -243,9 +299,6 @@ namespace ArabWaha.Core.Services
 
                 foreach (var jb in allJobs)
                 {
-                    var existing = jobsdb.Where(x => x.JobPostId.ToString() == jb.JobPostId).FirstOrDefault();
-                    if (existing == null)
-                    {
                         // new item so add it in :) 
                         DBAccess.JobsData item = new DBAccess.JobsData
                         {
@@ -254,12 +307,6 @@ namespace ArabWaha.Core.Services
                         };
 
                         db.InsertRecord<DBAccess.JobsData>(item);
-                    }
-                    else // update
-                    {
-                        existing.JSON = JsonConvert.SerializeObject(jb);
-                        db.UpdateRecord<DBAccess.JobsData>(existing);
-                    }
                 }
             }
 
@@ -272,9 +319,6 @@ namespace ArabWaha.Core.Services
 
                 foreach (var jb in appliedJbs)
                     {
-                        var existing = jobsAppdb.Where(x => x.JobPostId == jb.JobPostId).FirstOrDefault();
-                        if (existing == null)
-                        {
                             // new item so add it in :) 
                             DBAccess.AppliedJobs item = new DBAccess.AppliedJobs
                             {
@@ -287,12 +331,6 @@ namespace ArabWaha.Core.Services
                             };
 
                             db.InsertRecord<DBAccess.AppliedJobs>(item);
-                        }
-                        else // update
-                        {
-                            existing.ApplicationStatus = jb.ApplicationStatus;
-                            db.UpdateRecord<DBAccess.AppliedJobs>(existing);
-                        }
                     }
                 }
         
@@ -304,9 +342,6 @@ namespace ArabWaha.Core.Services
                 var notifyList = DummyData.GetNotificationsList();
                 foreach (var nt in notifyList)
                 {
-                    var existing = notifyDb.Where(x => x.NotificationId == nt.NotificationId).FirstOrDefault();
-                    if (existing == null)
-                    {
                         // new item so add it in :) 
                         Notifications item = new Notifications
                         {
@@ -318,7 +353,6 @@ namespace ArabWaha.Core.Services
                         };
 
                         db.InsertRecord<Notifications>(item);
-                    }
                 }
             }
             // add in any events from dummy data
@@ -329,9 +363,6 @@ namespace ArabWaha.Core.Services
                 var eventList = DummyData.GetEventsList();
                 foreach (var itemEv in eventList)
                 {
-                    var existing = eventsDb.Where(x => x.EventId == itemEv.EventId).FirstOrDefault();
-                    if (existing == null)
-                    {
                         // new item so add it in :) 
                         EventDetails item = new EventDetails
                         {
@@ -349,35 +380,59 @@ namespace ArabWaha.Core.Services
                         };
 
                         db.InsertRecord<EventDetails>(item);
-                    }
                 }
             }
 
-            // insert dummy compaints data
-            var ComplaintsDb = db.GetTableItems<ComplaintRaised>();
-
-            if(ComplaintsDb !=null && ComplaintsDb.Count==0)
+            try
             {
-                // fill with new data
-                var compaintsData = DummyData.GetComplaintsList();
-                foreach (var itemEv in compaintsData)
+
+                // insert dummy compaints data
+                var ComplaintsDb = db.GetTableItems<ComplaintRaised>();
+
+                if (ComplaintsDb != null && ComplaintsDb.Count == 0)
                 {
-                    var existing = ComplaintsDb.Where(x => x.ComplaintId == itemEv.ComplaintId).FirstOrDefault();
-                    if (existing == null)
+                    // fill with new data
+                    var compaintsData = DummyData.GetComplaintsList();
+                    foreach (var itemEv in compaintsData)
                     {
-                        db.InsertRecord<ComplaintRaised>(new ComplaintRaised
-                        {
-                            ComplaintText = itemEv.ComplaintText,
-                            ComplaintId = itemEv.ComplaintId,
-                            Subject = itemEv.Subject,
-                            Status = itemEv.Status,
-                            CreatedOn = itemEv.CreatedOn,
-                            ClosedOn = itemEv.ClosedOn
-                        });
+                            db.InsertRecord<ComplaintRaised>(new ComplaintRaised
+                            {
+                                ComplaintText = itemEv.ComplaintText,
+                                ComplaintId = itemEv.ComplaintId,
+                                Subject = itemEv.Subject,
+                                Status = itemEv.Status,
+                                CreatedOn = itemEv.CreatedOn,
+                                ClosedOn = itemEv.ClosedOn
+                            });
                     }
                 }
-           }
-    }
+            }catch(Exception ex)
+            {
+                var t = ex.Message;
+            }
+
+            try
+            {
+                // badges demo data
+                var BadgesDb = db.GetTableItems<Badges>();
+
+                if (BadgesDb != null && BadgesDb.Count == 0)
+                {
+                    // fill with new data
+                    var badgesData = DummyData.GetBadgesList();
+                    foreach (var itemEv in badgesData)
+                    {
+                        Badges itexX = itemEv;
+                        db.InsertRecord<Badges>(itexX);
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                var t = ex.Message;
+            }
+
+        }
 
         // get info for job / applied / in watchlist based on jobpostid
         public JobInfo GetJobInfo(string jobpostid)
@@ -517,6 +572,26 @@ namespace ArabWaha.Core.Services
 
     public class DummyData
     {
+
+        public static List<Badges> GetBadgesList()
+        {
+            var source = new List<Badges>
+            {
+                new Badges { BadgeId=123, BadgeName="Option 1", BadgeDescription="this is the description for option 1 badge", Locked=0, BadgeStatus="Locked", BadgeIcon="" },
+                new Badges { BadgeId=124, BadgeName="Option 2", BadgeDescription="this is the description for option 2 badge", Locked=0, BadgeStatus="Locked", BadgeIcon="" },
+                new Badges { BadgeId=125, BadgeName="Option 3", BadgeDescription="this is the description for option 3 badge", Locked=1, BadgeStatus="UnLocked", BadgeIcon="" },
+                new Badges { BadgeId=126, BadgeName="Option 4", BadgeDescription="this is the description for option 4 badge", Locked=0, BadgeStatus="Locked", BadgeIcon="" },
+                new Badges { BadgeId=127, BadgeName="Option 5", BadgeDescription="this is the description for option 5 badge", Locked=1, BadgeStatus="UnLocked", BadgeIcon="" },
+                new Badges { BadgeId=128, BadgeName="Option 6", BadgeDescription="this is the description for option 6 badge", Locked=1, BadgeStatus="UnLocked", BadgeIcon="" },
+                new Badges { BadgeId=129, BadgeName="Option 7", BadgeDescription="this is the description for option 7 badge", Locked=1, BadgeStatus="UnLocked", BadgeIcon="" },
+                new Badges { BadgeId=130, BadgeName="Option 8", BadgeDescription="this is the description for option 8 badge", Locked=0, BadgeStatus="Locked", BadgeIcon="" },
+                new Badges { BadgeId=131, BadgeName="Option 9", BadgeDescription="this is the description for option 9 badge", Locked=0, BadgeStatus="Locked", BadgeIcon="" },
+
+            };
+
+            return source;
+        }
+
         public static List<AppliedJobs> GetJobApplication()
         {
             var source = new List<AppliedJobs>
@@ -708,8 +783,9 @@ namespace ArabWaha.Core.Services
                     Status="Closed",
                     ComplaintId=12345,
                     ComplaintText="Website not displaying images",
-                    CreatedOn="23/2/2017",
-                    ClosedOn="26/2/2017"
+                    Category="Website",
+                    CreatedOn="2017-2-17",
+                    ClosedOn="2017-2-26"
                 },
                 new ComplaintRaised
                 {
@@ -717,7 +793,8 @@ namespace ArabWaha.Core.Services
                     Status="In progress",
                     ComplaintId=13456,
                     ComplaintText="Cannot signin with current password. Invalid password error",
-                    CreatedOn="15/4/2017",
+                    Category="Website",
+                    CreatedOn ="2017-4-15",
                     ClosedOn=""
                 },
                 new ComplaintRaised
@@ -726,7 +803,8 @@ namespace ArabWaha.Core.Services
                     Status="In progress",
                     ComplaintId=16543,
                     ComplaintText="How can I reset my password",
-                    CreatedOn="21/2/2017",
+                    Category="Login",
+                    CreatedOn="2017-2-21",
                     ClosedOn=""
                 },
                 new ComplaintRaised
@@ -735,7 +813,8 @@ namespace ArabWaha.Core.Services
                     Status="In progress",
                     ComplaintId=12345,
                     ComplaintText="When i create an account the website rejects my information stating that it is incorrect?",
-                    CreatedOn="10/3/2017",
+                    Category="Website",
+                    CreatedOn ="2017-3-10",
                     ClosedOn=""
                 },
                 new ComplaintRaised
@@ -743,18 +822,20 @@ namespace ArabWaha.Core.Services
                     Subject="New jobs not showing",
                     Status="Closed",
                     ComplaintId=10092,
+                    Category="Website",
                     ComplaintText="I have watched 4 new jobs and they are not showing up in my watched list",
-                    CreatedOn="24/12/2016",
-                    ClosedOn="27/12/2016"
+                    CreatedOn="2017-3-25",
+                    ClosedOn="2017-3-29"
                 },
                 new ComplaintRaised
                 {
                     Subject="Website crashed",
                     Status="rejected",
                     ComplaintId=23543,
+                    Category="Website",
                     ComplaintText="When i navigate to the website it crashes my browser",
-                    CreatedOn="10/9/2016",
-                    ClosedOn="10/10/2016"
+                    CreatedOn="2016-9-10",
+                    ClosedOn="2016-10-10"
                 },
             };
 

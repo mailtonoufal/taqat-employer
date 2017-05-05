@@ -62,6 +62,249 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Account Information.
+        /// </summary>
+        internal static string AccountInformationLabel {
+            get {
+                return ResourceManager.GetString("AccountInformationLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account Status.
+        /// </summary>
+        internal static string AccountStatusLabel {
+            get {
+                return ResourceManager.GetString("AccountStatusLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to + Add Recruiter.
+        /// </summary>
+        internal static string AddRecruiterButton {
+            get {
+                return ResourceManager.GetString("AddRecruiterButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to + Add Representative.
+        /// </summary>
+        internal static string AddRepresentativeButton {
+            get {
+                return ResourceManager.GetString("AddRepresentativeButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add User.
+        /// </summary>
+        internal static string AddUserTitle {
+            get {
+                return ResourceManager.GetString("AddUserTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Agriculture Forestry Fisheries Veterinary.
+        /// </summary>
+        internal static string AgricultureForestryFisheriesVeterinary {
+            get {
+                return ResourceManager.GetString("AgricultureForestryFisheriesVeterinary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applications.
+        /// </summary>
+        internal static string Applications {
+            get {
+                return ResourceManager.GetString("Applications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to + Invite to Apply.
+        /// </summary>
+        internal static string ApplicationsInviteToApply {
+            get {
+                return ResourceManager.GetString("ApplicationsInviteToApply", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arts And Humanities.
+        /// </summary>
+        internal static string ArtsAndHumanities {
+            get {
+                return ResourceManager.GetString("ArtsAndHumanities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Assigned Role.
+        /// </summary>
+        internal static string AssignedRoleLabel {
+            get {
+                return ResourceManager.GetString("AssignedRoleLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Assign User Role.
+        /// </summary>
+        internal static string AssignUserRoleLabel {
+            get {
+                return ResourceManager.GetString("AssignUserRoleLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bachelor&apos;s degree or equivalent.
+        /// </summary>
+        internal static string BDG {
+            get {
+                return ResourceManager.GetString("BDG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Business Administration.
+        /// </summary>
+        internal static string BusinessAdministration {
+            get {
+                return ResourceManager.GetString("BusinessAdministration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to + Add a New Job post.
+        /// </summary>
+        internal static string ButtonAddNewPost {
+            get {
+                return ResourceManager.GetString("ButtonAddNewPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply.
+        /// </summary>
+        internal static string ButtonApply {
+            get {
+                return ResourceManager.GetString("ButtonApply", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string ButtonCancel {
+            get {
+                return ResourceManager.GetString("ButtonCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Delete!!.
+        /// </summary>
+        internal static string ButtonConfirmDelete {
+            get {
+                return ResourceManager.GetString("ButtonConfirmDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string ButtonDelete {
+            get {
+                return ResourceManager.GetString("ButtonDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Job Post.
+        /// </summary>
+        internal static string ButtonDeleteJobPost {
+            get {
+                return ResourceManager.GetString("ButtonDeleteJobPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Discard Changes.
+        /// </summary>
+        internal static string ButtonDiscardChanges {
+            get {
+                return ResourceManager.GetString("ButtonDiscardChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Job Post.
+        /// </summary>
+        internal static string ButtonEditJobPost {
+            get {
+                return ResourceManager.GetString("ButtonEditJobPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Save Changes!!.
+        /// </summary>
+        internal static string ButtonInfoConfirmSaveChanges {
+            get {
+                return ResourceManager.GetString("ButtonInfoConfirmSaveChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm you want to Discard All Changes!!.
+        /// </summary>
+        internal static string ButtonInfoDiscardChanges {
+            get {
+                return ResourceManager.GetString("ButtonInfoDiscardChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next Step.
+        /// </summary>
+        internal static string ButtonNextStep {
+            get {
+                return ResourceManager.GetString("ButtonNextStep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ok.
+        /// </summary>
+        internal static string ButtonOk {
+            get {
+                return ResourceManager.GetString("ButtonOk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Edits.
+        /// </summary>
+        internal static string ButtonSaveEdits {
+            get {
+                return ResourceManager.GetString("ButtonSaveEdits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send Invitation.
+        /// </summary>
+        internal static string ButtonSendInvite {
+            get {
+                return ResourceManager.GetString("ButtonSendInvite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sign In.
         /// </summary>
         internal static string ButtonSignIn {
@@ -80,11 +323,245 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to View Matching Candidates.
+        /// </summary>
+        internal static string ButtonViewMatchingCandidates {
+            get {
+                return ResourceManager.GetString("ButtonViewMatchingCandidates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send Invite.
+        /// </summary>
+        internal static string CanadidateSendInvite {
+            get {
+                return ResourceManager.GetString("CanadidateSendInvite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Candidate above will be invited to apply for the job:.
+        /// </summary>
+        internal static string CandidateInvitePersonLabel {
+            get {
+                return ResourceManager.GetString("CandidateInvitePersonLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message to the Candidate.
+        /// </summary>
+        internal static string CandidateMessageLabel {
+            get {
+                return ResourceManager.GetString("CandidateMessageLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your invitation has been Sent.
+        /// </summary>
+        internal static string CandidateSendInviteMessage {
+            get {
+                return ResourceManager.GetString("CandidateSendInviteMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category.
+        /// </summary>
+        internal static string Category {
+            get {
+                return ResourceManager.GetString("Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Closed On.
+        /// </summary>
+        internal static string ClosedOn {
+            get {
+                return ResourceManager.GetString("ClosedOn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Company Description.
+        /// </summary>
+        internal static string CompanyDescriptionLabel {
+            get {
+                return ResourceManager.GetString("CompanyDescriptionLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Company Information.
+        /// </summary>
+        internal static string CompanyInformationLabel {
+            get {
+                return ResourceManager.GetString("CompanyInformationLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Company Size.
+        /// </summary>
+        internal static string CompanySizeLabel {
+            get {
+                return ResourceManager.GetString("CompanySizeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Complaint Id.
+        /// </summary>
+        internal static string ComplaintId {
+            get {
+                return ResourceManager.GetString("ComplaintId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Details.
+        /// </summary>
+        internal static string ContactDetailsLabel {
+            get {
+                return ResourceManager.GetString("ContactDetailsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Created On.
+        /// </summary>
+        internal static string CreatedOn {
+            get {
+                return ResourceManager.GetString("CreatedOn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date of birth.
+        /// </summary>
+        internal static string Dateofbirth {
+            get {
+                return ResourceManager.GetString("Dateofbirth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Doctorate degree or equivalent.
+        /// </summary>
+        internal static string DDG {
+            get {
+                return ResourceManager.GetString("DDG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Recruiter User?.
+        /// </summary>
+        internal static string DeleteUserRecruiterMessage {
+            get {
+                return ResourceManager.GetString("DeleteUserRecruiterMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Representative User?.
+        /// </summary>
+        internal static string DeleteUserRepresentativeMessage {
+            get {
+                return ResourceManager.GetString("DeleteUserRepresentativeMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dummy Education.
+        /// </summary>
+        internal static string DUMMY {
+            get {
+                return ResourceManager.GetString("DUMMY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Personal Details.
+        /// </summary>
+        internal static string EditPersonalDetailsButton {
+            get {
+                return ResourceManager.GetString("EditPersonalDetailsButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Personal Details.
+        /// </summary>
+        internal static string EditPersonalDetailsTitle {
+            get {
+                return ResourceManager.GetString("EditPersonalDetailsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Education.
+        /// </summary>
+        internal static string Education {
+            get {
+                return ResourceManager.GetString("Education", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
         internal static string EMAIL {
             get {
                 return ResourceManager.GetString("EMAIL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email Address.
+        /// </summary>
+        internal static string EmailAddressLabel {
+            get {
+                return ResourceManager.GetString("EmailAddressLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Engineering Manufacturing Construction.
+        /// </summary>
+        internal static string EngineeringManufacturingConstruction {
+            get {
+                return ResourceManager.GetString("EngineeringManufacturingConstruction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Elementary school.
+        /// </summary>
+        internal static string ESH {
+            get {
+                return ResourceManager.GetString("ESH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name.
+        /// </summary>
+        internal static string FirstNameLabel {
+            get {
+                return ResourceManager.GetString("FirstNameLabel", resourceCulture);
             }
         }
         
@@ -98,11 +575,938 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Full-time.
+        /// </summary>
+        internal static string FULLT {
+            get {
+                return ResourceManager.GetString("FULLT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Both.
+        /// </summary>
+        internal static string GENDER_BOTH {
+            get {
+                return ResourceManager.GetString("GENDER_BOTH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Female.
+        /// </summary>
+        internal static string GENDER_F {
+            get {
+                return ResourceManager.GetString("GENDER_F", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Male.
+        /// </summary>
+        internal static string GENDER_M {
+            get {
+                return ResourceManager.GetString("GENDER_M", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gender.
+        /// </summary>
+        internal static string GenderFilterText {
+            get {
+                return ResourceManager.GetString("GenderFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Generic Programmes And Qualifications.
+        /// </summary>
+        internal static string GenericProgrammesAndQualifications {
+            get {
+                return ResourceManager.GetString("GenericProgrammesAndQualifications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Health Welfare.
+        /// </summary>
+        internal static string HealthWelfare {
+            get {
+                return ResourceManager.GetString("HealthWelfare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to High school or equivalent.
+        /// </summary>
+        internal static string HSH {
+            get {
+                return ResourceManager.GetString("HSH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Higher technical education, associate degree or equivalent.
+        /// </summary>
+        internal static string HTC {
+            get {
+                return ResourceManager.GetString("HTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Data Refresh...
         /// </summary>
         internal static string IndicatorRefreshText {
             get {
                 return ResourceManager.GetString("IndicatorRefreshText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Industry.
+        /// </summary>
+        internal static string IndustryLabel {
+            get {
+                return ResourceManager.GetString("IndustryLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information And Communication Technologies (ICT).
+        /// </summary>
+        internal static string InformationAndCommunicationTechnologies {
+            get {
+                return ResourceManager.GetString("InformationAndCommunicationTechnologies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contract.
+        /// </summary>
+        internal static string JOBTYPE_CONTR {
+            get {
+                return ResourceManager.GetString("JOBTYPE_CONTR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temporary Employment on pre-agreed terms.
+        /// </summary>
+        internal static string JOBTYPE_CONTR_DESC {
+            get {
+                return ResourceManager.GetString("JOBTYPE_CONTR_DESC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employement driven academy.
+        /// </summary>
+        internal static string JOBTYPE_EMPDVNAC {
+            get {
+                return ResourceManager.GetString("JOBTYPE_EMPDVNAC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string JOBTYPE_EMPDVNAC_DESC {
+            get {
+                return ResourceManager.GetString("JOBTYPE_EMPDVNAC_DESC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Internship.
+        /// </summary>
+        internal static string JOBTYPE_INTERN {
+            get {
+                return ResourceManager.GetString("JOBTYPE_INTERN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temporary employment for students.
+        /// </summary>
+        internal static string JOBTYPE_INTERN_DESC {
+            get {
+                return ResourceManager.GetString("JOBTYPE_INTERN_DESC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to On-the-job training.
+        /// </summary>
+        internal static string JOBTYPE_JOBTRNO {
+            get {
+                return ResourceManager.GetString("JOBTYPE_JOBTRNO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temporary employment with focus on training.
+        /// </summary>
+        internal static string JOBTYPE_JOBTRNO_DESC {
+            get {
+                return ResourceManager.GetString("JOBTYPE_JOBTRNO_DESC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mini job.
+        /// </summary>
+        internal static string JOBTYPE_MINJOB {
+            get {
+                return ResourceManager.GetString("JOBTYPE_MINJOB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Short-term employment up to 6 months for students (is this for students only).
+        /// </summary>
+        internal static string JOBTYPE_MINJOB_DESC {
+            get {
+                return ResourceManager.GetString("JOBTYPE_MINJOB_DESC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Permanent.
+        /// </summary>
+        internal static string JOBTYPE_PERM {
+            get {
+                return ResourceManager.GetString("JOBTYPE_PERM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Long-term employment with unspecified end.
+        /// </summary>
+        internal static string JOBTYPE_PERM_DESC {
+            get {
+                return ResourceManager.GetString("JOBTYPE_PERM_DESC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Summer job.
+        /// </summary>
+        internal static string JOBTYPE_SUMMJOB {
+            get {
+                return ResourceManager.GetString("JOBTYPE_SUMMJOB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temporary employment during the summer months.
+        /// </summary>
+        internal static string JOBTYPE_SUMMJOB_DESC {
+            get {
+                return ResourceManager.GetString("JOBTYPE_SUMMJOB_DESC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tamheer.
+        /// </summary>
+        internal static string JOBTYPE_TAMOJT {
+            get {
+                return ResourceManager.GetString("JOBTYPE_TAMOJT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to On-the-Job Training.
+        /// </summary>
+        internal static string JOBTYPE_TAMOJT_DESC {
+            get {
+                return ResourceManager.GetString("JOBTYPE_TAMOJT_DESC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job Type.
+        /// </summary>
+        internal static string JobTypeFilterText {
+            get {
+                return ResourceManager.GetString("JobTypeFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Accept.
+        /// </summary>
+        internal static string LabelAccept {
+            get {
+                return ResourceManager.GetString("LabelAccept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional Details.
+        /// </summary>
+        internal static string LabelAdditionalDetails {
+            get {
+                return ResourceManager.GetString("LabelAdditionalDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jobs.
+        /// </summary>
+        internal static string LabelApplicationsTitle {
+            get {
+                return ResourceManager.GetString("LabelApplicationsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Assign Candidate to Job.
+        /// </summary>
+        internal static string LabelCandidateInviteTitle {
+            get {
+                return ResourceManager.GetString("LabelCandidateInviteTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact info.
+        /// </summary>
+        internal static string LabelContactInfo {
+            get {
+                return ResourceManager.GetString("LabelContactInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Decline.
+        /// </summary>
+        internal static string LabelDecline {
+            get {
+                return ResourceManager.GetString("LabelDecline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Event Info.
+        /// </summary>
+        internal static string LabelEventInfo {
+            get {
+                return ResourceManager.GetString("LabelEventInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filter.
+        /// </summary>
+        internal static string LabelFilter {
+            get {
+                return ResourceManager.GetString("LabelFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method of Application.
+        /// </summary>
+        internal static string LabelJobApplicationMethodText {
+            get {
+                return ResourceManager.GetString("LabelJobApplicationMethodText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Requirements.
+        /// </summary>
+        internal static string LabelJobApplicationRequirementText {
+            get {
+                return ResourceManager.GetString("LabelJobApplicationRequirementText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job Applications.
+        /// </summary>
+        internal static string LabelJobApplications {
+            get {
+                return ResourceManager.GetString("LabelJobApplications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Application Status.
+        /// </summary>
+        internal static string LabelJobApplicationStatus {
+            get {
+                return ResourceManager.GetString("LabelJobApplicationStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Survey.
+        /// </summary>
+        internal static string LabelJobApplicationSurveyText {
+            get {
+                return ResourceManager.GetString("LabelJobApplicationSurveyText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applied Date.
+        /// </summary>
+        internal static string LabelJobAppliedDate {
+            get {
+                return ResourceManager.GetString("LabelJobAppliedDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of attachments here.
+        /// </summary>
+        internal static string LabelJobAttachmentsListText {
+            get {
+                return ResourceManager.GetString("LabelJobAttachmentsListText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attachments.
+        /// </summary>
+        internal static string LabelJobAttachmentsText {
+            get {
+                return ResourceManager.GetString("LabelJobAttachmentsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Beginner.
+        /// </summary>
+        internal static string LabelJobBeginner {
+            get {
+                return ResourceManager.GetString("LabelJobBeginner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bonus.
+        /// </summary>
+        internal static string LabelJobBenefitsBonusText {
+            get {
+                return ResourceManager.GetString("LabelJobBenefitsBonusText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other.
+        /// </summary>
+        internal static string LabelJobBenefitsOtherText {
+            get {
+                return ResourceManager.GetString("LabelJobBenefitsOtherText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salary From.
+        /// </summary>
+        internal static string LabelJobBenefitsSalaryFromText {
+            get {
+                return ResourceManager.GetString("LabelJobBenefitsSalaryFromText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salary To.
+        /// </summary>
+        internal static string LabelJobBenefitsSalaryToText {
+            get {
+                return ResourceManager.GetString("LabelJobBenefitsSalaryToText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Benefits &amp; Advantages.
+        /// </summary>
+        internal static string LabelJobBenefitsText {
+            get {
+                return ResourceManager.GetString("LabelJobBenefitsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Company.
+        /// </summary>
+        internal static string LabelJobCompany {
+            get {
+                return ResourceManager.GetString("LabelJobCompany", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Company Industry.
+        /// </summary>
+        internal static string LabelJobCompanyIndustry {
+            get {
+                return ResourceManager.GetString("LabelJobCompanyIndustry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Company Logo.
+        /// </summary>
+        internal static string LabelJobCompanyLogo {
+            get {
+                return ResourceManager.GetString("LabelJobCompanyLogo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Company Name.
+        /// </summary>
+        internal static string LabelJobCompanyName {
+            get {
+                return ResourceManager.GetString("LabelJobCompanyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Company Location.
+        /// </summary>
+        internal static string LabelJobContactCompanyLocationText {
+            get {
+                return ResourceManager.GetString("LabelJobContactCompanyLocationText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string LabelJobContactNameText {
+            get {
+                return ResourceManager.GetString("LabelJobContactNameText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Person.
+        /// </summary>
+        internal static string LabelJobContactText {
+            get {
+                return ResourceManager.GetString("LabelJobContactText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Desired Start Date.
+        /// </summary>
+        internal static string LabelJobDesiredStartDate {
+            get {
+                return ResourceManager.GetString("LabelJobDesiredStartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Driving Licence.
+        /// </summary>
+        internal static string LabelJobDrivingLicence {
+            get {
+                return ResourceManager.GetString("LabelJobDrivingLicence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expert.
+        /// </summary>
+        internal static string LabelJobExpert {
+            get {
+                return ResourceManager.GetString("LabelJobExpert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expiry.
+        /// </summary>
+        internal static string LabelJobExpiry {
+            get {
+                return ResourceManager.GetString("LabelJobExpiry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filled Positions.
+        /// </summary>
+        internal static string LabelJobFilledPositions {
+            get {
+                return ResourceManager.GetString("LabelJobFilledPositions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to General Information.
+        /// </summary>
+        internal static string LabelJobGeneralInformation {
+            get {
+                return ResourceManager.GetString("LabelJobGeneralInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job Post ID.
+        /// </summary>
+        internal static string LabelJobJobPostID {
+            get {
+                return ResourceManager.GetString("LabelJobJobPostID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job Title.
+        /// </summary>
+        internal static string LabelJobJobTitle {
+            get {
+                return ResourceManager.GetString("LabelJobJobTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job Type.
+        /// </summary>
+        internal static string LabelJobJobType {
+            get {
+                return ResourceManager.GetString("LabelJobJobType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language here.
+        /// </summary>
+        internal static string LabelJobLanguagehere {
+            get {
+                return ResourceManager.GetString("LabelJobLanguagehere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Licence name.
+        /// </summary>
+        internal static string LabelJobLicenceName {
+            get {
+                return ResourceManager.GetString("LabelJobLicenceName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Licences.
+        /// </summary>
+        internal static string LabelJobLicences {
+            get {
+                return ResourceManager.GetString("LabelJobLicences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Licence Type.
+        /// </summary>
+        internal static string LabelJobLicenceType {
+            get {
+                return ResourceManager.GetString("LabelJobLicenceType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Address.
+        /// </summary>
+        internal static string LabelJobLocationAddressText {
+            get {
+                return ResourceManager.GetString("LabelJobLocationAddressText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mobility Notes.
+        /// </summary>
+        internal static string LabelJobLocationMobilityNotesText {
+            get {
+                return ResourceManager.GetString("LabelJobLocationMobilityNotesText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mobility.
+        /// </summary>
+        internal static string LabelJobLocationMobilityText {
+            get {
+                return ResourceManager.GetString("LabelJobLocationMobilityText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shift Time.
+        /// </summary>
+        internal static string LabelJobLocationShiftTimeText {
+            get {
+                return ResourceManager.GetString("LabelJobLocationShiftTimeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Teleworking.
+        /// </summary>
+        internal static string LabelJobLocationTeleworkingText {
+            get {
+                return ResourceManager.GetString("LabelJobLocationTeleworkingText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Work Time.
+        /// </summary>
+        internal static string LabelJobLocationWorkTimeText {
+            get {
+                return ResourceManager.GetString("LabelJobLocationWorkTimeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimum Exp.
+        /// </summary>
+        internal static string LabelJobMinimumExp {
+            get {
+                return ResourceManager.GetString("LabelJobMinimumExp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monthly Salary.
+        /// </summary>
+        internal static string LabelJobMonthlySalary {
+            get {
+                return ResourceManager.GetString("LabelJobMonthlySalary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Positions.
+        /// </summary>
+        internal static string LabelJobOpenPositions {
+            get {
+                return ResourceManager.GetString("LabelJobOpenPositions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Posted.
+        /// </summary>
+        internal static string LabelJobPosted {
+            get {
+                return ResourceManager.GetString("LabelJobPosted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job Posts.
+        /// </summary>
+        internal static string LabelJobPosts {
+            get {
+                return ResourceManager.GetString("LabelJobPosts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Requires driving Licence.
+        /// </summary>
+        internal static string LabelJobRequiresDrivingLicence {
+            get {
+                return ResourceManager.GetString("LabelJobRequiresDrivingLicence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Roles &amp; Responsibility.
+        /// </summary>
+        internal static string LabelJobRolesResponsib {
+            get {
+                return ResourceManager.GetString("LabelJobRolesResponsib", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salary.
+        /// </summary>
+        internal static string LabelJobSalary {
+            get {
+                return ResourceManager.GetString("LabelJobSalary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sector.
+        /// </summary>
+        internal static string LabelJobSector {
+            get {
+                return ResourceManager.GetString("LabelJobSector", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Skills.
+        /// </summary>
+        internal static string LabelJobSkills {
+            get {
+                return ResourceManager.GetString("LabelJobSkills", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job Status.
+        /// </summary>
+        internal static string LabelJobStatus {
+            get {
+                return ResourceManager.GetString("LabelJobStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Title.
+        /// </summary>
+        internal static string LabelJobTitle {
+            get {
+                return ResourceManager.GetString("LabelJobTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Institute Name.
+        /// </summary>
+        internal static string LabelJobTrainingInstituteText {
+            get {
+                return ResourceManager.GetString("LabelJobTrainingInstituteText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Location.
+        /// </summary>
+        internal static string LabelJobTrainingLocationText {
+            get {
+                return ResourceManager.GetString("LabelJobTrainingLocationText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Training Name.
+        /// </summary>
+        internal static string LabelJobTrainingNameText {
+            get {
+                return ResourceManager.GetString("LabelJobTrainingNameText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Training.
+        /// </summary>
+        internal static string LabelJobTrainingText {
+            get {
+                return ResourceManager.GetString("LabelJobTrainingText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validity.
+        /// </summary>
+        internal static string LabelJobTrainingValidityText {
+            get {
+                return ResourceManager.GetString("LabelJobTrainingValidityText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Years.
+        /// </summary>
+        internal static string LabelJobYears {
+            get {
+                return ResourceManager.GetString("LabelJobYears", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a Job Type.
+        /// </summary>
+        internal static string LabelNewJobHeaderText {
+            get {
+                return ResourceManager.GetString("LabelNewJobHeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create New Job Post.
+        /// </summary>
+        internal static string LabelNewJobTitleText {
+            get {
+                return ResourceManager.GetString("LabelNewJobTitleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Keywords have been entered in the fields yet.
+        /// </summary>
+        internal static string LabelNoKeywordsEntered {
+            get {
+                return ResourceManager.GetString("LabelNoKeywordsEntered", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Propose New Time.
+        /// </summary>
+        internal static string LabelProposeNewTime {
+            get {
+                return ResourceManager.GetString("LabelProposeNewTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Time Options.
+        /// </summary>
+        internal static string LabelTimeOptions {
+            get {
+                return ResourceManager.GetString("LabelTimeOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Watch List.
+        /// </summary>
+        internal static string LabelWatchList {
+            get {
+                return ResourceManager.GetString("LabelWatchList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name.
+        /// </summary>
+        internal static string LastNameLabel {
+            get {
+                return ResourceManager.GetString("LastNameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Less than elementary school.
+        /// </summary>
+        internal static string LES {
+            get {
+                return ResourceManager.GetString("LES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Location.
+        /// </summary>
+        internal static string LocationLabel {
+            get {
+                return ResourceManager.GetString("LocationLabel", resourceCulture);
             }
         }
         
@@ -161,11 +1565,335 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Manage Company Users.
+        /// </summary>
+        internal static string ManageCompanyUsersButton {
+            get {
+                return ResourceManager.GetString("ManageCompanyUsersButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage Company Users.
+        /// </summary>
+        internal static string ManageCompanyUsersTitle {
+            get {
+                return ResourceManager.GetString("ManageCompanyUsersTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Master&apos;s degree or equivalent postgraduate education.
+        /// </summary>
+        internal static string MDG {
+            get {
+                return ResourceManager.GetString("MDG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string MenuDelete {
+            get {
+                return ResourceManager.GetString("MenuDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        internal static string MenuEdit {
+            get {
+                return ResourceManager.GetString("MenuEdit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        internal static string MenuHome {
+            get {
+                return ResourceManager.GetString("MenuHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jobs Posts.
+        /// </summary>
+        internal static string MenuJobPosts {
+            get {
+                return ResourceManager.GetString("MenuJobPosts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Programs.
+        /// </summary>
+        internal static string MenuPrograms {
+            get {
+                return ResourceManager.GetString("MenuPrograms", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services.
+        /// </summary>
+        internal static string MenuServices {
+            get {
+                return ResourceManager.GetString("MenuServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View.
+        /// </summary>
+        internal static string MenuView {
+            get {
+                return ResourceManager.GetString("MenuView", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mobile Phone.
+        /// </summary>
+        internal static string MobilePhoneLabel {
+            get {
+                return ResourceManager.GetString("MobilePhoneLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mobile SMS.
         /// </summary>
         internal static string MobileSMS {
             get {
                 return ResourceManager.GetString("MobileSMS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Middle school.
+        /// </summary>
+        internal static string MSH {
+            get {
+                return ResourceManager.GetString("MSH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string NameLabel {
+            get {
+                return ResourceManager.GetString("NameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Natural Sciences Mathematics.
+        /// </summary>
+        internal static string NaturalSciencesMathematics {
+            get {
+                return ResourceManager.GetString("NaturalSciencesMathematics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NIN or Iqama.
+        /// </summary>
+        internal static string NINorIqama {
+            get {
+                return ResourceManager.GetString("NINorIqama", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NLG Username.
+        /// </summary>
+        internal static string NLGUsernameLabel {
+            get {
+                return ResourceManager.GetString("NLGUsernameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string NOTELEW {
+            get {
+                return ResourceManager.GetString("NOTELEW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Part-time.
+        /// </summary>
+        internal static string PART {
+            get {
+                return ResourceManager.GetString("PART", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Personal Details.
+        /// </summary>
+        internal static string PersonalDetailsTitle {
+            get {
+                return ResourceManager.GetString("PersonalDetailsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Personal Information.
+        /// </summary>
+        internal static string PersonalInformationLabel {
+            get {
+                return ResourceManager.GetString("PersonalInformationLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Position.
+        /// </summary>
+        internal static string PositionLabel {
+            get {
+                return ResourceManager.GetString("PositionLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Four Weeks or More.
+        /// </summary>
+        internal static string POSTED_FOURORMORE {
+            get {
+                return ResourceManager.GetString("POSTED_FOURORMORE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to One Week.
+        /// </summary>
+        internal static string POSTED_ONEWEEK {
+            get {
+                return ResourceManager.GetString("POSTED_ONEWEEK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Three Weeks.
+        /// </summary>
+        internal static string POSTED_THREEWEEKS {
+            get {
+                return ResourceManager.GetString("POSTED_THREEWEEKS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Two Days.
+        /// </summary>
+        internal static string POSTED_TWODAYS {
+            get {
+                return ResourceManager.GetString("POSTED_TWODAYS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Two Weeks.
+        /// </summary>
+        internal static string POSTED_TWOWEEKS {
+            get {
+                return ResourceManager.GetString("POSTED_TWOWEEKS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Posted Since.
+        /// </summary>
+        internal static string PostedSinceFilterText {
+            get {
+                return ResourceManager.GetString("PostedSinceFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preferred Language.
+        /// </summary>
+        internal static string PreferredLanguageLabel {
+            get {
+                return ResourceManager.GetString("PreferredLanguageLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preffered Communication.
+        /// </summary>
+        internal static string PrefferedCommunicationLabel {
+            get {
+                return ResourceManager.GetString("PrefferedCommunicationLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profile ID.
+        /// </summary>
+        internal static string ProfileIDLabel {
+            get {
+                return ResourceManager.GetString("ProfileIDLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Raise A Complaint.
+        /// </summary>
+        internal static string RaiseAComplaint {
+            get {
+                return ResourceManager.GetString("RaiseAComplaint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recruiters.
+        /// </summary>
+        internal static string RecruitersTab {
+            get {
+                return ResourceManager.GetString("RecruitersTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Representatives.
+        /// </summary>
+        internal static string RepresentativesTab {
+            get {
+                return ResourceManager.GetString("RepresentativesTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Required Education.
+        /// </summary>
+        internal static string RequiredEducationFilterText {
+            get {
+                return ResourceManager.GetString("RequiredEducationFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save New User.
+        /// </summary>
+        internal static string SaveNewUserButton {
+            get {
+                return ResourceManager.GetString("SaveNewUserButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Personal Details.
+        /// </summary>
+        internal static string SavePersonalDetailsButton {
+            get {
+                return ResourceManager.GetString("SavePersonalDetailsButton", resourceCulture);
             }
         }
         
@@ -179,7 +1907,7 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Keyword.
+        ///   Looks up a localized string similar to Enter Keyword.
         /// </summary>
         internal static string SearchKeywordText {
             get {
@@ -188,11 +1916,11 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Location.
+        ///   Looks up a localized string similar to Enter Location.
         /// </summary>
-        internal static string SearchLocationtext {
+        internal static string SearchLocationText {
             get {
-                return ResourceManager.GetString("SearchLocationtext", resourceCulture);
+                return ResourceManager.GetString("SearchLocationText", resourceCulture);
             }
         }
         
@@ -206,11 +1934,182 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Second Name.
+        /// </summary>
+        internal static string SecondNameLabel {
+            get {
+                return ResourceManager.GetString("SecondNameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Services.
+        /// </summary>
+        internal static string Services {
+            get {
+                return ResourceManager.GetString("Services", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Day.
+        /// </summary>
+        internal static string SHF_Day {
+            get {
+                return ResourceManager.GetString("SHF_Day", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Night.
+        /// </summary>
+        internal static string SHF_Night {
+            get {
+                return ResourceManager.GetString("SHF_Night", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Two Shifts.
+        /// </summary>
+        internal static string SHF_TwoShifts {
+            get {
+                return ResourceManager.GetString("SHF_TwoShifts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shift Type.
+        /// </summary>
+        internal static string ShiftTypeFilterText {
+            get {
+                return ResourceManager.GetString("ShiftTypeFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Social Sciences.
+        /// </summary>
+        internal static string SocialSciences {
+            get {
+                return ResourceManager.GetString("SocialSciences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Distance.
+        /// </summary>
+        internal static string SORTBY_DISTANCE {
+            get {
+                return ResourceManager.GetString("SORTBY_DISTANCE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gender (Female first).
+        /// </summary>
+        internal static string SORTBY_GENDER_FEMALEFIRST {
+            get {
+                return ResourceManager.GetString("SORTBY_GENDER_FEMALEFIRST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gender (Male first).
+        /// </summary>
+        internal static string SORTBY_GENDER_MALEFIRST {
+            get {
+                return ResourceManager.GetString("SORTBY_GENDER_MALEFIRST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Relevance.
+        /// </summary>
+        internal static string SORTBY_RELEVANCE {
+            get {
+                return ResourceManager.GetString("SORTBY_RELEVANCE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Match Score (High to Low).
+        /// </summary>
+        internal static string SORTBY_SCORE_HIGH {
+            get {
+                return ResourceManager.GetString("SORTBY_SCORE_HIGH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Match Score (Low to High).
+        /// </summary>
+        internal static string SORTBY_SCORE_LOW {
+            get {
+                return ResourceManager.GetString("SORTBY_SCORE_LOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Date (Future first).
+        /// </summary>
+        internal static string SORTBY_STARTDATE_FUTURE {
+            get {
+                return ResourceManager.GetString("SORTBY_STARTDATE_FUTURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Date (Recent first).
+        /// </summary>
+        internal static string SORTBY_STARTDATE_RECENT {
+            get {
+                return ResourceManager.GetString("SORTBY_STARTDATE_RECENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sort by.
+        /// </summary>
+        internal static string SortByFilterText {
+            get {
+                return ResourceManager.GetString("SortByFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Specialization.
+        /// </summary>
+        internal static string SpecializationFilterText {
+            get {
+                return ResourceManager.GetString("SpecializationFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Continue As Guest.
         /// </summary>
         internal static string StartContinueAsGuest {
             get {
                 return ResourceManager.GetString("StartContinueAsGuest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MoL Login.
+        /// </summary>
+        internal static string StartMoLLogin {
+            get {
+                return ResourceManager.GetString("StartMoLLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NLG Login.
+        /// </summary>
+        internal static string StartNLGLogin {
+            get {
+                return ResourceManager.GetString("StartNLGLogin", resourceCulture);
             }
         }
         
@@ -242,6 +2141,51 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        internal static string Status {
+            get {
+                return ResourceManager.GetString("Status", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sub Category 2.
+        /// </summary>
+        internal static string SubCategory2 {
+            get {
+                return ResourceManager.GetString("SubCategory2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sub Category 3.
+        /// </summary>
+        internal static string SubCategory3 {
+            get {
+                return ResourceManager.GetString("SubCategory3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subject.
+        /// </summary>
+        internal static string Subject {
+            get {
+                return ResourceManager.GetString("Subject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Submit.
+        /// </summary>
+        internal static string Submit {
+            get {
+                return ResourceManager.GetString("Submit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search Jobs.
         /// </summary>
         internal static string TabControlSearchText {
@@ -251,11 +2195,272 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Technical diploma or equivalent.
+        /// </summary>
+        internal static string TCD {
+            get {
+                return ResourceManager.GetString("TCD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telephone Number.
+        /// </summary>
+        internal static string TelephoneNumberLabel {
+            get {
+                return ResourceManager.GetString("TelephoneNumberLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string TELEW {
+            get {
+                return ResourceManager.GetString("TELEW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Teleworking.
+        /// </summary>
+        internal static string TeleWorkingFilterText {
+            get {
+                return ResourceManager.GetString("TeleWorkingFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About details here.
+        /// </summary>
+        internal static string TextAboutPageDefault {
+            get {
+                return ResourceManager.GetString("TextAboutPageDefault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string TextAboutPageTitle {
+            get {
+                return ResourceManager.GetString("TextAboutPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Available Programs.
+        /// </summary>
+        internal static string TextAvailablePrograms {
+            get {
+                return ResourceManager.GetString("TextAvailablePrograms", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Available Services.
+        /// </summary>
+        internal static string TextAvailableServices {
+            get {
+                return ResourceManager.GetString("TextAvailableServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Complaints.
+        /// </summary>
+        internal static string TextComplaints {
+            get {
+                return ResourceManager.GetString("TextComplaints", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact us details here.
+        /// </summary>
+        internal static string TextContactPageDefault {
+            get {
+                return ResourceManager.GetString("TextContactPageDefault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Us.
+        /// </summary>
+        internal static string TextContactPageTitle {
+            get {
+                return ResourceManager.GetString("TextContactPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string TextLanguage {
+            get {
+                return ResourceManager.GetString("TextLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must be logged in to view this data.
+        /// </summary>
+        internal static string TextNotLoggedIn {
+            get {
+                return ResourceManager.GetString("TextNotLoggedIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string TextSettingPageTitle {
+            get {
+                return ResourceManager.GetString("TextSettingPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset Password.
+        /// </summary>
+        internal static string TextSettingsResetPassword {
+            get {
+                return ResourceManager.GetString("TextSettingsResetPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign Out.
+        /// </summary>
+        internal static string TextSignOut {
+            get {
+                return ResourceManager.GetString("TextSignOut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Watch.
+        /// </summary>
+        internal static string TextWatch {
+            get {
+                return ResourceManager.GetString("TextWatch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Watching.
+        /// </summary>
+        internal static string TextWatching {
+            get {
+                return ResourceManager.GetString("TextWatching", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Third Name.
+        /// </summary>
+        internal static string ThirdNameLabel {
+            get {
+                return ResourceManager.GetString("ThirdNameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Day.
+        /// </summary>
+        internal static string TRAV_Day {
+            get {
+                return ResourceManager.GetString("TRAV_Day", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Night.
+        /// </summary>
+        internal static string TRAV_Night {
+            get {
+                return ResourceManager.GetString("TRAV_Night", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Two Shifts.
+        /// </summary>
+        internal static string TRAV_TwoShifts {
+            get {
+                return ResourceManager.GetString("TRAV_TwoShifts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Traveling Required.
+        /// </summary>
+        internal static string TravelingRequiredFilterText {
+            get {
+                return ResourceManager.GetString("TravelingRequiredFilterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Details.
+        /// </summary>
+        internal static string UserDetailsLabel {
+            get {
+                return ResourceManager.GetString("UserDetailsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        internal static string UsernameLabel {
+            get {
+                return ResourceManager.GetString("UsernameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NIN or Iqama or Equivalent ID.
+        /// </summary>
+        internal static string UserNINLabel {
+            get {
+                return ResourceManager.GetString("UserNINLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Type.
+        /// </summary>
+        internal static string UserTypeLabel {
+            get {
+                return ResourceManager.GetString("UserTypeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign in as an employer using your MoL or NGL login, sign up, or continue as a guest.
+        /// </summary>
+        internal static string WelcomeEmployerSignin {
+            get {
+                return ResourceManager.GetString("WelcomeEmployerSignin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Welcome.
         /// </summary>
         internal static string WelcomeTitle {
             get {
                 return ResourceManager.GetString("WelcomeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Work Type.
+        /// </summary>
+        internal static string WorkTypeFilterText {
+            get {
+                return ResourceManager.GetString("WorkTypeFilterText", resourceCulture);
             }
         }
     }

@@ -3,15 +3,26 @@
     public enum RequiredEducationEnum
     {
         NULL,
-        TCD,
-        HTC,
         LES,
         ESH,
-        MSH,
         HSH,
         BDG,
         MDG,
-        DDG,
-        DUMMY
+        DDG
+        //BDG,
+        //MDG,
+        //DDG,
+        //DUMMY
     }
 }
+
+//TCD,
+//        HTC,
+//        LES,
+//        ESH,
+//        MSH,
+//        HSH,
+//        BDG,
+//        MDG,
+//        DDG,
+//        DUMMY

@@ -13,7 +13,6 @@ namespace ArabWaha.Employer.ViewModels
     {
         public AboutPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            Title = "About";
         }
     }
 }

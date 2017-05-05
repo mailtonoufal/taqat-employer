@@ -15,13 +15,13 @@ namespace ArabWaha.Employer.ViewModels
     public class SearchPageViewModel : AWMVVMBase, INavigationAware
     {
         private string _searchText;
-        private string _searchLocation;
         public string SearchText
         {
             get { return _searchText; }
             set { SetProperty(ref _searchText, value); SearchCommand.RaiseCanExecuteChanged();  }
         }
 
+        private string _searchLocation;
         public string SearchLocation
         {
             get { return _searchLocation; }
@@ -44,10 +44,10 @@ namespace ArabWaha.Employer.ViewModels
 
         private void Search()
         {
-            // do search
-            //IsBusy = true;
+            //*** TODO VALIDATE PARAMETERS HAVE BEEN ENTERED.
 
-            _nav.NavigateAsync(nameof(SearchResultsPage));
+            // do search
+            _nav.NavigateAsync($"{nameof(SearchResultsPage)}?SearchText={SearchText}&SearchLocation={SearchLocation}");
 
         }
 

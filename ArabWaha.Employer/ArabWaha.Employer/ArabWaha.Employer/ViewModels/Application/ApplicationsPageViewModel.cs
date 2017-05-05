@@ -1,8 +1,12 @@
 ﻿using ArabWaha.Core.ModelsEmployer;
 using ArabWaha.Core.ModelsEmployer.Jobs;
+using ArabWaha.Core.ModelsEmployer.Programs;
+using ArabWaha.Core.ModelsEmployer.Services;
 using ArabWaha.Core.Services;
 using ArabWaha.Employer.BaseCalsses;
+using ArabWaha.Employer.Helpers;
 using ArabWaha.Employer.Views;
+using ArabWaha.Employer.Views.Home;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -82,16 +86,16 @@ namespace ArabWaha.Employer.ViewModels
             set { SetProperty(ref _jobs, value); }
         }
 
-        public DelegateCommand ApplicationDetailsCommand { get; set; }
+        public DelegateCommand<ApplicationsForJob> ApplicationDetailsCommand { get; set; }
 
-        private ObservableCollection<JobPostWatchList> _watchList;
-        public ObservableCollection<JobPostWatchList> WatchList
+        private ObservableCollection<ApplicationsForJob> _watchList;
+        public ObservableCollection<ApplicationsForJob> WatchList
         {
             get { return _watchList; }
             set { SetProperty(ref _watchList, value); }
         }
 
-        public DelegateCommand InviteCommand { get; set; }
+        public DelegateCommand<ApplicationProfile> InviteCommand { get; set; }
 
 
         private ObservableCollection<EmployerJobDetail> _jobPageSource;
@@ -103,27 +107,48 @@ namespace ArabWaha.Employer.ViewModels
 
         public ApplicationsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            Title = "Jobs";
-            Tab1Text = "Applications";
-            Tab2Text = "Job Posts";
-            Tab3Text = "Watch List";
-            ApplicationDetailsCommand = new DelegateCommand(ApplicationDetails);
+            TranslateExtension tran = new TranslateExtension();
+
+            Title =    tran.GetProviderValueString("LabelApplicationsTitle");
+
+            Tab1Text = tran.GetProviderValueString("Applications");
+            Tab2Text = tran.GetProviderValueString("LabelJobPosts");
+            Tab3Text = tran.GetProviderValueString("LabelWatchList");
+
+            ApplicationDetailsCommand = new DelegateCommand<ApplicationsForJob>(ApplicationDetails);
             Tab1Command = new DelegateCommand(ApllicationsNavigate);
             Tab2Command = new DelegateCommand(JobPostNavigate);
             Tab3Command = new DelegateCommand(WatchListNavigate);
 
-            InviteCommand = new DelegateCommand(InviteCandidate);
+            InviteCommand = new DelegateCommand<ApplicationProfile>(InviteCandidate);
+
+            // job commands
+            DeleteJobCommand = new DelegateCommand<EmployerJobDetail>(ProcessDeleteJob);
+            EditJobCommand = new DelegateCommand<EmployerJobDetail>(ProcessEditJob);
+            ViewJobCommand = new DelegateCommand<EmployerJobDetail>(ProcessViewJob);
+            AddNewJobCommand = new DelegateCommand(ProcessAddNewJobCommand);
 
             // Default Tab1
             ApllicationsNavigate();
 
             LoadData();
 
+            MessagingCenter.Subscribe<JobPageViewModel>(this, "WatchEntryUpdated", WatchEntryUpdatedMessage);
+
         }
 
-        private void InviteCandidate()
+        private void WatchEntryUpdatedMessage(JobPageViewModel obj)
         {
-            _dialog.DisplayAlertAsync("Message", "Candidate Invite TODO", "OK");
+            LoadWatchList();
+        }
+
+        private void InviteCandidate(ApplicationProfile obj)
+        {
+            NavigationParameters p = new NavigationParameters();
+            p.Add("JobPostId", obj.JobPostId);
+            p.Add("ProfileId", obj.ProfileId);
+
+            _nav.NavigateAsync(nameof(CandidateInvitePage), p);
         }
 
         private void ApllicationsNavigate()
@@ -147,9 +172,9 @@ namespace ArabWaha.Employer.ViewModels
             MessagingCenter.Send(this, "HideMenu");
         }
 
-        private void ApplicationDetails()
+        private void ApplicationDetails(ApplicationsForJob obj)
         {
-            _nav.NavigateAsync(nameof(ApplicationDetailsPage));
+            _nav.NavigateAsync($"{nameof(ApplicationDetailsPage)}?JobPostId={obj.JobDetails.JobPostId}");
         }
 
         private async void LoadData()
@@ -157,11 +182,78 @@ namespace ArabWaha.Employer.ViewModels
             ApiService api = new ApiService();
             CompanyApplicationList = await api.GetCompanyJobApplicationsAsync(0);
             Jobs = CompanyApplicationList.Jobs;
-
-            WatchList = await api.GetCompanyWatchListAsync(0, 0);
             JobPageSource = await api.GetEmployerPostedJobsAsync(1);
-
-
+            LoadWatchList();
         }
+
+        private async void  LoadWatchList()
+        {
+            ApiService api = new ApiService();
+            WatchList = await api.GetCompanyWatchListAsync(0, 0);
+        }
+
+        #region Job Commands
+        public DelegateCommand<EmployerJobDetail> ViewJobCommand { get; set; }
+        async void ProcessViewJob(EmployerJobDetail vals)
+        {
+            if (vals != null)
+            {
+                NavigationParameters paramx = new NavigationParameters();
+                paramx.Add("MODE", "VIEW");
+                paramx.Add("JOB", vals);
+                await _nav.NavigateAsync(nameof(JobPage), paramx, false, true);
+            }
+        }
+
+
+
+        public DelegateCommand AddNewJobCommand { get; set; }
+        async void ProcessAddNewJobCommand()
+        {
+            NavigationParameters paramx = new NavigationParameters();
+            paramx.Add("MODE", "NEW");
+            await _nav.NavigateAsync(nameof(JobNewPostPage), paramx, false, true);
+        }
+
+        // JOB edit / delete commands
+        public DelegateCommand<EmployerJobDetail> DeleteJobCommand { get; set; }
+        //        public DelegateCommand<EmployerJobDetail> EditJobCommand;
+        //public ICommand EditJobCommand { get; }
+
+        private async void ProcessDeleteJob(EmployerJobDetail vals)
+        {
+            TranslateExtension tran = new TranslateExtension();
+            string confirm = tran.GetProviderValueString("ButtonConfirmDelete");
+            string delete = tran.GetProviderValueString("ButtonDelete");
+            string cancel = tran.GetProviderValueString("ButtonCancel");
+
+            var res = await _dialog.DisplayActionSheetAsync("Confirm delete!!", "Cancel", "Delete", "");
+            if (res.Equals(delete))
+            {
+                ApiService apiServ = new ApiService();
+                if (await apiServ.DeleteEmployerJobasync(vals.JobPostId))
+                {
+                    JobPageSource.Remove(vals);
+                }
+            }
+        }
+
+        public DelegateCommand<EmployerJobDetail> EditJobCommand { get; set; }
+        async void ProcessEditJob(EmployerJobDetail vals)
+        {
+            if (vals != null)
+            {
+                NavigationParameters paramx = new NavigationParameters();
+                paramx.Add("MODE", "EDIT");
+                paramx.Add("JOB", vals);
+                await _nav.NavigateAsync(nameof(JobPage), paramx, false, true);
+            }
+        }
+
+
+
+
+
+        #endregion  
     }
 }

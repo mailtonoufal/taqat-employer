@@ -1,4 +1,6 @@
-﻿using ArabWaha.Core.ModelsEmployer;
+﻿using ArabWaha.Core.DBAccess;
+using ArabWaha.Core.Helpers;
+using ArabWaha.Core.ModelsEmployer;
 using ArabWaha.Core.ModelsEmployer.Company;
 using ArabWaha.Core.ModelsEmployer.Jobs;
 using ArabWaha.Core.ModelsEmployer.Programs;
@@ -15,17 +17,187 @@ namespace ArabWaha.Core.Services
 {
     public class DummyEmpData
     {
+        public static List<ComplaintRaised> GetComplaintsList()
+        {
+            var retSource = new List<ComplaintRaised>
+            {
+                new ComplaintRaised
+                {
+                    Subject="Website issues",
+                    Status="Closed",
+                    ComplaintId=12345,
+                    ComplaintText="Website not displaying images",
+                    CreatedOn="2017-2-17",
+                    ClosedOn="2017-2-26"
+                },
+                new ComplaintRaised
+                {
+                    Subject="Sign In Issue",
+                    Status="In progress",
+                    ComplaintId=13456,
+                    ComplaintText="Cannot signin with current password. Invalid password error",
+                    CreatedOn="2017-4-15",
+                    ClosedOn=""
+                },
+                new ComplaintRaised
+                {
+                    Subject="Forgot Password",
+                    Status="In progress",
+                    ComplaintId=16543,
+                    ComplaintText="How can I reset my password",
+                    CreatedOn="2017-2-21",
+                    ClosedOn=""
+                },
+                new ComplaintRaised
+                {
+                    Subject="Cannot create account",
+                    Status="In progress",
+                    ComplaintId=12345,
+                    ComplaintText="When i create an account the website rejects my information stating that it is incorrect?",
+                    CreatedOn="2017-3-10",
+                    ClosedOn=""
+                },
+                new ComplaintRaised
+                {
+                    Subject="New jobs not showing",
+                    Status="Closed",
+                    ComplaintId=10092,
+                    ComplaintText="I have watched 4 new jobs and they are not showing up in my watched list",
+                    CreatedOn="2017-3-25",
+                    ClosedOn="2017-3-29"
+                },
+                new ComplaintRaised
+                {
+                    Subject="Website crashed",
+                    Status="rejected",
+                    ComplaintId=23543,
+                    ComplaintText="When i navigate to the website it crashes my browser",
+                    CreatedOn="2016-9-10",
+                    ClosedOn="2016-10-10"
+                },
+            };
+
+            return retSource;
+
+        }
+
+        public static List<EventDetails> GetEventsList()
+        {
+            DateTime eventDate = DateTime.Now.AddHours(2);
+
+            var retSource = new List<EventDetails>
+            {
+                new EventDetails
+                {
+                    EventStart = UtilHelper.ConvertDateToSqlDate(eventDate),
+                    EventEnd = UtilHelper.ConvertDateToSqlDate(eventDate.AddHours(1)),
+                    EventLocation = "AEC Offices",
+                    EventTitle ="Flight to Salt Lake city",
+                    EventId =1,
+                    Status ="Declined",
+                    PhoneNumber="01234567890",
+                    Email="admin@aramco.com",
+                    AdditionalInfo="Dress code is required",
+                    JobPostId= "12345"
+                }
+            };
+
+            eventDate = eventDate.AddHours(2);
+            retSource.Add(new EventDetails
+            {
+                EventStart = UtilHelper.ConvertDateToSqlDate(eventDate),
+                EventEnd = UtilHelper.ConvertDateToSqlDate(eventDate.AddHours(1.5)),
+                EventLocation = "HDRF - Olaya street",
+                EventTitle = "Team Meeting",
+                EventId = 2,
+                Status = "Accepted",
+                PhoneNumber = "01234567890",
+                Email = "info@aramco.com",
+                AdditionalInfo = "Dress code is required",
+                JobPostId = "1"
+            });
+
+            eventDate = eventDate.AddDays(1).AddHours(-2);
+            retSource.Add(new EventDetails
+            {
+                EventStart = UtilHelper.ConvertDateToSqlDate(eventDate),
+                EventEnd = UtilHelper.ConvertDateToSqlDate(eventDate.AddHours(1)),
+                EventLocation = "CBA Limited - Riyah, KSA",
+                EventTitle = "Ford project Initialization",
+                EventId = 3,
+                Status = "Accepted",
+                PhoneNumber = "01234567890",
+                Email = "info@aramco.com",
+                AdditionalInfo = "Dress code is required",
+                JobPostId = "2"
+            });
+
+            eventDate = eventDate.AddHours(3);
+            retSource.Add(new EventDetails
+            {
+                EventStart = UtilHelper.ConvertDateToSqlDate(eventDate),
+                EventEnd = UtilHelper.ConvertDateToSqlDate(eventDate.AddHours(1)),
+                EventLocation = "Google Office - Dubai",
+                EventTitle = "Google Conference",
+                EventId = 4,
+                Status = "Accepted",
+                PhoneNumber = "01234567890",
+                Email = "info@aramco.com",
+                AdditionalInfo = "Dress code is required",
+                JobPostId = "3"
+            });
+
+            eventDate = eventDate.AddDays(1).AddHours(3);
+            retSource.Add(new EventDetails
+            {
+                EventStart = UtilHelper.ConvertDateToSqlDate(eventDate),
+                EventEnd = UtilHelper.ConvertDateToSqlDate(eventDate.AddHours(1)),
+                EventLocation = "Excel centre - London UK",
+                EventTitle = "Developers Conference",
+                EventId = 5,
+                Status = "Declined",
+                PhoneNumber = "01234567890",
+                Email = "info@aramco.com",
+                AdditionalInfo = "Dress code is required",
+                JobPostId = "4"
+            });
+
+
+            eventDate = eventDate.AddDays(3);
+            retSource.Add(new EventDetails
+            {
+                EventStart = UtilHelper.ConvertDateToSqlDate(eventDate),
+                EventEnd = UtilHelper.ConvertDateToSqlDate(eventDate.AddHours(1)),
+                EventLocation = "office abc - Riyah, KSA",
+                EventTitle = "Client meetup",
+                EventId = 6,
+                Status = "Accepted",
+                PhoneNumber = "01234567890",
+                Email = "info@aramco.com",
+                AdditionalInfo = "Dress code is required",
+                JobPostId = "5"
+            });
+
+            return retSource;
+        }
+
         public static ObservableCollection<ApplicationProfile> GetCompanyJobApplications()
         {
 
             var Applications = new ObservableCollection<ApplicationProfile>()
                         {
-                            new ApplicationProfile() { Name= $"Mohammed Fadi 1", ApplicationId=1, Gender="Male", Occupation= $"Software Engineer 1", MatchScore=90, JobPostId = 13645},
-                            new ApplicationProfile() { Name= $"Mohammed Fadi 2", ApplicationId=2, Gender="Male", Occupation= $"Software Engineer 2", MatchScore=10, JobPostId = 13645 },
-                            new ApplicationProfile() { Name= $"Mohammed Fadi 3", ApplicationId=3, Gender="Male", Occupation= $"Software Engineer 3", MatchScore=76, JobPostId = 13645 },
-                            new ApplicationProfile() { Name= $"Mohammed Fadi 4", ApplicationId=3, Gender="Male", Occupation= $"Software Engineer 4", MatchScore=34, JobPostId = 13645 },
-                            new ApplicationProfile() { Name= $"Mohammed Fadi 5", ApplicationId=3, Gender="Male", Occupation= $"Software Engineer 5", MatchScore=67, JobPostId = 13645 },
-                            new ApplicationProfile() { Name= $"Mohammed Fadi 6", ApplicationId=3, Gender="Male", Occupation= $"Software Engineer 6", MatchScore=88, JobPostId = 13645 },
+                            new ApplicationProfile() { ProfileId=1,  Name= $"Mohammed Fadi 1", ApplicationId=1, Gender="Male", Occupation= $"Software Engineer 1", Location="Riyadh", Availability="Imediate", MatchScore=90, JobPostId = 1},
+                            new ApplicationProfile() { ProfileId=2,  Name= $"Mohammed Fadi 2", ApplicationId=2, Gender="Male", Occupation= $"Software Engineer 2", Location="Riyadh", Availability="Imediate", MatchScore=10, JobPostId = 1 },
+                            new ApplicationProfile() { ProfileId=3,  Name= $"Mohammed Fadi 3", ApplicationId=3, Gender="Male", Occupation= $"Software Engineer 3", Location="Riyadh", Availability="Imediate", MatchScore=76, JobPostId = 1 },
+                            new ApplicationProfile() { ProfileId=4,  Name= $"Mohammed Fadi 4", ApplicationId=4, Gender="Male", Occupation= $"Software Engineer 4", Location="Riyadh", Availability="Imediate", MatchScore=34, JobPostId = 1 },
+                            new ApplicationProfile() { ProfileId=5,  Name= $"Mohammed Fadi 5", ApplicationId=5, Gender="Male", Occupation= $"Software Engineer 5", Location="Riyadh", Availability="Imediate", MatchScore=67, JobPostId = 1 },
+                            new ApplicationProfile() { ProfileId=5,  Name= $"Mohammed Fadi 6", ApplicationId=6, Gender="Male", Occupation= $"Software Engineer 6", Location="Riyadh", Availability="Imediate", MatchScore=88, JobPostId = 2 },
+                            new ApplicationProfile() { ProfileId=6,  Name= $"Mohammed Fadi 7", ApplicationId=7, Gender="Male", Occupation= $"Software Engineer 7", Location="Riyadh", Availability="Imediate", MatchScore=90, JobPostId = 3},
+                            new ApplicationProfile() { ProfileId=7,  Name= $"Mohammed Fadi 8", ApplicationId=8, Gender="Male", Occupation= $"Software Engineer 8", Location="Riyadh", Availability="Imediate", MatchScore=10, JobPostId = 4 },
+                            new ApplicationProfile() { ProfileId=8,  Name= $"Mohammed Fadi 9", ApplicationId=9, Gender="Male", Occupation= $"Software Engineer 9", Location="Riyadh", Availability="Imediate", MatchScore=76, JobPostId = 5 },
+                            new ApplicationProfile() { ProfileId=9,  Name= $"Mohammed Fadi 10", ApplicationId=10, Gender="Male", Occupation= $"Software Engineer 10", Location="Riyadh", Availability="Imediate", MatchScore=34, JobPostId = 5 },
+                            new ApplicationProfile() { ProfileId=10,  Name= $"Mohammed Fadi 11", ApplicationId=11, Gender="Male", Occupation= $"Software Engineer 11", Location="Riyadh", Availability="Imediate", MatchScore=67, JobPostId = 6 },
+                            new ApplicationProfile() { ProfileId=11,  Name= $"Mohammed Fadi 12", ApplicationId=12, Gender="Male", Occupation= $"Software Engineer 12", Location="Riyadh", Availability="Imediate", MatchScore=88, JobPostId = 6 },
             };
 
             return Applications;
@@ -136,9 +308,9 @@ namespace ArabWaha.Core.Services
         {
                 var source = new ObservableCollection<EmployerJobDetail>()
                 {
-                        new EmployerJobDetail { JobPostId="13645", JobPostTitle="Android developer, Java",  Status="Open", JobDescription="description 1",
+                        new EmployerJobDetail { JobPostId="1", JobPostTitle="Android developer, Java",  Status="Open", JobDescription="description 1",
                         CompanyIndustry="Advanced Electronics", CompanyName="Google", Posted="1 Months",
-                        JobType="Permanent", OpenPositions="2", FilledPosition="1",
+                        JobType="PERM", OpenPositions="2", FilledPosition="1",
                         SalaryFrom="9000",  SalaryTo ="150000",
                         Experience="5 Years", StartDate="2/6/2017",
                         PublicationDate="16/04/2017",

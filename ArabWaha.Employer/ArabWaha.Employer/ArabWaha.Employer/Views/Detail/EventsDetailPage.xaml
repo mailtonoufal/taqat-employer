@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employer.Views.Detail.EventsDetailPage">
+    <ScrollView>
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <Label Text="{lEx:Translate LabelEventInfo}" Style="{StaticResource SolidBodyTextBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+            <StackLayout VerticalOptions="StartAndExpand">
+                <BoxView BackgroundColor="Gray" HeightRequest="200"  VerticalOptions="Start" />
+                <Grid VerticalOptions="Start">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- job info -->
+                    <Label Text="{Binding EventData.TitleInfo}" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" 
+                           HorizontalTextAlignment="{Binding AlignText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+                    <Label Text="{Binding EventData.AddressInfo}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" 
+                           HorizontalTextAlignment="{Binding AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
+
+                    <Grid Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Text="{lEx:Translate LabelAccept}" Style="{StaticResource LightBlueButtonFlat}" Grid.Row="0" Grid.Column="0" Command="{Binding AcceptCommand}" />
+                        <Button Text="{lEx:Translate LabelDecline}" Style="{StaticResource LightBlueButtonFlat}" Grid.Row="0" Grid.Column="1" Command="{Binding DeclineCommand}" />
+
+                        <Button Text="{lEx:Translate LabelProposeNewTime}" Style="{StaticResource LightBlueButtonFlat}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" 
+                            Command="{Binding NewdateCommand}" />
+                    </Grid>
+
+
+                    <Label Text="{lEx:Translate LabelTimeOptions}" VerticalOptions="Center" Style="{StaticResource SolidBodyTextBlueReduced}" 
+                           Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" 
+                           HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding EventData.EventDateInfo}" 
+                           Grid.Row="4" Grid.Column="{Binding LabelColumn}" Grid.ColumnSpan="2" 
+                           HorizontalTextAlignment="{Binding AlignText}" 
+                           Style="{StaticResource CellBodyTextMedGray}" />
+
+                    <Image Source="{StaticResource tickicon}" Grid.Row="4" Grid.Column="{Binding ImageColumn}" HeightRequest="24" WidthRequest="24" 
+                           VerticalOptions="Start" HorizontalOptions="End" />
+
+                    <Label Text="{lEx:Translate LabelContactInfo}" VerticalOptions="Center" Style="{StaticResource SolidBodyTextBlueReduced}" 
+                           Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" 
+                           HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                    
+                    <Label Text="{Binding EventData.PhoneNumber}" 
+                           Grid.Row="7" Grid.Column="{Binding LabelColumn}" Grid.ColumnSpan="2" 
+                           HorizontalTextAlignment="{Binding AlignText}" 
+                           Style="{StaticResource CellBodyTextMedGray}" />
+
+                    <Label Text="{Binding EventData.Email}" Grid.Row="8" Grid.Column="{Binding LabelColumn}" Grid.ColumnSpan="2" 
+                           HorizontalTextAlignment="{Binding AlignText}" 
+                           Style="{StaticResource CellBodyTextMedGray}" />
+
+                    <!-- icons -->
+                    <Image Source="{StaticResource phoneicon}" Grid.Row="7" Grid.Column="{Binding ImageColumn}" HeightRequest="24" WidthRequest="24" 
+                           VerticalOptions="Start" HorizontalOptions="End" />
+                    <Image Source="{StaticResource mailicon}" Grid.Row="8" Grid.Column="{Binding ImageColumn}" HeightRequest="24" WidthRequest="24" 
+                           VerticalOptions="Start" HorizontalOptions="End" />
+
+
+                    <Label Text="{lEx:Translate LabelAdditionalDetails}" VerticalOptions="Center" Style="{StaticResource SolidBodyTextBlueReduced}" 
+                           Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" 
+                           HorizontalOptions="FillAndExpand" 
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding EventData.AdditionalInfo}" Grid.Row="10" Grid.Column="{Binding LabelColumn}" Grid.ColumnSpan="2"
+                           HorizontalTextAlignment="{Binding AlignText}" 
+                           Style="{StaticResource CellBodyTextMedGray}" />
+
+
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

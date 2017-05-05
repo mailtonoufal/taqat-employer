@@ -3,7 +3,8 @@
     public enum GenderEnum
     {
         NULL,
-        M,
-        F
+        M=2,
+        F=1,
+        BOTH
     }
 }

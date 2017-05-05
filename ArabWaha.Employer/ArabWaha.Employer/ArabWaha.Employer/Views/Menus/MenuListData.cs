@@ -59,26 +59,36 @@ namespace ArabWaha.Employer.Views.Menus
                     PageType = typeof(HomePage),
                     IconImage = Application.Current.Resources["startemptyblue"] as FileImageSource
                 });
+
+                this.Add(new MasterPageItem
+                {
+                    Title = isEnglishText ? "Programs" : "البرامج",
+                    IconSource = "arrow_white.png",
+                    TargetType = $"{nameof(HomePage)}?TAB=3",
+                PageType = typeof(HomePage),
+                    IconImage = Application.Current.Resources["startemptyblue"] as FileImageSource
+                });
+
+                this.Add(new MasterPageItem
+                {
+                    Title = isEnglishText ? "Services" : "خدمات",
+                    IconSource = "arrow_white.png",
+                    TargetType = $"{nameof(HomePage)}?TAB=4",
+                    PageType = typeof(HomePage),
+                    IconImage = Application.Current.Resources["startemptyblue"] as FileImageSource
+                });
+
             }
 
-            this.Add(new MasterPageItem
-            {
-                Title = isEnglishText ? "Programs" : "البرامج",
-                IconSource = "arrow_white.png",
-                TargetType = $"{nameof(HomePage)}?TAB=3",
-                PageType = typeof(HomePage),
-                IconImage = Application.Current.Resources["startemptyblue"] as FileImageSource
-            });
 
             this.Add(new MasterPageItem
             {
-                Title = isEnglishText ? "Services" : "خدمات",
+                Title = isEnglishText ? "Complaints" : "شكاوي",
                 IconSource = "arrow_white.png",
-                TargetType = $"{nameof(HomePage)}?TAB=4",
-                PageType = typeof(HomePage),
+                TargetType = nameof(ComplaintsPage),
+                PageType = typeof(ComplaintsPage),
                 IconImage = Application.Current.Resources["startemptyblue"] as FileImageSource
             });
-
 
             if (IsAuth)
             {
@@ -100,14 +110,7 @@ namespace ArabWaha.Employer.Views.Menus
                     IconImage = Application.Current.Resources["startemptyblue"] as FileImageSource
                 });
 
-                this.Add(new MasterPageItem
-                {
-                    Title = isEnglishText ? "Complaints" : "شكاوي",
-                    IconSource = "arrow_white.png",
-                    TargetType = nameof(ComplaintsPage),
-                    PageType = typeof(ComplaintsPage),
-                    IconImage = Application.Current.Resources["startemptyblue"] as FileImageSource
-                });
+                
             }
 
             this.Add(new MasterPageItem

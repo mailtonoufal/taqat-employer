@@ -6,7 +6,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employee.Views.NotificationsPage">
     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
-        <Label Text="Notifications" Style="{StaticResource SolidBodyTextBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+        <Label Text="{lEx:Translate LabelNotificationsTitleText}" Style="{StaticResource SolidBodyTextBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
         <ListView x:Name="ParentListView" ItemsSource="{Binding NotificationsSource}" 
                       HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
                       HasUnevenRows="True" SeparatorVisibility="Default"
@@ -16,7 +16,7 @@
                 <DataTemplate>
                     <ViewCell x:Name="myCell" >
                         <ViewCell.ContextActions>
-                            <MenuItem Text="Mark All As Read" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
+                            <MenuItem Text="{lEx:Translate LabelNotificationsMarkAsReadText}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
                                           Command="{Binding MarkAsReadCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}"  />
                         </ViewCell.ContextActions>
 

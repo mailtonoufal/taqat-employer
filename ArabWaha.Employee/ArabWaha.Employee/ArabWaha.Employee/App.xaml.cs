@@ -23,20 +23,37 @@ namespace ArabWaha.Employee
     public static class GlobalSetting
     {
         public static string CultureCode { get; set; }
-        public static LayoutAlignment AlignLabel { get; set;  }
+        public static LayoutAlignment AlignLabel { get; set; }
         public static LayoutAlignment AlignData { get; set; }
+
+        public static TextAlignment AlignText { get; set; }
+        public static TextAlignment AlignLabelText { get; set; }
 
         public static LayoutOptions HorizontalLayoutOptions { get; set; }
 
         public static void SetupCulture()
         {
-            ApiServiceIndividual svr = new ApiServiceIndividual();
+            ApiService svr = new ApiService();
             GlobalSetting.CultureCode = svr.GetCurrentCulture();
             GlobalSetting.AlignLabel = GlobalSetting.CultureCode == "ar" ? LayoutAlignment.End : LayoutAlignment.Start;
             GlobalSetting.AlignData = GlobalSetting.CultureCode == "ar" ? LayoutAlignment.Start : LayoutAlignment.End;
             GlobalSetting.HorizontalLayoutOptions = GlobalSetting.CultureCode == "ar" ? LayoutOptions.EndAndExpand : LayoutOptions.StartAndExpand;
+
+            GlobalSetting.AlignText = GlobalSetting.CultureCode == "ar" ? TextAlignment.Start : TextAlignment.End;
+            GlobalSetting.AlignLabelText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End : TextAlignment.Start;
+
         }
+
+        #region columns vals for static listviews
+
+        public static int LabelColumn { get; set; }
+        public static int DataColumn { get; set; }
+        public static int ImageColumn { get; set; }
+
+
+        #endregion
     }
+
 
     public partial class App : PrismApplication
     {
@@ -108,14 +125,14 @@ namespace ArabWaha.Employee
             Container.RegisterTypeForNavigation<StartPage, StartPageViewModel>();
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<PasswordPage, PasswordPageViewModel>();
-            Container.RegisterTypeForNavigation<LoginPage,LoginOptionsPageViewModel>();
+            Container.RegisterTypeForNavigation<LoginPage>();
             Container.RegisterTypeForNavigation<SearchPage>();
             Container.RegisterTypeForNavigation<SignUpPage>();
             Container.RegisterTypeForNavigation<ProgramsPage, ProgramsPageViewModel>();
             Container.RegisterTypeForNavigation<HomePage>();
             Container.RegisterTypeForNavigation<SearchResultsPage, SearchResultsPageViewModel>();
             Container.RegisterTypeForNavigation<CalendarPage>();
-            Container.RegisterTypeForNavigation<ProfilePage>();
+            Container.RegisterTypeForNavigation<ProfilePage,ProfilePageViewModel>();
             Container.RegisterTypeForNavigation<ProgramsPage, ProgramsPageViewModel>();
             Container.RegisterTypeForNavigation<JobsPage, JobsPageViewModel>();
             Container.RegisterTypeForNavigation<ContactUsPage, ContactUsPageViewModel>();
@@ -132,6 +149,9 @@ namespace ArabWaha.Employee
             Container.RegisterTypeForNavigation<NotificationDetailsPage, NotificationDetailsPageViewModel>();
             Container.RegisterTypeForNavigation<EventsDetailPage,EventsDetailPageViewModel>();
             Container.RegisterTypeForNavigation<OneTimePassword, OneTimePasswordViewModel>();
+            Container.RegisterTypeForNavigation<AddNewComplaintPage, AddNewComplaintPageViewModel>();
+            Container.RegisterTypeForNavigation<ProgramDetailsPage,ProgramDetailsPageViewModel>();
+            Container.RegisterTypeForNavigation<BadgesDetailPage,BadgesDetailPageViewModel>();
         }
 
         #region Singleton instance for nav and user checking

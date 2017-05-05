@@ -11,14 +11,14 @@ namespace ArabWaha.Core.Helpers
     {
         #region date helpers
         // date functions
-        public static string GetDateStringFromString(string datein,
-                                                     string format = "{0:ddd, MMM d, yyyy}")
-        {
-            // form in data YYYY-MM-DD HH:MM:SS
-            DateTime convertedDate = GetDateFromString(datein);
-            var str = String.Format(format, convertedDate);
-            return str;
-        }
+        //public static string GetDateStringFromString(string datein,
+        //                                             string format = "{0:ddd, MMM d, yyyy}")
+        //{
+        //    // form in data YYYY-MM-DD HH:MM:SS
+        //    DateTime convertedDate = GetDateFromString(datein);
+        //    var str = String.Format(format, convertedDate);
+        //    return str;
+        //}
 
         public static DateTime GetDateFromString(string datein)
         {
@@ -27,6 +27,23 @@ namespace ArabWaha.Core.Helpers
             int day = int.Parse(datein.Substring(8, 2));
             return new DateTime(year, month, day);
         }
+
+        // format YYYY-MM-DD
+        public static DateTime GetDateFormatFromString(string YMD)
+        {
+            if (string.IsNullOrEmpty(YMD)) return DateTime.Now;
+
+            int year = int.Parse(YMD.Split('-')[0]);
+            int month = int.Parse(YMD.Split('-')[1]);
+            int day = int.Parse(YMD.Split('-')[2]);
+            return new DateTime(year, month, day);
+        }
+
+        public static string GetStringFormatFromDate(DateTime YMD)
+        {
+            return $"{YMD.Year}-{YMD.Month}-{YMD.Day}";
+        }
+
 
         // sql date format YYYY-DD-MMTHH:MM:SS
         public static DateTime GetDatefromSqlDate(string datein)
@@ -89,6 +106,23 @@ namespace ArabWaha.Core.Helpers
             ObservableCollection<T> retvals = new ObservableCollection<T>();
             foreach (var x in dataIn) retvals.Add(x);
             return retvals;
+        }
+
+
+        #endregion
+
+        #region dummyids
+
+        public static int getRandomIdInt()
+        {
+            Random rand = new Random();
+            int val = rand.Next(10000, 32000);
+            return val;            
+        }
+
+        public static string getRandomId()
+        {
+            return getRandomIdInt().ToString();
         }
 
 

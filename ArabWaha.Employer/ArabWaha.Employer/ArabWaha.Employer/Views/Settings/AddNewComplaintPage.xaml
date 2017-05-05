@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ArabWaha.Employer.Views.Settings.AddNewComplaintPage"
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
+             BackgroundColor="White">
+
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
+        <Label Text="{lEx:Translate RaiseAComplaint}" Style="{StaticResource SolidBodyTextBlue}" 
+               HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+
+        <Grid VerticalOptions="Fill">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="5" />
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="{lEx:Translate Category}" FontAttributes="Bold" Grid.Column="{Binding LabelColumn}" Grid.Row="1"
+                   HorizontalTextAlignment="{Binding AlignLabelText}" />
+            <Picker ItemsSource="{Binding Cat1List}" SelectedItem="{Binding Category1}" ItemDisplayBinding="{Binding Value}"
+                    Grid.Column="{Binding DataColumn}" Grid.Row="1"/>
+
+            <Label Text="{lEx:Translate SubCategory2}" FontAttributes="Bold" Grid.Column="{Binding LabelColumn}" Grid.Row="2"
+                   HorizontalTextAlignment="{Binding AlignLabelText}" />
+            <Picker ItemsSource="{Binding Cat2List}" IsEnabled="{Binding IsCat2Enabled}" SelectedItem="{Binding Category2}" ItemDisplayBinding="{Binding Value}"
+                    Grid.Column="{Binding DataColumn}" Grid.Row="2"/>
+
+            <Label Text="{lEx:Translate SubCategory3}" FontAttributes="Bold" Grid.Column="{Binding LabelColumn}" Grid.Row="3"
+                   HorizontalTextAlignment="{Binding AlignLabelText}" />
+            <Picker ItemsSource="{Binding Cat3List}" IsEnabled="{Binding IsCat3Enabled}" SelectedItem="{Binding Category3}" ItemDisplayBinding="{Binding Value}"
+                    Grid.Column="{Binding DataColumn}" Grid.Row="3"/>
+
+
+            <Label Text="{lEx:Translate NINorIqama}" FontAttributes="Bold" Grid.Column="{Binding LabelColumn}" Grid.Row="4"
+                   HorizontalTextAlignment="{Binding AlignLabelText}" />
+            <Entry Text="{Binding CurrentComplaint.NIN}" HorizontalOptions="FillAndExpand"  
+				   HorizontalTextAlignment="{Binding AlignText}"  
+				   Grid.Row="4" Grid.Column="{Binding DataColumn}"/>
+
+
+            <Label Text="{lEx:Translate Dateofbirth}" FontAttributes="Bold" Grid.Column="{Binding LabelColumn}" Grid.Row="5"
+                   HorizontalTextAlignment="{Binding AlignLabelText}" />
+            <DatePicker Date="{Binding CurrentComplaint.DateOfBirth, Mode=TwoWay}" Grid.Row="5" 
+                        Grid.Column="{Binding DataColumn}" />
+
+            <Label Text="{lEx:Translate Subject}" FontAttributes="Bold" Grid.Column="{Binding LabelColumn}" Grid.Row="6"
+                   HorizontalTextAlignment="{Binding AlignLabelText}" />
+            <Entry Text="{Binding CurrentComplaint.Subject}" HorizontalOptions="FillAndExpand"  
+				   HorizontalTextAlignment="{Binding AlignText}"  
+				   Grid.Row="6" Grid.Column="{Binding DataColumn}"/>
+
+            <Label Text="{lEx:Translate Description}" FontAttributes="Bold" Grid.Column="{Binding LabelColumn}" Grid.Row="7"
+                   HorizontalTextAlignment="{Binding AlignLabelText}" />
+            <Editor Text="{Binding CurrentComplaint.ComplaintText}" HorizontalOptions="FillAndExpand"  
+				   Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+
+            <Button Text="{lEx:Translate Submit}" Grid.Row="10" Grid.Column="2" Command="{Binding SaveComplaintCommand}" HorizontalOptions="FillAndExpand" />
+
+        </Grid>
+    </StackLayout>
+</ContentPage>

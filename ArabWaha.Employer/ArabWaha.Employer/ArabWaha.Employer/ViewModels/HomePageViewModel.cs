@@ -5,7 +5,9 @@ using ArabWaha.Core.ModelsEmployer.Services;
 using ArabWaha.Core.Services;
 using ArabWaha.Employer.BaseCalsses;
 using ArabWaha.Employer.Controls;
+using ArabWaha.Employer.Helpers;
 using ArabWaha.Employer.Layouts;
+using ArabWaha.Employer.Layouts.Home;
 using ArabWaha.Employer.Views;
 using ArabWaha.Employer.Views.Home;
 using ArabWaha.Models;
@@ -26,6 +28,13 @@ namespace ArabWaha.Employer.ViewModels
 {
     public class HomePageViewModel : AWMVVMBase, INavigatedAware
     {
+
+        private string _searchText;
+        public string SearchText
+        {
+            get { return _searchText; }
+            set { SetProperty(ref _searchText, value); }
+        }
 
         // bit hacky fix when more time
         TabControl _ctrl;
@@ -81,6 +90,16 @@ namespace ArabWaha.Employer.ViewModels
             {
                 ApiService apiServ = new ApiService();
                 JobPageSource = await apiServ.GetEmployerPostedJobsAsync(1);
+
+                TranslateExtension tran = new TranslateExtension();
+                
+                // mod the text here for translations 
+                foreach (var t in JobPageSource)
+                {
+                    t.JobStatusText = tran.GetProviderValueString("LabelJobStatus");  
+                    t.PostedText = tran.GetProviderValueString("LabelJobPosted");  
+                }
+
                 JobContent = new HomeJobPostsContent();
             });
 
@@ -89,9 +108,8 @@ namespace ArabWaha.Employer.ViewModels
                 ApiService apiServ = new ApiService();
                 ServicesPageSource = await apiServ.GetEmployerServicesAsync(0); // add employer id if logged on
                 ServicesContent = new HomeServicesContent();
-
-                // bind data here
             });
+
             Task.Run(async () =>
             {
                 // get data
@@ -108,7 +126,22 @@ namespace ArabWaha.Employer.ViewModels
             _ctrl = ctrl;
 
             _ctrl.SetSearchVisible(true);
-            _ctrl.SetTabText("Home", "Jobs Posts", "Programs", "Services");
+
+            TranslateExtension tran = new TranslateExtension();
+            string _Home = tran.GetProviderValueString("MenuHome");
+            string _JobPosts = tran.GetProviderValueString("MenuJobPosts");
+            string _Programs = tran.GetProviderValueString("MenuPrograms");
+            string _Services = tran.GetProviderValueString("MenuServices");
+
+            _ctrl.SetTabText(_Home, _JobPosts, _Programs, _Services);
+
+
+            //if (CultureCode.Equals("en"))
+            //    _ctrl.SetTabText("Home", "Jobs Posts", "Programs", "Services");
+            //else
+            //    _ctrl.SetTabText("الصفحة الرئيسية", "وظائف الوظائف", "البرامج", "خدمات");
+
+
             _ctrl.SetTabVisble(1);
         }
 
@@ -160,8 +193,13 @@ namespace ArabWaha.Employer.ViewModels
 
         private async void ProcessDeleteJob(EmployerJobDetail vals)
         {
-            var res = await _dialog.DisplayActionSheetAsync("Confirm delete!!", "Cancel", "Delete", "");
-            if (res.Equals("Delete"))
+            TranslateExtension tran = new TranslateExtension();
+            string confirm = tran.GetProviderValueString("ButtonConfirmDelete");
+            string delete = tran.GetProviderValueString("ButtonDelete"); 
+            string cancel = tran.GetProviderValueString("ButtonCancel"); 
+
+            var res = await _dialog.DisplayActionSheetAsync(confirm, cancel, delete, "");
+            if (res.Equals(delete))
             {
                 ApiService apiServ = new ApiService();
                 if (await apiServ.DeleteEmployerJobasync(vals.JobPostId))
@@ -308,12 +346,14 @@ namespace ArabWaha.Employer.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            var t = "";
         }
 
         private void ExecuteSearch()
         {
-            // do search here
+            if (!string.IsNullOrEmpty(SearchText))
+            {
+                _nav.NavigateAsync($"{nameof(SearchResultsPage)}?SearchText={SearchText}");
+            }
 
         }
 
@@ -388,8 +428,21 @@ namespace ArabWaha.Employer.ViewModels
             set
             {
 
-                if (value != null)
+                //if (value != null)
+                //    SetProperty<ContentView>(ref _CurrentView, value);
+
+                if (!Core.Services.AuthService.IsAuthorised && (
+                    value is HomeJobPostsContent 
+                    || value is HomeServicesContent
+                    || value is HomeProgramsContent))
+                {
+                    // NotLoggedInContent
+                    SetProperty<ContentView>(ref _CurrentView, new NotLoggedInContent());
+                }
+                else if (value != null)
                     SetProperty<ContentView>(ref _CurrentView, value);
+
+
             }
         }
 

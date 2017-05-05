@@ -117,11 +117,68 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ButtonAddNewPost" xml:space="preserve">
+    <value>+ إضافة وظيفة جديدة</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="ButtonApply" xml:space="preserve">
+    <value>تطبيق</value>
+  </data>
+  <data name="ButtonOk" xml:space="preserve">
+    <value>حسنا</value>
+  </data>
+  <data name="ButtonConfirmDelete" xml:space="preserve">
+    <value>تأكيد حذف !!</value>
+  </data>
+  <data name="ButtonDelete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="ButtonDeleteJobPost" xml:space="preserve">
+    <value>حذف وظيفة الوظيفة</value>
+  </data>
+  <data name="ButtonDiscardChanges" xml:space="preserve">
+    <value>تجاهل التغييرات</value>
+  </data>
+  <data name="ButtonEditJobPost" xml:space="preserve">
+    <value>تحرير الوظيفة</value>
+  </data>
+  <data name="ButtonInfoConfirmSaveChanges" xml:space="preserve">
+    <value>تأكيد حفظ التغييرات !!</value>
+  </data>
+  <data name="ButtonInfoDiscardChanges" xml:space="preserve">
+    <value>تأكد من أنك تريد تجاهل جميع التغييرات !!</value>
+  </data>
+  <data name="ButtonSaveEdits" xml:space="preserve">
+    <value>حفظ التعديلات</value>
+  </data>
   <data name="ButtonSignIn" xml:space="preserve">
     <value>تسجيل الدخول</value>
   </data>
   <data name="ButtonSignUp" xml:space="preserve">
     <value>سجل</value>
+  </data>
+  <data name="ButtonViewMatchingCandidates" xml:space="preserve">
+    <value>عرض المرشحين مطابقة</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>الفئة</value>
+  </data>
+  <data name="ClosedOn" xml:space="preserve">
+    <value>أغلقت يوم</value>
+  </data>
+  <data name="ComplaintId" xml:space="preserve">
+    <value>معرف الشكوى</value>
+  </data>
+  <data name="CreatedOn" xml:space="preserve">
+    <value>تم إنشاؤها على</value>
+  </data>
+  <data name="Dateofbirth" xml:space="preserve">
+    <value>تاريخ الولادة</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>وصف</value>
   </data>
   <data name="EMAIL" xml:space="preserve">
     <value>البريد الإلكتروني</value>
@@ -131,6 +188,123 @@
   </data>
   <data name="IndicatorRefreshText" xml:space="preserve">
     <value>تحديث البيانات ..</value>
+  </data>
+  <data name="LabelAccept" xml:space="preserve">
+    <value>قبول</value>
+  </data>
+  <data name="LabelAdditionalDetails" xml:space="preserve">
+    <value>تفاصيل اضافية</value>
+  </data>
+  <data name="LabelContactInfo" xml:space="preserve">
+    <value>معلومات الاتصال</value>
+  </data>
+  <data name="LabelDecline" xml:space="preserve">
+    <value>انخفاض</value>
+  </data>
+  <data name="LabelEventInfo" xml:space="preserve">
+    <value>معلومات الحدث</value>
+  </data>
+  <data name="LabelJobApplicationStatus" xml:space="preserve">
+    <value>حالة التطبيق</value>
+  </data>
+  <data name="LabelJobAppliedDate" xml:space="preserve">
+    <value>تاريخ التطبيق</value>
+  </data>
+  <data name="LabelJobBeginner" xml:space="preserve">
+    <value>مبتدئ</value>
+  </data>
+  <data name="LabelJobCompany" xml:space="preserve">
+    <value>شركة</value>
+  </data>
+  <data name="LabelJobCompanyIndustry" xml:space="preserve">
+    <value>قطاع الشركة</value>
+  </data>
+  <data name="LabelJobCompanyLogo" xml:space="preserve">
+    <value>شعار الشركة</value>
+  </data>
+  <data name="LabelJobCompanyName" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
+  <data name="LabelJobDesiredStartDate" xml:space="preserve">
+    <value>تاريخ البدء المرغوب</value>
+  </data>
+  <data name="LabelJobDrivingLicence" xml:space="preserve">
+    <value>رخصة قيادة</value>
+  </data>
+  <data name="LabelJobExpert" xml:space="preserve">
+    <value>خبير</value>
+  </data>
+  <data name="LabelJobExpiry" xml:space="preserve">
+    <value>انقضاء</value>
+  </data>
+  <data name="LabelJobFilledPositions" xml:space="preserve">
+    <value>شغل المواقف</value>
+  </data>
+  <data name="LabelJobGeneralInformation" xml:space="preserve">
+    <value>معلومات عامة</value>
+  </data>
+  <data name="LabelJobJobPostID" xml:space="preserve">
+    <value>معرف وظيفة الوظيفة</value>
+  </data>
+  <data name="LabelJobJobTitle" xml:space="preserve">
+    <value>المسمى الوظيفي</value>
+  </data>
+  <data name="LabelJobJobType" xml:space="preserve">
+    <value>نوع الوظيفة</value>
+  </data>
+  <data name="LabelJobLanguagehere" xml:space="preserve">
+    <value>اللغة هنا</value>
+  </data>
+  <data name="LabelJobLicenceName" xml:space="preserve">
+    <value>اسم الترخيص</value>
+  </data>
+  <data name="LabelJobLicences" xml:space="preserve">
+    <value>التراخيص</value>
+  </data>
+  <data name="LabelJobLicenceType" xml:space="preserve">
+    <value>نوع الترخيص</value>
+  </data>
+  <data name="LabelJobMinimumExp" xml:space="preserve">
+    <value>الحد الأدنى من إكس</value>
+  </data>
+  <data name="LabelJobMonthlySalary" xml:space="preserve">
+    <value>راتب شهري</value>
+  </data>
+  <data name="LabelJobOpenPositions" xml:space="preserve">
+    <value>المناصب المفتوحة</value>
+  </data>
+  <data name="LabelJobPosted" xml:space="preserve">
+    <value>تاريخ النشر:</value>
+  </data>
+  <data name="LabelJobRequiresDrivingLicence" xml:space="preserve">
+    <value>يتطلب رخصة القيادة</value>
+  </data>
+  <data name="LabelJobRolesResponsib" xml:space="preserve">
+    <value>الأدوار والمسؤولية</value>
+  </data>
+  <data name="LabelJobSalary" xml:space="preserve">
+    <value>راتب</value>
+  </data>
+  <data name="LabelJobSector" xml:space="preserve">
+    <value>قطاع</value>
+  </data>
+  <data name="LabelJobSkills" xml:space="preserve">
+    <value>مهارات</value>
+  </data>
+  <data name="LabelJobStatus" xml:space="preserve">
+    <value>حالة الوظيفة:</value>
+  </data>
+  <data name="LabelJobTitle" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="LabelJobYears" xml:space="preserve">
+    <value>سنوات</value>
+  </data>
+  <data name="LabelProposeNewTime" xml:space="preserve">
+    <value>اقتراح الوقت الجديد</value>
+  </data>
+  <data name="LabelTimeOptions" xml:space="preserve">
+    <value>خيارات الوقت</value>
   </data>
   <data name="LoginEnterPassword" xml:space="preserve">
     <value>أدخل كلمة المرور</value>
@@ -150,8 +324,35 @@
   <data name="LoginUserText" xml:space="preserve">
     <value>اسم المستخدم</value>
   </data>
+  <data name="MenuDelete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="MenuEdit" xml:space="preserve">
+    <value>تصحيح</value>
+  </data>
+  <data name="MenuHome" xml:space="preserve">
+    <value>الصفحة الرئيسية</value>
+  </data>
+  <data name="MenuJobPosts" xml:space="preserve">
+    <value>وظائف الوظائف</value>
+  </data>
+  <data name="MenuPrograms" xml:space="preserve">
+    <value>البرامج</value>
+  </data>
+  <data name="MenuServices" xml:space="preserve">
+    <value>خدمات</value>
+  </data>
+  <data name="MenuView" xml:space="preserve">
+    <value>رأي</value>
+  </data>
   <data name="MobileSMS" xml:space="preserve">
     <value>سمز الجوال</value>
+  </data>
+  <data name="NINorIqama" xml:space="preserve">
+    <value>نين أو الإقامة</value>
+  </data>
+  <data name="RaiseAComplaint" xml:space="preserve">
+    <value>رفع شكوى</value>
   </data>
   <data name="SearchAlreadyHaveAccount" xml:space="preserve">
     <value>هل لديك حساب بالفعل؟ تسجيل الدخول</value>
@@ -159,7 +360,7 @@
   <data name="SearchKeywordText" xml:space="preserve">
     <value>الكلمة الرئيسية</value>
   </data>
-  <data name="SearchLocationtext" xml:space="preserve">
+  <data name="SearchLocationText" xml:space="preserve">
     <value>موقعك</value>
   </data>
   <data name="SearchText" xml:space="preserve">
@@ -168,8 +369,14 @@
   <data name="StartContinueAsGuest" xml:space="preserve">
     <value>متابعة كضيف</value>
   </data>
+  <data name="StartMoLLogin" xml:space="preserve">
+    <value>وزارة العمل تسجيل الدخول</value>
+  </data>
+  <data name="StartNLGLogin" xml:space="preserve">
+    <value>NLG الدخول</value>
+  </data>
   <data name="StartTab1Text" xml:space="preserve">
-    <value>تحقق من الآلاف من الشواغر المتاحة حاليا في جميع أنحاء المملكة العربية السعودية للعثور على مثالية واحدة بالنسبة لك</value>
+    <value>ابدأ الآن و اعلن عن وظائف شاغرة في طاقات لتلقي الطلبات و ايجاد افضل مرشح</value>
   </data>
   <data name="StartTab2GetStarted" xml:space="preserve">
     <value>البدء</value>
@@ -177,10 +384,594 @@
   <data name="StartTab2Text" xml:space="preserve">
     <value>تحقق من الآلاف من الشواغر المتاحة حاليا في جميع أنحاء المملكة العربية السعودية للعثور على مثالية واحدة بالنسبة لك</value>
   </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="SubCategory2" xml:space="preserve">
+    <value>الفئة الفرعية 2</value>
+  </data>
+  <data name="SubCategory3" xml:space="preserve">
+    <value>الفئة الفرعية 3</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>موضوع</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>عرض</value>
+  </data>
   <data name="TabControlSearchText" xml:space="preserve">
     <value>بحث وظائف</value>
   </data>
+  <data name="TextAboutPageDefault" xml:space="preserve">
+    <value>حول التفاصيل هنا</value>
+  </data>
+  <data name="TextAboutPageTitle" xml:space="preserve">
+    <value>حول</value>
+  </data>
+  <data name="TextAvailablePrograms" xml:space="preserve">
+    <value>البرامج المتاحة</value>
+  </data>
+  <data name="TextAvailableServices" xml:space="preserve">
+    <value>الخدمات المتاحة</value>
+  </data>
+  <data name="TextComplaints" xml:space="preserve">
+    <value>شكاوي</value>
+  </data>
+  <data name="TextContactPageDefault" xml:space="preserve">
+    <value>تفاصيل الاتصال بنا هنا</value>
+  </data>
+  <data name="TextContactPageTitle" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="TextLanguage" xml:space="preserve">
+    <value>لغة</value>
+  </data>
+  <data name="TextNotLoggedIn" xml:space="preserve">
+    <value>يجب تسجيل الدخول لعرض هذه البيانات</value>
+  </data>
+  <data name="TextSettingPageTitle" xml:space="preserve">
+    <value>إعدادات</value>
+  </data>
+  <data name="TextSettingsResetPassword" xml:space="preserve">
+    <value>إعادة تعيين كلمة المرور</value>
+  </data>
+  <data name="TextSignOut" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="TextWatch" xml:space="preserve">
+    <value>راقب</value>
+  </data>
+  <data name="TextWatching" xml:space="preserve">
+    <value>مشاهدة</value>
+  </data>
+  <data name="WelcomeEmployerSignin" xml:space="preserve">
+    <value>سجل دخولك كصاحب عمل باستخدام تسجيل الدخول الخاص بك أو تسجيل دخول نغل أو الاشتراك أو الاستمرار كضيف</value>
+  </data>
   <data name="WelcomeTitle" xml:space="preserve">
     <value>أهلا بك</value>
+  </data>
+  <data name="JobTypeFilterText" xml:space="preserve">
+    <value>نوع الوظيفة</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_PERM" xml:space="preserve">
+    <value>دائمة</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_PERM_DESC" xml:space="preserve">
+    <value>العمل على المدى الطويل مع نهاية غير محددة</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_CONTR" xml:space="preserve">
+    <value>عقد</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_CONTR_DESC" xml:space="preserve">
+    <value>العمالة المؤقتة وفقا للشروط المتفق عليها مسبقا</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_MINJOB" xml:space="preserve">
+    <value>وظيفة صغيرة</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_MINJOB_DESC" xml:space="preserve">
+    <value>عمل قصیر الأجل یصل إلی 6 أشھر للطلاب (وھذا للطلاب فقط)</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_INTERN" xml:space="preserve">
+    <value>فترة تدريب</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_INTERN_DESC" xml:space="preserve">
+    <value>العمل المؤقت للطلاب</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_SUMMJOB" xml:space="preserve">
+    <value>عمل صيفي</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_SUMMJOB_DESC" xml:space="preserve">
+    <value>العمالة المؤقتة خلال أشهر الصيف</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_JOBTRNO" xml:space="preserve">
+    <value>على التدريب أثناء العمل</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_JOBTRNO_DESC" xml:space="preserve">
+    <value>العمالة المؤقتة مع التركيز على التدريب</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_EMPDVNAC" xml:space="preserve">
+    <value>أكاديمية القيادة العاملة</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_EMPDVNAC_DESC" xml:space="preserve">
+    <value />
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="JOBTYPE_TAMOJT" xml:space="preserve">
+    <value>طاهر</value>
+    <comment>Job Type</comment>
+  </data>
+  <data name="JOBTYPE_TAMOJT_DESC" xml:space="preserve">
+    <value>على التدريب أثناء العمل</value>
+    <comment>Job Type Description</comment>
+  </data>
+  <data name="SortByFilterText" xml:space="preserve">
+    <value>ترتيب حسب</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_DISTANCE" xml:space="preserve">
+    <value>مسافه: بعد</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_RELEVANCE" xml:space="preserve">
+    <value>ملاءمة</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_SCORE_HIGH" xml:space="preserve">
+    <value>نقاط المطابقة (من الأعلى إلى الأقل)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_SCORE_LOW" xml:space="preserve">
+    <value>نقاط المطابقة (من الأقل إلى الأعلى)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_STARTDATE_RECENT" xml:space="preserve">
+    <value>تاريخ البدء (الأحدث أولا)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_STARTDATE_FUTURE" xml:space="preserve">
+    <value>تاريخ البدء (المستقبل أولا)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_GENDER_MALEFIRST" xml:space="preserve">
+    <value>الجنس (ذكر أولا)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="SORTBY_GENDER_FEMALEFIRST" xml:space="preserve">
+    <value>الجنس (أنثى أولا)</value>
+    <comment>Sort By</comment>
+  </data>
+  <data name="WorkTypeFilterText" xml:space="preserve">
+    <value>نوع العمل</value>
+    <comment>Work Type</comment>
+  </data>
+  <data name="FULLT" xml:space="preserve">
+    <value>دوام كامل</value>
+    <comment>Work Type</comment>
+  </data>
+  <data name="PART" xml:space="preserve">
+    <value>دوام جزئي</value>
+    <comment>Work Type</comment>
+  </data>
+  <data name="ShiftTypeFilterText" xml:space="preserve">
+    <value>نوع التحول</value>
+    <comment>Shift Type</comment>
+  </data>
+  <data name="SHF_Day" xml:space="preserve">
+    <value>صباحية</value>
+    <comment>Shift Type</comment>
+  </data>
+  <data name="SHF_Night" xml:space="preserve">
+    <value>مسائية</value>
+    <comment>Shift Type</comment>
+  </data>
+  <data name="SHF_TwoShifts" xml:space="preserve">
+    <value>فترتين</value>
+    <comment>Shift Type</comment>
+  </data>
+  <data name="TravelingRequiredFilterText" xml:space="preserve">
+    <value>السفر المطلوبة</value>
+  </data>
+  <data name="TRAV_Day" xml:space="preserve">
+    <value>صباحية</value>
+  </data>
+  <data name="TRAV_Night" xml:space="preserve">
+    <value>مسائية</value>
+  </data>
+  <data name="TRAV_TwoShifts" xml:space="preserve">
+    <value>فترتين</value>
+  </data>
+  <data name="TeleWorkingFilterText" xml:space="preserve">
+    <value>العمل عن بعد</value>
+  </data>
+  <data name="TELEW" xml:space="preserve">
+    <value>نعم</value>
+    <comment>Teleworking</comment>
+  </data>
+  <data name="NOTELEW" xml:space="preserve">
+    <value>لا</value>
+    <comment>Teleworking</comment>
+  </data>
+  <data name="RequiredEducationFilterText" xml:space="preserve">
+    <value>التعليم المطلوب</value>
+  </data>
+  <data name="TCD" xml:space="preserve">
+    <value>دبلوم تقني أو ما يعادله</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="HTC" xml:space="preserve">
+    <value>تعليم تقني عالي أو ما يعادله</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="LES" xml:space="preserve">
+    <value>أقل من ابتدائي</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="ESH" xml:space="preserve">
+    <value>ابتدائي</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="MSH" xml:space="preserve">
+    <value>متوسط</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="HSH" xml:space="preserve">
+    <value>ثانوية عامة أو ما يعادلها</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="BDG" xml:space="preserve">
+    <value>بكالوريوس أو ما يعادلها</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="MDG" xml:space="preserve">
+    <value>ماجستير أو ما يعادلها</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="DDG" xml:space="preserve">
+    <value>الدكتوراه أو ما يعادلها</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="DUMMY" xml:space="preserve">
+    <value>Dummy</value>
+    <comment>Education Level</comment>
+  </data>
+  <data name="SpecializationFilterText" xml:space="preserve">
+    <value>تخصص</value>
+  </data>
+  <data name="GenericProgrammesAndQualifications" xml:space="preserve">
+    <value>البرامج العامة والمؤهلات</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>خدمات</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>التعليم</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="ArtsAndHumanities" xml:space="preserve">
+    <value>الفنون والعلوم الإنسانية</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="SocialSciences" xml:space="preserve">
+    <value>العلوم الاجتماعي&gt;العلوم الاجتماعية والصحافة والمعلومات</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="BusinessAdministration" xml:space="preserve">
+    <value>الأعمال والإدارة والقانون</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="NaturalSciencesMathematics" xml:space="preserve">
+    <value>العلوم الطبيعية والرياضيات والإحصاءات</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="InformationAndCommunicationTechnologies" xml:space="preserve">
+    <value>تكنولوجيا المعلومات والاتصالات (ICTs)</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="EngineeringManufacturingConstruction" xml:space="preserve">
+    <value>الهندسة والتصنيع والبناء</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="AgricultureForestryFisheriesVeterinary" xml:space="preserve">
+    <value>الزراعة والغابات ومصائد الأسماك والطب البيطري</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="HealthWelfare" xml:space="preserve">
+    <value>الصحة والخدمات الاجتماعية</value>
+    <comment>Specialization</comment>
+  </data>
+  <data name="GenderFilterText" xml:space="preserve">
+    <value>جنس</value>
+  </data>
+  <data name="GENDER_M" xml:space="preserve">
+    <value>الذكر</value>
+  </data>
+  <data name="GENDER_F" xml:space="preserve">
+    <value>إناثا</value>
+  </data>
+  <data name="GENDER_BOTH" xml:space="preserve">
+    <value>كلا</value>
+  </data>
+  <data name="PostedSinceFilterText" xml:space="preserve">
+    <value>نشر منذ ذلك الحين</value>
+  </data>
+  <data name="POSTED_TWODAYS" xml:space="preserve">
+    <value>يومان</value>
+  </data>
+  <data name="POSTED_ONEWEEK" xml:space="preserve">
+    <value>اسبوع واحد</value>
+  </data>
+  <data name="POSTED_TWOWEEKS" xml:space="preserve">
+    <value>إسبوعين</value>
+  </data>
+  <data name="POSTED_THREEWEEKS" xml:space="preserve">
+    <value>ثلاثة اسابيع</value>
+  </data>
+  <data name="POSTED_FOURORMORE" xml:space="preserve">
+    <value>أربعة أسابيع أو أكثر</value>
+  </data>
+  <data name="LabelFilter" xml:space="preserve">
+    <value>منقي</value>
+  </data>
+  <data name="LabelNoKeywordsEntered" xml:space="preserve">
+    <value>لم يتم إدخال كلمات رئيسية في الحقول حتى الآن</value>
+  </data>
+  <data name="ButtonNextStep" xml:space="preserve">
+    <value>الخطوة التالية</value>
+  </data>
+  <data name="LabelJobApplicationMethodText" xml:space="preserve">
+    <value>طريقة التطبيق</value>
+  </data>
+  <data name="LabelJobApplicationRequirementText" xml:space="preserve">
+    <value>المتطلبات</value>
+  </data>
+  <data name="LabelJobApplicationSurveyText" xml:space="preserve">
+    <value>الدراسة الاستقصائية</value>
+  </data>
+  <data name="LabelJobAttachmentsListText" xml:space="preserve">
+    <value>قائمة المرفقات هنا</value>
+  </data>
+  <data name="LabelJobAttachmentsText" xml:space="preserve">
+    <value>المرفقات</value>
+  </data>
+  <data name="LabelJobBenefitsBonusText" xml:space="preserve">
+    <value>علاوة</value>
+  </data>
+  <data name="LabelJobBenefitsOtherText" xml:space="preserve">
+    <value>آخر</value>
+  </data>
+  <data name="LabelJobBenefitsSalaryFromText" xml:space="preserve">
+    <value>الراتب من</value>
+  </data>
+  <data name="LabelJobBenefitsSalaryToText" xml:space="preserve">
+    <value>الراتب إلى</value>
+  </data>
+  <data name="LabelJobBenefitsText" xml:space="preserve">
+    <value>الفوائد والمزايا</value>
+  </data>
+  <data name="LabelJobContactCompanyLocationText" xml:space="preserve">
+    <value>موقع الشركة</value>
+  </data>
+  <data name="LabelJobContactNameText" xml:space="preserve">
+    <value>اسم</value>
+  </data>
+  <data name="LabelJobContactText" xml:space="preserve">
+    <value>الشخص الذي يمكن الاتصال به</value>
+  </data>
+  <data name="LabelJobLocationAddressText" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="LabelJobLocationMobilityNotesText" xml:space="preserve">
+    <value>ملاحظات التنقل</value>
+  </data>
+  <data name="LabelJobLocationMobilityText" xml:space="preserve">
+    <value>إمكانية التنقل</value>
+  </data>
+  <data name="LabelJobLocationShiftTimeText" xml:space="preserve">
+    <value>وقت التناوب</value>
+  </data>
+  <data name="LabelJobLocationTeleworkingText" xml:space="preserve">
+    <value>العمل عن بعد</value>
+  </data>
+  <data name="LabelJobLocationWorkTimeText" xml:space="preserve">
+    <value>وقت العمل</value>
+  </data>
+  <data name="LabelJobTrainingInstituteText" xml:space="preserve">
+    <value>اسم المعهد</value>
+  </data>
+  <data name="LabelJobTrainingLocationText" xml:space="preserve">
+    <value>موقعك</value>
+  </data>
+  <data name="LabelJobTrainingNameText" xml:space="preserve">
+    <value>اسم التدريب</value>
+  </data>
+  <data name="LabelJobTrainingText" xml:space="preserve">
+    <value>تدريب</value>
+  </data>
+  <data name="LabelJobTrainingValidityText" xml:space="preserve">
+    <value>صلاحية</value>
+  </data>
+  <data name="LabelNewJobHeaderText" xml:space="preserve">
+    <value>حدد نوع الوظيفة</value>
+  </data>
+  <data name="LabelNewJobTitleText" xml:space="preserve">
+    <value>إنشاء وظيفة جديدة</value>
+  </data>
+  <data name="Applications" xml:space="preserve">
+    <value>التطبيقات</value>
+  </data>
+  <data name="LabelJobApplications" xml:space="preserve">
+    <value>تطبيقات وظيفة</value>
+  </data>
+  <data name="LabelJobPosts" xml:space="preserve">
+    <value>وظائف الوظيفة</value>
+  </data>
+  <data name="LabelWatchList" xml:space="preserve">
+    <value>قائمة المراقبة</value>
+  </data>
+  <data name="ApplicationsInviteToApply" xml:space="preserve">
+    <value>+ دعوة لتطبيق</value>
+  </data>
+  <data name="LabelApplicationsTitle" xml:space="preserve">
+    <value>وظائف</value>
+  </data>
+  <data name="LabelCandidateInviteTitle" xml:space="preserve">
+    <value>تعيين المرشح للعمل</value>
+  </data>
+  <data name="CanadidateSendInvite" xml:space="preserve">
+    <value>ارسل دعوة</value>
+  </data>
+  <data name="CandidateSendInviteMessage" xml:space="preserve">
+    <value>تم إرسال دعوتك</value>
+  </data>
+  <data name="CandidateInvitePersonLabel" xml:space="preserve">
+    <value>سيتم دعوة المرشح أعلاه لتقديم طلب للحصول على الوظيفة:</value>
+  </data>
+  <data name="CandidateMessageLabel" xml:space="preserve">
+    <value>رسالة إلى المرشح</value>
+  </data>
+  <data name="ButtonSendInvite" xml:space="preserve">
+    <value>إرسال دعوة</value>
+  </data>
+  <data name="UserDetailsLabel" xml:space="preserve">
+    <value>بيانات المستخدم</value>
+  </data>
+  <data name="UserNINLabel" xml:space="preserve">
+    <value>نين أو الإقامة أو المعادل</value>
+  </data>
+  <data name="NLGUsernameLabel" xml:space="preserve">
+    <value>نلغ اسم المستخدم</value>
+  </data>
+  <data name="EmailAddressLabel" xml:space="preserve">
+    <value>عنوان البريد الإلكتروني</value>
+  </data>
+  <data name="AssignUserRoleLabel" xml:space="preserve">
+    <value>تعيين دور المستخدم</value>
+  </data>
+  <data name="AddUserTitle" xml:space="preserve">
+    <value>إضافة مستخدم</value>
+  </data>
+  <data name="SaveNewUserButton" xml:space="preserve">
+    <value>حفظ مستخدم جديد</value>
+  </data>
+  <data name="CompanyDescriptionLabel" xml:space="preserve">
+    <value>وصف الشركة</value>
+  </data>
+  <data name="CompanyInformationLabel" xml:space="preserve">
+    <value>معلومات الشركة</value>
+  </data>
+  <data name="IndustryLabel" xml:space="preserve">
+    <value>صناعة</value>
+  </data>
+  <data name="CompanySizeLabel" xml:space="preserve">
+    <value>حجم الشركة</value>
+  </data>
+  <data name="PreferredLanguageLabel" xml:space="preserve">
+    <value>اللغة المفضلة</value>
+  </data>
+  <data name="ProfileIDLabel" xml:space="preserve">
+    <value>ملف البطاقة الشخصية</value>
+  </data>
+  <data name="NameLabel" xml:space="preserve">
+    <value>اسم</value>
+  </data>
+  <data name="PositionLabel" xml:space="preserve">
+    <value>موضع</value>
+  </data>
+  <data name="MobilePhoneLabel" xml:space="preserve">
+    <value>تليفون محمول</value>
+  </data>
+  <data name="TelephoneNumberLabel" xml:space="preserve">
+    <value>رقم هاتف</value>
+  </data>
+  <data name="ManageCompanyUsersButton" xml:space="preserve">
+    <value>إدارة مستخدمي الشركة</value>
+  </data>
+  <data name="LocationLabel" xml:space="preserve">
+    <value>موقعك</value>
+  </data>
+  <data name="ContactDetailsLabel" xml:space="preserve">
+    <value>بيانات المتصل</value>
+  </data>
+  <data name="EditPersonalDetailsTitle" xml:space="preserve">
+    <value>تعديل التفاصيل الشخصية</value>
+  </data>
+  <data name="FirstNameLabel" xml:space="preserve">
+    <value>الاسم الاول</value>
+  </data>
+  <data name="SecondNameLabel" xml:space="preserve">
+    <value>الاسم الثاني</value>
+  </data>
+  <data name="ThirdNameLabel" xml:space="preserve">
+    <value>الاسم الثالث</value>
+  </data>
+  <data name="LastNameLabel" xml:space="preserve">
+    <value>الكنية</value>
+  </data>
+  <data name="AssignedRoleLabel" xml:space="preserve">
+    <value>الدور المعين</value>
+  </data>
+  <data name="PrefferedCommunicationLabel" xml:space="preserve">
+    <value>الاتصالات المفضلة</value>
+  </data>
+  <data name="SavePersonalDetailsButton" xml:space="preserve">
+    <value>حفظ التفاصيل الشخصية</value>
+  </data>
+  <data name="AccountStatusLabel" xml:space="preserve">
+    <value>حالة الحساب</value>
+  </data>
+  <data name="PersonalInformationLabel" xml:space="preserve">
+    <value>معلومات شخصية</value>
+  </data>
+  <data name="ManageCompanyUsersTitle" xml:space="preserve">
+    <value>إدارة مستخدمي الشركة</value>
+  </data>
+  <data name="RepresentativesTab" xml:space="preserve">
+    <value>الممثلون</value>
+  </data>
+  <data name="RecruitersTab" xml:space="preserve">
+    <value>التوظيف</value>
+  </data>
+  <data name="DeleteUserRecruiterMessage" xml:space="preserve">
+    <value>هل تريد حذف مستخدم المجند؟</value>
+  </data>
+  <data name="DeleteUserRepresentativeMessage" xml:space="preserve">
+    <value>هل تريد حذف مستخدم الممثل؟</value>
+  </data>
+  <data name="AddRecruiterButton" xml:space="preserve">
+    <value>+ إضافة مجند</value>
+  </data>
+  <data name="AddRepresentativeButton" xml:space="preserve">
+    <value>+ إضافة ممثل</value>
+  </data>
+  <data name="PersonalDetailsTitle" xml:space="preserve">
+    <value>تفاصيل شخصية</value>
+  </data>
+  <data name="EditPersonalDetailsButton" xml:space="preserve">
+    <value>تعديل التفاصيل الشخصية</value>
+  </data>
+  <data name="UsernameLabel" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="UserTypeLabel" xml:space="preserve">
+    <value>نوع المستخدم</value>
+  </data>
+  <data name="AccountInformationLabel" xml:space="preserve">
+    <value>معلومات الحساب</value>
   </data>
 </root>

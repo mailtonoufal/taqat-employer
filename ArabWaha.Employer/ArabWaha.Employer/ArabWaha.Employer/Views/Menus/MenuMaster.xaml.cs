@@ -62,7 +62,7 @@ namespace ArabWaha.Employer.Views.Menus
             {
                 if (!GlobalSetting.CultureCode.Equals("ar"))
                 {
-                    ApiServiceIndividual api = new ApiServiceIndividual();
+                    ApiService api = new ApiService();
                     await api.SetCurrentCultureAsync("ar");
                     GlobalSetting.SetupCulture();
 

@@ -37,8 +37,6 @@ namespace ArabWaha.Employer.iOS
             manager.Configure("d16e3b21824b41b59183d48a4efe414f");
             manager.StartManager();
 
-            global::Xamarin.Forms.Forms.Init();
-         //   Xamarin.FormsMaps.Init();
             CarouselViewRenderer.Init();
             SlideOverKit.iOS.SlideOverKit.Init();
 
@@ -57,6 +55,7 @@ namespace ArabWaha.Employer.iOS
             // copy db when in place
             CopyDB("employerdb.db3", "ArabWaha.Employer.iOS.Resources.employerdb.db3");
 
+            global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
