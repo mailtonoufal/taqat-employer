@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace ArabWaha.Employer.Views.Home
 {
@@ -6,7 +7,14 @@ namespace ArabWaha.Employer.Views.Home
     {
         public ProgramDetailsPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch(Exception ex)
+            {
+                var t = ex.Message;
+            }
         }
     }
 }

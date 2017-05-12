@@ -5,6 +5,7 @@ using ArabWaha.Core.ModelsEmployer.Services;
 using ArabWaha.Core.Services;
 using ArabWaha.Employer.BaseCalsses;
 using ArabWaha.Employer.Helpers;
+using ArabWaha.Employer.Layouts;
 using ArabWaha.Employer.Views;
 using ArabWaha.Employer.Views.Home;
 using Prism.Commands;
@@ -21,6 +22,15 @@ namespace ArabWaha.Employer.ViewModels
 {
     public class ApplicationsPageViewModel : AWMVVMBase
     {
+        Tab3View _ctrl;
+
+        public void SetTabs(Tab3View ctrl)
+        {
+            if (_ctrl != null) return;
+            _ctrl = ctrl;
+            ApllicationsNavigate();
+        }
+
         private string _tab1Test;
         public string Tab1Text
         {
@@ -129,7 +139,7 @@ namespace ArabWaha.Employer.ViewModels
             AddNewJobCommand = new DelegateCommand(ProcessAddNewJobCommand);
 
             // Default Tab1
-            ApllicationsNavigate();
+         //   ApllicationsNavigate();
 
             LoadData();
 
@@ -155,12 +165,14 @@ namespace ArabWaha.Employer.ViewModels
         {
             IsTab1Selected = true;
             IsTab2Selected = IsTab3Selected = false;
+            _ctrl.SetTabVisble(1);
             MessagingCenter.Send(this, "HideMenu");
         }
 
         private void WatchListNavigate()
         {
             IsTab3Selected = true;
+            _ctrl.SetTabVisble(3);
             IsTab1Selected = IsTab2Selected = false;
             MessagingCenter.Send(this, "HideMenu");
         }
@@ -168,6 +180,7 @@ namespace ArabWaha.Employer.ViewModels
         private void JobPostNavigate()
         {
             IsTab2Selected = true;
+            _ctrl.SetTabVisble(2);
             IsTab1Selected = IsTab3Selected = false;
             MessagingCenter.Send(this, "HideMenu");
         }
@@ -183,6 +196,32 @@ namespace ArabWaha.Employer.ViewModels
             CompanyApplicationList = await api.GetCompanyJobApplicationsAsync(0);
             Jobs = CompanyApplicationList.Jobs;
             JobPageSource = await api.GetEmployerPostedJobsAsync(1);
+
+            TranslateExtension tran = new TranslateExtension();
+            string displayJobText = tran.GetProviderValueString("LabelApplicationsToText");
+            string applicationDateText = tran.GetProviderValueString("LabelApplicationDateText");
+
+            // update job page source data
+            foreach (var t in JobPageSource)
+            {
+                t.JobStatusText = tran.GetProviderValueString("LabelJobStatus");
+                t.PostedText = tran.GetProviderValueString("LabelJobPosted");
+
+                if (string.IsNullOrEmpty(t.CompanyLogo)) t.CompanyLogo = "jobcompanyicon.png";
+            }
+
+
+
+            // do a translate here
+            foreach (var itemx in Jobs)
+            {
+                itemx.JobDetails.ApplicationsLanguageText = displayJobText;
+                foreach (var appin in itemx.Applications)
+                    appin.ApplicationDateText = applicationDateText;
+            }
+
+
+
             LoadWatchList();
         }
 

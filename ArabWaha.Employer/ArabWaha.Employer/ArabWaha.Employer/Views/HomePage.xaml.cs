@@ -41,5 +41,12 @@ namespace ArabWaha.Employer.Views
             if (vm != null)
                 vm.SetTabs(tabCtrl);
         }
+
+        private void ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            // just to stop the highlight/selection for now as its distracting client away from real issues.
+            if (e.SelectedItem == null) return;
+            ((ListView)sender).SelectedItem = null;
+        }
     }
 }

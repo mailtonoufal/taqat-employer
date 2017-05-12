@@ -868,7 +868,7 @@
   </data>
   <data name="SaveNewUserButton" xml:space="preserve">
     <value>Save New User</value>
-  </data>  
+  </data>
   <data name="CompanyDescriptionLabel" xml:space="preserve">
     <value>Company Description</value>
   </data>
@@ -905,12 +905,9 @@
   <data name="LocationLabel" xml:space="preserve">
     <value>Location</value>
   </data>
-  <data name="LocationLabel" xml:space="preserve">
-    <value>Location</value>
-  </data>
   <data name="ContactDetailsLabel" xml:space="preserve">
     <value>Contact Details</value>
-  </data>  
+  </data>
   <data name="EditPersonalDetailsTitle" xml:space="preserve">
     <value>Edit Personal Details</value>
   </data>
@@ -976,5 +973,65 @@
   </data>
   <data name="AccountInformationLabel" xml:space="preserve">
     <value>Account Information</value>
-  </data>  
+  </data>
+  <data name="LabelApplicationsToText" xml:space="preserve">
+    <value>Applications To</value>
+  </data>
+  <data name="LabelApplicationDateText" xml:space="preserve">
+    <value>Application Date:</value>
+  </data>
+  <data name="LabelProgramStatusText" xml:space="preserve">
+    <value>Program Status:</value>
+  </data>
+  <data name="LabelAgoText" xml:space="preserve">
+    <value>Ago</value>
+  </data>
+  <data name="LabelApplicationMatchScoreText" xml:space="preserve">
+    <value>Match Score</value>
+  </data>
+  <data name="LabelMonthsText" xml:space="preserve">
+    <value>Months</value>
+  </data>
+  <data name="LabelWeeksText" xml:space="preserve">
+    <value>Weeks</value>
+  </data>
+  <data name="LabelResultsFoundText" xml:space="preserve">
+    <value>Results Found</value>
+  </data>
+  <data name="LabelSearchWelcomeText" xml:space="preserve">
+    <value>Start now and post your job vacancies on TAQAT to receive applications and find the best candidates</value>
+  </data>
+  <data name="LabelProgramsBeneficiariesText" xml:space="preserve">
+    <value>Beneficiaries</value>
+  </data>
+  <data name="LabelProgramsBenefitsText" xml:space="preserve">
+    <value>Benefits</value>
+  </data>
+  <data name="LabelProgramsHowToRegisterText" xml:space="preserve">
+    <value>How To Register</value>
+  </data>
+  <data name="LabelProgramsIntroduction" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="LabelSearchJobsText" xml:space="preserve">
+    <value>Search by job title</value>
+  </data>
+  <data name="LabelSearchLocationText" xml:space="preserve">
+    <value>Search by location</value>
+  </data>
+  <data name="LabelStartPageSkip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="LabelAddUserTitleText" xml:space="preserve">
+    <value>Add New Company User</value>
+  </data>
+  <data name="LabelAboutTermsText" xml:space="preserve">
+    <value>Terms &amp; Conditions</value>
+  </data>
+  <data name="LabelAboutVersionText" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="LabelButtonLogOutText" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
 </root>

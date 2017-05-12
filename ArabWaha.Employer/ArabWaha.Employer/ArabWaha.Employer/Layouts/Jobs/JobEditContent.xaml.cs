@@ -14,7 +14,14 @@ namespace ArabWaha.Employer.Layouts.Jobs
     {
         public JobEditContent()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch(Exception ex)
+            {
+                var t = ex.Message;
+            }
         }
 
         //protected async override void OnBindingContextChanged()

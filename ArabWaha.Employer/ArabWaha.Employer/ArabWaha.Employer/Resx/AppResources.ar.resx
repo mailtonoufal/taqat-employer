@@ -974,4 +974,61 @@
   <data name="AccountInformationLabel" xml:space="preserve">
     <value>معلومات الحساب</value>
   </data>
+  <data name="LabelApplicationsToText" xml:space="preserve">
+    <value>تطبيقات ل</value>
+  </data>
+  <data name="LabelApplicationDateText" xml:space="preserve">
+    <value>تاريخ التقديم:</value>
+  </data>
+  <data name="LabelProgramStatusText" xml:space="preserve">
+    <value>حالة البرنامج:</value>
+  </data>
+  <data name="LabelAgoText" xml:space="preserve">
+    <value>منذ</value>
+  </data>
+  <data name="LabelMonthsText" xml:space="preserve">
+    <value>الشهور</value>
+  </data>
+  <data name="LabelWeeksText" xml:space="preserve">
+    <value>أسابيع</value>
+  </data>
+  <data name="LabelResultsFoundText" xml:space="preserve">
+    <value>العثور على نتائج</value>
+  </data>
+  <data name="LabelSearchWelcomeText" xml:space="preserve">
+    <value>ابدأ الآن واحصل على الوظائف الشاغرة على طاقة لاستقبال الطلبات والعثور على أفضل المرشحين</value>
+  </data>
+  <data name="LabelProgramsBeneficiariesText" xml:space="preserve">
+    <value>المستفيدون</value>
+  </data>
+  <data name="LabelProgramsBenefitsText" xml:space="preserve">
+    <value>فوائد</value>
+  </data>
+  <data name="LabelProgramsHowToRegisterText" xml:space="preserve">
+    <value>كيفية التسجيل</value>
+  </data>
+  <data name="LabelProgramsIntroduction" xml:space="preserve">
+    <value>المقدمة</value>
+  </data>
+  <data name="LabelSearchJobsText" xml:space="preserve">
+    <value>البحث عن طريق المسمى الوظيفي</value>
+  </data>
+  <data name="LabelSearchLocationText" xml:space="preserve">
+    <value>البحث حسب الموقع</value>
+  </data>
+  <data name="LabelStartPageSkip" xml:space="preserve">
+    <value>تخطى</value>
+  </data>
+  <data name="LabelAddUserTitleText" xml:space="preserve">
+    <value>إضافة مستخدم جديد للشركة</value>
+  </data>
+  <data name="LabelAboutTermsText" xml:space="preserve">
+    <value>البنود و الظروف</value>
+  </data>
+  <data name="LabelAboutVersionText" xml:space="preserve">
+    <value>الإصدار</value>
+  </data>
+  <data name="LabelButtonLogOutText" xml:space="preserve">
+    <value>الخروج</value>
+  </data>
 </root>

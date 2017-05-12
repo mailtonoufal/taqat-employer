@@ -1,22 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ArabWaha.Employer.Views.Menus.MenuListTemplate">
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          xmlns:gb="clr-namespace:ArabWaha.Employer"
+          x:Class="ArabWaha.Employer.Views.Menus.MenuListTemplate">
 
-    <Grid Padding="0" >
+    <Grid Padding="0" RowSpacing="0" >
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="25" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="24" />
+            <ColumnDefinition Width="25" />
             <ColumnDefinition Width="10" />
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="{Binding IconImage}" Grid.Row="0" Grid.Column="3" 
+				HeightRequest="20" WidthRequest="205" Aspect="Fill" IsVisible="{x:Static gb:GlobalSetting.IsArVisible}"/>
 
         <Image Source="{Binding IconImage}" Grid.Row="0" Grid.Column="1" 
-				HeightRequest="24" WidthRequest="24" />
-        <!--<Image Source="{Binding IconSource}" Grid.Row="0" Grid.Column="1" 
-				HeightRequest="24" WidthRequest="24" />-->
+				HeightRequest="20" WidthRequest="20" Aspect="Fill" IsVisible="{x:Static gb:GlobalSetting.IsEnVisible}" />
 
-        <Label Text="{Binding Title}" Grid.Row="0" Grid.Column="0" TextColor="White"
-			VerticalTextAlignment="Center" HorizontalTextAlignment="End"
+        <Label Text="{Binding Title}" Grid.Row="0" Grid.Column="2" 
+			VerticalTextAlignment="Center" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" 
+               Style="{StaticResource TextSlideMenu}"
 			/>
     </Grid>
     

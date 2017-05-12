@@ -22,6 +22,21 @@ namespace ArabWaha.Core.ModelsEmployer
         public string Availability { get; set;  }
         public DateTime ApplicationDate { get; set; } = DateTime.Now;
 
+        // util functions
+        public string ApplicationDateText { get; set; }
+
+        public string GetApplicationDate
+        {
+            get
+            {
+                return $"{ApplicationDateText} {ApplicationDate.ToString("dd/MM/yyyy")}";
+            }
+        }
+
+        // utility methods for application search results for localisation
+        public string ApplicationSearchResultPostedDate { get; set; }
+
+
         // Use JobDetailAttachments from Model (Individual as will be the same data)
         public ObservableCollection<JobDetailAttachments> Attachments { get; set; }
         //ApplcationID

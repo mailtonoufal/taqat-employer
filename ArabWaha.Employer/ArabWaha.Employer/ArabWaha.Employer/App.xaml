@@ -20,7 +20,7 @@
 
             <Color x:Key="WhiteTextColor">White</Color>
             <Color x:Key="BlueTextColor">#00204A</Color>
-            <Color x:Key="GrayTextColor">#989696</Color>
+            <Color x:Key="GrayTextColor">#8096AD</Color>
 
             <Color x:Key="GreenButtonColor">#4ace36</Color>
             <Color x:Key="RedButtonColor">Red</Color>
@@ -28,11 +28,15 @@
             <Color x:Key="LightBlueButtonColor">#66a8ff</Color>
             <Color x:Key="BluePageColor">#00204A</Color>
             <Color x:Key="GreyPageColor">#eae6e6</Color>
+            <Color x:Key="LighGreyPageColor">#d3d3d3</Color>
 
-            <Color x:Key="StackBorderColor">Gray</Color>
-            <Color x:Key="StackBorderColorLight">#e3dcdc</Color>
+          <Color x:Key="MenuMainBGColor">White</Color>
+          <Color x:Key="TabBarBGColor">#2E4C6F</Color>
+          <Color x:Key="TabBarSelectedColor">#FF9400</Color>
 
-
+          <Color x:Key="StackBorderColor">#d3d3d3</Color>
+          <Color x:Key="StackBorderColorLight">#e3dcdc</Color>
+          <Color x:Key="LightGraySeperatorColor">#d3d3d3</Color>
 
             <Style x:Key="HeaderText" TargetType="Label" >
                 <Setter Property="FontAttributes" Value="Bold" />
@@ -85,6 +89,11 @@
 
             <Style x:Key="HeaderTextSmallBlue" TargetType="Label" BaseResourceKey="HeaderTextSmall">
                 <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="19" Phone="14"/>
+                    </Setter.Value>
+                </Setter>            
             </Style>
 
 
@@ -96,8 +105,8 @@
                         <OnIdiom x:TypeArguments="x:Double" Tablet="30" Phone="20"/>
                     </Setter.Value>
                 </Setter>
-            </Style>
-
+            </Style>           
+            
             <Style x:Key="InfoBodyTextSmall" TargetType="Label" >
                 <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
                 <Setter Property="FontSize">
@@ -107,11 +116,21 @@
                 </Setter>
             </Style>
 
+            <Style x:Key="InfoBodyTextGraySmall" TargetType="Label" >
+                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="12"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            
             <Style x:Key="InfoBodyTextBlue" TargetType="Label" >
                 <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
                 <Setter Property="FontSize">
                     <Setter.Value>
-                        <OnIdiom x:TypeArguments="x:Double" Tablet="30" Phone="20"/>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="30" Phone="18"/>
                     </Setter.Value>
                 </Setter>
             </Style>
@@ -124,6 +143,63 @@
                     </Setter.Value>
                 </Setter>
             </Style>
+
+            <Style x:Key="InfoBodyTextSmallWhite" TargetType="Label" >
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="InfoBodyTextSmallGray" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
+            <Style x:Key="InfoBodyTextMicroGray" TargetType="Label" >
+                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="12"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            
+            <Style x:Key="InfoBodyTextSmallBlueLabel" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="22" Phone="12"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="SettingsBodyMainLabel" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="13"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="SettingsBodyMainLabelGray" TargetType="Label" >
+                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="13"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            
+            
 
             <Style x:Key="InfoBodyTextExtraSmallBlue" TargetType="Label" >
                 <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
@@ -147,6 +223,24 @@
                 <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
                 <Setter Property="HorizontalTextAlignment" Value="End" />
                 <Setter Property="VerticalTextAlignment" Value="End" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="FormHeaderLabelMediumBlue" TargetType="Label" BaseResourceKey="InfoHeaderTextSmallBlue" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="22" Phone="12"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="ComplaintsTitleTextBlue" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
                 <Setter Property="FontSize">
                     <Setter.Value>
                         <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
@@ -228,6 +322,16 @@
                 <Setter Property="VerticalOptions" Value="End" />
             </Style>
 
+            <Style x:Key="BlueTextEntryMedium" TargetType="Entry" BaseResourceKey="WhiteTextEntry">
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="22" Phone="12"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            
+
             <Style x:Key="GreenButton" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{StaticResource GreenButtonColor}" />
                 <Setter Property="BorderColor" Value="{StaticResource GreenButtonColor}" />
@@ -246,6 +350,25 @@
                 </Setter>
             </Style>
 
+            <Style x:Key="GreenButtonMediumText" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource GreenButtonColor}" />
+                <Setter Property="BorderColor" Value="{StaticResource GreenButtonColor}" />
+                <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="BorderRadius" Value="20" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="12"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="80" Phone="50"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            
+
 
             <Style x:Key="BlueButtonFlat" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{StaticResource BlueButtonColor}" />
@@ -258,6 +381,10 @@
                         <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="12"/>
                     </Setter.Value>
                 </Setter>
+            </Style>
+
+            <Style x:Key="BlueButtonFlatRadius" TargetType="Button" BaseResourceKey="BlueButtonFlat">
+                <Setter Property="BorderRadius" Value="20" />
             </Style>
 
             <Style x:Key="GreenButtonFlat" TargetType="Button" BaseResourceKey="BlueButtonFlat">
@@ -315,17 +442,7 @@
                 </Setter>
             </Style>
 
-            <!-- icon files -->
-            <FileImageSource x:Key="halfstarblue">halfstarbl.png</FileImageSource>
-            <FileImageSource x:Key="halfstaryellow">halfstary.png</FileImageSource>
-            <FileImageSource x:Key="startfilledblack">starfilled.png</FileImageSource>
-            <FileImageSource x:Key="startfilledyellow">starfilledy.png</FileImageSource>
-            <FileImageSource x:Key="startemptyblue">startblue.png</FileImageSource>
-            <FileImageSource x:Key="startemptyblack">startempty.png</FileImageSource>
-            <FileImageSource x:Key="startemptyyellow">startemptyy.png</FileImageSource>
-            <FileImageSource x:Key="mailicon">profile_licenses.png</FileImageSource>
-            <FileImageSource x:Key="phoneicon">contact_phone.png</FileImageSource>
-            <FileImageSource x:Key="tickicon">profile_references.png</FileImageSource>
+          
 
 
             <Style x:Key="MenuButton" TargetType="Button" >
@@ -389,9 +506,104 @@
               </Setter.Value>
             </Setter>
           </Style>
-          
-          
 
+            <Style x:Key="SearchBarCustomStyle" TargetType="SearchBar"  >
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="10"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="PlaceholderColor" Value="Gray" />
+            </Style>
+
+            <Style x:Key="TabSearchBarStyle" TargetType="SearchBar"  >
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="15" Phone="10"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="PlaceholderColor" Value="Gray" />
+            </Style>
+
+
+
+            <Style x:Key="TextSlideMenu" TargetType="Label" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="15"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- icon files -->
+            <FileImageSource x:Key="halfstarblue">halfstarbl.png</FileImageSource>
+            <FileImageSource x:Key="halfstaryellow">halfstary.png</FileImageSource>
+            <FileImageSource x:Key="startfilledblack">starfilled.png</FileImageSource>
+            <FileImageSource x:Key="startfilledyellow">starfilledy.png</FileImageSource>
+            <FileImageSource x:Key="startemptyblue">startblue.png</FileImageSource>
+            <FileImageSource x:Key="startemptyblack">startempty.png</FileImageSource>
+            <FileImageSource x:Key="startemptyyellow">startemptyy.png</FileImageSource>
+            <FileImageSource x:Key="mailicon">profile_licenses.png</FileImageSource>
+            <FileImageSource x:Key="phoneicon">contact_phone.png</FileImageSource>
+            <FileImageSource x:Key="tickicon">profile_references.png</FileImageSource>
+            
+            <!-- menu icons -->
+            <FileImageSource x:Key="MenuIconHome">nav_home.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconMyCompany">nav_profle.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconApplications">nav_jobs.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconPrograms">nav_programs.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconServices">nav_programs.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconCalendar">nav_calendar.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconComplaints">menucomplaints.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconContactUs">contact_phone.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconSettings">menusettings.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconLogInOut">nav_logout.png</FileImageSource>
+            <FileImageSource x:Key="ContactIcon">contactnameicon.png</FileImageSource>
+            <FileImageSource x:Key="LocationIcon">location.png</FileImageSource>
+
+
+            <FileImageSource x:Key="FilterWorkTypeIcon">filter_work_type.png</FileImageSource>
+            <FileImageSource x:Key="FilterDateIcon">filter_date.png</FileImageSource>
+            <FileImageSource x:Key="FilterPersonalInfoIcon">filter_personal_info.png</FileImageSource>
+            <FileImageSource x:Key="FilterShiftTypeIcon">filter_shift_type.png</FileImageSource>
+            <FileImageSource x:Key="FilterTeleworkingIcon">filter_teleworking.png</FileImageSource>
+            <FileImageSource x:Key="FilterEducationIcon">filter_education.png</FileImageSource>
+            <FileImageSource x:Key="FilterSalaryIcon">filter_salary.png</FileImageSource>
+            <FileImageSource x:Key="FilterSpecialisationIcon">filter_specialisation.png</FileImageSource>
+
+            <FileImageSource x:Key="AboutLogo">settings_logo.png</FileImageSource>
+            <FileImageSource x:Key="SettingsLanguageIcon">settings_language.png</FileImageSource>
+            <FileImageSource x:Key="SettingsResetPasswordIcon">settins_reset_password.png</FileImageSource>
+            <FileImageSource x:Key="SettingsComplaintsIcon">contact_complaints.png</FileImageSource>
+            <FileImageSource x:Key="SettingsAboutIcon">settings_about.png</FileImageSource>
+
+            <Style x:Key="BlueButtonFlatLabel" TargetType="Label">
+            <Setter Property="BackgroundColor" Value="{StaticResource BlueButtonColor}" />
+            <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
+            <Setter Property="FontSize">
+              <Setter.Value>
+                <OnIdiom x:TypeArguments="x:Double" Tablet="18" Phone="13"/>
+              </Setter.Value>
+            </Setter>
+          </Style>
+          
+          <Style x:Key="TabButtonFlat" TargetType="Label" BaseResourceKey="BlueButtonFlatLabel">
+            <Setter Property="BackgroundColor" Value="{StaticResource TabBarBGColor}" />
+            <Setter Property="VerticalOptions" Value="FillAndExpand" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+        
+          </Style>
+            <FileImageSource x:Key="DefaultJobIcon">job_details_description.png</FileImageSource>
+
+          <Style x:Key="TabButtonFlatNotSelected" TargetType="Label" BaseResourceKey="TabButtonFlat">
+            <Setter Property="TextColor" Value="#8193A8" />
+          </Style>
 
         </ResourceDictionary>
     </prism:PrismApplication.Resources>

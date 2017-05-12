@@ -15,42 +15,61 @@
 
     <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="55" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="5" />
+        </Grid.ColumnDefinitions>
 
-        <Image Source="Logo.png" Grid.Row="0" HeightRequest="90" VerticalOptions="Start" HorizontalOptions="End"></Image>
-        <StackLayout Grid.Row="1" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <cv:CarouselViewControl   x:Name="CarouselPics" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" InterPageSpacingColor="Transparent" BackgroundColor="Transparent" ShowIndicators="True" Position="{Binding PagePosition}"  >
+        <Image Source="Logo.png" Grid.Row="1" Grid.Column="0" HeightRequest="55" VerticalOptions="Start" HorizontalOptions="End"></Image>
+        <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <cv:CarouselViewControl   x:Name="CarouselPics" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" InterPageSpacingColor="Transparent" 
+                                      BackgroundColor="Transparent" ShowIndicators="True" Position="{Binding PagePosition}"  >
                 <cv:CarouselViewControl.ItemsSource >
                     <x:Array Type="{x:Type DataTemplate}">
                         <DataTemplate>
-                            <Grid VerticalOptions="FillAndExpand" Padding="20">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="1*" />
-                                </Grid.RowDefinitions>
-                                <Label Text="" Grid.Row="0" ></Label>
-                                <StackLayout Grid.Row="1" VerticalOptions="End">
-                                    <StackLayout VerticalOptions="EndAndExpand">
-                                        <Label Text="{lEx:Translate WelcomeTitle}"   HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" Style="{StaticResource HeaderTextLargeWhite}" />
-                                        <Label Text="{lEx:Translate StartTab1Text}" HorizontalOptions="EndAndExpand"   HorizontalTextAlignment="End" Style="{StaticResource InfoBodyText}" />
-                                    </StackLayout>
-                                    <StackLayout VerticalOptions="End">
-                                        <!-- bottom controls -->
-                                        <Label Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="End" HorizontalOptions="Start" Style="{StaticResource InfoBodyText}"  >
-                                            <Label.GestureRecognizers>
-                                                <TapGestureRecognizer
+                            <ContentView>
+                            <StackLayout VerticalOptions="EndAndExpand" HeightRequest="190">
+                                <Grid VerticalOptions="FillAndExpand" Padding="20">
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50" />
+                                        <RowDefinition Height="60" />
+                                        <RowDefinition Height="50" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width=".5*" />
+                                        <ColumnDefinition Width=".5*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{lEx:Translate WelcomeTitle}"   HorizontalOptions="EndAndExpand" 
+                                           HorizontalTextAlignment="End" Style="{StaticResource HeaderTextLargeWhite}" />
+                                    <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                                        Text="{lEx:Translate LabelSearchWelcomeText}" HorizontalOptions="EndAndExpand"   HorizontalTextAlignment="End" 
+                                               Style="{StaticResource InfoBodyTextSmall}" />
+
+
+                                        <Label Grid.Row="2" Grid.Column="1"  Text="{lEx:Translate LabelStartPageSkip}" 
+                                           VerticalOptions="End" HorizontalOptions="Start" 
+                                           Style="{StaticResource InfoBodyTextGraySmall}"  >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
                                                 Command="{Binding SkipCommand}"
                                                 NumberOfTapsRequired="1" />
-                                            </Label.GestureRecognizers>
-                                        </Label>
-                                    </StackLayout>
-                                </StackLayout>
-                            </Grid>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    
+                                </Grid>
+                            </StackLayout>
+                            </ContentView>
                         </DataTemplate>
                         <DataTemplate>
-                            <layout:LoginOptionsContent></layout:LoginOptionsContent>
+                            <layout:LoginOptionsContent/>
                         </DataTemplate>
                     </x:Array>
                 </cv:CarouselViewControl.ItemsSource>

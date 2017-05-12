@@ -14,8 +14,8 @@
 
             <syncfusion:SfRotator x:Name="rotator" 
                                   ItemsSource="{Binding SwipeSource}"
-                                  HeightRequest="120"
-                                  BackgroundColor="Transparent"
+                                  HeightRequest="260"
+                                  BackgroundColor="#EDEDED"
                                   NavigationStripMode="Dots"
                                   NavigationStripPosition="Bottom"
                                   EnableAutoPlay="true"
@@ -23,7 +23,7 @@
                                   />
 
             <ListView ItemsSource="{Binding HomePageSource}" HorizontalOptions="Start" VerticalOptions="Start" CachingStrategy = "RecycleElement"
-                      HasUnevenRows="True" SeparatorVisibility="None" >
+                      HasUnevenRows="True" SeparatorVisibility="None"  BackgroundColor="{StaticResource GreyPageColor}" ItemSelected="ItemSelected" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <locals:HomeCustomViewCell />

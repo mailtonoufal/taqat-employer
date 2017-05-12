@@ -5,37 +5,55 @@
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"             
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.CompanyAddUserPage"
-             Title="{lEx:Translate  AddUserTitle}">
+             Title="{lEx:Translate  LabelAddUserTitleText}">
 
     <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <StackLayout Padding="10">
-            <StackLayout>
-                <Label Text="{lEx:Translate UserDetailsLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+        <StackLayout Padding="5">
+            <StackLayout BackgroundColor="White">
+                
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="5"/>
+
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="5" />
                     </Grid.ColumnDefinitions>
 
-                    <Label Grid.Row="0" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate UserNINLabel}"  Style="{StaticResource FormHeaderLabelBlue}"  ></Label>
-                    <Label Grid.Row="1" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate NLGUsernameLabel}"  Style="{StaticResource FormHeaderLabelBlue}"></Label>
-                    <Label Grid.Row="2" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AssignUserRoleLabel}" Style="{StaticResource FormHeaderLabelBlue}" ></Label>
-                    <Label Grid.Row="3" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate EmailAddressLabel}"  Style="{StaticResource FormHeaderLabelBlue}"></Label>
+                    <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="{lEx:Translate UserDetailsLabel}" Style="{StaticResource HeaderTextMediumBlue}" 
+                           HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"/>
 
-                    <Entry Grid.Row="0" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.NIN, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}" ></Entry>
-                    <Entry Grid.Row="1" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.UserName, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
-                    <Entry Grid.Row="2" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AssignedRole, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
-                    <Entry Grid.Row="3" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.EmailAddress, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
-                 </Grid>
+
+                    <Label Grid.Row="2" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate UserNINLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"  />
+                    <Label Grid.Row="3" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate NLGUsernameLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="4" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AssignUserRoleLabel}" 
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="5" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate EmailAddressLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+
+                    <Entry Grid.Row="2" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.NIN, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="3" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.UserName, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="4" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AssignedRole, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="5" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.EmailAddress, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                </Grid>
             </StackLayout>
 
-            <Button Text="{lEx:Translate SaveNewUserButton}" Style="{StaticResource GreenButton}" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+            <Button Text="{lEx:Translate Submit}" Style="{StaticResource GreenButton}" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

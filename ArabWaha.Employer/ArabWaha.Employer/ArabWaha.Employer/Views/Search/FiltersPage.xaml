@@ -8,7 +8,8 @@
              x:Class="ArabWaha.Employer.Views.FiltersPage"
              Title="{lEx:Translate LabelFilter}" 
              x:Name="AppPage"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource LighGreyPageColor}">
     <StackLayout>
         <StackLayout.Padding>
             <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" WinPhone="0,0,0,0" />
@@ -39,20 +40,44 @@
             </Label>
         </Grid>
         <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <StackLayout Orientation="Vertical" >
-                <Label Text="{lEx:Translate SortByFilterText}"  Margin="1" HorizontalOptions="Start"  />
-                <controls:RepeaterView x:Name="SortByList" ItemsSource="{Binding SortByList}">
+            <StackLayout Orientation="Vertical" Padding="10,10,10,10" >
+
+                
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Navy" />
+                    <Label Text="{lEx:Translate SortByFilterText}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource startemptyyellow}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="3" />
+
+                <controls:RepeaterView x:Name="SortByList" ItemsSource="{Binding SortByList}" BackgroundColor="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" >
                     <controls:RepeaterView.ItemTemplate>
                         <DataTemplate>
-                            <Grid Margin="5,5,5,5" >
+                            <Grid >
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
+                                    <RowDefinition Height="20" />
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="0.1*" />
+                                    <ColumnDefinition Width="5" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="9*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="5" />
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
+                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}"  Style="{StaticResource InfoBodyTextSmallBlue}" 
+                                       HorizontalOptions="End" HorizontalTextAlignment="End" >
                                     <Label.GestureRecognizers>
                                         <TapGestureRecognizer
                                                         Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=SortByList}}"    
@@ -60,236 +85,488 @@
                                                         NumberOfTapsRequired="1" />
                                     </Label.GestureRecognizers>
                                 </Label>
-                                <controls:CheckBox Grid.Row="0" Grid.Column="1" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.SortByCheckedCommand, Source={x:Reference Name=SortByList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                <controls:CheckBox Grid.Row="0" Grid.Column="3" Checked="{Binding Selected}"   
+                                                   Command="{Binding Path=BindingContext.SortByCheckedCommand, Source={x:Reference Name=SortByList}}"    
+                                                   CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"/>
                             </Grid>
                         </DataTemplate>
                     </controls:RepeaterView.ItemTemplate>
                 </controls:RepeaterView>
-                <Label Text="{lEx:Translate JobTypeFilterText}"  Margin="1" HorizontalOptions="Start"  />
-                <controls:RepeaterView x:Name="JobTypeList" ItemsSource="{Binding JobTypeList}">
-                    <controls:RepeaterView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="5,5,5,5" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="0.1*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
+                  <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+
+                </Grid>
+             
+                <!-- job types filters-->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Navy" />
+                    <Label Text="{lEx:Translate JobTypeFilterText}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource MenuIconPrograms}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="3" />
+
+                    <controls:RepeaterView x:Name="JobTypeList" ItemsSource="{Binding JobTypeList}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3">
+                        <controls:RepeaterView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="9*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
                                                         Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=AppPage}}"
                                                         CommandParameter="{Binding .}"
                                                         NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                                <controls:CheckBox Grid.Row="0" Grid.Column="1" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.JobTypeCheckedCommand, Source={x:Reference Name=JobTypeList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
-                            </Grid>
-                        </DataTemplate>
-                    </controls:RepeaterView.ItemTemplate>
-                </controls:RepeaterView>
-                <Label Text="{lEx:Translate WorkTypeFilterText}"  Margin="1" HorizontalOptions="Start"  />
-                <controls:RepeaterView x:Name="WorkTypeList" ItemsSource="{Binding WorkTypeList}">
-                    <controls:RepeaterView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="5,5,5,5" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="0.1*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <controls:CheckBox Grid.Row="0" Grid.Column="3"  Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.JobTypeCheckedCommand, Source={x:Reference Name=JobTypeList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </controls:RepeaterView.ItemTemplate>
+                    </controls:RepeaterView>
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+
+                </Grid>
+
+
+                <!-- work type filter text -->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Navy" />
+                    <Label Text="{lEx:Translate WorkTypeFilterText}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource FilterWorkTypeIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="3" />
+
+                    <controls:RepeaterView x:Name="WorkTypeList" ItemsSource="{Binding WorkTypeList}"
+                                           Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" >
+                        <controls:RepeaterView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="9*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
                                                         Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=AppPage}}"
                                                         CommandParameter="{Binding .}"
                                                         NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                                <controls:CheckBox Grid.Row="0" Grid.Column="1" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.WorkTypeCheckedCommand, Source={x:Reference Name=WorkTypeList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
-                            </Grid>
-                        </DataTemplate>
-                    </controls:RepeaterView.ItemTemplate>
-                </controls:RepeaterView>
-                <Label Text="{lEx:Translate ShiftTypeFilterText}" Margin="1" HorizontalOptions="Start"  />
-                <controls:RepeaterView x:Name="ShiftTypeList" ItemsSource="{Binding ShiftTypeList}">
-                    <controls:RepeaterView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="5,5,5,5" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="0.1*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <controls:CheckBox Grid.Row="0" Grid.Column="3" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.WorkTypeCheckedCommand, Source={x:Reference Name=WorkTypeList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </controls:RepeaterView.ItemTemplate>
+                    </controls:RepeaterView>
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+                </Grid>
+
+                <!-- shift type -->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Navy" />
+                    <Label Text="{lEx:Translate ShiftTypeFilterText}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource FilterShiftTypeIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="3" />
+
+                    <controls:RepeaterView x:Name="ShiftTypeList" ItemsSource="{Binding ShiftTypeList}"
+                                           Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" >
+                        <controls:RepeaterView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="9*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
                                                         Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=AppPage}}"
                                                         CommandParameter="{Binding .}"
                                                         NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                                <controls:CheckBox Grid.Row="0" Grid.Column="1" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.ShiftTypeCheckedCommand, Source={x:Reference Name=ShiftTypeList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
-                            </Grid>
-                        </DataTemplate>
-                    </controls:RepeaterView.ItemTemplate>
-                </controls:RepeaterView>
-                <Label Text="{lEx:Translate TravelingRequiredFilterText}"  Margin="1" HorizontalOptions="Start"  />
-                <controls:RepeaterView x:Name="TravellingRequiredList" ItemsSource="{Binding TravellingRequiredList}">
-                    <controls:RepeaterView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="5,5,5,5" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="0.1*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <controls:CheckBox Grid.Row="0" Grid.Column="3" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.ShiftTypeCheckedCommand, Source={x:Reference Name=ShiftTypeList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </controls:RepeaterView.ItemTemplate>
+                    </controls:RepeaterView>
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+                </Grid>
+
+
+                <!-- travel -->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Navy" />
+                    <Label Text="{lEx:Translate TravelingRequiredFilterText}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource FilterSalaryIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="3" />
+
+
+                    <controls:RepeaterView x:Name="TravellingRequiredList" ItemsSource="{Binding TravellingRequiredList}"
+                                       Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" >
+                        <controls:RepeaterView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="9*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
                                                         Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=AppPage}}"
                                                         CommandParameter="{Binding .}"
                                                         NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                                <controls:CheckBox Grid.Row="0" Grid.Column="1" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.TravellingRequiredCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
-                            </Grid>
-                        </DataTemplate>
-                    </controls:RepeaterView.ItemTemplate>
-                </controls:RepeaterView>
-                <Label Text="{lEx:Translate TeleWorkingFilterText}"  Margin="1" HorizontalOptions="Start"  />
-                <controls:RepeaterView x:Name="TeleWorkingList" ItemsSource="{Binding TeleWorkingList}"  >
-                    <controls:RepeaterView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="5,5,5,5" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="0.1*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <controls:CheckBox Grid.Row="0" Grid.Column="3" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.TravellingRequiredCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </controls:RepeaterView.ItemTemplate>
+                    </controls:RepeaterView>
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+                </Grid>
+
+
+                <!-- teleworking -->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Navy" />
+                    <Label Text="{lEx:Translate TeleWorkingFilterText}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource FilterTeleworkingIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="3" />
+
+                    <controls:RepeaterView x:Name="TeleWorkingList" ItemsSource="{Binding TeleWorkingList}"  
+                                       Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" >
+                        <controls:RepeaterView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="9*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
                                                         Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=AppPage}}"
                                                         CommandParameter="{Binding .}"
                                                         NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                                <controls:CheckBox Grid.Row="0" Grid.Column="1" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.TeleWorkingCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
-                            </Grid>
-                        </DataTemplate>
-                    </controls:RepeaterView.ItemTemplate>
-                </controls:RepeaterView>
-                <Label Text="{lEx:Translate RequiredEducationFilterText}"  Margin="1" HorizontalOptions="Start"  />
-                <controls:RepeaterView x:Name="RequiredEducationList" ItemsSource="{Binding RequiredEducationList}" >
-                    <controls:RepeaterView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="5,5,5,5">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="0.1*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <controls:CheckBox Grid.Row="0" Grid.Column="3" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.TeleWorkingCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </controls:RepeaterView.ItemTemplate>
+                    </controls:RepeaterView>
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+                </Grid>
+
+                <!-- edu list -->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Navy" />
+                    <Label Text="{lEx:Translate RequiredEducationFilterText}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource FilterEducationIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="3" />
+
+                    <controls:RepeaterView x:Name="RequiredEducationList" ItemsSource="{Binding RequiredEducationList}" 
+                                       Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" >
+                        <controls:RepeaterView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="9*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
                                                         Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=AppPage}}"
                                                         CommandParameter="{Binding .}"
                                                         NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                                <controls:CheckBox Grid.Row="0" Grid.Column="1" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.RequiredEducationCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
-                            </Grid>
-                        </DataTemplate>
-                    </controls:RepeaterView.ItemTemplate>
-                </controls:RepeaterView>
-                <Label Text="{lEx:Translate SpecializationFilterText}"  Margin="1" HorizontalOptions="Start"  />
-                <controls:RepeaterView x:Name="SpecializationList" ItemsSource="{Binding SpecializationList}">
-                    <controls:RepeaterView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="5,5,5,5" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="0.1*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <controls:CheckBox Grid.Row="0" Grid.Column="3" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.RequiredEducationCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </controls:RepeaterView.ItemTemplate>
+                    </controls:RepeaterView>
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+                </Grid>
+
+
+
+                <!-- specilization -->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Navy" />
+                    <Label Text="{lEx:Translate SpecializationFilterText}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource FilterSpecialisationIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="3" />
+
+
+                    <controls:RepeaterView x:Name="SpecializationList" ItemsSource="{Binding SpecializationList}"
+                                       Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" >
+                        <controls:RepeaterView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="9*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
                                                         Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=AppPage}}"
                                                         CommandParameter="{Binding .}"
                                                         NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                                <controls:CheckBox Grid.Row="0" Grid.Column="1" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.SpecializationCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
-                            </Grid>
-                        </DataTemplate>
-                    </controls:RepeaterView.ItemTemplate>
-                </controls:RepeaterView>
-                <Label Text="{lEx:Translate GenderFilterText}"  Margin="1" HorizontalOptions="Start"  />
-                <controls:RepeaterView x:Name="GenderList" ItemsSource="{Binding GenderList}">
-                    <controls:RepeaterView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="5,5,5,5" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="0.1*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <controls:CheckBox Grid.Row="0" Grid.Column="3" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.SpecializationCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </controls:RepeaterView.ItemTemplate>
+                    </controls:RepeaterView>
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+
+                </Grid>
+
+
+                <!-- gender -->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Navy" />
+                    <Label Text="{lEx:Translate GenderFilterText}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource MenuIconMyCompany}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="3" />
+
+                    <controls:RepeaterView x:Name="GenderList" ItemsSource="{Binding GenderList}"
+                                       Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" >
+                        <controls:RepeaterView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="9*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
                                                         Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=AppPage}}"
                                                         CommandParameter="{Binding .}"
                                                         NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                                <controls:CheckBox Grid.Row="0" Grid.Column="1" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.GenderCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
-                            </Grid>
-                        </DataTemplate>
-                    </controls:RepeaterView.ItemTemplate>
-                </controls:RepeaterView>
-                <Label Text="{lEx:Translate PostedSinceFilterText}"  Margin="1" HorizontalOptions="Start"  />
-                <controls:RepeaterView x:Name="PostedSinceList" ItemsSource="{Binding PostedSinceList}">
-                    <controls:RepeaterView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="5,5,5,5" >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.9*" />
-                                    <ColumnDefinition Width="0.1*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <controls:CheckBox Grid.Row="0" Grid.Column="3" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.GenderCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </controls:RepeaterView.ItemTemplate>
+                    </controls:RepeaterView>
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+                </Grid>
+
+
+                <!-- posted since -->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Navy" />
+                    <Label Text="{lEx:Translate PostedSinceFilterText}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource FilterDateIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="3" />
+
+                    <controls:RepeaterView x:Name="PostedSinceList" ItemsSource="{Binding PostedSinceList}"
+                                       Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" >
+                        <controls:RepeaterView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="9*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
                                                         Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=AppPage}}"
                                                         CommandParameter="{Binding .}"
                                                         NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                                <controls:CheckBox Grid.Row="0" Grid.Column="1" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.PostedSinceCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
-                            </Grid>
-                        </DataTemplate>
-                    </controls:RepeaterView.ItemTemplate>
-                </controls:RepeaterView>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <controls:CheckBox Grid.Row="0" Grid.Column="3" Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.PostedSinceCheckedCommand, Source={x:Reference Name=TravellingRequiredList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </controls:RepeaterView.ItemTemplate>
+                    </controls:RepeaterView>
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+
+                </Grid>
+
                 <Button Text="{lEx:Translate ButtonApply}" Style="{StaticResource BlueButtonFlat}" Command="{Binding ApplyCommand}"></Button>
             </StackLayout>
         </ScrollView>

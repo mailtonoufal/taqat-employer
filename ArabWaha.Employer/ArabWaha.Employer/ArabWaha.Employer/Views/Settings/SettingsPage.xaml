@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
@@ -8,74 +8,69 @@
              x:Class="ArabWaha.Employer.Views.SettingsPage"
              Title="{lEx:Translate TextSettingPageTitle}">
 
-    <StackLayout Padding="10">
-        <Grid>
+    <StackLayout Padding="10,0,10,0">
+        <Grid RowSpacing="10">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="10"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="40" />
-                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="24" />
                 <ColumnDefinition Width="0.5*" />
                 <ColumnDefinition Width="0.5*" />
-                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="24" />
                 <ColumnDefinition Width="10" />
 
             </Grid.ColumnDefinitions>
 
-            <Image Source="arrow_back.png" Rotation="180" Aspect="AspectFit" Grid.Row="1" Grid.Column="4" VerticalOptions="Start" />
-            <Image  IsVisible="{Binding IsAuth}"  Source="arrow_back.png" Rotation="180" Aspect="AspectFit" Grid.Row="2" Grid.Column="4" VerticalOptions="Start" />
-            <Image Source="arrow_back.png" Rotation="180" Aspect="AspectFit" Grid.Row="3" Grid.Column="4" VerticalOptions="Start" />
-            <Image Source="arrow_back.png" Rotation="180" Aspect="AspectFit" Grid.Row="4" Grid.Column="4" VerticalOptions="Start" />
-            <Image Source="arrow_back.png" Rotation="180" Aspect="AspectFit" Grid.Row="5" Grid.Column="4" VerticalOptions="Start" />
-
-
-            <Image HeightRequest="32" WidthRequest="32" Source="{StaticResource startemptyblue}" Aspect="AspectFit" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" />
-            <Image  IsVisible="{Binding IsAuth}"  Source="{StaticResource startemptyblue}"  Aspect="AspectFit" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" />
-            <Image Source="{StaticResource startemptyblue}" HeightRequest="32" WidthRequest="32"  Aspect="AspectFit" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" />
-            <Image Source="{StaticResource startemptyblue}"  HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" />
-            <Image Source="{StaticResource startemptyblue}"  HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" />
-
-
-
-            <Label Text="{lEx:Translate TextLanguage}" Grid.Row="1" Grid.Column="2" Style="{StaticResource InfoBodyTextSmallBlue}" VerticalTextAlignment="Center" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
-
-            <Label Text="{Binding CurrentLanguage}" Grid.Row="1" Grid.Column="3" Style="{StaticResource InfoBodyTextSmallBlue}" VerticalTextAlignment="Center" HorizontalOptions="End" HorizontalTextAlignment="End"/>
-
-
-            <Label IsVisible="{Binding IsAuth}" Text="{lEx:Translate TextSignOut}" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding LogoutCommand}" NumberOfTapsRequired="1" />
-                </Label.GestureRecognizers>
-            </Label>
-
-
-            <Label Text="{lEx:Translate TextSettingsResetPassword}" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"  VerticalTextAlignment="Center"  HorizontalOptions="Start" HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
-                <Label.GestureRecognizers>
+            <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" />
+            <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" >
+                <BoxView.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding ResetPasswordCommand}" NumberOfTapsRequired="1" />
-                </Label.GestureRecognizers>
-            </Label>
-
-            <Label Text="{lEx:Translate TextComplaints}" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start"  VerticalTextAlignment="Center"  HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
-                <Label.GestureRecognizers>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" >
+                <BoxView.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding ComplaintsCommand}" NumberOfTapsRequired="1" />
-                </Label.GestureRecognizers>
-            </Label>
-
-
-            <Label Text="{lEx:Translate TextAboutPageTitle}" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"  HorizontalOptions="Start"  VerticalTextAlignment="Center"  HorizontalTextAlignment="Start" Style="{StaticResource InfoBodyTextSmallBlue}"  >
-                <Label.GestureRecognizers>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <BoxView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" >
+                <BoxView.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding AboutCommand}" NumberOfTapsRequired="1" />
-                </Label.GestureRecognizers>
-            </Label>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+
+
+            <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
+            <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
+            <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
+            <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
+
+            <Image Source="{StaticResource SettingsLanguageIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="1" Grid.Column="4" VerticalOptions="Center" />
+            <Image Source="{StaticResource SettingsResetPasswordIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="2" Grid.Column="4" VerticalOptions="Center" />
+            <Image Source="{StaticResource SettingsComplaintsIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="3" Grid.Column="4" VerticalOptions="Center" />
+            <Image Source="{StaticResource SettingsAboutIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="4" Grid.Column="4" VerticalOptions="Center" />
+
+            <Label Text="{lEx:Translate TextLanguage}" Grid.Row="1" Grid.Column="3" Style="{StaticResource SettingsBodyMainLabel}" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End"/>
+            <Label Text="{Binding CurrentLanguage}" Grid.Row="1" Grid.Column="2" Style="{StaticResource SettingsBodyMainLabelGray}" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"/>
+            <Label Text="{lEx:Translate TextSettingsResetPassword}" Grid.Row="2" Grid.Column="3" VerticalTextAlignment="Center"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
+            <Label Text="{lEx:Translate TextComplaints}" Grid.Row="3" Grid.Column="3"  HorizontalOptions="FillAndExpand"  VerticalTextAlignment="Center"  HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
+            <Label Text="{lEx:Translate TextAboutPageTitle}" Grid.Row="4" Grid.Column="3" HorizontalOptions="FillAndExpand"  VerticalTextAlignment="Center"  HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
+
         </Grid>
 
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" >
+            <Button Text="{lEx:Translate LabelButtonLogOutText}" HorizontalOptions="FillAndExpand" VerticalOptions="End" 
+                    Command="{Binding LogoutCommand}" IsVisible="{Binding IsAuth}" Style="{StaticResource RedButtonFlat}"
+                    HeightRequest="50"
+                    />
+        </StackLayout>
     </StackLayout>
 
 
-</local:AWMenuContainerPage>
+</ContentPage>

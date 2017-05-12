@@ -23,8 +23,20 @@ namespace ArabWaha.Employer.BaseCalsses
                 Icon = "hamburger.png",
                 Command = new Command((sender) => { ShowMainMenu(); }),
                 Priority = 100,
+                
             };
             this.ToolbarItems.Add(tbarItem);
+
+            if (GlobalSetting.CultureCode == "ar")
+                this.SlideMenu.MenuOrientations = MenuOrientation.RightToLeft;
+            else
+                this.SlideMenu.MenuOrientations = MenuOrientation.LeftToRight;
+
+        }
+
+        public void MenuTapped(object sender, EventArgs e)
+        {
+            ShowMainMenu();
         }
 
         protected virtual void ShowMainMenu()

@@ -5,41 +5,47 @@
              x:Class="ArabWaha.Employer.Layouts.LoginOptionsContent">
     <ContentView.Content>
 
-
+        <StackLayout VerticalOptions="EndAndExpand" HeightRequest="300">
         <Grid VerticalOptions="FillAndExpand" Padding="20">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width=".5*" />
+                <ColumnDefinition Width=".5*" />
+                <ColumnDefinition Width="5" />
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+               <RowDefinition Height="60" />
+               <RowDefinition Height="60" />
+               <RowDefinition Height="60" />
+               <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
 
-            <Label Text="{lEx:Translate ButtonSignIn}" HorizontalOptions="End" Style="{StaticResource HeaderTextLargeWhite}" Grid.Row="1"  ></Label>
-            <Label Text="{lEx:Translate WelcomeEmployerSignin}" HorizontalOptions="End" HorizontalTextAlignment="End"  Style="{StaticResource InfoBodyText}" FontAttributes="Bold" Grid.Row="2" ></Label>
-            <StackLayout Grid.Row="3" VerticalOptions="Center" HorizontalOptions="Center" >
-                <Grid RowSpacing="0">
+            <Label Text="{lEx:Translate ButtonSignIn}" HorizontalOptions="End" Style="{StaticResource HeaderTextLargeWhite}" Grid.Row="0" Grid.Column="2" />
+            <Label Text="{lEx:Translate WelcomeEmployerSignin}" HorizontalOptions="End" HorizontalTextAlignment="End"  
+                   Style="{StaticResource InfoBodyTextSmall}"  Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1" />
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width=".5*" />
-                        <ColumnDefinition Width=".5*" />
-                    </Grid.ColumnDefinitions>
+            <Button Grid.Row="2" Grid.Column="1" Text="{lEx:Translate StartMoLLogin}" HorizontalOptions="FillAndExpand"  
+                            Command="{Binding SignInExternalCommand}"  Style="{StaticResource GreenButtonMediumText}" />
+            <Button Grid.Row="2" Grid.Column="2" Text="{lEx:Translate StartNLGLogin}" HorizontalOptions="FillAndExpand"  
+                            Command="{Binding SignInCommand}"  Style="{StaticResource GreenButtonMediumText}" />
+                 
+            <Button Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="{lEx:Translate LoginNoAccountSignup}" 
+                            HorizontalOptions="FillAndExpand"  Command="{Binding SignUpCommand}" FontSize="12"
+                            BackgroundColor="Transparent" TextColor="White" HeightRequest="40" BorderColor="Silver" BorderWidth="1" />
 
-                    <Button Grid.Row="0" Grid.Column="0" Text="{lEx:Translate StartMoLLogin}" HorizontalOptions="FillAndExpand"  Command="{Binding SignInExternalCommand}"  Style="{StaticResource GreenButton}" />
-                    <Button Grid.Row="0" Grid.Column="1" Text="{lEx:Translate StartNLGLogin}" HorizontalOptions="FillAndExpand"  Command="{Binding SignInCommand}"  Style="{StaticResource GreenButton}" />
-                    <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="{lEx:Translate LoginNoAccountSignup}" HorizontalOptions="FillAndExpand"  Command="{Binding SignUpCommand}" BackgroundColor="Transparent" TextColor="White" HeightRequest="40" />
-                </Grid>
-            </StackLayout>
-            <StackLayout Grid.Row="4" VerticalOptions="FillAndExpand">
-                <Label Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="End" HorizontalOptions="Start" Style="{StaticResource InfoBodyText}"  >
+            <Label Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="End" Grid.Row="4" Grid.Column="1"  
+                   HorizontalOptions="Start" Style="{StaticResource InfoBodyTextGraySmall}"  >
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer
                                             Command="{Binding ContinueAsGuestCommand}"
                                             NumberOfTapsRequired="1" />
                     </Label.GestureRecognizers>
                 </Label>
-            </StackLayout>
-        </Grid>
 
+            </Grid>
+            
+        </StackLayout>
     </ContentView.Content>
 </ContentView>

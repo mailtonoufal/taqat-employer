@@ -2,36 +2,76 @@
 <StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
-             x:Class="ArabWaha.Employer.Controls.TabControl">
+             x:Class="ArabWaha.Employer.Controls.TabControl" >
 
-    <Grid Padding="0" ColumnSpacing="0" RowSpacing="0" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
+
+    <StackLayout Padding="0" BackgroundColor="{StaticResource BlueToolBarColor}" HorizontalOptions="Fill" VerticalOptions="Fill" >
+
+        <Grid Padding="0" ColumnSpacing="0" RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+        <SearchBar Grid.Column="1"  x:Name="Searcher"    Placeholder="{lEx:Translate TabControlSearchText}" Style="{StaticResource TabSearchBarStyle}"
+                    
+                    SearchCommand="{Binding SearchBarCommand}"  Text="{Binding SearchText}"   IsVisible="{Binding SearchBarVisible}"  />
+        </Grid>
+    </StackLayout>
+    <Grid Padding="0" ColumnSpacing="0" RowSpacing="0" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="{StaticResource TabBarBGColor}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width=".25*" />
+            <ColumnDefinition Width=".25*" />
+            <ColumnDefinition Width=".25*" />
+            <ColumnDefinition Width=".25*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="45" />
             <RowDefinition Height="5" />
         </Grid.RowDefinitions>
-        <SearchBar  x:Name="Searcher"   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Placeholder="{lEx:Translate TabControlSearchText}" BackgroundColor="White"   
-                    VerticalOptions="StartAndExpand" SearchCommand="{Binding SearchBarCommand}"  Text="{Binding SearchText}"   IsVisible="{Binding SearchBarVisible}" />
-        <Button x:Name="Tab1"   Grid.Row="1" Grid.Column="0" Style="{StaticResource BlueButtonFlat}" VerticalOptions="CenterAndExpand" 
-                    Command="{Binding Tab1Command}" />
-        <Button x:Name="Tab2"  Grid.Row="1" Grid.Column="1"  Style="{StaticResource BlueButtonFlat}" VerticalOptions="FillAndExpand" 
-                    Command="{Binding Tab2Command}" />
-        <Button x:Name="Tab3"  Grid.Row="1" Grid.Column="2" Style="{StaticResource BlueButtonFlat}" VerticalOptions="FillAndExpand" 
-                    Command="{Binding Tab3Command}" />
-        <Button x:Name="Tab4"  Grid.Row="1" Grid.Column="3" Style="{StaticResource BlueButtonFlat}" VerticalOptions="FillAndExpand" 
-                    Command="{Binding Tab4Command}" />
 
-        
-        <BoxView x:Name="tab1Selected"  Grid.Row="2" Grid.Column="0" BackgroundColor="Orange"  HorizontalOptions="FillAndExpand" />
-        <BoxView x:Name="tab2Selected"   Grid.Row="2" Grid.Column="1" BackgroundColor="Orange" HorizontalOptions="FillAndExpand" />
-        <BoxView x:Name="tab3Selected"   Grid.Row="2" Grid.Column="2" BackgroundColor="Orange" HorizontalOptions="FillAndExpand" />
-        <BoxView x:Name="tab4Selected"   Grid.Row="2" Grid.Column="3" BackgroundColor="Orange" HorizontalOptions="FillAndExpand" />
+
+
+        <Label x:Name="Tab1"   Grid.Row="0" Grid.Column="0" Style="{StaticResource TabButtonFlat}"  >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Tab1Command}" NumberOfTapsRequired="1"></TapGestureRecognizer>
+            </Label.GestureRecognizers>
+
+        </Label>
+        <Label x:Name="Tab2"  Grid.Row="0" Grid.Column="1"  Style="{StaticResource TabButtonFlat}"  >
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Tab2Command}" NumberOfTapsRequired="1"></TapGestureRecognizer>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="Tab3"  Grid.Row="0" Grid.Column="2" Style="{StaticResource TabButtonFlat}" >
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Tab3Command}" NumberOfTapsRequired="1"></TapGestureRecognizer>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="Tab4"  Grid.Row="0" Grid.Column="3" Style="{StaticResource TabButtonFlat}"  >
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Tab4Command}" NumberOfTapsRequired="1"></TapGestureRecognizer>
+            </Label.GestureRecognizers>
+        </Label>
+
+
+        <BoxView x:Name="tab1Selected"   Grid.Row="1" Grid.Column="0" BackgroundColor="{StaticResource TabBarSelectedColor}" HorizontalOptions="FillAndExpand"     />
+        <BoxView x:Name="tab2Selected"   Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResource TabBarSelectedColor}" HorizontalOptions="FillAndExpand"      />
+        <BoxView x:Name="tab3Selected"   Grid.Row="1" Grid.Column="2" BackgroundColor="{StaticResource TabBarSelectedColor}" HorizontalOptions="FillAndExpand" />
+        <BoxView x:Name="tab4Selected"   Grid.Row="1" Grid.Column="3" BackgroundColor="{StaticResource TabBarSelectedColor}" HorizontalOptions="FillAndExpand" />
+
+        <BoxView x:Name="tab1NotSelected"   Grid.Row="1" Grid.Column="0" BackgroundColor="{StaticResource TabBarBGColor}"  HorizontalOptions="FillAndExpand" />
+        <BoxView x:Name="tab2NotSelected"   Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResource TabBarBGColor}" HorizontalOptions="FillAndExpand" />
+        <BoxView x:Name="tab3NotSelected"   Grid.Row="1" Grid.Column="2" BackgroundColor="{StaticResource TabBarBGColor}" HorizontalOptions="FillAndExpand" />
+        <BoxView x:Name="tab4NotSelected"   Grid.Row="1" Grid.Column="3" BackgroundColor="{StaticResource TabBarBGColor}" HorizontalOptions="FillAndExpand" />
+
 
     </Grid>
-    </StackLayout>
+</StackLayout>

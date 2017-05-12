@@ -3,15 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:t="clr-namespace:SlideOverKit" 
              x:Class="ArabWaha.Employer.Views.Menus.MenuMaster"
-             BackgroundColor="{StaticResource BluePageColor }">
+            >
     <t:SlideMenuView.Padding>
-        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" WinPhone="20,20,20,20" />
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 0, 0, 0" WinPhone="20,20,20,20" />
     </t:SlideMenuView.Padding>
-    <StackLayout Padding="0" Orientation="Vertical" VerticalOptions="FillAndExpand">
+    <StackLayout Padding="0" Orientation="Vertical" VerticalOptions="FillAndExpand"  BackgroundColor="{StaticResource MenuMainBGColor}" >
 
         <Grid Padding="0">
-            <BoxView BackgroundColor="White" HorizontalOptions="FillAndExpand" HeightRequest="100" />
-            <Image Source="LogoMenu.png" Aspect="AspectFit" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="1" />
+            </Grid.RowDefinitions>
+            <BoxView Grid.Row="0" BackgroundColor="{StaticResource BluePageColor}" HorizontalOptions="FillAndExpand" HeightRequest="80" />
+            <Image Grid.Row="0"  Source="Logo.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" 
+                   HeightRequest="50" WidthRequest="100" />
+            <!--<BoxView Grid.Row="2" BackgroundColor="{StaticResource BluePageColor}" HorizontalOptions="FillAndExpand" HeightRequest="10" />-->
         </Grid>
         <ContentView x:Name="menuContent" />
         <StackLayout VerticalOptions="EndAndExpand">
@@ -26,8 +32,8 @@
         </StackLayout>
         <StackLayout VerticalOptions="EndAndExpand">
             <Grid Padding="0">
-                <BoxView BackgroundColor="White" HorizontalOptions="FillAndExpand" HeightRequest="100" />
-                <Image Source="nav_footer.png" Aspect="AspectFit" />
+                <BoxView BackgroundColor="White" HorizontalOptions="FillAndExpand" HeightRequest="80" />
+                <Image Source="nav_footer.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="80" WidthRequest="130"  />
             </Grid>
 
         </StackLayout>

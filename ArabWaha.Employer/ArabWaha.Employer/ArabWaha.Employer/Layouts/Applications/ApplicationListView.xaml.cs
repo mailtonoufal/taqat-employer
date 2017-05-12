@@ -12,7 +12,14 @@ namespace ArabWaha.Employer.Layouts
     {
         public ApplicationListView()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch(Exception ex)
+            {
+                var t = ex.Message;
+            }
         }
     }
 }

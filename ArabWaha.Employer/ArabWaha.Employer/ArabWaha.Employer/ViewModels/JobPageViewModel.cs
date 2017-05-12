@@ -58,9 +58,21 @@ namespace ArabWaha.Employer.ViewModels
             JobTypeList = StaticEntryHelper.GetJobTypeEntries();
 
             // setup the positions here
+            ExpandEditAccordion = true;
 
 
     }
+
+
+        private bool _expandEditAccordion;
+
+        public bool ExpandEditAccordion
+        {
+            get { return _expandEditAccordion; }
+            set { SetProperty<bool>(ref _expandEditAccordion , value); }
+        }
+
+
 
         private Map _locationMap;
         public async void SetupMap(Map mapin)

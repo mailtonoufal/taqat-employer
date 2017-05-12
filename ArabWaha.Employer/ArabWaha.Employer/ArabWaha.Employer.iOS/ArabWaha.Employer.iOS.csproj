@@ -98,6 +98,20 @@
     <CodesignKey>iPhone Developer: Russell Collingham (CG452H6JRL)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchDebug>False</MtouchDebug>
+    <MtouchSdkVersion>10.3</MtouchSdkVersion>
+    <MtouchLink>None</MtouchLink>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchNoSymbolStrip>False</MtouchNoSymbolStrip>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchEnableBitcode>False</MtouchEnableBitcode>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchFloat32>False</MtouchFloat32>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>none</DebugType>
@@ -121,7 +135,9 @@
     <Compile Include="Renders\UnderlineEffect.cs" />
     <None Include="app.config" />
     <None Include="Entitlements.plist" />
-    <None Include="Info.plist" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
@@ -527,6 +543,30 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\addicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menucomplaints.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\manuservices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menucompany.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menuhome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menusettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menucontactus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menuapplications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\jobcompanyicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

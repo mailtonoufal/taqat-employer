@@ -7,28 +7,51 @@
 
         <Grid Padding="0" ColumnSpacing="0" RowSpacing="0" HorizontalOptions="FillAndExpand">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <!--<RowDefinition Height="*" />-->
-                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
                 <RowDefinition Height="5" />
             </Grid.RowDefinitions>
             <!--<SearchBar  x:Name="Searcher"   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Placeholder="Search Jobs" BackgroundColor="White"   
                     VerticalOptions="StartAndExpand" SearchCommand="{Binding SearchBarCommand}"  IsVisible="{Binding SearchBarVisible}" />-->
-            <Button x:Name="Tab1"  Grid.Row="0" Grid.Column="0" Text="{Binding Tab1Text}"  Style="{StaticResource BlueButtonFlat}" VerticalOptions="CenterAndExpand" 
+            <!--<Button x:Name="Tab1"  Grid.Row="0" Grid.Column="0" Text="{Binding Tab1Text}"  Style="{StaticResource BlueButtonFlat}" VerticalOptions="CenterAndExpand" 
                     Command="{Binding Tab1Command}" />
             <Button x:Name="Tab2"  Grid.Row="0" Grid.Column="1" Text="{Binding Tab2Text}"   Style="{StaticResource BlueButtonFlat}" VerticalOptions="CenterAndExpand" 
                     Command="{Binding Tab2Command}" />
             <Button x:Name="Tab3"  Grid.Row="0" Grid.Column="2" Text="{Binding Tab3Text}"   Style="{StaticResource BlueButtonFlat}" VerticalOptions="CenterAndExpand" 
-                    Command="{Binding Tab3Command}" />
+                    Command="{Binding Tab3Command}" />-->
 
-            <BoxView x:Name="tab1Selected"  Grid.Row="1" Grid.Column="0" BackgroundColor="Orange"  IsVisible="{Binding IsTab1Selected}"  HorizontalOptions="FillAndExpand" />
-            <BoxView x:Name="tab2Selected"   Grid.Row="1" Grid.Column="1" BackgroundColor="Orange" IsVisible="{Binding IsTab2Selected}"  HorizontalOptions="FillAndExpand" />
-            <BoxView x:Name="tab3Selected"   Grid.Row="1" Grid.Column="2" BackgroundColor="Orange" IsVisible="{Binding IsTab3Selected}"  HorizontalOptions="FillAndExpand" />
+            <Label x:Name="Tab1"   Grid.Row="0" Grid.Column="0" Style="{StaticResource TabButtonFlat}" Text="{Binding Tab1Text}"  >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Tab1Command}" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
 
+            </Label>
+            <Label x:Name="Tab2"  Grid.Row="0" Grid.Column="1"  Style="{StaticResource TabButtonFlat}" Text="{Binding Tab2Text}" >
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Tab2Command}" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="Tab3"  Grid.Row="0" Grid.Column="2" Style="{StaticResource TabButtonFlat}" Text="{Binding Tab3Text}" >
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Tab3Command}" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <BoxView x:Name="tab1Selected"   Grid.Row="1" Grid.Column="0" BackgroundColor="{StaticResource TabBarSelectedColor}" HorizontalOptions="FillAndExpand" />
+            <BoxView x:Name="tab2Selected"   Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResource TabBarSelectedColor}" HorizontalOptions="FillAndExpand" />
+            <BoxView x:Name="tab3Selected"   Grid.Row="1" Grid.Column="2" BackgroundColor="{StaticResource TabBarSelectedColor}" HorizontalOptions="FillAndExpand" />
+            
+            <BoxView x:Name="tab1NotSelected"   Grid.Row="1" Grid.Column="0" BackgroundColor="{StaticResource TabBarBGColor}" HorizontalOptions="FillAndExpand" />
+            <BoxView x:Name="tab2NotSelected"   Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResource TabBarBGColor}" HorizontalOptions="FillAndExpand" />
+            <BoxView x:Name="tab3NotSelected"   Grid.Row="1" Grid.Column="2" BackgroundColor="{StaticResource TabBarBGColor}" HorizontalOptions="FillAndExpand" />
+            
         </Grid>
 
     </ContentView.Content>

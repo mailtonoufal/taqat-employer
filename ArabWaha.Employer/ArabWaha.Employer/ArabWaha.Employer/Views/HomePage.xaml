@@ -9,33 +9,68 @@
              xmlns:layouts="clr-namespace:ArabWaha.Employer.Layouts"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.HomePage"
-             NavigationPage.HasBackButton="False"     >
-    <!--BackgroundColor="{StaticResource BluePageColor }"-->
-    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+             NavigationPage.HasBackButton="false"
+             NavigationPage.HasNavigationBar="false"
+                   >
 
-        <Grid Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <controls:TabControl Grid.Row="0" x:Name="tabCtrl" HorizontalOptions="Start" />
-            <busyindicator:SfBusyIndicator 
-					Grid.Row="1"
+  <!--BackgroundColor="{StaticResource BluePageColor }"-->
+  <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    <StackLayout.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" WinPhone="20,20,20,20" />
+     </StackLayout.Padding>
+    
+    <Grid Padding="0" ColumnSpacing="0" RowSpacing="0"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+
+      <Grid Grid.Row="0" Padding="0"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource BlueToolBarColor}">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="46" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="7"></ColumnDefinition>
+          <ColumnDefinition Width="1*"></ColumnDefinition>
+          <ColumnDefinition Width="5*"></ColumnDefinition>
+          <ColumnDefinition Width="1*"></ColumnDefinition>
+          <ColumnDefinition Width="7"></ColumnDefinition>        
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start">
+          <Image  Source="hamburger.png" HeightRequest="23"  >
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer
+                              Tapped ="MenuTapped"
+                              NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+          </Image>
+        </StackLayout>
+
+        <StackLayout Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center">
+          <Image  Source="Logo.png" HeightRequest="30"  >
+          </Image>
+        </StackLayout>
+
+      </Grid>
+      <controls:TabControl Grid.Row="1" x:Name="tabCtrl" HorizontalOptions="StartAndExpand" BackgroundColor="{StaticResource BlueToolBarColor}" />
+      
+      <busyindicator:SfBusyIndicator
+                    Grid.Row="2"
                     x:Name="BusyInd"
-					ViewBoxHeight="100"
-					ViewBoxWidth="100"
-					AnimationType="HorizontalPulsingBox" 
-					TextColor="Blue"
-					TextSize="10"
-					Title="Data Refresh.."
-					IsBusy="{Binding IsBusy}"
-					IsVisible="{Binding IsBusy}"
-				/>
-            <ContentView  Grid.Row="2" x:Name="tabContent" Content="{Binding CurrentView}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-                         />
+                    ViewBoxHeight="100"
+                    ViewBoxWidth="100"
+                    AnimationType="HorizontalPulsingBox"
+                    TextColor="Blue"
+                    TextSize="10"
+                    Title="Data Refresh.."
+                    IsBusy="{Binding IsBusy}"
+                    IsVisible="{Binding IsBusy}" />
 
-        </Grid>
+      <ContentView  Grid.Row="2" x:Name="tabContent" Content="{Binding CurrentView}"
+                    HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
 
-    </StackLayout>    
+    </Grid>
+
+  </StackLayout>
 </t:AWMenuContainerPage>

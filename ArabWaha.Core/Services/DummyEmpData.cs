@@ -24,6 +24,7 @@ namespace ArabWaha.Core.Services
                 new ComplaintRaised
                 {
                     Subject="Website issues",
+                    Category="Techical Issue(s)",
                     Status="Closed",
                     ComplaintId=12345,
                     ComplaintText="Website not displaying images",
@@ -33,6 +34,7 @@ namespace ArabWaha.Core.Services
                 new ComplaintRaised
                 {
                     Subject="Sign In Issue",
+                    Category="Password related issues",
                     Status="In progress",
                     ComplaintId=13456,
                     ComplaintText="Cannot signin with current password. Invalid password error",
@@ -42,7 +44,8 @@ namespace ArabWaha.Core.Services
                 new ComplaintRaised
                 {
                     Subject="Forgot Password",
-                    Status="In progress",
+                    Category="Password related issues",
+                    Status ="In progress",
                     ComplaintId=16543,
                     ComplaintText="How can I reset my password",
                     CreatedOn="2017-2-21",
@@ -51,6 +54,7 @@ namespace ArabWaha.Core.Services
                 new ComplaintRaised
                 {
                     Subject="Cannot create account",
+                    Category="Issues with Registration",
                     Status="In progress",
                     ComplaintId=12345,
                     ComplaintText="When i create an account the website rejects my information stating that it is incorrect?",
@@ -60,6 +64,7 @@ namespace ArabWaha.Core.Services
                 new ComplaintRaised
                 {
                     Subject="New jobs not showing",
+                    Category="Technical issues with web portal",
                     Status="Closed",
                     ComplaintId=10092,
                     ComplaintText="I have watched 4 new jobs and they are not showing up in my watched list",
@@ -70,6 +75,7 @@ namespace ArabWaha.Core.Services
                 {
                     Subject="Website crashed",
                     Status="rejected",
+                    Category="Technical issues with web portal",
                     ComplaintId=23543,
                     ComplaintText="When i navigate to the website it crashes my browser",
                     CreatedOn="2016-9-10",
@@ -186,18 +192,18 @@ namespace ArabWaha.Core.Services
 
             var Applications = new ObservableCollection<ApplicationProfile>()
                         {
-                            new ApplicationProfile() { ProfileId=1,  Name= $"Mohammed Fadi 1", ApplicationId=1, Gender="Male", Occupation= $"Software Engineer 1", Location="Riyadh", Availability="Imediate", MatchScore=90, JobPostId = 1},
-                            new ApplicationProfile() { ProfileId=2,  Name= $"Mohammed Fadi 2", ApplicationId=2, Gender="Male", Occupation= $"Software Engineer 2", Location="Riyadh", Availability="Imediate", MatchScore=10, JobPostId = 1 },
-                            new ApplicationProfile() { ProfileId=3,  Name= $"Mohammed Fadi 3", ApplicationId=3, Gender="Male", Occupation= $"Software Engineer 3", Location="Riyadh", Availability="Imediate", MatchScore=76, JobPostId = 1 },
-                            new ApplicationProfile() { ProfileId=4,  Name= $"Mohammed Fadi 4", ApplicationId=4, Gender="Male", Occupation= $"Software Engineer 4", Location="Riyadh", Availability="Imediate", MatchScore=34, JobPostId = 1 },
-                            new ApplicationProfile() { ProfileId=5,  Name= $"Mohammed Fadi 5", ApplicationId=5, Gender="Male", Occupation= $"Software Engineer 5", Location="Riyadh", Availability="Imediate", MatchScore=67, JobPostId = 1 },
-                            new ApplicationProfile() { ProfileId=5,  Name= $"Mohammed Fadi 6", ApplicationId=6, Gender="Male", Occupation= $"Software Engineer 6", Location="Riyadh", Availability="Imediate", MatchScore=88, JobPostId = 2 },
-                            new ApplicationProfile() { ProfileId=6,  Name= $"Mohammed Fadi 7", ApplicationId=7, Gender="Male", Occupation= $"Software Engineer 7", Location="Riyadh", Availability="Imediate", MatchScore=90, JobPostId = 3},
-                            new ApplicationProfile() { ProfileId=7,  Name= $"Mohammed Fadi 8", ApplicationId=8, Gender="Male", Occupation= $"Software Engineer 8", Location="Riyadh", Availability="Imediate", MatchScore=10, JobPostId = 4 },
-                            new ApplicationProfile() { ProfileId=8,  Name= $"Mohammed Fadi 9", ApplicationId=9, Gender="Male", Occupation= $"Software Engineer 9", Location="Riyadh", Availability="Imediate", MatchScore=76, JobPostId = 5 },
-                            new ApplicationProfile() { ProfileId=9,  Name= $"Mohammed Fadi 10", ApplicationId=10, Gender="Male", Occupation= $"Software Engineer 10", Location="Riyadh", Availability="Imediate", MatchScore=34, JobPostId = 5 },
-                            new ApplicationProfile() { ProfileId=10,  Name= $"Mohammed Fadi 11", ApplicationId=11, Gender="Male", Occupation= $"Software Engineer 11", Location="Riyadh", Availability="Imediate", MatchScore=67, JobPostId = 6 },
-                            new ApplicationProfile() { ProfileId=11,  Name= $"Mohammed Fadi 12", ApplicationId=12, Gender="Male", Occupation= $"Software Engineer 12", Location="Riyadh", Availability="Imediate", MatchScore=88, JobPostId = 6 },
+                            new ApplicationProfile() { ProfileId=1,  Name= $"Mohammed Fadi 1", ApplicationId=1, Gender="Male", Occupation= $"Android Developer", Location="Riyadh", Availability="Imediate", MatchScore=90, JobPostId = 1, ApplicationDate=DateTime.Now.AddDays(7)},
+                            new ApplicationProfile() { ProfileId=2,  Name= $"Mohammed Fadi 2", ApplicationId=2, Gender="Male", Occupation= $"iOS Android Developer", Location="Riyadh", Availability="Imediate", MatchScore=10, JobPostId = 1, ApplicationDate=DateTime.Now.AddDays(17) },
+                            new ApplicationProfile() { ProfileId=3,  Name= $"Moh Fadi 3", ApplicationId=3, Gender="Female", Occupation= $"iOS Swift Programmer", Location="Riyadh", Availability="Imediate", MatchScore=76, JobPostId = 1 , ApplicationDate=DateTime.Now.AddDays(27)},
+                            new ApplicationProfile() { ProfileId=4,  Name= $"Mohammed Fadi 4", ApplicationId=4, Gender="Male", Occupation= $"Java Developer", Location="Riyadh", Availability="Imediate", MatchScore=34, JobPostId = 1 , ApplicationDate=DateTime.Now.AddDays(57)},
+                            new ApplicationProfile() { ProfileId=5,  Name= $"Moh Fadi 5", ApplicationId=5, Gender="Male", Occupation= $"Android Programmer", Location="Riyadh", Availability="Imediate", MatchScore=67, JobPostId = 1 , ApplicationDate=DateTime.Now.AddDays(77)},
+                            new ApplicationProfile() { ProfileId=5,  Name= $"Mohammed Fadi 6", ApplicationId=6, Gender="Male", Occupation= $"iOS Android Swift", Location="Riyadh", Availability="Imediate", MatchScore=88, JobPostId = 2 , ApplicationDate=DateTime.Now.AddDays(57)},
+                            new ApplicationProfile() { ProfileId=6,  Name= $"Mohammed Fadi 7", ApplicationId=7, Gender="Female", Occupation= $"IT iOS Java Android Dev", Location="Riyadh", Availability="Imediate", MatchScore=90, JobPostId = 3, ApplicationDate=DateTime.Now.AddDays(137)},
+                            new ApplicationProfile() { ProfileId=7,  Name= $"Moh Fadi 8", ApplicationId=8, Gender="Male", Occupation= $"Swift android java ios", Location="Riyadh", Availability="Imediate", MatchScore=10, JobPostId = 4 , ApplicationDate=DateTime.Now.AddDays(47)},
+                            new ApplicationProfile() { ProfileId=8,  Name= $"Mohammed Fadi 9", ApplicationId=9, Gender="Male", Occupation= $"iOS Software Engineer", Location="Riyadh", Availability="Imediate", MatchScore=76, JobPostId = 5 , ApplicationDate=DateTime.Now.AddDays(157)},
+                            new ApplicationProfile() { ProfileId=9,  Name= $"Moh Fadi 10", ApplicationId=10, Gender="Male", Occupation= $"Android Java Software Engineer", Location="Riyadh", Availability="Imediate", MatchScore=34, JobPostId = 5 , ApplicationDate=DateTime.Now.AddDays(101)},
+                            new ApplicationProfile() { ProfileId=10,  Name= $"Mohammed Fadi 11", ApplicationId=11, Gender="Male", Occupation= $"iOS Android Mobile Developer", Location="Riyadh", Availability="Imediate", MatchScore=67, JobPostId = 6 , ApplicationDate=DateTime.Now.AddDays(63)},
+                            new ApplicationProfile() { ProfileId=11,  Name= $"Moh Fadi 12", ApplicationId=12, Gender="Female", Occupation= $"Android Mobile Developer", Location="Riyadh", Availability="Imediate", MatchScore=88, JobPostId = 6 , ApplicationDate=DateTime.Now.AddDays(7)},
             };
 
             return Applications;
@@ -382,8 +388,8 @@ namespace ArabWaha.Core.Services
                 ProgramUrl="https://www.taqat.sa/web/guest/individuallogin",
                 HowToRegister="Click  here  and follow the easy steps to register for this program."
                 },
-                new EmployerProgram {ProgramId=2, Status="Open", ProgramName="Hafiz, Searching For Employment" },
-                new EmployerProgram {ProgramId=3, Status="Open", ProgramName="Hafiz, Difficulty Finding Employment" },
+                new EmployerProgram {ProgramId=2, Status="Open", ProgramName="Search For Employment" },
+                new EmployerProgram {ProgramId=3, Status="Open", ProgramName="Finding Employment" },
             };
 
             return progSource;
@@ -400,8 +406,8 @@ namespace ArabWaha.Core.Services
                 ProgramUrl="https://www.taqat.sa/web/guest/individuallogin",
                 HowToRegister="Click  here  and follow the easy steps to register for this program."
                 },
-                new EmployerProgram {ProgramId=2, Status="Open", ProgramName="Hafiz, Searching For Employment" },
-                new EmployerProgram {ProgramId=3, Status="Open", ProgramName="Hafiz, Difficulty Finding Employment" },
+                new EmployerProgram {ProgramId=2, Status="Open", ProgramName="Search For Employment" },
+                new EmployerProgram {ProgramId=3, Status="Open", ProgramName= "Finding Employment" },
                 new EmployerProgram {ProgramId=4, Status="Open", ProgramName="Employment Support" },
                 new EmployerProgram {ProgramId=5, Status="Open", ProgramName="Saned" },
                 new EmployerProgram {ProgramId=6, Status="Open", ProgramName="Dooroob" },

@@ -36,7 +36,6 @@ namespace ArabWaha.Employer.ViewModels
             set { SetProperty(ref _searchText, value); }
         }
 
-        // bit hacky fix when more time
         TabControl _ctrl;
 
 
@@ -76,10 +75,10 @@ namespace ArabWaha.Employer.ViewModels
 
                 // need to pull from db
                 SwipeSource = new List<SfRotatorItem>() {
-                new SfRotatorItem() { ItemContent = new Label { Text = "tab image 1 will be here", TextColor=Color.Black }, BackgroundColor=Color.Transparent },
-                new SfRotatorItem() { ItemContent = new Label { Text = "tab image 2 will be here" ,TextColor=Color.Black }, BackgroundColor=Color.Transparent  },
-                new SfRotatorItem() { ItemContent = new Label { Text = "tab image 3 will be here" ,TextColor=Color.Black }, BackgroundColor=Color.Transparent  } ,
-                new SfRotatorItem() { ItemContent = new Label { Text = "tab image 4 will be here", TextColor = Color.Black }, BackgroundColor = Color.Transparent  } };
+                new SfRotatorItem() {  Image="sample_carousel.png" },
+                new SfRotatorItem() {  Image="sample_carousel.png"  },
+                new SfRotatorItem() { ItemContent = new Label { Text = "tab image 3 will be here" ,TextColor=Color.Black }, BackgroundColor=Color.Transparent,  Image="sample_carousel.png" } ,
+                new SfRotatorItem() { ItemContent = new Label { Text = "tab image 4 will be here", TextColor = Color.Black }, BackgroundColor = Color.Transparent, Image="sample_carousel.png" } };
 
                 HomeContent = new HomeHomeContent();
                 SetHome();
@@ -97,7 +96,9 @@ namespace ArabWaha.Employer.ViewModels
                 foreach (var t in JobPageSource)
                 {
                     t.JobStatusText = tran.GetProviderValueString("LabelJobStatus");  
-                    t.PostedText = tran.GetProviderValueString("LabelJobPosted");  
+                    t.PostedText = tran.GetProviderValueString("LabelJobPosted");
+
+                    if (string.IsNullOrEmpty(t.CompanyLogo)) t.CompanyLogo = "jobcompanyicon.png";
                 }
 
                 JobContent = new HomeJobPostsContent();
@@ -115,6 +116,17 @@ namespace ArabWaha.Employer.ViewModels
                 // get data
                 ApiService apiServ = new ApiService();
                 ProgramsPageSource = await apiServ.GetCurrentProgramsAsync();
+
+                TranslateExtension tran = new TranslateExtension();
+                string progStatusLabel = tran.GetProviderValueString("LabelProgramStatusText");
+                // setup Program Status:
+                foreach(var item in ProgramsPageSource)
+                {
+                    item.StatusLabelText = progStatusLabel;
+                }
+
+
+
                 ProgramsContent = new HomeProgramsContent();
             });
 

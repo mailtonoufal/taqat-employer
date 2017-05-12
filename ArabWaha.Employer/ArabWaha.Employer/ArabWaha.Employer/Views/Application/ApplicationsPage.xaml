@@ -4,13 +4,15 @@
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     xmlns:layout="clr-namespace:ArabWaha.Employer.Layouts"
     xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" 
-    xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"     
+    xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"
     xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"             
     prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="ArabWaha.Employer.Views.ApplicationsPage" 
     x:Name="AppPage"
     Title="{Binding Title}"
     >
+
+
     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="10,0,10,0">
 
         <Grid Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >

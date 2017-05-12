@@ -15,25 +15,38 @@
         <Grid.RowDefinitions>
           <RowDefinition Height="Auto" />
           <RowDefinition Height="Auto" />
-          <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="7*" />
+            <ColumnDefinition Width="5" />
         </Grid.ColumnDefinitions>
 
-      <SearchBar Grid.Row="0"   x:Name="Searcher"   Placeholder="{lEx:Translate SearchKeywordText}" BackgroundColor="White" Text="{Binding SearchText}"
+      <SearchBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"  x:Name="Searcher"   Placeholder="{lEx:Translate SearchKeywordText}"  
+                  Text="{Binding SearchText}"
                   SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}"   />
-      <SearchBar Grid.Row="1"   x:Name="SearcherLoc"   Placeholder="{lEx:Translate SearchLocationText}" BackgroundColor="White" Text="{Binding SearchLocation}"
+      
+      <SearchBar Grid.Row="1"    Grid.Column="0" Grid.ColumnSpan="4"  x:Name="SearcherLoc"  
+                  Placeholder="{lEx:Translate SearchLocationText}" 
+                  Text="{Binding SearchLocation}" 
                   SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}"   />
 
-      <StackLayout  Grid.Row="2" IsVisible="{Binding HasResults}"  >           
-              <layout:ApplicationListView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></layout:ApplicationListView>         
-      </StackLayout>
 
-      <StackLayout  Grid.Row="2" IsVisible="{Binding NoResults}" >
-        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
-          <Label Text="{lEx:Translate LabelNoKeywordsEntered}" Style="{StaticResource HeaderTextLargeBlue}" ></Label>
+        <Label Text="{Binding SearchResultCount}" Style="{StaticResource InfoBodyTextSmallBlue}" 
+               Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="End"/>
+
+
+        <StackLayout  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" IsVisible="{Binding HasResults}"  >
+            <layout:ApplicationListView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
+
+        <StackLayout  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" IsVisible="{Binding NoResults}" >
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="5">
+                <Label Text="{lEx:Translate LabelNoKeywordsEntered}" Style="{StaticResource HeaderTextLargeBlue}" />
+            </StackLayout>
       </StackLayout>
 
 

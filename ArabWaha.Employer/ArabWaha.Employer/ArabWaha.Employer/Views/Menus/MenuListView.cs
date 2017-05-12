@@ -20,6 +20,8 @@ namespace ArabWaha.Employer.Views.Menus
             ItemsSource = data;
             VerticalOptions = LayoutOptions.FillAndExpand;
             BackgroundColor = Color.Transparent;
+            Margin = 0;
+
             ItemTemplate = new DataTemplate(typeof(MenuListTemplate));
         }
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
@@ -8,9 +8,43 @@
              x:Class="ArabWaha.Employer.Views.AboutPage"
              Title="{lEx:Translate TextAboutPageTitle}">
 
-    <Label HorizontalOptions="CenterAndExpand" 
-           VerticalOptions="CenterAndExpand" 
-           Text="{lEx:Translate TextAboutPageDefault}" 
-           Style="{StaticResource HeaderTextLargeBlue}" HorizontalTextAlignment="Center"/>
+    <StackLayout Padding="5">
+        <StackLayout BackgroundColor="White">
 
-</local:AWMenuContainerPage>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="1"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="{StaticResource AboutLogo}" Grid.Row="1" Grid.Column="1" HorizontalOptions="CenterAndExpand"/>
+
+                <Label Grid.Row="3" Grid.Column="1" Text="{Binding AppVersion}"  Style="{StaticResource FormHeaderLabelMediumBlue}"  
+                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"  />
+
+                <BoxView HeightRequest="1" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="Silver" />
+
+
+                <Label Grid.Row="5" Grid.Column="1" Text="{lEx:Translate LabelAboutTermsText}"  
+                           Style="{StaticResource FormHeaderLabelBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" />
+                <Label Grid.Row="6" Grid.Column="1" Text="{Binding TermsText}" 
+                         Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" />
+
+            </Grid>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

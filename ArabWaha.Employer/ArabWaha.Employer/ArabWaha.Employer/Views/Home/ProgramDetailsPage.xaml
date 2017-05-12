@@ -2,12 +2,105 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
+             xmlns:locals="clr-namespace:ArabWaha.Employer.Controls"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.Home.ProgramDetailsPage">
 
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
         <ScrollView>
-            <Grid VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsIntroduction}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" >
+                    <locals:XpertAccordion.AccordionContents>
+                        <StackLayout BackgroundColor="White">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="5" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="5"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding ProgramDetails.Description}" HorizontalTextAlignment="Start" 
+                                                                            Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+
+                            </Grid>
+                        </StackLayout>
+                    </locals:XpertAccordion.AccordionContents>
+                </locals:XpertAccordion>
+
+
+                <!-- who can benefit -->
+                <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsBenefitsText}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" >
+                    <locals:XpertAccordion.AccordionContents>
+                        <StackLayout BackgroundColor="White">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="5" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="5"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding ProgramDetails.WhoCanBenefit}" HorizontalTextAlignment="Start" 
+                                                                            Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+
+                            </Grid>
+                        </StackLayout>
+                    </locals:XpertAccordion.AccordionContents>
+                </locals:XpertAccordion>
+                <!-- program requirements -->
+                <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsBeneficiariesText}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" >
+                    <locals:XpertAccordion.AccordionContents>
+                        <StackLayout BackgroundColor="White">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="5" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="5"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding ProgramDetails.ProgramRequirements}" HorizontalTextAlignment="Start" 
+                                                                            Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+
+                            </Grid>
+                        </StackLayout>
+                    </locals:XpertAccordion.AccordionContents>
+                </locals:XpertAccordion>
+                <!-- how to register -->
+                <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsHowToRegisterText}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" >
+                    <locals:XpertAccordion.AccordionContents>
+                        <StackLayout BackgroundColor="White">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="5" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="5"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding ProgramDetails.HowToRegister}" HorizontalTextAlignment="Start" 
+                                                                            Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+
+                            </Grid>
+                        </StackLayout>
+                    </locals:XpertAccordion.AccordionContents>
+                </locals:XpertAccordion>
+
+                <!--<Grid VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10" />
 
@@ -48,13 +141,15 @@
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding RegServiceCommand}" NumberOfTapsRequired="1" />
                     </Label.GestureRecognizers>
-                    <!--<Label.Effects>
+                    -->
+                <!--<Label.Effects>
                         <local:UnderlineEffect/>
                     </Label.Effects>-->
+                <!--
                 </Label>
 
-            </Grid>
-
+            </Grid>-->
+            </StackLayout>
         </ScrollView>
     </StackLayout>
 </ContentPage>

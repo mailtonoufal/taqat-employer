@@ -4,92 +4,128 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"                                        
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" 
+             xmlns:controlx="clr-namespace:ArabWaha.Employer.Controls"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.CompanyDetailsPage"
              Title="{Binding CompanyInfo.CompanyName}"
              >
-    <StackLayout Padding="10">
-    <StackLayout VerticalOptions="Start" HorizontalOptions="Fill">
+    <StackLayout Padding="0">
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Fill" BackgroundColor="White">
             <Image Source="{Binding CompanyInfo.CompanyLogo}" HeightRequest="60" BackgroundColor="{StaticResource BluePageColor}"></Image>
-            <Label Text="{Binding CompanyInfo.CompanyName}" Style="{StaticResource HeaderTextMediumBlue}" HorizontalOptions="End"></Label>
-            <Label Text="{Binding CompanyInfo.CompanyURL}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
-    </StackLayout>
+            <Label Text="{Binding CompanyInfo.CompanyName}" Style="{StaticResource HeaderTextMediumBlue}" 
+                   HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Label Text="{Binding CompanyInfo.CompanyURL}" Style="{StaticResource InfoBodyTextSmallBlue}" 
+                   HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+        </StackLayout>
     <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <StackLayout>
-                <StackLayout>
-                    <Label Text="{lEx:Translate CompanyDescriptionLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"> </Label>
-                    <Label Text="{Binding CompanyInfo.CompanyDescription}" Style="{StaticResource InfoBodyTextSmallBlue}" ></Label>
-                </StackLayout>             
-                <StackLayout>
-                    <Label Text="{lEx:Translate CompanyInformationLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
+                <controlx:XpertAccordion HeaderText="{lEx:Translate CompanyDescriptionLabel}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" >
+                    <controlx:XpertAccordion.AccordionContents>
+                        <StackLayout BackgroundColor="White" Padding="5,0,5,5">
+                            <Label Text="{Binding CompanyInfo.CompanyDescription}" Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+                        </StackLayout>
+                    </controlx:XpertAccordion.AccordionContents>
+                </controlx:XpertAccordion>
 
-                        <Label Grid.Row="0" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate IndustryLabel}"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="1" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate CompanySizeLabel}"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="2" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate PreferredLanguageLabel}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="3" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate ProfileIDLabel}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                <controlx:XpertAccordion HeaderText="{lEx:Translate CompanyInformationLabel}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" >
+                    <controlx:XpertAccordion.AccordionContents>
+                        <StackLayout BackgroundColor="White">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                    <ColumnDefinition Width="5"/>
+                                </Grid.ColumnDefinitions>
 
-                        <Label Grid.Row="0" Grid.Column="{Binding DataColumn}" Text="{Binding CompanyInfo.Industry}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="1" Grid.Column="{Binding DataColumn}" Text="{Binding CompanyInfo.CompanySize}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="2" Grid.Column="{Binding DataColumn}" Text="{Binding CompanyInfo.PreferredLanguage}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="3" Grid.Column="{Binding DataColumn}" Text="{Binding CompanyInfo.ProfileID}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                    </Grid>
-                </StackLayout>
-                <StackLayout>
-                    <Label Text="{lEx:Translate ContactDetailsLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{lEx:Translate IndustryLabel}"  Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{lEx:Translate CompanySizeLabel}"  Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="2" Grid.Column="1" Text="{lEx:Translate PreferredLanguageLabel}" Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="3" Grid.Column="1" Text="{lEx:Translate ProfileIDLabel}" Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"/>
 
-                        <Label Grid.Row="0" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate NameLabel}"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="1" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate PositionLabel}"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="2" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate MobilePhoneLabel}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="3" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate TelephoneNumberLabel}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="4" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate EmailAddressLabel}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
+                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding CompanyInfo.Industry}"  Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="1" Grid.Column="2" Text="{Binding CompanyInfo.CompanySize}"  Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="2" Grid.Column="2" Text="{Binding CompanyInfo.PreferredLanguage}" Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="3" Grid.Column="2" Text="{Binding CompanyInfo.ProfileID}" Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalTextAlignment="Start"/>
+                            </Grid>
+                        </StackLayout>
+                    </controlx:XpertAccordion.AccordionContents>
+                </controlx:XpertAccordion>
 
-                        <Label Grid.Row="0" Grid.Column="{Binding DataColumn}" Text="{Binding CompanyInfo.ContactName}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="1" Grid.Column="{Binding DataColumn}" Text="{Binding CompanyInfo.ContactPosition}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="2" Grid.Column="{Binding DataColumn}" Text="{Binding CompanyInfo.ContactMobile}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding CompanyInfo.CallCommand}" CommandParameter="{Binding CompanyInfo.ContactMobile}" NumberOfTapsRequired="1" />
-                            </Label.GestureRecognizers>                            
-                        </Label>
-                        <Label Grid.Row="3" Grid.Column="{Binding DataColumn}" Text="{Binding CompanyInfo.ContactPhone}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding CompanyInfo.CallCommand}" CommandParameter="{Binding CompanyInfo.ContactPhone}" NumberOfTapsRequired="1" />
-                            </Label.GestureRecognizers>
-                        </Label>
-                        <Label Grid.Row="4" Grid.Column="{Binding DataColumn}" Text="{Binding CompanyInfo.ContactEmail}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                    </Grid>
-                </StackLayout>
-                <StackLayout>
-                    <Label Text="{lEx:Translate LocationLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
-                    <Grid>
-                     <BoxView Grid.Row="0" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver"></BoxView>
-                     <Label Grid.Row="0" Text="MAP GOES HERE" HorizontalOptions="Center" VerticalOptions="Center"></Label>  
-                    </Grid>
-                </StackLayout>
+
+                <controlx:XpertAccordion HeaderText="{lEx:Translate ContactDetailsLabel}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" >
+                    <controlx:XpertAccordion.AccordionContents>
+                        <StackLayout BackgroundColor="White">
+                            <Grid >
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                    <ColumnDefinition Width="5"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="1" Text="{lEx:Translate NameLabel}"  Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{lEx:Translate PositionLabel}"  Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="2" Grid.Column="1" Text="{lEx:Translate MobilePhoneLabel}" Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="3" Grid.Column="1" Text="{lEx:Translate TelephoneNumberLabel}" Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="4" Grid.Column="1" Text="{lEx:Translate EmailAddressLabel}" Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"/>
+
+                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding CompanyInfo.ContactName}"  Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="1" Grid.Column="2" Text="{Binding CompanyInfo.ContactPosition}"  Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalTextAlignment="Start"/>
+                                <Label Grid.Row="2" Grid.Column="2" Text="{Binding CompanyInfo.ContactMobile}" Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalTextAlignment="Start">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding CompanyInfo.CallCommand}" CommandParameter="{Binding CompanyInfo.ContactMobile}" NumberOfTapsRequired="1" />
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                <Label Grid.Row="3" Grid.Column="2" Text="{Binding CompanyInfo.ContactPhone}" Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalTextAlignment="Start">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding CompanyInfo.CallCommand}" CommandParameter="{Binding CompanyInfo.ContactPhone}" NumberOfTapsRequired="1" />
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                <Label Grid.Row="4" Grid.Column="2" Text="{Binding CompanyInfo.ContactEmail}" Style="{StaticResource InfoBodyTextExtraSmallBlue}" HorizontalTextAlignment="Start"/>
+                            </Grid>
+                        </StackLayout>
+                    </controlx:XpertAccordion.AccordionContents>
+                </controlx:XpertAccordion>
+
+                <controlx:XpertAccordion HeaderText="{lEx:Translate LocationLabel}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" >
+                    <controlx:XpertAccordion.AccordionContents>
+                        <StackLayout BackgroundColor="White">
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="5"/>
+                                </Grid.ColumnDefinitions>
+                                <BoxView Grid.Row="0" Grid.Column="1" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver"/>
+                                <Label Grid.Row="0" Grid.Column="1"  Text="MAP GOES HERE" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                            </Grid>
+                        </StackLayout>
+                    </controlx:XpertAccordion.AccordionContents>
+                </controlx:XpertAccordion>
                 <Button Text="{lEx:Translate ManageCompanyUsersButton}" Style="{StaticResource GreenButton}" HorizontalOptions="FillAndExpand" Command="{Binding ManageCommand}"></Button>
             </StackLayout>
+                    
 
         </ScrollView>
     </StackLayout>

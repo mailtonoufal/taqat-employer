@@ -8,63 +8,117 @@
              Title="{Binding Title}">
 
     <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <StackLayout Padding="10">
-            <StackLayout VerticalOptions="Start" HorizontalOptions="Fill">
-                <Label Text="{Binding UserDetails.FullName}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
-                <Label Text="{Binding UserDetails.Position}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End"></Label>
-                <Label Text="NIN/Iqama" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
-                <Label Text="{Binding UserDetails.NIN}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End"></Label>
-                <Label Text="{Binding UserDetails.MobileNumber}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding UserDetails.CallCommand}" CommandParameter="{Binding MobileNumber}" NumberOfTapsRequired="1" />
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="{Binding UserDetails.PhoneNumber}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding UserDetails.CallCommand}" CommandParameter="{Binding PhoneNumber}" NumberOfTapsRequired="1" />
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text="{Binding EmailAddress}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End"></Label>
+        <StackLayout Padding="0" BackgroundColor="White">
+            <StackLayout VerticalOptions="Start" HorizontalOptions="Fill" BackgroundColor="{StaticResource BlueTextColor}" >
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding UserDetails.FullName}" Style="{StaticResource HeaderTextSmallWhite}" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="2" Grid.Column="1"  Text="{Binding UserDetails.Position}" Style="{StaticResource InfoBodyTextSmallWhite}" VerticalOptions="Start" VerticalTextAlignment="Start" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                    <Label Grid.Row="3" Grid.Column="1" Text="NIN/Iqama" Style="{StaticResource HeaderTextSmallWhite}" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="4" Grid.Column="1" Text="{Binding UserDetails.NIN}" Style="{StaticResource InfoBodyTextSmallWhite}" VerticalTextAlignment="Start"  HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="5" Grid.Column="1" Text="{Binding UserDetails.PhoneNumber}" Style="{StaticResource InfoBodyTextSmallWhite}" HorizontalOptions="Center" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding UserDetails.CallCommand}" CommandParameter="{Binding MobileNumber}" NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <!--<Label Text="{Binding UserDetails.PhoneNumber}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="Center" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding UserDetails.CallCommand}" CommandParameter="{Binding PhoneNumber}" NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>-->
+                    <Label Grid.Row="6" Grid.Column="1" Text="{Binding UserDetails.EmailAddress}" Style="{StaticResource InfoBodyTextSmallWhite}" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                </Grid>
             </StackLayout>
 
-            <StackLayout>
-                <StackLayout>
-                    <Label Text="{lEx:Translate AccountInformationLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
+            <StackLayout BackgroundColor="White" VerticalOptions="Start">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="30"/>
 
-                        <Label Grid.Row="0" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate UsernameLabel}"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="1" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate UserTypeLabel}"  Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="2" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AssignedRoleLabel}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="3" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate PrefferedCommunicationLabel}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="4" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AccountStatusLabel}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="End"></Label>
 
-                        <Label Grid.Row="0" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.UserName}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="1" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.UserType}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="2" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AssignedRole}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="3" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.PreferredCommunication}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                        <Label Grid.Row="4" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AccountStatus}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalTextAlignment="End"></Label>
-                    </Grid>
-                </StackLayout>
-                <StackLayout>
-                    <Label Text="{lEx:Translate LocationLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
-                    <Grid>
-                        <BoxView Grid.Row="0" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver"></BoxView>
-                        <Label Grid.Row="0" Text="MAP GOES HERE" HorizontalOptions="Center" VerticalOptions="Center"></Label>
-                    </Grid>
-                </StackLayout>
-                <Button Text="{lEx:Translate EditPersonalDetailsButton}" Style="{StaticResource GreenButton}" Command="{Binding EditCommand}" CommandParameter="{Binding UserDetails}"  HorizontalOptions="FillAndExpand"></Button>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="5"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="{lEx:Translate AccountInformationLabel}" 
+                               Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="Start"/>
+
+
+                    <Label Grid.Row="2" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate UsernameLabel}"  
+                               Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="Start"></Label>
+                    <Label Grid.Row="3" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate UserTypeLabel}"  
+                               Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="Start"></Label>
+                    <Label Grid.Row="4" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AssignedRoleLabel}" 
+                               Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="Start"></Label>
+                    <Label Grid.Row="5" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate PrefferedCommunicationLabel}"
+                               Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="Start"></Label>
+                    <Label Grid.Row="6" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AccountStatusLabel}"
+                               Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="Start"></Label>
+
+                    <Label Grid.Row="2" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.UserName}" 
+                               Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"></Label>
+                    <Label Grid.Row="3" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.UserType}"  
+                               Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"></Label>
+                    <Label Grid.Row="4" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AssignedRole}" 
+                               Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"></Label>
+                    <Label Grid.Row="5" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.PreferredCommunication}"
+                               Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"></Label>
+                    <Label Grid.Row="6" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AccountStatus}"
+                               Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"></Label>
+                </Grid>
             </StackLayout>
+            <StackLayout BackgroundColor="White">
+                    <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="1" Grid.Column="1" Text="{lEx:Translate LocationLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="Start"/>
+
+
+
+                    <BoxView Grid.Row="2" Grid.Column="1" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver"/>
+                    <Label  Grid.Row="2" Grid.Column="1" Text="MAP GOES HERE" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                </Grid>
+                </StackLayout>
+            <Button Text="{lEx:Translate EditPersonalDetailsButton}" Style="{StaticResource GreenButton}" Command="{Binding EditCommand}" CommandParameter="{Binding UserDetails}"  HorizontalOptions="FillAndExpand"></Button>
         </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -8,61 +8,110 @@
              Title="{lEx:Translate EditPersonalDetailsTitle}">
 
     <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <StackLayout Padding="10">
-            <StackLayout>
-                <Label Text="{lEx:Translate PersonalInformationLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
+        <StackLayout Padding="5">
+            <StackLayout BackgroundColor="White">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="40"/>
+
+
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="4"/>
+                        <RowDefinition Height="1" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="5"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Grid.Row="0" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate FirstNameLabel}"  Style="{StaticResource FormHeaderLabelBlue}"  ></Label>
-                    <Label Grid.Row="1" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate SecondNameLabel}"  Style="{StaticResource FormHeaderLabelBlue}"></Label>
-                    <Label Grid.Row="2" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate ThirdNameLabel}"  Style="{StaticResource FormHeaderLabelBlue}"></Label>
-                    <Label Grid.Row="3" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate LastNameLabel}"  Style="{StaticResource FormHeaderLabelBlue}" ></Label>
-                    <Label Grid.Row="4" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate MobilePhoneLabel}"  Style="{StaticResource FormHeaderLabelBlue}"></Label>
-                    <Label Grid.Row="5" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate TelephoneNumberLabel}"  Style="{StaticResource FormHeaderLabelBlue}" ></Label>
-                    <Label Grid.Row="6" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate EmailAddressLabel}"  Style="{StaticResource FormHeaderLabelBlue}"></Label>
-                    <Label Grid.Row="7" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate PositionLabel}"  Style="{StaticResource FormHeaderLabelBlue}" ></Label>
-                    <Label Grid.Row="8" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AssignedRoleLabel}" Style="{StaticResource FormHeaderLabelBlue}" ></Label>
-                    <Label Grid.Row="9" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate PrefferedCommunicationLabel}" Style="{StaticResource FormHeaderLabelBlue}" ></Label>
-                    <Label Grid.Row="10" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AccountStatusLabel}" Style="{StaticResource FormHeaderLabelBlue}"  ></Label>
+                    <Label Grid.Row="1" Grid.Column="{Binding LabelColumn}" Grid.ColumnSpan="2" 
+                           Text="{lEx:Translate PersonalInformationLabel}" Style="{StaticResource HeaderTextMediumBlue}" 
+                           HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
 
-                    <Entry Grid.Row="0" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.FirstName, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}" ></Entry>
-                    <Entry Grid.Row="1" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.SecondName, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
-                    <Entry Grid.Row="2" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.ThirdName, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
-                    <Entry Grid.Row="3" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.LastName, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
-                    <Entry Grid.Row="4" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.MobileNumber, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
-                    <Entry Grid.Row="5" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.PhoneNumber, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
-                    <Entry Grid.Row="6" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.EmailAddress, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}" ></Entry>
-                    <Entry Grid.Row="7" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.Position, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}" ></Entry>
-                    <Entry Grid.Row="8" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AssignedRole, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
-                    <Entry Grid.Row="9" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.PreferredCommunication, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}" ></Entry>
-                    <Entry Grid.Row="10" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AccountStatus, Mode=TwoWay}" Style="{StaticResource BlueTextEntry}"></Entry>
+                    <Label Grid.Row="2" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate FirstNameLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"  />
+                    <Label Grid.Row="3" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate SecondNameLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"  />
+                    <Label Grid.Row="4" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate ThirdNameLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="5" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate LastNameLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="6" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate MobilePhoneLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="7" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate TelephoneNumberLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="8" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate EmailAddressLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="9" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate PositionLabel}"  
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="10" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AssignedRoleLabel}" 
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="11" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate PrefferedCommunicationLabel}" 
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Label Grid.Row="12" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AccountStatusLabel}" 
+                           Style="{StaticResource FormHeaderLabelMediumBlue}"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+
+                    <Entry Grid.Row="2" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.FirstName, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="3" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.SecondName, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="4" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.ThirdName, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="5" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.LastName, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="6" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.MobileNumber, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="7" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.PhoneNumber, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="8" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.EmailAddress, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="9" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.Position, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="10" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AssignedRole, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="11" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.PreferredCommunication, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                    <Entry Grid.Row="12" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AccountStatus, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+
+                    <BoxView Grid.Row="14" Grid.Column="0" Grid.ColumnSpan="4" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver" />
+
                 </Grid>
-            </StackLayout>
-            <StackLayout>
-                <Label Text="{lEx:Translate LocationLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End"></Label>
                 <Grid>
-                    <BoxView Grid.Row="0" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver"></BoxView>
-                    <Label Grid.Row="0" Text="MAP GOES HERE" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="1" Grid.Column="1" Text="{lEx:Translate LocationLabel}" Style="{StaticResource HeaderTextMediumBlue}" 
+                           HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+
+
+                    <BoxView Grid.Row="2" Grid.Column="1" HeightRequest="150" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver" />
+                    <Label Grid.Row="2"  Grid.Column="1" Text="MAP GOES HERE" HorizontalOptions="Center" VerticalOptions="Center" />
                 </Grid>
             </StackLayout>
-            <Button Text="{lEx:Translate SavePersonalDetailsButton}" Style="{StaticResource GreenButton}" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+            <Button Text="{lEx:Translate SavePersonalDetailsButton}" Style="{StaticResource GreenButton}" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

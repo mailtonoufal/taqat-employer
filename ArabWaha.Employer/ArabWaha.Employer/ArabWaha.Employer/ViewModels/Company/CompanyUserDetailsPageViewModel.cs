@@ -28,7 +28,7 @@ namespace ArabWaha.Employer.ViewModels
 
         public CompanyUserDetailsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            SetDefaultColumn(0, 1);
+            SetDefaultColumn(1,2);
             Title = TranslateExtension.GetString("PersonalDetailsTitle");
 
             CallCommand = new DelegateCommand<string>(CallNumber);

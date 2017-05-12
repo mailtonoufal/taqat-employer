@@ -836,6 +836,24 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Terms &amp; Conditions.
+        /// </summary>
+        internal static string LabelAboutTermsText {
+            get {
+                return ResourceManager.GetString("LabelAboutTermsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version.
+        /// </summary>
+        internal static string LabelAboutVersionText {
+            get {
+                return ResourceManager.GetString("LabelAboutVersionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Accept.
         /// </summary>
         internal static string LabelAccept {
@@ -854,11 +872,65 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add New Company User.
+        /// </summary>
+        internal static string LabelAddUserTitleText {
+            get {
+                return ResourceManager.GetString("LabelAddUserTitleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ago.
+        /// </summary>
+        internal static string LabelAgoText {
+            get {
+                return ResourceManager.GetString("LabelAgoText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Application Date:.
+        /// </summary>
+        internal static string LabelApplicationDateText {
+            get {
+                return ResourceManager.GetString("LabelApplicationDateText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Match Score.
+        /// </summary>
+        internal static string LabelApplicationMatchScoreText {
+            get {
+                return ResourceManager.GetString("LabelApplicationMatchScoreText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Jobs.
         /// </summary>
         internal static string LabelApplicationsTitle {
             get {
                 return ResourceManager.GetString("LabelApplicationsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applications To.
+        /// </summary>
+        internal static string LabelApplicationsToText {
+            get {
+                return ResourceManager.GetString("LabelApplicationsToText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Log Out.
+        /// </summary>
+        internal static string LabelButtonLogOutText {
+            get {
+                return ResourceManager.GetString("LabelButtonLogOutText", resourceCulture);
             }
         }
         
@@ -1430,6 +1502,15 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Months.
+        /// </summary>
+        internal static string LabelMonthsText {
+            get {
+                return ResourceManager.GetString("LabelMonthsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select a Job Type.
         /// </summary>
         internal static string LabelNewJobHeaderText {
@@ -1457,11 +1538,101 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Beneficiaries.
+        /// </summary>
+        internal static string LabelProgramsBeneficiariesText {
+            get {
+                return ResourceManager.GetString("LabelProgramsBeneficiariesText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Benefits.
+        /// </summary>
+        internal static string LabelProgramsBenefitsText {
+            get {
+                return ResourceManager.GetString("LabelProgramsBenefitsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to How To Register.
+        /// </summary>
+        internal static string LabelProgramsHowToRegisterText {
+            get {
+                return ResourceManager.GetString("LabelProgramsHowToRegisterText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Introduction.
+        /// </summary>
+        internal static string LabelProgramsIntroduction {
+            get {
+                return ResourceManager.GetString("LabelProgramsIntroduction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Program Status:.
+        /// </summary>
+        internal static string LabelProgramStatusText {
+            get {
+                return ResourceManager.GetString("LabelProgramStatusText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Propose New Time.
         /// </summary>
         internal static string LabelProposeNewTime {
             get {
                 return ResourceManager.GetString("LabelProposeNewTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Results Found.
+        /// </summary>
+        internal static string LabelResultsFoundText {
+            get {
+                return ResourceManager.GetString("LabelResultsFoundText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search by job title.
+        /// </summary>
+        internal static string LabelSearchJobsText {
+            get {
+                return ResourceManager.GetString("LabelSearchJobsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search by location.
+        /// </summary>
+        internal static string LabelSearchLocationText {
+            get {
+                return ResourceManager.GetString("LabelSearchLocationText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start now and post your job vacancies on TAQAT to receive applications and find the best candidates.
+        /// </summary>
+        internal static string LabelSearchWelcomeText {
+            get {
+                return ResourceManager.GetString("LabelSearchWelcomeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Skip.
+        /// </summary>
+        internal static string LabelStartPageSkip {
+            get {
+                return ResourceManager.GetString("LabelStartPageSkip", resourceCulture);
             }
         }
         
@@ -1480,6 +1651,15 @@ namespace ArabWaha.Employer.Resx {
         internal static string LabelWatchList {
             get {
                 return ResourceManager.GetString("LabelWatchList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weeks.
+        /// </summary>
+        internal static string LabelWeeksText {
+            get {
+                return ResourceManager.GetString("LabelWeeksText", resourceCulture);
             }
         }
         

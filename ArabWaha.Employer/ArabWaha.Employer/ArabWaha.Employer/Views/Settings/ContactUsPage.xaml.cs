@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace ArabWaha.Employer.Views
 {
-    public partial class ContactUsPage : AWMenuContainerPage
+    public partial class ContactUsPage : ContentPage
     {
         public ContactUsPage()
         {

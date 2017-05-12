@@ -1,5 +1,6 @@
 ﻿using ArabWaha.Employer.BaseCalsses;
 using ArabWaha.Employer.ViewModels;
+using System;
 using Xamarin.Forms;
 
 namespace ArabWaha.Employer.Views
@@ -8,11 +9,17 @@ namespace ArabWaha.Employer.Views
     {
         public ComplaintsPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
 
-            // add menu items here to bind to then bind command in viewmodel
-            SetupToolbarItems();
-
+                // add menu items here to bind to then bind command in viewmodel
+                SetupToolbarItems();
+            }
+            catch(Exception ex)
+            {
+                var t = ex.Message;
+            }
         }
 
         private void SetupToolbarItems()

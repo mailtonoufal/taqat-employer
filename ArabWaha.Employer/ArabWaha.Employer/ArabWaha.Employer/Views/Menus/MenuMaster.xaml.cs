@@ -29,6 +29,12 @@ namespace ArabWaha.Employer.Views.Menus
             this.BackgroundColor = Color.Navy;
             this.BackgroundViewColor = Color.Transparent; //  FromHex("#CE766C");
 
+            this.MenuOrientations = MenuOrientation.LeftToRight;
+
+            if (GlobalSetting.CultureCode == "ar")
+                this.MenuOrientations = MenuOrientation.RightToLeft;
+
+
             SetupMenu();
         }
 

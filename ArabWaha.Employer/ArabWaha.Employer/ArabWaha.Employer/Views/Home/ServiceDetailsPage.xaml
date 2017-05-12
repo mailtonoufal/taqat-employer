@@ -4,55 +4,37 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:local="clr-namespace:ArabWaha.Employer.Controls"
-             x:Class="ArabWaha.Employer.Views.Home.ServiceDetailsPage">
+             x:Class="ArabWaha.Employer.Views.Home.ServiceDetailsPage"
+             BackgroundColor="{StaticResource LighGreyPageColor}"
+             Title="{Binding ServiceDetails.ServiceName}"
+             >
 
-    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
-        <ScrollView>
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Padding="10,10,10,10">
+        <ScrollView BackgroundColor="White">
         <Grid VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
+                   <RowDefinition Height="10" />
+                   <RowDefinition Height="30" />
+                    <RowDefinition Height="1" />
+                    <RowDefinition Height="Auto" />
                     <RowDefinition Height="10" />
-
-                    <RowDefinition Height="30" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
+                </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.5*"/>
-                <ColumnDefinition Width="9*"/>
-                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5"/>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="1" Grid.Column="1" Text="Introduction" HorizontalTextAlignment="Start" Style="{StaticResource SolidBodyTextBlue}" />
-                <Label Grid.Row="2" Grid.Column="1"  Text="{Binding ServiceDetails.Introduction, StringFormat='{0}  '}" HorizontalTextAlignment="Start" 
-                       Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+            <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="5" BackgroundColor="White" />
+            <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="{StaticResource LightGraySeperatorColor}" />
 
-                <Label Grid.Row="3"  Grid.Column="1" Text="Benefits" HorizontalTextAlignment="Start"  Style="{StaticResource SolidBodyTextBlue}" />
-                <Label Grid.Row="4"  Grid.Column="1" Text="{Binding ServiceDetails.Benefits}" HorizontalTextAlignment="Start"  
-                       Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding ServiceDetails.ServiceName}" 
+                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" />
 
-                <Label Grid.Row="5"  Grid.Column="1" Text="Beneficiaries" HorizontalTextAlignment="Start"  Style="{StaticResource SolidBodyTextBlue}" />
-                <Label Grid.Row="6"  Grid.Column="1" Text="{Binding ServiceDetails.Beneficiaries}" HorizontalTextAlignment="Start"  
-                       Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+            <Label Grid.Row="3" Grid.Column="1"  Text="{Binding ServiceDetails.Introduction}" 
+                   HorizontalTextAlignment="End" HorizontalOptions="FillAndExpand"
+                   Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
 
-                <Label Grid.Row="7"  Grid.Column="1" Text="How To Register" HorizontalTextAlignment="Start"  Style="{StaticResource SolidBodyTextBlue}" />
-                <Label Grid.Row="8"  Grid.Column="1" Text="{Binding ServiceDetails.HowToRegister}" HorizontalTextAlignment="Start" 
-                       Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
-
-                <Label  Grid.Row="9" Grid.Column="1"  Text="Click Here To Register" VerticalOptions="End" HorizontalOptions="Center" HorizontalTextAlignment="Start" 
-                        Style="{StaticResource FormHeaderLabelBlue}"  >
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding RegServiceCommand}" NumberOfTapsRequired="1" />
-                    </Label.GestureRecognizers>
-                    <!--<Label.Effects>
-                        <local:UnderlineEffect/>
-                    </Label.Effects>-->
-                </Label>
 
             </Grid>
 

@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace ArabWaha.Employer.Views
 {
@@ -6,13 +7,27 @@ namespace ArabWaha.Employer.Views
     {
         public StartPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch(Exception ex)
+            {
+                var t = ex.Message;
+            }
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            ForceLayout();
+            try
+            {
+                ForceLayout();
+            }
+            catch(Exception ex)
+            {
+                var t = ex.Message;
+            }
         }
     }
 }

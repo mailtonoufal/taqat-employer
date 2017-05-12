@@ -24,6 +24,7 @@ namespace ArabWaha.Employer.ViewModels
         public CompanyEditUserDetailsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
             SaveCommand = new DelegateCommand(Save);
+
         }
 
         private async void Save()

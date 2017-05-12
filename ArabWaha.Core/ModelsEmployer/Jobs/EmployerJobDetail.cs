@@ -29,6 +29,17 @@ namespace ArabWaha.Core.ModelsEmployer.Jobs
         [JsonProperty("jobPostTitle")]
         public string JobPostTitle { get; set; }
 
+        [JsonIgnore]
+        public string ApplicationsLanguageText { get; set; }
+        [JsonIgnore]
+        public string GetJobPostTitle
+        {
+            get
+            {
+                return $"{ApplicationsLanguageText} '{JobPostTitle}'";
+            }
+        }
+
         [JsonProperty("jobDescription")]
         public string JobDescription { get; set; }
 

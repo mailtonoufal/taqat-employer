@@ -57,7 +57,10 @@ namespace ArabWaha.Core.Services
             return culture.Value;
         }
 
-
+        public async Task<string> GetAppVersionAsync()
+        {
+            return "1.5.1";
+        }
         public async Task<ObservableCollection<ComplaintRaised>> GetComplaintsAsync()
         {
             // grab data from database
@@ -273,7 +276,28 @@ namespace ArabWaha.Core.Services
             var dbsource = db.GetTableItemsObservable<JobApplicant>();
             foreach (var item in dbsource)
             {
-                source.Add(JsonConvert.DeserializeObject<ApplicationProfile>(item.JSON));
+                var client = JsonConvert.DeserializeObject<ApplicationProfile>(item.JSON);
+
+                // 4 possible checks
+                // 1 - no search words so grab all
+                // 2 - keyword search 
+                // 3 - location search
+                // 4 - keyword search AND location search
+                // we need to check client keyword actually matches here.
+                if (string.IsNullOrEmpty(keyword) && string.IsNullOrEmpty(location)) // add all
+                        source.Add(client);
+                // just keyword
+                else if (!string.IsNullOrEmpty(keyword) && string.IsNullOrEmpty(location) && client.Occupation.ToLower().Contains(keyword.Trim().ToLower()))
+                    source.Add(client);
+                // just location
+                else if (string.IsNullOrEmpty(keyword) && !string.IsNullOrEmpty(location) && client.Location.ToLower().Contains(location.Trim().ToLower()))
+                    source.Add(client);
+                // we have to have keyword and location so check both
+                else if (client.Occupation.ToLower().Contains(keyword.Trim().ToLower()) && client.Location.ToLower().Contains(location.Trim().ToLower()))
+                    source.Add(client);
+
+
+
             }
             return source;
         }
@@ -723,7 +747,8 @@ namespace ArabWaha.Core.Services
                             Subject = itemEv.Subject,
                             Status = itemEv.Status,
                             CreatedOn = itemEv.CreatedOn,
-                            ClosedOn = itemEv.ClosedOn
+                            ClosedOn = itemEv.ClosedOn,
+                            Category = itemEv.Category
                         });
                 }
             }

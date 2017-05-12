@@ -11,9 +11,16 @@ namespace ArabWaha.Employer.Views.Menus
 {
     public partial class MenuListTemplate : ViewCell
     {
+
         public MenuListTemplate()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+
+            base.OnAppearing();
         }
     }
 }

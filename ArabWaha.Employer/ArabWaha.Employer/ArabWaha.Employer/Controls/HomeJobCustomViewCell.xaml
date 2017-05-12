@@ -12,7 +12,7 @@
         <MenuItem Text="Edit" 
                   Command="{Binding EditJobCommand}" />
     </ViewCell.ContextActions>
-    <StackLayout Margin="5,5,5,5" BackgroundColor="Gray">
+    <StackLayout Padding="10,5,10,5" BackgroundColor="Gray">
         <Grid Margin="2,2,2,2" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="10" />
@@ -45,14 +45,14 @@
 
             <Label Text="{Binding JobPostTitle}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
 
-            <Label Text="{Binding Posted, StringFormat='Posted: {0} Ago'}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
-            <Label Text="{Binding Status, StringFormat='Job Status: {0}'}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+            <Label Text="{Binding Posted, StringFormat='Posted: {0} Ago'}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+            <Label Text="{Binding Status, StringFormat='Job Status: {0}'}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
 
             <Label Text="Location" Grid.Row="4" Grid.Column="0" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
             <Label Text="{Binding CompanyName}" Grid.Row="4" Grid.Column="1" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
 
-            <Label Text="{Binding CompanyLocation.LocationId}" Grid.Row="5" Grid.Column="0" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
-            <Label Text="{Binding CompanyIndustry}" Grid.Row="5" Grid.Column="1" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+            <Label Text="{Binding CompanyLocation.LocationId}" Grid.Row="5" Grid.Column="0" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+            <Label Text="{Binding CompanyIndustry}" Grid.Row="5" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
 
             <Image Source="{Binding CompanyLogo}" Grid.Row="4" Grid.RowSpan="3" Grid.Column="3" Aspect="AspectFit" />
             

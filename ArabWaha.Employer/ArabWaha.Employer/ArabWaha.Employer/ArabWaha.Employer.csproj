@@ -60,8 +60,12 @@
       <DependentUpon>TabControl3Column.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\UnderlineEffect.cs" />
+    <Compile Include="Controls\XpertAccordion.xaml.cs">
+      <DependentUpon>XpertAccordion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Extensions\EnumExtensions.cs" />
     <Compile Include="Converters\JobTypeConverter.cs" />
+    <Compile Include="Helpers\DateTimeSpan.cs" />
     <Compile Include="Helpers\TranslateExtension.cs" />
     <Compile Include="Interfaces\IDBInfo.cs" />
     <Compile Include="Layouts\Applications\ApplicationListView.xaml.cs">
@@ -98,9 +102,6 @@
     <Compile Include="Layouts\Home\NotLoggedInContent.xaml.cs">
       <DependentUpon>NotLoggedInContent.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\Tabs\Tab3View.xaml.cs">
-      <DependentUpon>Tab3View.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Layouts\Jobs\JobDisplayContent.xaml.cs">
       <DependentUpon>JobDisplayContent.xaml</DependentUpon>
     </Compile>
@@ -109,6 +110,9 @@
     </Compile>
     <Compile Include="Layouts\LoginOptionsContent.xaml.cs">
       <DependentUpon>LoginOptionsContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Tabs\Tab3View.xaml.cs">
+      <DependentUpon>Tab3View.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resx\AppResources.ar.Designer.cs">
@@ -380,6 +384,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Layouts\Tabs\Tab3View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resx\AppResources.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.ar.Designer.cs</LastGenOutput>
@@ -463,12 +471,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Layouts\Home\HomeProgramsContent.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Layouts\Home\HomeServicesContent.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -624,12 +626,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Layouts\Tabs\Tab3View.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Layouts\Applications\ApplicationsView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -704,6 +700,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Layouts\Home\NotLoggedInContent.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\XpertAccordion.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Layouts\Home\HomeServicesContent.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -25,6 +25,9 @@ namespace ArabWaha.Employer
 
         public static LayoutOptions HorizontalLayoutOptions { get; set; }
 
+        public static bool IsArVisible { get; set; }
+        public static bool IsEnVisible { get; set; }
+
         public static void SetupCulture()
         {
             ApiService svr = new ApiService();
@@ -33,8 +36,12 @@ namespace ArabWaha.Employer
             GlobalSetting.AlignData = GlobalSetting.CultureCode == "ar" ? LayoutAlignment.Start : LayoutAlignment.End;
             GlobalSetting.HorizontalLayoutOptions = GlobalSetting.CultureCode == "ar" ? LayoutOptions.EndAndExpand : LayoutOptions.StartAndExpand;
 
-            GlobalSetting.AlignText = GlobalSetting.CultureCode == "ar" ? TextAlignment.Start : TextAlignment.End;
+            GlobalSetting.AlignText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End : TextAlignment.Start;
             GlobalSetting.AlignLabelText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End: TextAlignment.Start;
+
+            GlobalSetting.IsArVisible = GlobalSetting.CultureCode == "ar" ? true : false;
+            GlobalSetting.IsEnVisible = GlobalSetting.CultureCode == "ar" ? false : true;
+
 
         }
 
@@ -77,9 +84,10 @@ namespace ArabWaha.Employer
         public async void SetStartPage()
         {
             try {
-                await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
+                //await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
+                await NavigationService.NavigateAsync($"NavigationPage/{nameof(HomePage)}");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 var t = ex.Message;
             }
@@ -134,8 +142,8 @@ namespace ArabWaha.Employer
 
             Container.RegisterTypeForNavigation<JobNewPostPage>();
             Container.RegisterTypeForNavigation<JobNewPostTypePage>();
-            Container.RegisterTypeForNavigation<ApplicationsPage>();
-            Container.RegisterTypeForNavigation<ApplicationDetailsPage>();
+            Container.RegisterTypeForNavigation<ApplicationsPage, ApplicationsPageViewModel>();
+            Container.RegisterTypeForNavigation<ApplicationDetailsPage, ApplicationDetailsPageViewModel>();
             Container.RegisterTypeForNavigation<LoginPage, LoginPageViewModel>();
             //    Container.RegisterTypeForNavigation<WatchListPage>();
             Container.RegisterTypeForNavigation<ProgramsPage, ProgramsPageViewModel>();

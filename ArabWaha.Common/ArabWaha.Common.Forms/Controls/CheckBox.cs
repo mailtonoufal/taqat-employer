@@ -28,6 +28,9 @@ namespace ArabWaha.Common.Forms.Controls
         /// <summary>
         /// The checked state property.
         /// </summary>
+        /// 
+        //public static BindableProperty CheckedProperty = BindableProperty.Create(nameof(CheckBox), typeof(bool), typeof(CheckBox), false, BindingMode.TwoWay);
+
         public static readonly BindableProperty CheckedProperty =
             BindableProperty.Create<CheckBox, bool>(
                 p => p.Checked, false, BindingMode.TwoWay, propertyChanged: OnCheckedPropertyChanged);

@@ -11,26 +11,58 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Padding="10,10,10,10">
-                            <Grid Margin="5,5,5,5" >
+                        <StackLayout Padding="3">
+                            <Grid>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="1*" />
-                                    <RowDefinition Height="2*" />
+                                    <RowDefinition Height="5" />
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="5" />
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.2*" />
-                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="10" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="8*" />
+                                    <ColumnDefinition Width="15" /> <!--image -->
+                                    <ColumnDefinition Width="5" />
                                 </Grid.ColumnDefinitions>
-                                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" />
+                                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="6" Grid.Column="0" Grid.ColumnSpan="5" VerticalOptions="FillAndExpand" />
 
-                                <controls:GaugeControl Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Progress="{Binding MatchScore}"></controls:GaugeControl>
-                                <Label Text="{Binding MatchScore,StringFormat='{0}%'}" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="3,0,0,0" />
+                                <controls:GaugeControl Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" Progress="{Binding MatchScore}"></controls:GaugeControl>
+                                <Label Text="{Binding MatchScore,StringFormat='{0}%'}" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"  
+                                       Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="Center" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="3,0,0,0" />
 
-                                <Label Text="{Binding Occupation}" Grid.Row="0" Grid.Column="1" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
-                                <StackLayout Grid.Row="1" Grid.Column="1">
-                                    <Label Text="{Binding Gender}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
-                                    <Label Text="{Binding Location}"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
-                                </StackLayout>
+                                <Label Text="{lEx:Translate LabelApplicationMatchScoreText}"  Grid.Row="4" Grid.Column="1" FontSize="Micro"
+                                           Style="{StaticResource CellBodyTextSmallGray}" 
+                                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+
+
+                                <Label Text="{Binding Occupation}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"
+                                       Style="{StaticResource InfoBodyTextBlue}" 
+                                       HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                                <Label Text="{Binding ApplicationSearchResultPostedDate}"  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"
+                                       Style="{StaticResource CellBodyTextSmallGray}" 
+                                       HorizontalOptions="End" HorizontalTextAlignment="End" />
+
+                                <Label Text="{Binding Gender}"  Grid.Row="3" Grid.Column="2" 
+                                       Style="{StaticResource CellBodyTextSmallGray}" VerticalTextAlignment="Center"
+                                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" />
+
+                                <Label Text="{Binding Location}" Grid.Row="4" Grid.Column="2"   
+                                       Style="{StaticResource CellBodyTextSmallGray}" VerticalTextAlignment="Center"
+                                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" />
+
+                                <Image Source="{StaticResource ContactIcon}" Grid.Row="3" Grid.Column="3" 
+                                       Aspect="AspectFit" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" />
+                                <Image Source="{StaticResource LocationIcon}" Grid.Row="4" Grid.Column="3" 
+                                       Aspect="AspectFit" WidthRequest="15" HeightRequest="15" VerticalOptions="Center"  />
+
+                                
+                                
 
                             </Grid>
                         </StackLayout>

@@ -32,8 +32,8 @@ namespace ArabWaha.Employer.ViewModels
         
         public SearchPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            Title = "Search";
-            SearchCommand = new DelegateCommand(Search, CanSearch);
+
+            SearchCommand = new DelegateCommand(Search);//, CanSearch);
             SignInCommand = new DelegateCommand(SignIn);
         }
 
@@ -44,7 +44,6 @@ namespace ArabWaha.Employer.ViewModels
 
         private void Search()
         {
-            //*** TODO VALIDATE PARAMETERS HAVE BEEN ENTERED.
 
             // do search
             _nav.NavigateAsync($"{nameof(SearchResultsPage)}?SearchText={SearchText}&SearchLocation={SearchLocation}");
