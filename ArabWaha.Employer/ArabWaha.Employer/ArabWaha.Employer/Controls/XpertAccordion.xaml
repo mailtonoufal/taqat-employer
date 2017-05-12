@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ArabWaha.Employer.Controls.XpertAccordion"
+             Margin="5,5,5,0"
+             x:Name="this">
+
+    <StackLayout BackgroundColor="White">
+        <StackLayout Orientation="Horizontal" >
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Accordion_Tapped" NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+
+            <Grid HorizontalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="24" />
+                    <ColumnDefinition Width="5" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="1" />
+                </Grid.RowDefinitions>
+                <Label x:Name="TextExpanded" Grid.Row="0" Grid.Column="1" TextColor="Black"  HorizontalOptions="CenterAndExpand" Text="-" 
+                       VerticalTextAlignment="Center"  FontSize="Medium" FontAttributes="Bold"/>
+                <Label x:Name="TextHeader"  Grid.Row="0" Grid.Column="2"  TextColor="Black"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" 
+                       VerticalTextAlignment="Center" FontSize="Small" FontAttributes="Bold" 
+                       Text="{Binding HeaderText, Source={x:Reference this}}" 
+                       />
+                <Image x:Name="IconImage"  Grid.Row="0" Grid.Column="3" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" HorizontalOptions="End" VerticalOptions="EndAndExpand" />
+                <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" HeightRequest="1" Color="Silver" HorizontalOptions="FillAndExpand"/>
+
+            </Grid>
+
+        </StackLayout>
+        <StackLayout BackgroundColor="White" x:Name="ShowContents" VerticalOptions="Fill" >
+            <ContentView x:Name="AccContents"  VerticalOptions="FillAndExpand" />
+        </StackLayout>
+
+    </StackLayout>
+
+</StackLayout>
