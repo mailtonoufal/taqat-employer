@@ -6,11 +6,11 @@
              x:Class="ArabWaha.Employer.Layouts.HomeProgramsContent">
   <ContentView.Content>
 
-        <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill"  >
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}" >
 
 
             <ListView ItemsSource="{Binding ProgramsPageSource}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
-                      HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="{StaticResource GreyPageColor}" ItemSelected="ItemSelected" >
+                      HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="{StaticResource GreyPageColor}" ItemSelected="ItemSelected"   >
                 <ListView.Behaviors>
                     <bh:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ProgramSelectedCommand}" 
                                                EventArgsConverter="{StaticResource ItemTappedConverter}" />
@@ -18,10 +18,10 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                             <ViewCell >
-                            <StackLayout Padding="10,5,10,5" BackgroundColor="{StaticResource StackBorderColor}">
+                            <StackLayout Padding="0,5,0,5" >
 
                              
-                                <Grid Margin="2,2,2,2" >
+                                <Grid Margin="2" >
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="15" />
                                         <RowDefinition Height="1*" />

@@ -15,7 +15,7 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell x:Name="myCell">
-                                <StackLayout Padding="5,5,5,5">
+                                <StackLayout Style="{StaticResource ContentStackLayout}" >
                                     <Grid Margin="2,2,2,2" >
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="35" />

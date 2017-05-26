@@ -22,23 +22,50 @@
             <Color x:Key="BlueTextColor">#00204A</Color>
             <Color x:Key="GrayTextColor">#8096AD</Color>
 
-            <Color x:Key="GreenButtonColor">#4ace36</Color>
-            <Color x:Key="RedButtonColor">Red</Color>
+            <Color x:Key="GreenButtonColor">#00C755</Color>
+            <Color x:Key="RedButtonColor">#D0011B</Color>
             <Color x:Key="BlueButtonColor">#00204A</Color>
-            <Color x:Key="LightBlueButtonColor">#66a8ff</Color>
+            <Color x:Key="LightBlueButtonColor">#00B3F6</Color>
+          
             <Color x:Key="BluePageColor">#00204A</Color>
             <Color x:Key="GreyPageColor">#eae6e6</Color>
-            <Color x:Key="LighGreyPageColor">#d3d3d3</Color>
+            <Color x:Key="LighGreyPageColor">#f2f2f2</Color>
+
+
+          <Color x:Key="AccordionBgColor">White</Color>
+          <Color x:Key="AccordionContentBgColor">White</Color>
+          <Color x:Key="AccordionContentSepColor">#f2f2f2</Color>
+
 
           <Color x:Key="MenuMainBGColor">White</Color>
+          <Color x:Key="MainContentBGColor">White</Color>
+          
           <Color x:Key="TabBarBGColor">#2E4C6F</Color>
           <Color x:Key="TabBarSelectedColor">#FF9400</Color>
 
           <Color x:Key="StackBorderColor">#d3d3d3</Color>
           <Color x:Key="StackBorderColorLight">#e3dcdc</Color>
-          <Color x:Key="LightGraySeperatorColor">#d3d3d3</Color>
+          
+          <Color x:Key="LightGraySeperatorColor">#f2f2f2</Color>
 
-            <Style x:Key="HeaderText" TargetType="Label" >
+
+          <Style x:Key="MainTopLevelStackLayout" TargetType="StackLayout">
+            <Setter Property="Padding">
+              <Setter.Value>
+                <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" WinPhone="20,20,20,20" />
+              </Setter.Value>
+            </Setter>
+            <Setter Property="BackgroundColor" Value="{StaticResource GreyPageColor}" />
+          </Style>
+
+          <Style x:Key="ContentStackLayout" TargetType="StackLayout">
+            <Setter Property="Padding" Value="10,5,10,5"></Setter>
+          </Style>
+
+
+          
+          
+           <Style x:Key="HeaderText" TargetType="Label" >
                 <Setter Property="FontAttributes" Value="Bold" />
             </Style>
 
@@ -268,13 +295,20 @@
                 </Setter>
             </Style>
 
-            <Style x:Key="CellBodyTextMedGray" TargetType="Label" >
+
+
+
+          <Style x:Key="CellBodyTextMedGray" TargetType="Label"  >
                 <Setter Property="TextColor" Value="{StaticResource GrayTextColor}" />
                 <Setter Property="FontSize">
                     <Setter.Value>
                         <OnIdiom x:TypeArguments="x:Double" Tablet="22" Phone="13"/>
                     </Setter.Value>
                 </Setter>
+            </Style>
+          
+             <Style x:Key="CellBodyTextMedBlue" TargetType="Label" BaseResourceKey="InfoHeaderTextSmallBlue" >
+                <Setter Property="TextColor" Value="{StaticResource BlueTextColor}" />
             </Style>
 
             <Style x:Key="WhiteTextEntry" TargetType="Entry">
@@ -603,6 +637,10 @@
 
           <Style x:Key="TabButtonFlatNotSelected" TargetType="Label" BaseResourceKey="TabButtonFlat">
             <Setter Property="TextColor" Value="#8193A8" />
+          </Style>
+
+          <Style x:Key="GeneralAccordion" TargetType="StackLayout" >
+            <Setter Property="BackgroundColor" Value="{StaticResource AccordionContentBgColor}" />
           </Style>
 
         </ResourceDictionary>

@@ -7,6 +7,7 @@ using Prism.Navigation;
 using Prism.Services;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Xamarin.Forms;
 
@@ -61,7 +62,7 @@ namespace ArabWaha.Employer.ViewModels
             }
             catch (Exception ex)
             {
-                var t = ex.Message;
+                Debug.WriteLine("ERROR:" + ex.Message);
             }
         }
     }

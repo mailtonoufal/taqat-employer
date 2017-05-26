@@ -7,8 +7,8 @@
              x:Class="ArabWaha.Employer.Views.CompanyUserDetailsPage"
              Title="{Binding Title}">
 
-    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <StackLayout Padding="0" BackgroundColor="White">
+    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource GreyPageColor}">
+        <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}" >
             <StackLayout VerticalOptions="Start" HorizontalOptions="Fill" BackgroundColor="{StaticResource BlueTextColor}" >
 
                 <Grid>
@@ -69,30 +69,30 @@
                     </Grid.ColumnDefinitions>
 
                     <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="{lEx:Translate AccountInformationLabel}" 
-                               Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="Start"/>
+                               Style="{StaticResource CellBodyTextMedBlue}" HorizontalOptions="Start"/>
 
 
                     <Label Grid.Row="2" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate UsernameLabel}"  
-                               Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="Start"></Label>
+                               Style="{StaticResource CellBodyTextMedBlue}" HorizontalTextAlignment="Start"></Label>
                     <Label Grid.Row="3" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate UserTypeLabel}"  
-                               Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="Start"></Label>
+                               Style="{StaticResource CellBodyTextMedBlue}" HorizontalTextAlignment="Start"></Label>
                     <Label Grid.Row="4" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AssignedRoleLabel}" 
-                               Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="Start"></Label>
+                               Style="{StaticResource CellBodyTextMedBlue}" HorizontalTextAlignment="Start"></Label>
                     <Label Grid.Row="5" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate PrefferedCommunicationLabel}"
-                               Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="Start"></Label>
+                               Style="{StaticResource CellBodyTextMedBlue}" HorizontalTextAlignment="Start"></Label>
                     <Label Grid.Row="6" Grid.Column="{Binding LabelColumn}" Text="{lEx:Translate AccountStatusLabel}"
-                               Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalTextAlignment="Start"></Label>
+                               Style="{StaticResource CellBodyTextMedBlue}" HorizontalTextAlignment="Start"></Label>
 
                     <Label Grid.Row="2" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.UserName}" 
-                               Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"></Label>
+                               Style="{StaticResource CellBodyTextMedGray}" HorizontalTextAlignment="Start"></Label>
                     <Label Grid.Row="3" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.UserType}"  
-                               Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"></Label>
+                               Style="{StaticResource CellBodyTextMedGray}" HorizontalTextAlignment="Start"></Label>
                     <Label Grid.Row="4" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AssignedRole}" 
-                               Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"></Label>
+                               Style="{StaticResource CellBodyTextMedGray}" HorizontalTextAlignment="Start"></Label>
                     <Label Grid.Row="5" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.PreferredCommunication}"
-                               Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"></Label>
+                               Style="{StaticResource CellBodyTextMedGray}" HorizontalTextAlignment="Start"></Label>
                     <Label Grid.Row="6" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AccountStatus}"
-                               Style="{StaticResource InfoBodyTextSmallBlueLabel}" HorizontalTextAlignment="Start"></Label>
+                               Style="{StaticResource CellBodyTextMedGray}" HorizontalTextAlignment="Start"></Label>
                 </Grid>
             </StackLayout>
             <StackLayout BackgroundColor="White">
@@ -109,7 +109,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="5"/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Row="1" Grid.Column="1" Text="{lEx:Translate LocationLabel}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="Start"/>
+                    <Label Grid.Row="1" Grid.Column="1" Text="{lEx:Translate LocationLabel}" Style="{StaticResource CellBodyTextMedBlue}" HorizontalOptions="Start"/>
 
 
 

@@ -444,9 +444,7 @@ namespace ArabWaha.Employer.ViewModels
                 //    SetProperty<ContentView>(ref _CurrentView, value);
 
                 if (!Core.Services.AuthService.IsAuthorised && (
-                    value is HomeJobPostsContent 
-                    || value is HomeServicesContent
-                    || value is HomeProgramsContent))
+                    value is HomeJobPostsContent ))
                 {
                     // NotLoggedInContent
                     SetProperty<ContentView>(ref _CurrentView, new NotLoggedInContent());

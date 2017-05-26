@@ -31,53 +31,75 @@ namespace ArabWaha.Common.Forms.Controls
         /// 
         //public static BindableProperty CheckedProperty = BindableProperty.Create(nameof(CheckBox), typeof(bool), typeof(CheckBox), false, BindingMode.TwoWay);
 
-        public static readonly BindableProperty CheckedProperty =
-            BindableProperty.Create<CheckBox, bool>(
-                p => p.Checked, false, BindingMode.TwoWay, propertyChanged: OnCheckedPropertyChanged);
+        public static readonly BindableProperty CheckedProperty = BindableProperty.Create(
+                                                                       nameof(Checked), //Public name to use
+                                                                       typeof(bool), //this type
+                                                                       typeof(CheckBox), //parent type (tihs control)
+                                                                       false, //default value
+                                                                       BindingMode.TwoWay, propertyChanged: OnCheckedPropertyChanged);
+
 
         /// <summary>
         /// The checked text property.
         /// </summary>
-        public static readonly BindableProperty CheckedTextProperty =
-            BindableProperty.Create<CheckBox, string>(
-                p => p.CheckedText, string.Empty, BindingMode.TwoWay);
+        public static readonly BindableProperty CheckedTextProperty = BindableProperty.Create(
+                                                                          nameof(CheckedText), //Public name to use
+                                                                          typeof(string), //this type
+                                                                          typeof(CheckBox), //parent type (tihs control)
+                                                                          string.Empty, //default value
+                                                                          BindingMode.TwoWay);
+
+
 
         /// <summary>
         /// The unchecked text property.
         /// </summary>
-        public static readonly BindableProperty UncheckedTextProperty =
-            BindableProperty.Create<CheckBox, string>(
-                p => p.UncheckedText, string.Empty);
+        public static readonly BindableProperty UncheckedTextProperty = BindableProperty.Create(
+                                                                  nameof(UncheckedText), //Public name to use
+                                                                  typeof(string), //this type
+                                                                  typeof(CheckBox), //parent type (tihs control)
+                                                                  string.Empty); /// 
+
 
         /// <summary>
         /// The default text property.
         /// </summary>
-        public static readonly BindableProperty DefaultTextProperty =
-            BindableProperty.Create<CheckBox, string>(
-                p => p.Text, string.Empty);
+        public static readonly BindableProperty DefaultTextProperty = BindableProperty.Create(
+                                                           nameof(Text), //Public name to use
+                                                           typeof(string), //this type
+                                                           typeof(CheckBox), //parent type (tihs control)
+                                                           string.Empty);
+
 
         /// <summary>
         /// Identifies the TextColor bindable property.
         /// </summary>
         /// 
         /// <remarks/>
-        public static readonly BindableProperty TextColorProperty =
-            BindableProperty.Create<CheckBox, Color>(
-                p => p.TextColor, Color.Default);
+        public static readonly BindableProperty TextColorProperty = BindableProperty.Create(
+                                                         nameof(TextColor), //Public name to use
+                                                         typeof(Color), //this type
+                                                         typeof(CheckBox), //parent type (tihs control)
+                                                         Color.Default);
+
 
         /// <summary>
         /// The font size property
         /// </summary>
-        public static readonly BindableProperty FontSizeProperty =
-            BindableProperty.Create<CheckBox, double>(
-                p => p.FontSize, -1);
+        public static readonly BindableProperty FontSizeProperty = BindableProperty.Create(
+                                                         nameof(FontSize), //Public name to use
+                                                         typeof(double), //this type
+                                                         typeof(CheckBox), //parent type (tihs control)
+                                                         -1d);
 
         /// <summary>
         /// The font name property.
         /// </summary>
-        public static readonly BindableProperty FontNameProperty =
-            BindableProperty.Create<CheckBox, string>(
-                p => p.FontName, string.Empty);
+        public static readonly BindableProperty FontNameProperty = BindableProperty.Create(
+                                                         nameof(FontName), //Public name to use
+                                                         typeof(string), //this type
+                                                         typeof(CheckBox), //parent type (tihs control)
+                                                         string.Empty);
 
         public static readonly BindableProperty CommandProperty =
             BindableProperty.Create("Command", typeof(ICommand), typeof(CheckBox), null);
@@ -246,10 +268,10 @@ namespace ArabWaha.Common.Forms.Controls
         /// <param name="bindable">The bindable.</param>
         /// <param name="oldvalue">if set to <c>true</c> [oldvalue].</param>
         /// <param name="newvalue">if set to <c>true</c> [newvalue].</param>
-        private static void OnCheckedPropertyChanged(BindableObject bindable, bool oldvalue, bool newvalue)
+        private static void OnCheckedPropertyChanged(BindableObject bindable, object oldvalue, object newvalue)
         {
             var checkBox = (CheckBox)bindable;
-            checkBox.Checked = newvalue;
+            checkBox.Checked = (bool)newvalue;
         }
 
         private ICommand _checkCommand;

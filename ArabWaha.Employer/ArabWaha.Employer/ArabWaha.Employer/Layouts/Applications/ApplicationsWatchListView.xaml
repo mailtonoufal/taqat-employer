@@ -14,7 +14,8 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell x:Name="myCell">
-                                <Grid Margin="5,5,5,5" >
+                                <StackLayout Style="{StaticResource ContentStackLayout}">
+                                <Grid Margin="2" >
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="35" />
                                         <RowDefinition Height="15" />
@@ -86,6 +87,7 @@
                                         </controls:RepeaterView.ItemTemplate>
                                     </controls:RepeaterView>
                                 </Grid>
+                                </StackLayout>    
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>

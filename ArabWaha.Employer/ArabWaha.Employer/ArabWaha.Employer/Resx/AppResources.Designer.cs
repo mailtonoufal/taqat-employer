@@ -1601,7 +1601,7 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search by job title.
+        ///   Looks up a localized string similar to Search for talent.
         /// </summary>
         internal static string LabelSearchJobsText {
             get {
@@ -2366,7 +2366,7 @@ namespace ArabWaha.Employer.Resx {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search Jobs.
+        ///   Looks up a localized string similar to Search Talent.
         /// </summary>
         internal static string TabControlSearchText {
             get {

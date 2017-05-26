@@ -5,7 +5,7 @@
              xmlns:gb="clr-namespace:ArabWaha.Employer"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
-              xmlns:bh="clr-namespace:Pillar;assembly=Pillar"
+             xmlns:bh="clr-namespace:Pillar;assembly=Pillar"
              prism:ViewModelLocator.AutowireViewModel="True"
              BackgroundColor="White"
              x:Class="ArabWaha.Employer.Views.ServicesPage">

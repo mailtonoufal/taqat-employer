@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:gb="clr-namespace:ArabWaha.Employer"                                    
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.Settings.AddNewComplaintPage"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"

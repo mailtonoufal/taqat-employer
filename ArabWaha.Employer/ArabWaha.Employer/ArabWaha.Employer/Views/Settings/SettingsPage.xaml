@@ -2,75 +2,79 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:gb="clr-namespace:ArabWaha.Employer"                                    
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
              x:Class="ArabWaha.Employer.Views.SettingsPage"
              Title="{lEx:Translate TextSettingPageTitle}">
 
-    <StackLayout Padding="10,0,10,0">
-        <Grid RowSpacing="10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1"/>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="10"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10" />
-                <ColumnDefinition Width="24" />
-                <ColumnDefinition Width="0.5*" />
-                <ColumnDefinition Width="0.5*" />
-                <ColumnDefinition Width="24" />
-                <ColumnDefinition Width="10" />
-
-            </Grid.ColumnDefinitions>
-
-            <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" />
-            <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" >
-                <BoxView.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding ResetPasswordCommand}" NumberOfTapsRequired="1" />
-                </BoxView.GestureRecognizers>
-            </BoxView>
-            <BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" >
-                <BoxView.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding ComplaintsCommand}" NumberOfTapsRequired="1" />
-                </BoxView.GestureRecognizers>
-            </BoxView>
-            <BoxView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" >
-                <BoxView.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding AboutCommand}" NumberOfTapsRequired="1" />
-                </BoxView.GestureRecognizers>
-            </BoxView>
+    <StackLayout BackgroundColor="{StaticResource GreyPageColor}" Style="{StaticResource MainTopLevelStackLayout}">
 
 
-            <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
-            <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
-            <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
-            <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
+        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}" >
+            <Grid RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="10"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="24" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="24" />
+                    <ColumnDefinition Width="10" />
 
-            <Image Source="{StaticResource SettingsLanguageIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="1" Grid.Column="4" VerticalOptions="Center" />
-            <Image Source="{StaticResource SettingsResetPasswordIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="2" Grid.Column="4" VerticalOptions="Center" />
-            <Image Source="{StaticResource SettingsComplaintsIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="3" Grid.Column="4" VerticalOptions="Center" />
-            <Image Source="{StaticResource SettingsAboutIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="4" Grid.Column="4" VerticalOptions="Center" />
+                </Grid.ColumnDefinitions>
 
-            <Label Text="{lEx:Translate TextLanguage}" Grid.Row="1" Grid.Column="3" Style="{StaticResource SettingsBodyMainLabel}" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End"/>
-            <Label Text="{Binding CurrentLanguage}" Grid.Row="1" Grid.Column="2" Style="{StaticResource SettingsBodyMainLabelGray}" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"/>
-            <Label Text="{lEx:Translate TextSettingsResetPassword}" Grid.Row="2" Grid.Column="3" VerticalTextAlignment="Center"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
-            <Label Text="{lEx:Translate TextComplaints}" Grid.Row="3" Grid.Column="3"  HorizontalOptions="FillAndExpand"  VerticalTextAlignment="Center"  HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
-            <Label Text="{lEx:Translate TextAboutPageTitle}" Grid.Row="4" Grid.Column="3" HorizontalOptions="FillAndExpand"  VerticalTextAlignment="Center"  HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
+                <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" />
+                <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" >
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ResetPasswordCommand}" NumberOfTapsRequired="1" />
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" >
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ComplaintsCommand}" NumberOfTapsRequired="1" />
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <BoxView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="6" BackgroundColor="White" >
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AboutCommand}" NumberOfTapsRequired="1" />
+                    </BoxView.GestureRecognizers>
+                </BoxView>
 
-        </Grid>
 
-        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" >
-            <Button Text="{lEx:Translate LabelButtonLogOutText}" HorizontalOptions="FillAndExpand" VerticalOptions="End" 
+                <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
+                <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
+                <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
+                <Image Source="arrow_back.png" Aspect="AspectFit" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                <Image Source="{StaticResource SettingsLanguageIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="1" Grid.Column="4" VerticalOptions="Center" />
+                <Image Source="{StaticResource SettingsResetPasswordIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="2" Grid.Column="4" VerticalOptions="Center" />
+                <Image Source="{StaticResource SettingsComplaintsIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="3" Grid.Column="4" VerticalOptions="Center" />
+                <Image Source="{StaticResource SettingsAboutIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="4" Grid.Column="4" VerticalOptions="Center" />
+
+                <Label Text="{lEx:Translate TextLanguage}" Grid.Row="1" Grid.Column="3" Style="{StaticResource SettingsBodyMainLabel}" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End"/>
+                <Label Text="{Binding CurrentLanguage}" Grid.Row="1" Grid.Column="2" Style="{StaticResource SettingsBodyMainLabelGray}" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"/>
+                <Label Text="{lEx:Translate TextSettingsResetPassword}" Grid.Row="2" Grid.Column="3" VerticalTextAlignment="Center"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
+                <Label Text="{lEx:Translate TextComplaints}" Grid.Row="3" Grid.Column="3"  HorizontalOptions="FillAndExpand"  VerticalTextAlignment="Center"  HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
+                <Label Text="{lEx:Translate TextAboutPageTitle}" Grid.Row="4" Grid.Column="3" HorizontalOptions="FillAndExpand"  VerticalTextAlignment="Center"  HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
+
+            </Grid>
+
+        </StackLayout>
+        <StackLayout  >
+            <Button Text="{lEx:Translate LabelButtonLogOutText}" 
                     Command="{Binding LogoutCommand}" IsVisible="{Binding IsAuth}" Style="{StaticResource RedButtonFlat}"
                     HeightRequest="50"
                     />
         </StackLayout>
+
     </StackLayout>
-
-
 </ContentPage>

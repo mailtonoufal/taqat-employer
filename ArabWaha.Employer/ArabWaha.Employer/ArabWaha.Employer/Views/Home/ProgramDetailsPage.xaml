@@ -7,10 +7,11 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.Home.ProgramDetailsPage">
 
-    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Fill" BackgroundColor="{StaticResource GreyPageColor}">
         <ScrollView>
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-                <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsIntroduction}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" >
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}" >
+
+                <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsIntroduction}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" Style="{StaticResource GeneralAccordion}">
                     <locals:XpertAccordion.AccordionContents>
                         <StackLayout BackgroundColor="White">
                             <Grid >
@@ -25,7 +26,7 @@
                                     <ColumnDefinition Width="5"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Row="1" Grid.Column="1" Text="{Binding ProgramDetails.Description}" HorizontalTextAlignment="Start" 
-                                                                            Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+                                                                            Style="{StaticResource CellBodyTextMedGray}" />
 
                             </Grid>
                         </StackLayout>
@@ -49,7 +50,7 @@
                                     <ColumnDefinition Width="5"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Row="1" Grid.Column="1" Text="{Binding ProgramDetails.WhoCanBenefit}" HorizontalTextAlignment="Start" 
-                                                                            Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+                                                                            Style="{StaticResource CellBodyTextMedGray}" />
 
                             </Grid>
                         </StackLayout>
@@ -71,7 +72,7 @@
                                     <ColumnDefinition Width="5"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Row="1" Grid.Column="1" Text="{Binding ProgramDetails.ProgramRequirements}" HorizontalTextAlignment="Start" 
-                                                                            Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+                                                                            Style="{StaticResource CellBodyTextMedGray}" />
 
                             </Grid>
                         </StackLayout>
@@ -93,7 +94,7 @@
                                     <ColumnDefinition Width="5"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Row="1" Grid.Column="1" Text="{Binding ProgramDetails.HowToRegister}" HorizontalTextAlignment="Start" 
-                                                                            Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
+                                                                            Style="{StaticResource CellBodyTextMedGray}" />
 
                             </Grid>
                         </StackLayout>

@@ -17,10 +17,10 @@
         </Grid.RowDefinitions>
 
         <Image Source="{Binding IconImage}" Grid.Row="0" Grid.Column="3" 
-				HeightRequest="20" WidthRequest="205" Aspect="Fill" IsVisible="{x:Static gb:GlobalSetting.IsArVisible}"/>
+				HeightRequest="20" WidthRequest="205" Aspect="Fill" IsVisible="{x:Static gb:GlobalSetting.IsArabic}"/>
 
         <Image Source="{Binding IconImage}" Grid.Row="0" Grid.Column="1" 
-				HeightRequest="20" WidthRequest="20" Aspect="Fill" IsVisible="{x:Static gb:GlobalSetting.IsEnVisible}" />
+				HeightRequest="20" WidthRequest="20" Aspect="Fill" IsVisible="{x:Static gb:GlobalSetting.IsEnglish}" />
 
         <Label Text="{Binding Title}" Grid.Row="0" Grid.Column="2" 
 			VerticalTextAlignment="Center" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" 

@@ -23,6 +23,8 @@ namespace ArabWaha.Employer.Views.Menus
             Margin = 0;
 
             ItemTemplate = new DataTemplate(typeof(MenuListTemplate));
+
+            // Need to add addinal filters 
         }
 
 

@@ -24,6 +24,7 @@ namespace ArabWaha.Employer.Views.Menus
 
             this.Add(new MasterPageItem
             {
+                // - need to move  to tresource/NSTack  "Home" : "الصفحة الرئيسية",
                 Title = isEnglishText ? "Home" : "الصفحة الرئيسية",
                 IconSource = "arrow_white.png",
                 TargetType = $"{nameof(HomePage)}?TAB=1",
@@ -35,6 +36,7 @@ namespace ArabWaha.Employer.Views.Menus
             {
                 this.Add(new MasterPageItem
                 {
+                    // - need to move  to tresource/NSTack  "My Company" : "شركتي",
                     Title = isEnglishText ? "My Company" : "شركتي",
                     IconSource = "arrow_white.png",
                     TargetType = nameof(CompanyDetailsPage),
@@ -44,6 +46,7 @@ namespace ArabWaha.Employer.Views.Menus
 
                 this.Add(new MasterPageItem
                 {
+                    // - need to move  to tresource/NSTack  "Applications" : "التطبيقات",
                     Title = isEnglishText ? "Applications" : "التطبيقات",
                     IconSource = "arrow_white.png",
                     TargetType = nameof(ApplicationsPage),
@@ -66,6 +69,7 @@ namespace ArabWaha.Employer.Views.Menus
 
             this.Add(new MasterPageItem
             {
+                // - need to move  to tresource/NSTack  "Programs" : "البرامج",
                 Title = isEnglishText ? "Programs" : "البرامج",
                 IconSource = "arrow_white.png",
                 TargetType = $"{nameof(HomePage)}?TAB=3",

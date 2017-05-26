@@ -4,16 +4,20 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:gb="clr-namespace:ArabWaha.Employer"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
+             xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
              x:Class="ArabWaha.Employer.Views.SearchPage" 
              Style="{StaticResource BluePage}"             
              NavigationPage.HasBackButton="False"
-             
+             x:Name="this"
                            >
 
+  <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"    >
+    <awc:AWHeader  MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
 
-    <Grid Padding="20,0,20,0" >
+
+      <Grid Padding="20,0,20,0" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="25" />
                 <RowDefinition Height="50" />
@@ -76,6 +80,7 @@
         </StackLayout>
 
         </Grid>
-
+    
+    </StackLayout>
 
 </local:AWMenuContainerPage>

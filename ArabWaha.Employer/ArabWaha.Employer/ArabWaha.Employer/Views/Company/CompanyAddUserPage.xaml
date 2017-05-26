@@ -6,9 +6,9 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.CompanyAddUserPage"
              Title="{lEx:Translate  LabelAddUserTitleText}">
-
-    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <StackLayout Padding="5">
+    <StackLayout Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource GreyPageColor}">
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}">
             <StackLayout BackgroundColor="White">
                 
                 <Grid>
@@ -56,4 +56,5 @@
             <Button Text="{lEx:Translate Submit}" Style="{StaticResource GreenButton}" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
     </ScrollView>
+    </StackLayout>
 </ContentPage>

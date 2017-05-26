@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Xamarin.Forms;
 
 namespace ArabWaha.Employer.Views.Home
@@ -13,7 +14,7 @@ namespace ArabWaha.Employer.Views.Home
             }
             catch(Exception ex)
             {
-                var t = ex.Message;
+                Debug.WriteLine("ERROR:" + ex.Message);
             }
         }
     }

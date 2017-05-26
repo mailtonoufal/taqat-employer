@@ -6,10 +6,10 @@
              xmlns:gb="clr-namespace:ArabWaha.Employer"
              x:Class="ArabWaha.Employer.Layouts.Jobs.JobDisplayContent">
   <ContentView.Content>
-        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}">
             <!-- Job summary -->
-            <StackLayout Margin="5,5,5,5" BackgroundColor="{StaticResource StackBorderColorLight}">
-                <Grid Margin="2,2,2,2" >
+            <StackLayout Margin="0" BackgroundColor="{StaticResource GreyPageColor}">
+                <Grid Margin="2,2,2,2"  BackgroundColor="White">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="10" />
                         <RowDefinition Height="*" />

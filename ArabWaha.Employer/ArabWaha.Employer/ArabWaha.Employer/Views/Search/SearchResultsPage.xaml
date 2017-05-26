@@ -2,17 +2,25 @@
 <local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True"
-              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"                           
+             xmlns:gb="clr-namespace:ArabWaha.Employer"
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              xmlns:layout="clr-namespace:ArabWaha.Employer.Layouts"                           
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" 
+             xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"                           
              xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.SearchResultsPage"
-             NavigationPage.HasBackButton="False"                    
+             NavigationPage.HasBackButton="False"    
+             x:Name="this"
                      >
 
-    <Grid>
-        <Grid.RowDefinitions>
+
+  <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource GreyPageColor}"  >
+    <awc:AWHeader  MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
+    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  >
+
+      <Grid BackgroundColor="White" >
+      <Grid.RowDefinitions>
           <RowDefinition Height="Auto" />
           <RowDefinition Height="Auto" />
             <RowDefinition Height="20" />
@@ -26,8 +34,8 @@
         </Grid.ColumnDefinitions>
 
       <SearchBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"  x:Name="Searcher"   Placeholder="{lEx:Translate SearchKeywordText}"  
-                  Text="{Binding SearchText}"
-                  SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}"   />
+                  Text="{Binding SearchText}" 
+                  SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}"    />
       
       <SearchBar Grid.Row="1"    Grid.Column="0" Grid.ColumnSpan="4"  x:Name="SearcherLoc"  
                   Placeholder="{lEx:Translate SearchLocationText}" 
@@ -39,7 +47,7 @@
                Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="End"/>
 
 
-        <StackLayout  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" IsVisible="{Binding HasResults}"  >
+        <StackLayout  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" IsVisible="{Binding HasResults}"  BackgroundColor="{StaticResource GreyPageColor}"  >
             <layout:ApplicationListView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
 
@@ -51,6 +59,9 @@
 
 
     </Grid>
+
+    </StackLayout>
+  </StackLayout>
 
 
 </local:AWMenuContainerPage>

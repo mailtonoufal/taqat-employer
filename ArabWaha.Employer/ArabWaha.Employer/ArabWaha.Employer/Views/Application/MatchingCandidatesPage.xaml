@@ -10,8 +10,10 @@
              x:Class="ArabWaha.Employer.Views.MatchingCandidatesPage"
              Title="{Binding Title}">
 
+    <StackLayout Style="{StaticResource MainTopLevelStackLayout}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    </StackLayout>
 
-    <Grid>
+    <Grid BackgroundColor="{StaticResource GreyPageColor}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
@@ -19,16 +21,16 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <StackLayout  Grid.Row="0" IsVisible="{Binding HasResults}"  >
+        <StackLayout  Grid.Row="0" IsVisible="{Binding HasResults}" BackgroundColor="{StaticResource GreyPageColor}" >
             <layout:ApplicationListView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></layout:ApplicationListView>
         </StackLayout>
 
-        <StackLayout  Grid.Row="0" IsVisible="{Binding NoResults}" >
+        <StackLayout  Grid.Row="0" IsVisible="{Binding NoResults}" Style="{StaticResource ContentStackLayout}" BackgroundColor="White" >
             <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
                 <Label Text="No Matching Candidates found" Style="{StaticResource HeaderTextLargeBlue}" ></Label>
             </StackLayout>
         </StackLayout>
     </Grid>
-
+ 
 
 </ContentPage>

@@ -97,7 +97,7 @@ namespace ArabWaha.Employer.ViewModels
             //txtPassword.Text = "12345";
             AuthService sv = new AuthService();
             await sv.Login(UserName, Password, false);
-            await _nav.NavigateAsync(nameof(SearchPage), animated: false);
+            await _nav.NavigateAsync(nameof(HomePage), animated: false);
 
             IsBusy = false;
         }

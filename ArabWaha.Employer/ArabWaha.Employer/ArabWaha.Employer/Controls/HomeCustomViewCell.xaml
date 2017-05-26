@@ -2,7 +2,7 @@
 <ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ArabWaha.Employer.Controls.HomeCustomViewCell">
-    <StackLayout Padding="10,5,10,5" BackgroundColor="Transparent">
+    <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="Transparent">
         <Grid Margin="2,2,2,2" BackgroundColor="White" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="5" />

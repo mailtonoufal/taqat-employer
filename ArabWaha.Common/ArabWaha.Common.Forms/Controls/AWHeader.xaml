@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:converters="clr-namespace:ArabWaha.Common.Forms.Converters"
+             x:Class="ArabWaha.Common.Forms.Controls.AWHeader"
+             x:Name="this">
+
+
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <ContentView.Content>
+        <Grid Grid.Row="0" Padding="0"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#00204A">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="46" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="5*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="7"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start">
+                <Image  Source="hamburger.png" HeightRequest="23" IsVisible="{Binding Source={x:Reference this}, Path=LeftToRight, Converter={StaticResource InverseBooleanConverter}}" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                              Command ="{Binding Source={x:Reference this}, Path=MenuCommand}"
+                              NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="{Binding Source={x:Reference this}, Path=NavigationText}" TextColor="White"  IsVisible="{Binding Source={x:Reference this}, Path=LeftToRight}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding Source={x:Reference this}, Path=NavigationCommand}"
+                            CommandParameter="{Binding Source={x:Reference this}, Path=NavigationParameter}"
+                            ></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" IsVisible="{Binding Source={x:Reference this}, Path=ShowLogo}">
+                <Image  Source="Logo.png" HeightRequest="30"  >
+                </Image>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="End">
+                <Image  Source="hamburger.png" HeightRequest="23"  IsVisible="{Binding Source={x:Reference this}, Path=LeftToRight}" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                              Command ="{Binding Source={x:Reference this}, Path=MenuCommand}"
+                              NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="{Binding Source={x:Reference this}, Path=NavigationText}" TextColor="White"  IsVisible="{Binding Source={x:Reference this}, Path=LeftToRight,Converter={StaticResource InverseBooleanConverter}}" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding Source={x:Reference this}, Path=NavigationCommand}"
+                            CommandParameter="{Binding Source={x:Reference this}, Path=NavigationParameter}"
+                            ></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+
+        </Grid>
+    </ContentView.Content>
+</ContentView>

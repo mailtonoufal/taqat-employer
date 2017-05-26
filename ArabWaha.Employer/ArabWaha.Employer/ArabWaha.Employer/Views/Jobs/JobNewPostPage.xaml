@@ -10,9 +10,11 @@
              Title="{lEx:Translate LabelNewJobTitleText}">
 
 
-    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-        <Label Text="{lEx:Translate LabelNewJobHeaderText}" Style="{StaticResource HeaderTextMediumBlue}" Margin="1"   />
-        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource GreyPageColor}" >
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}" >
+            <StackLayout BackgroundColor="White">
+            <Label Text="{lEx:Translate LabelNewJobHeaderText}" Style="{StaticResource HeaderTextMediumBlue}" Margin="1"   />
             <ListView x:Name="ParentListView" ItemsSource="{Binding JobTypeList}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
                       HasUnevenRows="True" SeparatorVisibility="None" ItemSelected="ItemSelected">
                 <ListView.ItemTemplate>
@@ -43,8 +45,9 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button Text="{lEx:Translate ButtonNextStep}" Style="{StaticResource GreenButtonFlat}" Margin="1" Command="{Binding NextStepCommand}"  />
+            </StackLayout>
         </StackLayout>
-        <Button Text="{lEx:Translate ButtonNextStep}" Style="{StaticResource GreenButtonFlat}" Margin="1" Command="{Binding NextStepCommand}"  />
     </StackLayout>
 
 </ContentPage>

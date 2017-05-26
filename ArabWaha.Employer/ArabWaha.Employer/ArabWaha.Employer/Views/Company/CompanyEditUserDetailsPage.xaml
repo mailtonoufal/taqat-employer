@@ -7,9 +7,11 @@
              x:Class="ArabWaha.Employer.Views.CompanyEditUserDetailsPage"
              Title="{lEx:Translate EditPersonalDetailsTitle}">
 
-    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <StackLayout Padding="5">
-            <StackLayout BackgroundColor="White">
+    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource GreyPageColor}">
+        <StackLayout Style="{StaticResource MainTopLevelStackLayout}"  BackgroundColor="{StaticResource GreyPageColor}">
+
+            <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}">
+                <StackLayout BackgroundColor="White">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="5"/>
@@ -110,8 +112,9 @@
                     <BoxView Grid.Row="2" Grid.Column="1" HeightRequest="150" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver" />
                     <Label Grid.Row="2"  Grid.Column="1" Text="MAP GOES HERE" HorizontalOptions="Center" VerticalOptions="Center" />
                 </Grid>
+                <Button Text="{lEx:Translate SavePersonalDetailsButton}" Style="{StaticResource GreenButton}" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand" />
             </StackLayout>
-            <Button Text="{lEx:Translate SavePersonalDetailsButton}" Style="{StaticResource GreenButton}" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
         </StackLayout>
     </ScrollView>
 </ContentPage>

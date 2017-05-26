@@ -3,19 +3,24 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     xmlns:layout="clr-namespace:ArabWaha.Employer.Layouts"
+    xmlns:gb="clr-namespace:ArabWaha.Employer"
     xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" 
+    xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"                           
     xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"
     xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"             
     prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="ArabWaha.Employer.Views.ApplicationsPage" 
     x:Name="AppPage"
     Title="{Binding Title}"
+    NavigationPage.HasNavigationBar="False"         
     >
 
 
-    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="10,0,10,0">
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource GreyPageColor}"  >
+        <awc:AWHeader  MenuCommand="{Binding Source={x:Reference AppPage}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  >
 
-        <Grid Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+            <Grid Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
@@ -29,5 +34,7 @@
             <layout:HomeJobPostsContent Grid.Row="1" IsVisible="{Binding IsTab2Selected}"  HorizontalOptions="FillAndExpand"  />
             <layout:ApplicationsWatchListView Grid.Row="1" IsVisible="{Binding IsTab3Selected}" HorizontalOptions="FillAndExpand"  />
         </Grid>
+
+        </StackLayout>
     </StackLayout>
 </local:AWMenuContainerPage>

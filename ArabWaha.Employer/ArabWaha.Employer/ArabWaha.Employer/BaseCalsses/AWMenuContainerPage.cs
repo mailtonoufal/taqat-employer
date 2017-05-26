@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace ArabWaha.Employer.BaseCalsses
@@ -18,15 +19,14 @@ namespace ArabWaha.Employer.BaseCalsses
         {
             _mainMenu = new MenuMaster();
             this.SlideMenu = _mainMenu;
-            var tbarItem = new ToolbarItem()
-            {
-                Icon = "hamburger.png",
-                Command = new Command((sender) => { ShowMainMenu(); }),
-                Priority = 100,
-                
-            };
-            this.ToolbarItems.Add(tbarItem);
+            //var tbarItem = new ToolbarItem()
+            //{
+            //    Icon = "hamburger.png",
+            //    Command = new Command((sender) => { ShowMainMenu(); }),
+            //    Priority = 100,
 
+            //};
+            //this.ToolbarItems.Add(tbarItem);
             if (GlobalSetting.CultureCode == "ar")
                 this.SlideMenu.MenuOrientations = MenuOrientation.RightToLeft;
             else
@@ -34,10 +34,22 @@ namespace ArabWaha.Employer.BaseCalsses
 
         }
 
-        public void MenuTapped(object sender, EventArgs e)
+        private ICommand _menuTapped;
+        public ICommand MenuTappedCommand
         {
-            ShowMainMenu();
+            get
+            {
+                return _menuTapped
+                       ?? (_menuTapped = new Command(
+                           () =>
+                           {
+                               ShowMainMenu();
+                           }
+                           ));
+            }
         }
+
+
 
         protected virtual void ShowMainMenu()
         {
@@ -55,7 +67,7 @@ namespace ArabWaha.Employer.BaseCalsses
             }
             catch
             {
-                Debug.WriteLine("Exception Hiding Menu Page");
+                Debug.WriteLine("ERROR: Exception Hiding Menu Page");
             }
         }
 
@@ -68,7 +80,7 @@ namespace ArabWaha.Employer.BaseCalsses
             }
             catch
             {
-                Debug.WriteLine("Exception Hiding Menu Page");
+                Debug.WriteLine("ERROR: Exception Hiding Menu Page");
             }
         }
     }

@@ -11,8 +11,8 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Padding="3">
-                            <Grid>
+                        <StackLayout  Style="{StaticResource ContentStackLayout}" BackgroundColor="Transparent" >
+                            <Grid Margin="2" BackgroundColor="White">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="5" />
                                     <RowDefinition Height="30" />
@@ -36,24 +36,24 @@
                                        HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="3,0,0,0" />
 
                                 <Label Text="{lEx:Translate LabelApplicationMatchScoreText}"  Grid.Row="4" Grid.Column="1" FontSize="Micro"
-                                           Style="{StaticResource CellBodyTextSmallGray}" 
+                                           Style="{StaticResource CellBodyTextMedGray}" 
                                        HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
 
 
                                 <Label Text="{Binding Occupation}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"
-                                       Style="{StaticResource InfoBodyTextBlue}" 
+                                       Style="{StaticResource InfoBodyTextBlue}"
                                        HorizontalOptions="End" HorizontalTextAlignment="End" />
 
                                 <Label Text="{Binding ApplicationSearchResultPostedDate}"  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"
-                                       Style="{StaticResource CellBodyTextSmallGray}" 
+                                        Style="{StaticResource CellBodyTextMedGray}" 
                                        HorizontalOptions="End" HorizontalTextAlignment="End" />
 
                                 <Label Text="{Binding Gender}"  Grid.Row="3" Grid.Column="2" 
-                                       Style="{StaticResource CellBodyTextSmallGray}" VerticalTextAlignment="Center"
+                                        Style="{StaticResource CellBodyTextMedGray}"  VerticalTextAlignment="Center"
                                        HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" />
 
                                 <Label Text="{Binding Location}" Grid.Row="4" Grid.Column="2"   
-                                       Style="{StaticResource CellBodyTextSmallGray}" VerticalTextAlignment="Center"
+                                        Style="{StaticResource CellBodyTextMedGray}"  VerticalTextAlignment="Center"
                                        HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" />
 
                                 <Image Source="{StaticResource ContactIcon}" Grid.Row="3" Grid.Column="3" 

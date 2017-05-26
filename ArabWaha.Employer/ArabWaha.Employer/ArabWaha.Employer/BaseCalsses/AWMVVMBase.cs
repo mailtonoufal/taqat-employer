@@ -61,34 +61,35 @@ namespace ArabWaha.Employer.BaseCalsses
             }
         }
 
-        public async void NavigateAsync(MasterPageItem obj)
+        public async void NavigateAsync(MasterPageItem obj, bool absolute = false)
         {
             try
             {
                 if (_nav != null)
                 {
-                    await _nav.NavigateAsync(obj.TargetType);
+                    NavigateAsync(obj.TargetType, absolute);
                 }
             }
             catch(Exception ex)
             {
-                var t = ex.Message;
+                Debug.WriteLine("ERROR:" + ex.Message);
                 // ignore
                 Debug.WriteLine("ERROR NAVIGATING");
             }
         }
 
-        public async void NavigateAsync(string obj)
+        public async void NavigateAsync(string obj, bool absolute=false)
         {
             try
             {
                 if (_nav != null)
                 {
-                    await _nav.NavigateAsync(obj);
+                    await _nav.NavigateAsync(new Uri(obj, (absolute) ? UriKind.Absolute : UriKind.Relative));
                 }
             }
             catch (Exception ex)
             {
+                Debug.WriteLine("ERROR:" + ex.Message);
                 // ignore
                 Debug.WriteLine("ERROR NAVIGATING");
             }

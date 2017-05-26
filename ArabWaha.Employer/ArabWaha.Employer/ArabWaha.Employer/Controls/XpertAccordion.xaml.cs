@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,7 @@ namespace ArabWaha.Employer.Controls
             }
             catch(Exception ex)
             {
-                var t = ex.Message;
+                Debug.WriteLine("ERROR:" + ex.Message);
             }
         }
 

@@ -3,15 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="ArabWaha.Employer.Controls.XpertAccordion"
              Margin="5,5,5,0"
-             x:Name="this">
+             x:Name="this"
+             >
 
-    <StackLayout BackgroundColor="White">
+    <StackLayout BackgroundColor="{StaticResource AccordionBgColor}">
         <StackLayout Orientation="Horizontal" >
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Accordion_Tapped" NumberOfTapsRequired="1" />
             </StackLayout.GestureRecognizers>
 
-            <Grid HorizontalOptions="FillAndExpand">
+            <Grid HorizontalOptions="FillAndExpand"  ColumnSpacing="0" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5" />
                     <ColumnDefinition Width="20" />
@@ -23,6 +24,7 @@
                     <RowDefinition Height="30" />
                     <RowDefinition Height="1" />
                 </Grid.RowDefinitions>
+                
                 <Label x:Name="TextExpanded" Grid.Row="0" Grid.Column="1" TextColor="Black"  HorizontalOptions="CenterAndExpand" Text="-" 
                        VerticalTextAlignment="Center"  FontSize="Medium" FontAttributes="Bold"/>
                 <Label x:Name="TextHeader"  Grid.Row="0" Grid.Column="2"  TextColor="Black"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" 
@@ -35,10 +37,9 @@
             </Grid>
 
         </StackLayout>
-        <StackLayout BackgroundColor="White" x:Name="ShowContents" VerticalOptions="Fill" >
+        <StackLayout BackgroundColor="{StaticResource AccordionContentBgColor}" x:Name="ShowContents" VerticalOptions="Fill" >
             <ContentView x:Name="AccContents"  VerticalOptions="FillAndExpand" />
         </StackLayout>
-
     </StackLayout>
 
 </StackLayout>

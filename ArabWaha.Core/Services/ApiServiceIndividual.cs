@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -408,7 +409,7 @@ namespace ArabWaha.Core.Services
                 }
             }catch(Exception ex)
             {
-                var t = ex.Message;
+                Debug.WriteLine("ERROR:" + ex.Message);
             }
 
             try
@@ -429,7 +430,7 @@ namespace ArabWaha.Core.Services
             }
             catch(Exception ex)
             {
-                var t = ex.Message;
+                Debug.WriteLine("ERROR:" + ex.Message);
             }
 
         }
@@ -553,7 +554,7 @@ namespace ArabWaha.Core.Services
                 }
                 catch(Exception ex)
                 {
-                    var t = ex.Message;
+                    Debug.WriteLine("ERROR:" + ex.Message);
                 }
             }
 

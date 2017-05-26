@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using System.Diagnostics;
+using Xamarin.Forms;
 
 namespace ArabWaha.Employer.Views
 {
@@ -6,7 +8,14 @@ namespace ArabWaha.Employer.Views
     {
         public JobNewPostPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine("ERROR:" + ex.Message);
+            }
         }
 
         private void Button_DescendantAdded(object sender, ElementEventArgs e)

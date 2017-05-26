@@ -400,7 +400,7 @@
     <value>Submit</value>
   </data>
   <data name="TabControlSearchText" xml:space="preserve">
-    <value>Search Jobs</value>
+    <value>Search Talent</value>
   </data>
   <data name="TextAboutPageDefault" xml:space="preserve">
     <value>About details here</value>
@@ -1014,7 +1014,7 @@
     <value>Introduction</value>
   </data>
   <data name="LabelSearchJobsText" xml:space="preserve">
-    <value>Search by job title</value>
+    <value>Search for talent</value>
   </data>
   <data name="LabelSearchLocationText" xml:space="preserve">
     <value>Search by location</value>

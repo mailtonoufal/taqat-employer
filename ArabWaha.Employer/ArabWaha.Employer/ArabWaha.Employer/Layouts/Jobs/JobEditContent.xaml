@@ -9,7 +9,7 @@
              x:Class="ArabWaha.Employer.Layouts.Jobs.JobEditContent"
              x:Name="Details">
   <ContentView.Content>
-        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}">
             <!-- Job summary -->
             <locals:XpertAccordion HeaderText="{lEx:Translate LabelJobJobTitle}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" >
                 <locals:XpertAccordion.AccordionContents>
@@ -813,6 +813,8 @@
                 </locals:XpertAccordion.AccordionContents>
             </locals:XpertAccordion>
             
+            
         </StackLayout>
+        
     </ContentView.Content>
 </ContentView>

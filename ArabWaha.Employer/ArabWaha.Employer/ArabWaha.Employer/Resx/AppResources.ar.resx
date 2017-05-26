@@ -400,7 +400,7 @@
     <value>عرض</value>
   </data>
   <data name="TabControlSearchText" xml:space="preserve">
-    <value>بحث وظائف</value>
+    <value>البحث المواهب</value>
   </data>
   <data name="TextAboutPageDefault" xml:space="preserve">
     <value>حول التفاصيل هنا</value>
@@ -1011,7 +1011,7 @@
     <value>المقدمة</value>
   </data>
   <data name="LabelSearchJobsText" xml:space="preserve">
-    <value>البحث عن طريق المسمى الوظيفي</value>
+    <value>البحث عن المواهب</value>
   </data>
   <data name="LabelSearchLocationText" xml:space="preserve">
     <value>البحث حسب الموقع</value>

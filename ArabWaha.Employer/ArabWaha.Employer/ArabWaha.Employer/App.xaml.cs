@@ -11,6 +11,7 @@ using ArabWaha.Employer.Interfaces;
 using System.Threading.Tasks;
 using ArabWaha.Employer.Views.Detail;
 using ArabWaha.Employer.Views.Settings;
+using System.Diagnostics;
 
 namespace ArabWaha.Employer
 {
@@ -25,8 +26,8 @@ namespace ArabWaha.Employer
 
         public static LayoutOptions HorizontalLayoutOptions { get; set; }
 
-        public static bool IsArVisible { get; set; }
-        public static bool IsEnVisible { get; set; }
+        public static bool IsArabic { get; set; }
+        public static bool IsEnglish { get; set; }
 
         public static void SetupCulture()
         {
@@ -39,8 +40,8 @@ namespace ArabWaha.Employer
             GlobalSetting.AlignText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End : TextAlignment.Start;
             GlobalSetting.AlignLabelText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End: TextAlignment.Start;
 
-            GlobalSetting.IsArVisible = GlobalSetting.CultureCode == "ar" ? true : false;
-            GlobalSetting.IsEnVisible = GlobalSetting.CultureCode == "ar" ? false : true;
+            GlobalSetting.IsArabic = GlobalSetting.CultureCode == "ar" ? true : false;
+            GlobalSetting.IsEnglish = !IsArabic;
 
 
         }
@@ -84,12 +85,12 @@ namespace ArabWaha.Employer
         public async void SetStartPage()
         {
             try {
-                //await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
-                await NavigationService.NavigateAsync($"NavigationPage/{nameof(HomePage)}");
+                await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
+                //await NavigationService.NavigateAsync($"NavigationPage/{nameof(HomePage)}");
             }
             catch (Exception ex)
             {
-                var t = ex.Message;
+                Debug.WriteLine("ERROR:" + ex.Message);
             }
          }
 

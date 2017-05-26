@@ -5,7 +5,7 @@
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"             
              x:Class="ArabWaha.Employer.Layouts.Company.CompanyUsersRecruiters">
     <ContentView.Content>
-        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource ContentStackLayout}">
             <Button Text="{lEx:Translate AddRecruiterButton}" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding AddRecruiterCommand}"  />
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
                 <ListView x:Name="ParentListView" ItemsSource="{Binding RecruiterUsers}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
@@ -26,8 +26,8 @@
                                           Command="{Binding EditRecCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}"  />
                                 </ViewCell.ContextActions>
 
-                                <StackLayout >
-                                    <Grid >
+                                <StackLayout Padding="0,5,5,0">
+                                    <Grid Margin="2,2,2,2" >
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="5" />
                                             <RowDefinition Height="1*" />
@@ -45,13 +45,13 @@
                                         </Grid.ColumnDefinitions>
                                         <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="8" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="FillAndExpand"  />
 
-                                        <Label Text="{Binding FullName}" Grid.Row="1" Grid.Column="1"  Style="{StaticResource InfoBodyTextBlue}" 
+                                        <Label Text="{Binding FullName}" Grid.Row="1" Grid.Column="1"  Style="{StaticResource CellBodyTextMedBlue}" 
                                                HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
 
-                                        <Label Grid.Row="2" Grid.Column="1" Text="Active" Style="{StaticResource InfoBodyTextSmallGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
-                                        <Label Grid.Row="3" Grid.Column="1" Text="{Binding EmailAddress}" Style="{StaticResource InfoBodyTextSmallGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
-                                        <Label Grid.Row="5" Grid.Column="1" Text="Verified my MoL"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
-                                        <Label Grid.Row="6" Grid.Column="1" Text="MoL Account Status: Active"  Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                                        <Label Grid.Row="2" Grid.Column="1" Text="Active" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                                        <Label Grid.Row="3" Grid.Column="1" Text="{Binding EmailAddress}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                                        <Label Grid.Row="5" Grid.Column="1" Text="Verified my MoL"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                                        <Label Grid.Row="6" Grid.Column="1" Text="MoL Account Status: Active"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
 
                                     </Grid>
                                 </StackLayout>
