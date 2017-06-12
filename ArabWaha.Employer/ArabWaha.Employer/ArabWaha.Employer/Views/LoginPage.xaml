@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
@@ -24,7 +24,7 @@
                 <RowDefinition Height="40" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="60" />
+                <RowDefinition Height="50" />
                 <RowDefinition Height="30" />
                 <RowDefinition Height="30" />
                 <RowDefinition Height="30" />
@@ -51,21 +51,21 @@
 
 
             <Label  Grid.Row="5" Text="{lEx:Translate LoginForgotPassword}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
-                    TextColor="#4da6ff" FontSize="15"  >
+                    TextColor="#4da6ff" Style="{StaticResource LoginPageTextStyle}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding LostPasswordCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>
             </Label>
 
             <Label  Grid.Row="6" Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
-                    TextColor="#4da6ff" FontSize="15"  >
+                    TextColor="#4da6ff" Style="{StaticResource LoginPageTextStyle}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GuestCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>
             </Label>
 
             <Label  Grid.Row="7" Text="{lEx:Translate LoginNoAccountSignup}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
-                    TextColor="#4da6ff" FontSize="15"  >
+                    TextColor="#4da6ff" Style="{StaticResource LoginPageTextStyle}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SignupCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>

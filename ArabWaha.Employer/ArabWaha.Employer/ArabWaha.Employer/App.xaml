@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                         xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
@@ -12,6 +12,7 @@
             <c:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
 
 
+            
             <Color x:Key="primary">#03A9F4</Color>
             <Color x:Key="primary_dark">#0288D1</Color>
             <Color x:Key="primary_light">#B3E5FC</Color>
@@ -389,7 +390,7 @@
                 <Setter Property="BorderColor" Value="{StaticResource GreenButtonColor}" />
                 <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
                 <Setter Property="BorderWidth" Value="0" />
-                <Setter Property="BorderRadius" Value="20" />
+                <Setter Property="BorderRadius" Value="3" />
                 <Setter Property="FontSize">
                     <Setter.Value>
                         <OnIdiom x:TypeArguments="x:Double" Tablet="20" Phone="12"/>
@@ -398,6 +399,11 @@
                 <Setter Property="HeightRequest">
                     <Setter.Value>
                         <OnIdiom x:TypeArguments="x:Double" Tablet="80" Phone="50"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="40" Android="60"/>
                     </Setter.Value>
                 </Setter>
             </Style>
@@ -643,6 +649,20 @@
             <Setter Property="BackgroundColor" Value="{StaticResource AccordionContentBgColor}" />
           </Style>
 
+          <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#00204A" />
+                <Setter Property="BarTextColor" Value="Color.White" />
+            </Style>
+
+            <Style x:Key="LoginPageTextStyle" TargetType="Label">
+                 <Setter Property="FontSize">
+              <Setter.Value>
+                <OnPlatform x:TypeArguments="x:Double" iOS="13" Android="15"/>
+
+              </Setter.Value>
+            </Setter>
+            </Style>
+            
         </ResourceDictionary>
     </prism:PrismApplication.Resources>
 

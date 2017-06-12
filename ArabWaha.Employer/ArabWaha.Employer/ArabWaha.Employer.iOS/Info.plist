@@ -20,11 +20,11 @@
 	<key>MinimumOSVersion</key>
 	<string>9.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>TAQAT Employer</string>
+	<string>TAQAT</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.arabwaha.employer</string>
+	<string>com.aw.mobile</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.4</string>
+	<string>1.0.5</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-60@2x.png</string>
@@ -33,12 +33,14 @@
 		<string>Icon-Small-40@2x.png</string>
 	</array>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.4</string>
+	<string>1.0.5</string>
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array>
 		<string>MKDirectionsModePedestrian</string>
 		<string>MKDirectionsModeCar</string>
 		<string>MKDirectionsModeBus</string>
 	</array>
+	<key>CFBundleName</key>
+	<string>TAQAT</string>
 </dict>
 </plist>
