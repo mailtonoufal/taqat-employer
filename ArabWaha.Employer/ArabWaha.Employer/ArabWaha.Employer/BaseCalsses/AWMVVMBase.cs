@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.BaseCalsses
 {
@@ -53,7 +54,7 @@ namespace ArabWaha.Employer.BaseCalsses
             DataColumn = dataCol;
             ImageColumn = 3;
 
-            if (CultureCode == "ar")
+			if (GlobalSetting.IsArabic)
             {
                 DataColumn = labelCol;
                 LabelColumn = dataCol;

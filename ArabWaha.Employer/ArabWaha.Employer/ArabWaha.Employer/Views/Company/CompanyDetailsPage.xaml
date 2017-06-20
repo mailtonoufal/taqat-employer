@@ -4,7 +4,7 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"                                        
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" 
-             xmlns:gb="clr-namespace:ArabWaha.Employer"                           
+             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"                           
              xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"                           
              xmlns:controlx="clr-namespace:ArabWaha.Employer.Controls"
              prism:ViewModelLocator.AutowireViewModel="True"

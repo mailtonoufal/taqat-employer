@@ -2,7 +2,7 @@
 <local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             xmlns:gb="clr-namespace:ArabWaha.Employer"
+             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              xmlns:layout="clr-namespace:ArabWaha.Employer.Layouts"                           
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" 

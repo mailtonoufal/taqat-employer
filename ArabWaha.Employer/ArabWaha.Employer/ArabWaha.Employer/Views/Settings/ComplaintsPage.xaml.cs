@@ -3,6 +3,7 @@ using ArabWaha.Employer.ViewModels;
 using System;
 using System.Diagnostics;
 using Xamarin.Forms;
+using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.Views
 {
@@ -33,7 +34,7 @@ namespace ArabWaha.Employer.Views
             // tbitem.Command = ;
 
             // mod based on access
-            if (GlobalSetting.CultureCode=="ar")
+			if (GlobalSetting.IsArabic)
                 tbitem.Text = "إضافة شكوى جديدة";
             else
                 tbitem.Text = "Add New Complaint";

@@ -372,7 +372,7 @@
                 <Setter Property="BorderColor" Value="{StaticResource GreenButtonColor}" />
                 <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
                 <Setter Property="BorderWidth" Value="0" />
-                <Setter Property="BorderRadius" Value="4" />
+                <Setter Property="BorderRadius" Value="5" />
                 <Setter Property="FontSize">
                     <Setter.Value>
                         <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
@@ -381,11 +381,6 @@
                 <Setter Property="HeightRequest">
                     <Setter.Value>
                         <OnIdiom x:TypeArguments="x:Double" Tablet="80" Phone="50"/>
-                    </Setter.Value>
-                </Setter>
-                 <Setter Property="HeightRequest">
-                    <Setter.Value>
-                        <OnPlatform x:TypeArguments="x:Double" iOS="43" Android="60"/>
                     </Setter.Value>
                 </Setter>
             </Style>

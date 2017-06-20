@@ -1,25 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ArabWaha.Employer.Controls.HomeCustomViewCell">
+             x:Class="ArabWaha.Employer.Controls.HomeCustomViewCell"
+			 xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData">
     <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="Transparent">
         <Grid Margin="2,2,2,2" BackgroundColor="White" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="5" />
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="2*" />
+				<RowDefinition Height="5" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="5" />
             </Grid.ColumnDefinitions>
-            <!--<BoxView  BackgroundColor="White" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3" 
-                      VerticalOptions="FillAndExpand" />-->
             <Label Text="{Binding Ttle}" Grid.Row="1" Grid.Column="1" Style="{StaticResource InfoBodyTextBlue}" 
-                   HorizontalOptions="End" HorizontalTextAlignment="End" />
+                   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
             <Label Text="{Binding Description}" Grid.Row="2" Grid.Column="1" 
-                   Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                   Style="{StaticResource CellBodyTextMedGray}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
         </Grid>
     </StackLayout>
 </ViewCell>
