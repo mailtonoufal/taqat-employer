@@ -37,9 +37,9 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Image Source="LogoNew.png"  Grid.Row="0" HorizontalOptions="CenterAndExpand" HeightRequest="90" WidthRequest="130"  Aspect="AspectFit" VerticalOptions="Center" />
+            <Image Source="LogoNew.png"  Grid.Row="0" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="140"  Aspect="AspectFit" VerticalOptions="Center" />
             <Label Text="{lEx:Translate ButtonSignIn}" Grid.Row ="1" VerticalOptions="EndAndExpand" HorizontalOptions="End" 
-				   HorizontalTextAlignment="{Binding AlignText}" Style="{StaticResource HeaderTextMediumWhite}" />
+				   HorizontalTextAlignment="{Binding AlignText}" Style="{StaticResource HeaderTextMediumWhite}" FontSize="24"/>
 
              <Label Text="Username" Grid.Row ="2" VerticalOptions="EndAndExpand" HorizontalOptions="End"
                    HorizontalTextAlignment="End" TextColor="#668CBA" FontSize="12" />
@@ -56,7 +56,7 @@
 
             <StackLayout Grid.Row="6" Padding="5,5,5,5" >
                 <Button  HorizontalOptions= "FillAndExpand" VerticalOptions="FillAndExpand" 
-						Text="{lEx:Translate ButtonSignIn}" Command="{Binding SignInCommand}"   Style="{StaticResource GreenButton}" HeightRequest="43"/>
+						Text="{lEx:Translate ButtonSignIn}" Command="{Binding SignInCommand}"   Style="{StaticResource GreenButton}" />
             </StackLayout>
 
 

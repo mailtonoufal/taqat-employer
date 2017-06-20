@@ -383,6 +383,11 @@
                         <OnIdiom x:TypeArguments="x:Double" Tablet="80" Phone="50"/>
                     </Setter.Value>
                 </Setter>
+                 <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="43" Android="60"/>
+                    </Setter.Value>
+                </Setter>
             </Style>
 
             <Style x:Key="GreenButtonMediumText" TargetType="Button">

@@ -54,7 +54,7 @@
             </DataTemplate>
             <DataTemplate x:Key="loginTemplate">
                 <StackLayout VerticalOptions="EndAndExpand" >
-                    <Grid VerticalOptions="FillAndExpand" Padding="20">
+                    <Grid VerticalOptions="EndAndExpand" Padding="5" RowSpacing="10">
 
                         <Grid.ColumnDefinitions>
                             
@@ -68,7 +68,7 @@
                             <RowDefinition Height="50" />
                             <RowDefinition Height="60" />
                             <RowDefinition Height="auto" />
-                            <RowDefinition Height="60" />
+                            <RowDefinition Height="auto" />
                             <RowDefinition Height="20" />
                         </Grid.RowDefinitions>
 
@@ -83,7 +83,7 @@
 
                         <Button  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="{lEx:Translate LoginNoAccountSignup}" 
                             HorizontalOptions="FillAndExpand"  Command="{Binding Path=BindingContext.SignUpCommand, Source={x:Reference AppPage}}" FontSize="12"
-                            BackgroundColor="Transparent" TextColor="White" HeightRequest="40" BorderColor="Silver" BorderWidth="0" />
+                            BackgroundColor="Transparent" TextColor="White" HeightRequest="40" BorderColor="Silver" BorderWidth="1" />
 
                         <Label Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="End" Grid.Row="5" Grid.Column="1"  
                    HorizontalOptions="Start" Style="{StaticResource InfoBodyTextGraySmall}"  >
@@ -108,7 +108,7 @@
     <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="16" >
         <Grid.RowDefinitions>
             <RowDefinition Height="10" />
-            <RowDefinition Height="35" />
+            <RowDefinition Height="40" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -116,7 +116,7 @@
             <ColumnDefinition Width="5" />
         </Grid.ColumnDefinitions>
 
-        <Image Source="LogoNew.png" Grid.Row="1" Grid.Column="0" HeightRequest="35" VerticalOptions="StartAndExpand" HorizontalOptions="End"></Image>
+        <Image Source="LogoNew.png" Grid.Row="1" Grid.Column="0" HeightRequest="37" VerticalOptions="StartAndExpand" HorizontalOptions="End"></Image>
         <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <cv:CarouselViewControl   x:Name="CarouselPics" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" 
                                       BackgroundColor="Transparent" ShowIndicators="True" Position="{Binding PagePosition}" ItemTemplate="{StaticResource templateSelector}"  >

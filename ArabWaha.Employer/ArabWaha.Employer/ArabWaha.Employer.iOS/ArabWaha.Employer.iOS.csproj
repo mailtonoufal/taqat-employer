@@ -33,7 +33,7 @@
     <IOSDebugOverWiFi>False</IOSDebugOverWiFi>
     <IOSDebuggerPort>10000</IOSDebuggerPort>
     <CodesignKey>iPhone Distribution: Innovapptive Inc.</CodesignKey>
-    <CodesignProvision>com.aw.mobile</CodesignProvision>
+    <CodesignProvision>AW Mobile</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
