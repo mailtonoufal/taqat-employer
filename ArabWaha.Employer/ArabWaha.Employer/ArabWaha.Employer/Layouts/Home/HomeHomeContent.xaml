@@ -13,14 +13,14 @@
             <StackLayout VerticalOptions="Start" >
 
             <syncfusion:SfRotator x:Name="rotator" 
-                                  ItemsSource="{Binding SwipeSource}"
-                                  HeightRequest="200"
+                                  DataSource="{Binding SwipeSource}"
                                   BackgroundColor="#EDEDED"
                                   NavigationStripMode="Dots"
                                   NavigationStripPosition="Bottom"
                                   EnableAutoPlay="true"
                                   NavigationDelay="2000"
-                                  />
+                                  >
+            </syncfusion:SfRotator>
 
             <ListView ItemsSource="{Binding HomePageSource}" HorizontalOptions="Start" VerticalOptions="Start" CachingStrategy = "RecycleElement"
                       HasUnevenRows="True" SeparatorVisibility="None"  BackgroundColor="{StaticResource GreyPageColor}" ItemSelected="ItemSelected" >

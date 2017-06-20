@@ -10,7 +10,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using ArabWaha.Employer.Views.Settings;
 using System.Linq;
-using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -25,7 +24,7 @@ namespace ArabWaha.Employer.ViewModels
             LabelColumn = 1;
             DataColumn = 2;
 
-            if(GlobalSetting.IsArabic)
+            if(CultureCode=="ar")
             {
                 LabelColumn = 2;
                 DataColumn = 1;

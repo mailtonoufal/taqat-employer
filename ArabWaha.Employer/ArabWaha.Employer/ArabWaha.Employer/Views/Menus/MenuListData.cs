@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.Views.Menus
 {
@@ -16,12 +15,17 @@ namespace ArabWaha.Employer.Views.Menus
     {
         public MenuListData()
         {
+            bool isEnglishText = true;
+            if (GlobalSetting.CultureCode == "ar")
+                isEnglishText = false;
+
+
             bool IsAuth = AuthService.IsAuthorised ; // needs to check auth service param on the pcl
 
             this.Add(new MasterPageItem
             {
                 // - need to move  to tresource/NSTack  "Home" : "الصفحة الرئيسية",
-				Title = GlobalSetting.IsEnglish ? "Home" : "الصفحة الرئيسية",
+                Title = isEnglishText ? "Home" : "الصفحة الرئيسية",
                 IconSource = "arrow_white.png",
                 TargetType = $"{nameof(HomePage)}?TAB=1",
                 PageType = typeof(HomePage),
@@ -33,7 +37,7 @@ namespace ArabWaha.Employer.Views.Menus
                 this.Add(new MasterPageItem
                 {
                     // - need to move  to tresource/NSTack  "My Company" : "شركتي",
-                    Title = GlobalSetting.IsEnglish ? "My Company" : "شركتي",
+                    Title = isEnglishText ? "My Company" : "شركتي",
                     IconSource = "arrow_white.png",
                     TargetType = nameof(CompanyDetailsPage),
                     PageType = typeof(CompanyDetailsPage),
@@ -43,7 +47,7 @@ namespace ArabWaha.Employer.Views.Menus
                 this.Add(new MasterPageItem
                 {
                     // - need to move  to tresource/NSTack  "Applications" : "التطبيقات",
-                    Title = GlobalSetting.IsEnglish ? "Applications" : "التطبيقات",
+                    Title = isEnglishText ? "Applications" : "التطبيقات",
                     IconSource = "arrow_white.png",
                     TargetType = nameof(ApplicationsPage),
                     PageType = typeof(ApplicationsPage),
@@ -52,7 +56,7 @@ namespace ArabWaha.Employer.Views.Menus
 
                 //this.Add(new MasterPageItem
                 //{
-                //    Title = GlobalSetting.IsEnglish ? "Job Postings" : "وظائف شاغرة",
+                //    Title = isEnglishText ? "Job Postings" : "وظائف شاغرة",
                 //    IconSource = "arrow_white.png",
                 //    TargetType = $"{nameof(HomePage)}?TAB=2",
                 //    PageType = typeof(HomePage),
@@ -66,7 +70,7 @@ namespace ArabWaha.Employer.Views.Menus
             this.Add(new MasterPageItem
             {
                 // - need to move  to tresource/NSTack  "Programs" : "البرامج",
-                Title = GlobalSetting.IsEnglish ? "Programs" : "البرامج",
+                Title = isEnglishText ? "Programs" : "البرامج",
                 IconSource = "arrow_white.png",
                 TargetType = $"{nameof(HomePage)}?TAB=3",
                 PageType = typeof(HomePage),
@@ -75,7 +79,7 @@ namespace ArabWaha.Employer.Views.Menus
 
             this.Add(new MasterPageItem
             {
-                Title = GlobalSetting.IsEnglish ? "Services" : "خدمات",
+                Title = isEnglishText ? "Services" : "خدمات",
                 IconSource = "arrow_white.png",
                 TargetType = $"{nameof(HomePage)}?TAB=4",
                 PageType = typeof(HomePage),
@@ -88,7 +92,7 @@ namespace ArabWaha.Employer.Views.Menus
             {
                 //this.Add(new MasterPageItem
                 //{
-                //    Title = GlobalSetting.IsEnglish ? "Notifications" : "الإشعارات",
+                //    Title = isEnglishText ? "Notifications" : "الإشعارات",
                 //    IconSource = "arrow_white.png",
                 //    TargetType = nameof(NotificationsPage),
                 //    PageType = typeof(NotificationsPage),
@@ -97,7 +101,7 @@ namespace ArabWaha.Employer.Views.Menus
 
                 this.Add(new MasterPageItem
                 {
-                    Title = GlobalSetting.IsEnglish ? "Calendar" : "التقويم",
+                    Title = isEnglishText ? "Calendar" : "التقويم",
                     IconSource = "arrow_white.png",
                     TargetType = nameof(CalendarPage),
                     PageType = typeof(CalendarPage),
@@ -107,7 +111,7 @@ namespace ArabWaha.Employer.Views.Menus
 
                 this.Add(new MasterPageItem
                 {
-                    Title = GlobalSetting.IsEnglish ? "Complaints" : "شكاوي",
+                    Title = isEnglishText ? "Complaints" : "شكاوي",
                     IconSource = "arrow_white.png",
                     TargetType = nameof(ComplaintsPage),
                     PageType = typeof(ComplaintsPage),
@@ -118,7 +122,7 @@ namespace ArabWaha.Employer.Views.Menus
 
             this.Add(new MasterPageItem
             {
-                Title = GlobalSetting.IsEnglish ? "Contact Us" : "اتصل بنا",
+                Title = isEnglishText ? "Contact Us" : "اتصل بنا",
                 IconSource = "arrow_white.png",
                 TargetType = nameof(ContactUsPage),
                 PageType = typeof(ContactUsPage),
@@ -128,7 +132,7 @@ namespace ArabWaha.Employer.Views.Menus
 
             this.Add(new MasterPageItem
             {
-                Title = GlobalSetting.IsEnglish ? "Settings" : "إعدادات",
+                Title = isEnglishText ? "Settings" : "إعدادات",
                 IconSource = "arrow_white.png",
                 TargetType = nameof(SettingsPage),
                 PageType = typeof(SettingsPage),
@@ -140,7 +144,7 @@ namespace ArabWaha.Employer.Views.Menus
             {
                 this.Add(new MasterPageItem
                 {
-                    Title = GlobalSetting.IsEnglish ? "Sign In" : "تسجيل الدخول",
+                    Title = isEnglishText ? "Sign In" : "تسجيل الدخول",
                     IconSource = "arrow_white.png",
                     TargetType = nameof(LoginPage),
                     PageType = typeof(LoginPage),
@@ -154,7 +158,7 @@ namespace ArabWaha.Employer.Views.Menus
 
                 this.Add(new MasterPageItem
                 {
-                    Title = GlobalSetting.IsEnglish ? "Log out" : "الخروج",
+                    Title = isEnglishText ? "Log out" : "الخروج",
                     IconSource = "arrow_white.png",
                     TargetType = nameof(LoginPage),
                     PageType = typeof(LoginPage),

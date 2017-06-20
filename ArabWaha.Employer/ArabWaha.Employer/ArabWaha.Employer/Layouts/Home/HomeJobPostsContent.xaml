@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:locals="clr-namespace:ArabWaha.Employer.Controls"
              x:Class="ArabWaha.Employer.Layouts.HomeJobPostsContent"
-			 xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              >
-	
   <ContentView.Content>
+
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}" >
             <Button Text="{lEx:Translate ButtonAddNewPost}" Style="{StaticResource GreenButtonFlat}" Margin="1" Command="{Binding AddNewJobCommand}"  />
             <ListView x:Name="ParentListView" ItemsSource="{Binding JobPageSource}" 
@@ -51,30 +50,30 @@
                                         <RowDefinition Height="10" />
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
-										<ColumnDefinition Width="5" />
-                                        <ColumnDefinition Width="{x:Static gb:GlobalSetting.HomeJobFirstColWidth}" />
                                         <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="{x:Static gb:GlobalSetting.HomeJobThirdColWidth}" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="15" />
+                                        <ColumnDefinition Width="55" />
                                         <ColumnDefinition Width="5" />
                                     </Grid.ColumnDefinitions>
                                     <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="8" Grid.Column="0" Grid.ColumnSpan="5" VerticalOptions="FillAndExpand" />
 
-                                    <Label Text="{Binding JobPostTitle}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" />
+                                    <Label Text="{Binding JobPostTitle}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
 
                                     <!--<Label Text="{Binding Posted, StringFormat='Posted: {0} Ago'}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
                                     <Label Text="{Binding Status, StringFormat='Job Status: {0}'}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />-->
 
-                                    <Label Text="{Binding GetPostedInfo}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
-                                    <Label Text="{Binding GetJobStatusInfo}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                    <Label Text="{Binding GetPostedInfo}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                                    <Label Text="{Binding GetJobStatusInfo}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
 
 
-                                    <Label Text="{lEx:Translate LocationLabel}" Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeJobLabelColNo}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
-                                    <Label Text="{Binding CompanyName}" Grid.Row="5" Grid.Column="2" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                    <Label Text="{lEx:Translate LocationLabel}" Grid.Row="5" Grid.Column="0" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                                    <Label Text="{Binding CompanyName}" Grid.Row="5" Grid.Column="1" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
 
-                                    <Label Text="{Binding CompanyLocation.LocationId}" Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.HomeJobLabelColNo}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
-                                    <Label Text="{Binding CompanyIndustry}" Grid.Row="6" Grid.Column="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                    <Label Text="{Binding CompanyLocation.LocationId}" Grid.Row="6" Grid.Column="0" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                                    <Label Text="{Binding CompanyIndustry}" Grid.Row="6" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
 
-                                    <Frame OutlineColor="Gray" Grid.Row="5" Grid.RowSpan="2" Grid.Column="{x:Static gb:GlobalSetting.HomeJobImgColNo}"  Padding="0" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Frame OutlineColor="Gray" Grid.Row="5" Grid.RowSpan="2" Grid.Column="3"  Padding="0" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center" VerticalOptions="Center">
                                         <Image Source="{Binding CompanyLogo}" WidthRequest="45" HeightRequest="45" Aspect="AspectFit"  />
                                     </Frame>
 

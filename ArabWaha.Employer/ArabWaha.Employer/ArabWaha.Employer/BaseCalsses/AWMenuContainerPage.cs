@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
-using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.BaseCalsses
 {
@@ -28,7 +27,7 @@ namespace ArabWaha.Employer.BaseCalsses
 
             //};
             //this.ToolbarItems.Add(tbarItem);
-			if (GlobalSetting.IsArabic)
+            if (GlobalSetting.CultureCode == "ar")
                 this.SlideMenu.MenuOrientations = MenuOrientation.RightToLeft;
             else
                 this.SlideMenu.MenuOrientations = MenuOrientation.LeftToRight;

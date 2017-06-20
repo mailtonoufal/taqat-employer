@@ -12,7 +12,6 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.Views.Menus
 {
@@ -33,7 +32,7 @@ namespace ArabWaha.Employer.Views.Menus
 
             this.MenuOrientations = MenuOrientation.LeftToRight;
 
-            if (GlobalSetting.IsArabic)
+            if (GlobalSetting.CultureCode == "ar")
                 this.MenuOrientations = MenuOrientation.RightToLeft;
 
 
@@ -53,7 +52,7 @@ namespace ArabWaha.Employer.Views.Menus
             var english = this.FindByName<Button>("ChangeEnglish");
             english.Clicked += async (sender, args) =>
             {
-				if (!GlobalSetting.IsEnglish)
+                if (!GlobalSetting.CultureCode.Equals("en"))
                 {
                     ApiService api = new ApiService();
                     await api.SetCurrentCultureAsync("en");
@@ -68,7 +67,7 @@ namespace ArabWaha.Employer.Views.Menus
             var arabic = this.FindByName<Button>("ChangeArabic");
             arabic.Clicked += async (sender, args) =>
             {
-                if (!GlobalSetting.IsArabic)
+                if (!GlobalSetting.CultureCode.Equals("ar"))
                 {
                     ApiService api = new ApiService();
                     await api.SetCurrentCultureAsync("ar");

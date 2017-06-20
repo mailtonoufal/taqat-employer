@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <t:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:t="clr-namespace:ArabWaha.Employer.BaseCalsses"
              xmlns:local="clr-namespace:ArabWaha.Employer.Views"
              xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"
-             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"                       
+             xmlns:gb="clr-namespace:ArabWaha.Employer"                       
              xmlns:controls="clr-namespace:ArabWaha.Employer.Controls"
              xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
              xmlns:layouts="clr-namespace:ArabWaha.Employer.Layouts"

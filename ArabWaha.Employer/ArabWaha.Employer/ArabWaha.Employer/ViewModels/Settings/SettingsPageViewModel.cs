@@ -1,5 +1,6 @@
 ﻿using ArabWaha.Employer.BaseCalsses;
 using ArabWaha.Employer.Views;
+using ArabWaha.Employer.Views;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -7,7 +8,6 @@ using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -52,7 +52,7 @@ namespace ArabWaha.Employer.ViewModels
         {
             get {
 
-                if (GlobalSetting.IsArabic)
+                if (CultureCode == "ar")
                     return "عربى";
                 else
                     return "English";

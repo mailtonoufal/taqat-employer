@@ -8,7 +8,6 @@ using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -26,7 +25,7 @@ namespace ArabWaha.Employer.ViewModels
             NewdateCommand = new DelegateCommand(ProcessNewdateCommand);
 
             // set cols based on culture :) 
-            if(GlobalSetting.IsArabic)
+            if(CultureCode=="ar")
             {
                 LabelColumn = 2;
                 ImageColumn = 1;

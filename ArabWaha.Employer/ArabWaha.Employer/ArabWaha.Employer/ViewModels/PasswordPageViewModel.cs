@@ -9,7 +9,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
-using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -41,7 +40,7 @@ namespace ArabWaha.Employer.ViewModels
 
             _ctrl.SetSearchVisible(false);
 
-			if (GlobalSetting.IsEnglish)
+            if (GlobalSetting.CultureCode.Equals("en"))
             {
                 _ctrl.SetTabText("Username", "Password", "Email");
                 TitleText = "Forget Login Information";

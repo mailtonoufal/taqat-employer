@@ -12,13 +12,60 @@ using System.Threading.Tasks;
 using ArabWaha.Employer.Views.Detail;
 using ArabWaha.Employer.Views.Settings;
 using System.Diagnostics;
-using ArabWaha.Employer.StaticData;
+using ArabWaha.Models;
+using NStackPortable;
 
 namespace ArabWaha.Employer
 {
+    public static class GlobalSetting
+    {
+        public static string CultureCode { get; set; }
+        public static LayoutAlignment AlignLabel { get; set; }
+        public static LayoutAlignment AlignData { get; set; }
+
+        public static TextAlignment AlignText { get; set; }
+        public static TextAlignment AlignLabelText { get; set; }
+
+        public static LayoutOptions HorizontalLayoutOptions { get; set; }
+
+        public static bool IsArabic { get; set; }
+        public static bool IsEnglish { get; set; }
+
+
+        public static void SetupCulture()
+        {
+            ApiService svr = new ApiService();
+            GlobalSetting.CultureCode = svr.GetCurrentCulture();
+            GlobalSetting.AlignLabel = GlobalSetting.CultureCode == "ar" ? LayoutAlignment.End : LayoutAlignment.Start;
+            GlobalSetting.AlignData = GlobalSetting.CultureCode == "ar" ? LayoutAlignment.Start : LayoutAlignment.End;
+            GlobalSetting.HorizontalLayoutOptions = GlobalSetting.CultureCode == "ar" ? LayoutOptions.EndAndExpand : LayoutOptions.StartAndExpand;
+
+            GlobalSetting.AlignText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End : TextAlignment.Start;
+            GlobalSetting.AlignLabelText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End : TextAlignment.Start;
+
+            GlobalSetting.IsArabic = GlobalSetting.CultureCode == "ar" ? true : false;
+            GlobalSetting.IsEnglish = !IsArabic;
+
+
+        }
+
+        #region well hacky till i fix this correctly for view cell items
+
+        public static int LabelColumn { get; set; }
+        public static int DataColumn { get; set; }
+        public static int ImageColumn { get; set; }
+
+
+        #endregion
+    }
+
+
     public partial class App : PrismApplication
     {
-      //  public static string CultureCode { get; set; }
+        public static Translation Translation;
+        public static string appLang;
+        public static bool nstackCalled;
+        //  public static string CultureCode { get; set; }
         public static App _appInstance;
         public App(IPlatformInitializer initializer = null) : base(initializer) { }
 
@@ -37,13 +84,22 @@ namespace ArabWaha.Employer
 
             SyncDbAsync();
 
+            //StackPortableCode
+            Task.Run(async () =>
+            {
+                await loadTranslations();
+            });
+
+
+
             _appInstance = this;
             SetStartPage(); // NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
         }
 
         public async void SetStartPage()
         {
-            try {
+            try
+            {
                 await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
                 //await NavigationService.NavigateAsync($"NavigationPage/{nameof(HomePage)}");
             }
@@ -51,7 +107,7 @@ namespace ArabWaha.Employer
             {
                 Debug.WriteLine("ERROR:" + ex.Message);
             }
-         }
+        }
 
         async Task SyncDbAsync()
         {
@@ -80,11 +136,11 @@ namespace ArabWaha.Employer
         {
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<PasswordPage, PasswordPageViewModel>();
-            Container.RegisterTypeForNavigation<SearchPage,SearchPageViewModel>();
+            Container.RegisterTypeForNavigation<SearchPage, SearchPageViewModel>();
             Container.RegisterTypeForNavigation<SignUpPage, SignUpPageViewModel>();
             Container.RegisterTypeForNavigation<StartPage>();
             Container.RegisterTypeForNavigation<HomePage>();
-            Container.RegisterTypeForNavigation<SearchResultsPage,SearchResultsPageViewModel>();
+            Container.RegisterTypeForNavigation<SearchResultsPage, SearchResultsPageViewModel>();
             Container.RegisterTypeForNavigation<CompanyDetailsPage>();
             Container.RegisterTypeForNavigation<CompanyUserDetailsPage>();
             Container.RegisterTypeForNavigation<ProgramDetailsPage, ProgramDetailsPageViewModel>();
@@ -92,13 +148,13 @@ namespace ArabWaha.Employer
             Container.RegisterTypeForNavigation<JobPage, JobPageViewModel>();
             Container.RegisterTypeForNavigation<CompanyEditUserDetailsPage>();
             Container.RegisterTypeForNavigation<CompanyManageUsersPage>();
-            Container.RegisterTypeForNavigation<CompanyAddUserPage>();            
-//            Container.RegisterTypeForNavigation<LoginOptionsPage, StartPageViewModel>();
-            Container.RegisterTypeForNavigation<SettingsPage,SettingsPageViewModel>();
-            Container.RegisterTypeForNavigation<AboutPage,AboutPageViewModel>();
-            Container.RegisterTypeForNavigation<ContactUsPage,ContactUsPageViewModel>();
+            Container.RegisterTypeForNavigation<CompanyAddUserPage>();
+            //            Container.RegisterTypeForNavigation<LoginOptionsPage, StartPageViewModel>();
+            Container.RegisterTypeForNavigation<SettingsPage, SettingsPageViewModel>();
+            Container.RegisterTypeForNavigation<AboutPage, AboutPageViewModel>();
+            Container.RegisterTypeForNavigation<ContactUsPage, ContactUsPageViewModel>();
             Container.RegisterTypeForNavigation<ComplaintsPage, ComplaintsPageViewModel>();
-            Container.RegisterTypeForNavigation<CalendarPage,CalendarPageViewModel>();
+            Container.RegisterTypeForNavigation<CalendarPage, CalendarPageViewModel>();
 
             Container.RegisterTypeForNavigation<JobNewPostPage>();
             Container.RegisterTypeForNavigation<JobNewPostTypePage>();
@@ -125,6 +181,40 @@ namespace ArabWaha.Employer
         public static Page GetCurrentPage()
         {
             return Application.Current.MainPage.Navigation.NavigationStack.Last();
+        }
+
+        public static async Task StartNStack()
+        {
+            try
+            {
+                if (nstackCalled == false)
+                {
+                    NStack<Translation>.Init(Common.Constants.NSTACK_APPID, Common.Constants.NSTACK_RESTKEY);
+
+                    var cachedAppOpen = await NStack<Translation>.Instance().Load("fallback.json");
+
+                    var appOpen = await NStack<Translation>.Instance().AppOpenProvider.Update("ar-SA");
+
+                    Translation = appOpen?.Data?.Translate != null ? appOpen.Data.Translate : cachedAppOpen.Data.Translate;
+                    nstackCalled = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Cookie-" + DebugDataSingleton.Instance.COOKIE);
+            }
+        }
+
+        public async Task loadTranslations()
+        {
+            try
+            {
+                await StartNStack();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
         }
 
 

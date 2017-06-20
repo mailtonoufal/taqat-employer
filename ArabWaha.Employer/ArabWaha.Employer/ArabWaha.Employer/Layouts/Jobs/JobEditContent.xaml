@@ -5,7 +5,7 @@
              xmlns:bh="clr-namespace:Pillar;assembly=Pillar"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
-             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
+             xmlns:gb="clr-namespace:ArabWaha.Employer"
              x:Class="ArabWaha.Employer.Layouts.Jobs.JobEditContent"
              x:Name="Details">
   <ContentView.Content>

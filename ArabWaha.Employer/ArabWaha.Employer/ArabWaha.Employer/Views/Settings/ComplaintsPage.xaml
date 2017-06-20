@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
+             xmlns:gb="clr-namespace:ArabWaha.Employer"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses"
               xmlns:controlx="clr-namespace:ArabWaha.Employer.Controls"
