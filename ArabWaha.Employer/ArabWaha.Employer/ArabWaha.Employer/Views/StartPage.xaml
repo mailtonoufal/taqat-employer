@@ -33,7 +33,7 @@
                             <ColumnDefinition Width="5" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Grid.Row="1" Grid.Column="1"  Grid.ColumnSpan="2" Text="{lEx:Translate WelcomeTitle}"   HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand" 
+                        <Label Grid.Row="1" Grid.Column="1"  Grid.ColumnSpan="2" Text="{lEx:Translate WelcomeTitle}"   HorizontalTextAlignment="End" HorizontalOptions="FillAndExpand" 
                                             Style="{StaticResource HeaderTextLargeWhite}" />
                         <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="{lEx:Translate LabelSearchWelcomeText}" HorizontalOptions="EndAndExpand"   HorizontalTextAlignment="End"                                       
                                                Style="{StaticResource InfoBodyTextSmall}" />
@@ -105,10 +105,10 @@
     <Grid>
     <Image Source="Background.png" Aspect="Fill" />
 
-    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  >
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="16" >
         <Grid.RowDefinitions>
             <RowDefinition Height="10" />
-            <RowDefinition Height="55" />
+            <RowDefinition Height="35" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -116,7 +116,7 @@
             <ColumnDefinition Width="5" />
         </Grid.ColumnDefinitions>
 
-        <Image Source="Logo.png" Grid.Row="1" Grid.Column="0" HeightRequest="55" VerticalOptions="Start" HorizontalOptions="End"></Image>
+        <Image Source="LogoNew.png" Grid.Row="1" Grid.Column="0" HeightRequest="35" VerticalOptions="StartAndExpand" HorizontalOptions="End"></Image>
         <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <cv:CarouselViewControl   x:Name="CarouselPics" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" 
                                       BackgroundColor="Transparent" ShowIndicators="True" Position="{Binding PagePosition}" ItemTemplate="{StaticResource templateSelector}"  >

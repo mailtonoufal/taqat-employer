@@ -372,7 +372,7 @@
                 <Setter Property="BorderColor" Value="{StaticResource GreenButtonColor}" />
                 <Setter Property="TextColor" Value="{StaticResource WhiteTextColor}" />
                 <Setter Property="BorderWidth" Value="0" />
-                <Setter Property="BorderRadius" Value="20" />
+                <Setter Property="BorderRadius" Value="4" />
                 <Setter Property="FontSize">
                     <Setter.Value>
                         <OnIdiom x:TypeArguments="x:Double" Tablet="25" Phone="15"/>
