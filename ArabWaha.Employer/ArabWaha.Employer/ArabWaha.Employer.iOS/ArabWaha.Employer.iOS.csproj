@@ -318,6 +318,9 @@
     <Reference Include="PCLStorage">
       <HintPath>..\..\..\Packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
     </Reference>
+    <Reference Include="NStackPortable">
+      <HintPath>..\..\NStackPortable.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Background.png" />
