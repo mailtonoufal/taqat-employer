@@ -75,10 +75,12 @@ namespace ArabWaha.Employer.ViewModels
 
                 // need to pull from db
                 SwipeSource = new List<SfRotatorItem>() {
-                new SfRotatorItem() {  Image="sample_carousel.png" },
+                new SfRotatorItem() {  Image= "sample_carousel.png" },
                 new SfRotatorItem() {  Image="sample_carousel.png"  },
-                new SfRotatorItem() { ItemContent = new Label { Text = "tab image 3 will be here" ,TextColor=Color.Black }, BackgroundColor=Color.Transparent,  Image="sample_carousel.png" } ,
-                new SfRotatorItem() { ItemContent = new Label { Text = "tab image 4 will be here", TextColor = Color.Black }, BackgroundColor = Color.Transparent, Image="sample_carousel.png" } };
+                    new SfRotatorItem() {  Image="sample_carousel.png"  },
+                    new SfRotatorItem() {  Image="sample_carousel.png"  },
+                //new SfRotatorItem() { ItemContent = new Label { Text = "tab image 3 will be here" ,TextColor=Color.Black }, BackgroundColor=Color.Transparent,  Image="sample_carousel.png" } ,
+                };
 
                 HomeContent = new HomeHomeContent();
                 SetHome();
@@ -91,11 +93,11 @@ namespace ArabWaha.Employer.ViewModels
                 JobPageSource = await apiServ.GetEmployerPostedJobsAsync(1);
 
                 TranslateExtension tran = new TranslateExtension();
-                
+
                 // mod the text here for translations 
                 foreach (var t in JobPageSource)
                 {
-                    t.JobStatusText = tran.GetProviderValueString("LabelJobStatus");  
+                    t.JobStatusText = tran.GetProviderValueString("LabelJobStatus");
                     t.PostedText = tran.GetProviderValueString("LabelJobPosted");
 
                     if (string.IsNullOrEmpty(t.CompanyLogo)) t.CompanyLogo = "jobcompanyicon.png";
@@ -120,7 +122,7 @@ namespace ArabWaha.Employer.ViewModels
                 TranslateExtension tran = new TranslateExtension();
                 string progStatusLabel = tran.GetProviderValueString("LabelProgramStatusText");
                 // setup Program Status:
-                foreach(var item in ProgramsPageSource)
+                foreach (var item in ProgramsPageSource)
                 {
                     item.StatusLabelText = progStatusLabel;
                 }
@@ -207,8 +209,8 @@ namespace ArabWaha.Employer.ViewModels
         {
             TranslateExtension tran = new TranslateExtension();
             string confirm = tran.GetProviderValueString("ButtonConfirmDelete");
-            string delete = tran.GetProviderValueString("ButtonDelete"); 
-            string cancel = tran.GetProviderValueString("ButtonCancel"); 
+            string delete = tran.GetProviderValueString("ButtonDelete");
+            string cancel = tran.GetProviderValueString("ButtonCancel");
 
             var res = await _dialog.DisplayActionSheetAsync(confirm, cancel, delete, "");
             if (res.Equals(delete))
@@ -222,7 +224,7 @@ namespace ArabWaha.Employer.ViewModels
         }
 
         public DelegateCommand<EmployerJobDetail> EditJobCommand { get; set; }
-        async void ProcessEditJob(EmployerJobDetail vals) 
+        async void ProcessEditJob(EmployerJobDetail vals)
         {
             if (vals != null)
             {
@@ -250,7 +252,7 @@ namespace ArabWaha.Employer.ViewModels
             if (vals != null)
             {
                 NavigationParameters paramx = new NavigationParameters();
-                paramx.Add("Data", vals); 
+                paramx.Add("Data", vals);
                 await _nav.NavigateAsync(nameof(ProgramDetailsPage), paramx, false, true);
             }
         }
@@ -270,9 +272,9 @@ namespace ArabWaha.Employer.ViewModels
         public DelegateCommand AddNewJobCommand { get; set; }
         async void ProcessAddNewJobCommand()
         {
-                NavigationParameters paramx = new NavigationParameters();
-                paramx.Add("MODE", "NEW");
-                await _nav.NavigateAsync(nameof(JobNewPostPage), paramx, false, true);
+            NavigationParameters paramx = new NavigationParameters();
+            paramx.Add("MODE", "NEW");
+            await _nav.NavigateAsync(nameof(JobNewPostPage), paramx, false, true);
         }
 
 
@@ -284,7 +286,7 @@ namespace ArabWaha.Employer.ViewModels
         public ObservableCollection<Announcement> HomePageSource
         {
             get { return _homePageSource; }
-            set { SetProperty<ObservableCollection<Announcement>>(ref _homePageSource, value);}
+            set { SetProperty<ObservableCollection<Announcement>>(ref _homePageSource, value); }
         }
 
         private ObservableCollection<EmployerJobDetail> _jobPageSource;
@@ -339,7 +341,7 @@ namespace ArabWaha.Employer.ViewModels
             SetCurrentTab(3);
             CurrentView = ProgramsContent;
         }
- 
+
         private void SetServices()
         {
             SetCurrentTab(4);
@@ -371,14 +373,14 @@ namespace ArabWaha.Employer.ViewModels
 
         public async void OnNavigatedTo(NavigationParameters parameters)
         {
-            
+
             var tab = parameters.Where(x => x.Key == "TAB").FirstOrDefault();
             if (tab.Value != null && (!string.IsNullOrEmpty(tab.Value.ToString())))
-            { 
+            {
                 int x;
                 if (int.TryParse(tab.Value.ToString(), out x))
                 {
-                    switch(x)
+                    switch (x)
                     {
                         case 1:
                             SetHome();
@@ -444,7 +446,7 @@ namespace ArabWaha.Employer.ViewModels
                 //    SetProperty<ContentView>(ref _CurrentView, value);
 
                 if (!Core.Services.AuthService.IsAuthorised && (
-                    value is HomeJobPostsContent ))
+                    value is HomeJobPostsContent))
                 {
                     // NotLoggedInContent
                     SetProperty<ContentView>(ref _CurrentView, new NotLoggedInContent());

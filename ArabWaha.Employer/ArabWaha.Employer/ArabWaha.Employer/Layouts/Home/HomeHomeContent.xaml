@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:locals="clr-namespace:ArabWaha.Employer.Controls"
@@ -13,14 +13,14 @@
             <StackLayout VerticalOptions="Start" >
 
             <syncfusion:SfRotator x:Name="rotator" 
-                                  ItemsSource="{Binding SwipeSource}"
-                                  HeightRequest="260"
+                                  DataSource="{Binding SwipeSource}"
                                   BackgroundColor="#EDEDED"
                                   NavigationStripMode="Dots"
                                   NavigationStripPosition="Bottom"
                                   EnableAutoPlay="true"
                                   NavigationDelay="2000"
-                                  />
+                                  >
+            </syncfusion:SfRotator>
 
             <ListView ItemsSource="{Binding HomePageSource}" HorizontalOptions="Start" VerticalOptions="Start" CachingStrategy = "RecycleElement"
                       HasUnevenRows="True" SeparatorVisibility="None"  BackgroundColor="{StaticResource GreyPageColor}" ItemSelected="ItemSelected" >
