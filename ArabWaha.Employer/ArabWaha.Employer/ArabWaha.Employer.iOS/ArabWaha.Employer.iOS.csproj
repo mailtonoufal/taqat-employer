@@ -145,6 +145,7 @@
       <SubType>Designer</SubType>
     </None>
     <EmbeddedResource Include="Resources\employerdb.db3" />
+    <Compile Include="Renders\LineEntryRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />

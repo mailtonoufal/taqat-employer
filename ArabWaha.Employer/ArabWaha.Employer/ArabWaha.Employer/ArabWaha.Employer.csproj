@@ -274,6 +274,7 @@
       <DependentUpon>StartPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="YourAppBootstrapper.cs" />
+    <Compile Include="Controls\LineEntry.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">

@@ -12,6 +12,8 @@
             <c:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
 
 
+            <Thickness x:Key="MediumTopMargin">0,10,0,0</Thickness>
+            <Thickness x:Key="SmallTopMargin">0,10,0,0</Thickness>
             
             <Color x:Key="primary">#03A9F4</Color>
             <Color x:Key="primary_dark">#0288D1</Color>

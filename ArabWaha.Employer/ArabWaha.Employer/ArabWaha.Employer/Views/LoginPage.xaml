@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:controls="clr-namespace:ArabWaha.Employer;assembly=ArabWaha.Employer"                          
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              xmlns:gb="clr-namespace:ArabWaha.Employer"                                    
              prism:ViewModelLocator.AutowireViewModel="True"
@@ -20,7 +21,7 @@
 
 
 
-        <Grid VerticalOptions="Fill" RowSpacing="12">
+        <Grid VerticalOptions="Fill">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="40" />
@@ -37,44 +38,44 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Image Source="LogoNew.png"  Grid.Row="0" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="140"  Aspect="AspectFit" VerticalOptions="Center" />
-            <Label Text="{lEx:Translate ButtonSignIn}" Grid.Row ="1" VerticalOptions="EndAndExpand" HorizontalOptions="End" 
+            <Image Margin="{StaticResource MediumTopMargin}" Source="LogoNew.png"  Grid.Row="0" HorizontalOptions="CenterAndExpand" HeightRequest="90" WidthRequest="140"  Aspect="AspectFit" VerticalOptions="Center" />
+            <Label Margin="{StaticResource MediumTopMargin}" Text="{lEx:Translate ButtonSignIn}" Grid.Row ="1" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" 
 				   HorizontalTextAlignment="{Binding AlignText}" Style="{StaticResource HeaderTextMediumWhite}" FontSize="24"/>
 
-             <Label Text="Username" Grid.Row ="2" VerticalOptions="EndAndExpand" HorizontalOptions="End"
-                   HorizontalTextAlignment="End" TextColor="#668CBA" FontSize="12" />
+             <Label Margin="{StaticResource MediumTopMargin}" Text="Username" Grid.Row ="2" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="{Binding AlignText}" TextColor="#668CBA" FontSize="12" />
 
-            <Entry  Text="{Binding UserName}" Placeholder="{lEx:Translate LoginEnterUsername}" Grid.Row="3" Style="{StaticResource WhiteTextEntry}"
-					HorizontalOptions="End"  HorizontalTextAlignment="{Binding AlignText}"   FontSize="13"	/>
+            <controls:LineEntry  Text="{Binding UserName}" Placeholder="{lEx:Translate LoginEnterUsername}" Grid.Row="3" Style="{StaticResource WhiteTextEntry}"
+					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{Binding AlignText}"   FontSize="13"	/>
 
-             <Label Text="Password" Grid.Row ="4" VerticalOptions="EndAndExpand" HorizontalOptions="End"
-                   HorizontalTextAlignment="End" TextColor="#668CBA" FontSize="12"/>
+             <Label Text="Password" Margin="{StaticResource MediumTopMargin}" Grid.Row ="4" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="{Binding AlignText}" TextColor="#668CBA" FontSize="12"/>
 
-            <Entry Text="{Binding Password}" Placeholder="{lEx:Translate LoginEnterPassword}" HorizontalOptions="End"  
+            <controls:LineEntry  Text="{Binding Password}" Placeholder="{lEx:Translate LoginEnterPassword}" HorizontalOptions="FillAndExpand"  
 				   HorizontalTextAlignment="{Binding AlignText}"  Style="{StaticResource WhiteTextEntry}"
 				   Grid.Row="5" IsPassword="true" FontSize="13" />
 
-            <StackLayout Grid.Row="6" Padding="5,5,5,5" >
+            <StackLayout Grid.Row="6" Margin="{StaticResource MediumTopMargin}" >
                 <Button  HorizontalOptions= "FillAndExpand" VerticalOptions="FillAndExpand" 
 						Text="{lEx:Translate ButtonSignIn}" Command="{Binding SignInCommand}"   Style="{StaticResource GreenButton}" />
             </StackLayout>
 
 
-            <Label  Grid.Row="7" Text="{lEx:Translate LoginForgotPassword}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
+            <Label Margin="{StaticResource MediumTopMargin}"  Grid.Row="7" Text="{lEx:Translate LoginForgotPassword}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
                     TextColor="#668CBA" Style="{StaticResource LoginPageTextStyle}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding LostPasswordCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>
             </Label>
 
-            <Label  Grid.Row="8" Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
+            <Label Margin="{StaticResource MediumTopMargin}" Grid.Row="8" Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
                     TextColor="#668CBA" Style="{StaticResource LoginPageTextStyle}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GuestCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>
             </Label>
 
-            <Label  Grid.Row="9" Text="{lEx:Translate LoginNoAccountSignup}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
+            <Label Margin="{StaticResource MediumTopMargin}" Grid.Row="9" Text="{lEx:Translate LoginNoAccountSignup}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
                     TextColor="#668CBA" Style="{StaticResource LoginPageTextStyle}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SignupCommand}" NumberOfTapsRequired="1" />
