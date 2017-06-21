@@ -2,7 +2,8 @@
 <local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             xmlns:gb="clr-namespace:ArabWaha.Employer"
+             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
+			 xmlns:tr="clr-namespace:ArabWaha.Employer"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
@@ -11,67 +12,52 @@
              Style="{StaticResource BluePage}"             
              NavigationPage.HasBackButton="False"
              x:Name="this"
-                           >
+			 NavigationPage.HasNavigationBar="false">
 
-  <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"    >
+  <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
     <awc:AWHeader  MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
 
 
       <Grid Padding="20,0,20,0" >
             <Grid.RowDefinitions>
-                <RowDefinition Height="25" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="100" />
-            <RowDefinition Height="15" />
-            <RowDefinition Height="40" />
-                <RowDefinition Height="40" />
+                <RowDefinition Height="70" />
                 <RowDefinition Height="*" />
-                <RowDefinition Height="5" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+             <RowDefinition Height="*" />
+                 <RowDefinition Height="25" />
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="20" />
-        </Grid.ColumnDefinitions>
+         
 
-        <Image Source="Logo.png" Grid.Row="1" Grid.Column="1" HeightRequest="50" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Center" />
+        <Image Source="Logo.png" Grid.Row="0" HeightRequest="40" Aspect="AspectFit" VerticalOptions="End" HorizontalOptions="Center" />
+        <Label Text="{lEx:CMSTranslate guestlbldesc}" HorizontalTextAlignment="Center"
+                   Grid.Row ="1" VerticalOptions="Center" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Start"
+               Style="{StaticResource InfoBodyTextSmall}" Margin="0,15,0,0"/>
 
-        <Label Text="{lEx:Translate LabelSearchWelcomeText}" HorizontalTextAlignment="Center"
-                   Grid.Row ="2" Grid.Column="1" VerticalOptions="Start" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Start"
-               Style="{StaticResource InfoBodyTextSmall}" />
-
-        <SearchBar x:Name="txtSearch" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Placeholder="{lEx:Translate LabelSearchJobsText}" HorizontalOptions="FillAndExpand" VerticalOptions="End" 
+        <SearchBar x:Name="txtSearch" Grid.Row="2" Margin="0,15,0,0"  Placeholder="{lEx:CMSTranslate guesttxbsearch}" HorizontalOptions="FillAndExpand" VerticalOptions="End" 
                    Text="{Binding SearchText,Mode=TwoWay}" SearchCommand="{Binding SearchCommand}"  HorizontalTextAlignment="Center" 
                    Style="{StaticResource SearchBarCustomStyle}"   />
 
-        <SearchBar  x:Name="txtLocation" Grid.Row="5"  Grid.Column="0" Grid.ColumnSpan="3"  Placeholder="{lEx:Translate LabelSearchLocationText}" HorizontalOptions="FillAndExpand" 
-                    VerticalOptions="End"  Text="{Binding SearchLocation,Mode=TwoWay}" HorizontalTextAlignment="Center" 
+        <SearchBar   x:Name="txtLocation" Grid.Row="3" Margin="0,5,0,0"  Placeholder="{lEx:Translate guesttxblocation}" HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="Start"  Text="{Binding SearchLocation,Mode=TwoWay}" HorizontalTextAlignment="Center" 
                     Style="{StaticResource SearchBarCustomStyle}"
-                    SearchCommand="{Binding SearchCommand}"   />
+                    SearchCommand="{Binding SearchCommand}" />
 
 
-        <StackLayout VerticalOptions="EndAndExpand" Grid.Row="6" Orientation="Vertical"  Grid.Column="0" Grid.ColumnSpan="3" >
+        <StackLayout VerticalOptions="Start" Grid.Row="4" Orientation="Vertical">
 
-            <Grid>
+            <Grid >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="5" />
-                    <RowDefinition Height="50" />
-                    <RowDefinition Height="20" />
+                    <RowDefinition Height="30" />
                     <RowDefinition Height="20" />
                 </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="20" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="20" />
-                </Grid.ColumnDefinitions>
-
+               
             </Grid>
-            <Button  Grid.Row="1" Grid.Column="1" HorizontalOptions= "FillAndExpand" VerticalOptions="Center" Command="{Binding SearchCommand}"
-						Text="{lEx:Translate SearchText}" Style="{StaticResource GreenButton}" />
-
-
-            <Label Grid.Row="3" Grid.Column="1"  Text="{lEx:Translate SearchAlreadyHaveAccount}" VerticalOptions="EndAndExpand" VerticalTextAlignment="End"
-                    HorizontalOptions="CenterAndExpand" TextColor="Gray" FontSize="12"  >
+            <Button  Grid.Row="0" HorizontalOptions= "FillAndExpand" VerticalOptions="Center" Command="{Binding SearchCommand}"
+                        Text="{lEx:CMSTranslate guestbtnsearch}" Style="{StaticResource GreenButton}" Margin="0,0,0,15"/>
+                    
+            <Label Grid.Row="1"  Text="{lEx:CMSTranslate guestbtnsignin}" VerticalOptions="Start" VerticalTextAlignment="End"
+                    HorizontalOptions="CenterAndExpand" TextColor="Gray" FontSize="12" Margin="0,0,0,15">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SignInCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>

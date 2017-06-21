@@ -4,7 +4,7 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     xmlns:controls="clr-namespace:ArabWaha.Employer;assembly=ArabWaha.Employer"                          
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
-             xmlns:gb="clr-namespace:ArabWaha.Employer"                                    
+             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"                                    
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.LoginPage"
              Style="{StaticResource BluePage}"
@@ -42,13 +42,13 @@
             <Label Margin="{StaticResource MediumTopMargin}" Text="{lEx:Translate ButtonSignIn}" Grid.Row ="1" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" 
 				   HorizontalTextAlignment="{Binding AlignText}" Style="{StaticResource HeaderTextMediumWhite}" FontSize="24"/>
 
-             <Label Margin="{StaticResource MediumTopMargin}" Text="Username" Grid.Row ="2" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"
+             <Label Margin="{StaticResource MediumTopMargin}" Text="{lEx:Translate Username}" Grid.Row ="2" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="{Binding AlignText}" TextColor="#668CBA" FontSize="12" />
 
             <controls:LineEntry  Text="{Binding UserName}" Placeholder="{lEx:Translate LoginEnterUsername}" Grid.Row="3" Style="{StaticResource WhiteTextEntry}"
 					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{Binding AlignText}"   FontSize="13"	/>
 
-             <Label Text="Password" Margin="{StaticResource MediumTopMargin}" Grid.Row ="4" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"
+             <Label Text="{lEx:Translate Password}" Margin="{StaticResource MediumTopMargin}" Grid.Row ="4" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="{Binding AlignText}" TextColor="#668CBA" FontSize="12"/>
 
             <controls:LineEntry  Text="{Binding Password}" Placeholder="{lEx:Translate LoginEnterPassword}" HorizontalOptions="FillAndExpand"  

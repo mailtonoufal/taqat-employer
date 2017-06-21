@@ -9,9 +9,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.Views.Menus
 {
