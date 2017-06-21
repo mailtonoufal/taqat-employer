@@ -14,51 +14,10 @@ using ArabWaha.Employer.Views.Settings;
 using System.Diagnostics;
 using ArabWaha.Models;
 using NStackPortable;
+using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer
 {
-    public static class GlobalSetting
-    {
-        public static string CultureCode { get; set; }
-        public static LayoutAlignment AlignLabel { get; set; }
-        public static LayoutAlignment AlignData { get; set; }
-
-        public static TextAlignment AlignText { get; set; }
-        public static TextAlignment AlignLabelText { get; set; }
-
-        public static LayoutOptions HorizontalLayoutOptions { get; set; }
-
-        public static bool IsArabic { get; set; }
-        public static bool IsEnglish { get; set; }
-
-
-        public static void SetupCulture()
-        {
-            ApiService svr = new ApiService();
-            GlobalSetting.CultureCode = svr.GetCurrentCulture();
-            GlobalSetting.AlignLabel = GlobalSetting.CultureCode == "ar" ? LayoutAlignment.End : LayoutAlignment.Start;
-            GlobalSetting.AlignData = GlobalSetting.CultureCode == "ar" ? LayoutAlignment.Start : LayoutAlignment.End;
-            GlobalSetting.HorizontalLayoutOptions = GlobalSetting.CultureCode == "ar" ? LayoutOptions.EndAndExpand : LayoutOptions.StartAndExpand;
-
-            GlobalSetting.AlignText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End : TextAlignment.Start;
-            GlobalSetting.AlignLabelText = GlobalSetting.CultureCode == "ar" ? TextAlignment.End : TextAlignment.Start;
-
-            GlobalSetting.IsArabic = GlobalSetting.CultureCode == "ar" ? true : false;
-            GlobalSetting.IsEnglish = !IsArabic;
-
-
-        }
-
-        #region well hacky till i fix this correctly for view cell items
-
-        public static int LabelColumn { get; set; }
-        public static int DataColumn { get; set; }
-        public static int ImageColumn { get; set; }
-
-
-        #endregion
-    }
-
 
     public partial class App : PrismApplication
     {
@@ -100,8 +59,8 @@ namespace ArabWaha.Employer
         {
             try
             {
-                await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
-                //await NavigationService.NavigateAsync($"NavigationPage/{nameof(HomePage)}");
+                //await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
+                await NavigationService.NavigateAsync($"NavigationPage/{nameof(HomePage)}");
             }
             catch (Exception ex)
             {

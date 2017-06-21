@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
             xmlns:local="clr-namespace:ArabWaha.Employer.Controls"
             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"  
-             xmlns:gb="clr-namespace:ArabWaha.Employer"
+             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
             xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"   
             x:Class="ArabWaha.Employer.Layouts.ApplicationsView">
   <ContentView.Content>
