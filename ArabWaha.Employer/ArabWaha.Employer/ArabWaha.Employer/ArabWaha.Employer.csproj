@@ -275,6 +275,7 @@
     </Compile>
     <Compile Include="YourAppBootstrapper.cs" />
     <Compile Include="StaticData\GlobalSetting.cs" />
+    <Compile Include="Helpers\CMSTranslateExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">

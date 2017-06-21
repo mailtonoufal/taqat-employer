@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
+			 xmlns:tr="clr-namespace:ArabWaha.Employer"
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
@@ -11,7 +12,7 @@
              Style="{StaticResource BluePage}"             
              NavigationPage.HasBackButton="False"
              x:Name="this"
-	NavigationPage.HasNavigationBar="false"     >
+			 NavigationPage.HasNavigationBar="false">
 
   <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
     <awc:AWHeader  MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
@@ -29,15 +30,15 @@
          
 
         <Image Source="Logo.png" Grid.Row="0" HeightRequest="40" Aspect="AspectFit" VerticalOptions="End" HorizontalOptions="Center" />
-        <Label Text="{lEx:Translate LabelSearchWelcomeText}" HorizontalTextAlignment="Center"
+        <Label Text="{lEx:CMSTranslate guestlbldesc}" HorizontalTextAlignment="Center"
                    Grid.Row ="1" VerticalOptions="Center" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Start"
                Style="{StaticResource InfoBodyTextSmall}" Margin="0,15,0,0"/>
 
-        <SearchBar x:Name="txtSearch" Grid.Row="2" Margin="0,15,0,0"  Placeholder="{lEx:Translate LabelSearchJobsText}" HorizontalOptions="FillAndExpand" VerticalOptions="End" 
+        <SearchBar x:Name="txtSearch" Grid.Row="2" Margin="0,15,0,0"  Placeholder="{lEx:CMSTranslate guesttxbsearch}" HorizontalOptions="FillAndExpand" VerticalOptions="End" 
                    Text="{Binding SearchText,Mode=TwoWay}" SearchCommand="{Binding SearchCommand}"  HorizontalTextAlignment="Center" 
                    Style="{StaticResource SearchBarCustomStyle}"   />
 
-        <SearchBar   x:Name="txtLocation" Grid.Row="3" Margin="0,5,0,0"  Placeholder="{lEx:Translate LabelSearchLocationText}" HorizontalOptions="FillAndExpand" 
+        <SearchBar   x:Name="txtLocation" Grid.Row="3" Margin="0,5,0,0"  Placeholder="{lEx:Translate guesttxblocation}" HorizontalOptions="FillAndExpand" 
                     VerticalOptions="Start"  Text="{Binding SearchLocation,Mode=TwoWay}" HorizontalTextAlignment="Center" 
                     Style="{StaticResource SearchBarCustomStyle}"
                     SearchCommand="{Binding SearchCommand}" />
@@ -53,9 +54,9 @@
                
             </Grid>
             <Button  Grid.Row="0" HorizontalOptions= "FillAndExpand" VerticalOptions="Center" Command="{Binding SearchCommand}"
-                        Text="{lEx:Translate SearchText}" Style="{StaticResource GreenButton}" Margin="0,0,0,15"/>
+                        Text="{lEx:CMSTranslate guestbtnsearch}" Style="{StaticResource GreenButton}" Margin="0,0,0,15"/>
                     
-            <Label Grid.Row="1"  Text="{lEx:Translate SearchAlreadyHaveAccount}" VerticalOptions="Start" VerticalTextAlignment="End"
+            <Label Grid.Row="1"  Text="{lEx:CMSTranslate guestbtnsignin}" VerticalOptions="Start" VerticalTextAlignment="End"
                     HorizontalOptions="CenterAndExpand" TextColor="Gray" FontSize="12" Margin="0,0,0,15">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SignInCommand}" NumberOfTapsRequired="1" />
