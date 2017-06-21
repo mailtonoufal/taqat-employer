@@ -59,8 +59,8 @@ namespace ArabWaha.Employer
         {
             try
             {
-                //await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
-                await NavigationService.NavigateAsync($"NavigationPage/{nameof(HomePage)}");
+                await NavigationService.NavigateAsync($"NavigationPage/{nameof(StartPage)}");
+                //await NavigationService.NavigateAsync($"NavigationPage/{nameof(HomePage)}");
             }
             catch (Exception ex)
             {

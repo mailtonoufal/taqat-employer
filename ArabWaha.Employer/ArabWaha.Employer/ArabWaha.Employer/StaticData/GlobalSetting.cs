@@ -15,7 +15,7 @@ namespace ArabWaha.Employer.StaticData
 			ApiService svr = new ApiService();
 			CultureCode = svr.GetCurrentCulture();
 
-			IsArabic = CultureCode != "ar";
+			IsArabic = CultureCode == "ar";
 			IsEnglish = !IsArabic;
 		}
 
