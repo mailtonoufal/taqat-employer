@@ -152,11 +152,13 @@ namespace ArabWaha.Employer.ViewModels
 
 			_ctrl.SetSearchVisible(true);
 
+
+
 			TranslateExtension tran = new TranslateExtension();
-			string _Home = tran.GetProviderValueString("MenuHome");
-			string _JobPosts = tran.GetProviderValueString("MenuJobPosts");
-			string _Programs = tran.GetProviderValueString("MenuPrograms");
-			string _Services = tran.GetProviderValueString("MenuServices");
+			string _Home = App.Translation.employer.homelblhome;// tran.GetProviderValueString("MenuHome");
+			string _JobPosts = App.Translation.employer.homelbljobposts;// tran.GetProviderValueString("MenuJobPosts");
+			string _Programs = App.Translation.employer.homelblprograms;// tran.GetProviderValueString("MenuPrograms");
+			string _Services = App.Translation.employer.homelblservices;// tran.GetProviderValueString("MenuServices");
 
 			if (GlobalSetting.IsEnglish)
 			{
