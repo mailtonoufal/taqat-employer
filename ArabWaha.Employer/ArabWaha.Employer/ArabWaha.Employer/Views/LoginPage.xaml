@@ -41,13 +41,13 @@
             <Label Text="{lEx:Translate ButtonSignIn}" Grid.Row ="1" VerticalOptions="EndAndExpand" HorizontalOptions="End" 
 				   HorizontalTextAlignment="{Binding AlignText}" Style="{StaticResource HeaderTextMediumWhite}" FontSize="24"/>
 
-             <Label Text="Username" Grid.Row ="2" VerticalOptions="EndAndExpand" HorizontalOptions="End"
+             <Label Text="{lEx:Translate Username}" Grid.Row ="2" VerticalOptions="EndAndExpand" HorizontalOptions="End"
                    HorizontalTextAlignment="End" TextColor="#668CBA" FontSize="12" />
 
             <Entry  Text="{Binding UserName}" Placeholder="{lEx:Translate LoginEnterUsername}" Grid.Row="3" Style="{StaticResource WhiteTextEntry}"
 					HorizontalOptions="End"  HorizontalTextAlignment="{Binding AlignText}"   FontSize="13"	/>
 
-             <Label Text="Password" Grid.Row ="4" VerticalOptions="EndAndExpand" HorizontalOptions="End"
+             <Label Text="{lEx:Translate Password}" Grid.Row ="4" VerticalOptions="EndAndExpand" HorizontalOptions="End"
                    HorizontalTextAlignment="End" TextColor="#668CBA" FontSize="12"/>
 
             <Entry Text="{Binding Password}" Placeholder="{lEx:Translate LoginEnterPassword}" HorizontalOptions="End"  

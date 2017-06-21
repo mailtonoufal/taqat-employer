@@ -1031,4 +1031,12 @@
   <data name="LabelButtonLogOutText" xml:space="preserve">
     <value>الخروج</value>
   </data>
+
+
+	 <data name="Username" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+	 <data name="Password" xml:space="preserve">
+    <value>كلمه السر</value>
+  </data>
 </root>

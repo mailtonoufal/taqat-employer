@@ -41,6 +41,11 @@ namespace ArabWaha.Employer.StaticData
 		public static string HomeJobImgColNo { get { return IsArabic ? "3" : "1"; } }
 		public static string HomeJobLabelColNo { get { return IsArabic ? "1" : "3"; } }
 
+        public static string HomeProgImgColNo { get { return IsArabic ? "2" : "1"; } }
+        public static string HomeProgLabelColNo { get { return IsArabic ? "1" : "2"; } }
+		public static GridLength HomeProgFirstColWidth { get { return IsArabic ? new GridLength(1, GridUnitType.Star) : new GridLength(55, GridUnitType.Absolute); } }
+		public static GridLength HomeProgThirdColWidth { get { return IsArabic ? new GridLength(55, GridUnitType.Absolute) : new GridLength(1, GridUnitType.Star); } }
+
 		#endregion
 	}
 }
