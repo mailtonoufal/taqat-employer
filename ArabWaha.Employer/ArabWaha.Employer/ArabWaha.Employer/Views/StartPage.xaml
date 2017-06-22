@@ -33,15 +33,16 @@
                             <ColumnDefinition Width="5" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Grid.Row="1" Grid.Column="1"  Grid.ColumnSpan="2" Text="{lEx:Translate WelcomeTitle}"   HorizontalTextAlignment="End" HorizontalOptions="FillAndExpand" 
+                        <Label Grid.Row="1" Grid.Column="1"  Grid.ColumnSpan="2" Text="{lEx:Translate WelcomeTitle}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" HorizontalOptions="FillAndExpand" 
                                             Style="{StaticResource HeaderTextLargeWhite}" />
-                        <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="{lEx:Translate LabelSearchWelcomeText}" HorizontalOptions="EndAndExpand"   HorizontalTextAlignment="End"                                       
+                        <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="{lEx:Translate LabelSearchWelcomeText}" HorizontalOptions="EndAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"                                      
                                                Style="{StaticResource InfoBodyTextSmall}" />
 
 
-                        <Label Grid.Row="3" Grid.Column="1"  Text="{lEx:Translate LabelStartPageSkip}" 
-                                           VerticalOptions="End" HorizontalOptions="Start" 
-                                           Style="{StaticResource InfoBodyTextGraySmall}"  >
+                        <Label Grid.Row="3"   Text="{lEx:Translate LabelStartPageSkip}" 
+                                           VerticalOptions="End"  
+                                           Style="{StaticResource InfoBodyTextGraySmall}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}"  HorizontalOptions="{x:Static gb:GlobalSetting.SkipLayoutOptions}"
+                            Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}">
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer
                                                 Command="{Binding Path=BindingContext.SkipCommand, Source={x:Reference AppPage}}"
@@ -59,8 +60,7 @@
                         <Grid.ColumnDefinitions>
                             
                             <ColumnDefinition Width="5" />
-                            <ColumnDefinition Width=".5*" />
-                            <ColumnDefinition Width=".5*" />
+                            <ColumnDefinition Width="1*" />
                             <ColumnDefinition Width="5" />
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
@@ -72,21 +72,35 @@
                             <RowDefinition Height="20" />
                         </Grid.RowDefinitions>
 
-                        <Label Text="{lEx:Translate ButtonSignIn}" HorizontalOptions="End" Style="{StaticResource HeaderTextLargeWhite}" Grid.Row="1" Grid.Column="2" />
-                        <Label Text="{lEx:Translate WelcomeEmployerSignin}" HorizontalOptions="End" HorizontalTextAlignment="End"  
-                   Style="{StaticResource InfoBodyTextSmall}"  Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1" />
+                        <Label Text="{lEx:Translate ButtonSignIn}"  Style="{StaticResource HeaderTextLargeWhite}" Grid.Row="1" Grid.Column="1"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" HorizontalOptions="FillAndExpand"/>
+                        <Label Text="{lEx:Translate WelcomeEmployerSignin}"    
+                   Style="{StaticResource InfoBodyTextSmall}"  Grid.Row="2"  Grid.Column="1" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" HorizontalOptions="FillAndExpand"/>
 
-                        <Button Grid.Row="3" Grid.Column="1" Text="{lEx:Translate StartMoLLogin}" HorizontalOptions="FillAndExpand"  
-                            Command="{Binding Path=BindingContext.SignInExternalCommand, Source={x:Reference AppPage}}"  Style="{StaticResource GreenButtonMediumText}" />
-                        <Button Grid.Row="3" Grid.Column="2" Text="{lEx:Translate StartNLGLogin}" HorizontalOptions="FillAndExpand"  
-                            Command="{Binding Path=BindingContext.SignInCommand, Source={x:Reference AppPage}}"  Style="{StaticResource GreenButtonMediumText}" />
+
+                        
+                    <Grid Grid.Row="3" Grid.Column="1" ColumnSpacing="5">
+                             <Grid.ColumnDefinitions >
+                            
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Text="{lEx:Translate StartMoLLogin}" HorizontalOptions="FillAndExpand"  
+                            Command="{Binding Path=BindingContext.SignInExternalCommand, Source={x:Reference AppPage}}"  Style="{StaticResource GreenButtonMediumText}" Grid.Column="{x:Static gb:GlobalSetting.HomeStartImgColNo}"/>
+                        <Button Text="{lEx:Translate StartNLGLogin}" HorizontalOptions="FillAndExpand"  
+                            Command="{Binding Path=BindingContext.SignInCommand, Source={x:Reference AppPage}}"  Style="{StaticResource GreenButtonMediumText}" Grid.Column="{x:Static gb:GlobalSetting.HomeStartLabelColNo}"/>
+
+                    </Grid>
+
+
+
 
                         <Button  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="{lEx:Translate LoginNoAccountSignup}" 
                             HorizontalOptions="FillAndExpand"  Command="{Binding Path=BindingContext.SignUpCommand, Source={x:Reference AppPage}}" FontSize="12"
                             BackgroundColor="Transparent" TextColor="White" HeightRequest="40" BorderColor="Silver" BorderWidth="1" />
 
-                        <Label Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="End" Grid.Row="5" Grid.Column="1"  
-                   HorizontalOptions="Start" Style="{StaticResource InfoBodyTextGraySmall}"  >
+                        <Label Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="End" Grid.Row="5"   
+                    Style="{StaticResource InfoBodyTextGraySmall}"   Grid.Column="1" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}">
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer
                                             Command="{Binding Path=BindingContext.ContinueAsGuestCommand, Source={x:Reference AppPage}}"

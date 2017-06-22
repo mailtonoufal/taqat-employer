@@ -20,7 +20,9 @@ namespace ArabWaha.Models
         [JsonProperty("programRequirements")]
         public string ProgramRequirements { get; set; }
 
-        [JsonProperty("status")]
+		
+
+		[JsonProperty("status")]
         public string Status { get; set; }
 
         [JsonProperty("title")]
@@ -56,5 +58,14 @@ namespace ArabWaha.Models
 
 		[JsonProperty("code")]
 		public string Code { get; set; }
-    }
+
+		
+
+        [JsonProperty("programImage")]
+		public string ProgImage { get; set; }
+
+		[JsonProperty("programImageName")]
+		public string ProgImgName { get; set; }
+
+	}
 }

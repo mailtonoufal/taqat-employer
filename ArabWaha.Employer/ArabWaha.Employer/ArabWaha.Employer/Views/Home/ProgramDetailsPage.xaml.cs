@@ -17,5 +17,7 @@ namespace ArabWaha.Employer.Views.Home
                 Debug.WriteLine("ERROR:" + ex.Message);
             }
         }
+
+
     }
 }

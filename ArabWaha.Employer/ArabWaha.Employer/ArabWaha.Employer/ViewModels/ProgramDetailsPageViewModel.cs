@@ -23,6 +23,18 @@ namespace ArabWaha.Employer.ViewModels
             _dialog = dialog;
 
             RegServiceCommand = new DelegateCommand(ProcessRegServiceCommand);
+
+            ProgImage = "Saned.png";
+            ProgImgName = "Saned";
+
+            IsBenefitVisible = true;
+            IsBeneficiariesVisible = true;
+            HowToRegister = true;
+            ProgramIntroduction = true;
+            WhocanBenefit = true;
+
+
+
         }
 
         private EmployerProgram _programDetails;
@@ -32,6 +44,7 @@ namespace ArabWaha.Employer.ViewModels
             get { return _programDetails; }
             set { SetProperty<EmployerProgram>(ref _programDetails, value); }
         }
+
 
 
         public void OnNavigatedFrom(NavigationParameters parameters)
@@ -68,5 +81,59 @@ namespace ArabWaha.Employer.ViewModels
                 Debug.WriteLine("ERROR:" + ex.Message);
             }
         }
-    }
+
+       
+        private string _progImage;
+        public string ProgImage
+		{
+            get { return _progImage; }
+            set { SetProperty<string>(ref _progImage, value); }
+		}
+
+		private string _progImgName;
+		public string ProgImgName
+		{
+            get { return _progImgName; }
+            set { SetProperty<string>(ref _progImgName, value); }
+		}
+
+        private bool _isBenefitVisible;
+        public bool IsBenefitVisible
+		{
+			get { return _isBenefitVisible; }
+            set { SetProperty<bool>(ref _isBenefitVisible, value); }
+		}
+
+
+		private bool _isBeneficiariesVisible;
+		public bool IsBeneficiariesVisible
+		{
+			get { return _isBenefitVisible; }
+			set { SetProperty<bool>(ref _isBeneficiariesVisible, value); }
+		}
+
+		private bool _howToRegister;
+		public bool HowToRegister
+		{
+			get { return _howToRegister; }
+			set { SetProperty<bool>(ref _howToRegister, value); }
+		}
+		private bool _programIntroduction;
+		public bool ProgramIntroduction
+		{
+			get { return _programIntroduction; }
+			set { SetProperty<bool>(ref _programIntroduction, value); }
+		}
+
+        private bool _whocanBenefit;
+        public bool WhocanBenefit
+		{
+			get { return _whocanBenefit; }
+            set { SetProperty<bool>(ref _whocanBenefit, value); }
+		}
+
+	
+
+
+	}
 }

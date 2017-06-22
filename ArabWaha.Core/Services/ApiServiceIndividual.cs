@@ -753,9 +753,10 @@ namespace ArabWaha.Core.Services
         public static List<Program> getProgramList()
         {
             // programs
+
             var progSource = new List<Program>
             {
-
+              
                 new Program {ProgramId=1, Status="Open", ProgramName="Job Commitment Bonus" ,
                 Description="When registered to the Job Commitment Bonus Program, newly employed Saudi nationals who have already enrolled in Hafiz Searching for Employment, in Hafiz Difficulty Finding Employment, or in Employment Support can now benefit from cash rewards.\nThe amount of the reward is calculated based on a number of criteria, with individuals belonging to one of 4 different groups - each group is eligible to receive a different level of rewards over a different amount of time. The plans vary between 3 and 4 installments, over the course of 2 years and for a full cash amount that can reach up to 24, 000 SAR.",
                 WhoCanBenefit="Individuals’ portfolios are divided into 4 groups with settlement of cash reward plan detailed as per the specifics and table below. For ease of calculation, job seekers can visit the following link.",
