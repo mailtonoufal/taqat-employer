@@ -1034,4 +1034,10 @@
   <data name="LabelButtonLogOutText" xml:space="preserve">
     <value>Log Out</value>
   </data>
+
+
+
+	 <data name="LabelProgramsWhocanBenefitText" xml:space="preserve">
+    <value>Who can Benefit?</value>
+  </data>
 </root>

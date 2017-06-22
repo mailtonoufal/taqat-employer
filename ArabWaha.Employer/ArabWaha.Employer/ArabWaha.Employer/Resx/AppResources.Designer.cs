@@ -1768,5 +1768,11 @@ namespace ArabWaha.Employer.Resx {
                 return ResourceManager.GetString("LabelButtonLogOutText", resourceCulture);
             }
         }
+        
+        internal static string LabelProgramsWhocanBenefitText {
+            get {
+                return ResourceManager.GetString("LabelProgramsWhocanBenefitText", resourceCulture);
+            }
+        }
     }
 }

@@ -152,7 +152,7 @@ namespace ArabWaha.Employer
 
                     var cachedAppOpen = await NStack<Translation>.Instance().Load("fallback.json");
 
-                    var appOpen = await NStack<Translation>.Instance().AppOpenProvider.Update("ar-SA");
+					var appOpen = await NStack<Translation>.Instance().AppOpenProvider.Update(GlobalSetting.IsEnglish ? "en" : "ar-SA");
 
                     Translation = appOpen?.Data?.Translate != null ? appOpen.Data.Translate : cachedAppOpen.Data.Translate;
                     nstackCalled = true;

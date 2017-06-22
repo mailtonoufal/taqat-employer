@@ -283,6 +283,16 @@
 			public string jobpostsdetbtnmatchingcandidates { get; set; }
 			public string jobpostsdetlbleditjobpost { get; set; }
 			public string jobpostsdetlbldeletejobpost { get; set; }
+
+			public string jobpostlistbtnedit { get; set; }
+			public string jobpostlistbtndelete { get; set; }
+			public string jobpostlistbtnadd { get; set; }
+			public string jobpostlistbtnview { get; set; }
+			public string jobswatchlisttabtitle { get; set; }
+			public string jobswatchlisbtnapply { get; set; }
+
+
+
 		}
 
 		public Questionary questionary { get; set; }

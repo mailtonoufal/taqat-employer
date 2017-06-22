@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <StackLayout xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="ArabWaha.Employer.Controls.XpertAccordion"
+    xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
              Margin="5,5,5,0"
              x:Name="this"
              >
@@ -15,7 +16,7 @@
             <Grid HorizontalOptions="FillAndExpand"  ColumnSpacing="0" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5" />
-                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="24" />
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="24" />
                     <ColumnDefinition Width="5" />
@@ -25,13 +26,14 @@
                     <RowDefinition Height="1" />
                 </Grid.RowDefinitions>
                 
-                <Label x:Name="TextExpanded" Grid.Row="0" Grid.Column="1" TextColor="Black"  HorizontalOptions="CenterAndExpand" Text="-" 
-                       VerticalTextAlignment="Center"  FontSize="Medium" FontAttributes="Bold"/>
-                <Label x:Name="TextHeader"  Grid.Row="0" Grid.Column="2"  TextColor="Black"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" 
+                <Label x:Name="TextExpanded" Grid.Row="0"  TextColor="Black"  HorizontalOptions="CenterAndExpand" Text="-" 
+                       VerticalTextAlignment="Center"  FontSize="Medium" FontAttributes="Bold"   Grid.Column="{x:Static gb:GlobalSetting.HomeJobLabelColNo }" />
+                <Label x:Name="TextHeader"  Grid.Row="0" Grid.Column="2"  TextColor="Black"  HorizontalOptions="FillAndExpand" 
                        VerticalTextAlignment="Center" FontSize="Small" FontAttributes="Bold" 
-                       Text="{Binding HeaderText, Source={x:Reference this}}" 
-                       />
-                <Image x:Name="IconImage"  Grid.Row="0" Grid.Column="3" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" HorizontalOptions="End" VerticalOptions="EndAndExpand" />
+                       Text="{Binding HeaderText, Source={x:Reference this}}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"
+                       VerticalOptions="Center" Margin="10,5,10,0"/>
+              
+                <Image x:Name="IconImage"  Grid.Row="0"   Grid.Column="{x:Static gb:GlobalSetting.HomeJobImgColNo }"  Aspect="AspectFit" HeightRequest="24" WidthRequest="24" HorizontalOptions="End" VerticalOptions="EndAndExpand" />
                 <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" HeightRequest="1" Color="Silver" HorizontalOptions="FillAndExpand"/>
 
             </Grid>

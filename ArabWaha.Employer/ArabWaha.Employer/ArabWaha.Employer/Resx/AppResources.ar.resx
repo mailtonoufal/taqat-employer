@@ -1039,4 +1039,8 @@
 	 <data name="Password" xml:space="preserve">
     <value>كلمه السر</value>
   </data>
+
+	 <data name="LabelProgramsWhocanBenefitText" xml:space="preserve">
+    <value>من يمكنه الاستفادة؟</value>
+  </data>
 </root>
