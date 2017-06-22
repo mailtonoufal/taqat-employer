@@ -9,7 +9,7 @@
 	
   <ContentView.Content>
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}" >
-            <Button Text="{lEx:Translate ButtonAddNewPost}" Style="{StaticResource GreenButtonFlat}" Margin="1" Command="{Binding AddNewJobCommand}"  />
+            <Button Text="{lEx:CMSTranslate jobpostlistbtnadd}" Style="{StaticResource GreenButtonFlat}" Margin="1" Command="{Binding AddNewJobCommand}"  />
             <ListView x:Name="ParentListView" ItemsSource="{Binding JobPageSource}" 
                       HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
                       HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="{StaticResource GreyPageColor}" ItemSelected="ItemSelected" >
@@ -18,12 +18,12 @@
                         <!--<locals:HomeJobCustomViewCell />-->
                         <ViewCell x:Name="myCell" >
                             <ViewCell.ContextActions>
-                                <MenuItem Text="{lEx:Translate MenuDelete}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
+                                <MenuItem Text="{lEx:CMSTranslate jobpostlistbtndelete}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
                                       Command="{Binding DeleteJobCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}" 
                                       IsDestructive="True"  />
-                                <MenuItem Text="{lEx:Translate MenuEdit}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
+                                <MenuItem Text="{lEx:CMSTranslate jobpostlistbtnedit}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
                                           Command="{Binding EditJobCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}"  />
-                                <MenuItem Text="{lEx:Translate MenuView}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
+                                <MenuItem Text="{lEx:CMSTranslate jobpostlistbtnview}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
                                           Command="{Binding ViewJobCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}"  />
                             </ViewCell.ContextActions>
                             <StackLayout Padding="0,5,0,5" >
@@ -68,7 +68,7 @@
                                     <Label Text="{Binding GetJobStatusInfo}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
 
 
-                                    <Label Text="{lEx:Translate LocationLabel}" Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeJobLabelColNo}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                    <Label Text="{lEx:CMSTranslate jobpostslistlbllocation}" Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeJobLabelColNo}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
                                     <Label Text="{Binding CompanyName}" Grid.Row="5" Grid.Column="2" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
 
                                     <Label Text="{Binding CompanyLocation.LocationId}" Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.HomeJobLabelColNo}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />

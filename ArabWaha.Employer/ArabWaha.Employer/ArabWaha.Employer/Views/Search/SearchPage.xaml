@@ -35,11 +35,11 @@
                Style="{StaticResource InfoBodyTextSmall}" Margin="0,15,0,0"/>
 
         <SearchBar x:Name="txtSearch" Grid.Row="2" Margin="0,15,0,0"  Placeholder="{lEx:CMSTranslate guesttxbsearch}" HorizontalOptions="FillAndExpand" VerticalOptions="End" 
-                   Text="{Binding SearchText,Mode=TwoWay}" SearchCommand="{Binding SearchCommand}"  HorizontalTextAlignment="Center" 
+                   Text="{Binding SearchText,Mode=TwoWay}" SearchCommand="{Binding SearchCommand}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" 
                    Style="{StaticResource SearchBarCustomStyle}"   />
 
-        <SearchBar   x:Name="txtLocation" Grid.Row="3" Margin="0,5,0,0"  Placeholder="{lEx:Translate guesttxblocation}" HorizontalOptions="FillAndExpand" 
-                    VerticalOptions="Start"  Text="{Binding SearchLocation,Mode=TwoWay}" HorizontalTextAlignment="Center" 
+        <SearchBar   x:Name="txtLocation" Grid.Row="3" Margin="0,5,0,0"  Placeholder="{lEx:CMSTranslate guesttxblocation}" HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="Start"  Text="{Binding SearchLocation,Mode=TwoWay}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" 
                     Style="{StaticResource SearchBarCustomStyle}"
                     SearchCommand="{Binding SearchCommand}" />
 
