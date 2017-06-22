@@ -49,8 +49,15 @@ namespace ArabWaha.Employer.StaticData
 		public static string AppWatchButtonColNo { get { return IsArabic ? "1" : "2"; } }
 		public static string AppWatchLabelColNo { get { return IsArabic ? "2" : "1"; } }
 
-
+		// Search Result Screen 
+		public static string SearchResultTitleColNo { get { return IsArabic ? "2" : "1"; } }
+		public static string SearchResultProgressColNo { get { return IsArabic ? "1" : "2"; } }
+		public static GridLength SearchResultProgressWidth { get { return IsArabic ? new GridLength(3, GridUnitType.Star) : new GridLength(8, GridUnitType.Star); } }
+		public static GridLength SearchResultLabelWidth { get { return IsArabic ? new GridLength(8, GridUnitType.Star) : new GridLength(3, GridUnitType.Star); } }
+		public static string SearchResultBottomRowCellArabic { get { return IsArabic ? "True" : "False"; } }
+		public static string SearchResultBottomRowCellEng { get { return IsArabic ? "False" : "True"; } }
 
 		#endregion
+		
 	}
 }
