@@ -147,19 +147,27 @@ namespace ArabWaha.Employer.ViewModels
 
 		public void SetTabs(TabControl ctrl)
 		{
+			string _Home, _JobPosts, _Programs, _Services;
 			if (_ctrl != null) return;
 			_ctrl = ctrl;
-
 			_ctrl.SetSearchVisible(true);
 
-
-
 			TranslateExtension tran = new TranslateExtension();
-			string _Home = App.Translation.employer.homelblhome;// tran.GetProviderValueString("MenuHome");
-			string _JobPosts = App.Translation.employer.homelbljobposts;// tran.GetProviderValueString("MenuJobPosts");
-			string _Programs = App.Translation.employer.homelblprograms;// tran.GetProviderValueString("MenuPrograms");
-			string _Services = App.Translation.employer.homelblservices;// tran.GetProviderValueString("MenuServices");
+			try
+			{
 
+				_Home = App.Translation.employer.homelblhome;
+				_JobPosts = App.Translation.employer.homelbljobposts;
+				_Programs = App.Translation.employer.homelblprograms;
+				_Services = App.Translation.employer.homelblservices;
+			}
+			catch (Exception ex)
+			{
+				_Home = App.Translation.employer.homelblhome;// tran.GetProviderValueString("MenuHome");
+				_JobPosts = App.Translation.employer.homelbljobposts;// tran.GetProviderValueString("MenuJobPosts");
+				_Programs = App.Translation.employer.homelblprograms;// tran.GetProviderValueString("MenuPrograms");
+				_Services = App.Translation.employer.homelblservices;
+			}
 			if (GlobalSetting.IsEnglish)
 			{
 				_ctrl.SetTabText(_Home, _JobPosts, _Programs, _Services);
@@ -457,14 +465,14 @@ namespace ArabWaha.Employer.ViewModels
 				//if (value != null)
 				//    SetProperty<ContentView>(ref _CurrentView, value);
 
-				if (!Core.Services.AuthService.IsAuthorised && (
-					value is HomeJobPostsContent))
-				{
-					// NotLoggedInContent
-					SetProperty<ContentView>(ref _CurrentView, new NotLoggedInContent());
-				}
-				else if (value != null)
-					SetProperty<ContentView>(ref _CurrentView, value);
+				//if (!Core.Services.AuthService.IsAuthorised && (
+				//	value is HomeJobPostsContent))
+				//{
+				//	// NotLoggedInContent
+				//	SetProperty<ContentView>(ref _CurrentView, new NotLoggedInContent());
+				//}
+				//else if (value != null)
+				SetProperty<ContentView>(ref _CurrentView, value);
 
 
 			}

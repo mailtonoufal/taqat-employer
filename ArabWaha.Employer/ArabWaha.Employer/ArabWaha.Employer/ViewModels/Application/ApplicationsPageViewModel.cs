@@ -123,7 +123,8 @@ namespace ArabWaha.Employer.ViewModels
 
             Tab1Text = tran.GetProviderValueString("Applications");
             Tab2Text = tran.GetProviderValueString("LabelJobPosts");
-            Tab3Text = tran.GetProviderValueString("LabelWatchList");
+			//Tab3Text = tran.GetProviderValueString("LabelWatchList");
+			Tab3Text = App.Translation != null ? App.Translation.employer.jobswatchlisttabtitle : tran.GetProviderValueString("LabelWatchList");
 
             ApplicationDetailsCommand = new DelegateCommand<ApplicationsForJob>(ApplicationDetails);
             Tab1Command = new DelegateCommand(ApllicationsNavigate);
