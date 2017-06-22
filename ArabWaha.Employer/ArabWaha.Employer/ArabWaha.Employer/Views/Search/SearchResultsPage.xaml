@@ -1,67 +1,30 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
-             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
-             xmlns:layout="clr-namespace:ArabWaha.Employer.Layouts"                           
-             xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" 
-             xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"                           
-             xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="ArabWaha.Employer.Views.SearchResultsPage"
-             NavigationPage.HasBackButton="False"    
-             x:Name="this"
-                     >
-
-
-  <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource GreyPageColor}"  >
-    <awc:AWHeader  MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
-    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  >
-
-      <Grid BackgroundColor="White" >
-      <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="Auto" />
-            <RowDefinition Height="20" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="5" />
-            <ColumnDefinition Width="3*" />
-            <ColumnDefinition Width="7*" />
-            <ColumnDefinition Width="5" />
-        </Grid.ColumnDefinitions>
-
-      <SearchBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"  x:Name="Searcher"   Placeholder="{lEx:Translate SearchKeywordText}"  
-                  Text="{Binding SearchText}" 
-                  SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}"    />
-      
-      <SearchBar Grid.Row="1"    Grid.Column="0" Grid.ColumnSpan="4"  x:Name="SearcherLoc"  
-                  Placeholder="{lEx:Translate SearchLocationText}" 
-                  Text="{Binding SearchLocation}" 
-                  SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}"   />
-
-
-        <Label Text="{Binding SearchResultCount}" Style="{StaticResource InfoBodyTextSmallBlue}" 
-               Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="End"/>
-
-
-        <StackLayout  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" IsVisible="{Binding HasResults}"  BackgroundColor="{StaticResource GreyPageColor}"  >
-            <layout:ApplicationListView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
-
-        <StackLayout  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" IsVisible="{Binding NoResults}" >
-        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="5">
-                <Label Text="{lEx:Translate LabelNoKeywordsEntered}" Style="{StaticResource HeaderTextLargeBlue}" />
+<?xml version="1.0" encoding="utf-8"?>
+<local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData" xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers" xmlns:layout="clr-namespace:ArabWaha.Employer.Layouts" xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer" xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms" xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms" prism:ViewModelLocator.AutowireViewModel="True"
+    x:Class="ArabWaha.Employer.Views.SearchResultsPage" NavigationPage.HasBackButton="False" NavigationPage.HasNavigationBar="false" x:Name="this">
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource GreyPageColor}">
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="#00204A">
+            <awc:AWHeader MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}">
+            </awc:AWHeader>
+            <SearchBar BackgroundColor="#00204A" x:Name="Searcher" Placeholder="{lEx:Translate SearchKeywordText}" Text="{Binding SearchText}" SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}" />
+            <SearchBar BackgroundColor="#00204A" x:Name="SearcherLoc" Placeholder="{lEx:Translate SearchLocationText}" Text="{Binding SearchLocation}" SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}" Margin="0,-15,0,0" />
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="10,10,10,0" VerticalOptions="Start" BackgroundColor="{StaticResource GreyPageColor}">
+             <Frame VerticalOptions="Start" HorizontalOptions="{x:Static gb:GlobalSetting.SearchResultCountOption}"  HasShadow="false" CornerRadius="25" BackgroundColor="White">
+                <Label Style="{StaticResource InfoBodyTextSmallBlue}" Text="{Binding SearchResultCount}" />
+            </Frame>
             </StackLayout>
-      </StackLayout>
-
-
-    </Grid>
-
+        </StackLayout>
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+            <Grid BackgroundColor="{StaticResource GreyPageColor}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0"  IsVisible="{Binding HasResults}" BackgroundColor="{StaticResource GreyPageColor}">
+                    <layout:ApplicationListView VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Padding="10,0,10,0" Grid.Row="0" IsVisible="{Binding NoResults}" VerticalOptions="Start" HorizontalOptions="FillAndExpand" >
+                   <Label Text="{lEx:Translate LabelNoKeywordsEntered}" Style="{StaticResource HeaderTextLargeBlue}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                </StackLayout>
+            </Grid>
+        </StackLayout>
     </StackLayout>
-  </StackLayout>
-
-
 </local:AWMenuContainerPage>
