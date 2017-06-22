@@ -8,12 +8,12 @@
             <SearchBar BackgroundColor="#00204A" x:Name="Searcher" Placeholder="{lEx:Translate SearchKeywordText}" Text="{Binding SearchText}" SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}" />
             <SearchBar BackgroundColor="#00204A" x:Name="SearcherLoc" Placeholder="{lEx:Translate SearchLocationText}" Text="{Binding SearchLocation}" SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}" Margin="0,-15,0,0" />
             <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="10,10,10,0" VerticalOptions="Start" BackgroundColor="{StaticResource GreyPageColor}">
-             <Frame VerticalOptions="Start" HorizontalOptions="{x:Static gb:GlobalSetting.SearchResultCountOption}"  HasShadow="false" CornerRadius="25" BackgroundColor="White">
+             <Frame VerticalOptions="Start" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}"  HasShadow="false" CornerRadius="25" BackgroundColor="White">
                 <Label Style="{StaticResource InfoBodyTextSmallBlue}" Text="{Binding SearchResultCount}" />
             </Frame>
             </StackLayout>
         </StackLayout>
-        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+      <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
             <Grid BackgroundColor="{StaticResource GreyPageColor}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
