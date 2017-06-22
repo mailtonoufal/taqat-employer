@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:bh="clr-namespace:Pillar;assembly=Pillar"
+    xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
              x:Class="ArabWaha.Employer.Layouts.HomeServicesContent">
   <ContentView.Content>
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
@@ -23,18 +24,18 @@
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="10" />
-                                        <ColumnDefinition Width="1*" />
-                                        <ColumnDefinition Width="55" />
+                                        <ColumnDefinition Width="{x:Static gb:GlobalSetting.HomeProgFirstColWidth}" />
+                                          <ColumnDefinition Width="{x:Static gb:GlobalSetting.HomeProgThirdColWidth}" />
                                         <ColumnDefinition Width="10" />
                                     </Grid.ColumnDefinitions>
                                     <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="4"  VerticalOptions="FillAndExpand" />
 
-                                    <Label Text="{Binding ServiceName}" Grid.Row="1" Grid.Column="1"  
-                                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="End" />
+                                    <Label Text="{Binding ServiceName}" Grid.Row="1" FontSize="15" Margin="5,0,5,0"   Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" 
+                                           HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="FillAndExpand" />
 
 
-                                    <Frame Grid.Row="1" Grid.RowSpan="1" Grid.Column="2" OutlineColor="Gray"  Padding="0" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center" VerticalOptions="Center" >
-                                        <Image Source="{Binding Image}" WidthRequest="45" HeightRequest="45" Aspect="AspectFit"  />
+                                    <Frame Grid.Row="1" Grid.RowSpan="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" OutlineColor="Gray"  Padding="0" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center" VerticalOptions="Center" >
+                                        <Image Source="{Binding ServiceImage}" WidthRequest="45" HeightRequest="45" Aspect="AspectFit"  />
                                     </Frame>
 
                                 </Grid>

@@ -428,9 +428,9 @@ namespace ArabWaha.Core.Services
                         Introduction ="intro to service here\ninto to service here\ninto to service here\ninto to service here\ninto to service here\ninto to service here",
                     Beneficiaries ="Beneficiaries here\nBeneficiaries here\nBeneficiaries here\nBeneficiaries here\nBeneficiaries here\nBeneficiaries here\nBeneficiaries here",
                     Benefits ="Benefits will go here\nBenefits will go here\nBenefits will go here\nBenefits will go here\nBenefits will go here\nBenefits will go here\nBenefits will go here",
-                    HowToRegister ="Some reg text here" },
+                    HowToRegister ="Some reg text here" ,ServiceImage="jobcompanyicon.png"},
                 new EmployerService { ServiceId=2, ServiceName = "Service 2", ServiceUrl="https://www.taqat.sa",
-                        Introduction = "into to service here", Beneficiaries = "Beneficiaries here", Benefits = "Benefits will go here", HowToRegister = "Some reg text here" },
+                        Introduction = "into to service here", Beneficiaries = "Beneficiaries here", Benefits = "Benefits will go here", HowToRegister = "Some reg text here",ServiceImage="jobcompanyicon.png" },
 
             };
 

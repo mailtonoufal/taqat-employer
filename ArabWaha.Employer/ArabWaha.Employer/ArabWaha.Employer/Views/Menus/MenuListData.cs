@@ -82,8 +82,8 @@ namespace ArabWaha.Employer.Views.Menus
             {
                 Title = isEnglishText ? "Services" : "خدمات",
                 IconSource = "arrow_white.png",
-                TargetType = $"{nameof(HomePage)}?TAB=4",
-                PageType = typeof(HomePage),
+                TargetType = nameof(ComplaintsPage),
+                PageType = typeof(ComplaintsPage),
                 IconImage = Application.Current.Resources["MenuIconServices"] as FileImageSource
             });
 

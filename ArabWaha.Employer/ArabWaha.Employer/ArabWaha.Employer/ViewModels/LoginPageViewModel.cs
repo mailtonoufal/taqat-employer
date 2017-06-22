@@ -74,7 +74,8 @@ namespace ArabWaha.Employer.ViewModels
 
         private void ProcessGuestCommand()
         {
-            _nav.GoBackAsync();
+            _nav.NavigateAsync(nameof(SearchPage), animated: false);
+            //_nav.GoBackAsync();
         }
 
         private bool CanSignIn()

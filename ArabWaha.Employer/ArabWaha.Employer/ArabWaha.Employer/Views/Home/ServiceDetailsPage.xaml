@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:ArabWaha.Employer.Controls"
              x:Class="ArabWaha.Employer.Views.Home.ServiceDetailsPage"
              BackgroundColor="{StaticResource LighGreyPageColor}"
+        xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
              Title="{Binding ServiceDetails.ServiceName}"
              >
 
@@ -29,10 +30,10 @@
             <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="{StaticResource LightGraySeperatorColor}" />
 
                 <Label Grid.Row="1" Grid.Column="1" Text="{Binding ServiceDetails.ServiceName}" 
-                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" Style="{StaticResource InfoBodyTextBlue}" />
+                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoBodyTextBlue}" />
 
             <Label Grid.Row="3" Grid.Column="1"  Text="{Binding ServiceDetails.Introduction}" 
-                   HorizontalTextAlignment="End" HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" HorizontalOptions="FillAndExpand"
                    Style="{StaticResource InfoBodyTextExtraSmallBlue}" />
 
 

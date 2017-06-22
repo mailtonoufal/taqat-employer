@@ -19,5 +19,7 @@ namespace ArabWaha.Core.ModelsEmployer.Services
         public string Beneficiaries { get; set; }
 
         public string HowToRegister { get; set; }
+
+        public string ServiceImage { get; set; }
     }
 }

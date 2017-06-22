@@ -41,12 +41,12 @@
                                     <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="4"  VerticalOptions="FillAndExpand" />
 
                                     <Label Text="{Binding ProgramName}" Grid.Row="1"   Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"
-                                           Style="{StaticResource InfoBodyTextBlue}" FontSize="15" Margin="0,0,5,0"    HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}"/>
+                                           Style="{StaticResource InfoBodyTextBlue}" FontSize="15" Margin="5,0,5,0"    HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}"/>
                                 
 
                                     <Label Text="{Binding GetStatusText}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"
                                            Grid.Row="2"   Style="{StaticResource CellBodyTextMedGray}" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}"
-                                            Margin="0,0,5,0" FontSize="12"  HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" />
+                                            Margin="5,0,5,0" FontSize="12"  HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" />
                                     
 
                                     
