@@ -15,7 +15,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell x:Name="myCell" >
-                            <StackLayout Padding="10,5,10,5" BackgroundColor="{StaticResource StackBorderColor}">
+                            <StackLayout Padding="10,5,10,5" BackgroundColor="#F2F2F2">
                                 <Grid Margin="2,2,2,2" >
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="15" />

@@ -36,7 +36,11 @@ namespace ArabWaha.Employer.BaseCalsses
 
         }
 
+       
+
         private ICommand _menuTapped;
+        private string v;
+
         public ICommand MenuTappedCommand
         {
             get

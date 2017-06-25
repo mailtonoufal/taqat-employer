@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Diagnostics;
+using ArabWaha.Employer.Helpers;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -25,7 +27,32 @@ namespace ArabWaha.Employer.ViewModels
         private async void LoadSource()
         {
             ApiService apiServ = new ApiService();
-            ProgramsSource = await apiServ.GetAllProgramsAsync();
+            try
+            {
+                ProgramsSource = await apiServ.GetAllProgramsAsync();
+
+
+
+                //for program status text
+
+				TranslateExtension tran = new TranslateExtension();
+				string progStatusLabel = tran.GetProviderValueString("LabelProgramStatusText");
+				// setup Program Status:
+				foreach (var item in ProgramsSource)
+				{
+					item.StatusLabelText = progStatusLabel;
+				}
+
+
+
+
+
+
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
         }
 
         private ObservableCollection<EmployerProgram> _ProgramsSource;
@@ -49,6 +76,12 @@ namespace ArabWaha.Employer.ViewModels
             }
         }
 
+
+		
+
+
+ 
+	
         #endregion
 
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,18 @@ namespace ArabWaha.Common.Forms.Controls
     {
         public AWHeader()
         {
-            InitializeComponent();
+            ShowLogo = true;
+            //ShowImg = false;
+            ShowLabel = false;
+            try
+            {
+                InitializeComponent();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+
         }
 
         #region NavigationText (Bindable String)
@@ -92,5 +104,51 @@ namespace ArabWaha.Common.Forms.Controls
             set { SetValue(ShowLogoProperty, value); }
         }
         #endregion ShowLogo (Bindable bool)
-    }
+
+
+
+        //#region ShowImg (Bindable bool)
+        //public static readonly BindableProperty ShowImgProperty = BindableProperty.Create(
+        //                                                              nameof(ShowImg), //Public name to use
+        //                                                              typeof(bool), //this type
+        //                                                              typeof(AWHeader), //parent type (tihs control)
+        //                                                              false); //default value
+        //      public bool ShowImg
+        //{
+        //	get { return (bool)GetValue(ShowImgProperty); }
+        //	set { SetValue(ShowImgProperty, value); }
+        //}
+        //#endregion ShowLogo (Bindable bool)
+
+
+        #region ShowLabel (Bindable bool)
+        public static readonly BindableProperty ShowLabelProperty = BindableProperty.Create(
+                                                                nameof(ShowLabel), //Public name to use
+                                                                typeof(bool), //this type
+                                                                typeof(AWHeader), //parent type (tihs control)
+                                                                false); //default value
+        public bool ShowLabel
+        {
+            get { return (bool)GetValue(ShowLabelProperty); }
+            set { SetValue(ShowLabelProperty, value); }
+        }
+        #endregion ShowLogo (Bindable bool)
+
+
+
+
+        #region Title (Bindable text)
+        public static readonly BindableProperty TitleProperty = BindableProperty.Create(
+                                                                        nameof(Title),
+                                                                       typeof(string),
+                                                                     typeof(AWHeader),
+                                                                       string.Empty);
+
+        public string Title
+		{
+            get { return (string)GetValue(TitleProperty); }
+			set { SetValue(TitleProperty, value); }
+		}
+		#endregion
+	}
 }

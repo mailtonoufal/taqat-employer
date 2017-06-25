@@ -4,6 +4,7 @@ using ArabWaha.Employer.Views.Menus;
 using SlideOverKit;
 using System;
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace ArabWaha.Employer.Views
 {
@@ -11,7 +12,14 @@ namespace ArabWaha.Employer.Views
     {
         public HomePage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
             MessagingCenter.Subscribe<HomePageViewModel>(this, "HideMenu", HideMenuMessage);
         }
 
