@@ -79,10 +79,10 @@ namespace ArabWaha.Employer.ViewModels
                 item.ApplicationSearchResultPostedDate = GetApplicationPostedDate(item.ApplicationDate);
             }
 
-            TranslateExtension trans = new TranslateExtension();
+            CMSTranslateExtension trans = new CMSTranslateExtension();
 
             // setup count here
-            SearchResultCount = $"{CandidateList.Count} {trans.GetProviderValueString("LabelResultsFoundText")}";
+            SearchResultCount = $"{CandidateList.Count} {trans.GetProviderValueString("talentsearchlblresultsfound")}";
 
         }
 
@@ -98,21 +98,21 @@ namespace ArabWaha.Employer.ViewModels
         private string GetApplicationPostedDate(DateTime dt)
         {
             
-            TranslateExtension trans = new TranslateExtension();
+            CMSTranslateExtension trans = new CMSTranslateExtension();
 
-            string retDate = trans.GetProviderValueString("LabelJobPosted");
+            string retDate = trans.GetProviderValueString("talentsearchlblposted");
 
             DateTime current = DateTime.Now;
             var dateSpan = DateTimeSpan.CompareDates(dt, current);
 
             if(dateSpan.Months<1)
             {
-                retDate+= $" {((int)dateSpan.Days/7).ToString()} {trans.GetProviderValueString("LabelWeeksText")} {trans.GetProviderValueString("LabelAgoText")}" ;
+                retDate+= $" {((int)dateSpan.Days/7).ToString()} {trans.GetProviderValueString("talentsearchlblweeks")} {trans.GetProviderValueString("talentsearchlblpostedago")}" ;
             }
             else
             {
                 // weeks 
-                retDate += $" {dateSpan.Months.ToString()} {trans.GetProviderValueString("LabelMonthsText")} {trans.GetProviderValueString("LabelAgoText")}";
+                retDate += $" {dateSpan.Months.ToString()} {trans.GetProviderValueString("talentsearchlblmonths")} {trans.GetProviderValueString("talentsearchlblpostedago")}";
             }
 
             return retDate;

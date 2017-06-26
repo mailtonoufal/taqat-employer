@@ -46,7 +46,7 @@
 
                                 <!-- ***************** Application match score *************************** -->
 
-                                <Label Text="{lEx:Translate LabelApplicationMatchScoreText}"  Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.SearchResultProgressColNo}" FontSize="Micro"
+                                <Label Text="{lEx:CMSTranslate talensearchlblmatchscore}"  Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.SearchResultProgressColNo}" FontSize="Micro"
                                            Style="{StaticResource CellBodyTextMedGray}" 
                                        HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
 
