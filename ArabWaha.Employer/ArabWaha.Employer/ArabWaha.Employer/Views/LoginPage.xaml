@@ -39,43 +39,43 @@
             </Grid.ColumnDefinitions>
 
             <Image Margin="{StaticResource MediumTopMargin}" Source="LogoNew.png"  Grid.Row="0" HorizontalOptions="CenterAndExpand" HeightRequest="90" WidthRequest="140"  Aspect="AspectFit" VerticalOptions="Center" />
-            <Label Margin="{StaticResource MediumTopMargin}" Text="{lEx:Translate ButtonSignIn}" Grid.Row ="1" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" 
+            <Label Margin="{StaticResource MediumTopMargin}" Text="{Binding SigninText}" Grid.Row ="1" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" 
 				   HorizontalTextAlignment="{Binding AlignText}" Style="{StaticResource HeaderTextMediumWhite}" FontSize="24"/>
 
-             <Label Margin="{StaticResource MediumTopMargin}" Text="{lEx:Translate Username}" Grid.Row ="2" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"
+             <Label Margin="{StaticResource MediumTopMargin}" Text="{Binding UsernameText}" Grid.Row ="2" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="{Binding AlignText}" TextColor="#668CBA" FontSize="12" />
 
-            <controls:LineEntry  Text="{Binding UserName}" Placeholder="{lEx:Translate LoginEnterUsername}" Grid.Row="3" Style="{StaticResource WhiteTextEntry}"
+            <controls:LineEntry  Text="{Binding UserName}" Placeholder="{Binding UsernameTextHolder}" Grid.Row="3" Style="{StaticResource WhiteTextEntry}"
 					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{Binding AlignText}"   FontSize="13"	/>
 
-             <Label Text="{lEx:Translate Password}" Margin="{StaticResource MediumTopMargin}" Grid.Row ="4" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"
+             <Label Text="{Binding PasswordText}" Margin="{StaticResource MediumTopMargin}" Grid.Row ="4" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand"
                    HorizontalTextAlignment="{Binding AlignText}" TextColor="#668CBA" FontSize="12"/>
 
-            <controls:LineEntry  Text="{Binding Password}" Placeholder="{lEx:Translate LoginEnterPassword}" HorizontalOptions="FillAndExpand"  
+            <controls:LineEntry  Text="{Binding Password}" Placeholder="{Binding PasswordTextHolder}" HorizontalOptions="FillAndExpand"  
 				   HorizontalTextAlignment="{Binding AlignText}"  Style="{StaticResource WhiteTextEntry}"
 				   Grid.Row="5" IsPassword="true" FontSize="13" />
 
             <StackLayout Grid.Row="6" Margin="{StaticResource MediumTopMargin}" >
                 <Button  HorizontalOptions= "FillAndExpand" VerticalOptions="FillAndExpand" 
-						Text="{lEx:Translate ButtonSignIn}" Command="{Binding SignInCommand}"   Style="{StaticResource GreenButton}" />
+						Text="{Binding SigninText}" Command="{Binding SignInCommand}"   Style="{StaticResource GreenButton}" />
             </StackLayout>
 
 
-            <Label Margin="{StaticResource MediumTopMargin}"  Grid.Row="7" Text="{lEx:Translate LoginForgotPassword}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
+            <Label Margin="{StaticResource MediumTopMargin}"  Grid.Row="7" Text="{Binding LoginForgotPassword}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
                     TextColor="#668CBA" Style="{StaticResource LoginPageTextStyle}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding LostPasswordCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>
             </Label>
 
-            <Label Margin="{StaticResource MediumTopMargin}" Grid.Row="8" Text="{lEx:Translate StartContinueAsGuest}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
+            <Label Margin="{StaticResource MediumTopMargin}" Grid.Row="8" Text="{Binding StartContinueAsGuest}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
                     TextColor="#668CBA" Style="{StaticResource LoginPageTextStyle}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GuestCommand}" NumberOfTapsRequired="1" />
                 </Label.GestureRecognizers>
             </Label>
 
-            <Label Margin="{StaticResource MediumTopMargin}" Grid.Row="9" Text="{lEx:Translate LoginNoAccountSignup}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
+            <Label Margin="{StaticResource MediumTopMargin}" Grid.Row="9" Text="{Binding LoginNoAccountSignup}" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" 
                     TextColor="#668CBA" Style="{StaticResource LoginPageTextStyle}"  >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SignupCommand}" NumberOfTapsRequired="1" />

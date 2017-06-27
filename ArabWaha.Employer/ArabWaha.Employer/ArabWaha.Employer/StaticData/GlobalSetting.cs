@@ -1,6 +1,7 @@
 using System;
 using Xamarin.Forms;
 using ArabWaha.Core.Services;
+using ArabWaha.Models;
 
 namespace ArabWaha.Employer.StaticData
 {
@@ -17,6 +18,7 @@ namespace ArabWaha.Employer.StaticData
 
 			IsArabic = CultureCode == "ar";
 			IsEnglish = !IsArabic;
+            DebugDataSingleton.Instance.Language = CultureCode.ToUpper();
 		}
 
 		public static LayoutAlignment AlignLabel { get { return IsArabic ? LayoutAlignment.End : LayoutAlignment.Start; } }

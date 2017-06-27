@@ -54,5 +54,15 @@ namespace ArabWaha.Models
 		/// </summary>
 		/// <value>The sap bp individual identifier.</value>
 		public string Language { get; set; }
+		/// <summary>
+		/// Gets or sets the longitude.
+		/// </summary>
+		/// <value>The longitude.</value>
+		public bool IsHafiz { get; set; }
+		/// <summary>
+		/// Gets or sets logged in users mobile no.
+		/// </summary>
+		/// <value>Logged in users mobile no.</value>
+		public string UserMobileNumber { get; set; }
     }
 }

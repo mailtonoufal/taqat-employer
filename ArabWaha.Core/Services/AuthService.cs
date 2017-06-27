@@ -5,6 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ArabWaha.Common;
+using System.Diagnostics;
+using ArabWaha.Core.DBAccess;
+using ArabWaha.Core.Models.Company;
 
 namespace ArabWaha.Core.Services
 {
@@ -13,78 +17,79 @@ namespace ArabWaha.Core.Services
         public static bool IsAuthorised { get; set; } = false;// set to public to test menu until auth code is in
 
 
-        public async Task Login(string username, string password, bool isGuest)
+        public async Task<bool> Login(string username, string password, bool isGuest)
         {
             IsAuthorised = true;
             // TODO Call API 
-            //LoginInternal()
-            return;
+            return await LoginInternal(username, password, isGuest);
+
+            //return;
         }
 
 
-        private async Task LoginInternal(String email, String password, bool isGuest)
+        public async Task<bool> LoginInternal(String email, String password, bool isGuest)
         {
             //View.ShowLoading(true);
 
             try
             {
-                DebugDataSingleton.Instance.BasicAuth = "Basic OTAwNjI3OTpzYXBAMTIzNA==";
-
+                DebugDataSingleton.Instance.IsHafiz = false;
                 var bytes = Encoding.UTF8.GetBytes(string.Format("{0}:{1}", email, password));
                 var base64String = Convert.ToBase64String(bytes);
                 string authHeader = String.Format("Basic {0}", base64String);
+				DbAccessor db = new DbAccessor();
 
-                var result = await AWHttpClient.Instance.RegisterUser(authHeader, "android");
-                //var result = await AWWebClient.Instance.RegisterUser("Basic OTAwNjI3OTpzYXBAMTIzNA==", Constants.Device);
+				var result = await AWHttpClient.Instance.RegisterUser(authHeader, Constants.DevicePlatform);
                 if (result.StatusCode == "201") //success case
                 {
                     DebugDataSingleton.Instance.ApplicationConnectionId = result.Result.RegistrationObjectItem.ApplicationConnectionId;
                     DebugDataSingleton.Instance.UserName = result.Result.RegistrationObjectItem.UserName;
                     DebugDataSingleton.Instance.BasicAuth = authHeader;   //X-SMP-APPCID
                     DebugDataSingleton.Instance.X_SMP_APPCID = result.Result.RegistrationObjectItem.ApplicationConnectionId;
-                    DebugDataSingleton.Instance.Language = "en";
 
-                    var resultIndividual = await AWHttpClient.Instance.GetNESIndividualId(email);
-                    if (resultIndividual.StatusCode == "200")
+
+                    //Get the Cookie and XCSRF Token
+                    //var resultXCSRF = await AWHttpClient.Instance.GetXCSRFToken();
+
+
+                    //Get the MyCompanyDetails
+                    var myCompanyDetails = await AWHttpClient.Instance.GetCompanyDetails();
+                    if (myCompanyDetails.IsSuccess)
                     {
-                        DebugDataSingleton.Instance.NesIndividualID = resultIndividual.Result.NesIndividualItem.NesIndividualId;
-                        var sapBPIndividual = await AWHttpClient.Instance.GetIndividualSBPId(DebugDataSingleton.Instance.NesIndividualID);
-
-                        bool isHafiz = false;
-                        if (!isGuest)
+                        if (myCompanyDetails.Result != null && myCompanyDetails.Result.myCompanyObjectList != null && myCompanyDetails.Result.myCompanyObjectList.myCompanyList.Count > 0)
                         {
-                            var programs = await AWHttpClient.Instance.GetAllPrograms();
-                            TmpObject.ProgramListRoot = programs.Result;
+                            var myCompany = myCompanyDetails.Result.myCompanyObjectList.myCompanyList[0];
+                            //insert the My company details in to the db
+                            db.InsertReplaceRecord<MyCompany>(myCompany);
 
-                            foreach (ArabWaha.Models.Programs masterProgram in programs.Result.programList.programs)
-                            {
-                                if ((masterProgram.ProgramId == "1") || (masterProgram.ProgramId == "2"))
-                                {
-                                    if ((masterProgram.Status == EnumGlobal.ProgramStatus.Applied.GetHashCode().ToString()) ||
-                                        (masterProgram.Status == EnumGlobal.ProgramStatus.Enrolled.GetHashCode().ToString()))
-                                    {
-                                        isHafiz = true;
-                                    }
-                                }
-                            }
+                            //retrieve the company details from the db
+                            var myCompanyFromDb = db.GetTableItems<MyCompany>();
                         }
+                    }
 
-                        //View.ShowOnBoarding(isHafiz, isGuest);
-                    }
-                    else
-                    {
-                        //View.ShowError("");
-                        //View.ShowLoading(false);
-                    }
+                    //Get the CandidateList
+                    var candidateList = await AWHttpClient.Instance.GetCandidatesList();
+					//TODO parse the candidateList to get the required response
+
+
+
+					//Get the MatchingCandidates List for a particular Job Post ID
+					var matchingCandidatesSet = await AWHttpClient.Instance.GetMatchingCandidatesList("1000278384");
+					//TODO parse the matchingCandidatesSet to get the required response
+
+
+
+					return true;
                 }
-                else
-                {
-                    ///View.ShowError("");
-                    //View.ShowLoading(false);
-                }
+                return false;
             }
             catch (Exception ex)
             {
+                //View.ShowLoading(false);
+                Debug.WriteLine(ex.ToString());
+                //View.ShowError(getErrorMessageFromException(ex));
+                return false;
+
             }
         }
 

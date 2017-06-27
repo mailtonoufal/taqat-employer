@@ -15,19 +15,123 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Diagnostics;
+using Acr.UserDialogs;
+using ArabWaha.Employer.Helpers;
 
 namespace ArabWaha.Employer.ViewModels
 {
     public class LoginPageViewModel : AWMVVMBase, INavigationAware
     {
+        private string _SigninText;
+        public string SigninText
+        {
+            get { return _SigninText; }
+            set
+            {
+                SetProperty(ref _SigninText, value);
+            }
+        }
+
+        private string _UsernameText;
+        public string UsernameText
+        {
+            get { return _UsernameText; }
+            set
+            {
+                SetProperty(ref _UsernameText, value);
+            }
+        }
+
+        private string _UsernameTextHolder;
+        public string UsernameTextHolder
+        {
+            get { return _UsernameTextHolder; }
+            set
+            {
+                SetProperty(ref _UsernameTextHolder, value);
+            }
+        }
+
+        private string _PasswordText;
+        public string PasswordText
+        {
+            get { return _PasswordText; }
+            set
+            {
+                SetProperty(ref _PasswordText, value);
+            }
+        }
+
+
+        private string _PasswordTextHolder;
+        public string PasswordTextHolder
+        {
+            get { return _PasswordTextHolder; }
+            set
+            {
+                SetProperty(ref _PasswordTextHolder, value);
+            }
+        }
+
+
+        private string _LoginForgotPassword;
+        public string LoginForgotPassword
+        {
+            get { return _LoginForgotPassword; }
+            set
+            {
+                SetProperty(ref _LoginForgotPassword, value);
+            }
+        }
+
+
+        private string _StartContinueAsGuest;
+        public string StartContinueAsGuest
+        {
+            get { return _StartContinueAsGuest; }
+            set
+            {
+                SetProperty(ref _StartContinueAsGuest, value);
+            }
+        }
+
+
+        private string _LoginNoAccountSignup;
+        public string LoginNoAccountSignup
+        {
+            get { return _LoginNoAccountSignup; }
+            set
+            {
+                SetProperty(ref _LoginNoAccountSignup, value);
+            }
+        }
+
 
 
         public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-          //  Title = "Sign in";
+            //  Title = "Sign in";
 
-            LostPasswordCommand = new DelegateCommand(LostPassword);
-            SignInCommand = new DelegateCommand(SignIn, CanSignIn);
+#if DEBUG
+            UserName = "gosi001";
+            Password = "Password1";
+#endif
+            TranslateExtension tran = new TranslateExtension();
+
+            SigninText = App.Translation != null ? App.Translation.employer.signinlbltitle : tran.GetProviderValueString("LabelWatchList");
+			UsernameText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LabelWatchList");
+			UsernameTextHolder = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LabelWatchList");
+			PasswordText = tran.GetProviderValueString("Password");
+			PasswordTextHolder = tran.GetProviderValueString("Password");
+			LoginForgotPassword =tran.GetProviderValueString("LoginForgotPassword");
+			StartContinueAsGuest = App.Translation != null ? App.Translation.employer.signinbtnguest : tran.GetProviderValueString("LabelWatchList");
+			LoginNoAccountSignup = App.Translation != null ? App.Translation.employer.signinbtnsignup : tran.GetProviderValueString("LabelWatchList");
+
+
+
+			LostPasswordCommand = new DelegateCommand(LostPassword);
+            SignInCommand = new DelegateCommand(async () => { await SignIn(); }, CanSignIn);
             GuestCommand = new DelegateCommand(ProcessGuestCommand);
             SignupCommand = new DelegateCommand(ProcessSignupCommand);
 
@@ -52,7 +156,11 @@ namespace ArabWaha.Employer.ViewModels
         public string UserName
         {
             get { return _username; }
-            set { SetProperty(ref _username, value); SignInCommand.RaiseCanExecuteChanged(); }
+            set
+            {
+                SetProperty(ref _username, value);
+                //SignInCommand.RaiseCanExecuteChanged(); 
+            }
         }
         public string Password
         {
@@ -84,23 +192,38 @@ namespace ArabWaha.Employer.ViewModels
             //return !string.IsNullOrEmpty(UserName);
         }
 
-        private async void SignIn()
+        private async Task SignIn()
         {
-            IsBusy = true;
-
             //await Task.Delay(10000);
             //TODO: remove
             //HAFIZ -> Otp screen
-            UserName = "ashugupta";
-            Password = "sap@1234";
+
             //Non-Hafiz -> Main screen
             //txtUserName.Text = "Fahad@arabwaha.com";
             //txtPassword.Text = "12345";
             AuthService sv = new AuthService();
-            await sv.Login(UserName, Password, false);
-            await _nav.NavigateAsync(nameof(HomePage), animated: false);
+            bool isLoginSuccess = false;
+            try
+            {
+                UserDialogs.Instance.ShowLoading();
+                isLoginSuccess = await sv.Login(UserName, Password, false);
+                UserDialogs.Instance.HideLoading();
+            }
+            catch (Exception ex)
+            {
+                UserDialogs.Instance.HideLoading();
+                Debug.WriteLine(ex.Message);
+            }
 
-            IsBusy = false;
+            if (isLoginSuccess)
+            {
+                await _nav.NavigateAsync(nameof(HomePage), animated: false);
+            }
+            else
+            {
+                UserDialogs.Instance.ShowError("Something went wrong");
+            }
+
         }
 
         private async void LostPassword()
@@ -110,17 +233,17 @@ namespace ArabWaha.Employer.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            
+
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            
+
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            
+
         }
     }
 }

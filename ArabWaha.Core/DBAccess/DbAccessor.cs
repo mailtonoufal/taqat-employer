@@ -13,13 +13,13 @@ namespace ArabWaha.Core.DBAccess
     {
         // needs to be in place due to this being a seperate pcl from xamarin forms so needs explicit init
         public static string ConnectionString { get; set; }
-    //    public static SQLite.Net.Interop.ISQLitePlatform SqlPlatform { get; set; }
+        //    public static SQLite.Net.Interop.ISQLitePlatform SqlPlatform { get; set; }
 
         private SQLiteConnection GetConnection()
         {
-            
 
-            if(string.IsNullOrEmpty(DbAccessor.ConnectionString))
+
+            if (string.IsNullOrEmpty(DbAccessor.ConnectionString))
             {
                 throw new Exception("Database string not initialised");
             }
@@ -78,6 +78,16 @@ namespace ArabWaha.Core.DBAccess
             return true;
         }
 
+		public bool InsertReplaceRecord<T>(T dataIn) where T : new()
+		{
+			// open db
+			var dbcon = GetConnection();
+            int test = dbcon.InsertOrReplace(dataIn);
+			dbcon.Close();
+			if (test == 0) return false;
+			return true;
+		}
+
         public bool DeleteRecord<T>(T dataIn) where T : new()
         {
             // open db
@@ -103,9 +113,12 @@ namespace ArabWaha.Core.DBAccess
 
         public List<T> Query<T>(string query, object[] args) where T : new()
         {
-                return GetConnection().Query<T>(query, args);
+            return GetConnection().Query<T>(query, args);
         }
 
-
+        internal void CreateTable<T>()
+        {
+			GetConnection().CreateTable<T>();
+        }
     }
 }

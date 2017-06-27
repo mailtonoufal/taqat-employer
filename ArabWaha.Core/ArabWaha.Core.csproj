@@ -27,7 +27,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;__IOS__</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -170,6 +170,9 @@
     <Compile Include="Web\BatchResponse.cs" />
     <Compile Include="Web\HTTPServiceClient.cs" />
     <Compile Include="Web\ServiceResult.cs" />
+    <Compile Include="Models\Company\MyCompany.cs" />
+    <Compile Include="Models\Candidates\Candidate.cs" />
+    <Compile Include="Models\Candidates\MatchingCandidate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FubarCoder.RestSharp.Portable.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=be81bb0f53eab22f, processorArchitecture=MSIL">
@@ -252,6 +255,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Models\Candidates\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

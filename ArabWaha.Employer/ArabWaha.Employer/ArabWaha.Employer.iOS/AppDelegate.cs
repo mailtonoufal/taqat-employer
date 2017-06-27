@@ -40,7 +40,6 @@ namespace ArabWaha.Employer.iOS
             CarouselViewRenderer.Init();
             SlideOverKit.iOS.SlideOverKit.Init();
 
-
             // syncfusion inits
             new SfBusyIndicatorRenderer();
             new SfAutoCompleteRenderer();

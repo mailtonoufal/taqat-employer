@@ -12,6 +12,7 @@ using CarouselView.FormsPlugin.Android;
 using HockeyApp.Android;
 using Xamarin.Forms;
 using System.IO;
+using Acr.UserDialogs;
 
 namespace ArabWaha.Employer.Droid
 {
@@ -31,6 +32,7 @@ namespace ArabWaha.Employer.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             Xamarin.FormsMaps.Init(this, bundle);
             CarouselViewRenderer.Init();
+            UserDialogs.Init(this);
             LoadApplication(new App(new AndroidInitializer()));
             // LoadApplication(new App());
         }

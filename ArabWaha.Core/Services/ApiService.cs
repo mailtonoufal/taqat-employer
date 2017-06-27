@@ -562,6 +562,8 @@ namespace ArabWaha.Core.Services
             // get db connection
             DbAccessor db = new DbAccessor();
 
+            db.CreateTable<Models.Company.MyCompany>();
+
             // company users 
             var usersdb = db.GetTableItems<CompanyUser>();
             if (usersdb != null && usersdb.Count == 0)
