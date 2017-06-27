@@ -147,6 +147,7 @@
     <EmbeddedResource Include="Resources\employerdb.db3" />
     <Compile Include="Renders\LineEntryRenderer.cs" />
     <Compile Include="Renders\CustomiseSearchBarRenderer.cs" />
+    <Compile Include="GetMyLocation.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />

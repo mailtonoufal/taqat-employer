@@ -277,6 +277,7 @@
     <Compile Include="Controls\LineEntry.cs" />
     <Compile Include="StaticData\GlobalSetting.cs" />
     <Compile Include="Helpers\CMSTranslateExtension.cs" />
+    <Compile Include="ILocation.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">

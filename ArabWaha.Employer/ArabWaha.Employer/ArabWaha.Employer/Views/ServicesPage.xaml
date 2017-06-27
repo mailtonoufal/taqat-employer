@@ -8,7 +8,7 @@
      xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"
              xmlns:bh="clr-namespace:Pillar;assembly=Pillar"
              prism:ViewModelLocator.AutowireViewModel="True"
-             BackgroundColor="#F2F2F2"
+             BackgroundColor="{StaticResource BackgroundColor}"
              x:Class="ArabWaha.Employer.Views.ServicesPage"
              NavigationPage.HasBackButton="false"
              NavigationPage.HasNavigationBar="false" x:Name="this">
@@ -19,7 +19,7 @@
                HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>-->
 
         <ListView ItemsSource="{Binding ServicesSource}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
-                      HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="#F2F2F2">
+                      HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="{StaticResource BackgroundColor}">
             <ListView.Behaviors>
                 <bh:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ServicesSelectedCommand}" 
                                                EventArgsConverter="{StaticResource ItemTappedConverter}" />
@@ -27,7 +27,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell x:Name="myCell" >
-                        <StackLayout Padding="10,5,10,5"  BackgroundColor="#F2F2F2">
+                        <StackLayout Padding="10,5,10,5"  BackgroundColor="{StaticResource BackgroundColor}">
                            <Grid Margin="2,2,2,2" BackgroundColor="#F2F2F2">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="15" />

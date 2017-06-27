@@ -51,6 +51,8 @@
           
           <Color x:Key="LightGraySeperatorColor">#f2f2f2</Color>
 
+             <Color x:Key="BackgroundColor">#F2F2F2</Color>
+
 
           <Style x:Key="MainTopLevelStackLayout" TargetType="StackLayout">
             <Setter Property="Padding">

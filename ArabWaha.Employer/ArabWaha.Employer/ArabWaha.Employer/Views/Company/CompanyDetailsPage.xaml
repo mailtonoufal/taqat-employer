@@ -9,17 +9,18 @@
              xmlns:controlx="clr-namespace:ArabWaha.Employer.Controls"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="ArabWaha.Employer.Views.CompanyDetailsPage"
+    xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
           Title="My Company"
              x:Name="this"                              
-             BackgroundColor="#F2F2F2">
+             BackgroundColor="{StaticResource BackgroundColor}">
       <!-- Title="{Binding CompanyInfo.CompanyName}"-->
-  <StackLayout Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="#F2F2F2">
+  <StackLayout Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource BackgroundColor}">
       <!--  BackgroundColor="{StaticResource GreyPageColor}"-->
     <!--<awc:AWHeader MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>-->
 
     <StackLayout VerticalOptions="Start" HorizontalOptions="Fill" Style="{StaticResource ContentStackLayout}" >
-      <StackLayout BackgroundColor="#F2F2F2">
-            <Image  Source="AdvancedElectronics.png" HeightRequest="55" BackgroundColor="#F2F2F2"></Image>
+      <StackLayout BackgroundColor="{StaticResource BackgroundColor}">
+            <Image  Source="AdvancedElectronics.png" HeightRequest="45" BackgroundColor="{StaticResource BackgroundColor}"></Image>
               <!--  Source="{Binding CompanyInfo.CompanyLogo}"-->
                <!-- BackgroundColor="{StaticResource BluePageColor}"-->
             <Label Text="{Binding CompanyInfo.CompanyName}" Style="{StaticResource HeaderTextMediumBlue}" 
@@ -32,7 +33,7 @@
 
 
         <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="#F2F2F2">
+            <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource BackgroundColor}">
 
 
 
@@ -40,7 +41,7 @@
                  <!--   AccordionImage = "{StaticResource DefaultJobIcon}"-->
                     <controlx:XpertAccordion.AccordionContents>
                       <StackLayout Padding ="10,5,10,5">
-                        <Label Text="{Binding CompanyInfo.CompanyDescription}" FontAttributes="None" TextColor="#012149" FontSize="13"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"/>
+                        <Label Text="{Binding CompanyInfo.CompanyDescription}" FontAttributes="None" TextColor="#012149" FontSize="13"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
                           <!--  Style="{StaticResource CellBodyTextMedBlue}"-->
                       </StackLayout>
                     </controlx:XpertAccordion.AccordionContents>
@@ -147,10 +148,10 @@
 
 
 
-                <controlx:XpertAccordion HeaderText="{lEx:Translate LocationLabel}" AccordionIsExpanded="True"  >
+                <controlx:XpertAccordion HeaderText="{lEx:Translate LocationLabel}" AccordionIsExpanded="True" >
                    <!-- AccordionImage = "{StaticResource DefaultJobIcon}"-->
                     <controlx:XpertAccordion.AccordionContents>
-                        <StackLayout BackgroundColor="White">
+                       <!-- <StackLayout BackgroundColor="White">
                             <Grid >
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
@@ -164,7 +165,17 @@
                                 <BoxView Grid.Row="0" Grid.Column="1" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver"/>
                                 <Label Grid.Row="0" Grid.Column="1"  Text="MAP GOES HERE" HorizontalOptions="Center" VerticalOptions="Center"></Label>
                             </Grid>
-                        </StackLayout>
+                        </StackLayout>-->
+
+        <StackLayout VerticalOptions="StartAndExpand">
+
+
+        <maps:Map WidthRequest="320" HeightRequest="200"
+            x:Name="MyMap"
+            IsShowingUser="true"
+            MapType="Street" />
+
+           </StackLayout>
                     </controlx:XpertAccordion.AccordionContents>
                 </controlx:XpertAccordion>
                 <Button Text="{lEx:Translate ManageCompanyUsersButton}" Margin="18,0,18,0" Style="{StaticResource GreenButton}" HorizontalOptions="FillAndExpand" Command="{Binding ManageCommand}"></Button>

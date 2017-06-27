@@ -163,10 +163,10 @@ namespace ArabWaha.Employer.ViewModels
 			}
 			catch (Exception ex)
 			{
-				_Home = App.Translation.employer.homelblhome;// tran.GetProviderValueString("MenuHome");
-				_JobPosts = App.Translation.employer.homelbljobposts;// tran.GetProviderValueString("MenuJobPosts");
-				_Programs = App.Translation.employer.homelblprograms;// tran.GetProviderValueString("MenuPrograms");
-				_Services = App.Translation.employer.homelblservices;
+				_Home = tran.GetProviderValueString("MenuHome");
+				_JobPosts = tran.GetProviderValueString("MenuJobPosts");
+				_Programs = tran.GetProviderValueString("MenuPrograms");
+				_Services = tran.GetProviderValueString("MenuServices");
 			}
 			if (GlobalSetting.IsEnglish)
 			{

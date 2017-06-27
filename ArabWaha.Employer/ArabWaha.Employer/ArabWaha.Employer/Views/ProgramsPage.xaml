@@ -14,7 +14,7 @@
              xmlns:bh="clr-namespace:Pillar;assembly=Pillar"
              x:Name="this"
              NavigationPage.HasNavigationBar="false">
-     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill"  Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="#F2F2F2" >
+     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill"  Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource BackgroundColor}" >
        <!-- Style="{StaticResource ContentStackLayout}"-->
         <awc:AWHeader x:Name="header" MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
         <!-- <ListView ItemsSource="{Binding ProgramsSource}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
@@ -57,7 +57,7 @@
 
 
  <ListView ItemsSource="{Binding ProgramsSource}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
-                      HasUnevenRows="True" SeparatorVisibility="None" ItemSelected="ItemSelected"  BackgroundColor="#F2F2F2" >
+                      HasUnevenRows="True" SeparatorVisibility="None" ItemSelected="ItemSelected"  BackgroundColor="{StaticResource BackgroundColor}">
                 <ListView.Behaviors>
                     <bh:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ProgramSelectedCommand}" 
                                                EventArgsConverter="{StaticResource ItemTappedConverter}" />
