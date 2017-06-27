@@ -32,7 +32,8 @@ namespace ArabWaha.Employer.ViewModels
             Title = "Welcome";
             SkipCommand = new DelegateCommand(SkipPage);
             SignInCommand = new DelegateCommand(NavigateInternal);
-            SignInExternalCommand = new DelegateCommand(NavigateExternal);
+            //SignInExternalCommand = new DelegateCommand(NavigateExternal);
+			SignInExternalCommand = new DelegateCommand(NavigateInternal);
             SignUpCommand = new DelegateCommand(NavigateSignUp);
             ContinueAsGuestCommand = new DelegateCommand(ContinueAsGuest);
         }
