@@ -82,8 +82,8 @@ namespace ArabWaha.Employer.Views.Menus
 				// - need to move  to tresource/NSTack  "Programs" : "البرامج",
 				Title = isEnglishText ? "Programs" : "البرامج",
 				IconSource = "arrow_white.png",
-				TargetType = $"{nameof(HomePage)}?TAB=3",
-				PageType = typeof(HomePage),
+				TargetType = nameof(ProgramsPage),
+                PageType = typeof(ProgramsPage),
 				IconImage = Application.Current.Resources["MenuIconPrograms"] as FileImageSource
 			});
 
@@ -91,8 +91,8 @@ namespace ArabWaha.Employer.Views.Menus
 			{
 				Title = isEnglishText ? "Services" : "خدمات",
 				IconSource = "arrow_white.png",
-				TargetType = $"{nameof(HomePage)}?TAB=4",
-				PageType = typeof(HomePage),
+                TargetType = nameof(ServicesPage),
+                PageType = typeof(ServicesPage),
 				IconImage = Application.Current.Resources["MenuIconServices"] as FileImageSource
 			});
 

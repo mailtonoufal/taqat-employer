@@ -15,10 +15,9 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-
             <DataTemplate x:Key="welcomeTemplate">
                 <StackLayout VerticalOptions="EndAndExpand">
-                    <Grid VerticalOptions="FillAndExpand" Padding="20">
+                    <Grid VerticalOptions="FillAndExpand" Padding="12" >
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*" />
@@ -39,7 +38,7 @@
                                                Style="{StaticResource InfoBodyTextSmall}" />
 
 
-                        <Label Grid.Row="3"   Text="{lEx:Translate LabelStartPageSkip}" 
+                        <Label Grid.Row="3" Text="{lEx:Translate LabelStartPageSkip}" 
                                            VerticalOptions="End"  
                                            Style="{StaticResource InfoBodyTextGraySmall}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}"  HorizontalOptions="{x:Static gb:GlobalSetting.SkipLayoutOptions}"
                             Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}">
@@ -55,10 +54,8 @@
             </DataTemplate>
             <DataTemplate x:Key="loginTemplate">
                 <StackLayout VerticalOptions="EndAndExpand" >
-                    <Grid VerticalOptions="EndAndExpand" Padding="5" RowSpacing="10">
-
+                    <Grid VerticalOptions="EndAndExpand" Padding="12" RowSpacing="10">
                         <Grid.ColumnDefinitions>
-                            
                             <ColumnDefinition Width="5" />
                             <ColumnDefinition Width="1*" />
                             <ColumnDefinition Width="5" />
@@ -69,13 +66,12 @@
                             <RowDefinition Height="60" />
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="auto" />
-                            <RowDefinition Height="20" />
+                            <RowDefinition Height="50" />
                         </Grid.RowDefinitions>
 
                         <Label Text="{lEx:Translate ButtonSignIn}"  Style="{StaticResource HeaderTextLargeWhite}" Grid.Row="1" Grid.Column="1"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" HorizontalOptions="FillAndExpand"/>
                         <Label Text="{lEx:Translate WelcomeEmployerSignin}"    
                    Style="{StaticResource InfoBodyTextSmall}"  Grid.Row="2"  Grid.Column="1" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" HorizontalOptions="FillAndExpand"/>
-
 
                         
                     <Grid Grid.Row="3" Grid.Column="1" ColumnSpacing="5">
@@ -93,9 +89,7 @@
                     </Grid>
 
 
-
-
-                        <Button  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Text="{lEx:Translate LoginNoAccountSignup}" 
+                    <Button  Grid.Row="4" Grid.Column="1" Text="{lEx:Translate LoginNoAccountSignup}" 
                             HorizontalOptions="FillAndExpand"  Command="{Binding Path=BindingContext.SignUpCommand, Source={x:Reference AppPage}}" FontSize="12"
                             BackgroundColor="Transparent" TextColor="White" HeightRequest="40" BorderColor="Silver" BorderWidth="1" />
 

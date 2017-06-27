@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:bh="clr-namespace:Pillar;assembly=Pillar"
     xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
-             x:Class="ArabWaha.Employer.Layouts.HomeServicesContent">
+             x:Class="ArabWaha.Employer.Layouts.HomeServicesContent" BackgroundColor="{StaticResource BackgroundColor}">
   <ContentView.Content>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" BackgroundColor="{StaticResource BackgroundColor}">
             <ListView ItemsSource="{Binding ServicesPageSource}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
-                      HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="{StaticResource GreyPageColor}" ItemSelected="ItemSelected" >
+                      HasUnevenRows="True" SeparatorVisibility="None" BackgroundColor="{StaticResource BackgroundColor}" ItemSelected="ItemSelected" >
                 <ListView.Behaviors>
                     <bh:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ServicesSelectedCommand}" 
                                                EventArgsConverter="{StaticResource ItemTappedConverter}" />
@@ -15,7 +15,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell x:Name="myCell" >
-                            <StackLayout Padding="10,5,10,5" BackgroundColor="{StaticResource StackBorderColor}">
+                            <StackLayout Padding="10,5,10,5" BackgroundColor="{StaticResource BackgroundColor}">
                                 <Grid Margin="2,2,2,2" >
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="15" />

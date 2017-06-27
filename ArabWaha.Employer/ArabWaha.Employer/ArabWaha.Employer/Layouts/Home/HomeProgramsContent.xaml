@@ -8,12 +8,12 @@
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers">
   <ContentView.Content>
 
-        <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Style="{StaticResource ContentStackLayout}" BackgroundColor="#F2F2F2" >
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource BackgroundColor}" >
           <!--  BackgroundColor="{StaticResource GreyPageColor}"-->
 
 
             <ListView ItemsSource="{Binding ProgramsPageSource}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
-                      HasUnevenRows="True" SeparatorVisibility="None" ItemSelected="ItemSelected"  BackgroundColor="#F2F2F2" >
+                      HasUnevenRows="True" SeparatorVisibility="None" ItemSelected="ItemSelected"  BackgroundColor="{StaticResource BackgroundColor}" >
                 <!--BackgroundColor="{StaticResource GreyPageColor}" -->
                 <ListView.Behaviors>
                     <bh:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ProgramSelectedCommand}" 

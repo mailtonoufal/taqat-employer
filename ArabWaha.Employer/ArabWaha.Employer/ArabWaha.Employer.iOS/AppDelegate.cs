@@ -55,6 +55,7 @@ namespace ArabWaha.Employer.iOS
             CopyDB("employerdb.db3", "ArabWaha.Employer.iOS.Resources.employerdb.db3");
 
             global::Xamarin.Forms.Forms.Init();
+            global::Xamarin.FormsMaps.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

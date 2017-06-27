@@ -291,6 +291,12 @@
 			public string jobswatchlisttabtitle { get; set; }
 			public string jobswatchlisbtnapply { get; set; }
 
+            public string talensearchlblmatchscore { get; set; }
+            public string talentsearchlblposted { get; set; }
+            public string talentsearchlblpostedago { get; set; }
+            public string talentsearchlblresultsfound { get; set; }
+			public string talentsearchlblweeks { get; set; }
+			public string talentsearchlblmonths { get; set; }
 
 
 		}

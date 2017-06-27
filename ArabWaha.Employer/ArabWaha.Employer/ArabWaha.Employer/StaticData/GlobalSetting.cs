@@ -11,6 +11,7 @@ namespace ArabWaha.Employer.StaticData
 		public static bool IsArabic { get; set; }
 		public static bool IsEnglish { get; set; }
 
+
 		public static void SetupCulture()
 		{
 			ApiService svr = new ApiService();
@@ -76,6 +77,12 @@ namespace ArabWaha.Employer.StaticData
 
 
 		#endregion
+
+
+
+
+
+		
 		
 	}
 }
