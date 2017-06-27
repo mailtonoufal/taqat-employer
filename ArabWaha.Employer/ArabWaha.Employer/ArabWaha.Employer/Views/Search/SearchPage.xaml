@@ -20,7 +20,7 @@
 
       <Grid Padding="20,0,20,0" >
             <Grid.RowDefinitions>
-                <RowDefinition Height="70" />
+               
                 <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="2*" />
@@ -29,22 +29,22 @@
             </Grid.RowDefinitions>
          
 
-        <Image Source="Logo.png" Grid.Row="0" HeightRequest="40" Aspect="AspectFit" VerticalOptions="End" HorizontalOptions="Center" />
+<!--        <Image Source="Logo.png" Grid.Row="0" HeightRequest="40" Aspect="AspectFit" VerticalOptions="End" HorizontalOptions="Center" />-->
         <Label Text="{lEx:CMSTranslate guestlbldesc}" HorizontalTextAlignment="Center"
-                   Grid.Row ="1" VerticalOptions="Center" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Start"
+                   Grid.Row ="0" VerticalOptions="Center" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Start"
                Style="{StaticResource InfoBodyTextSmall}" Margin="0,15,0,0"/>
 
-        <SearchBar x:Name="txtSearch" Grid.Row="2" Margin="0,15,0,0"  Placeholder="{lEx:CMSTranslate guesttxbsearch}" HorizontalOptions="FillAndExpand" VerticalOptions="End" 
+        <SearchBar x:Name="txtSearch" Grid.Row="1" Margin="0,15,0,0"  Placeholder="{lEx:CMSTranslate guesttxbsearch}" HorizontalOptions="FillAndExpand" VerticalOptions="End" 
                    Text="{Binding SearchText,Mode=TwoWay}" SearchCommand="{Binding SearchCommand}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" 
                    Style="{StaticResource SearchBarCustomStyle}"   />
 
-        <SearchBar   x:Name="txtLocation" Grid.Row="3" Margin="0,5,0,0"  Placeholder="{lEx:CMSTranslate guesttxblocation}" HorizontalOptions="FillAndExpand" 
+        <SearchBar   x:Name="txtLocation" Grid.Row="2" Margin="0,5,0,0"  Placeholder="{lEx:CMSTranslate guesttxblocation}" HorizontalOptions="FillAndExpand" 
                     VerticalOptions="Start"  Text="{Binding SearchLocation,Mode=TwoWay}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" 
                     Style="{StaticResource SearchBarCustomStyle}"
                     SearchCommand="{Binding SearchCommand}" />
 
 
-        <StackLayout VerticalOptions="Start" Grid.Row="4" Orientation="Vertical">
+        <StackLayout VerticalOptions="Start" Grid.Row="3" Orientation="Vertical">
 
             <Grid >
                 <Grid.RowDefinitions>

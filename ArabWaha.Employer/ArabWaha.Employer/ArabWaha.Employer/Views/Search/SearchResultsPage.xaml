@@ -5,8 +5,8 @@
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="#00204A">
             <awc:AWHeader MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}">
             </awc:AWHeader>
-            <SearchBar BackgroundColor="#00204A" x:Name="Searcher" Placeholder="{lEx:Translate SearchKeywordText}" Text="{Binding SearchText}" SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}" />
-            <SearchBar BackgroundColor="#00204A" x:Name="SearcherLoc" Placeholder="{lEx:Translate SearchLocationText}" Text="{Binding SearchLocation}" SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}" Margin="0,-15,0,0" />
+            <SearchBar BackgroundColor="#ffffff" x:Name="Searcher" Placeholder="{lEx:Translate SearchKeywordText}" Text="{Binding SearchText}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}" Margin="10,0,10,0" />
+            <SearchBar BackgroundColor="#ffffff" x:Name="SearcherLoc" Placeholder="{lEx:Translate SearchLocationText}" Text="{Binding SearchLocation}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}" Margin="10,0,10,0" />
             <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="10,10,10,0" VerticalOptions="Start" BackgroundColor="{StaticResource GreyPageColor}">
              <Frame VerticalOptions="Start" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}"  HasShadow="false" CornerRadius="25" BackgroundColor="White">
                 <Label Style="{StaticResource InfoBodyTextSmallBlue}" Text="{Binding SearchResultCount}" />
