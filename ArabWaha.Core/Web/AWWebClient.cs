@@ -38,14 +38,14 @@ namespace ArabWaha.Web
         private RestClient localClient = new RestClient(new Uri($"{baseUrl}/odata/applications/latest/com.aec.taqat.emp/"));
         //private RestClient likeClient = new RestClient(new Uri("http://arab-waha.staging-like.st/api/"));
         private RestClient likeClient = new RestClient(new Uri("http://arab-waha.development-like.st/api/"));
-
+       
         #region likeClient
 
         public async Task<IRestResponse<AnnouncementsRoot>> GetAnnouncements()
         {
             var request = new RestRequest("announcements", Method.GET);
 
-            request.AddHeader("Content-Type", "application/json");
+            request.AddHeader("Accept", "application/json");
             request.AddHeader("Accept-Language", Constants.AcceptLanguage);
 
             return await likeClient.Execute<AnnouncementsRoot>(request);

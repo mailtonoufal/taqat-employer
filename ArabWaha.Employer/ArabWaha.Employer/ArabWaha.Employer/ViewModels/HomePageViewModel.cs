@@ -3,6 +3,7 @@ using ArabWaha.Core.ModelsEmployer.Jobs;
 using ArabWaha.Core.ModelsEmployer.Programs;
 using ArabWaha.Core.ModelsEmployer.Services;
 using ArabWaha.Core.Services;
+using ArabWaha.Core;
 using ArabWaha.Employer.BaseCalsses;
 using ArabWaha.Employer.Controls;
 using ArabWaha.Employer.Helpers;
@@ -80,11 +81,16 @@ namespace ArabWaha.Employer.ViewModels
 		{
 			Device.BeginInvokeOnMainThread(async () =>
 			{
-				// load data first 
-				ApiService apiServ = new ApiService();
-				HomePageSource = await apiServ.GetAnnouncementsAsync();
+                var responseAnnouncements=await Web.AWHttpClient.Instance.GetAnnouncements();
 
+				if (responseAnnouncements.Data != null && responseAnnouncements.Data.Announcements.Data.Count > 0)
+				{
+					HomePageSource = new ObservableCollection<Announcement>(responseAnnouncements.Data.Announcements.Data);
+				}
+				ApiService apiServ = new ApiService();
+               
 				// need to pull from db
+                //SwipeSource = new ObservableCollection<FeaturedAnnouncement>(responseAnnouncements.Data.Featured);
 				SwipeSource = new List<SfRotatorItem>() {
 				new SfRotatorItem() {  Image= "sample_carousel.png" },
 				new SfRotatorItem() {  Image="sample_carousel.png"  },
