@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
@@ -16,11 +16,11 @@
             <Grid BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="20"/>
-                    <RowDefinition Height="140"/>
+                    <RowDefinition Height="100"/>
                     <RowDefinition Height="1" />
-                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="45"/>
                     <RowDefinition Height="1" />
-                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="45"/>
                     <RowDefinition Height="1" />
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="40"/>
@@ -28,8 +28,8 @@
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5" />
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="24" />
+                     <ColumnDefinition Width="{x:Static gb:GlobalSetting.HomeContactFirstColWidth}" />
+                    <ColumnDefinition Width="{x:Static gb:GlobalSetting.HomeContactThirdColWidth}" />
                     <ColumnDefinition Width="5" />
                 </Grid.ColumnDefinitions>
 
@@ -42,19 +42,19 @@
                        VerticalOptions="Start" WidthRequest="180" HeightRequest="110" />
 
 
-                <Label Grid.Row="3" Grid.Column="1" Text="9200 4583 000"  Style="{StaticResource ComplaintsTitleTextBlue}"  
-                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" VerticalTextAlignment="Center"  />
-                <Image Source="{StaticResource phoneicon}" Grid.Row="3" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" />
+                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}"  Text="9200 4583 000"  Style="{StaticResource ComplaintsTitleTextBlue}"  
+                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center"  FontSize="14"/>
+                <Image Source="{StaticResource phoneicon}" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Aspect="AspectFit" VerticalOptions="Center" />
 
 
 
-                <Label Grid.Row="5" Grid.Column="1" Text="Callcenter@hrdf.org.sa" Style="{StaticResource ComplaintsTitleTextBlue}"  
-                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
-                <Image Source="{StaticResource SettingsComplaintsIcon}" Grid.Row="5" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" />
+                <Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}"  Text="Callcenter@hrdf.org.sa" Style="{StaticResource ComplaintsTitleTextBlue}"  
+                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center" FontSize="14"/>
+                <Image Source="{StaticResource SettingsComplaintsIcon}" Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Aspect="AspectFit" VerticalOptions="Center" />
 
 
                 <Label Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding ContactUsText}" 
-                         Style="{StaticResource ComplaintsTitleTextBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" />
+                         Style="{StaticResource ComplaintsTitleTextBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" FontSize="14"/>
 
             </Grid>
         </StackLayout>
