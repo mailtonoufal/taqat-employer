@@ -19,7 +19,8 @@
             </OnIdiom>
         </StackLayout.Padding>
 
-
+       
+       <Button Image="CloseButton" Margin="10" HeightRequest="10" WidthRequest="10" x:Name="btn" HorizontalOptions="{x:Static gb:GlobalSetting.SkipLayoutOptions}"/>
 
         <Grid VerticalOptions="Fill">
             <Grid.RowDefinitions>
@@ -84,6 +85,7 @@
 
 
         </Grid>
+          
 
     </StackLayout>
 

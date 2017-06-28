@@ -22,7 +22,15 @@ namespace ArabWaha.Employer.Views.Menus
 
         public MenuMaster()
         {
-            InitializeComponent();
+           try
+            {
+				InitializeComponent();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+           
 
             this.IsFullScreen = true;
             this.WidthRequest = 250;

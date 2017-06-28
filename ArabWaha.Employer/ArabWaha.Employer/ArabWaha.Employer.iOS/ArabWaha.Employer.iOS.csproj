@@ -169,6 +169,7 @@
     <BundleResource Include="Resources\LogoNew.png" />
     <BundleResource Include="Resources\Saned.png" />
     <BundleResource Include="Resources\AdvancedElectronics.png" />
+    <BundleResource Include="Resources\CloseButton.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CarouselView.FormsPlugin.Abstractions">

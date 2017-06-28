@@ -332,6 +332,7 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\LogoNew.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\Saned.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\AdvancedElectronics.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\CloseButton.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />

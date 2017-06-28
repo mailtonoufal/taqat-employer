@@ -170,8 +170,8 @@ namespace ArabWaha.Employer.Views.Menus
 				{
 					Title = isEnglishText ? "Log out" : "الخروج",
 					IconSource = "arrow_white.png",
-					TargetType = nameof(LoginPage),
-					PageType = typeof(LoginPage),
+					TargetType = nameof(StartPage),
+					PageType = typeof(StartPage),
 					IconImage = Application.Current.Resources["MenuIconLogInOut"] as FileImageSource
 				});
 
