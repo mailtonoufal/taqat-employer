@@ -37,12 +37,12 @@ namespace ArabWaha.Employer.ViewModels
 
         }
 
-        private EmployerProgram _programDetails;
+        private Program _programDetails;
 
-        public EmployerProgram ProgramDetails
+        public Program ProgramDetails
         {
             get { return _programDetails; }
-            set { SetProperty<EmployerProgram>(ref _programDetails, value); }
+            set { SetProperty<Program>(ref _programDetails, value); }
         }
 
 
@@ -62,10 +62,10 @@ namespace ArabWaha.Employer.ViewModels
             var data = parameters.Where(x => x.Key == "Data").FirstOrDefault();
             var obj = data.Value;
 
-            if (obj != null && obj is EmployerProgram)
+            if (obj != null && obj is Program)
             {
                 // yah we have what we need so continue.. 
-                ProgramDetails = obj as EmployerProgram;
+                ProgramDetails = obj as Program;
             }
         }
 
@@ -74,7 +74,7 @@ namespace ArabWaha.Employer.ViewModels
         {
             try
             {
-                Device.OpenUri(new Uri(ProgramDetails.ProgramUrl));
+                //Device.OpenUri(new Uri(ProgramDetails.ProgramUrl));
             }
             catch (Exception ex)
             {
@@ -132,7 +132,8 @@ namespace ArabWaha.Employer.ViewModels
             set { SetProperty<bool>(ref _whocanBenefit, value); }
 		}
 
-	
+
+
 
 
 	}

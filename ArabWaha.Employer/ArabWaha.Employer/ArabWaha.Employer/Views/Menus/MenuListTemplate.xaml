@@ -17,15 +17,14 @@
         </Grid.RowDefinitions>
 
         <Image Source="{Binding IconImage}" Grid.Row="0" Grid.Column="3" 
-				HeightRequest="20" WidthRequest="205" Aspect="Fill" IsVisible="{x:Static gb:GlobalSetting.IsArabic}"/>
+				HeightRequest="10" WidthRequest="10" Aspect="Fill" IsVisible="{x:Static gb:GlobalSetting.IsArabic}"/>
 
         <Image Source="{Binding IconImage}" Grid.Row="0" Grid.Column="1" 
-				HeightRequest="20" WidthRequest="20" Aspect="Fill" IsVisible="{x:Static gb:GlobalSetting.IsEnglish}" />
+				HeightRequest="10" WidthRequest="10" Aspect="Fill" IsVisible="{x:Static gb:GlobalSetting.IsEnglish}" />
 
         <Label Text="{Binding Title}" Grid.Row="0" Grid.Column="2" 
 			VerticalTextAlignment="Center" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" 
-               Style="{StaticResource TextSlideMenu}" 
-			/>
+               Style="{StaticResource TextSlideMenu}" FontSize="13"/>
     </Grid>
     
     

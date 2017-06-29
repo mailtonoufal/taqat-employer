@@ -13,13 +13,15 @@ using System.Linq;
 using System.Diagnostics;
 using ArabWaha.Employer.Helpers;
 
+using static ArabWaha.Models.Translation;
+
 namespace ArabWaha.Employer.ViewModels
 {
     public class ProgramsPageViewModel : AWMVVMBase
     {
         public ProgramsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            ProgramSelectedCommand = new DelegateCommand<EmployerProgram>(ProcessProgramSelected);
+            ProgramSelectedCommand = new DelegateCommand<Program>(ProcessProgramSelected);
 
             LoadSource();
         }
@@ -65,8 +67,8 @@ namespace ArabWaha.Employer.ViewModels
 
         #region commands
 
-        public DelegateCommand<EmployerProgram> ProgramSelectedCommand { get; set; }
-        async void ProcessProgramSelected(EmployerProgram vals)
+        public DelegateCommand<Program> ProgramSelectedCommand { get; set; }
+        async void ProcessProgramSelected(Program vals)
         {
             if (vals != null)
             {
@@ -74,6 +76,7 @@ namespace ArabWaha.Employer.ViewModels
                 paramx.Add("Data", vals);
                 await _nav.NavigateAsync(nameof(ProgramDetailsPage), paramx, false, true);
             }
+
         }
 
 

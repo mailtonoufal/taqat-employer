@@ -1002,16 +1002,16 @@
     <value>Start now and post your job vacancies on TAQAT to receive applications and find the best candidates</value>
   </data>
   <data name="LabelProgramsBeneficiariesText" xml:space="preserve">
-    <value>Beneficiaries</value>
+    <value>Program Requirements</value>
   </data>
   <data name="LabelProgramsBenefitsText" xml:space="preserve">
-    <value>Benefits</value>
+    <value>Who Can Benefit?</value>
   </data>
   <data name="LabelProgramsHowToRegisterText" xml:space="preserve">
     <value>How To Register</value>
   </data>
   <data name="LabelProgramsIntroduction" xml:space="preserve">
-    <value>Introduction</value>
+    <value>Description</value>
   </data>
   <data name="LabelSearchJobsText" xml:space="preserve">
     <value>Search for talent</value>
@@ -1038,6 +1038,6 @@
 
 
 	 <data name="LabelProgramsWhocanBenefitText" xml:space="preserve">
-    <value>Who can Benefit?</value>
+    <value>Salary</value>
   </data>
 </root>

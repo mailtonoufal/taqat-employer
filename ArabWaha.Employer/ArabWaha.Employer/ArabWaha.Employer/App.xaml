@@ -603,15 +603,15 @@
             
             <!-- menu icons -->
             <FileImageSource x:Key="MenuIconHome">nav_home.png</FileImageSource>
-            <FileImageSource x:Key="MenuIconMyCompany">nav_profle.png</FileImageSource>
-            <FileImageSource x:Key="MenuIconApplications">nav_jobs.png</FileImageSource>
-            <FileImageSource x:Key="MenuIconPrograms">nav_programs.png</FileImageSource>
-            <FileImageSource x:Key="MenuIconServices">nav_programs.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconMyCompany">MyCompanyImg.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconApplications">nav_programs.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconPrograms">nav_jobs.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconServices">ServicesImg.png</FileImageSource>
             <FileImageSource x:Key="MenuIconCalendar">nav_calendar.png</FileImageSource>
-            <FileImageSource x:Key="MenuIconComplaints">menucomplaints.png</FileImageSource>
-            <FileImageSource x:Key="MenuIconContactUs">contact_phone.png</FileImageSource>
-            <FileImageSource x:Key="MenuIconSettings">menusettings.png</FileImageSource>
-            <FileImageSource x:Key="MenuIconLogInOut">nav_logout.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconComplaints">ComplaintsImg.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconContactUs">ContactImg.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconSettings">SettingImg.png</FileImageSource>
+            <FileImageSource x:Key="MenuIconLogInOut">LogoutImg.png</FileImageSource>
             <FileImageSource x:Key="ContactIcon">contactnameicon.png</FileImageSource>
             <FileImageSource x:Key="LocationIcon">location.png</FileImageSource>
 

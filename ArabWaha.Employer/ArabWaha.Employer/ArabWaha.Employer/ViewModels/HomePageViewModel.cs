@@ -25,6 +25,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using ArabWaha.Employer.StaticData;
+using ArabWaha.Web;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -68,7 +69,7 @@ namespace ArabWaha.Employer.ViewModels
 			DeleteJobCommand = new DelegateCommand<EmployerJobDetail>(ProcessDeleteJob);
 			EditJobCommand = new DelegateCommand<EmployerJobDetail>(ProcessEditJob);
 			ViewJobCommand = new DelegateCommand<EmployerJobDetail>(ProcessViewJob);
-			ProgramSelectedCommand = new DelegateCommand<EmployerProgram>(ProcessProgramSelected);
+			ProgramSelectedCommand = new DelegateCommand<Program>(ProcessProgramSelected);
 			ServicesSelectedCommand = new DelegateCommand<EmployerService>(ProcessServicesSelectedCommand);
 			AddNewJobCommand = new DelegateCommand(ProcessAddNewJobCommand);
 
@@ -134,14 +135,40 @@ namespace ArabWaha.Employer.ViewModels
 			{
 				// get data
 				ApiService apiServ = new ApiService();
-				ProgramsPageSource = await apiServ.GetCurrentProgramsAsync();
+				//ProgramsPageSource = await apiServ.GetCurrentProgramsAsync();
+     //           try
+     //           {
+					//var programsList = await AWHttpClient.Instance.GetPrograms();
+                //    ProgramsPageSource = new ObservableCollection<Program>(programsList.Data.Programs);
+				
+                //}
+                //catch (Exception ex)
+                //{
+
+                //}
+
+                var programsList = await Web.AWHttpClient.Instance.GetPrograms();
+
+				if (programsList.Data != null && programsList.Data.Programs.Count > 0)
+				{
+                    ProgramsPageSource = new ObservableCollection<Program>(programsList.Data.Programs);
+				}
+
+
+
+
+
+
+
 
 				TranslateExtension tran = new TranslateExtension();
+               
 				string progStatusLabel = tran.GetProviderValueString("LabelProgramStatusText");
 				// setup Program Status:
 				foreach (var item in ProgramsPageSource)
-				{
-					item.StatusLabelText = progStatusLabel;
+                { 
+					//item.StatusLabelText = progStatusLabel;
+                    item.StatusText =  $"{progStatusLabel} {item.StatusText} ";
 				}
 
 
@@ -272,8 +299,8 @@ namespace ArabWaha.Employer.ViewModels
 				await _nav.NavigateAsync(nameof(JobPage), paramx, false, true);
 			}
 		}
-		public DelegateCommand<EmployerProgram> ProgramSelectedCommand { get; set; }
-		async void ProcessProgramSelected(EmployerProgram vals)
+		public DelegateCommand<Program> ProgramSelectedCommand { get; set; }
+		async void ProcessProgramSelected(Program vals)
 		{
 			if (vals != null)
 			{
@@ -323,11 +350,11 @@ namespace ArabWaha.Employer.ViewModels
 		}
 
 		// ProgramsPageSource
-		private ObservableCollection<EmployerProgram> _programsPageSource;
-		public ObservableCollection<EmployerProgram> ProgramsPageSource
+		private ObservableCollection<Program> _programsPageSource;
+		public ObservableCollection<Program> ProgramsPageSource
 		{
 			get { return _programsPageSource; }
-			set { SetProperty<ObservableCollection<EmployerProgram>>(ref _programsPageSource, value); }
+			set { SetProperty<ObservableCollection<Program>>(ref _programsPageSource, value); }
 		}
 
 		// EmployerService source
@@ -483,6 +510,9 @@ namespace ArabWaha.Employer.ViewModels
 
 			}
 		}
+
+
+		
 
 
 		#endregion

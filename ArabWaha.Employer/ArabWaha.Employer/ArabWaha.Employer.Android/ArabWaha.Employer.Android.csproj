@@ -333,6 +333,13 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Saned.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\AdvancedElectronics.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\CloseButton.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\MenuProfile.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ComplaintsImg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\LogoutImg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\MyCompanyImg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\SettingImg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ServicesImg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ContactImg.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />

@@ -24,5 +24,6 @@ namespace ArabWaha.Core.ModelsEmployer.Programs
                 return $"{StatusLabelText} {Status} ";
             }
         }
+
     }
 }

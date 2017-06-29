@@ -170,6 +170,13 @@
     <BundleResource Include="Resources\Saned.png" />
     <BundleResource Include="Resources\AdvancedElectronics.png" />
     <BundleResource Include="Resources\CloseButton.png" />
+    <BundleResource Include="Resources\MenuProfile.png" />
+    <BundleResource Include="Resources\ComplaintsImg.png" />
+    <BundleResource Include="Resources\LogoutImg.png" />
+    <BundleResource Include="Resources\MyCompanyImg.png" />
+    <BundleResource Include="Resources\SettingImg.png" />
+    <BundleResource Include="Resources\ServicesImg.png" />
+    <BundleResource Include="Resources\ContactImg.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CarouselView.FormsPlugin.Abstractions">

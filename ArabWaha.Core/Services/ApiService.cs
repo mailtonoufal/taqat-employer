@@ -170,6 +170,10 @@ namespace ArabWaha.Core.Services
             return source;
         }
 
+      
+
+
+
         public async Task<ObservableCollection<EmployerProgram>> GetCurrentProgramsAsync()
         {
             DbAccessor db = new DbAccessor();
@@ -182,6 +186,11 @@ namespace ArabWaha.Core.Services
             }
             return source;
         }
+
+       
+
+
+
 
         // Programs
         public async Task<ObservableCollection<EmployerProgram>> GetAllProgramsAsync()

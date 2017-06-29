@@ -20,10 +20,8 @@ namespace ArabWaha.Models
         [JsonProperty("programRequirements")]
         public string ProgramRequirements { get; set; }
 
-		
 
-		[JsonProperty("status")]
-        public string Status { get; set; }
+
 
         [JsonProperty("title")]
         public string Title { get; set; }
@@ -37,35 +35,59 @@ namespace ArabWaha.Models
         [JsonProperty("whyThisProgram")]
         public string WhyThisProgram { get; set; }
 
-		//new fields added  getAllProgramDetailsSet API 
-		[JsonProperty("programId")]
-		public int ProgramId { get; set; }
+        //new fields added  getAllProgramDetailsSet API 
+        [JsonProperty("programId")]
+        public int ProgramId { get; set; }
 
-		[JsonProperty("programName")]
-		public string ProgramName { get; set; }
+        [JsonProperty("programName")]
+        public string ProgramName { get; set; }
 
-		[JsonProperty("language")]
-		public string Language { get; set; }
+        [JsonProperty("language")]
+        public string Language { get; set; }
 
-		[JsonProperty("programLogo")]
-		public string ProgramLogo { get; set; }
+        [JsonProperty("programLogo")]
+        public string ProgramLogo { get; set; }
 
-		[JsonProperty("locale")]
-		public string Locale { get; set; }
+        [JsonProperty("locale")]
+        public string Locale { get; set; }
 
-		[JsonProperty("image")]
-		public string Image { get; set; }
+        [JsonProperty("image")]
+        public string Image { get; set; }
 
-		[JsonProperty("code")]
-		public string Code { get; set; }
+        [JsonProperty("code")]
+        public string Code { get; set; }
 
-		
+
 
         [JsonProperty("programImage")]
-		public string ProgImage { get; set; }
+        public string ProgImage { get; set; }
 
-		[JsonProperty("programImageName")]
-		public string ProgImgName { get; set; }
+        [JsonProperty("programImageName")]
+        public string ProgImgName { get; set; }
 
-	}
+
+
+
+
+
+        private string _Status;
+        [JsonProperty("status")]
+        public string Status
+        {
+            get { return _Status; }
+            set
+            {
+                _Status = value;
+
+                if (_Status == "1")
+                    StatusText = "Open";
+                else
+                    StatusText = "Close";
+            }
+        }
+
+        [JsonProperty("programstatustext")]
+        public string StatusText { get; set; }
+
+    }
 }
