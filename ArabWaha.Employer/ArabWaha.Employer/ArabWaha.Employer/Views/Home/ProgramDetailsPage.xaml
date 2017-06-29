@@ -20,7 +20,7 @@
                         
                         <BoxView BackgroundColor="#012148"/>
                         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,0,0,30">
-                <Image Source="{Binding ProgramDetails.Image}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Image Source="{Binding ProgramDetails.Image}" Aspect="Fill" WidthRequest="80" HeightRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
                         <Label Text="{Binding ProgramDetails.Title}" HorizontalTextAlignment="Center" TextColor="White"/> 
                           
                             </StackLayout>
