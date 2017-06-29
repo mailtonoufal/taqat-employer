@@ -12,16 +12,23 @@
 
             <StackLayout VerticalOptions="Start" >
 
-            <syncfusion:SfRotator x:Name="rotator" 
-                                  DataSource="{Binding SwipeSource}"
-                                  BackgroundColor="#EDEDED"
-                                  NavigationStripMode="Dots"
-                                  NavigationStripPosition="Bottom"
-                                  EnableAutoPlay="true"
-                                  NavigationDelay="2000"
-                                  >
-            </syncfusion:SfRotator>
-
+			<cv:CarouselViewControl   x:Name="CarouselPics" VerticalOptions="FillAndExpand" HeightRequest="200"  HorizontalOptions="FillAndExpand" 
+                                      BackgroundColor="Transparent" ShowIndicators="True"  ItemsSource="{Binding SwipeSource}" >
+          <cv:CarouselViewControl.ItemTemplate>
+					
+        <DataTemplate>
+            <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="Transparent" HeightRequest="200">
+        <Image Source="{Binding Image}"  Aspect="AspectFit" BackgroundColor="Transparent" HeightRequest="125">
+        </Image>
+         <Label Text="{Binding Title}"  Style="{StaticResource InfoBodyTextBlue}" 
+                   HorizontalTextAlignment="Start" />
+                          <!-- <Label Text="{Binding Description}"  Style="{StaticResource InfoBodyTextBlue}" 
+                   HorizontalTextAlignment="Start" />-->
+    </StackLayout>
+	    </DataTemplate>
+    </cv:CarouselViewControl.ItemTemplate>
+                
+            </cv:CarouselViewControl>
             <ListView ItemsSource="{Binding HomePageSource}" HorizontalOptions="Start" VerticalOptions="Start" CachingStrategy = "RecycleElement"
                       HasUnevenRows="True" SeparatorVisibility="None"  BackgroundColor="{StaticResource GreyPageColor}" ItemSelected="ItemSelected" >
                 <ListView.ItemTemplate>
