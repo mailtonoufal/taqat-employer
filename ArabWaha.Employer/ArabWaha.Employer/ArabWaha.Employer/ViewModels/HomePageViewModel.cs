@@ -91,14 +91,14 @@ namespace ArabWaha.Employer.ViewModels
 				ApiService apiServ = new ApiService();
                
 				// need to pull from db
-                //SwipeSource = new ObservableCollection<FeaturedAnnouncement>(responseAnnouncements.Data.Featured);
-				SwipeSource = new List<SfRotatorItem>() {
-				new SfRotatorItem() {  Image= "sample_carousel.png" },
-				new SfRotatorItem() {  Image="sample_carousel.png"  },
-					new SfRotatorItem() {  Image="sample_carousel.png"  },
-					new SfRotatorItem() {  Image="sample_carousel.png"  },
-                //new SfRotatorItem() { ItemContent = new Label { Text = "tab image 3 will be here" ,TextColor=Color.Black }, BackgroundColor=Color.Transparent,  Image="sample_carousel.png" } ,
-                };
+                SwipeSource = new ObservableCollection<FeaturedAnnouncement>(responseAnnouncements.Data.Featured);
+				//SwipeSource = new List<SfRotatorItem>() {
+				//new SfRotatorItem() {  Image= "sample_carousel.png" },
+				//new SfRotatorItem() {  Image="sample_carousel.png"  },
+					//new SfRotatorItem() {  Image="sample_carousel.png"  },
+					//new SfRotatorItem() {  Image="sample_carousel.png"  },
+                ////new SfRotatorItem() { ItemContent = new Label { Text = "tab image 3 will be here" ,TextColor=Color.Black }, BackgroundColor=Color.Transparent,  Image="sample_carousel.png" } ,
+                //};
 
 				HomeContent = new HomeHomeContent();
 				SetHome();
@@ -366,9 +366,9 @@ namespace ArabWaha.Employer.ViewModels
 		}
 
 
-		private List<SfRotatorItem> _swipeSource;
+        private ObservableCollection<FeaturedAnnouncement> _swipeSource;
 
-		public List<SfRotatorItem> SwipeSource
+		public ObservableCollection<FeaturedAnnouncement> SwipeSource
 		{
 			get { return _swipeSource; }
 			set { _swipeSource = value; }

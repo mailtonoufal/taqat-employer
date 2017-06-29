@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<View xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArabWaha.Employer.Controls.HomeSlideViewCell"
+             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData">
+    <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="Transparent" HeightRequest="200">
+        <Image Source="sample_carousel.png"  Aspect="AspectFit" BackgroundColor="Green" HeightRequest="150">
+        </Image>
+         <Label Text="{Binding Title}"  Style="{StaticResource InfoBodyTextBlue}" 
+                   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+    </StackLayout>
+</View>
