@@ -32,7 +32,7 @@ namespace ArabWaha.Employer.iOS.Renders
             var borderLayer = new CALayer();
             borderLayer.MasksToBounds = true;
             borderLayer.Frame = new CoreGraphics.CGRect(0f, Frame.Height / 2, Frame.Width-40, 1f);
-            borderLayer.BorderColor = UIKit.UIColor.White.CGColor;
+            borderLayer.BorderColor = view.LineColor.ToCGColor();
             borderLayer.BorderWidth = 0.5f;
 
             Control.Layer.AddSublayer(borderLayer);

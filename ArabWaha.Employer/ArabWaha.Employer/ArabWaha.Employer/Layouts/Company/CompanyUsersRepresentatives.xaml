@@ -1,17 +1,19 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:bh="clr-namespace:Pillar;assembly=Pillar"             
              xmlns:local="clr-namespace:ArabWaha.Employer.Controls"  
-             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"             
-             x:Class="ArabWaha.Employer.Layouts.Company.CompanyUsersRepresentatives">
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers" 
+    xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
+             x:Class="ArabWaha.Employer.Layouts.Company.CompanyUsersRepresentatives"
+    BackgroundColor="{StaticResource BackgroundColor}">
     <ContentView.Content>
 
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource ContentStackLayout}">
             <Button Text="{lEx:Translate AddRepresentativeButton}" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding AddRepresentativeCommand}"  />
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
                 <ListView x:Name="ParentListView" ItemsSource="{Binding RepresentativeUsers}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
-                      HasUnevenRows="True" SeparatorColor="Silver" >
+                      HasUnevenRows="True" SeparatorVisibility="None" >
                     <ListView.Behaviors>
                         <bh:EventToCommandBehavior EventName="ItemTapped" Command="{Binding UserDetailCommand}" 
                                                EventArgsConverter="{StaticResource ItemTappedConverter}" />
@@ -26,16 +28,16 @@
                                     <MenuItem Text="{lEx:Translate MenuEdit}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
                                           Command="{Binding EditRepCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}"  />
                                 </ViewCell.ContextActions>
-                                <StackLayout Padding="0,5,5,0">
+                                <StackLayout Padding="0,5,0,5" BackgroundColor="{StaticResource BackgroundColor}">
                                     <Grid Margin="2,2,2,2">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="5" />
-                                            <RowDefinition Height="1*" />
-                                            <RowDefinition Height="20" />
-                                            <RowDefinition Height="20" />
-                                            <RowDefinition Height="10" />
-                                            <RowDefinition Height="20" />
-                                            <RowDefinition Height="20" />
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="auto" />
                                             <RowDefinition Height="5" />
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
@@ -46,12 +48,12 @@
                                         <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="8" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="FillAndExpand"  />
 
                                         <Label Text="{Binding FullName}" Grid.Row="1" Grid.Column="1"  Style="{StaticResource CellBodyTextMedBlue}" 
-                                               HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                                               HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"/>
 
-                                        <Label Grid.Row="2" Grid.Column="1" Text="Active" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
-                                        <Label Grid.Row="3" Grid.Column="1" Text="{Binding EmailAddress}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
-                                        <Label Grid.Row="5" Grid.Column="1" Text="Verified my MoL"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
-                                        <Label Grid.Row="6" Grid.Column="1" Text="MoL Account Status: Active"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+                                        <Label Grid.Row="2" Margin="0,5,0,0" Grid.Column="1" Text="Active" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                        <Label Grid.Row="3" Margin="0" Grid.Column="1" Text="{Binding EmailAddress}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                        <Label Grid.Row="5" Margin="0,5,0,0" Grid.Column="1" Text="Verified my MoL"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                        <Label Grid.Row="6" Margin="0" Grid.Column="1" Text="MoL Account Status: Active"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
 
                                     </Grid>
                                 </StackLayout>

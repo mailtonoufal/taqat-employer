@@ -119,14 +119,14 @@ namespace ArabWaha.Employer.ViewModels
 #endif
             TranslateExtension tran = new TranslateExtension();
 
-            SigninText = App.Translation != null ? App.Translation.employer.signinlbltitle : tran.GetProviderValueString("LabelWatchList");
-			UsernameText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LabelWatchList");
-			UsernameTextHolder = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LabelWatchList");
-			PasswordText = tran.GetProviderValueString("Password");
-			PasswordTextHolder = tran.GetProviderValueString("Password");
-			LoginForgotPassword =tran.GetProviderValueString("LoginForgotPassword");
-			StartContinueAsGuest = App.Translation != null ? App.Translation.employer.signinbtnguest : tran.GetProviderValueString("LabelWatchList");
-			LoginNoAccountSignup = App.Translation != null ? App.Translation.employer.signinbtnsignup : tran.GetProviderValueString("LabelWatchList");
+            SigninText = App.Translation != null ? App.Translation.employer.signinlbltitle : tran.GetProviderValueString("ButtonSignIn");
+			UsernameText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginUserText");
+            UsernameTextHolder = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginEnterUsername");
+            PasswordText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginPassText");
+			PasswordTextHolder = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginEnterPassword");
+			LoginForgotPassword = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginForgotPassword");
+			StartContinueAsGuest = App.Translation != null ? App.Translation.employer.signinbtnguest : tran.GetProviderValueString("StartContinueAsGuest");
+			LoginNoAccountSignup = App.Translation != null ? App.Translation.employer.signinbtnsignup : tran.GetProviderValueString("LoginNoAccountSignup");
 
 
 
