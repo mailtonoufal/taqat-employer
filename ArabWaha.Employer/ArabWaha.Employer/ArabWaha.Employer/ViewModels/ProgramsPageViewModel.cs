@@ -12,8 +12,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Diagnostics;
 using ArabWaha.Employer.Helpers;
+using ArabWaha.Models;
 
-using static ArabWaha.Models.Translation;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -31,18 +31,28 @@ namespace ArabWaha.Employer.ViewModels
             ApiService apiServ = new ApiService();
             try
             {
-                ProgramsSource = await apiServ.GetAllProgramsAsync();
+				//ProgramsSource = await apiServ.GetAllProgramsAsync();
+
+				var progList = await Web.AWHttpClient.Instance.GetPrograms();
+
+				if (progList.Data != null && progList.Data.Programs.Count > 0)
+				{
+					ProgramsSource = new ObservableCollection<Program>(progList.Data.Programs);
+				}
 
 
 
-                //for program status text
+
+
+				//for program status text
 
 				TranslateExtension tran = new TranslateExtension();
 				string progStatusLabel = tran.GetProviderValueString("LabelProgramStatusText");
 				// setup Program Status:
 				foreach (var item in ProgramsSource)
 				{
-					item.StatusLabelText = progStatusLabel;
+					//item.StatusLabelText = progStatusLabel;
+                    item.StatusText = $"{progStatusLabel} {item.StatusText} ";
 				}
 
 
@@ -57,12 +67,12 @@ namespace ArabWaha.Employer.ViewModels
             }
         }
 
-        private ObservableCollection<EmployerProgram> _ProgramsSource;
+        private ObservableCollection<Program> _ProgramsSource;
 
-        public ObservableCollection<EmployerProgram> ProgramsSource
+        public ObservableCollection<Program> ProgramsSource
         {
             get { return _ProgramsSource; }
-            set { SetProperty<ObservableCollection<EmployerProgram>>(ref _ProgramsSource, value); }
+            set { SetProperty<ObservableCollection<Program>>(ref _ProgramsSource, value); }
         }
 
         #region commands
@@ -76,7 +86,6 @@ namespace ArabWaha.Employer.ViewModels
                 paramx.Add("Data", vals);
                 await _nav.NavigateAsync(nameof(ProgramDetailsPage), paramx, false, true);
             }
-
         }
 
 

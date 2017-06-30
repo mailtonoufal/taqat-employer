@@ -81,13 +81,22 @@ namespace ArabWaha.Models
 
                 if (_Status == "1")
                     StatusText = "Open";
+				
                 else
                     StatusText = "Close";
+			
             }
         }
 
         [JsonProperty("programstatustext")]
         public string StatusText { get; set; }
 
-    }
+		
+
+
+
+
+	
+
+	}
 }
