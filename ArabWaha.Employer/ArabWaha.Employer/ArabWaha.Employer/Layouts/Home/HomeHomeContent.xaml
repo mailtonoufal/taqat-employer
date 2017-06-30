@@ -2,6 +2,7 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:locals="clr-namespace:ArabWaha.Employer.Controls"
+    xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
              xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions" 
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
              x:Class="ArabWaha.Employer.Layouts.HomeHomeContent"
@@ -12,25 +13,27 @@
 
             <StackLayout VerticalOptions="Start" >
 
-			<cv:CarouselViewControl   x:Name="CarouselPics" VerticalOptions="FillAndExpand" HeightRequest="200"  HorizontalOptions="FillAndExpand" 
-                                      BackgroundColor="Transparent" ShowIndicators="True"  ItemsSource="{Binding SwipeSource}" >
+			<cv:CarouselViewControl   x:Name="CarouselPics" VerticalOptions="FillAndExpand" HeightRequest="240"  HorizontalOptions="FillAndExpand" 
+                                      BackgroundColor="Transparent" ShowIndicators="True"  ItemsSource="{Binding SwipeSource}" Position="{Binding initialPostion}" >
           <cv:CarouselViewControl.ItemTemplate>
 					
         <DataTemplate>
-            <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="Transparent" HeightRequest="200">
+                        <StackLayout HeightRequest="200" BackgroundColor="Transparent">
+            <StackLayout Style="{StaticResource ContentStackLayout}" BackgroundColor="White" HeightRequest="225" Margin="10,10,10,10">
         <Image Source="{Binding Image}"  Aspect="AspectFit" BackgroundColor="Transparent" HeightRequest="125">
         </Image>
          <Label Text="{Binding Title}"  Style="{StaticResource InfoBodyTextBlue}" 
-                   HorizontalTextAlignment="Start" />
-                          <!-- <Label Text="{Binding Description}"  Style="{StaticResource InfoBodyTextBlue}" 
-                   HorizontalTextAlignment="Start" />-->
+                   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" FontSize="15" />
+                           <Label Text="{Binding Description}" LineBreakMode="WordWrap" HeightRequest= "40"  Style="{StaticResource CellBodyTextMedGray}"
+                   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" FontSize="13" />
     </StackLayout>
+                            </StackLayout>
 	    </DataTemplate>
     </cv:CarouselViewControl.ItemTemplate>
                 
             </cv:CarouselViewControl>
             <ListView ItemsSource="{Binding HomePageSource}" HorizontalOptions="Start" VerticalOptions="Start" CachingStrategy = "RecycleElement"
-                      HasUnevenRows="True" SeparatorVisibility="None"  BackgroundColor="{StaticResource GreyPageColor}" ItemSelected="ItemSelected" >
+                      HasUnevenRows="True" SeparatorVisibility="None"  BackgroundColor="{StaticResource GreyPageColor}" ItemSelected="ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <locals:HomeCustomViewCell />
