@@ -19,7 +19,7 @@ namespace ArabWaha.Employer.Controls
 
 		public void SetTabVisble(int number)
 		{
-			Searcher.Placeholder = App.Translation.employer.guestsearchlbltitle;
+            Searcher.Placeholder = App.Translation==null ? "" : App.Translation.employer.guestsearchlbltitle;
 
 			tab1Selected.IsVisible = false;
 			tab2Selected.IsVisible = false;

@@ -88,17 +88,18 @@ namespace ArabWaha.Employer.ViewModels
 				{
 					HomePageSource = new ObservableCollection<Announcement>(responseAnnouncements.Data.Announcements.Data);
 				}
-				ApiService apiServ = new ApiService();
-               
-				// need to pull from db
-                SwipeSource = new ObservableCollection<FeaturedAnnouncement>(responseAnnouncements.Data.Featured);
-				//SwipeSource = new List<SfRotatorItem>() {
-				//new SfRotatorItem() {  Image= "sample_carousel.png" },
-				//new SfRotatorItem() {  Image="sample_carousel.png"  },
-					//new SfRotatorItem() {  Image="sample_carousel.png"  },
-					//new SfRotatorItem() {  Image="sample_carousel.png"  },
-                ////new SfRotatorItem() { ItemContent = new Label { Text = "tab image 3 will be here" ,TextColor=Color.Black }, BackgroundColor=Color.Transparent,  Image="sample_carousel.png" } ,
-                //};
+				//ApiService apiServ = new ApiService();
+
+                if (responseAnnouncements.Data != null && responseAnnouncements.Data.Featured.Count > 0)
+                {
+                    initialPostion = "0";
+					SwipeSource = new ObservableCollection<FeaturedAnnouncement>(responseAnnouncements.Data.Featured);
+					if (GlobalSetting.IsArabic)
+					{
+                        SwipeSource = new ObservableCollection<FeaturedAnnouncement>(SwipeSource.Reverse());
+                        initialPostion = (responseAnnouncements.Data.Featured.Count() - 1).ToString();
+					}
+				}
 
 				HomeContent = new HomeHomeContent();
 				SetHome();
@@ -373,7 +374,7 @@ namespace ArabWaha.Employer.ViewModels
 			get { return _swipeSource; }
 			set { _swipeSource = value; }
 		}
-
+        public string initialPostion { get; set; }
 
 		#endregion
 

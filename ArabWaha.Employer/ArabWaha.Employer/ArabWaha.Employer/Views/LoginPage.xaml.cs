@@ -17,16 +17,16 @@ namespace ArabWaha.Employer.Views
    //             WidthRequest=10
 			//};
 			btn.Clicked += btn_Clicked;
-			void btn_Clicked(object sender, EventArgs e)
-			{
-				this.Navigation.PushAsync(new StartPage());
-			}
+
 			
            
 			
 		}
 		
-
+		void btn_Clicked(object sender, EventArgs e)
+		{
+			this.Navigation.PushAsync(new StartPage());
+		}
 
        
        
