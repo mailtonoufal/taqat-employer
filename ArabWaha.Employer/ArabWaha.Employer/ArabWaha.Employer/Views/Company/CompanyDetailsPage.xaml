@@ -20,15 +20,16 @@
 
     <StackLayout VerticalOptions="Start" HorizontalOptions="Fill" Style="{StaticResource ContentStackLayout}" >
       <StackLayout BackgroundColor="{StaticResource BackgroundColor}">
-            <Image  Source="AdvancedElectronics.png" HeightRequest="45" BackgroundColor="{StaticResource BackgroundColor}"></Image>
+            <Image  Source="{Binding CompanyInfo.logoURL}" HeightRequest="45" BackgroundColor="{StaticResource BackgroundColor}"></Image>
               <!--  Source="{Binding CompanyInfo.CompanyLogo}"-->
                <!-- BackgroundColor="{StaticResource BluePageColor}"-->
-            <Label Text="{Binding CompanyInfo.CompanyName}" Style="{StaticResource HeaderTextMediumBlue}" 
+            <Label Text="{Binding CompanyInfo.establishmentName}" Style="{StaticResource HeaderTextMediumBlue}" 
                    HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="#012149" FontSize="16" FontAttributes="None"/>
-            <Label Text="{Binding CompanyInfo.CompanyURL}" Style="{StaticResource InfoBodyTextSmallBlue}" 
+            <Label Text="{Binding CompanyInfo.website}" Style="{StaticResource InfoBodyTextSmallBlue}" 
                    HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="#FD9326" FontSize="13"/>
       </StackLayout>
         </StackLayout>
+
 
 
 
@@ -41,7 +42,7 @@
                  <!--   AccordionImage = "{StaticResource DefaultJobIcon}"-->
                     <controlx:XpertAccordion.AccordionContents>
                       <StackLayout Padding ="10,5,10,5">
-                        <Label Text="{Binding CompanyInfo.CompanyDescription}" FontAttributes="None" TextColor="#012149" FontSize="13"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                        <Label Text="{Binding CompanyInfo.companyDescription}" FontAttributes="None" TextColor="#012149" FontSize="13"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
                           <!--  Style="{StaticResource CellBodyTextMedBlue}"-->
                       </StackLayout>
                     </controlx:XpertAccordion.AccordionContents>
@@ -79,9 +80,9 @@
                                 <Label Grid.Row="3"  Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{lEx:Translate ProfileIDLabel}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
                                <!-- Style="{StaticResource CellBodyTextMedBlue}"-->
 
-                                <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.Industry}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
-                                <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.CompanySize}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
-                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.PreferredLanguage}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.industryTypeId}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.companySizeListId}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.language}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
                                 <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.ProfileID}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
                                <!--  Style="{StaticResource CellBodyTextMedGray}"-->
                             </Grid>
@@ -123,20 +124,20 @@
                              <!-- Style="{StaticResource CellBodyTextMedBlue}"-->
 
                                 <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.ContactName}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
-                                <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.ContactPosition}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
-                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.ContactMobile}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13">
+                                <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.contactPersonPosition}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.contactPersonMobile}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13">
                                   <!--  Style="{StaticResource CellBodyTextMedGray}"-->
                                     <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding CompanyInfo.CallCommand}" CommandParameter="{Binding CompanyInfo.ContactMobile}" NumberOfTapsRequired="1" />
+                                        <TapGestureRecognizer Command="{Binding CallCommand}" CommandParameter="{Binding CompanyInfo.contactPersonMobile}" NumberOfTapsRequired="1" />
                                     </Label.GestureRecognizers>
                                 </Label>
-                                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.ContactPhone}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13">
+                                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.contactPersonTelephone}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13">
                                   <!--  Style="{StaticResource CellBodyTextMedBlue}"-->
                                     <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding CompanyInfo.CallCommand}" CommandParameter="{Binding CompanyInfo.ContactPhone}" NumberOfTapsRequired="1" />
+                                        <TapGestureRecognizer Command="{Binding CallCommand}" CommandParameter="{Binding CompanyInfo.contactPersonTelephone}" NumberOfTapsRequired="1" />
                                     </Label.GestureRecognizers>
                                 </Label>
-                                <Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.ContactEmail}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                <Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.contactPersonEmailId}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
                             </Grid>
                         </StackLayout>
                     </controlx:XpertAccordion.AccordionContents>

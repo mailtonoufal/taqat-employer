@@ -2,22 +2,30 @@
 using ArabWaha.Core.Services;
 using ArabWaha.Employer.BaseCalsses;
 using ArabWaha.Employer.Views;
+using ArabWaha.Common;
 using Prism.Commands;
+using ArabWaha.Models;
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
+using System.Threading.Tasks;
 using System;
+using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
+using ArabWaha.Core.Models.Company;
+using ArabWaha.Web;
+using ArabWaha.Core.DBAccess;
+using System.Diagnostics;
 
 namespace ArabWaha.Employer.ViewModels
 {
     public class CompanyDetailsPageViewModel : AWMVVMBase, INavigationAware
     {
 
-        private CompanyDetails _companyInfo;
-        public CompanyDetails CompanyInfo
+        private MyCompany _companyInfo;
+        public MyCompany CompanyInfo
         {
             get { return _companyInfo; }
             set { SetProperty(ref _companyInfo, value); }
@@ -28,12 +36,22 @@ namespace ArabWaha.Employer.ViewModels
         public DelegateCommand ManageCommand { get; set; }
 
 
-        public CompanyDetailsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
+        public  CompanyDetailsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
             SetDefaultColumn(0, 1);
             CallCommand = new DelegateCommand<string>(CallNumber);
             ManageCommand = new DelegateCommand(ManageCompany);
-        }
+           
+            DbAccessor db = new DbAccessor();
+            //retrieve the company details from the db
+		    var myCompanyFromDb = db.GetTableItems<MyCompany>();
+
+            var MyCompanyDetails = myCompanyFromDb[0];
+
+            CompanyInfo = myCompanyFromDb[0];
+
+
+		}
 
         private void ManageCompany()
         {
@@ -55,14 +73,9 @@ namespace ArabWaha.Employer.ViewModels
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            SetupTestData();
+           // SetupTestData();
         }
 
-        private async void SetupTestData()
-        {
-            ApiService srv = new ApiService();
-            CompanyInfo = await srv.GetCompanyDetailsAsync(10);
-        }
-
+       
     }
 }
