@@ -122,8 +122,13 @@ namespace ArabWaha.Employer.ViewModels
             SigninText = App.Translation != null ? App.Translation.employer.signinlbltitle : tran.GetProviderValueString("ButtonSignIn");
 			UsernameText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginUserText");
             UsernameTextHolder = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginEnterUsername");
-            PasswordText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginPassText");
-			PasswordTextHolder = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginEnterPassword");
+
+			PasswordText = tran.GetProviderValueString("LoginPassText");
+			PasswordTextHolder = tran.GetProviderValueString("LoginEnterPassword");
+
+
+			//PasswordText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginPassText");
+			//PasswordTextHolder = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginEnterPassword");
 			LoginForgotPassword = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginForgotPassword");
 			StartContinueAsGuest = App.Translation != null ? App.Translation.employer.signinbtnguest : tran.GetProviderValueString("StartContinueAsGuest");
 			LoginNoAccountSignup = App.Translation != null ? App.Translation.employer.signinbtnsignup : tran.GetProviderValueString("LoginNoAccountSignup");
