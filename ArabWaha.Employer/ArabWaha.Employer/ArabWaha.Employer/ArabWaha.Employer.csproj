@@ -278,10 +278,16 @@
     <Compile Include="StaticData\GlobalSetting.cs" />
     <Compile Include="Helpers\CMSTranslateExtension.cs" />
     <Compile Include="ILocation.cs" />
+    <Compile Include="Layouts\Candidate\CandidateListView.xaml.cs">
+      <DependentUpon>CandidateListView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Candidate\CandidateListView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
