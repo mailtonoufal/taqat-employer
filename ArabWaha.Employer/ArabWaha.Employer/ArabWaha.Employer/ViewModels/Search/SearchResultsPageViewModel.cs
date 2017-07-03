@@ -15,6 +15,7 @@ using System.Linq;
 using ArabWaha.Web;
 using ArabWaha.Core.Models.Candidates;
 using System.Diagnostics;
+using Acr.UserDialogs;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -75,16 +76,21 @@ namespace ArabWaha.Employer.ViewModels
 		{
 			try
 			{
+                UserDialogs.Instance.ShowLoading();
 				var result = await AWHttpClient.Instance.GetCandidatesList();
 				if (result.Result.candidateObjectList.candidateList != null && result.Result.candidateObjectList.candidateList.Count > 0)
 				{
 					CandidateList = new ObservableCollection<Candidate>(result.Result.candidateObjectList.candidateList);
 				}
+              
 			}
 			catch (Exception ex)
-			{
+            {
 				Debug.WriteLine(ex.Message);
 			}
+            finally{
+                UserDialogs.Instance.HideLoading();
+            }
 			//ApiService sv = new ApiService();
 			//Get the CandidateList
 
