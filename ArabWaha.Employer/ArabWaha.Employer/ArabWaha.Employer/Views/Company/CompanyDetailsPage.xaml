@@ -38,7 +38,7 @@
 
 
 
-                <controlx:XpertAccordion HeaderText="{lEx:Translate CompanyDescriptionLabel}" AccordionIsExpanded="True">
+                <controlx:XpertAccordion HeaderText="{lEx:Translate CompanyDescriptionLabel}" AccordionIsExpanded="True" >
                  <!--   AccordionImage = "{StaticResource DefaultJobIcon}"-->
                     <controlx:XpertAccordion.AccordionContents>
                       <StackLayout Padding ="10,5,10,5">
@@ -82,7 +82,7 @@
 
                                 <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.industryTypeId}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
                                 <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.companySizeListId}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
-                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.language}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.languageListId}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
                                 <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.ProfileID}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
                                <!--  Style="{StaticResource CellBodyTextMedGray}"-->
                             </Grid>
@@ -174,9 +174,10 @@
         <maps:Map WidthRequest="320" HeightRequest="200"
             x:Name="MyMap"
             IsShowingUser="true"
-            MapType="Street" />
+            MapType="Street" IsVisible="true"/>
 
-           </StackLayout>
+
+               </StackLayout>
                     </controlx:XpertAccordion.AccordionContents>
                 </controlx:XpertAccordion>
                 <Button Text="{lEx:Translate ManageCompanyUsersButton}" Margin="18,0,18,0" Style="{StaticResource GreenButton}" HorizontalOptions="FillAndExpand" Command="{Binding ManageCommand}"></Button>

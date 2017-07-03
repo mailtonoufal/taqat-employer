@@ -36,22 +36,26 @@ namespace ArabWaha.Employer.ViewModels
         public DelegateCommand ManageCommand { get; set; }
 
 
-        public  CompanyDetailsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
+        public CompanyDetailsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
             SetDefaultColumn(0, 1);
             CallCommand = new DelegateCommand<string>(CallNumber);
             ManageCommand = new DelegateCommand(ManageCompany);
-           
+
             DbAccessor db = new DbAccessor();
             //retrieve the company details from the db
-		    var myCompanyFromDb = db.GetTableItems<MyCompany>();
+            var myCompanyFromDb = db.GetTableItems<MyCompany>();
 
             var MyCompanyDetails = myCompanyFromDb[0];
 
             CompanyInfo = myCompanyFromDb[0];
+           // var lattitude = CompanyInfo.contactPersonGeocodeLattitude;
+           // var longitude = CompanyInfo.contactPersonGeocodeLongitude;
 
 
-		}
+
+           
+        }
 
         private void ManageCompany()
         {

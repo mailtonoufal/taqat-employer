@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using System.Threading.Tasks;
 using MapsPCL;
+using ArabWaha.Employer.ViewModels;
 
 namespace ArabWaha.Employer.Views
 {
@@ -17,15 +18,38 @@ namespace ArabWaha.Employer.Views
 			try
 			{
 				InitializeComponent();
-				MyMap.MoveToRegion(new MapSpan(new Position(17.456508, 78.412616), 0.09, 0.09));
+
+
+
+                var vm = (CompanyDetailsPageViewModel)this.BindingContext;
+				var lattitude = vm.CompanyInfo.contactPersonGeocodeLattitude;
+				var longitude = vm.CompanyInfo.contactPersonGeocodeLongitude;
+
+
+
+
+				//MyMap.MoveToRegion(new MapSpan(new Position(Convert.ToDouble(lattitude), Convert.ToDouble(longitude)), 0.1, 0.1));
+
+
+				MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(Convert.ToDouble(lattitude), Convert.ToDouble(longitude)), Distance.FromMiles(1)));
+
+
+
+				//MyMap.MoveToRegion(new MapSpan(new Position(26.986432, 38.982341), 0.09, 0.09));
+
+
+
+
 
 				var pin = new Pin()
 				{
-					Position = new Position(17.456508, 78.412616),
+                    Position = new Position(Convert.ToDouble(lattitude), Convert.ToDouble(longitude)),
 					Label = string.Empty
 				};
 				MyMap.Pins.Add(pin);
 			}
+
+
 			catch (System.Exception ex)
 			{
 				Debug.WriteLine(ex.Message);
