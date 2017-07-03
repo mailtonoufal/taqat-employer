@@ -12,6 +12,8 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using ArabWaha.Web;
+using ArabWaha.Core.Models.Candidates;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -23,8 +25,8 @@ namespace ArabWaha.Employer.ViewModels
             FilterCommand = new DelegateCommand(ProcessFilter);
         }
 
-        private ObservableCollection<ApplicationProfile> _candidateList = new ObservableCollection<ApplicationProfile>();
-        public ObservableCollection<ApplicationProfile> CandidateList
+        private ObservableCollection<Candidate> _candidateList = new ObservableCollection<Candidate>();
+        public ObservableCollection<Candidate> CandidateList
         {
             get { return _candidateList; }
             set { SetProperty(ref _candidateList, value); UpdateResults(); }
@@ -71,17 +73,24 @@ namespace ArabWaha.Employer.ViewModels
         private async void ProcessSearch()
         {
             ApiService sv = new ApiService();
-            CandidateList = await sv.GetSearchApplicationsAsync(SearchText, SearchLocation);
+			//Get the CandidateList
+            var result = await AWHttpClient.Instance.GetCandidatesList();
+            if (result.Result.candidateObjectList.candidateList !=null && result.Result.candidateObjectList.candidateList.Count>0)
+            {
+                CandidateList = new ObservableCollection<Candidate>(result.Result.candidateObjectList.candidateList);
+            }
+
+            //CandidateList = await sv.GetSearchApplicationsAsync(SearchText, SearchLocation);
 
             // set up ApplicationSearchResultPostedDate for localization
-            foreach(var item in CandidateList)
-            {
-                item.ApplicationSearchResultPostedDate = GetApplicationPostedDate(item.ApplicationDate);
-            }
+            //foreach(var item in CandidateList)
+            //{
+            //    item.ApplicationSearchResultPostedDate = GetApplicationPostedDate(item.ApplicationDate);
+            //}
 
             CMSTranslateExtension trans = new CMSTranslateExtension();
 
-            // setup count here
+            //// setup count here
             SearchResultCount = $"{CandidateList.Count} {trans.GetProviderValueString("talentsearchlblresultsfound")}";
 
         }

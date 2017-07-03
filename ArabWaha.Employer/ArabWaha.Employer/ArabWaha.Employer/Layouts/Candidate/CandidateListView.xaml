@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:ArabWaha.Employer.Controls"             
+             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"  
+    xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
+             xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"             
+             x:Class="ArabWaha.Employer.Layouts.Candidate.CandidateListView">
+  <ContentView.Content>
+        <ListView  ItemsSource="{Binding CandidateList}"  x:Name="ResultsList" BackgroundColor="{StaticResource GreyPageColor}"   CachingStrategy = "RecycleElement"                   
+                      HasUnevenRows="True" SeparatorVisibility="None" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout  Style="{StaticResource ContentStackLayout}" BackgroundColor="Transparent" >
+                            <Grid BackgroundColor="White">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="5" />
+                                    <RowDefinition Height="30" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10" />
+                                    <ColumnDefinition Width="{x:Static gb:GlobalSetting.SearchResultProgressWidth}" />
+                                    <ColumnDefinition Width="{x:Static gb:GlobalSetting.SearchResultLabelWidth}" />
+                                    <ColumnDefinition Width="10" />
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="6" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
+
+                                 <!-- ***************** ProfileTitle Title *************************** -->
+
+                                 <Label Text="{Binding ProfileTitle}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.SearchResultTitleColNo}"
+                                       Style="{StaticResource InfoBodyTextBlue}"
+                                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                
+                                <!-- ***************** Progress Bar and % *************************** -->
+                                
+                                <controls:GaugeControl Grid.Row="1" Grid.RowSpan="3" Grid.Column="{x:Static gb:GlobalSetting.SearchResultProgressColNo}" Progress="{Binding MatchScore}"></controls:GaugeControl>
+
+                                <Label Text="{Binding MatchScore,StringFormat='{0}%'}" Grid.Row="1" Grid.RowSpan="3" Grid.Column="{x:Static gb:GlobalSetting.SearchResultProgressColNo}"  
+                                       Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="Center" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="3,0,0,0" />
+
+                                <!-- ***************** Application match score *************************** -->
+
+                                <Label Text="{lEx:CMSTranslate talensearchlblmatchscore}"  Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.SearchResultProgressColNo}" FontSize="Micro"
+                                           Style="{StaticResource CellBodyTextMedGray}" 
+                                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
+
+                                 <!-- ********************** Posted Since ******************************* -->
+
+                                <Label Text="{Binding StartDate}"  Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.SearchResultTitleColNo}" Grid.ColumnSpan="1"
+                                        Style="{StaticResource CellBodyTextMedGray}" 
+                                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                 <!-- **********************Gender******************************* -->
+                               
+                                 <StackLayout Orientation="Horizontal" HorizontalOptions="Start" IsVisible="{x:Static gb:GlobalSetting.SearchResultBottomRowCellEng}" VerticalOptions="Start" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.SearchResultTitleColNo}">
+                                    <Image Source="{StaticResource ContactIcon}"
+                                       Aspect="AspectFit" WidthRequest="15" HeightRequest="15" VerticalOptions="Center"  />
+                                    <Label Text="{Binding Gender}"   
+                                        Style="{StaticResource CellBodyTextMedGray}"  VerticalTextAlignment="Center"
+                                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                </StackLayout>
+                                 <StackLayout Orientation="Horizontal"  HorizontalOptions="End" IsVisible="{x:Static gb:GlobalSetting.SearchResultBottomRowCellArabic}"  VerticalOptions="Start" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.SearchResultTitleColNo}" >
+                                    
+                                    <Label Text="{Binding Gender}" 
+                                        Style="{StaticResource CellBodyTextMedGray}"  VerticalTextAlignment="Center"
+                                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                       <Image Source="{StaticResource ContactIcon}"
+                                       Aspect="AspectFit" WidthRequest="15" HeightRequest="15" VerticalOptions="Center"  />
+                                </StackLayout>
+
+                                <!-- **********************Location******************************* -->
+                                
+                              <StackLayout Orientation="Horizontal" HorizontalOptions="Start" IsVisible="{x:Static gb:GlobalSetting.SearchResultBottomRowCellEng}" VerticalOptions="Start" Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.SearchResultTitleColNo}">
+                                    <Image Source="{StaticResource LocationIcon}"
+                                       Aspect="AspectFit" WidthRequest="15" HeightRequest="15" VerticalOptions="Center"  />
+                                    <Label Text="{Binding location}"    
+                                        Style="{StaticResource CellBodyTextMedGray}"  VerticalTextAlignment="Center"
+                                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                </StackLayout>
+                                 <StackLayout Orientation="Horizontal"  HorizontalOptions="End" IsVisible="{x:Static gb:GlobalSetting.SearchResultBottomRowCellArabic}"  VerticalOptions="Start" Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.SearchResultTitleColNo}" >
+                                    
+                                    <Label Text="{Binding location}"    
+                                        Style="{StaticResource CellBodyTextMedGray}"  VerticalTextAlignment="Center"
+                                       HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                       <Image Source="{StaticResource LocationIcon}"
+                                       Aspect="AspectFit" WidthRequest="15" HeightRequest="15" VerticalOptions="Center"  />
+                                </StackLayout>
+                               
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentView.Content>
+</ContentView>
