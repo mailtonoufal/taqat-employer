@@ -120,22 +120,22 @@ namespace ArabWaha.Employer.ViewModels
             TranslateExtension tran = new TranslateExtension();
 
             SigninText = App.Translation != null ? App.Translation.employer.signinlbltitle : tran.GetProviderValueString("ButtonSignIn");
-			UsernameText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginUserText");
+            UsernameText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginUserText");
             UsernameTextHolder = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginEnterUsername");
 
-			PasswordText = tran.GetProviderValueString("LoginPassText");
-			PasswordTextHolder = tran.GetProviderValueString("LoginEnterPassword");
+            PasswordText = tran.GetProviderValueString("LoginPassText");
+            PasswordTextHolder = tran.GetProviderValueString("LoginEnterPassword");
 
 
-			//PasswordText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginPassText");
-			//PasswordTextHolder = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginEnterPassword");
-			LoginForgotPassword = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginForgotPassword");
-			StartContinueAsGuest = App.Translation != null ? App.Translation.employer.signinbtnguest : tran.GetProviderValueString("StartContinueAsGuest");
-			LoginNoAccountSignup = App.Translation != null ? App.Translation.employer.signinbtnsignup : tran.GetProviderValueString("LoginNoAccountSignup");
+            //PasswordText = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginPassText");
+            //PasswordTextHolder = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginEnterPassword");
+            LoginForgotPassword = App.Translation != null ? App.Translation.employer.guestprofiledetlblusername : tran.GetProviderValueString("LoginForgotPassword");
+            StartContinueAsGuest = App.Translation != null ? App.Translation.employer.signinbtnguest : tran.GetProviderValueString("StartContinueAsGuest");
+            LoginNoAccountSignup = App.Translation != null ? App.Translation.employer.signinbtnsignup : tran.GetProviderValueString("LoginNoAccountSignup");
 
 
 
-			LostPasswordCommand = new DelegateCommand(LostPassword);
+            LostPasswordCommand = new DelegateCommand(LostPassword);
             SignInCommand = new DelegateCommand(async () => { await SignIn(); }, CanSignIn);
             GuestCommand = new DelegateCommand(ProcessGuestCommand);
             SignupCommand = new DelegateCommand(ProcessSignupCommand);
@@ -185,9 +185,32 @@ namespace ArabWaha.Employer.ViewModels
             Device.OpenUri(new Uri("https://www.taqat.sa/web/guest/individualregistration"));
         }
 
-        private void ProcessGuestCommand()
+        private async void ProcessGuestCommand()
         {
-            _nav.NavigateAsync(nameof(SearchPage), animated: false);
+            AuthService sv = new AuthService();
+            bool isLoginSuccess = false;
+            try
+            {
+                UserDialogs.Instance.ShowLoading();
+                isLoginSuccess = await sv.Login("mobileuser", "mobileuser", true);
+                UserDialogs.Instance.HideLoading();
+            }
+            catch (Exception ex)
+            {
+                UserDialogs.Instance.HideLoading();
+                Debug.WriteLine(ex.Message);
+            }
+
+            if (isLoginSuccess)
+            {
+                await _nav.NavigateAsync(nameof(SearchPage), animated: false);
+            }
+            else
+            {
+                UserDialogs.Instance.ShowError("Something went wrong");
+            }
+
+
             //_nav.GoBackAsync();
         }
 
@@ -206,6 +229,8 @@ namespace ArabWaha.Employer.ViewModels
             //Non-Hafiz -> Main screen
             //txtUserName.Text = "Fahad@arabwaha.com";
             //txtPassword.Text = "12345";
+            DebugDataSingleton.Instance.IsGuest = false;
+
             AuthService sv = new AuthService();
             bool isLoginSuccess = false;
             try

@@ -19,11 +19,11 @@ namespace ArabWaha.Models
 		/// </summary>
 		/// <value>The name of the user.</value>
 		public string UserName { get; set; }
-		/// <summary>
-		/// Gets or sets the basic auth.
-		/// </summary>
-		/// <value>The basic auth.</value>
-		public string BasicAuth { get; set; }
+        /// <summary>
+        /// Gets or sets the basic auth.
+        /// </summary>
+        /// <value>The basic auth.</value>
+        public string BasicAuth { get; set; }
 		/// <summary>
 		/// Gets or sets the nes individual identifier.
 		/// </summary>
@@ -64,5 +64,6 @@ namespace ArabWaha.Models
 		/// </summary>
 		/// <value>Logged in users mobile no.</value>
 		public string UserMobileNumber { get; set; }
+        public bool IsGuest { get; set; }
     }
 }

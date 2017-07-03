@@ -9,6 +9,8 @@ using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ArabWaha.Models;
+using System.Text;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -32,7 +34,7 @@ namespace ArabWaha.Employer.ViewModels
         
         public SearchPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-
+            DebugDataSingleton.Instance.IsGuest = true;
             SearchCommand = new DelegateCommand(Search);//, CanSearch);
             SignInCommand = new DelegateCommand(SignIn);
         }

@@ -16,6 +16,7 @@ using ArabWaha.Web;
 using ArabWaha.Core.Models.Candidates;
 using System.Diagnostics;
 using Acr.UserDialogs;
+using System.Threading.Tasks;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -23,7 +24,9 @@ namespace ArabWaha.Employer.ViewModels
 	{
 		public SearchResultsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
 		{
-			SearchCommand = new DelegateCommand(ProcessSearch);
+            SearchCommand = new DelegateCommand(async () => {
+                await ProcessSearch();
+            });
 			FilterCommand = new DelegateCommand(ProcessFilter);
 		}
 
@@ -72,12 +75,12 @@ namespace ArabWaha.Employer.ViewModels
 			_nav.NavigateAsync(nameof(FiltersPage));
 		}
 
-		private async void ProcessSearch()
+		private async Task ProcessSearch()
 		{
 			try
 			{
                 UserDialogs.Instance.ShowLoading();
-				var result = await AWHttpClient.Instance.GetCandidatesList();
+				var result = await AWHttpClient.Instance.GetCandidatesList("*");
 				if (result.Result.candidateObjectList.candidateList != null && result.Result.candidateObjectList.candidateList.Count > 0)
 				{
 					CandidateList = new ObservableCollection<Candidate>(result.Result.candidateObjectList.candidateList);
@@ -151,7 +154,7 @@ namespace ArabWaha.Employer.ViewModels
 			// Get the parameters 
 			SearchText = (string)parameters["SearchText"];
 			SearchLocation = (string)parameters["SearchLocation"];
-			ProcessSearch();
+            await ProcessSearch();
 		}
 
 		public void OnNavigatingTo(NavigationParameters parameters)

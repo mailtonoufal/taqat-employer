@@ -14,11 +14,11 @@ namespace ArabWaha.Common
         public static bool IsDebugRtl = false;
 #endif
 
-//#if __IOS__
-//        DevicePlatform= "iPhone";
-//#endif
+        //#if __IOS__
+        //        DevicePlatform= "iPhone";
+        //#endif
 
-		public static bool IsGuest = true;
+        public static bool IsGuest = false;
         public static bool IsRtl;
         public static string AcceptLanguage => IsRtl ? "AR" : "EN";
     }

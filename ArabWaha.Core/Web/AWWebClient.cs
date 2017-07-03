@@ -21,6 +21,9 @@ using ArabWaha.Common;
 using System.Net.Http.Headers;
 using ArabWaha.Core.Models.Company;
 using ArabWaha.Core.Models.Candidates;
+using ArabWaha.Core.Models.Profile;
+using ArabWaha.Core.Models.User;
+using ArabWaha.Core.Models.SubUser;
 
 namespace ArabWaha.Web
 {
@@ -1123,15 +1126,17 @@ namespace ArabWaha.Web
 		}
 
 
+
+
 		/// <summary>
         /// Gets the candidates list.
         /// </summary>
         /// <returns>The candidates list.</returns>
-		public async Task<ServiceResult<CandidateListRoot>> GetCandidatesList()
+        public async Task<ServiceResult<CandidateListRoot>> GetCandidatesList(string jobType)
 		{
 			ServiceResult<CandidateListRoot> returnVal = null;
 
-			if (string.IsNullOrEmpty(DebugDataSingleton.Instance?.BasicAuth)) return returnVal;
+			//if (string.IsNullOrEmpty(DebugDataSingleton.Instance?.BasicAuth)) return returnVal;
 
 			try
 			{
@@ -1141,7 +1146,7 @@ namespace ArabWaha.Web
 					httpclient.DefaultRequestHeaders.Add("X-SMP-APPCID", DebugDataSingleton.Instance.X_SMP_APPCID);
 					httpclient.DefaultRequestHeaders.Add("Authorization", DebugDataSingleton.Instance.BasicAuth);
 
-					string Apiname = string.Format("CandidatesListSet?$filter=JobType eq '*'");
+                    string Apiname = string.Format("CandidatesListSet?$filter=JobType eq '{0}'",jobType);
 					var response = await httpclient.GetAsync(serviceUrl + Apiname);
 					returnVal = new ServiceResult<CandidateListRoot>();
 					if (response.StatusCode == System.Net.HttpStatusCode.OK)
@@ -1215,6 +1220,166 @@ namespace ArabWaha.Web
 
 						// all success
 						var getNesIndividualResponse = JsonConvert.DeserializeObject<MatchingCandidateListRoot>(strFullSyncData);
+						returnVal.IsSuccess = true;
+						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
+						returnVal.Result = getNesIndividualResponse;
+					}
+					else
+					{
+						returnVal.IsSuccess = false;
+						returnVal.Result = null;
+						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
+					}
+					//Debug.WriteLine("Cookie-" + DebugDataSingleton.Instance.COOKIE);
+					return returnVal;
+				}
+			}
+			catch (Exception ex)
+			{
+				return returnVal;
+
+			}
+			finally
+			{
+			}
+		}
+
+
+        public async Task<ServiceResult<DeleteUserListObject>> DeleteUser(string userId)
+		{
+			ServiceResult<DeleteUserListObject> returnVal = null;
+
+			if (string.IsNullOrEmpty(DebugDataSingleton.Instance?.BasicAuth)) return returnVal;
+
+			try
+			{
+				string strFullSyncData = "";
+				using (HttpServiceClient httpclient = new HttpServiceClient("", "DeleteUserSet"))
+				{
+					httpclient.DefaultRequestHeaders.Add("X-SMP-APPCID", DebugDataSingleton.Instance.X_SMP_APPCID);
+					httpclient.DefaultRequestHeaders.Add("Authorization", DebugDataSingleton.Instance.BasicAuth);
+
+                    string Apiname = string.Format("DeleteUserSet?$filter=userId eq '{0}'", userId);
+					var response = await httpclient.GetAsync(serviceUrl + Apiname);
+					returnVal = new ServiceResult<DeleteUserListObject>();
+					if (response.StatusCode == System.Net.HttpStatusCode.OK)
+					{
+						using (Stream stream = await httpclient.GetStreamAsync(serviceUrl + Apiname))
+						{
+							using (var reader = new System.IO.StreamReader(stream))
+							{
+								strFullSyncData = reader.ReadToEnd();
+							}
+						}
+
+						// all success
+						var getNesIndividualResponse = JsonConvert.DeserializeObject<DeleteUserListObject>(strFullSyncData);
+						returnVal.IsSuccess = true;
+						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
+						returnVal.Result = getNesIndividualResponse;
+					}
+					else
+					{
+						returnVal.IsSuccess = false;
+						returnVal.Result = null;
+						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
+					}
+					//Debug.WriteLine("Cookie-" + DebugDataSingleton.Instance.COOKIE);
+					return returnVal;
+				}
+			}
+			catch (Exception ex)
+			{
+				return returnVal;
+
+			}
+			finally
+			{
+			}
+		}
+
+        public async Task<ServiceResult<SubUsersListObject>> GetSubUser(string establishmentId, string employerIdentifier)
+		{
+			ServiceResult<SubUsersListObject> returnVal = null;
+
+			if (string.IsNullOrEmpty(DebugDataSingleton.Instance?.BasicAuth)) return returnVal;
+
+			try
+			{
+				string strFullSyncData = "";
+				using (HttpServiceClient httpclient = new HttpServiceClient("", "EmployerSubUserSet"))
+				{
+					httpclient.DefaultRequestHeaders.Add("X-SMP-APPCID", DebugDataSingleton.Instance.X_SMP_APPCID);
+					httpclient.DefaultRequestHeaders.Add("Authorization", DebugDataSingleton.Instance.BasicAuth);
+
+                    string Apiname = string.Format("EmployerSubUserSet?$filter=establishmentId eq '{0}' and employerIdentifier eq '{1}'", establishmentId,employerIdentifier);
+					var response = await httpclient.GetAsync(serviceUrl + Apiname);
+					returnVal = new ServiceResult<SubUsersListObject>();
+					if (response.StatusCode == System.Net.HttpStatusCode.OK)
+					{
+						using (Stream stream = await httpclient.GetStreamAsync(serviceUrl + Apiname))
+						{
+							using (var reader = new System.IO.StreamReader(stream))
+							{
+								strFullSyncData = reader.ReadToEnd();
+							}
+						}
+
+						// all success
+						var getNesIndividualResponse = JsonConvert.DeserializeObject<SubUsersListObject>(strFullSyncData);
+						returnVal.IsSuccess = true;
+						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
+						returnVal.Result = getNesIndividualResponse;
+					}
+					else
+					{
+						returnVal.IsSuccess = false;
+						returnVal.Result = null;
+						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
+					}
+					//Debug.WriteLine("Cookie-" + DebugDataSingleton.Instance.COOKIE);
+					return returnVal;
+				}
+			}
+			catch (Exception ex)
+			{
+				return returnVal;
+
+			}
+			finally
+			{
+			}
+		}
+
+        public async Task<ServiceResult<PersonalDetailsObject>> GetPersonalDetails()
+		{
+			ServiceResult<PersonalDetailsObject> returnVal = null;
+
+			if (string.IsNullOrEmpty(DebugDataSingleton.Instance?.BasicAuth)) return returnVal;
+
+			try
+			{
+				string strFullSyncData = "";
+				using (HttpServiceClient httpclient = new HttpServiceClient("", "PersonalDetailsSet"))
+				{
+					httpclient.DefaultRequestHeaders.Add("X-SMP-APPCID", DebugDataSingleton.Instance.X_SMP_APPCID);
+					httpclient.DefaultRequestHeaders.Add("Authorization", DebugDataSingleton.Instance.BasicAuth);
+
+					string Apiname = string.Format("PersonalDetailsSet?$filter=language eq '{0}'", DebugDataSingleton.Instance.Language);
+					var response = await httpclient.GetAsync(serviceUrl + Apiname);
+					returnVal = new ServiceResult<PersonalDetailsObject>();
+					if (response.StatusCode == System.Net.HttpStatusCode.OK)
+					{
+						using (Stream stream = await httpclient.GetStreamAsync(serviceUrl + Apiname))
+						{
+							using (var reader = new System.IO.StreamReader(stream))
+							{
+								strFullSyncData = reader.ReadToEnd();
+							}
+						}
+
+						// all success
+						var getNesIndividualResponse = JsonConvert.DeserializeObject<PersonalDetailsObject>(strFullSyncData);
 						returnVal.IsSuccess = true;
 						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
 						returnVal.Result = getNesIndividualResponse;

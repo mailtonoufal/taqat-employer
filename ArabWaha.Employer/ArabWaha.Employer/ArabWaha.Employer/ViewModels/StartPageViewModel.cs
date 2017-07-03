@@ -9,6 +9,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
+using ArabWaha.Core.Services;
+using Acr.UserDialogs;
+using System.Diagnostics;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -33,15 +36,37 @@ namespace ArabWaha.Employer.ViewModels
             SkipCommand = new DelegateCommand(SkipPage);
             SignInCommand = new DelegateCommand(NavigateInternal);
             //SignInExternalCommand = new DelegateCommand(NavigateExternal);
-			SignInExternalCommand = new DelegateCommand(NavigateInternal);
+            SignInExternalCommand = new DelegateCommand(NavigateInternal);
             SignUpCommand = new DelegateCommand(NavigateSignUp);
             ContinueAsGuestCommand = new DelegateCommand(ContinueAsGuest);
         }
 
         private async void ContinueAsGuest()
         {
-            await _nav.NavigateAsync(nameof(SearchPage),animated:false);
-        }
+			AuthService sv = new AuthService();
+			bool isLoginSuccess = false;
+			try
+			{
+				UserDialogs.Instance.ShowLoading();
+				isLoginSuccess = await sv.Login("mobileuser", "mobileuser", true);
+				UserDialogs.Instance.HideLoading();
+			}
+			catch (Exception ex)
+			{
+				UserDialogs.Instance.HideLoading();
+				Debug.WriteLine(ex.Message);
+			}
+
+			if (isLoginSuccess)
+			{
+				await _nav.NavigateAsync(nameof(SearchPage), animated: false);
+			}
+			else
+			{
+				UserDialogs.Instance.ShowError("Something went wrong");
+			}
+
+		}
 
         private void NavigateSignUp()
         {
@@ -59,10 +84,35 @@ namespace ArabWaha.Employer.ViewModels
         {
             _nav.NavigateAsync(nameof(LoginPage), animated: false);
         }
-        private void SkipPage()
+        private async void SkipPage()
         {
             // show goto search page
-            _nav.NavigateAsync(nameof(SearchPage), animated: false);
+
+            AuthService sv = new AuthService();
+            bool isLoginSuccess = false;
+            try
+            {
+                UserDialogs.Instance.ShowLoading();
+                isLoginSuccess = await sv.Login("mobileuser", "mobileuser", true);
+                UserDialogs.Instance.HideLoading();
+            }
+            catch (Exception ex)
+            {
+                UserDialogs.Instance.HideLoading();
+                Debug.WriteLine(ex.Message);
+            }
+
+            if (isLoginSuccess)
+            {
+                await _nav.NavigateAsync(nameof(SearchPage), animated: false);
+            }
+            else
+            {
+                UserDialogs.Instance.ShowError("Something went wrong");
+            }
+
+
+
         }
 
     }

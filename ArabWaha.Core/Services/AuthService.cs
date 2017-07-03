@@ -19,7 +19,6 @@ namespace ArabWaha.Core.Services
 
         public async Task<bool> Login(string username, string password, bool isGuest)
         {
-            IsAuthorised = true;
             // TODO Call API 
             //Comment this line to bypass the login API
             return await LoginInternal(username, password, isGuest);
@@ -34,14 +33,20 @@ namespace ArabWaha.Core.Services
             try
             {
                 DebugDataSingleton.Instance.IsHafiz = false;
+                DebugDataSingleton.Instance.BasicAuth = "Basic OTAwNjI3OTpzYXBAMTIzNA==";
                 var bytes = Encoding.UTF8.GetBytes(string.Format("{0}:{1}", email, password));
                 var base64String = Convert.ToBase64String(bytes);
                 string authHeader = String.Format("Basic {0}", base64String);
+
 				DbAccessor db = new DbAccessor();
 
 				var result = await AWHttpClient.Instance.RegisterUser(authHeader, Constants.DevicePlatform);
                 if (result.StatusCode == "201") //success case
                 {
+                    if (!isGuest)
+                    {
+                        IsAuthorised = true;
+                    }
                     DebugDataSingleton.Instance.ApplicationConnectionId = result.Result.RegistrationObjectItem.ApplicationConnectionId;
                     DebugDataSingleton.Instance.UserName = result.Result.RegistrationObjectItem.UserName;
                     DebugDataSingleton.Instance.BasicAuth = authHeader;   //X-SMP-APPCID
@@ -68,7 +73,7 @@ namespace ArabWaha.Core.Services
                     }
 
                     //Get the CandidateList
-                    var candidateList = await AWHttpClient.Instance.GetCandidatesList();
+                    var candidateList = await AWHttpClient.Instance.GetCandidatesList("*");
 					//TODO parse the candidateList to get the required response
 
 
@@ -77,6 +82,42 @@ namespace ArabWaha.Core.Services
 					var matchingCandidatesSet = await AWHttpClient.Instance.GetMatchingCandidatesList("1000278384");
 					//TODO parse the matchingCandidatesSet to get the required response
 
+
+
+					//Get the Personal Details
+					var personalDetails = await AWHttpClient.Instance.GetPersonalDetails();
+					if (personalDetails.IsSuccess)
+					{
+                        if (personalDetails.Result != null && personalDetails.Result.personalDetailsObject != null && myCompanyDetails.Result.myCompanyObjectList.myCompanyList.Count > 0)
+						{
+                            var details = personalDetails.Result.personalDetailsObject.personalDetailsList[0];
+							
+						}
+					}
+
+
+					//Get the SubUserDetails
+					var subUserDetails = await AWHttpClient.Instance.GetSubUser("1237894562","PUBE");
+					if (subUserDetails.IsSuccess)
+					{
+                        if (subUserDetails.Result != null && subUserDetails.Result.subUsersListObject != null && subUserDetails.Result.subUsersListObject.subUsersList.Count > 0)
+						{
+                            var subUser = subUserDetails.Result.subUsersListObject.subUsersList[0];
+
+						}
+					}
+
+
+					//Delete the User
+                    var userDelete = await AWHttpClient.Instance.DeleteUser("49613");
+					if (userDelete.IsSuccess)
+					{
+                        if (userDelete.Result != null && userDelete.Result.deleteUserListObject != null && userDelete.Result.deleteUserListObject.deleteUserList.Count > 0)
+						{
+                            var deletedUser = userDelete.Result.deleteUserListObject.deleteUserList[0];
+
+						}
+					}
 
 
 					return true;
