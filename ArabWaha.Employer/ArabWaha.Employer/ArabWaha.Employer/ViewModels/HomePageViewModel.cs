@@ -72,7 +72,7 @@ namespace ArabWaha.Employer.ViewModels
 			ProgramSelectedCommand = new DelegateCommand<Program>(ProcessProgramSelected);
 			ServicesSelectedCommand = new DelegateCommand<EmployerService>(ProcessServicesSelectedCommand);
 			AddNewJobCommand = new DelegateCommand(ProcessAddNewJobCommand);
-
+			JobPostsSelectedCommand = new DelegateCommand<EmployerJobDetail>(ProcessJobPostsSelectedCommand);
 			// load views    
 			LoadContentViews();
 		}
@@ -82,7 +82,7 @@ namespace ArabWaha.Employer.ViewModels
 		{
 			Device.BeginInvokeOnMainThread(async () =>
 			{
-                var responseAnnouncements=await Web.AWHttpClient.Instance.GetAnnouncements();
+				var responseAnnouncements = await Web.AWHttpClient.Instance.GetAnnouncements();
 
 				if (responseAnnouncements.Data != null && responseAnnouncements.Data.Announcements.Data.Count > 0)
 				{
@@ -90,14 +90,14 @@ namespace ArabWaha.Employer.ViewModels
 				}
 				//ApiService apiServ = new ApiService();
 
-                if (responseAnnouncements.Data != null && responseAnnouncements.Data.Featured.Count > 0)
-                {
-                    initialPostion = "0";
+				if (responseAnnouncements.Data != null && responseAnnouncements.Data.Featured.Count > 0)
+				{
+					initialPostion = "0";
 					SwipeSource = new ObservableCollection<FeaturedAnnouncement>(responseAnnouncements.Data.Featured);
 					if (GlobalSetting.IsArabic)
 					{
-                        SwipeSource = new ObservableCollection<FeaturedAnnouncement>(SwipeSource.Reverse());
-                        initialPostion = (responseAnnouncements.Data.Featured.Count() - 1).ToString();
+						SwipeSource = new ObservableCollection<FeaturedAnnouncement>(SwipeSource.Reverse());
+						initialPostion = (responseAnnouncements.Data.Featured.Count() - 1).ToString();
 					}
 				}
 
@@ -137,22 +137,22 @@ namespace ArabWaha.Employer.ViewModels
 				// get data
 				ApiService apiServ = new ApiService();
 				//ProgramsPageSource = await apiServ.GetCurrentProgramsAsync();
-     //           try
-     //           {
-					//var programsList = await AWHttpClient.Instance.GetPrograms();
-                //    ProgramsPageSource = new ObservableCollection<Program>(programsList.Data.Programs);
-				
-                //}
-                //catch (Exception ex)
-                //{
+				//           try
+				//           {
+				//var programsList = await AWHttpClient.Instance.GetPrograms();
+				//    ProgramsPageSource = new ObservableCollection<Program>(programsList.Data.Programs);
 
-                //}
+				//}
+				//catch (Exception ex)
+				//{
 
-                var programsList = await Web.AWHttpClient.Instance.GetPrograms();
+				//}
+
+				var programsList = await Web.AWHttpClient.Instance.GetPrograms();
 
 				if (programsList.Data != null && programsList.Data.Programs.Count > 0)
 				{
-                    ProgramsPageSource = new ObservableCollection<Program>(programsList.Data.Programs);
+					ProgramsPageSource = new ObservableCollection<Program>(programsList.Data.Programs);
 				}
 
 
@@ -163,13 +163,13 @@ namespace ArabWaha.Employer.ViewModels
 
 
 				TranslateExtension tran = new TranslateExtension();
-               
+
 				string progStatusLabel = tran.GetProviderValueString("LabelProgramStatusText");
 				// setup Program Status:
 				foreach (var item in ProgramsPageSource)
-                { 
+				{
 					//item.StatusLabelText = progStatusLabel;
-                    item.StatusText =  $"{progStatusLabel} {item.StatusText} ";
+					item.StatusText = $"{progStatusLabel} {item.StatusText} ";
 				}
 
 
@@ -331,6 +331,15 @@ namespace ArabWaha.Employer.ViewModels
 			await _nav.NavigateAsync(nameof(JobNewPostPage), paramx, false, true);
 		}
 
+		public DelegateCommand<EmployerJobDetail> JobPostsSelectedCommand { get; set; }
+		async void ProcessJobPostsSelectedCommand(EmployerJobDetail vals)
+		{
+			NavigationParameters paramx = new NavigationParameters();
+			paramx.Add("JOB", vals);
+			paramx.Add("MODE", "VIEW");
+			await _nav.NavigateAsync(nameof(JobPage), paramx, false, true);
+		}
+
 
 		#endregion
 
@@ -367,14 +376,14 @@ namespace ArabWaha.Employer.ViewModels
 		}
 
 
-        private ObservableCollection<FeaturedAnnouncement> _swipeSource;
+		private ObservableCollection<FeaturedAnnouncement> _swipeSource;
 
 		public ObservableCollection<FeaturedAnnouncement> SwipeSource
 		{
 			get { return _swipeSource; }
 			set { _swipeSource = value; }
 		}
-        public string initialPostion { get; set; }
+		public string initialPostion { get; set; }
 
 		#endregion
 
@@ -513,7 +522,7 @@ namespace ArabWaha.Employer.ViewModels
 		}
 
 
-		
+
 
 
 		#endregion
