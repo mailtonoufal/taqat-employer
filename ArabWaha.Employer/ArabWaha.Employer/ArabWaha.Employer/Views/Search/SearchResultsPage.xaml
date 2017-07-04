@@ -3,8 +3,9 @@
     x:Class="ArabWaha.Employer.Views.SearchResultsPage" NavigationPage.HasBackButton="False" NavigationPage.HasNavigationBar="false" x:Name="this">
     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource GreyPageColor}">
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="#00204A">
-            <awc:AWHeader MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}">
-            </awc:AWHeader>
+            <!--<awc:AWHeader MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" RightToLeft="{x:Static gb:GlobalSetting.IsArabic}">
+            </awc:AWHeader>-->
+            <awc:AWHeader Grid.Row="0" MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" RightToLeft="{x:Static gb:GlobalSetting.IsArabic}" ></awc:AWHeader>
             <SearchBar BackgroundColor="#ffffff" x:Name="Searcher" Placeholder="{lEx:Translate SearchKeywordText}" Text="{Binding SearchText}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}" Margin="10,0,10,0" />
             <SearchBar BackgroundColor="#ffffff" x:Name="SearcherLoc" Placeholder="{lEx:Translate SearchLocationText}" Text="{Binding SearchLocation}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  SearchCommand="{Binding SearchCommand}" Style="{StaticResource SearcherStyle}" Margin="10,0,10,0" />
             <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="10,10,10,0" VerticalOptions="Start" BackgroundColor="{StaticResource GreyPageColor}">

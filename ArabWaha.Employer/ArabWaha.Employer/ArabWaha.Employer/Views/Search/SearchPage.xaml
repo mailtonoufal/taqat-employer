@@ -15,7 +15,7 @@
 			 NavigationPage.HasNavigationBar="false">
 
   <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-    <awc:AWHeader  MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
+    <awc:AWHeader  MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" RightToLeft="{x:Static gb:GlobalSetting.IsArabic}" ></awc:AWHeader>
 
 
       <Grid Padding="20,0,20,0" >

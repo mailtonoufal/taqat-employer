@@ -17,7 +17,7 @@
 
 
     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource GreyPageColor}"  >
-        <awc:AWHeader  MenuCommand="{Binding Source={x:Reference AppPage}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
+        <awc:AWHeader  MenuCommand="{Binding Source={x:Reference AppPage}, Path=MenuTappedCommand}" RightToLeft="{x:Static gb:GlobalSetting.IsArabic}" ></awc:AWHeader>
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  >
 
             <Grid Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >

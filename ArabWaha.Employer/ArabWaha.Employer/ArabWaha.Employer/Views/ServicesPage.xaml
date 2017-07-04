@@ -14,7 +14,7 @@
              NavigationPage.HasNavigationBar="false" x:Name="this">
 
     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" Style="{StaticResource MainTopLevelStackLayout}">
-           <awc:AWHeader x:Name="headerservice" MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
+           <awc:AWHeader x:Name="headerservice" MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" RightToLeft="{x:Static gb:GlobalSetting.IsArabic}" ></awc:AWHeader>
         <!--<Label Text="{lEx:Translate TextAvailableServices}" Style="{StaticResource SolidBodyTextBlue}" 
                HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>-->
 

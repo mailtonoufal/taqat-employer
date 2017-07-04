@@ -27,7 +27,7 @@
         <RowDefinition Height="*" />
       </Grid.RowDefinitions>
 
-      <awc:AWHeader Grid.Row="0" MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" LeftToRight="{x:Static gb:GlobalSetting.IsEnglish}" ></awc:AWHeader>
+      <awc:AWHeader Grid.Row="0" MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" RightToLeft="{x:Static gb:GlobalSetting.IsArabic}" ></awc:AWHeader>
       <controls:TabControl Grid.Row="1" x:Name="tabCtrl" HorizontalOptions="StartAndExpand" BackgroundColor="{StaticResource BlueToolBarColor}" />
       
       <busyindicator:SfBusyIndicator
