@@ -281,6 +281,12 @@
     <Compile Include="Layouts\Candidate\CandidateListView.xaml.cs">
       <DependentUpon>CandidateListView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\PersonalDetails\PersonalDetailsPage.xaml.cs">
+      <DependentUpon>PersonalDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PersonalDetails\MyPage.xaml.cs">
+      <DependentUpon>MyPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -288,6 +294,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Layouts\Candidate\CandidateListView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PersonalDetails\PersonalDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PersonalDetails\MyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -751,6 +763,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Layouts\Welcome\" />
+    <Folder Include="Views\PersonalDetails\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -30,8 +30,8 @@ namespace ArabWaha.Employer.StaticData
 
 
 		public static LayoutOptions HorizontalLayoutOptions { get { return IsArabic ? LayoutOptions.EndAndExpand : LayoutOptions.StartAndExpand; } }
-        public static LayoutOptions SkipLayoutOptions { get { return IsArabic ? LayoutOptions.StartAndExpand : LayoutOptions.EndAndExpand; } }
-        public static LayoutOptions HorizontalOptions { get { return IsArabic ? LayoutOptions.EndAndExpand : LayoutOptions.StartAndExpand; } }
+		public static LayoutOptions SkipLayoutOptions { get { return IsArabic ? LayoutOptions.StartAndExpand : LayoutOptions.EndAndExpand; } }
+		public static LayoutOptions HorizontalOptions { get { return IsArabic ? LayoutOptions.EndAndExpand : LayoutOptions.StartAndExpand; } }
 
 
 		#region well hacky till i fix this correctly for view cell items
@@ -59,11 +59,11 @@ namespace ArabWaha.Employer.StaticData
 		public static string HomeStartLabelColNo { get { return IsArabic ? "1" : "0"; } }
 		public static string HomeStartImgColNo { get { return IsArabic ? "0" : "1"; } }
 
-		
 
-       
-      
-		
+
+
+
+
 
 		public static string AppWatchButtonColNo { get { return IsArabic ? "1" : "2"; } }
 		public static string AppWatchLabelColNo { get { return IsArabic ? "2" : "1"; } }
@@ -80,8 +80,10 @@ namespace ArabWaha.Employer.StaticData
 		public static GridLength HomeContactFirstColWidth { get { return IsArabic ? new GridLength(1, GridUnitType.Star) : new GridLength(24, GridUnitType.Absolute); } }
 		public static GridLength HomeContactThirdColWidth { get { return IsArabic ? new GridLength(24, GridUnitType.Absolute) : new GridLength(1, GridUnitType.Star); } }
 
+		//Personal details set 
+		public static string PersonalDetailLabelColNo { get { return IsArabic ? "1" : "0"; } }
+		public static string PersonalDetailValueColNo { get { return IsArabic ? "0" : "1"; } }
 
-		
 
 		#endregion
 
