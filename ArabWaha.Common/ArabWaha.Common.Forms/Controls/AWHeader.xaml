@@ -25,14 +25,14 @@
                 <ColumnDefinition Width="7"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start">
-             <Image  Source="hamburger.png" HeightRequest="23" IsVisible="{Binding Source={x:Reference this}, Path=LeftToRight, Converter={StaticResource InverseBooleanConverter}}" >
+             <Image  Source="hamburger.png" HeightRequest="23" IsVisible="{Binding Source={x:Reference this}, Path=RightToLeft, Converter={StaticResource InverseBooleanConverter}}" >
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer
                               Command ="{Binding Source={x:Reference this}, Path=MenuCommand}"
                               NumberOfTapsRequired="1" />
                     </Image.GestureRecognizers>
                 </Image>
-                <Label Text="{Binding Source={x:Reference this}, Path=NavigationText}" TextColor="White"  IsVisible="{Binding Source={x:Reference this}, Path=LeftToRight}">
+                <Label Text="{Binding Source={x:Reference this}, Path=NavigationText}" TextColor="White"  IsVisible="{Binding Source={x:Reference this}, Path=RightToLeft}">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer
                             Command="{Binding Source={x:Reference this}, Path=NavigationCommand}"
@@ -52,14 +52,14 @@
          </StackLayout>
 
             <StackLayout Grid.Row="0" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="End">
-                <Image  Source="hamburger.png" HeightRequest="23"  IsVisible="{Binding Source={x:Reference this}, Path=LeftToRight}" >
+                <Image  Source="hamburger.png" HeightRequest="23"  IsVisible="{Binding Source={x:Reference this}, Path=RightToLeft}" >
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer
                               Command ="{Binding Source={x:Reference this}, Path=MenuCommand}"
                               NumberOfTapsRequired="1" />
                     </Image.GestureRecognizers>
                 </Image>
-                <Label Text="{Binding Source={x:Reference this}, Path=NavigationText}" TextColor="White"  IsVisible="{Binding Source={x:Reference this}, Path=LeftToRight,Converter={StaticResource InverseBooleanConverter}}" >
+                <Label Text="{Binding Source={x:Reference this}, Path=NavigationText}" TextColor="White"  IsVisible="{Binding Source={x:Reference this}, Path=RightToLeft,Converter={StaticResource InverseBooleanConverter}}" >
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer
                             Command="{Binding Source={x:Reference this}, Path=NavigationCommand}"

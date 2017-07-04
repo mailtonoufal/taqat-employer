@@ -81,11 +81,11 @@ namespace ArabWaha.Common.Forms.Controls
 
         #region LeftToRight (Bindable bool)
         public static readonly BindableProperty LeftToRightProperty = BindableProperty.Create(
-                                                                nameof(LeftToRight), //Public name to use
+                                                                nameof(RightToLeft), //Public name to use
                                                                 typeof(bool), //this type
                                                                 typeof(AWHeader), //parent type (tihs control)
                                                                 true); //default value
-        public bool LeftToRight
+        public bool RightToLeft
         {
             get { return (bool)GetValue(LeftToRightProperty); }
             set { SetValue(LeftToRightProperty, value); }
