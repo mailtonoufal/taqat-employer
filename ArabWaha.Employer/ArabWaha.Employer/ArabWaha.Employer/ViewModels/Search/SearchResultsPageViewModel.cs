@@ -17,6 +17,7 @@ using ArabWaha.Core.Models.Candidates;
 using System.Diagnostics;
 using Acr.UserDialogs;
 using System.Threading.Tasks;
+using System.Text;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -80,7 +81,21 @@ namespace ArabWaha.Employer.ViewModels
 			try
 			{
                 UserDialogs.Instance.ShowLoading();
-				var result = await AWHttpClient.Instance.GetCandidatesList("*");
+                StringBuilder searchFilter = new StringBuilder();
+                string filterJoin = string.Empty;
+				filterJoin = String.Format("JobType eq * ", _searchLocaiton);
+				searchFilter.Append(filterJoin);
+                if (_searchLocaiton !=null && _searchLocaiton.Length>0)
+                {
+                    filterJoin = String.Format("and location eq '{0}' ", _searchLocaiton);
+					searchFilter.Append(filterJoin);
+                }
+                if (_searchText !=null && _searchText.Length>0)
+				{
+                    filterJoin = String.Format("and Keyword eq '{0}' ", _searchText);
+					searchFilter.Append(filterJoin);
+				}
+                var result = await AWHttpClient.Instance.GetCandidatesList(searchFilter.ToString());
 				if (result.Result.candidateObjectList.candidateList != null && result.Result.candidateObjectList.candidateList.Count > 0)
 				{
 					CandidateList = new ObservableCollection<Candidate>(result.Result.candidateObjectList.candidateList);

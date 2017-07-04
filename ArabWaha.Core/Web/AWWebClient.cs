@@ -1146,7 +1146,7 @@ namespace ArabWaha.Web
 					httpclient.DefaultRequestHeaders.Add("X-SMP-APPCID", DebugDataSingleton.Instance.X_SMP_APPCID);
 					httpclient.DefaultRequestHeaders.Add("Authorization", DebugDataSingleton.Instance.BasicAuth);
 
-                    string Apiname = string.Format("CandidatesListSet?$filter=JobType eq '{0}'",jobType);
+                    string Apiname = string.Format("CandidatesListSet?$filter={0}",jobType);
 					var response = await httpclient.GetAsync(serviceUrl + Apiname);
 					returnVal = new ServiceResult<CandidateListRoot>();
 					if (response.StatusCode == System.Net.HttpStatusCode.OK)
