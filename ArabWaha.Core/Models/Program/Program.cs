@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
+using System;
 
 namespace ArabWaha.Models
 {
@@ -14,7 +15,11 @@ namespace ArabWaha.Models
         [JsonProperty("howToRegister")]
         public string HowToRegister { get; set; }
 
-        [JsonProperty("id")]
+	
+
+
+
+		[JsonProperty("id")]
         public int Id { get; set; }
 
         [JsonProperty("programRequirements")]
@@ -91,12 +96,9 @@ namespace ArabWaha.Models
         [JsonProperty("programstatustext")]
         public string StatusText { get; set; }
 
-		
-
-
-
-
-	
-
-	}
+        public static implicit operator Program(Group v)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

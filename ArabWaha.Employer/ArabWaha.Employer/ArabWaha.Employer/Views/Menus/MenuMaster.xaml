@@ -24,7 +24,10 @@
 
 
        
-         <Grid Padding="0">
+
+
+
+        <Grid Padding="0" x:Name="profile">
             <Grid.RowDefinitions>
                 <RowDefinition Height="60" />              
 

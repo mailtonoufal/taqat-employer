@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Xamarin.Forms;
+using ArabWaha.Core.Models;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -32,9 +33,6 @@ namespace ArabWaha.Employer.ViewModels
             HowToRegister = true;
             ProgramIntroduction = true;
             WhocanBenefit = true;
-
-
-
         }
 
         private Program _programDetails;
@@ -45,9 +43,36 @@ namespace ArabWaha.Employer.ViewModels
             set { SetProperty<Program>(ref _programDetails, value); }
         }
 
+	    private Group _programTotalDetails;
+
+		public Group ProgramTotalDetails
+		{
+			get { return _programTotalDetails; }
+            set { SetProperty<Group>(ref _programTotalDetails, value); }
+		}
+
+		private Group _programTotalDetail;
+
+		public Group ProgramTotalDetail
+		{
+			get { return _programTotalDetail; }
+			set { SetProperty<Group>(ref _programTotalDetail, value); }
+		}
+
+        private Group _programTotal;
+
+		public Group ProgramTotal
+		{
+			get { return _programTotal; }
+			set { SetProperty<Group>(ref _programTotal, value); }
+		}
 
 
-        public void OnNavigatedFrom(NavigationParameters parameters)
+
+	
+
+
+		public void OnNavigatedFrom(NavigationParameters parameters)
         {
            
         }
@@ -66,8 +91,15 @@ namespace ArabWaha.Employer.ViewModels
             {
                 // yah we have what we need so continue.. 
                 ProgramDetails = obj as Program;
+
             }
-        }
+			
+			ProgramTotalDetails = ProgramDetails.Groups[0];
+			ProgramTotalDetail = ProgramDetails.Groups[1];
+			ProgramTotal = ProgramDetails.Groups[2];
+
+
+		}
 
         public DelegateCommand RegServiceCommand { get; set; }
         void ProcessRegServiceCommand()

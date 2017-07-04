@@ -24,8 +24,10 @@ namespace ArabWaha.Employer.Views.Menus
         {
            try
             {
+				
 				InitializeComponent();
-            }
+				
+			}
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
@@ -45,6 +47,16 @@ namespace ArabWaha.Employer.Views.Menus
 
 
             SetupMenu();
+			if (AuthService.IsAuthorised == false)
+			{
+				profile.IsVisible = false;
+			}
+			else
+			{
+				profile.IsVisible = true;
+			}
+
+           
         }
 
         private void SetupMenu()

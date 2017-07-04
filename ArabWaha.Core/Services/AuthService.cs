@@ -1,4 +1,4 @@
-﻿using ArabWaha.Models;
+﻿﻿using ArabWaha.Models;
 using ArabWaha.Web;
 using System;
 using System.Collections.Generic;
@@ -21,7 +21,7 @@ namespace ArabWaha.Core.Services
         {
             // TODO Call API 
             //Comment this line to bypass the login API
-            return await LoginInternal(username, password, isGuest);
+            //return await LoginInternal(username, password, isGuest);
             return true;
         }
 

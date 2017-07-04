@@ -35,6 +35,7 @@ namespace ArabWaha.Employer.ViewModels
         public SearchPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
             DebugDataSingleton.Instance.IsGuest = true;
+            ArabWaha.Core.Services.AuthService.IsAuthorised = false;
             SearchCommand = new DelegateCommand(Search);//, CanSearch);
             SignInCommand = new DelegateCommand(SignIn);
         }
