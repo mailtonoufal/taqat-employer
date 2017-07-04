@@ -284,9 +284,7 @@
     <Compile Include="Views\PersonalDetails\PersonalDetailsPage.xaml.cs">
       <DependentUpon>PersonalDetailsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PersonalDetails\MyPage.xaml.cs">
-      <DependentUpon>MyPage.xaml</DependentUpon>
-    </Compile>
+
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -297,9 +295,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PersonalDetails\PersonalDetailsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\PersonalDetails\MyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
