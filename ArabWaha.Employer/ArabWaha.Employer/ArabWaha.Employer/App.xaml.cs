@@ -128,7 +128,8 @@ namespace ArabWaha.Employer
             Container.RegisterTypeForNavigation<CandidateInvitePage>();
             Container.RegisterTypeForNavigation<MatchingCandidatesPage>();
             Container.RegisterTypeForNavigation<FiltersPage>();
-			Container.RegisterTypeForNavigation<PersonalDetailsPage>();
+			Container.RegisterTypeForNavigation<PersonalDetailsPage, PersonalDetailsViewModel>();
+			Container.RegisterTypeForNavigation<EditPersonalDetailsPage>();
         }
 
         #region Singleton instance for nav and user checking

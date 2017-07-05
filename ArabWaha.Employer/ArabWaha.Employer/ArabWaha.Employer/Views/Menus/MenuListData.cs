@@ -38,8 +38,8 @@ namespace ArabWaha.Employer.Views.Menus
 				// - need to move  to tresource/NSTack  "Applications" : "التطبيقات",
 				Title = isEnglishText ? "Applications" : "التطبيقات",
 				IconSource = "arrow_white.png",
-				TargetType = nameof(ApplicationsPage),
-				PageType = typeof(ApplicationsPage),
+				TargetType = nameof(EditPersonalDetailsPage),
+				PageType = typeof(EditPersonalDetailsPage),
 				IconImage = Application.Current.Resources["MenuIconApplications"] as FileImageSource
 			});
 			if (IsAuth)

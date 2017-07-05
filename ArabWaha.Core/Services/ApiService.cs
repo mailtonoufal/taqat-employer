@@ -15,6 +15,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ArabWaha.Web;
 
 namespace ArabWaha.Core.Services
 {
@@ -479,16 +480,32 @@ namespace ArabWaha.Core.Services
             // call api service to delete user
             // **************** TODO *********************
 
+            //Delete the User
+            bool isDeleted = false;
+            var userDelete = await AWHttpClient.Instance.DeleteUser(userId.ToString());
+			if (userDelete.IsSuccess)
+			{
+				if (userDelete.Result != null && userDelete.Result.deleteUserListObject != null && userDelete.Result.deleteUserListObject.deleteUserList.Count > 0)
+				{
+					var deletedUser = userDelete.Result.deleteUserListObject.deleteUserList[0];
+                    if (deletedUser.message!="SYSTEM ERROR")
+                    {
+                        isDeleted = true;
+                    }
+                }
+			}
+
+           
             // now delete from local data store
-            DbAccessor db = new DbAccessor();
-            var item = db.GetTableItems<CompanyUser>().Where(x => x.UserId == userId).FirstOrDefault();
+            //DbAccessor db = new DbAccessor();
+            //var item = db.GetTableItems<CompanyUser>().Where(x => x.UserId == userId).FirstOrDefault();
 
-            if(item!=null)
-            {
-                db.DeleteRecord<CompanyUser>(item);
-            }
+            //if(item!=null)
+            //{
+            //    db.DeleteRecord<CompanyUser>(item);
+            //}
 
-            return true;
+            return isDeleted;
         }
 
         int dummyUserId

@@ -21,5 +21,7 @@ namespace ArabWaha.Common
         public static bool IsGuest = false;
         public static bool IsRtl;
         public static string AcceptLanguage => IsRtl ? "AR" : "EN";
-    }
+        public static bool IsStaticDataRequired = true;
+
+	}
 }

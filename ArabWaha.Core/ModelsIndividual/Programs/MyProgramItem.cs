@@ -15,5 +15,6 @@ namespace ArabWaha.Core.ModelsIndividual.Programs
         public string programStatus { get; set; }
 
         public Program  ProgramDetails { get; set; }
+		
     }
 }

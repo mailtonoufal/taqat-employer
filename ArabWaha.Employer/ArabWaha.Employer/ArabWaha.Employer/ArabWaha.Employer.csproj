@@ -285,10 +285,14 @@
       <DependentUpon>PersonalDetailsPage.xaml</DependentUpon>
     </Compile>
 
+<<<<<<< HEAD
     <Compile Include="Views\PersonalDetails\EditPersonalDetailsPage.xaml.cs">
       <DependentUpon>EditPersonalDetailsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\PersonalDetails\PersonalDetailsViewModel.cs" />
+=======
+    <Compile Include="Helpers\Dialog.cs" />
+>>>>>>> 23fc1b2d61766f8f73c153906225f9d78b49b935
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">

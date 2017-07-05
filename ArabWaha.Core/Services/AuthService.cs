@@ -1,4 +1,4 @@
-﻿using ArabWaha.Models;
+﻿﻿using ArabWaha.Models;
 using ArabWaha.Web;
 using System;
 using System.Collections.Generic;
@@ -97,28 +97,9 @@ namespace ArabWaha.Core.Services
 					}
 
 
-					//Get the SubUserDetails
-					var subUserDetails = await AWHttpClient.Instance.GetSubUser("1237894562","PUBE");
-					if (subUserDetails.IsSuccess)
-					{
-                        if (subUserDetails.Result != null && subUserDetails.Result.subUsersListObject != null && subUserDetails.Result.subUsersListObject.subUsersList.Count > 0)
-						{
-                            var subUser = subUserDetails.Result.subUsersListObject.subUsersList[0];
-
-						}
-					}
+					
 
 
-					//Delete the User
-                    var userDelete = await AWHttpClient.Instance.DeleteUser("49613");
-					if (userDelete.IsSuccess)
-					{
-                        if (userDelete.Result != null && userDelete.Result.deleteUserListObject != null && userDelete.Result.deleteUserListObject.deleteUserList.Count > 0)
-						{
-                            var deletedUser = userDelete.Result.deleteUserListObject.deleteUserList[0];
-
-						}
-					}
 
 
 					return true;

@@ -24,7 +24,10 @@ namespace ArabWaha.Core.Models.Company
         public string contactPersonStreetName { get; set; }
         public string contactPersonRegion { get; set; }
         public string language { get; set; }
-    }
+		public string establishmentId { get; set; }
+		public string employerIdentifier { get; set; }
+
+	}
 
     public class MyCompanyObjectList
     {

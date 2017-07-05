@@ -189,15 +189,17 @@ namespace ArabWaha.Employer.ViewModels
         {
             AuthService sv = new AuthService();
             bool isLoginSuccess = false;
-            try
+			ArabWaha.Core.Services.AuthService.IsAuthorised = false;
+
+			try
             {
-                UserDialogs.Instance.ShowLoading();
+                Dialog.ShowLoading();
                 isLoginSuccess = await sv.Login("mobileuser", "mobileuser", true);
-                UserDialogs.Instance.HideLoading();
+                Dialog.HideLoading();
             }
             catch (Exception ex)
             {
-                UserDialogs.Instance.HideLoading();
+                Dialog.HideLoading();
                 Debug.WriteLine(ex.Message);
             }
 
@@ -207,7 +209,7 @@ namespace ArabWaha.Employer.ViewModels
             }
             else
             {
-                UserDialogs.Instance.ShowError("Something went wrong");
+                Dialog.ShowErrorAlert("Something went wrong");
             }
 
 
@@ -235,13 +237,13 @@ namespace ArabWaha.Employer.ViewModels
             bool isLoginSuccess = false;
             try
             {
-                UserDialogs.Instance.ShowLoading();
+                Dialog.ShowLoading();
                 isLoginSuccess = await sv.Login(UserName, Password, false);
-                UserDialogs.Instance.HideLoading();
+                Dialog.HideLoading();
             }
             catch (Exception ex)
             {
-                UserDialogs.Instance.HideLoading();
+                Dialog.HideLoading();
                 Debug.WriteLine(ex.Message);
             }
 
@@ -251,7 +253,7 @@ namespace ArabWaha.Employer.ViewModels
             }
             else
             {
-                UserDialogs.Instance.ShowError("Something went wrong");
+                Dialog.ShowErrorAlert("Something went wrong");
             }
 
         }

@@ -51,7 +51,7 @@ namespace ArabWaha.Employer.ViewModels
 				// setup Program Status:
 				foreach (var item in ProgramsSource)
 				{
-					//item.StatusLabelText = progStatusLabel;
+					
                     item.StatusText = $"{progStatusLabel} {item.StatusText} ";
 				}
 

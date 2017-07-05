@@ -350,6 +350,8 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\SettingImg.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ServicesImg.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ContactImg.png" />
+    <AndroidResource Include="Resources\drawable\Plus.png" />
+    <AndroidResource Include="Resources\drawable\trash.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
