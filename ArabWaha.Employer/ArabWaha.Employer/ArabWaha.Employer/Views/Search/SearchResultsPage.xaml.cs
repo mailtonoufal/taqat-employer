@@ -9,26 +9,11 @@ using Xamarin.Forms;
 
 namespace ArabWaha.Employer.Views
 {
-    public partial class SearchResultsPage : AWMenuContainerPage
+	public partial class SearchResultsPage : ContentPage
     {
         public SearchResultsPage()
         {
             InitializeComponent();
-
-            AddFilterMenu();
         }
-
-        private void AddFilterMenu()
-        {
-            // should only be shown when we've got results. (use a message)
-            var tbarItem = new ToolbarItem()
-            {
-                Text = TranslateExtension.GetString("LabelFilter"),
-                Command = (this.BindingContext as SearchResultsPageViewModel).FilterCommand                
-            };
-            this.ToolbarItems.Add(tbarItem);
-        }
-
-
     }
 }
