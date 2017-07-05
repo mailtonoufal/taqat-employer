@@ -8,7 +8,7 @@
     BackgroundColor="{StaticResource BackgroundColor}">
     <ContentView.Content>
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource ContentStackLayout}">
-            <Button Text="{lEx:Translate AddRecruiterButton}" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding AddRecruiterCommand}"  />
+            <!--<Button Text="{lEx:Translate AddRecruiterButton}" Style="{StaticResource BlueButtonFlat}" Margin="1" Command="{Binding AddRecruiterCommand}"  />-->
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
                 <ListView x:Name="ParentListView" ItemsSource="{Binding RecruiterUsers}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
                           CachingStrategy = "RecycleElement" HasUnevenRows="True" SeparatorVisibility="None"
@@ -20,14 +20,6 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell x:Name="myCell">
-                                <ViewCell.ContextActions>
-                                    <MenuItem Text="{lEx:Translate MenuDelete}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
-                                      Command="{Binding DeleteRecCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}" 
-                                      IsDestructive="True"  />
-                                    <MenuItem Text="{lEx:Translate MenuEdit}" BindingContext="{Binding Source={x:Reference ParentListView},Path=BindingContext}"  
-                                          Command="{Binding EditRecCommand}"  CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}"  />
-                                </ViewCell.ContextActions>
-
                                 <StackLayout Padding="0,5,0,5" BackgroundColor="{StaticResource BackgroundColor}">
                                     <Grid Margin="2,2,2,2" >
                                         <Grid.RowDefinitions>
@@ -47,13 +39,34 @@
                                         </Grid.ColumnDefinitions>
                                         <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="8" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="FillAndExpand"  />
 
-                                        <Label Text="{Binding FullName}" Grid.Row="1" Grid.Column="1"  Style="{StaticResource CellBodyTextMedBlue}" 
+                                        <Label Text="{Binding username}" Grid.Row="1" Grid.Column="1"  Style="{StaticResource CellBodyTextMedBlue}" 
                                                HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
 
                                         <Label Grid.Row="2" Grid.Column="1" Margin="0,5,0,0" Text="Active" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
-                                        <Label Grid.Row="3" Grid.Column="1" Margin="0" Text="{Binding EmailAddress}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                        <Label Grid.Row="3" Grid.Column="1" Margin="0" Text="{Binding email}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
                                         <Label Grid.Row="5" Grid.Column="1" Margin="0,5,0,0" Text="Verified my MoL"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"/>
-                                        <Label Grid.Row="6" Grid.Column="1" Margin="0" Text="MoL Account Status: Active"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                        <Grid Grid.Row="6" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="{x:Static gb:GlobalSetting.AutoColWidth}" />
+                                          <ColumnDefinition Width="{x:Static gb:GlobalSetting.StarColWidth}" />
+                                        </Grid.ColumnDefinitions>
+                                            <Grid Grid.Column="{x:Static gb:GlobalSetting.HomeStartImgColNo}">
+                                               <Grid.GestureRecognizers>
+        <TapGestureRecognizer
+            Command="{Binding DeleteCommand}"
+            CommandParameter="{Binding Source={x:Reference myCell}, Path=BindingContext}" />
+    </Grid.GestureRecognizers>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="auto" />
+                                                    <ColumnDefinition Width="auto" />
+                                                </Grid.ColumnDefinitions>
+                                                <Image Grid.Column="{x:Static gb:GlobalSetting.HomeStartImgColNo}" Source="trash.png" WidthRequest="15" HeightRequest="15" VerticalOptions="Center"/>
+                                                <Label Grid.Column="{x:Static gb:GlobalSetting.HomeStartLabelColNo}" Margin="0" Text="Delete"  TextColor="Red" FontSize="12" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalOptions="Center"/>
+                                            </Grid>
+                                            <Label Grid.Column="{x:Static gb:GlobalSetting.HomeStartLabelColNo}" Margin="0" Text="MoL Account Status: Active"  Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                        </Grid>
 
                                     </Grid>
                                 </StackLayout>

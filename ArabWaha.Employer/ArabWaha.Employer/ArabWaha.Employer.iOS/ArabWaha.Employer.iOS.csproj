@@ -178,6 +178,8 @@
     <BundleResource Include="Resources\SettingImg.png" />
     <BundleResource Include="Resources\ServicesImg.png" />
     <BundleResource Include="Resources\ContactImg.png" />
+    <BundleResource Include="Resources\trash.png" />
+    <BundleResource Include="Resources\Plus.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CarouselView.FormsPlugin.Abstractions">

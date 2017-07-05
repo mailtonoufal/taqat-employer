@@ -285,6 +285,7 @@
       <DependentUpon>PersonalDetailsPage.xaml</DependentUpon>
     </Compile>
 
+    <Compile Include="Helpers\Dialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">

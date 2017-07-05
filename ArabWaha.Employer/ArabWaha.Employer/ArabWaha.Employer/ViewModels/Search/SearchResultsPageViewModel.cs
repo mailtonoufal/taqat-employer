@@ -80,7 +80,7 @@ namespace ArabWaha.Employer.ViewModels
 		{
 			try
 			{
-                UserDialogs.Instance.ShowLoading();
+                Dialog.ShowLoading();
                 StringBuilder searchFilter = new StringBuilder();
                 string filterJoin = string.Empty;
 				filterJoin = String.Format("JobType eq * ", _searchLocaiton);
@@ -107,7 +107,7 @@ namespace ArabWaha.Employer.ViewModels
 				Debug.WriteLine(ex.Message);
 			}
             finally{
-                UserDialogs.Instance.HideLoading();
+                Dialog.HideLoading();
             }
 			//ApiService sv = new ApiService();
 			//Get the CandidateList
