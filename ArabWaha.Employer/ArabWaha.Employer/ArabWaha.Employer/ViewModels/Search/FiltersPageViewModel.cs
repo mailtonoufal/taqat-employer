@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Text;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -175,8 +176,111 @@ namespace ArabWaha.Employer.ViewModels
 
         private void ProcessApplyCommand()
         {
-            // need to set/store all the options and pass them back to the search page
-            _nav.GoBackAsync();
+			//Words.Where(w => w.Contains(":"));
+			StringBuilder searchFilter = new StringBuilder();
+			string filterJoin = string.Empty;
+
+            var selectedGenderList = new ObservableCollection<GenderEntry>(_genderList.Where(w => w.Selected));
+            var selectedSortByList = new ObservableCollection<SortByEntry>(_sortByList.Where(w => w.Selected));
+            var selectedJobTypeList = new ObservableCollection<JobTypeEntry>(_jobTypeList.Where(w => w.Selected));
+            var selectedWorkTypeList = new ObservableCollection<WorkTypeEntry>(_workTypeList.Where(w => w.Selected));
+            var selectedShiftTypeList = new ObservableCollection<ShiftTypeEntry>(_shiftTypeList.Where(w => w.Selected));
+            var selectedTeleWorkingList = new ObservableCollection<TeleWorkingEntry>(_teleWorkingList.Where(w => w.Selected));
+            var selectedRequiredEducationList = new ObservableCollection<RequiredEducationEntry>(_requiredEducationList.Where(w => w.Selected));
+			var selectedTravellingRequiredList = new ObservableCollection<TravellingRequiredEntry>(_travellingRequiredList.Where(w => w.Selected));
+            var selectedSpecializationList = new ObservableCollection<SpecializationEntry>(_specializationList.Where(w => w.Selected));
+            var selectedPostedSinceList = new ObservableCollection<PostedSinceEntry>(_postedSinceList.Where(w => w.Selected));
+
+            if (selectedJobTypeList ==null || selectedJobTypeList.Count<1)
+            {
+				filterJoin = String.Format("JobType eq * and ");
+				searchFilter.Append(filterJoin);
+            }
+            else
+            {
+                foreach (JobTypeEntry jobType in selectedJobTypeList)
+                {
+                    filterJoin = String.Format("JobType eq '{0}' and ", jobType.JobType.ToString());
+					searchFilter.Append(filterJoin);
+                }
+            }
+            if (selectedGenderList != null && selectedGenderList.Count>0)
+            {
+                foreach (GenderEntry gender in selectedGenderList)
+				{
+                    filterJoin = String.Format("Gender eq '{0}' and ", gender.Gender.ToString());
+					searchFilter.Append(filterJoin);
+				}
+            }
+            if (selectedSortByList != null && selectedSortByList.Count > 0)
+			{
+                foreach (SortByEntry sortBy in selectedSortByList)
+				{
+					filterJoin = String.Format("SortBy eq '{0}' and ", sortBy.SortBy.ToString());
+					searchFilter.Append(filterJoin);
+				}
+			}
+			if (selectedWorkTypeList != null && selectedWorkTypeList.Count > 0)
+			{
+                foreach (WorkTypeEntry workType in selectedWorkTypeList)
+				{
+                    filterJoin = String.Format("WorkTime eq '{0}' and ", workType.WorkType.ToString());
+					searchFilter.Append(filterJoin);
+				}
+			}
+            if (selectedShiftTypeList != null && selectedShiftTypeList.Count > 0)
+			{
+                foreach (ShiftTypeEntry shiftType in selectedShiftTypeList)
+				{
+                    filterJoin = String.Format("ShiftType eq '{0}' and ", shiftType.ShiftType.ToString());
+					searchFilter.Append(filterJoin);
+				}
+			}
+            if (selectedRequiredEducationList != null && selectedRequiredEducationList.Count > 0)
+			{
+                foreach (RequiredEducationEntry requiredEducation in selectedRequiredEducationList)
+				{
+                    filterJoin = String.Format("RequiredEducation eq '{0}' and ", requiredEducation.RequiredEducation.ToString());
+					searchFilter.Append(filterJoin);
+				}
+			}
+            if (selectedTravellingRequiredList != null && selectedTravellingRequiredList.Count > 0)
+			{
+                foreach (TravellingRequiredEntry travellingRequired in selectedTravellingRequiredList)
+				{
+                    filterJoin = String.Format("TravellingRequired eq '{0}' and ", travellingRequired.TravellingRequired.ToString());
+					searchFilter.Append(filterJoin);
+				}
+			}
+            if (selectedTeleWorkingList != null && selectedTeleWorkingList.Count > 0)
+			{
+                foreach (TeleWorkingEntry teleWorking in selectedTeleWorkingList)
+				{
+                    filterJoin = String.Format("TeleWorking eq '{0}' and ", teleWorking.TeleWorking.ToString());
+					searchFilter.Append(filterJoin);
+				}
+			}
+            if (selectedSpecializationList != null && selectedSpecializationList.Count > 0)
+			{
+                foreach (SpecializationEntry specialization in selectedSpecializationList)
+				{
+                    filterJoin = String.Format("Specialization eq '{0}' and ", specialization.Specialization.ToString());
+					searchFilter.Append(filterJoin);
+				}
+			}
+            if (selectedPostedSinceList != null && selectedPostedSinceList.Count > 0)
+			{
+                foreach (PostedSinceEntry postedSince in selectedPostedSinceList)
+				{
+                    filterJoin = String.Format("PostedSince eq '{0}' and ", postedSince.Id.ToString());
+					searchFilter.Append(filterJoin);
+				}
+			}
+			if (searchFilter.Length > 0)
+			searchFilter.Remove(searchFilter.Length - 4, 4);
+            GlobalSetting.FilterQuery = searchFilter.ToString();
+			// need to set/store all the options and pass them back to the search page
+			_nav.GoBackAsync();
 
         }
 
@@ -196,7 +300,6 @@ namespace ArabWaha.Employer.ViewModels
         public void OnNavigatingTo(NavigationParameters parameters)
         {
         }
-
         private void LoadData()
         {
             SortByList = StaticEntryHelper.GetSortByEntries();

@@ -18,6 +18,7 @@ using System.Diagnostics;
 using Acr.UserDialogs;
 using System.Threading.Tasks;
 using System.Text;
+using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -83,8 +84,11 @@ namespace ArabWaha.Employer.ViewModels
                 Dialog.ShowLoading();
                 StringBuilder searchFilter = new StringBuilder();
                 string filterJoin = string.Empty;
-				filterJoin = String.Format("JobType eq * ", _searchLocaiton);
-				searchFilter.Append(filterJoin);
+                if (GlobalSetting.FilterQuery == null || GlobalSetting.FilterQuery.Length < 0)
+                {
+					filterJoin = String.Format("JobType eq * ");
+					searchFilter.Append(filterJoin);
+                }
                 if (_searchLocaiton !=null && _searchLocaiton.Length>0)
                 {
                     filterJoin = String.Format("and location eq '{0}' ", _searchLocaiton);

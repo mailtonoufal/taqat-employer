@@ -19,7 +19,7 @@ namespace ArabWaha.Employer.StaticData
 			IsArabic = CultureCode == "ar";
 			IsEnglish = !IsArabic;
 		}
-
+        public static string FilterQuery { get; set; }
 		public static LayoutAlignment AlignLabel { get { return IsArabic ? LayoutAlignment.End : LayoutAlignment.Start; } }
 		public static LayoutAlignment AlignData { get { return IsArabic ? LayoutAlignment.Start : LayoutAlignment.End; } }
 
