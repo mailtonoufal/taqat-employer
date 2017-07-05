@@ -98,6 +98,20 @@ namespace ArabWaha.Employer.Views.Menus
                 }
             };
 
+            if(GlobalSetting.CultureCode.Equals("ar"))
+			{
+				arabic.TextColor = Color.White;
+				arabic.BackgroundColor = Color.FromHex("#012148");
+				english.TextColor = Color.FromHex("#012148");
+				english.BackgroundColor = Color.White;
+            }
+            else
+            {
+				english.TextColor = Color.White;
+				english.BackgroundColor = Color.FromHex("#012148");
+				arabic.TextColor = Color.FromHex("#012148");
+				arabic.BackgroundColor = Color.White;
+            }
         }
 
         public DelegateCommand<MasterPageItem> MenuNavigateCommand { get; set; }

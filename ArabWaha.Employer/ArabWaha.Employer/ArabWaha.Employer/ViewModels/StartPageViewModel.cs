@@ -22,7 +22,8 @@ namespace ArabWaha.Employer.ViewModels
         public DelegateCommand SignInCommand { get; set; }
         public DelegateCommand SignInExternalCommand { get; set; }
         public DelegateCommand SignUpCommand { get; set; }
-        public DelegateCommand ContinueAsGuestCommand { get; set; }
+		public DelegateCommand ContinueAsGuestCommand { get; set; }
+
 
         private int _pagePosition;
         public int PagePosition
@@ -40,6 +41,19 @@ namespace ArabWaha.Employer.ViewModels
             SignInExternalCommand = new DelegateCommand(NavigateInternal);
             SignUpCommand = new DelegateCommand(NavigateSignUp);
             ContinueAsGuestCommand = new DelegateCommand(ContinueAsGuest);
+            AutoScroll();
+        }
+
+        private void AutoScroll()
+        {
+            TimeSpan ts = new TimeSpan(0, 0, 5);
+            Device.StartTimer(ts, () =>
+                {
+                    PagePosition = 1;
+
+                    return false;
+                }
+            );
         }
 
         private async void ContinueAsGuest()
