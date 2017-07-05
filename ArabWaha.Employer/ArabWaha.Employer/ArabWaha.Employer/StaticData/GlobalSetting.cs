@@ -99,7 +99,7 @@ namespace ArabWaha.Employer.StaticData
 		public static string LicencesLabelColNo { get { return IsArabic ? "1" : "0"; } }
 		public static string LicencesValueColNo { get { return IsArabic ? "0" : "1"; } }
 
-		//Job Post details details set 
+		//Job Post details contact person set 
 		public static string ContactPersonLeftColNo { get { return IsArabic ? "1" : "0"; } }
 		public static string ContactPersonRightColNo { get { return IsArabic ? "0" : "1"; } }
 

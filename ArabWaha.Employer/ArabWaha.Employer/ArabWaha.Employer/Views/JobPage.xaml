@@ -22,9 +22,9 @@
                 <ContentView  Grid.Row="0" Content="{Binding CurrentView}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                 <StackLayout Grid.Row="1" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}">
  
-                        <Button IsVisible="{Binding IsViewMode}"  Margin="0" Text="{lEx:Translate ButtonViewMatchingCandidates}" Command="{Binding ViewCandidatesCommand}" Style="{StaticResource GreenButtonFlat}" />
-                        <Button IsVisible="{Binding IsViewMode}"  Margin="0" Text="{lEx:Translate ButtonEditJobPost}" Command="{Binding EditJobCommand}" Style="{StaticResource BlueButtonFlat}" />
-                        <Button IsVisible="{Binding IsViewMode}"  Margin="0" Text="{lEx:Translate ButtonDeleteJobPost}" Command="{Binding DeleteJobCommand}" Style="{StaticResource RedButtonFlat}" />
+                        <Button IsVisible="{Binding IsViewMode}"  Margin="0" Text="{lEx:CMSTranslate jobpostsdetbtnmatchingcandidates}" Command="{Binding ViewCandidatesCommand}" Style="{StaticResource GreenButtonFlat}" />
+                        <Button IsVisible="{Binding IsViewMode}"  Margin="0" Text="{lEx:CMSTranslate jobpostsdetlbleditjobpost}" Command="{Binding EditJobCommand}" Style="{StaticResource BlueButtonFlat}" />
+                        <Button IsVisible="{Binding IsViewMode}"  Margin="0" Text="{lEx:CMSTranslate jobpostsdetlbldeletejobpost}" Command="{Binding DeleteJobCommand}" Style="{StaticResource RedButtonFlat}" />
 
                         <Button  IsVisible="{Binding IsEditMode}"  Margin="0"  Text="{lEx:Translate ButtonSaveEdits}" Command="{Binding SaveChangesJobCommand}" Style="{StaticResource GreenButtonFlat}" />
                         <Button  IsVisible="{Binding IsEditMode}"  Margin="0" Text="{lEx:Translate ButtonDiscardChanges}" Command="{Binding DiscardChangesJobCommand}" Style="{StaticResource RedButtonFlat}" />

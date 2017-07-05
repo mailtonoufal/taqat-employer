@@ -622,6 +622,14 @@ namespace ArabWaha.Employer.ViewModels
 			get { return JobDetails.JobLanguages; }
 		}
 
+
+		private Double _jobLanguagesHeight;
+		public Double JobLanguagesHeight
+		{
+			get { return _jobLanguagesHeight; }
+			set { SetProperty(ref _jobLanguagesHeight, value); }
+		}
+
 		public ObservableCollection<JobDetailLicenses> JobLicenses
 		{
 			get { return JobDetails.JobLicenses; }
@@ -634,9 +642,17 @@ namespace ArabWaha.Employer.ViewModels
 			set { SetProperty(ref _jobLicensesHeight, value); }
 		}
 
+
 		public ObservableCollection<EmployerJobDetailTraining> JobTraining
 		{
 			get { return JobDetails.JobTraining; }
+		}
+
+		private Double _jobTrainingHeight;
+		public Double JobTrainingHeight
+		{
+			get { return _jobTrainingHeight; }
+			set { SetProperty(ref _jobTrainingHeight, value); }
 		}
 		// end test
 
@@ -704,6 +720,16 @@ namespace ArabWaha.Employer.ViewModels
 						{
 							JobDetails = jobDetails as EmployerJobDetail;
 							SetViewMode();
+							//set dynamic height for languages
+							if (JobDetails.JobLanguages != null && JobDetails.JobLanguages.Count > 0)
+							{
+								SetJobLanguagesHeight(JobDetails.JobLanguages.Count);
+							}
+							else
+							{
+								SetJobLanguagesHeight(0);
+							}
+							//set dynamic height for licences
 							if (JobDetails.JobLicenses != null && JobDetails.JobLicenses.Count > 0)
 							{
 								SetJobLicencesHeight(JobDetails.JobLicenses.Count);
@@ -711,6 +737,15 @@ namespace ArabWaha.Employer.ViewModels
 							else
 							{
 								SetJobLicencesHeight(0);
+							}
+							//set dynamic height for trainings
+							if (JobDetails.JobTraining != null && JobDetails.JobTraining.Count > 0)
+							{
+								SetJobTrainingHeight(JobDetails.JobTraining.Count);
+							}
+							else
+							{
+								SetJobTrainingHeight(0);
 							}
 						}
 						break;
@@ -762,11 +797,20 @@ namespace ArabWaha.Employer.ViewModels
 			}
 		}
 
+		public void SetJobLanguagesHeight(int noOfLanguages)
+		{
+			JobLanguagesHeight = 50 * noOfLanguages;
+		}
+
 		public void SetJobLicencesHeight(int noOfLicences)
 		{
 			JobLicensesHeight = 50 * noOfLicences;
 		}
 
+		public void SetJobTrainingHeight(int noOfTrainings)
+		{
+			JobTrainingHeight = 100 * noOfTrainings;
+		}
 
 		#endregion
 	}

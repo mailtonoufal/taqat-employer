@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:locals="clr-namespace:ArabWaha.Employer.Controls" xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers" xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData" x:Class="ArabWaha.Employer.Layouts.Jobs.JobDisplayContent">
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:locals="clr-namespace:ArabWaha.Employer.Controls" 
+	xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers" 
+	xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData" 
+	x:Class="ArabWaha.Employer.Layouts.Jobs.JobDisplayContent"
+	xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
 	<ContentView.Content>
 		<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}">
 			<!-- Job summary -->
@@ -54,13 +61,12 @@
 				</Grid>
 			</StackLayout>
 			<!-- description -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate Description}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate jobpostsdetlbldescription}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
 						<Grid>
 							<Grid.RowDefinitions>
 								<RowDefinition Height="10" />
-								<!--<RowDefinition Height="*" />-->
 								<RowDefinition Height="*" />
 								<RowDefinition Height="5" />
 							</Grid.RowDefinitions>
@@ -69,16 +75,13 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="5" />
 							</Grid.ColumnDefinitions>
-							<!--<BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="FillAndExpand" />-->
-							<!--<Label Text="{lEx:Translate Description}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="{Binding AlignLabelText}" 
-                               Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="FillAndExpand" />-->
 							<Label Text="{Binding JobDetails.JobDescription}" Grid.Row="1" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 						</Grid>
 					</StackLayout>
 				</locals:XpertAccordion.AccordionContents>
 			</locals:XpertAccordion>
 			<!-- General Information -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate LabelJobGeneralInformation}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate jobpostsdetlblgeninfo}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
 						<Grid>
@@ -103,35 +106,32 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="5" />
 							</Grid.ColumnDefinitions>
-							<!--<BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="14" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
-                    <Label Text="{lEx:Translate LabelJobGeneralInformation}" Grid.Row="1" Grid.Column="{Binding LabelColumn}" Grid.ColumnSpan="2" 
-                           HorizontalTextAlignment="{Binding AlignLabelText}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="FillAndExpand" />-->
 							<Label Text="{Binding JobDetails.Status}" Grid.Row="2" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobApplicationStatus}" Grid.Row="2" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlbljobpoststatus}" Grid.Row="2" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.JobPostId}" Grid.Row="3" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobJobPostID}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlbljobpostid}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.JobType, Converter={StaticResource JobTypeConverter}}" Grid.Row="4" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobJobType}" Grid.Row="4" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlbljobtype}" Grid.Row="4" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.OpenPositions}" Grid.Row="5" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobOpenPositions}" Grid.Row="5" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblopenpositions}" Grid.Row="5" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.FilledPosition}" Grid.Row="6" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobFilledPositions}" Grid.Row="6" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblfilledpositions}" Grid.Row="6" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.SalaryTo, StringFormat='{0} SAR'}" Grid.Row="7" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobSalary}" Grid.Row="7" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblsalary}" Grid.Row="7" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.CompanyIndustry}" Grid.Row="8" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobSector}" Grid.Row="8" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblsector}" Grid.Row="8" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.Experience}" Grid.Row="9" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobMinimumExp}" Grid.Row="9" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblminexp}" Grid.Row="9" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.PublicationDate}" Grid.Row="10" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobAppliedDate}" Grid.Row="10" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblappldate}" Grid.Row="10" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.StartDate}" Grid.Row="11" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobDesiredStartDate}" Grid.Row="11" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate sidemenulblapplications}" Grid.Row="11" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 						</Grid>
 					</StackLayout>
 				</locals:XpertAccordion.AccordionContents>
 			</locals:XpertAccordion>
 			<!-- Skills -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate LabelJobSkills}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate jobpostsdetlblskills}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
 						<Grid>
@@ -152,27 +152,24 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="5" />
 							</Grid.ColumnDefinitions>
-							<!--<BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
-                            <Label Text="{lEx:Translate LabelJobSkills}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="{Binding AlignLabelText}" 
-                           Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="FillAndExpand" />-->
 							<Label Text="{Binding JobDetails.JobPostTitle}" Grid.Row="2" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobTitle}" Grid.Row="2" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlbltitle}" Grid.Row="2" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.CompanyName}" Grid.Row="3" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobCompany}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblcompany}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.CompanyIndustry}" Grid.Row="4" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobSector}" Grid.Row="4" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblsector}" Grid.Row="4" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.OpenPositions}" Grid.Row="5" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobYears}" Grid.Row="5" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblyears}" Grid.Row="5" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.MonthlySalary}" Grid.Row="6" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobMonthlySalary}" Grid.Row="6" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblmonsal}" Grid.Row="6" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.RolesResponsibilities}" Grid.Row="7" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobRolesResponsib}" Grid.Row="7" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblroleresp}" Grid.Row="7" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 						</Grid>
 					</StackLayout>
 				</locals:XpertAccordion.AccordionContents>
 			</locals:XpertAccordion>
 			<!-- Language listview for list of languages -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate TextLanguage}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate jobpostsdetlbllanguages}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
 						<Grid>
@@ -187,15 +184,12 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="5" />
 							</Grid.ColumnDefinitions>
-							<!--<BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="3"  />
-                    <Label Text="{lEx:Translate TextLanguage}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="{Binding AlignLabelText}" 
-                           Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="FillAndExpand" />-->
 							<StackLayout Grid.Row="2" Grid.Column="1" VerticalOptions="Start">
-								<ListView ItemsSource="{Binding JobLanguages}" HeightRequest="250" SeparatorVisibility="None">
+								<ListView ItemsSource="{Binding JobLanguages}" HeightRequest="{Binding JobLanguagesHeight}" SeparatorVisibility="None">
 									<ListView.ItemTemplate>
 										<DataTemplate>
 											<ViewCell>
-												<Grid HeightRequest="100">
+												<Grid>
 													<Grid.RowDefinitions>
 														<RowDefinition Height="*" />
 														<RowDefinition Height="*" />
@@ -209,7 +203,7 @@
 													<locals:HighProgressBar Rotation="180" BarHeight="10" IsHeader="False" BarColor="Orange" Progress="{Binding ProficiencyValue}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
 													<Label Text="{Binding Name}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" VerticalOptions="Center" />
 													<!-- second grid -->
-													<Grid HeightRequest="30" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" Grid.Row="1">
+													<Grid Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" Grid.Row="1">
 														<Grid.RowDefinitions>
 															<RowDefinition Height="*" />
 														</Grid.RowDefinitions>
@@ -231,7 +225,7 @@
 				</locals:XpertAccordion.AccordionContents>
 			</locals:XpertAccordion>
 			<!-- Licences -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate LabelJobLicences}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate guestprofiledetlbllicenses}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
 						<Grid>
@@ -250,9 +244,9 @@
 								<ColumnDefinition Width="5" />
 							</Grid.ColumnDefinitions>
 							<Label Text="{Binding JobDetails.RequiresDrivingLicence}" Grid.Row="2" Grid.Column="{Binding DataColumn}" HorizontalTextAlignment="{Binding AlignText}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Style="{StaticResource CellBodyTextMedGray}" />
-							<Label Text="{lEx:Translate LabelJobDrivingLicence}" Grid.Row="2" Grid.Column="{Binding LabelColumn}" VerticalOptions="Start" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+							<Label Text="{lEx:CMSTranslate guestprofiledetlbldrivlicense}" Grid.Row="2" Grid.Column="{Binding LabelColumn}" VerticalOptions="Start" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
 							<Label Text="{Binding JobDetails.DrivingLicenceType}" Grid.Row="3" Grid.Column="{Binding DataColumn}" VerticalOptions="Start" HorizontalTextAlignment="{Binding AlignText}" HorizontalOptions="FillAndExpand" Style="{StaticResource CellBodyTextMedGray}" />
-							<Label Text="{lEx:Translate LabelJobLicenceType}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" VerticalOptions="Start" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+							<Label Text="{lEx:CMSTranslate guestprofiledetlbllictype}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" VerticalOptions="Start" Style="{StaticResource InfoHeaderTextSmallBlue}" />
 							<StackLayout Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" VerticalOptions="Start">
 								<ListView ItemsSource="{Binding JobLicenses}" HasUnevenRows="True" SeparatorVisibility="None" HeightRequest="{Binding JobLicensesHeight}">
 									<ListView.ItemTemplate>
@@ -260,19 +254,10 @@
 											<ViewCell>
 												<StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand">
 													<Grid VerticalOptions="Fill">
-														<Grid.RowDefinitions>
-															<RowDefinition Height="*" />
-														</Grid.RowDefinitions>
-														<Grid.ColumnDefinitions>
-															<ColumnDefinition Width="1" />
-															<ColumnDefinition Width="0.5*" />
-															<ColumnDefinition Width="0.5*" />
-															<ColumnDefinition Width="1" />
-														</Grid.ColumnDefinitions>
-														<Label Text="{Binding Value}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" Style="{StaticResource CellBodyTextMedGray}" />
-														<Label Text="{lEx:Translate LabelJobLicenceName}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center" Style="{StaticResource InfoHeaderTextSmallBlue}" />
-														<Label Text="{Binding ExpiryValue}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
-														<Label Text="{lEx:Translate LabelJobExpiry}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+														<Label Text="{Binding Value}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.LicencesValueColNo}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" Style="{StaticResource CellBodyTextMedGray}" />
+														<Label Text="{lEx:CMSTranslate guestprofiledetlbllicname}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.LicencesLabelColNo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+														<Label Text="{Binding ExpiryValue}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.LicencesValueColNo}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
+														<Label Text="{lEx:CMSTranslate guestprofiledetlbllicexpiry}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.LicencesLabelColNo}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
 													</Grid>
 												</StackLayout>
 											</ViewCell>
@@ -300,33 +285,21 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="5" />
 							</Grid.ColumnDefinitions>
-							<!--<BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="FillAndExpand" />
-                    <Label Text="{lEx:Translate LabelJobTrainingText}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="{Binding AlignLabelText}" 
-                           Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="FillAndExpand" />-->
 							<StackLayout Grid.Row="2" Grid.Column="1" Orientation="Vertical">
-								<ListView ItemsSource="{Binding JobTraining}" HeightRequest="160" HasUnevenRows="True" SeparatorVisibility="None">
+								<ListView ItemsSource="{Binding JobTraining}" HeightRequest="{Binding JobTrainingHeight}" HasUnevenRows="True" SeparatorVisibility="None">
 									<ListView.ItemTemplate>
 										<DataTemplate>
 											<ViewCell>
 												<StackLayout>
 													<Grid VerticalOptions="Start">
-														<Grid.RowDefinitions>
-															<RowDefinition Height="*" />
-														</Grid.RowDefinitions>
-														<Grid.ColumnDefinitions>
-															<ColumnDefinition Width="1" />
-															<ColumnDefinition Width="0.5*" />
-															<ColumnDefinition Width="0.5*" />
-															<ColumnDefinition Width="1" />
-														</Grid.ColumnDefinitions>
-														<Label Text="{Binding Name}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
-														<Label Text="{lEx:Translate LabelJobTrainingNameText}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
-														<Label Text="{Binding InstituteName}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
-														<Label Text="{lEx:Translate LabelJobTrainingInstituteText}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
-														<Label Text="{lEx:Translate LabelJobTrainingLocationText}" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
-														<Label Text="{Binding Location}" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
-														<Label Text="{Binding Validity}" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
-														<Label Text="{lEx:Translate LabelJobTrainingValidityText}" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+														<Label Text="{Binding Name}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.LicencesValueColNo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
+														<Label Text="{lEx:CMSTranslate guestprofiledetlbltrainname}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.LicencesLabelColNo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+														<Label Text="{Binding InstituteName}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.LicencesValueColNo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
+														<Label Text="{lEx:CMSTranslate guestprofiledetlblinstname}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.LicencesLabelColNo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+														<Label Text="{lEx:CMSTranslate guestprofiledetlbltrnlocation}" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.LicencesLabelColNo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+														<Label Text="{Binding Location}" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.LicencesValueColNo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
+														<Label Text="{Binding Validity}" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.LicencesValueColNo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
+														<Label Text="{lEx:CMSTranslate guestprofiledetlbltrnvalidity}" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.LicencesLabelColNo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
 													</Grid>
 												</StackLayout>
 											</ViewCell>
@@ -339,7 +312,7 @@
 				</locals:XpertAccordion.AccordionContents>
 			</locals:XpertAccordion>
 			<!-- Location -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate LabelJobTrainingLocationText}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate jobpostsdetlbllocation}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
 						<Grid>
@@ -361,27 +334,25 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="5" />
 							</Grid.ColumnDefinitions>
-							<!--<BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
-                    <Label Text="{lEx:Translate LabelJobTrainingLocationText}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" 
-                           HorizontalTextAlignment="{Binding AlignLabelText}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="FillAndExpand" />-->
-							<BoxView BackgroundColor="Gray" HeightRequest="150" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalOptions="Start" />
+<!--							<BoxView BackgroundColor="Gray" HeightRequest="150" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalOptions="Start" />-->
+							<maps:Map Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalOptions="Start" WidthRequest="320" HeightRequest="150" x:Name="MyMap" IsShowingUser="true" MapType="Street" IsVisible="true" />
 							<Label Text="{Binding JobDetails.CompanyLocation.Address}" Grid.Row="3" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
-							<Label Text="{lEx:Translate LabelJobLocationAddressText}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlbladdress}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.WorkTime}" Grid.Row="4" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobLocationWorkTimeText}" Grid.Row="4" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblworktime}" Grid.Row="4" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.Shifttype}" Grid.Row="5" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
 							<Label Text="{lEx:Translate LabelJobLocationShiftTimeText}" Grid.Row="5" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.Teleworking}" Grid.Row="6" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobLocationTeleworkingText}" Grid.Row="6" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate guestprofiledetlbltelework}" Grid.Row="6" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.Mobility}" Grid.Row="7" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobLocationMobilityText}" Grid.Row="7" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblmobility}" Grid.Row="7" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding LocationNotes}" Grid.Row="8" Grid.Column="2" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" />
 						</Grid>
 					</StackLayout>
 				</locals:XpertAccordion.AccordionContents>
 			</locals:XpertAccordion>
 			<!-- Benefits and advantages -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate LabelJobBenefitsText}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate jobpostsdetlblbenefits}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
 						<Grid>
@@ -399,21 +370,18 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="5" />
 							</Grid.ColumnDefinitions>
-							<!--<BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
-                    <Label Text="{lEx:Translate LabelJobBenefitsText}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="{Binding AlignLabelText}" 
-                           Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="FillAndExpand" />-->
 							<Label Text="{Binding JobDetails.SalaryRange}" Grid.Row="2" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobSalary}" Grid.Row="2" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblsalary}" Grid.Row="2" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.OtherBenefits}" Grid.Row="3" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobBenefitsOtherText}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblother}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.Bonus}" Grid.Row="4" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobBenefitsBonusText}" Grid.Row="4" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblbonus}" Grid.Row="4" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 						</Grid>
 					</StackLayout>
 				</locals:XpertAccordion.AccordionContents>
 			</locals:XpertAccordion>
 			<!-- Method of application -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate LabelJobApplicationMethodText}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate jobpostsdetlblmethodofappl}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
 						<Grid>
@@ -430,52 +398,43 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="5" />
 							</Grid.ColumnDefinitions>
-							<!--<BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
-                    <Label Text="{lEx:Translate LabelJobApplicationMethodText}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" 
-                           HorizontalTextAlignment="{Binding AlignLabelText}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="FillAndExpand" />-->
 							<Label Text="{Binding JobDetails.ApplicationRequirement}" Grid.Row="2" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobApplicationRequirementText}" Grid.Row="2" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblrequirements}" Grid.Row="2" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.SurveyUrl}" Grid.Row="3" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobApplicationSurveyText}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostsdetlblsurvey}" Grid.Row="3" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 						</Grid>
 					</StackLayout>
 				</locals:XpertAccordion.AccordionContents>
 			</locals:XpertAccordion>
 			<!-- Contact Person -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate LabelJobContactText}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate jobpostsdetlblcontactperson}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
-						<Grid>
+						<Grid Padding="10">
 							<Grid.RowDefinitions>
-								<RowDefinition Height="4" />
-								<RowDefinition Height="1" />
+								<RowDefinition Height="5" />
 								<RowDefinition Height="Auto" />
-								<RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
 								<RowDefinition Height="5" />
 							</Grid.RowDefinitions>
 							<Grid.ColumnDefinitions>
-								<ColumnDefinition Width="5" />
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="*" />
-								<ColumnDefinition Width="5" />
 							</Grid.ColumnDefinitions>
-							<BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" />
-							<Label Text="{lEx:Translate LabelJobContactText}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="{Binding AlignLabelText}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="FillAndExpand" />
-							<Label Text="{Binding JobDetails.ContactPersonInd.Email}" Grid.Row="2" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Start" HorizontalTextAlignment="Start" />
-							<Label Text="{Binding JobDetails.ContactPersonInd.Name}" Grid.Row="2" Grid.Column="2" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
-							<Label Text="{Binding JobDetails.CompanyLocation.LocationId}" Grid.Row="3" Grid.Column="2" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+							<Label Text="{Binding JobDetails.ContactPersonInd.Email}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.ContactPersonRightColNo}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{Binding JobDetails.ContactPersonInd.Name}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.ContactPersonLeftColNo}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{Binding JobDetails.CompanyLocation.LocationId}" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.ContactPersonLeftColNo}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 						</Grid>
 					</StackLayout>
 				</locals:XpertAccordion.AccordionContents>
 			</locals:XpertAccordion>
 			<!-- Attachments -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate LabelJobAttachmentsText}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate jobpostsdetlblattachments}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
 						<Grid>
 							<Grid.RowDefinitions>
-								<RowDefinition Height="4" />
-								<RowDefinition Height="1" />
+								<RowDefinition Height="5" />
 								<RowDefinition Height="Auto" />
 								<RowDefinition Height="Auto" />
 								<RowDefinition Height="5" />
