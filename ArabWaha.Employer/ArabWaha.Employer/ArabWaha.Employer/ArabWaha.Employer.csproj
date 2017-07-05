@@ -285,6 +285,10 @@
       <DependentUpon>PersonalDetailsPage.xaml</DependentUpon>
     </Compile>
 
+    <Compile Include="Views\PersonalDetails\EditPersonalDetailsPage.xaml.cs">
+      <DependentUpon>EditPersonalDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\PersonalDetails\PersonalDetailsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -295,6 +299,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PersonalDetails\PersonalDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PersonalDetails\EditPersonalDetailsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -759,6 +766,7 @@
   <ItemGroup>
     <Folder Include="Layouts\Welcome\" />
     <Folder Include="Views\PersonalDetails\" />
+    <Folder Include="ViewModels\PersonalDetails\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

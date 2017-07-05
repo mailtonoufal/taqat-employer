@@ -26,6 +26,8 @@ namespace ArabWaha.Employer.StaticData
 		public static TextAlignment AlignText { get { return IsArabic ? TextAlignment.End : TextAlignment.Start; } }
 		public static TextAlignment AlignLabelText { get { return IsArabic ? TextAlignment.End : TextAlignment.Start; } }
 
+		public static TextAlignment AlignTextReverse { get { return IsArabic ? TextAlignment.Start : TextAlignment.End; } }
+
 		public static TextAlignment SkipText { get { return IsArabic ? TextAlignment.Start : TextAlignment.End; } }
 
 
@@ -84,6 +86,20 @@ namespace ArabWaha.Employer.StaticData
 		public static string PersonalDetailLabelColNo { get { return IsArabic ? "1" : "0"; } }
 		public static string PersonalDetailValueColNo { get { return IsArabic ? "0" : "1"; } }
 
+		public static GridLength EditPersonalDetailCol1Width { get { return IsArabic ? new GridLength(20, GridUnitType.Absolute) : new GridLength(1, GridUnitType.Star); } }
+		public static GridLength EditPersonalDetailCol3Width { get { return IsArabic ? new GridLength(1, GridUnitType.Star) : new GridLength(20, GridUnitType.Absolute); } }
+
+		public static string EditPersonalDetailImageColNo { get { return IsArabic ? "2" : "0"; } }
+		public static string EditPersonalDetailLabelColNo { get { return IsArabic ? "0" : "2"; } }
+
+
+		//Job Post details details set 
+		public static string LicencesLabelColNo { get { return IsArabic ? "1" : "0"; } }
+		public static string LicencesValueColNo { get { return IsArabic ? "0" : "1"; } }
+
+		//Job Post details details set 
+		public static string ContactPersonLeftColNo { get { return IsArabic ? "1" : "0"; } }
+		public static string ContactPersonRightColNo { get { return IsArabic ? "0" : "1"; } }
 
 		#endregion
 
