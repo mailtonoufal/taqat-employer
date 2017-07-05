@@ -265,12 +265,12 @@
 														</Grid.RowDefinitions>
 														<Grid.ColumnDefinitions>
 															<ColumnDefinition Width="1" />
-															<ColumnDefinition Width="*" />
-															<ColumnDefinition Width="*" />
+															<ColumnDefinition Width="0.5*" />
+															<ColumnDefinition Width="0.5*" />
 															<ColumnDefinition Width="1" />
 														</Grid.ColumnDefinitions>
 														<Label Text="{Binding Value}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" Style="{StaticResource CellBodyTextMedGray}" />
-														<Label Text="{lEx:Translate LabelJobLicenceName}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center" Style="{StaticResource InfoHeaderTextSmallBlue}" />
+														<Label Text="{lEx:Translate LabelJobLicenceName}" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center" Style="{StaticResource InfoHeaderTextSmallBlue}" />
 														<Label Text="{Binding ExpiryValue}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.DataColumn}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" Style="{StaticResource CellBodyTextMedGray}" />
 														<Label Text="{lEx:Translate LabelJobExpiry}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.LabelColumn}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" />
 													</Grid>
@@ -447,10 +447,10 @@
 					<StackLayout BackgroundColor="White">
 						<Grid>
 							<Grid.RowDefinitions>
-								<RowDefinition Height="5" />
+								<RowDefinition Height="4" />
+								<RowDefinition Height="1" />
 								<RowDefinition Height="Auto" />
 								<RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
 								<RowDefinition Height="5" />
 							</Grid.RowDefinitions>
 							<Grid.ColumnDefinitions>
@@ -474,7 +474,8 @@
 					<StackLayout BackgroundColor="White">
 						<Grid>
 							<Grid.RowDefinitions>
-								<RowDefinition Height="5" />
+								<RowDefinition Height="4" />
+								<RowDefinition Height="1" />
 								<RowDefinition Height="Auto" />
 								<RowDefinition Height="Auto" />
 								<RowDefinition Height="5" />
