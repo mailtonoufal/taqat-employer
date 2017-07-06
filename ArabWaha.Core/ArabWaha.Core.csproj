@@ -176,6 +176,7 @@
     <Compile Include="Models\Profile\PersonalDetails.cs" />
     <Compile Include="Models\User\SubUser.cs" />
     <Compile Include="Models\User\DeleteUser.cs" />
+    <Compile Include="Models\User\ForgotUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FubarCoder.RestSharp.Portable.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=be81bb0f53eab22f, processorArchitecture=MSIL">

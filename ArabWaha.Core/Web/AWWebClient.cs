@@ -1404,6 +1404,113 @@ namespace ArabWaha.Web
 			}
 		}
 
+        public async Task<ServiceResult<ForgotUserObject>> ForgotUserName(string email)
+		{
+			ServiceResult<ForgotUserObject> returnVal = null;
+
+			if (string.IsNullOrEmpty(DebugDataSingleton.Instance?.BasicAuth)) return returnVal;
+
+			try
+			{
+				string strFullSyncData = "";
+				using (HttpServiceClient httpclient = new HttpServiceClient("", "forgetEmployerUsernameSet"))
+				{
+					httpclient.DefaultRequestHeaders.Add("X-SMP-APPCID", DebugDataSingleton.Instance.X_SMP_APPCID);
+					httpclient.DefaultRequestHeaders.Add("Authorization", DebugDataSingleton.Instance.BasicAuth);
+
+                    string Apiname = string.Format("forgetEmployerUsernameSet(email='{0}')", email);
+					var response = await httpclient.GetAsync(serviceUrl + Apiname);
+					returnVal = new ServiceResult<ForgotUserObject>();
+					if (response.StatusCode == System.Net.HttpStatusCode.OK)
+					{
+						using (Stream stream = await httpclient.GetStreamAsync(serviceUrl + Apiname))
+						{
+							using (var reader = new System.IO.StreamReader(stream))
+							{
+								strFullSyncData = reader.ReadToEnd();
+							}
+						}
+
+						// all success
+						var getNesIndividualResponse = JsonConvert.DeserializeObject<ForgotUserObject>(strFullSyncData);
+						returnVal.IsSuccess = true;
+						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
+						returnVal.Result = getNesIndividualResponse;
+					}
+					else
+					{
+						returnVal.IsSuccess = false;
+						returnVal.Result = null;
+						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
+					}
+					//Debug.WriteLine("Cookie-" + DebugDataSingleton.Instance.COOKIE);
+					return returnVal;
+				}
+			}
+			catch (Exception ex)
+			{
+				return returnVal;
+
+			}
+			finally
+			{
+			}
+		}
+
+
+		public async Task<ServiceResult<ForgotUserObject>> ForgotPassword(string username)
+		{
+			ServiceResult<ForgotUserObject> returnVal = null;
+
+			if (string.IsNullOrEmpty(DebugDataSingleton.Instance?.BasicAuth)) return returnVal;
+
+			try
+			{
+				string strFullSyncData = "";
+				using (HttpServiceClient httpclient = new HttpServiceClient("", "forgetEmployerPasswordSet"))
+				{
+					httpclient.DefaultRequestHeaders.Add("X-SMP-APPCID", DebugDataSingleton.Instance.X_SMP_APPCID);
+					httpclient.DefaultRequestHeaders.Add("Authorization", DebugDataSingleton.Instance.BasicAuth);
+
+                    string Apiname = string.Format("forgetEmployerPasswordSet(userName='{0}')", username);
+					var response = await httpclient.GetAsync(serviceUrl + Apiname);
+					returnVal = new ServiceResult<ForgotUserObject>();
+					if (response.StatusCode == System.Net.HttpStatusCode.OK)
+					{
+						using (Stream stream = await httpclient.GetStreamAsync(serviceUrl + Apiname))
+						{
+							using (var reader = new System.IO.StreamReader(stream))
+							{
+								strFullSyncData = reader.ReadToEnd();
+							}
+						}
+
+						// all success
+						var getNesIndividualResponse = JsonConvert.DeserializeObject<ForgotUserObject>(strFullSyncData);
+						returnVal.IsSuccess = true;
+						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
+						returnVal.Result = getNesIndividualResponse;
+					}
+					else
+					{
+						returnVal.IsSuccess = false;
+						returnVal.Result = null;
+						returnVal.StatusCode = Convert.ToString(Convert.ToInt32(response.StatusCode));
+					}
+					//Debug.WriteLine("Cookie-" + DebugDataSingleton.Instance.COOKIE);
+					return returnVal;
+				}
+			}
+			catch (Exception ex)
+			{
+				return returnVal;
+
+			}
+			finally
+			{
+			}
+		}
+
         /// <summary>
         /// Gets all programs.
         /// </summary>
