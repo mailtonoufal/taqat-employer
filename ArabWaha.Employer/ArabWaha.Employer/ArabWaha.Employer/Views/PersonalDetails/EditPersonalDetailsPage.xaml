@@ -9,7 +9,7 @@
 	xmlns:controlx="clr-namespace:ArabWaha.Employer.Controls" prism:ViewModelLocator.AutowireViewModel="True" 
 	x:Class="ArabWaha.Employer.Views.EditPersonalDetailsPage"
 	xmlns:controls="clr-namespace:ArabWaha.Employer;assembly=ArabWaha.Employer"
-	xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" Title="Edit Personal Details" x:Name="this" BackgroundColor="{StaticResource BackgroundColor}">
+	xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" Title="{lEx:CMSTranslate editpersonaldetlbltitle}" x:Name="this" BackgroundColor="{StaticResource BackgroundColor}">
 
 
 	<StackLayout Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource BackgroundColor}">
@@ -30,45 +30,45 @@
 						<RowDefinition Height="35" />
 						<RowDefinition Height="35" />
 					</Grid.RowDefinitions>
-					<Label Text="Personal Information" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="{StaticResource BlueTextColor}" FontSize="15" FontAttributes="Bold" 
+					<Label Text="{lEx:CMSTranslate editpersonaldetlblpersonalinfo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="{StaticResource BlueTextColor}" FontSize="15" FontAttributes="Bold" 
 						Grid.Row="0" Grid.Column="0"/>
 					<StackLayout Orientation="Vertical"  Grid.Row="1" Grid.Column="0">
-						<controls:LineEntry  Text="" Placeholder="First Name" Style="{StaticResource BlackTextEntry}"
+						<controls:LineEntry  Text="" Placeholder="{lEx:CMSTranslate editpersonaldetphfname}" Style="{StaticResource BlackTextEntry}"
 					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" FontSize="13" LineColor="Transparent"/>
 						<BoxView HeightRequest="0.5" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Opacity="0.2"/>
 					</StackLayout>
 					<StackLayout Orientation="Vertical"  Grid.Row="2" Grid.Column="0">
-						<controls:LineEntry  Text="" Placeholder="Second Name" Style="{StaticResource BlackTextEntry}"
+						<controls:LineEntry  Text="" Placeholder="{lEx:CMSTranslate editpersonaldetphsname}" Style="{StaticResource BlackTextEntry}"
 					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" FontSize="13" LineColor="Transparent"/>
 						<BoxView HeightRequest="0.5" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Opacity="0.2"/>
 					</StackLayout>
 					<StackLayout Orientation="Vertical"  Grid.Row="3" Grid.Column="0">
-						<controls:LineEntry  Text="" Placeholder="Third Name" Style="{StaticResource BlackTextEntry}"
+						<controls:LineEntry  Text="" Placeholder="{lEx:CMSTranslate editpersonaldetphtname}" Style="{StaticResource BlackTextEntry}"
 					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" FontSize="13" LineColor="Transparent"/>
 						<BoxView HeightRequest="0.5" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Opacity="0.2"/>
 					</StackLayout>
 					<StackLayout Orientation="Vertical"  Grid.Row="4" Grid.Column="0">
-						<controls:LineEntry  Text="" Placeholder="Last Name" Style="{StaticResource BlackTextEntry}"
+						<controls:LineEntry  Text="" Placeholder="{lEx:CMSTranslate editpersonaldetphlname}" Style="{StaticResource BlackTextEntry}"
 					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" FontSize="13" LineColor="Transparent"/>
 						<BoxView HeightRequest="0.5" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Opacity="0.2"/>
 					</StackLayout>
 					<StackLayout Orientation="Vertical"  Grid.Row="5" Grid.Column="0">
-						<controls:LineEntry  Text="" Placeholder="Mobile Phone" Style="{StaticResource BlackTextEntry}"
+						<controls:LineEntry  Text="" Placeholder="{lEx:CMSTranslate editpersonaldetphmphone}" Style="{StaticResource BlackTextEntry}"
 					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" FontSize="13" LineColor="Transparent"/>
 						<BoxView HeightRequest="0.5" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Opacity="0.2"/>
 					</StackLayout>
 					<StackLayout Orientation="Vertical"  Grid.Row="6" Grid.Column="0">
-						<controls:LineEntry  Text="" Placeholder="Email Address" Style="{StaticResource BlackTextEntry}"
+						<controls:LineEntry  Text="" Placeholder="{lEx:CMSTranslate editpersonaldetphemail}" Style="{StaticResource BlackTextEntry}"
 					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" FontSize="13" LineColor="Transparent"/>
 						<BoxView HeightRequest="0.5" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Opacity="0.2"/>
 					</StackLayout>
 					<StackLayout Orientation="Vertical"  Grid.Row="7" Grid.Column="0">
-						<controls:LineEntry  Text="" Placeholder="Telephone Number" Style="{StaticResource BlackTextEntry}"
+						<controls:LineEntry  Text="" Placeholder="{lEx:CMSTranslate editpersonaldetphtelephone}" Style="{StaticResource BlackTextEntry}"
 					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" FontSize="13" LineColor="Transparent"/>
 						<BoxView HeightRequest="0.5" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Opacity="0.2"/>
 					</StackLayout>
 					<StackLayout Orientation="Vertical"  Grid.Row="8" Grid.Column="0">
-						<controls:LineEntry  Text="" Placeholder="Position" Style="{StaticResource BlackTextEntry}"
+						<controls:LineEntry  Text="" Placeholder="{lEx:CMSTranslate editpersonaldetphposition}" Style="{StaticResource BlackTextEntry}"
 					HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" FontSize="13" LineColor="Transparent"/>
 						<BoxView HeightRequest="0.5" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Opacity="0.2"/>
 					</StackLayout>
@@ -80,7 +80,7 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="{x:Static gb:GlobalSetting.EditPersonalDetailCol3Width}" />
 							</Grid.ColumnDefinitions>
-							<Label Text="Assign user role" Grid.Column="{x:Static gb:GlobalSetting.EditPersonalDetailImageColNo}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate editpersonaldetlblassignuserrole}" Grid.Column="{x:Static gb:GlobalSetting.EditPersonalDetailImageColNo}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
 							<Label Text="Recruiter" Grid.Column="1" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignTextReverse}"/>
 							<Image Source="arrow_back.png" HeightRequest="23" WidthRequest="23" Grid.Column="{x:Static gb:GlobalSetting.EditPersonalDetailLabelColNo}" />
 						</Grid>
@@ -94,7 +94,7 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="{x:Static gb:GlobalSetting.EditPersonalDetailCol3Width}" />
 							</Grid.ColumnDefinitions>
-							<Label Text="Communication Channel" Grid.Column="{x:Static gb:GlobalSetting.EditPersonalDetailImageColNo}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate editpersonaldetlblcomchannel}" Grid.Column="{x:Static gb:GlobalSetting.EditPersonalDetailImageColNo}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
 							<Label Text="SMS" Grid.Column="1" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignTextReverse}"/>
 							<Image Source="arrow_back.png" HeightRequest="23" WidthRequest="23" Grid.Column="{x:Static gb:GlobalSetting.EditPersonalDetailLabelColNo}" />
 						</Grid>
@@ -108,24 +108,19 @@
 								<ColumnDefinition Width="*" />
 								<ColumnDefinition Width="{x:Static gb:GlobalSetting.EditPersonalDetailCol3Width}" />
 							</Grid.ColumnDefinitions>
-							<Label Text="Account Status" Grid.Column="{x:Static gb:GlobalSetting.EditPersonalDetailImageColNo}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate editpersonaldetlbaccountstatus}" Grid.Column="{x:Static gb:GlobalSetting.EditPersonalDetailImageColNo}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
 							<Label Text="Active" Grid.Column="1" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignTextReverse}"/>
 							<Image Source="arrow_back.png" HeightRequest="23" WidthRequest="23" Grid.Column="{x:Static gb:GlobalSetting.EditPersonalDetailLabelColNo}" />
 						</Grid>
 						<BoxView HeightRequest="0.5" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Opacity="0.2"/>
 					</StackLayout>
 
-
-
-
-					
-
 				</Grid>
 				<StackLayout VerticalOptions="StartAndExpand">
-					<Label Text="LOCATION" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="{StaticResource BlueTextColor}" FontSize="13" Margin="10" />
+					<Label Text="{lEx:CMSTranslate personaldetailslbllocation}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="{StaticResource BlueTextColor}" FontSize="13" Margin="10" />
 					<maps:Map WidthRequest="320" HeightRequest="200" x:Name="MyMap" IsShowingUser="true" MapType="Street" IsVisible="true" />
 				</StackLayout>
-				<Button Text="Save Personal Details" Margin="18" Style="{StaticResource GreenButton}" HorizontalOptions="FillAndExpand" Command="{Binding ManageCommand}">
+				<Button Text="{lEx:CMSTranslate editpersonaldetbtnsave}" Margin="18" Style="{StaticResource GreenButton}" HorizontalOptions="FillAndExpand" Command="{Binding ManageCommand}">
 				</Button>
 			</StackLayout>
 		</ScrollView>

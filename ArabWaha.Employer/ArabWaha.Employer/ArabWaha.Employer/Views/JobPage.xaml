@@ -26,8 +26,8 @@
                         <Button IsVisible="{Binding IsViewMode}"  Margin="0" Text="{lEx:CMSTranslate jobpostsdetlbleditjobpost}" Command="{Binding EditJobCommand}" Style="{StaticResource BlueButtonFlat}" />
                         <Button IsVisible="{Binding IsViewMode}"  Margin="0" Text="{lEx:CMSTranslate jobpostsdetlbldeletejobpost}" Command="{Binding DeleteJobCommand}" Style="{StaticResource RedButtonFlat}" />
 
-                        <Button  IsVisible="{Binding IsEditMode}"  Margin="0"  Text="{lEx:Translate ButtonSaveEdits}" Command="{Binding SaveChangesJobCommand}" Style="{StaticResource GreenButtonFlat}" />
-                        <Button  IsVisible="{Binding IsEditMode}"  Margin="0" Text="{lEx:Translate ButtonDiscardChanges}" Command="{Binding DiscardChangesJobCommand}" Style="{StaticResource RedButtonFlat}" />
+                        <Button  IsVisible="{Binding IsEditMode}"  Margin="0"  Text="{lEx:CMSTranslate jobpostdetllbtnsave}" Command="{Binding SaveChangesJobCommand}" Style="{StaticResource GreenButtonFlat}" />
+                        <Button  IsVisible="{Binding IsEditMode}"  Margin="0" Text="{lEx:CMSTranslate jobpostdetllbtndiscard}" Command="{Binding DiscardChangesJobCommand}" Style="{StaticResource RedButtonFlat}" />
 
                         <Button  IsVisible="{Binding IsNewMode}"  Margin="0"  Text="{lEx:Translate ButtonSaveEdits}" Command="{Binding SaveChangesJobCommand}" Style="{StaticResource GreenButtonFlat}" />
 
