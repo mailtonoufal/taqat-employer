@@ -7,7 +7,7 @@
 	xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData" 
 	xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms" 
 	xmlns:controlx="clr-namespace:ArabWaha.Employer.Controls" prism:ViewModelLocator.AutowireViewModel="True" x:Class="ArabWaha.Employer.Views.PersonalDetailsPage"
-	xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" Title="Personal Details" x:Name="this" BackgroundColor="{StaticResource BackgroundColor}">
+	xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" Title="{lEx:CMSTranslate personaldetailslbltitle}" x:Name="this" BackgroundColor="{StaticResource BackgroundColor}">
 
 	<StackLayout Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource BackgroundColor}">
 		<StackLayout VerticalOptions="Start" HorizontalOptions="Fill" Style="{StaticResource ContentStackLayout}">
@@ -35,29 +35,29 @@
 						<ColumnDefinition  />
 						<ColumnDefinition />
 					</Grid.ColumnDefinitions>
-					<Label Text="Account Information" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="{StaticResource BlueTextColor}" FontSize="15" FontAttributes="Bold" 
+					<Label Text="{lEx:CMSTranslate personaldetailslblaccountinfo}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="{StaticResource BlueTextColor}" FontSize="15" FontAttributes="Bold" 
 						Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
 
-					<Label Text="Username" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  Style="{StaticResource InfoHeaderTextSmallBlue}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailLabelColNo}" />
+					<Label Text="{lEx:CMSTranslate personaldetailslblusername}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  Style="{StaticResource InfoHeaderTextSmallBlue}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailLabelColNo}" />
 					<Label Text="{Binding PersonalDetails.userName}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource CellBodyTextMedGray}" Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailValueColNo}" />
 
-					<Label Text="User Type" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  Style="{StaticResource InfoHeaderTextSmallBlue}" FontAttributes="Bold" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailLabelColNo}" />
+					<Label Text="{lEx:CMSTranslate personaldetailslblusertype}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  Style="{StaticResource InfoHeaderTextSmallBlue}" FontAttributes="Bold" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailLabelColNo}" />
 					<Label Text="{Binding PersonalDetails.userType}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource CellBodyTextMedGray}" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailValueColNo}" />
 
-					<Label Text="Assigned Role" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" FontAttributes="Bold" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailLabelColNo}" />
+					<Label Text="{lEx:CMSTranslate personaldetailslblassingnedrole}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" FontAttributes="Bold" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailLabelColNo}" />
 					<Label Text="{Binding PersonalDetails.assignedUserRole}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource CellBodyTextMedGray}" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailValueColNo}" />
 
-					<Label Text="Preferred Channel of Communication" LineBreakMode="WordWrap" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" FontAttributes="Bold" Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailLabelColNo}" />
+					<Label Text="{lEx:CMSTranslate personaldetailslblpreferredchannel}" LineBreakMode="WordWrap" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" FontAttributes="Bold" Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailLabelColNo}" />
 					<Label Text="{Binding PersonalDetails.preferChannel}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource CellBodyTextMedGray}" Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailValueColNo}" />
 
-					<Label Text="Account Status" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" FontAttributes="Bold" Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailLabelColNo}" />
+					<Label Text="{lEx:CMSTranslate personaldetailslblaccountstatus}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoHeaderTextSmallBlue}" FontAttributes="Bold" Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailLabelColNo}" />
 					<Label Text="{Binding PersonalDetails.molAccountStatus}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource CellBodyTextMedGray}" Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.PersonalDetailValueColNo}" />
 				</Grid>
 				<StackLayout VerticalOptions="StartAndExpand">
-					<Label Text="LOCATION" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="{StaticResource BlueTextColor}" FontSize="13" Margin="10" />
+					<Label Text="{lEx:CMSTranslate personaldetailslbllocation}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="{StaticResource BlueTextColor}" FontSize="13" Margin="10" />
 					<maps:Map WidthRequest="320" HeightRequest="200" x:Name="MyMap" IsShowingUser="true" MapType="Street" IsVisible="true" />
 				</StackLayout>
-				<Button Text="Edit Personal Details" Margin="18" Style="{StaticResource GreenButton}" HorizontalOptions="FillAndExpand" Command="{Binding EditDetailsCommand}">
+				<Button Text="{lEx:CMSTranslate personaldetailsbtnedit}" Margin="18" Style="{StaticResource GreenButton}" HorizontalOptions="FillAndExpand" Command="{Binding EditDetailsCommand}">
 				</Button>
 			</StackLayout>
 		</ScrollView>
