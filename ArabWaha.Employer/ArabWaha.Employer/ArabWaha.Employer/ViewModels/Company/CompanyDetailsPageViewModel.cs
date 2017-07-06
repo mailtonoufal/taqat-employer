@@ -1,4 +1,4 @@
-﻿using ArabWaha.Core.ModelsEmployer.Company;
+﻿﻿using ArabWaha.Core.ModelsEmployer.Company;
 using ArabWaha.Core.Services;
 using ArabWaha.Employer.BaseCalsses;
 using ArabWaha.Employer.Views;
@@ -18,6 +18,7 @@ using ArabWaha.Core.Models.Company;
 using ArabWaha.Web;
 using ArabWaha.Core.DBAccess;
 using System.Diagnostics;
+using ArabWaha.Employer.Helpers;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -30,6 +31,56 @@ namespace ArabWaha.Employer.ViewModels
             get { return _companyInfo; }
             set { SetProperty(ref _companyInfo, value); }
         }
+
+		private string _CompanyDescription;
+		public string CompanyDescription
+		{
+			get { return _CompanyDescription; }
+			set
+			{
+				SetProperty(ref _CompanyDescription, value);
+			}
+		}
+
+		private string _CompanyInformation;
+		public string CompanyInformation
+		{
+			get { return _CompanyInformation; }
+			set
+			{
+				SetProperty(ref _CompanyInformation, value);
+			}
+		}
+
+		private string _CompanyContact;
+		public string CompanyContact
+		{
+			get { return _CompanyContact; }
+			set
+			{
+				SetProperty(ref _CompanyContact, value);
+			}
+		}
+
+		private string _CompanyLocation;
+		public string CompanyLocation
+		{
+			get { return _CompanyLocation; }
+			set
+			{
+				SetProperty(ref _CompanyLocation, value);
+			}
+		}
+
+		private string _ManageUserButton;
+		public string ManageUserButton
+		{
+			get { return _ManageUserButton; }
+			set
+			{
+				SetProperty(ref _ManageUserButton, value);
+			}
+		}
 
 
         public DelegateCommand<string> CallCommand { get; set; }
@@ -49,13 +100,34 @@ namespace ArabWaha.Employer.ViewModels
             var MyCompanyDetails = myCompanyFromDb[0];
 
             CompanyInfo = myCompanyFromDb[0];
-           // var lattitude = CompanyInfo.contactPersonGeocodeLattitude;
-           // var longitude = CompanyInfo.contactPersonGeocodeLongitude;
+			// var lattitude = CompanyInfo.contactPersonGeocodeLattitude;
+			// var longitude = CompanyInfo.contactPersonGeocodeLongitude;
+
+			
+
+
+            TranslateExtension tran = new TranslateExtension();
 
 
 
-           
-        }
+			//CompanyDescription = App.Translation != null ? App.Translation.program.mycompanydescription : tran.GetProviderValueString("CompanyDescriptionLabel");
+			CompanyDescription = tran.GetProviderValueString("CompanyDescriptionLabel");
+
+            // CompanyInformation = App.Translation != null ? App.Translation.program.mycompanyinformation : tran.GetProviderValueString("CompanyInformationLabel");
+			CompanyInformation = tran.GetProviderValueString("CompanyInformationLabel");
+
+            //CompanyContact = App.Translation != null ? App.Translation.program.mycompanycontactdt : tran.GetProviderValueString("ContactDetailsLabel");
+			CompanyContact = tran.GetProviderValueString("ContactDetailsLabel");
+
+            //CompanyLocation = App.Translation != null ? App.Translation.program.mycompanylocation : tran.GetProviderValueString("LocationLabel");
+			CompanyLocation = tran.GetProviderValueString("LocationLabel");
+
+            //ManageUserButton = App.Translation != null ? App.Translation.program.mycompanyuserbutton : tran.GetProviderValueString("ManageCompanyUsersButton");
+            ManageUserButton = tran.GetProviderValueString("ManageCompanyUsersButton");
+
+			
+
+		}
 
         private void ManageCompany()
         {

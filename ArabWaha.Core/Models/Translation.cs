@@ -105,6 +105,9 @@
 		public class Programs
 		{
 			public string title { get; set; }
+
+			
+
 		}
 
 
@@ -118,6 +121,14 @@
 			public string registerTitle { get; set; }
 			public string requirementsTitle { get; set; }
 			public string whyTitle { get; set; }
+
+
+			public string programdetailsintro { get; set; }
+			public string programdetailsbenefittext { get; set; }
+			public string programdetailsbeneficiarytxt { get; set; }
+			public string programdtwhocanbenefit { get; set; }
+			public string programdthowtoregister { get; set; }
+			
 		}
 
 		public class Menu
@@ -297,6 +308,10 @@
             public string talentsearchlblresultsfound { get; set; }
 			public string talentsearchlblweeks { get; set; }
 			public string talentsearchlblmonths { get; set; }
+
+
+
+           
 
 
 		}

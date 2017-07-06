@@ -30,7 +30,7 @@
                
                   <StackLayout Margin="10,0,10,0">
                 <StackLayout >
-                <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsIntroduction}" AccordionIsExpanded="true" AccordionImage = "{StaticResource DefaultJobIcon}" Style="{StaticResource GeneralAccordion}" IsVisible="{Binding ProgramIntroduction}" >
+                <locals:XpertAccordion HeaderText="{Binding ProgramsIntroduction}" AccordionIsExpanded="true" AccordionImage = "{StaticResource DefaultJobIcon}" Style="{StaticResource GeneralAccordion}" IsVisible="{Binding ProgramIntroduction}" >
                     <locals:XpertAccordion.AccordionContents>
                         <StackLayout BackgroundColor="White">
                             <Grid >
@@ -56,7 +56,7 @@
 
                  
                 <!-- who can benefit -->
-                <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsBenefitsText}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" IsVisible="{Binding  IsBenefitVisible}" >
+                <locals:XpertAccordion HeaderText="{Binding ProgramBenefits}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" IsVisible="{Binding  IsBenefitVisible}" >
                     <locals:XpertAccordion.AccordionContents >
                         <StackLayout BackgroundColor="White" >
                             <Grid >
@@ -78,7 +78,7 @@
                     </locals:XpertAccordion.AccordionContents>
                 </locals:XpertAccordion>
                 <!-- program requirements -->
-                <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsBeneficiariesText}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" IsVisible="{Binding IsBeneficiariesVisible}" >
+                <locals:XpertAccordion HeaderText="{Binding ProgramRecquirement}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" IsVisible="{Binding IsBeneficiariesVisible}" >
                     <locals:XpertAccordion.AccordionContents>
                         <StackLayout BackgroundColor="White" >
                             <Grid >
@@ -103,7 +103,7 @@
 
 
              <!--   who can benefit?-->
-                   <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsWhocanBenefitText}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" IsVisible="{Binding WhocanBenefit}" >
+                   <locals:XpertAccordion HeaderText="{Binding ProgramWhoBenefits}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" IsVisible="{Binding WhocanBenefit}" >
                     <locals:XpertAccordion.AccordionContents>
                         <StackLayout BackgroundColor="White" >
                             <Grid >
@@ -166,7 +166,7 @@
 
                 
                 <!-- how to register -->
-                <locals:XpertAccordion HeaderText="{lEx:Translate LabelProgramsHowToRegisterText}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" IsVisible="{Binding HowToRegister}" Margin="0,0,0,10">
+                <locals:XpertAccordion HeaderText="{Binding ProgramHowToRegister}" AccordionIsExpanded="True" AccordionImage = "{StaticResource DefaultJobIcon}" IsVisible="{Binding HowToRegister}" Margin="0,0,0,10">
                     <locals:XpertAccordion.AccordionContents>
                         <StackLayout BackgroundColor="White" >
                             <Grid >

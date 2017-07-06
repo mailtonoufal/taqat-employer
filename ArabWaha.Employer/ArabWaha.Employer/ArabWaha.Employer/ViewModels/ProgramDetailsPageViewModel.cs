@@ -11,11 +11,57 @@ using System.Diagnostics;
 using System.Linq;
 using Xamarin.Forms;
 using ArabWaha.Core.Models;
+using ArabWaha.Employer.Helpers;
 
 namespace ArabWaha.Employer.ViewModels
 {
     public class ProgramDetailsPageViewModel : AWMVVMBase, INavigationAware
     {
+		private string _ProgramsIntroduction;
+		public string ProgramsIntroduction
+		{
+			get { return _ProgramsIntroduction; }
+			set
+			{
+				SetProperty(ref _ProgramsIntroduction, value);
+			}
+		}
+		private string _ProgramBenefits;
+		public string ProgramBenefits
+		{
+			get { return _ProgramBenefits; }
+			set
+			{
+				SetProperty(ref _ProgramBenefits, value);
+			}
+		}
+		private string _ProgramRecquirement;
+		public string ProgramRecquirement
+		{
+			get { return _ProgramRecquirement; }
+			set
+			{
+				SetProperty(ref _ProgramRecquirement, value);
+			}
+		}
+		private string _ProgramWhoBenefits;
+		public string ProgramWhoBenefits
+		{
+			get { return _ProgramWhoBenefits; }
+			set
+			{
+				SetProperty(ref _ProgramWhoBenefits, value);
+			}
+		}
+		private string _ProgramHowToRegister;
+		public string ProgramHowToRegister
+		{
+			get { return _ProgramHowToRegister; }
+			set
+			{
+				SetProperty(ref _ProgramHowToRegister, value);
+			}
+		}
         public ProgramDetailsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
             IsBusy = false;
@@ -33,7 +79,35 @@ namespace ArabWaha.Employer.ViewModels
             HowToRegister = true;
             ProgramIntroduction = true;
             WhocanBenefit = true;
-        }
+
+
+
+			TranslateExtension tran = new TranslateExtension();
+
+
+
+			//ProgramsIntroduction = App.Translation != null ? App.Translation.program.programdetailsintro : tran.GetProviderValueString("LabelProgramsIntroduction");
+            ProgramsIntroduction = tran.GetProviderValueString("LabelProgramsIntroduction");
+
+           // ProgramBenefits = App.Translation != null ? App.Translation.program.programdetailsbenefittext : tran.GetProviderValueString("LabelProgramsBenefitsText");
+			ProgramBenefits = tran.GetProviderValueString("LabelProgramsBenefitsText");
+
+           // ProgramRecquirement = App.Translation != null ? App.Translation.program.programdetailsbeneficiarytxt : tran.GetProviderValueString("LabelProgramsBeneficiariesText");
+            ProgramRecquirement = tran.GetProviderValueString("LabelProgramsBeneficiariesText");
+
+            //ProgramWhoBenefits = App.Translation != null ? App.Translation.program.programdtwhocanbenefit : tran.GetProviderValueString("LabelProgramsWhocanBenefitText");
+			ProgramWhoBenefits = tran.GetProviderValueString("LabelProgramsWhocanBenefitText");
+
+
+			//ProgramHowToRegister = App.Translation != null ? App.Translation.program.programdthowtoregister : tran.GetProviderValueString("LabelProgramsHowToRegisterText");
+			ProgramHowToRegister = tran.GetProviderValueString("LabelProgramsHowToRegisterText");
+
+
+
+
+
+		}
+		
 
         private Program _programDetails;
 
