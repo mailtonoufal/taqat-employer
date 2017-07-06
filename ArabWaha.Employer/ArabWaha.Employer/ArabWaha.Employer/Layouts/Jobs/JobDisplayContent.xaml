@@ -211,8 +211,8 @@
 															<ColumnDefinition Width="5*" />
 															<ColumnDefinition Width="5*" />
 														</Grid.ColumnDefinitions>
-														<Label Text="{lEx:Translate LabelJobExpert}" Grid.Column="0" HorizontalTextAlignment="Start" Style="{StaticResource CellBodyTextMedGray}" VerticalOptions="Start" />
-														<Label Text="{lEx:Translate LabelJobBeginner}" Grid.Column="1" HorizontalTextAlignment="End" Style="{StaticResource CellBodyTextMedGray}" VerticalOptions="Start" />
+														<Label Text="{lEx:CMSTranslate jobpostdetllbljobexpert}" Grid.Column="0" HorizontalTextAlignment="Start" Style="{StaticResource CellBodyTextMedGray}" VerticalOptions="Start" />
+														<Label Text="{lEx:CMSTranslate jobpostdetlblbeginner}" Grid.Column="1" HorizontalTextAlignment="End" Style="{StaticResource CellBodyTextMedGray}" VerticalOptions="Start" />
 													</Grid>
 												</Grid>
 											</ViewCell>
@@ -270,7 +270,7 @@
 				</locals:XpertAccordion.AccordionContents>
 			</locals:XpertAccordion>
 			<!-- Training -->
-			<locals:XpertAccordion HeaderText="{lEx:Translate LabelJobTrainingText}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
+			<locals:XpertAccordion HeaderText="{lEx:CMSTranslate jobpostdetlbltraining}" AccordionIsExpanded="False" AccordionImage="{StaticResource DefaultJobIcon}">
 				<locals:XpertAccordion.AccordionContents>
 					<StackLayout BackgroundColor="White">
 						<Grid>
@@ -341,7 +341,7 @@
 							<Label Text="{Binding JobDetails.WorkTime}" Grid.Row="4" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
 							<Label Text="{lEx:CMSTranslate jobpostsdetlblworktime}" Grid.Row="4" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.Shifttype}" Grid.Row="5" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
-							<Label Text="{lEx:Translate LabelJobLocationShiftTimeText}" Grid.Row="5" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
+							<Label Text="{lEx:CMSTranslate jobpostdetlblshifttime}" Grid.Row="5" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.Teleworking}" Grid.Row="6" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />
 							<Label Text="{lEx:CMSTranslate guestprofiledetlbltelework}" Grid.Row="6" Grid.Column="{Binding LabelColumn}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignLabelText}" />
 							<Label Text="{Binding JobDetails.Mobility}" Grid.Row="7" Grid.Column="{Binding DataColumn}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{Binding AlignText}" />

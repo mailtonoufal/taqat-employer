@@ -18,6 +18,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using Xamarin.Forms;
 using ArabWaha.Core.Models.Profile;
+using ArabWaha.Web;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -28,6 +29,13 @@ namespace ArabWaha.Employer.ViewModels
 		{
 			get { return _personalDetails; }
 			set { SetProperty(ref _personalDetails, value); }
+		}
+
+		private string _locationChange;
+		public string LocationChange
+		{
+			get { return _locationChange; }
+			set { SetProperty(ref _locationChange, value); }
 		}
 
 		public DelegateCommand EditDetailsCommand { get; set; }
@@ -49,25 +57,37 @@ namespace ArabWaha.Employer.ViewModels
 			_nav.NavigateAsync(nameof(EditPersonalDetailsPage));
 		}
 
-		private void LoadData()
+		private async void LoadData()
 		{
-			
-			PersonalDetails = new PersonalDetails()
+			var personalDetails = await AWHttpClient.Instance.GetPersonalDetails();
+			if (personalDetails.IsSuccess)
 			{
-				fullName = "subhash sharma",
-				position = "developer",
-				ninIqama = "nin/iqama",
-				mobileNumber = "9799845632",
-				additionalNumber = "9529878485",
-				emailId = "subhash.sharma@dotsquares.com",
+				if (personalDetails.Result != null && personalDetails.Result.personalDetailsObject != null && personalDetails.Result.personalDetailsObject.personalDetailsList.Count > 0)
+				{
+					PersonalDetails = personalDetails.Result.personalDetailsObject.personalDetailsList[0];
+					LocationChange = "changed";
 
-				userName = "subhash.sharma",
-				userType = "verified by MoL",
-				assignedUserRole = "representative",
-				preferChannel = "SMS",
-				molAccountStatus = "Active"
+				}
+			}
+			else
+			{
+				PersonalDetails = new PersonalDetails()
+				{
+					fullName = "subhash sharma",
+					position = "developer",
+					ninIqama = "nin/iqama",
+					mobileNumber = "9799845632",
+					additionalNumber = "9529878485",
+					emailId = "subhash.sharma@dotsquares.com",
 
-			};
+					userName = "subhash.sharma",
+					userType = "verified by MoL",
+					assignedUserRole = "representative",
+					preferChannel = "SMS",
+					molAccountStatus = "Active"
+
+				};
+			}
 		}
 	}
 }

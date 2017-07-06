@@ -283,6 +283,12 @@
 			public string jobpostsdetbtnmatchingcandidates { get; set; }
 			public string jobpostsdetlbleditjobpost { get; set; }
 			public string jobpostsdetlbldeletejobpost { get; set; }
+			public string jobpostdetllbtnsave { get; set; }
+			public string jobpostdetllbtndiscard { get; set; }
+			public string jobpostdetllbljobexpert { get; set; }
+			public string jobpostdetlblbeginner { get; set; }
+			public string jobpostdetlbltraining { get; set; }
+			public string jobpostdetlblshifttime { get; set; }
 
 			public string jobpostlistbtnedit { get; set; }
 			public string jobpostlistbtndelete { get; set; }
@@ -291,12 +297,38 @@
 			public string jobswatchlisttabtitle { get; set; }
 			public string jobswatchlisbtnapply { get; set; }
 
-            public string talensearchlblmatchscore { get; set; }
-            public string talentsearchlblposted { get; set; }
-            public string talentsearchlblpostedago { get; set; }
-            public string talentsearchlblresultsfound { get; set; }
+
+			public string talensearchlblmatchscore { get; set; }
+			public string talentsearchlblposted { get; set; }
+			public string talentsearchlblpostedago { get; set; }
+			public string talentsearchlblresultsfound { get; set; }
 			public string talentsearchlblweeks { get; set; }
 			public string talentsearchlblmonths { get; set; }
+
+			public string personaldetailslbltitle { get; set; }
+			public string personaldetailslblaccountinfo { get; set; }
+			public string personaldetailslblusername { get; set; }
+			public string personaldetailslblusertype { get; set; }
+			public string personaldetailslblassingnedrole { get; set; }
+			public string personaldetailslblpreferredchannel { get; set; }
+			public string personaldetailslblaccountstatus { get; set; }
+			public string personaldetailslbllocation { get; set; }
+			public string personaldetailsbtnedit { get; set; }
+
+			public string editpersonaldetlbltitle { get; set; }
+			public string editpersonaldetlblpersonalinfo { get; set; }
+			public string editpersonaldetphfname { get; set; }
+			public string editpersonaldetphsname { get; set; }
+			public string editpersonaldetphtname { get; set; }
+			public string editpersonaldetphlname { get; set; }
+			public string editpersonaldetphmphone { get; set; }
+			public string editpersonaldetphemail { get; set; }
+			public string editpersonaldetphtelephone { get; set; }
+			public string editpersonaldetphposition { get; set; }
+			public string editpersonaldetlblassignuserrole { get; set; }
+			public string editpersonaldetlblcomchannel { get; set; }
+			public string editpersonaldetlbaccountstatus { get; set; }
+			public string editpersonaldetbtnsave { get; set; }
 
 
 		}
