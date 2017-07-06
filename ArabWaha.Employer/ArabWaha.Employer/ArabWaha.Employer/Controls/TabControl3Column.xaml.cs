@@ -24,11 +24,11 @@ namespace ArabWaha.Employer.Controls
         {
             tab1Selected.IsVisible = false;
             tab2Selected.IsVisible = false;
-            tab3Selected.IsVisible = false;
+            //tab3Selected.IsVisible = false;
 
             Tab1.Style = (Style)Application.Current.Resources["TabButtonFlatNotSelected"];
             Tab2.Style = (Style)Application.Current.Resources["TabButtonFlatNotSelected"];
-            Tab3.Style = (Style)Application.Current.Resources["TabButtonFlatNotSelected"];
+            //Tab3.Style = (Style)Application.Current.Resources["TabButtonFlatNotSelected"];
 
 
             if (number == 1)
@@ -43,20 +43,20 @@ namespace ArabWaha.Employer.Controls
             }
             else 
             {
-                tab3Selected.IsVisible = true;
-                Tab3.Style = (Style)Application.Current.Resources["TabButtonFlat"];
+                //tab3Selected.IsVisible = true;
+                //Tab3.Style = (Style)Application.Current.Resources["TabButtonFlat"];
             }
 
             tab1NotSelected.IsVisible = !tab1Selected.IsVisible;
             tab2NotSelected.IsVisible = !tab2Selected.IsVisible;
-            tab3NotSelected.IsVisible = !tab3Selected.IsVisible;
+            //tab3NotSelected.IsVisible = !tab3Selected.IsVisible;
         }
 
         public void SetTabText(string tab1text, string tab2text, string tab3text)
         {
             Tab1.Text = tab1text;
             Tab2.Text = tab2text;
-            Tab3.Text = tab3text;
+            //Tab3.Text = tab3text;
         }
 
         public void SetSearchVisible(bool val)

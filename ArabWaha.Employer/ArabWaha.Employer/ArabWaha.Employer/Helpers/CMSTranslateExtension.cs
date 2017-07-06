@@ -16,13 +16,14 @@ namespace ArabWaha.Employer.Helpers
 
 		public string GetProviderValueString(string key)
 		{
+
 			if (key == null || App.Translation == null)
 				return "";
 
 			var property = App.Translation.employer.GetType().GetRuntimeProperty(key);
-			var value = property.GetValue(App.Translation.employer).ToString();
+			var value = property.GetValue(App.Translation.employer);
 
-			return value;
+			return value == null ? "" : value.ToString();
 		}
 
 		public object ProvideValue(IServiceProvider serviceProvider)
