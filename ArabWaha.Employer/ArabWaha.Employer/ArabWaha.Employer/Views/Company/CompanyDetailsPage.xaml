@@ -38,7 +38,7 @@
 
 
 
-                <controlx:XpertAccordion HeaderText="{lEx:Translate CompanyDescriptionLabel}" AccordionIsExpanded="True" >
+                <controlx:XpertAccordion HeaderText="{Binding CompanyDescription}" AccordionIsExpanded="True" >
                  <!--   AccordionImage = "{StaticResource DefaultJobIcon}"-->
                     <controlx:XpertAccordion.AccordionContents>
                       <StackLayout Padding ="10,5,10,5">
@@ -55,7 +55,7 @@
                  HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}"
 -->
 
-                <controlx:XpertAccordion HeaderText="{lEx:Translate CompanyInformationLabel}" AccordionIsExpanded="True"   HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}"  >
+                <controlx:XpertAccordion HeaderText="{Binding CompanyInformation}" AccordionIsExpanded="True"   HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}"  >
                   <!--  AccordionImage = "{StaticResource DefaultJobIcon}"-->
                     <controlx:XpertAccordion.AccordionContents>
                         <StackLayout BackgroundColor="White">
@@ -95,7 +95,7 @@
 
 
 
-                <controlx:XpertAccordion HeaderText="{lEx:Translate ContactDetailsLabel}" AccordionIsExpanded="True" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" >
+                <controlx:XpertAccordion HeaderText="{Binding CompanyContact}" AccordionIsExpanded="True" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" >
                    <!-- AccordionImage = "{StaticResource DefaultJobIcon}"-->
                     <controlx:XpertAccordion.AccordionContents>
                         <StackLayout BackgroundColor="White">
@@ -116,11 +116,11 @@
                                     <ColumnDefinition Width="5"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{lEx:Translate NameLabel}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
-                                <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{lEx:Translate PositionLabel}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
-                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{lEx:Translate MobilePhoneLabel}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
-                                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{lEx:Translate TelephoneNumberLabel}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
-                                <Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{lEx:Translate EmailAddressLabel}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{Binding NameLabell}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{Binding PositionLabell}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{Binding MobilePhoneLabell}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{Binding TelephoneNumberLabell}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{Binding EmailAddressLabell}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
                              <!-- Style="{StaticResource CellBodyTextMedBlue}"-->
 
                                 <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.ContactName}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
@@ -149,7 +149,7 @@
 
 
 
-                <controlx:XpertAccordion HeaderText="{lEx:Translate LocationLabel}" AccordionIsExpanded="True" >
+                <controlx:XpertAccordion HeaderText="{Binding CompanyLocation}" AccordionIsExpanded="True" >
                    <!-- AccordionImage = "{StaticResource DefaultJobIcon}"-->
                     <controlx:XpertAccordion.AccordionContents>
                        <!-- <StackLayout BackgroundColor="White">
@@ -180,7 +180,7 @@
                </StackLayout>
                     </controlx:XpertAccordion.AccordionContents>
                 </controlx:XpertAccordion>
-                <Button Text="{lEx:Translate ManageCompanyUsersButton}" Margin="18,0,18,0" Style="{StaticResource GreenButton}" HorizontalOptions="FillAndExpand" Command="{Binding ManageCommand}"></Button>
+                <Button Text="{Binding ManageUserButton}" Margin="18,0,18,0" Style="{StaticResource GreenButton}" HorizontalOptions="FillAndExpand" Command="{Binding ManageCommand}"></Button>
             </StackLayout>
                    
         </ScrollView>
