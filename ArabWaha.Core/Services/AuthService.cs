@@ -22,6 +22,7 @@ namespace ArabWaha.Core.Services
             // TODO Call API 
             //Comment this line to bypass the login API
             return await LoginInternal(username, password, isGuest);
+            IsAuthorised = true;
             return true;
         }
 
