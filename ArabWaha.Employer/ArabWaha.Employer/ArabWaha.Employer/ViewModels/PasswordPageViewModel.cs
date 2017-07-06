@@ -13,7 +13,7 @@ using ArabWaha.Employer.StaticData;
 
 namespace ArabWaha.Employer.ViewModels
 {
-    public class PasswordPageViewModel : AWMVVMBase
+    public class PasswordPageViewModel : AWMVVMBase,INavigationAware
     {
         TabControl3Column _ctrl;
 
@@ -23,7 +23,18 @@ namespace ArabWaha.Employer.ViewModels
             Tab1Command = new DelegateCommand(SetUsername);
             Tab2Command = new DelegateCommand(SetPassword);
             Tab3Command = new DelegateCommand(SetEmail);
-
+			//if (GlobalSetting.IsEnglish)
+			//{
+			//	Tab1Command = new DelegateCommand(SetUsername);
+			//	Tab2Command = new DelegateCommand(SetPassword);
+			//	Tab3Command = new DelegateCommand(SetEmail);
+			//}
+			//else
+			//{
+   //             Tab1Command = new DelegateCommand(SetPassword);
+			//	Tab2Command = new DelegateCommand(SetUsername);
+			//	Tab3Command = new DelegateCommand(SetEmail);
+			//}
             // commands for items
             usernameSwitchCommand = new DelegateCommand<string>(ProcessUsernameSwitchCommand);
 
@@ -40,43 +51,24 @@ namespace ArabWaha.Employer.ViewModels
             _ctrl = ctrl;
 
             _ctrl.SetSearchVisible(false);
+            _ctrl.SetTabText(App.Translation != null ? App.Translation.employer.forgotloginlblusername : "Username", App.Translation != null ? App.Translation.employer.forgotloginlblpassword : "Password", "Email");
+            TitleText =App.Translation != null ? App.Translation.employer.forgotloginlbltitle :"Forget Login Information";
+            ButtonText = App.Translation != null ? App.Translation.employer.forgotloginbtnsubmit : "Submit";
+            PasswordPH =App.Translation != null ? App.Translation.employer.forgotloginphusername : "Type your username";
+            UserNamePH = App.Translation != null ? App.Translation.employer.forgotloginphemail :"Type your Email Address";
+            UserName = App.Translation != null ? App.Translation.employer.forgotloginlblusername : "Username";
+            EmailAddress =App.Translation != null ? App.Translation.employer.forgotloginlblemail: "Email Address";
 
-            if (GlobalSetting.CultureCode.Equals("en"))
-            {
-                _ctrl.SetTabText("Username", "Password", "Email");
-                TitleText = "Forget Login Information";
-                EmailTextUsername = "You will get your username information to the email you have signed up with";
-                SMSTextUsername = "You will get your desired information via SMS to the cell phone number that is registered when you signed up";
-                ButtonText = "Submit";
-
-                EmailTextPassword = "You will get your password information to the email you have signed up with";
-                SMSTextPassword = "You will get your password via SMS to the cell phone number that is registered when you signed up";
-                ForgotEmailUsername = "If you have fogotten your password and Email address and want to change your email, please enter your username";
-            }
-            else
-            {
-                _ctrl.SetTabText("اسم المستخدم", "كلمه السر", "البريد الإلكتروني");
-                TitleText = "ننسى معلومات تسجيل الدخول";
-                EmailTextUsername = "ستحصل على معلومات اسم المستخدم على البريد الإلكتروني الذي اشتركت معه";
-                SMSTextUsername = "سوف تحصل على المعلومات المطلوبة عبر الرسائل القصيرة إلى رقم الهاتف الخليوي التي يتم تسجيلها عند الاشتراك";
-                ButtonText = "عرض";
-
-                EmailTextPassword = "ستحصل على معلومات كلمة المرور على البريد الإلكتروني الذي اشتركت معه";
-                SMSTextPassword = "سوف تحصل على كلمة المرور الخاصة بك عن طريق الرسائل القصيرة سمز إلى رقم الهاتف الخليوي الذي تم تسجيله عند الاشتراك";
-                ForgotEmailUsername = "إذا كان لديك فوجوتن كلمة المرور وعنوان البريد الإلكتروني وتريد تغيير البريد الإلكتروني الخاص بك، يرجى إدخال اسم المستخدم الخاص بك";
-
-            }
             _ctrl.SetTabVisble(1);
-
-
         }
 
 
-        #endregion
+		#endregion
 
 
-        #region properties
+		#region properties
 
+		
         private string _ButtonText;
 
         public string ButtonText
@@ -93,26 +85,6 @@ namespace ArabWaha.Employer.ViewModels
             set { SetProperty<string>(ref _EmailText, value); }
         }
 
-        private string _SMSText;
-        public string SMSTextUsername
-        {
-            get { return _SMSText; }
-            set { SetProperty<string>(ref _SMSText, value); }
-        }
-
-        private string _EmailTextPassword;
-        public string EmailTextPassword
-        {
-            get { return _EmailTextPassword; }
-            set { SetProperty<string>(ref _EmailTextPassword, value); }
-        }
-
-        private string _SMSTextPassword;
-        public string SMSTextPassword
-        {
-            get { return _SMSTextPassword; }
-            set { SetProperty<string>(ref _SMSTextPassword, value); }
-        }
 
         public LayoutOptions AlignLayoutOptions
         {
@@ -136,8 +108,35 @@ namespace ArabWaha.Employer.ViewModels
             set { SetProperty<string>(ref _TitleText, value); }
         }
 
+        private string _UserNamePH;
+		public string UserNamePH
+		{
+			get { return _UserNamePH; }
+			set { SetProperty<string>(ref _UserNamePH, value); }
+		}
+		private string _UserName;
+		public string UserName
+		{
+			get { return _UserName; }
+			set { SetProperty<string>(ref _UserName, value); }
+		}
 
-        private bool _ShowUsernameContent;
+		private string _EmailAddress;
+		public string EmailAddress
+		{
+			get { return _EmailAddress; }
+			set { SetProperty<string>(ref _EmailAddress, value); }
+		}
+
+		private string _PassowrdPH;
+		public string PasswordPH
+		{
+			get { return _PassowrdPH; }
+			set { SetProperty<string>(ref _PassowrdPH, value); }
+		}
+
+
+		private bool _ShowUsernameContent;
 
         public bool ShowUsernameContent
         {
@@ -267,7 +266,21 @@ namespace ArabWaha.Employer.ViewModels
                 _ctrl.SetTabVisble(num);
             }
         }
+		public void OnNavigatedTo(NavigationParameters parameters)
+		{
+			//if (parameters.ContainsKey("title"))
+				//Title = (string)parameters["title"];
+		}
 
+        public void OnNavigatedFrom(NavigationParameters parameters)
+        {
+           
+        }
+
+        public void OnNavigatingTo(NavigationParameters parameters)
+        {
+            
+        }
 
         #endregion
     }

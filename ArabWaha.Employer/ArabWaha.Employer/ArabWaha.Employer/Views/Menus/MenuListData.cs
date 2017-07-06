@@ -14,6 +14,7 @@ namespace ArabWaha.Employer.Views.Menus
 	// include the type we need to navigate to
 	public class MenuListData : List<MasterPageItem>
 	{
+        
 		public MenuListData()
 		{
 			bool isEnglishText = true;

@@ -330,6 +330,14 @@
 			public string editpersonaldetlbaccountstatus { get; set; }
 			public string editpersonaldetbtnsave { get; set; }
 
+			public string forgotloginlbltitle { get; set; }
+			public string forgotloginlblpassword { get; set; }
+			public string forgotloginlblusername { get; set; }
+			public string forgotloginbtnsubmit { get; set; }
+			public string forgotloginphusername { get; set; }
+			public string forgotloginlblemail { get; set; }
+			public string forgotloginphemail { get; set; }
+
 
 		}
 

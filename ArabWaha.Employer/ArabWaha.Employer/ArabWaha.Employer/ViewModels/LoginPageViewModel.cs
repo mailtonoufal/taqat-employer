@@ -167,6 +167,7 @@ namespace ArabWaha.Employer.ViewModels
                 //SignInCommand.RaiseCanExecuteChanged(); 
             }
         }
+		
         public string Password
         {
             get { return _password; }
@@ -255,11 +256,13 @@ namespace ArabWaha.Employer.ViewModels
             {
                 Dialog.ShowErrorAlert("Something went wrong");
             }
-
         }
 
         private async void LostPassword()
         {
+			//var parameters = new NavigationParameters();
+            //parameters.Add("title", "Forgot Login Information");
+            //await _nav.NavigateAsync(nameof(PasswordPage),parameters,animated: false);
             await _nav.NavigateAsync(nameof(PasswordPage), animated: false);
         }
 
@@ -268,10 +271,10 @@ namespace ArabWaha.Employer.ViewModels
 
         }
 
-        public void OnNavigatedTo(NavigationParameters parameters)
-        {
-
-        }
+		public void OnNavigatedTo(NavigationParameters parameters)
+		{
+			
+		}
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
