@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
@@ -14,7 +14,7 @@
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Style="{StaticResource ContentStackLayout}" BackgroundColor="{StaticResource GreyPageColor}" >
             <StackLayout BackgroundColor="White">
-            <Label Text="{lEx:Translate LabelNewJobHeaderText}" Style="{StaticResource HeaderTextMediumBlue}" Margin="1"   />
+            <Label Text="{lEx:Translate LabelNewJobHeaderText}" Style="{StaticResource HeaderTextMediumBlue}" Margin="1" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" HorizontalOptions="FillAndExpand" />
             <ListView x:Name="ParentListView" ItemsSource="{Binding JobTypeList}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
                       HasUnevenRows="True" SeparatorVisibility="None" ItemSelected="ItemSelected">
                 <ListView.ItemTemplate>

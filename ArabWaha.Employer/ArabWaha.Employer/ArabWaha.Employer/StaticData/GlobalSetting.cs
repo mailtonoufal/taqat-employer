@@ -20,7 +20,7 @@ namespace ArabWaha.Employer.StaticData
 			IsArabic = CultureCode == "ar";
 			IsEnglish = !IsArabic;
 		}
-        public static string FilterQuery { get; set; }
+		public static string FilterQuery { get; set; }
 		public static LayoutAlignment AlignLabel { get { return IsArabic ? LayoutAlignment.End : LayoutAlignment.Start; } }
 		public static LayoutAlignment AlignData { get { return IsArabic ? LayoutAlignment.Start : LayoutAlignment.End; } }
 
@@ -56,8 +56,8 @@ namespace ArabWaha.Employer.StaticData
 		public static GridLength HomeProgFirstColWidth { get { return IsArabic ? new GridLength(1, GridUnitType.Star) : new GridLength(55, GridUnitType.Absolute); } }
 		public static GridLength HomeProgThirdColWidth { get { return IsArabic ? new GridLength(55, GridUnitType.Absolute) : new GridLength(1, GridUnitType.Star); } }
 
-        public static GridLength StarColWidth { get { return IsArabic ? new GridLength(1, GridUnitType.Star) : new GridLength(1, GridUnitType.Auto); } }
-        public static GridLength AutoColWidth { get { return IsArabic ? new GridLength(1, GridUnitType.Auto) : new GridLength(1, GridUnitType.Star); } }
+		public static GridLength StarColWidth { get { return IsArabic ? new GridLength(1, GridUnitType.Star) : new GridLength(1, GridUnitType.Auto); } }
+		public static GridLength AutoColWidth { get { return IsArabic ? new GridLength(1, GridUnitType.Auto) : new GridLength(1, GridUnitType.Star); } }
 
 
 		public static string HomeProgGuestColNo { get { return IsArabic ? "2" : "1"; } }
@@ -104,10 +104,17 @@ namespace ArabWaha.Employer.StaticData
 		public static string ContactPersonLeftColNo { get { return IsArabic ? "1" : "0"; } }
 		public static string ContactPersonRightColNo { get { return IsArabic ? "0" : "1"; } }
 
+		//AssignCandidateToJobPost
+		public static GridLength AssignCandidateCol2Width { get { return IsArabic ? new GridLength(58, GridUnitType.Absolute) : new GridLength(1, GridUnitType.Star); } }
+		public static GridLength AssignCandidateCol1Width { get { return IsArabic ? new GridLength(1, GridUnitType.Star) : new GridLength(58, GridUnitType.Absolute); } }
+
+		public static string AssignCandidateImgColNo { get { return IsArabic ? "1" : "0"; } }
+		public static string AssignCandidateLabelColNo { get { return IsArabic ? "0" : "1"; } }
+
 		#endregion
 
 
-        public static Regex CreateValidEmailRegex()
+		public static Regex CreateValidEmailRegex()
 		{
 			string validEmailPattern = @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|"
 				+ @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)"

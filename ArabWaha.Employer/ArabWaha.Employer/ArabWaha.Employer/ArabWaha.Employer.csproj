@@ -289,6 +289,9 @@
     </Compile>
     <Compile Include="ViewModels\PersonalDetails\PersonalDetailsViewModel.cs" />
     <Compile Include="Helpers\Dialog.cs" />
+    <Compile Include="Layouts\Applications\AssignCandidateToJobPost.xaml.cs">
+      <DependentUpon>AssignCandidateToJobPost.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -302,6 +305,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PersonalDetails\EditPersonalDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Applications\AssignCandidateToJobPost.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
