@@ -10,6 +10,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using ArabWaha.Employer.StaticData;
+using System.Threading.Tasks;
+using ArabWaha.Employer.Helpers;
+using ArabWaha.Core.Services;
+using ArabWaha.Web;
+using System.Diagnostics;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -17,29 +22,32 @@ namespace ArabWaha.Employer.ViewModels
     {
         TabControl3Column _ctrl;
 
-
         public PasswordPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
         {
-            Tab1Command = new DelegateCommand(SetUsername);
-            Tab2Command = new DelegateCommand(SetPassword);
-            Tab3Command = new DelegateCommand(SetEmail);
-			//if (GlobalSetting.IsEnglish)
-			//{
-			//	Tab1Command = new DelegateCommand(SetUsername);
-			//	Tab2Command = new DelegateCommand(SetPassword);
-			//	Tab3Command = new DelegateCommand(SetEmail);
-			//}
-			//else
-			//{
-   //             Tab1Command = new DelegateCommand(SetPassword);
-			//	Tab2Command = new DelegateCommand(SetUsername);
-			//	Tab3Command = new DelegateCommand(SetEmail);
-			//}
+            //Tab1Command = new DelegateCommand(SetUsername);
+            //Tab2Command = new DelegateCommand(SetPassword);
+            //Tab3Command = new DelegateCommand(SetEmail);
+			if (GlobalSetting.IsEnglish)
+			{
+				Tab1Command = new DelegateCommand(SetUsername);
+				Tab2Command = new DelegateCommand(SetPassword);
+				Tab3Command = new DelegateCommand(SetEmail);
+			}
+			else
+			{
+                Tab1Command = new DelegateCommand(SetPassword);
+				Tab2Command = new DelegateCommand(SetUsername);
+				Tab3Command = new DelegateCommand(SetEmail);
+			}
             // commands for items
             usernameSwitchCommand = new DelegateCommand<string>(ProcessUsernameSwitchCommand);
 
-
-
+            ForgotPasswordCommand = new DelegateCommand(async () => { await ForgotPassword(); }, CanForgotPassword);
+            //ForgotPasswordCommand = new DelegateCommand(async () => { await ForgotPassword(); });
+            ForgotUsernameCommand = new DelegateCommand(async () => { await ForgotUsername(); }, CanForgotUsername);
+            //ForgotUsernameCommand = new DelegateCommand(async () => { await ForgotUsername(); });
+            EmailUsername = "ashutoshg@aecl.com";
+            ForgotEmailUsername = "Pubemp002";
             SetUsername();
         }
 
@@ -51,7 +59,15 @@ namespace ArabWaha.Employer.ViewModels
             _ctrl = ctrl;
 
             _ctrl.SetSearchVisible(false);
-            _ctrl.SetTabText(App.Translation != null ? App.Translation.employer.forgotloginlblusername : "Username", App.Translation != null ? App.Translation.employer.forgotloginlblpassword : "Password", "Email");
+            if (GlobalSetting.IsEnglish)
+            {
+                _ctrl.SetTabText(App.Translation != null ? App.Translation.employer.forgotloginlblusername : "Username", App.Translation != null ? App.Translation.employer.forgotloginlblpassword : "Password", "Email");
+            }
+            else
+            {
+                _ctrl.SetTabText(App.Translation != null ? App.Translation.employer.forgotloginlblpassword : "Password",App.Translation != null ? App.Translation.employer.forgotloginlblusername : "Username", "Email");
+            }
+            //_ctrl.SetTabText(App.Translation != null ? App.Translation.employer.forgotloginlblusername : "Username", App.Translation != null ? App.Translation.employer.forgotloginlblpassword : "Password", "Email");
             TitleText =App.Translation != null ? App.Translation.employer.forgotloginlbltitle :"Forget Login Information";
             ButtonText = App.Translation != null ? App.Translation.employer.forgotloginbtnsubmit : "Submit";
             PasswordPH =App.Translation != null ? App.Translation.employer.forgotloginphusername : "Type your username";
@@ -217,7 +233,8 @@ namespace ArabWaha.Employer.ViewModels
         public DelegateCommand Tab1Command { get; set; }
         public DelegateCommand Tab2Command { get; set; }
         public DelegateCommand Tab3Command { get; set; }
-
+        public DelegateCommand ForgotUsernameCommand { get; set; }
+        public DelegateCommand ForgotPasswordCommand { get; set; }
         // not working
         public DelegateCommand<string> usernameSwitchCommand { get; set; }
 
@@ -237,18 +254,37 @@ namespace ArabWaha.Employer.ViewModels
 
         private void SetUsername()
         {
-            SetCurrentTab(1);
+            if (GlobalSetting.IsEnglish)
+            {
+                SetCurrentTab(1);
+				ShowPasswordContent = false;
+				ShowUsernameContent = true;
+            }
+            else
+            {
+                SetCurrentTab(2);
+                ShowPasswordContent = true;
+                ShowUsernameContent = false;
+            }
             ShowEmailContent = false;
-            ShowPasswordContent = false;
-            ShowUsernameContent = true;
+           
         }
 
         private void SetPassword()
         {
-            SetCurrentTab(2);
+			if (GlobalSetting.IsEnglish)
+			{
+				SetCurrentTab(2);
+				ShowPasswordContent = true;
+				ShowUsernameContent = false;
+			}
+			else
+			{
+				SetCurrentTab(1);
+                ShowPasswordContent = false;
+                ShowUsernameContent = true;
+			}
             ShowEmailContent = false;
-            ShowPasswordContent = true;
-            ShowUsernameContent = false;
         }
 
         private void SetEmail()
@@ -258,8 +294,88 @@ namespace ArabWaha.Employer.ViewModels
             ShowPasswordContent = false;
             ShowUsernameContent = false;
         }
+		private bool CanForgotPassword()
+		{
+			return true;
+		}
+		private bool CanForgotUsername()
+		{
+			return true;
+		}
+		private async Task ForgotPassword()
+		{
+            bool IsForgotPassword = false;
+			try
+			{
+                if (ForgotEmailUsername !=null && ForgotEmailUsername.Length>0)
+                {
+					Dialog.ShowLoading();
+					//ForgotPassword
+					var forgotPwd = await AWHttpClient.Instance.ForgotPassword("Pubemp002");
+					IsForgotPassword = forgotPwd.IsSuccess;
+                }
+                else
+                {
+                    Dialog.ShowErrorAlert("Something went wrong");
+                }
 
-        private void SetCurrentTab(int num)
+            }
+			catch (Exception ex)
+			{
+				Debug.WriteLine(ex.Message);
+			}
+            finally{
+                Dialog.HideLoading();
+            }
+			if (IsForgotPassword)
+			{
+				await _nav.GoBackAsync();
+			}
+			else
+			{
+				Dialog.ShowErrorAlert("Something went wrong");
+			}
+		}
+        private async Task ForgotUsername()
+        {
+            bool IsForgotUsername = false;
+            try
+            {
+                if (EmailUsername !=null && EmailUsername.Length>0)
+                {
+					Dialog.ShowLoading();
+					//Forgot UserName 
+					var forgotUser = await AWHttpClient.Instance.ForgotUserName("ashutoshg@aecl.com");
+					IsForgotUsername = forgotUser.IsSuccess;
+                    //bool isValid = GlobalSetting.CreateValidEmailRegex().IsMatch(emailAddress);
+
+				}
+                else
+                {
+					Dialog.ShowErrorAlert("Something went wrong");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Dialog.HideLoading();
+            }
+            if (IsForgotUsername)
+            {
+                await this._dialog.DisplayAlertAsync("", "Please open your email inbox and follow password reset instructions.", "OK");
+                await _nav.GoBackAsync();
+            }
+            else
+            {
+              Dialog.ShowErrorAlert("Something went wrong");
+            }
+        }
+
+
+		private void SetCurrentTab(int num)
         {
             if (_ctrl != null)
             {

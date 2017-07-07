@@ -260,10 +260,30 @@ namespace ArabWaha.Employer.ViewModels
 
         private async void LostPassword()
         {
-			//var parameters = new NavigationParameters();
-            //parameters.Add("title", "Forgot Login Information");
-            //await _nav.NavigateAsync(nameof(PasswordPage),parameters,animated: false);
-            await _nav.NavigateAsync(nameof(PasswordPage), animated: false);
+			AuthService sv = new AuthService();
+			bool isLoginSuccess = false;
+			ArabWaha.Core.Services.AuthService.IsAuthorised = false;
+
+			try
+			{
+				Dialog.ShowLoading();
+				isLoginSuccess = await sv.Login("mobileuser", "mobileuser", true);
+				Dialog.HideLoading();
+			}
+			catch (Exception ex)
+			{
+				Dialog.HideLoading();
+				Debug.WriteLine(ex.Message);
+			}
+
+			if (isLoginSuccess)
+			{
+				await _nav.NavigateAsync(nameof(PasswordPage), animated: false);
+			}
+			else
+			{
+				Dialog.ShowErrorAlert("Something went wrong");
+			}
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

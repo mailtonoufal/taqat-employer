@@ -1,4 +1,5 @@
 ﻿using System;
+using ArabWaha.Web;
 using Newtonsoft.Json;
 
 namespace ArabWaha.Core.Models.User
@@ -16,5 +17,10 @@ namespace ArabWaha.Core.Models.User
     {
 		[JsonProperty("d")]
 		public ForgotUser forgotUserObject { get; set; }
+
+        public static implicit operator ForgotUserObject(ServiceResult<ForgotUserObject> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

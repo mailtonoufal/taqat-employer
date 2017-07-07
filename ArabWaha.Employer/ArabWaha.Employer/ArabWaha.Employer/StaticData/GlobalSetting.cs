@@ -1,6 +1,7 @@
 using System;
 using Xamarin.Forms;
 using ArabWaha.Core.Services;
+using System.Text.RegularExpressions;
 
 namespace ArabWaha.Employer.StaticData
 {
@@ -106,7 +107,14 @@ namespace ArabWaha.Employer.StaticData
 		#endregion
 
 
+        public static Regex CreateValidEmailRegex()
+		{
+			string validEmailPattern = @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|"
+				+ @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)"
+				+ @"@[a-z0-9][\w\.-]*[a-z0-9]\.[a-z][a-z\.]*[a-z]$";
 
+			return new Regex(validEmailPattern, RegexOptions.IgnoreCase);
+		}
 
 
 
