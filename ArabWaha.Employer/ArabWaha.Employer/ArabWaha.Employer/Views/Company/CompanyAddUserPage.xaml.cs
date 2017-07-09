@@ -6,7 +6,15 @@ namespace ArabWaha.Employer.Views
     {
         public CompanyAddUserPage()
         {
-            InitializeComponent();
+            try
+            {
+				InitializeComponent();
+
+			}
+            catch (System.Exception ex)
+            {
+
+            }
         }
     }
 }

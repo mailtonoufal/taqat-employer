@@ -177,6 +177,9 @@
     <Compile Include="Models\User\SubUser.cs" />
     <Compile Include="Models\User\DeleteUser.cs" />
     <Compile Include="Models\User\ForgotUser.cs" />
+    <Compile Include="Models\Applications\Application.cs" />
+    <Compile Include="Models\Applications\ApplicationDetails.cs" />
+    <Compile Include="Models\JobLists\Job.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FubarCoder.RestSharp.Portable.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=be81bb0f53eab22f, processorArchitecture=MSIL">
@@ -262,6 +265,7 @@
   <ItemGroup>
     <Folder Include="Models\Candidates\" />
     <Folder Include="Models\User\" />
+    <Folder Include="Models\Applications\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

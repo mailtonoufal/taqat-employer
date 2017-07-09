@@ -6,34 +6,19 @@ namespace ArabWaha
 {
 	public class WatchJob
 	{
-		public string JobPostId { get; set; }
-		public string JobPostTitle { get; set; }
-		public string PublicationStatus { get; set; }
-		public string MatchScore { get; set; }
-		public object NesIndividualID { get; set; }
-
-		[JsonProperty("maxResultCount")]
-		public object MaxResultCount { get; set; }
-
-		[JsonProperty("resultOffset")]
-		public object ResultOffset { get; set; }
-
-		[JsonProperty("selectMatchCount")]
-		public object SelectMatchCount { get; set; }
-
-		[JsonProperty("language")]
-		public object Language { get; set; }
-
-		[JsonProperty("retListValuesByDescription")]
-		public object RetListValuesByDescription { get; set; }
-
-		public string EmployerId { get; set; }
+		public string watchlistId { get; set; }
+        public string jobPostIdTitle { get; set; }
+		public string addedOn { get; set; }
+		public string addedBy { get; set; }
+		public string availability { get; set; }
+		public string individualName { get; set; }
+        public string language { get; set; }
 	}
 
 	public class WatchJobList
 	{
-		[JsonProperty("Result")]
-		public IList<WatchJob> JobWatchList { get; set; }
+		[JsonProperty("results")]
+		public List<WatchJob> JobWatchList { get; set; }
 	}
 
 	public class WatchJobListRoot

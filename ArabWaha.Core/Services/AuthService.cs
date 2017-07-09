@@ -100,13 +100,30 @@ namespace ArabWaha.Core.Services
 
 
 					//Forgot UserName 
-                    //var forgotUser = await AWHttpClient.Instance.ForgotUserName("ashutoshg@aecl.com");
-
-
+					//var forgotUser = await AWHttpClient.Instance.ForgotUserName("ashutoshg@aecl.com");
 
 					//ForgotPassword
 					//var forgotPwd = await AWHttpClient.Instance.ForgotPassword("Pubemp002");
 
+
+					//Get ApplicationsList
+                    var applicationsList = await AWHttpClient.Instance.GetApplications();
+
+
+					//Get ApplicationsDetails
+                    var applicationDetails = await AWHttpClient.Instance.GetApplicationDetails("112716","46654815");
+
+
+					//Get JobsList
+                    var jobsList = await AWHttpClient.Instance.GetJobsList();
+
+
+					//Get AssignedJobs
+                    var assignedJobs = await AWHttpClient.Instance.GetAssignedJobs();
+
+
+					//Get WatchListJobs
+                    var watchlistJobs = await AWHttpClient.Instance.GetWatchlistJobs();
 
 
 

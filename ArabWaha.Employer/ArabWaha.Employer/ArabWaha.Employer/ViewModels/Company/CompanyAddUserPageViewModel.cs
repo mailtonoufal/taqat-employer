@@ -21,6 +21,21 @@ namespace ArabWaha.Employer.ViewModels
             set { SetProperty(ref _userDetails, value); }
         }
 
+        private int _userRoleSelectedIndex;
+        public int userRoleSelectedIndex
+		{
+			get { return _userRoleSelectedIndex; }
+			set { SetProperty(ref _userRoleSelectedIndex, value); }
+		}
+
+
+		private List<string> _userRoleList;
+		public List<string> userRoleList
+		{
+			get { return _userRoleList; }
+			set { SetProperty(ref _userRoleList, value); }
+		}
+
         private string _userRole;
 
         public DelegateCommand SaveCommand { get; set; }
@@ -45,6 +60,10 @@ namespace ArabWaha.Employer.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
+            userRoleList = new List<string>();
+            userRoleList.Add("Recruiter");
+            userRoleList.Add("User");
+            userRoleSelectedIndex = 0;
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
@@ -52,5 +71,6 @@ namespace ArabWaha.Employer.ViewModels
             UserDetails = new CompanyUserDetails();
             UserDetails.AssignedRole = (string)parameters["UserRole"];
         }
+
     }
 }

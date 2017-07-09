@@ -48,10 +48,11 @@
                            Style="{StaticResource BlueTextEntryMedium}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
                     <Entry Margin="0,5,0,5"  Grid.Row="3" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.UserName, Mode=TwoWay}" 
                            Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"/>
-                    <Entry Margin="0,5,0,5"  Grid.Row="4" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AssignedRole, Mode=TwoWay}" 
-                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"/>
+                   <!-- <Entry Margin="0,5,0,5"  Grid.Row="4" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.AssignedRole, Mode=TwoWay}" 
+                           Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"/>-->
                     <Entry Margin="0,5,0,5"  Grid.Row="5" Grid.Column="{Binding DataColumn}" Text="{Binding UserDetails.EmailAddress, Mode=TwoWay}" 
                            Style="{StaticResource BlueTextEntryMedium}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                        <Picker Margin="0,5,0,5"  Grid.Row="4" Grid.Column="{Binding DataColumn}"  ItemsSource="{Binding userRoleList}" HorizontalOptions="FillAndExpand" SelectedIndex="{Binding userRoleSelectedIndex}" />
                 </Grid>
             </StackLayout>
 
