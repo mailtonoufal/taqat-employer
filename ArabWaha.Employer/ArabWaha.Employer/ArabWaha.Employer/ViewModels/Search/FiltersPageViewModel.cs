@@ -240,7 +240,7 @@ namespace ArabWaha.Employer.ViewModels
 			{
                 foreach (RequiredEducationEntry requiredEducation in selectedRequiredEducationList)
 				{
-                    filterJoin = String.Format("RequiredEducation eq '{0}' and ", requiredEducation.RequiredEducation.ToString());
+                    filterJoin = String.Format("Education eq '{0}' and ", requiredEducation.RequiredEducation.ToString());
 					searchFilter.Append(filterJoin);
 				}
 			}
@@ -248,7 +248,7 @@ namespace ArabWaha.Employer.ViewModels
 			{
                 foreach (TravellingRequiredEntry travellingRequired in selectedTravellingRequiredList)
 				{
-                    filterJoin = String.Format("TravellingRequired eq '{0}' and ", travellingRequired.TravellingRequired.ToString());
+                    filterJoin = String.Format("WillegnessToTravel eq '{0}' and ", travellingRequired.TravellingRequired.ToString());
 					searchFilter.Append(filterJoin);
 				}
 			}

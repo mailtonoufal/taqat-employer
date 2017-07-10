@@ -111,6 +111,10 @@ namespace ArabWaha.Employer.StaticData
 		public static string AssignCandidateImgColNo { get { return IsArabic ? "1" : "0"; } }
 		public static string AssignCandidateLabelColNo { get { return IsArabic ? "0" : "1"; } }
 
+        //Filter Screen
+        public static string FilterHeaderBtnCancel { get { return IsArabic ? "0" : "2"; } }
+		public static string FilterHeaderBtnFilter { get { return IsArabic ? "2" : "0"; } }
+        public static string FilterSectionImage { get { return IsArabic ? "3" : "1"; } }
 		#endregion
 
 

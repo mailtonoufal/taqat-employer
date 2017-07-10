@@ -75,7 +75,7 @@ namespace ArabWaha.Core.Services
 
                     //Get the CandidateList
 
-                    var candidateList = await AWHttpClient.Instance.GetCandidatesList("JobType eq *");
+                    //var candidateList = await AWHttpClient.Instance.GetCandidatesList("JobType eq *");
 					//TODO parse the candidateList to get the required response
 
 

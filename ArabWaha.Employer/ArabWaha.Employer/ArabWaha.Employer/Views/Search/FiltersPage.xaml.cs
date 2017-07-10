@@ -6,7 +6,15 @@ namespace ArabWaha.Employer.Views
     {
         public FiltersPage()
         {
-            InitializeComponent();
+            try
+            {
+				InitializeComponent();
+            }
+            catch (System.Exception ex)
+            {
+
+            }
+           
         }
 
         private void ItemSelected(object sender, SelectedItemChangedEventArgs e)

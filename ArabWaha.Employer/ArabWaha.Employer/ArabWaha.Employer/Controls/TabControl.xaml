@@ -2,7 +2,8 @@
 <StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
-             x:Class="ArabWaha.Employer.Controls.TabControl" >
+             x:Class="ArabWaha.Employer.Controls.TabControl"
+    xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData">
 
 
     <StackLayout Padding="0" BackgroundColor="{StaticResource BlueToolBarColor}" HorizontalOptions="Fill" VerticalOptions="Fill" >
@@ -19,7 +20,7 @@
 
         <SearchBar Grid.Column="1"  x:Name="Searcher" Placeholder="{lEx:CMSTranslate guestsearchlbltitle}" Style="{StaticResource TabSearchBarStyle}"
                     
-                    SearchCommand="{Binding SearchBarCommand}"  Text="{Binding SearchText}"   IsVisible="{Binding SearchBarVisible}"  />
+                    SearchCommand="{Binding SearchBarCommand}"  Text="{Binding SearchText}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" IsVisible="{Binding SearchBarVisible}"  />
         </Grid>
     </StackLayout>
     <Grid Padding="0" ColumnSpacing="0" RowSpacing="0" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="{StaticResource TabBarBGColor}">
