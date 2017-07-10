@@ -58,6 +58,8 @@ namespace ArabWaha.Employer.iOS
             global::Xamarin.FormsMaps.Init();
             LoadApplication(new App());
 
+			UIApplication.SharedApplication.StatusBarHidden = true;
+
             return base.FinishedLaunching(app, options);
         }
 
