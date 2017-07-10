@@ -1,25 +1,26 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"                                    
-             xmlns:control="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="ArabWaha.Employer.Views.CalendarPage"
-             Title="{Binding Title}" NavigationPage.HasBackButton="True">
+<?xml version="1.0" encoding="utf-8"?>
+<local:AWMenuContainerPage BackgroundColor="White" 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+	xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData" 
+	xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers" 
+	xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
+	xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms" 
+	xmlns:bh="clr-namespace:Pillar;assembly=Pillar" prism:ViewModelLocator.AutowireViewModel="True"
+	x:Class="ArabWaha.Employer.Views.CalendarPage" 
+	NavigationPage.HasBackButton="false" 
+	NavigationPage.HasNavigationBar="false" 
+	x:Name="this">
+	
+	<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+		<awc:AWHeader x:Name="headerservice" MenuCommand="{Binding Source={x:Reference this}, Path=MenuTappedCommand}" RightToLeft="{x:Static gb:GlobalSetting.IsArabic}" ShowLogo="false" ShowLabel="true" Title="{lEx:CMSTranslate sidemenulblcalendar}">
+		</awc:AWHeader>
 
-    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Padding="20" >
-
-        <control:SfSchedule Grid.Row="1" x:Name="Schedule" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-						DataSource="{Binding EventsCollection}"
-						ScheduleView = "MonthView"
-						ShowAppointmentsInline="True" 
-                        AppointmentViewLayout="Overlay"
-                        Locale="{Binding Locale}"
-                        FirstDayOfWeek="1"
-                        MonthInlineAppointmentTapped="Schedule_MonthInlineAppointmentTapped"
-                            
-                            />
-    </StackLayout>
-    
-</ContentPage>
+		<StackLayout>
+			
+			<ContentView Content="{Binding MonthView}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+			</ContentView>
+		</StackLayout>
+	</StackLayout>
+</local:AWMenuContainerPage>

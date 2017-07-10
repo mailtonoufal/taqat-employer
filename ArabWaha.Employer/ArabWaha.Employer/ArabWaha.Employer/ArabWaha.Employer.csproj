@@ -292,6 +292,9 @@
     <Compile Include="Layouts\Applications\AssignCandidateToJobPost.xaml.cs">
       <DependentUpon>AssignCandidateToJobPost.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Layouts\Calendar\CalendarMonthView.xaml.cs">
+      <DependentUpon>CalendarMonthView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -308,6 +311,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Layouts\Applications\AssignCandidateToJobPost.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Calendar\CalendarMonthView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -779,6 +785,7 @@
     <Folder Include="Layouts\Welcome\" />
     <Folder Include="Views\PersonalDetails\" />
     <Folder Include="ViewModels\PersonalDetails\" />
+    <Folder Include="Layouts\Calendar\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
