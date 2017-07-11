@@ -16,6 +16,7 @@ namespace ArabWaha.Employer.ViewModels
     {
         public DelegateCommand CancelCommand { get; set; }
         public DelegateCommand ApplyCommand { get; set; }
+        public DelegateCommand RangeSliderChangedCommand { get; set; }
 
         public DelegateCommand<SortByEntry> SortByCheckedCommand { get; set;  }
         public DelegateCommand<JobTypeEntry> JobTypeCheckedCommand { get; set; }
@@ -36,8 +37,6 @@ namespace ArabWaha.Employer.ViewModels
             get { return _sortByList; }
             set { SetProperty(ref _sortByList, value); }
         }
-
-
         private ObservableCollection<JobTypeEntry> _jobTypeList;
         public ObservableCollection<JobTypeEntry> JobTypeList
         {
@@ -81,6 +80,13 @@ namespace ArabWaha.Employer.ViewModels
             set { SetProperty(ref _requiredEducationList, value); }
         }
 
+        private ObservableCollection<String> _salaryList;
+        public ObservableCollection<String> SalaryList
+		{
+			get { return _salaryList; }
+            set { SetProperty(ref _salaryList, value); }
+		}
+
         private ObservableCollection<SpecializationEntry> _specializationList;
         public ObservableCollection<SpecializationEntry> SpecializationList
         {
@@ -108,7 +114,7 @@ namespace ArabWaha.Employer.ViewModels
         {
             CancelCommand = new DelegateCommand(ProcessCancelCommand);
             ApplyCommand = new DelegateCommand(ProcessApplyCommand);
-
+            //RangeSliderChangedCommand=new DelegateCommand(RangeSliderChangedCommand);
             SortByCheckedCommand = new DelegateCommand<SortByEntry>(ProcessSortByCheckedCommand);
             JobTypeCheckedCommand = new DelegateCommand<JobTypeEntry>(ProcessJobTypeCheckedCommand);
             WorkTypeCheckedCommand = new DelegateCommand<WorkTypeEntry>(ProcessWorkTypeCheckedCommand);
@@ -308,6 +314,7 @@ namespace ArabWaha.Employer.ViewModels
             ShiftTypeList = StaticEntryHelper.GetShiftTypeEntries();
             TravellingRequiredList = StaticEntryHelper.GetTravellingRequiredEntries();
             TeleWorkingList = StaticEntryHelper.GetTeleWorkingEntries();
+            SalaryList = new ObservableCollection<string> {"Salary Range",""};
             RequiredEducationList = StaticEntryHelper.GetRequiredEducationEntries();
             SpecializationList = StaticEntryHelper.GetSpecializationEntries();
             GenderList = StaticEntryHelper.GetGenderEntries();

@@ -357,7 +357,38 @@
                     </controls:RepeaterView>
                     <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
                 </Grid>
+                 <!-- Salary -->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="{StaticResource BlueToolBarColor}" />
+                    <Label Text="SALARY" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource FilterTeleworkingIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.FilterSectionImage}" />
+                    <StackLayout VerticalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" >
+                     <Label  Text="Salary Range" VerticalOptions="Center"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Margin="24,0,24,0">
+                        </Label>
+                        <StackLayout Orientation="Horizontal">
+                             <Label WidthRequest="60" BindingContext="{x:Reference Name=RangeSlider}" Text="{Binding LowerValue, StringFormat='{0:F0}'}" VerticalOptions="Center" HorizontalOptions="Fill"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalTextAlignment="Center">
+                        </Label>
+                            <forms:RangeSlider  x:Name="RangeSlider" MinimumValue="1500" MaximumValue="25000" HorizontalOptions="FillAndExpand"  LowerValue="1500" UpperValue="3000" StepValue="1" StepValueContinuously="true" VerticalOptions="Center" TextSize="15" BarHeight="10" Margin="0" />
+                             <Label WidthRequest="60"  BindingContext="{x:Reference Name=RangeSlider}" Text="{Binding UpperValue, StringFormat='{0:F0}'}" VerticalOptions="Center" HorizontalOptions="Fill"  Style="{StaticResource HeaderTextSmallBlue}"  HorizontalTextAlignment="Center">
+                        </Label>
+                        </StackLayout>
 
+                    </StackLayout>
+                </Grid>
                 <!-- edu list -->
                 <Grid BackgroundColor="White">
                     <Grid.RowDefinitions>
@@ -515,7 +546,30 @@
                     </controls:RepeaterView>
                     <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
                 </Grid>
-
+                 <!-- Start date -->
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="{StaticResource BlueToolBarColor}" />
+                    <Label Text="START DATE" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource FilterTeleworkingIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.FilterSectionImage}" />
+                    <StackLayout VerticalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" >
+                     <Label  Text="Select Date" VerticalOptions="Center"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Margin="24,0,24,0">
+                        </Label>
+                    </StackLayout>
+                </Grid>
 
                 <!-- posted since -->
                 <Grid BackgroundColor="White">
@@ -569,7 +623,7 @@
 
                 </Grid>
 
-                <Button Text="{lEx:Translate ButtonApply}" Style="{StaticResource BlueButtonFlat}" Command="{Binding ApplyCommand}"></Button>
+                <Button Text="{lEx:Translate ButtonApply}" Style="{StaticResource GreenButtonFlat}" Command="{Binding ApplyCommand}"></Button>
             </StackLayout>
         </ScrollView>
     </StackLayout>
