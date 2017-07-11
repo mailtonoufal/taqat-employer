@@ -60,6 +60,7 @@ namespace ArabWaha.Employer.iOS
 
 			UIApplication.SharedApplication.StatusBarHidden = true;
 
+
             return base.FinishedLaunching(app, options);
         }
 

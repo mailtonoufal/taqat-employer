@@ -227,7 +227,7 @@ namespace ArabWaha.Web
 			}
 		}
 
-        internal async Task<ServiceResult<WatchJobListRoot>> GetWatchlistJobs()
+        public async Task<ServiceResult<WatchJobListRoot>> GetWatchlistJobs()
         {
 			ServiceResult<WatchJobListRoot> returnVal = null;
 

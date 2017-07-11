@@ -1,4 +1,4 @@
-﻿﻿using ArabWaha.Core.ModelsEmployer;
+﻿using ArabWaha.Core.ModelsEmployer;
 using ArabWaha.Core.ModelsEmployer.Jobs;
 using ArabWaha.Core.ModelsEmployer.Programs;
 using ArabWaha.Core.ModelsEmployer.Services;
@@ -20,13 +20,15 @@ using Xamarin.Forms;
 using ArabWaha.Web;
 using System.Threading.Tasks;
 using ArabWaha.Core.Models.Applications;
+using System.Globalization;
+using System.Diagnostics;
 
 namespace ArabWaha.Employer.ViewModels
 {
 	public class ApplicationsPageViewModel : AWMVVMBase
 	{
 
-       
+
 		Tab3View _ctrl;
 
 		public void SetTabs(Tab3View ctrl)
@@ -103,8 +105,8 @@ namespace ArabWaha.Employer.ViewModels
 
 		public DelegateCommand<ApplicationsForJob> ApplicationDetailsCommand { get; set; }
 
-		private ObservableCollection<ApplicationsForJob> _watchList;
-		public ObservableCollection<ApplicationsForJob> WatchList
+		private ObservableCollection<WatchJob> _watchList;
+		public ObservableCollection<WatchJob> WatchList
 		{
 			get { return _watchList; }
 			set { SetProperty(ref _watchList, value); }
@@ -120,20 +122,20 @@ namespace ArabWaha.Employer.ViewModels
 			set { SetProperty(ref _jobPageSource, value); }
 		}
 
-        private List<ApplicationData> _applicationlistsample;
-        public List<ApplicationData> applicationlistsample
+		private List<ApplicationData> _applicationlistsample;
+		public List<ApplicationData> applicationlistsample
 		{
 			get { return _applicationlistsample; }
 			set { SetProperty(ref _applicationlistsample, value); }
 		}
 
-		
+
 
 		public ApplicationsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
 		{
 
-           
-			
+
+
 			TranslateExtension tran = new TranslateExtension();
 
 
@@ -165,26 +167,27 @@ namespace ArabWaha.Employer.ViewModels
 
 			MessagingCenter.Subscribe<JobPageViewModel>(this, "WatchEntryUpdated", WatchEntryUpdatedMessage);
 
-            Task.Run(async () => {
+			Task.Run(async () =>
+			{
 				var applicationsList = await AWHttpClient.Instance.GetApplications();
 				if (applicationsList.IsSuccess)
 				{
 					if (applicationsList.Result != null && applicationsList.Result.applicationsListObject != null && applicationsList.Result.applicationsListObject.applicationsList.Count > 0)
 					{
-                       
-                        applicationlistsample = applicationsList.Result.applicationsListObject.applicationsList;
-                      
+
+						applicationlistsample = applicationsList.Result.applicationsListObject.applicationsList;
+
 					}
 				}
 
-            });
+			});
 
-			
 
-			
+
+
 
 		}
-       
+
 
 		private void WatchEntryUpdatedMessage(JobPageViewModel obj)
 		{
@@ -232,7 +235,7 @@ namespace ArabWaha.Employer.ViewModels
 		private async void LoadData()
 		{
 
-			
+
 
 			ApiService api = new ApiService();
 			CompanyApplicationList = await api.GetCompanyJobApplicationsAsync(0);
@@ -263,7 +266,7 @@ namespace ArabWaha.Employer.ViewModels
 			}
 
 
-			
+
 
 
 
@@ -272,9 +275,19 @@ namespace ArabWaha.Employer.ViewModels
 
 		private async void LoadWatchList()
 		{
-			ApiService api = new ApiService();
-			WatchList = await api.GetCompanyWatchListAsync(0, 0);
-		}
+			try
+			{
+				var watchlistJobs = await AWHttpClient.Instance.GetWatchlistJobs();
+				WatchList = new ObservableCollection<WatchJob>(watchlistJobs.Result.WatchJobList.JobWatchList);
+				foreach (var wJob in WatchList)
+				{
+					wJob.addedOn = GetAddedString(wJob.addedOn);
+				}
+			}
+			catch (Exception ex)
+			{
+				Debug.WriteLine("LoadWatchList: " + ex.Message);
+			} 		}
 
 		#region Job Commands
 		public DelegateCommand<EmployerJobDetail> ViewJobCommand { get; set; }
@@ -334,10 +347,31 @@ namespace ArabWaha.Employer.ViewModels
 			}
 		}
 
-
-
-
-
 		#endregion
+
+		public string GetAddedString(string date)
+		{
+			//string x = dt.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+			DateTime currentDate = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
+			string addedDateString = Convert.ToDateTime(date).ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+
+			DateTime d2 = Convert.ToDateTime(addedDateString, CultureInfo.InvariantCulture);
+
+			TimeSpan t = d2 - currentDate;
+			string message = "Added ";
+			if (t.TotalDays <= 0)
+				message += "today";
+			else if (t.TotalDays == 1)
+				message += "yesterday";
+			else if (t.TotalDays > 1 && t.TotalDays < 30)
+				message += t.TotalDays.ToString() + "ago";
+			else if (t.TotalDays > 30 && t.TotalDays < 60)
+				message += "a month ago";
+			else if (t.TotalDays > 30)
+				message += "months ago";
+
+			return message; 		}
+
+
 	}
 }

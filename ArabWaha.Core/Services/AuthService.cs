@@ -87,15 +87,15 @@ namespace ArabWaha.Core.Services
 
 
 					//Get the Personal Details
-					var personalDetails = await AWHttpClient.Instance.GetPersonalDetails();
-					if (personalDetails.IsSuccess)
-					{
-                        if (personalDetails.Result != null && personalDetails.Result.personalDetailsObject != null && myCompanyDetails.Result.myCompanyObjectList.myCompanyList.Count > 0)
-						{
-                            var details = personalDetails.Result.personalDetailsObject.personalDetailsList[0];
+					//var personalDetails = await AWHttpClient.Instance.GetPersonalDetails();
+					//if (personalDetails.IsSuccess)
+					//{
+     //                   if (personalDetails.Result != null && personalDetails.Result.personalDetailsObject != null && myCompanyDetails.Result.myCompanyObjectList.myCompanyList.Count > 0)
+					//	{
+     //                       var details = personalDetails.Result.personalDetailsObject.personalDetailsList[0];
 							
-						}
-					}
+					//	}
+					//}
 
 
 
@@ -115,7 +115,7 @@ namespace ArabWaha.Core.Services
 
 
 					//Get JobsList
-                    var jobsList = await AWHttpClient.Instance.GetJobsList();
+                    //var jobsList = await AWHttpClient.Instance.GetJobsList();
 
 
 					//Get AssignedJobs
