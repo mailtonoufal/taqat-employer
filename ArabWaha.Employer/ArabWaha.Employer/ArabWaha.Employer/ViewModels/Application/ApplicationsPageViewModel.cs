@@ -1,4 +1,4 @@
-﻿using ArabWaha.Core.ModelsEmployer;
+﻿﻿using ArabWaha.Core.ModelsEmployer;
 using ArabWaha.Core.ModelsEmployer.Jobs;
 using ArabWaha.Core.ModelsEmployer.Programs;
 using ArabWaha.Core.ModelsEmployer.Services;
@@ -161,7 +161,7 @@ namespace ArabWaha.Employer.ViewModels
 			// Default Tab1
 			//   ApllicationsNavigate();
 
-			//LoadData();
+			LoadData();
 
 			MessagingCenter.Subscribe<JobPageViewModel>(this, "WatchEntryUpdated", WatchEntryUpdatedMessage);
 
