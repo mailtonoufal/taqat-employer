@@ -150,6 +150,7 @@
     <Compile Include="Renders\CustomiseSearchBarRenderer.cs" />
     <Compile Include="GetMyLocation.cs" />
     <Compile Include="RangeSliderInitialization.cs" />
+    <Compile Include="GetHijriDate.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />

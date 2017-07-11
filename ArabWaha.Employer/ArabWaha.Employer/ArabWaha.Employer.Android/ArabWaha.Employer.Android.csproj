@@ -336,6 +336,7 @@
     <Compile Include="Renders\CustomiseSearchBarRenderer.cs" />
     <Compile Include="GetMyLocation.cs" />
     <Compile Include="RangeSliderInitialization.cs" />
+    <Compile Include="GetHijriDate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

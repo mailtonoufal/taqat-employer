@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ArabWaha.Employer.Layouts.Calendar.CalendarMonthView">
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="ArabWaha.Employer.Layouts.Calendar.CalendarMonthView"
+	xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData">
 	<ContentView.Content>
 		<Grid x:Name="MonthGrid">
 			<Grid.RowDefinitions>
@@ -22,111 +26,111 @@
 				<ColumnDefinition />
 			</Grid.ColumnDefinitions>
 			<!--year month label-->
-			<Label Grid.Row="0" Grid.Column="0" Style="{StaticResource InfoBodyTextBlue}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" x:Name="lblPrevious">
+			<Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" Text="{x:Static gb:GlobalSetting.CalendarTextPrev}" x:Name="lblPrevious">
 				<Label.GestureRecognizers>
 					<TapGestureRecognizer Command="{Binding OnPrevCommand}" NumberOfTapsRequired="1" />
 				</Label.GestureRecognizers>
 			</Label>
 			<Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="5" Style="{StaticResource InfoBodyTextBlue}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" x:Name="lblMonthYear" />
-			<Label Grid.Row="0" Grid.Column="6" Style="{StaticResource InfoBodyTextBlue}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" x:Name="lblNext">
+			<Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" Text="{x:Static gb:GlobalSetting.CalendarTextNext}" x:Name="lblNext">
 				<Label.GestureRecognizers>
 					<TapGestureRecognizer Command="{Binding OnNextCommand}" NumberOfTapsRequired="1" />
 				</Label.GestureRecognizers>
 			</Label>
 			<!--weekdays labels-->
-			<Label Grid.Row="1" Grid.Column="0" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="S" />
-			<Label Grid.Row="1" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="M" />
-			<Label Grid.Row="1" Grid.Column="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="T" />
+			<Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="S" />
+			<Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="M" />
+			<Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="T" />
 			<Label Grid.Row="1" Grid.Column="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="W" />
-			<Label Grid.Row="1" Grid.Column="4" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="T" />
-			<Label Grid.Row="1" Grid.Column="5" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="F" />
-			<Label Grid.Row="1" Grid.Column="6" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="S" />
+			<Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="T" />
+			<Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="F" />
+			<Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="S" />
 			<!--month's week 1 days labels-->
-			<Label Grid.Row="2" Grid.Column="0" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day1" />
-			<Label Grid.Row="2" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day2" />
-			<Label Grid.Row="2" Grid.Column="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day3" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day1" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day2" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day3" />
 			<Label Grid.Row="2" Grid.Column="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day4" />
-			<Label Grid.Row="2" Grid.Column="4" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day5" />
-			<Label Grid.Row="2" Grid.Column="5" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day6" />
-			<Label Grid.Row="2" Grid.Column="6" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day7" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day5" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day6" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day7" />
 			<!--month's week 2 days labels-->
-			<Label Grid.Row="3" Grid.Column="0" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day8" />
-			<Label Grid.Row="3" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day9" />
-			<Label Grid.Row="3" Grid.Column="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day10" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day8" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day9" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day10" />
 			<Label Grid.Row="3" Grid.Column="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day11" />
-			<Label Grid.Row="3" Grid.Column="4" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day12" />
-			<Label Grid.Row="3" Grid.Column="5" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day13" />
-			<Label Grid.Row="3" Grid.Column="6" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day14" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day12" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day13" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day14" />
 			<!--month's week 3 days labels-->
-			<Label Grid.Row="4" Grid.Column="0" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day15" />
-			<Label Grid.Row="4" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day16" />
-			<Label Grid.Row="4" Grid.Column="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day17" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day15" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day16" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day17" />
 			<Label Grid.Row="4" Grid.Column="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day18" />
-			<Label Grid.Row="4" Grid.Column="4" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day19" />
-			<Label Grid.Row="4" Grid.Column="5" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day20" />
-			<Label Grid.Row="4" Grid.Column="6" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day21" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day19" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day20" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day21" />
 			<!--month's week 4 days labels-->
-			<Label Grid.Row="5" Grid.Column="0" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day22" />
-			<Label Grid.Row="5" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day23" />
-			<Label Grid.Row="5" Grid.Column="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day24" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day22" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day23" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day24" />
 			<Label Grid.Row="5" Grid.Column="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day25" />
-			<Label Grid.Row="5" Grid.Column="4" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day26" />
-			<Label Grid.Row="5" Grid.Column="5" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day27" />
-			<Label Grid.Row="5" Grid.Column="6" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day28" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day26" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day27" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day28" />
 			<!--month's week 5 days labels-->
-			<Label Grid.Row="6" Grid.Column="0" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day29" />
-			<Label Grid.Row="6" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day30" />
-			<Label Grid.Row="6" Grid.Column="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day31" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day29" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day30" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day31" />
 			<Label Grid.Row="6" Grid.Column="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day32" />
-			<Label Grid.Row="6" Grid.Column="4" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day33" />
-			<Label Grid.Row="6" Grid.Column="5" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day34" />
-			<Label Grid.Row="6" Grid.Column="6" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day35" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day33" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day34" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day35" />
 			<!--month's week 6 days labels-->
-			<Label Grid.Row="7" Grid.Column="0" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day36" />
-			<Label Grid.Row="7" Grid.Column="1" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day37" />
+			<Label Grid.Row="7" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day36" />
+			<Label Grid.Row="7" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="Fill" VerticalOptions="Start" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" x:Name="day37" />
 			<!--month's week 1 dot labels-->
-			<Label Grid.Row="2" Grid.Column="0" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot1" />
-			<Label Grid.Row="2" Grid.Column="1" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot2" />
-			<Label Grid.Row="2" Grid.Column="2" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot3" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot1" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot2" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot3" />
 			<Label Grid.Row="2" Grid.Column="3" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot4" />
-			<Label Grid.Row="2" Grid.Column="4" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot5" />
-			<Label Grid.Row="2" Grid.Column="5" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot6" />
-			<Label Grid.Row="2" Grid.Column="6" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot7" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot5" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot6" />
+			<Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot7" />
 			<!--month's week 2 dot labels-->
-			<Label Grid.Row="3" Grid.Column="0" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot8" />
-			<Label Grid.Row="3" Grid.Column="1" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot9" />
-			<Label Grid.Row="3" Grid.Column="2" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot10" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot8" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot9" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot10" />
 			<Label Grid.Row="3" Grid.Column="3" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot11" />
-			<Label Grid.Row="3" Grid.Column="4" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot12" />
-			<Label Grid.Row="3" Grid.Column="5" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot13" />
-			<Label Grid.Row="3" Grid.Column="6" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot14" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot12" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot13" />
+			<Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot14" />
 			<!--month's week 3 dot labels-->
-			<Label Grid.Row="4" Grid.Column="0" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot15" />
-			<Label Grid.Row="4" Grid.Column="1" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot16" />
-			<Label Grid.Row="4" Grid.Column="2" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot17" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot15" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot16" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot17" />
 			<Label Grid.Row="4" Grid.Column="3" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot18" />
-			<Label Grid.Row="4" Grid.Column="4" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot19" />
-			<Label Grid.Row="4" Grid.Column="5" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot20" />
-			<Label Grid.Row="4" Grid.Column="6" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot21" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot19" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot20" />
+			<Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot21" />
 			<!--month's week 4 dot labels-->
-			<Label Grid.Row="5" Grid.Column="0" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot22" />
-			<Label Grid.Row="5" Grid.Column="1" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot23" />
-			<Label Grid.Row="5" Grid.Column="2" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot24" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot22" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot23" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot24" />
 			<Label Grid.Row="5" Grid.Column="3" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot25" />
-			<Label Grid.Row="5" Grid.Column="4" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot26" />
-			<Label Grid.Row="5" Grid.Column="5" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot27" />
-			<Label Grid.Row="5" Grid.Column="6" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot28" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot26" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot27" />
+			<Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot28" />
 			<!--month's week 5 dot labels-->
-			<Label Grid.Row="6" Grid.Column="0" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot29" />
-			<Label Grid.Row="6" Grid.Column="1" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot30" />
-			<Label Grid.Row="6" Grid.Column="2" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot31" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot29" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot30" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTusday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot31" />
 			<Label Grid.Row="6" Grid.Column="3" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot32" />
-			<Label Grid.Row="6" Grid.Column="4" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot33" />
-			<Label Grid.Row="6" Grid.Column="5" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot34" />
-			<Label Grid.Row="6" Grid.Column="6" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot35" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColTrsday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot33" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColFriday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot34" />
+			<Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.CalendarColStrday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot35" />
 			<!--month's week 6 dot labels-->
-			<Label Grid.Row="7" Grid.Column="0" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot36" />
-			<Label Grid.Row="7" Grid.Column="1" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot37" />
+			<Label Grid.Row="7" Grid.Column="{x:Static gb:GlobalSetting.CalendarColSunday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot36" />
+			<Label Grid.Row="7" Grid.Column="{x:Static gb:GlobalSetting.CalendarColMonday}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="Fill" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="End" Text="•" x:Name="dot37" />
 		</Grid>
 	</ContentView.Content>
 </ContentView>

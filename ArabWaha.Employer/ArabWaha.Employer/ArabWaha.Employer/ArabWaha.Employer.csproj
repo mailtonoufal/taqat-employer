@@ -295,6 +295,7 @@
     <Compile Include="Layouts\Calendar\CalendarMonthView.xaml.cs">
       <DependentUpon>CalendarMonthView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IHijriService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
