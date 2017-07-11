@@ -333,7 +333,7 @@ namespace ArabWaha.Web
 			}
         }
 
-        public async Task<ServiceResult<ApplicationsListObject>> GetApplications()
+        public  async Task<ServiceResult<ApplicationsListObject>> GetApplications()
         {
 			ServiceResult<ApplicationsListObject> returnVal = null;
 

@@ -49,11 +49,7 @@
                 </controlx:XpertAccordion>
 
 
-<!--
-                Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}"
-                HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"
-                 HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}"
--->
+
 
                 <controlx:XpertAccordion HeaderText="{Binding CompanyInformation}" AccordionIsExpanded="True"   HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}"  >
                   <!--  AccordionImage = "{StaticResource DefaultJobIcon}"-->
@@ -74,10 +70,10 @@
                                     <ColumnDefinition Width="10"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{lEx:Translate IndustryLabel}"    HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="#012149" FontSize="13"/>
-                                <Label Grid.Row="1"  Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{lEx:Translate CompanySizeLabel}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="#012149" FontSize="13"/>
-                                <Label Grid.Row="2"  Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{lEx:Translate PreferredLanguageLabel}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="#012149" FontSize="13"/>
-                                <Label Grid.Row="3"  Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{lEx:Translate ProfileIDLabel}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{Binding IndustryLabell}"    HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="1"  Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{Binding CompanySizeLabell}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="2"  Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{Binding PreferredLanguageLabell}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="3"  Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="{Binding ProfileIDLabell}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
                                <!-- Style="{StaticResource CellBodyTextMedBlue}"-->
 
                                 <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="{Binding CompanyInfo.industryTypeId}"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>

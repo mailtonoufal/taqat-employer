@@ -1,4 +1,4 @@
-﻿namespace ArabWaha.Models
+﻿﻿namespace ArabWaha.Models
 {
 	public class Translation
 	{
@@ -123,11 +123,7 @@
 			public string whyTitle { get; set; }
 
 
-			public string programdetailsintro { get; set; }
-			public string programdetailsbenefittext { get; set; }
-			public string programdetailsbeneficiarytxt { get; set; }
-			public string programdtwhocanbenefit { get; set; }
-			public string programdthowtoregister { get; set; }
+			
 			
 		}
 
@@ -350,7 +346,31 @@
 			public string forgotloginphemail { get; set; }
 
 
+			public string mycompanylblindustry { get; set; }
+			public string mycompanylblcompsize { get; set; }
+			public string mycompanylblpreferlang { get; set; }
+			public string mycompanylblprofileid { get; set; }
 
+
+			public string mycompanylblname { get; set; }
+			public string mycompanylblposition { get; set; }
+			public string mycompanylblmobile { get; set; }
+			public string mycompanylbltelephone { get; set; }
+			public string mycompanylblemail { get; set; }
+
+
+			public string mycompanylbldesc { get; set; }
+			public string mycompanylblcompinfo { get; set; }
+			public string mycompanylblcontactdet { get; set; }
+			public string mycompanylbllocation { get; set; }
+			public string mycompanybtnmanageusers { get; set; }
+
+
+			public string programdetlbldesc { get; set; }
+			public string programdetlblwhythisprogram { get; set; }
+			public string programdetlblprogrequirements { get; set; }
+			public string programdetlblwhocanbenefit { get; set; }
+			public string programdetlblhowtoregister { get; set; }
            
 
 

@@ -1,4 +1,4 @@
-﻿﻿using ArabWaha.Core.ModelsEmployer.Company;
+﻿﻿﻿using ArabWaha.Core.ModelsEmployer.Company;
 using ArabWaha.Core.Services;
 using ArabWaha.Employer.BaseCalsses;
 using ArabWaha.Employer.Views;
@@ -132,6 +132,46 @@ namespace ArabWaha.Employer.ViewModels
 			}
 		}
 
+		private string _IndustryLabell;
+		public string IndustryLabell
+		{
+			get { return _IndustryLabell; }
+			set
+			{
+				SetProperty(ref _IndustryLabell, value);
+			}
+		}
+
+		private string _CompanySizeLabell;
+		public string CompanySizeLabell
+		{
+			get { return _CompanySizeLabell; }
+			set
+			{
+				SetProperty(ref _CompanySizeLabell, value);
+			}
+		}
+
+		private string _PreferredLanguageLabell;
+		public string PreferredLanguageLabell
+		{
+			get { return _PreferredLanguageLabell; }
+			set
+			{
+				SetProperty(ref _PreferredLanguageLabell, value);
+			}
+		}
+
+		private string _ProfileIDLabell;
+		public string ProfileIDLabell
+		{
+			get { return _ProfileIDLabell; }
+			set
+			{
+				SetProperty(ref _ProfileIDLabell, value);
+			}
+		}
+
 
         public DelegateCommand<string> CallCommand { get; set; }
         public DelegateCommand ManageCommand { get; set; }
@@ -160,38 +200,56 @@ namespace ArabWaha.Employer.ViewModels
 
 
 
-			//CompanyDescription = App.Translation != null ? App.Translation.employer.mycompanydescription : tran.GetProviderValueString("CompanyDescriptionLabel");
-			CompanyDescription = tran.GetProviderValueString("CompanyDescriptionLabel");
+			CompanyDescription = App.Translation != null ? App.Translation.employer.mycompanylbldesc : tran.GetProviderValueString("CompanyDescriptionLabel");
+			//CompanyDescription = tran.GetProviderValueString("CompanyDescriptionLabel");
 
-			// CompanyInformation = App.Translation != null ? App.Translation.employer.mycompanyinformation : tran.GetProviderValueString("CompanyInformationLabel");
-			CompanyInformation = tran.GetProviderValueString("CompanyInformationLabel");
+			 CompanyInformation = App.Translation != null ? App.Translation.employer.mycompanylblcompinfo : tran.GetProviderValueString("CompanyInformationLabel");
+			//CompanyInformation = tran.GetProviderValueString("CompanyInformationLabel");
 
-			//CompanyContact = App.Translation != null ? App.Translation.employer.mycompanycontactdt : tran.GetProviderValueString("ContactDetailsLabel");
-			CompanyContact = tran.GetProviderValueString("ContactDetailsLabel");
+			CompanyContact = App.Translation != null ? App.Translation.employer.mycompanylblcontactdet : tran.GetProviderValueString("ContactDetailsLabel");
+			//CompanyContact = tran.GetProviderValueString("ContactDetailsLabel");
 
-			//CompanyLocation = App.Translation != null ? App.Translation.employer.mycompanylocation : tran.GetProviderValueString("LocationLabel");
-			CompanyLocation = tran.GetProviderValueString("LocationLabel");
+			CompanyLocation = App.Translation != null ? App.Translation.employer.mycompanylbllocation : tran.GetProviderValueString("LocationLabel");
+			//CompanyLocation = tran.GetProviderValueString("LocationLabel");
 
-			//ManageUserButton = App.Translation != null ? App.Translation.employer.mycompanyuserbutton : tran.GetProviderValueString("ManageCompanyUsersButton");
-			ManageUserButton = tran.GetProviderValueString("ManageCompanyUsersButton");
+			ManageUserButton = App.Translation != null ? App.Translation.employer.mycompanybtnmanageusers : tran.GetProviderValueString("ManageCompanyUsersButton");
+			//ManageUserButton = tran.GetProviderValueString("ManageCompanyUsersButton");
 
-			//Namelabell = App.Translation != null ? App.Translation.employer.companydtname : tran.GetProviderValueString("Name");
-			Namelabell = tran.GetProviderValueString("Name");
+			Namelabell = App.Translation != null ? App.Translation.employer.mycompanylblname : tran.GetProviderValueString("Namelabel");
+			//Namelabell = tran.GetProviderValueString("Name");
 
-			//PositionLabell = App.Translation != null ? App.Translation.employer.companydtposition : tran.GetProviderValueString("Position");
-			PositionLabell = tran.GetProviderValueString("Position");
-
-
-			//MobilePhoneLabell = App.Translation != null ? App.Translation.employer.companydtmobile : tran.GetProviderValueString("Mobile Phone");
-			MobilePhoneLabell = tran.GetProviderValueString("Mobile Phone");
+			PositionLabell = App.Translation != null ? App.Translation.employer.mycompanylblposition : tran.GetProviderValueString("PositionLabel");
+			//PositionLabell = tran.GetProviderValueString("Position");
 
 
-			//TelephoneNumberLabel = App.Translation != null ? App.Translation.employer.companydttelephone : tran.GetProviderValueString("Telephone Number");
-			TelephoneNumberLabell = tran.GetProviderValueString("Telephone Number");
+			MobilePhoneLabell = App.Translation != null ? App.Translation.employer.mycompanylblmobile : tran.GetProviderValueString("MobilePhoneLabel");
+			//MobilePhoneLabell = tran.GetProviderValueString("Mobile Phone");
 
 
-			//EmailAddressLabel = App.Translation != null ? App.Translation.employer.companydtemail : tran.GetProviderValueString("Email Address");
-			EmailAddressLabell = tran.GetProviderValueString("Email Address");
+			TelephoneNumberLabell = App.Translation != null ? App.Translation.employer.mycompanylbltelephone : tran.GetProviderValueString("TelephoneNumberLabel");
+			//TelephoneNumberLabell = tran.GetProviderValueString("Telephone Number");
+
+
+			EmailAddressLabell = App.Translation != null ? App.Translation.employer.mycompanylblemail : tran.GetProviderValueString("EmailAddressLabel");
+			//EmailAddressLabell = tran.GetProviderValueString("Email Address");
+
+
+
+			IndustryLabell = App.Translation != null ? App.Translation.employer.mycompanylblindustry : tran.GetProviderValueString("IndustryLabel");
+			//IndustryLabell = tran.GetProviderValueString("Industry");
+
+
+			CompanySizeLabell = App.Translation != null ? App.Translation.employer.mycompanylblcompsize : tran.GetProviderValueString("CompanySizeLabel");
+			//CompanySizeLabell = tran.GetProviderValueString("Company Size");
+
+
+			PreferredLanguageLabell = App.Translation != null ? App.Translation.employer.mycompanylblpreferlang : tran.GetProviderValueString("PreferredLanguageLabel");
+			//PreferredLanguageLabell = tran.GetProviderValueString("Preferred Language");
+
+
+			ProfileIDLabell = App.Translation != null ? App.Translation.employer.mycompanylblprofileid : tran.GetProviderValueString("ProfileIDLabel");
+			//ProfileIDLabell = tran.GetProviderValueString("Profile ID");
+
 
 
 

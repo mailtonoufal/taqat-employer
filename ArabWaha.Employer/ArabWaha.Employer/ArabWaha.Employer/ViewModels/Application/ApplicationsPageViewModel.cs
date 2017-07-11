@@ -17,11 +17,16 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Xamarin.Forms;
+using ArabWaha.Web;
+using System.Threading.Tasks;
+using ArabWaha.Core.Models.Applications;
 
 namespace ArabWaha.Employer.ViewModels
 {
 	public class ApplicationsPageViewModel : AWMVVMBase
 	{
+
+       
 		Tab3View _ctrl;
 
 		public void SetTabs(Tab3View ctrl)
@@ -115,9 +120,23 @@ namespace ArabWaha.Employer.ViewModels
 			set { SetProperty(ref _jobPageSource, value); }
 		}
 
+        private List<ApplicationData> _applicationlistsample;
+        public List<ApplicationData> applicationlistsample
+		{
+			get { return _applicationlistsample; }
+			set { SetProperty(ref _applicationlistsample, value); }
+		}
+
+		
+
 		public ApplicationsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
 		{
+
+           
+			
 			TranslateExtension tran = new TranslateExtension();
+
+
 
 			Title = tran.GetProviderValueString("LabelApplicationsTitle");
 
@@ -142,11 +161,30 @@ namespace ArabWaha.Employer.ViewModels
 			// Default Tab1
 			//   ApllicationsNavigate();
 
-			LoadData();
+			//LoadData();
 
 			MessagingCenter.Subscribe<JobPageViewModel>(this, "WatchEntryUpdated", WatchEntryUpdatedMessage);
 
+            Task.Run(async () => {
+				var applicationsList = await AWHttpClient.Instance.GetApplications();
+				if (applicationsList.IsSuccess)
+				{
+					if (applicationsList.Result != null && applicationsList.Result.applicationsListObject != null && applicationsList.Result.applicationsListObject.applicationsList.Count > 0)
+					{
+                       
+                        applicationlistsample = applicationsList.Result.applicationsListObject.applicationsList;
+                      
+					}
+				}
+
+            });
+
+			
+
+			
+
 		}
+       
 
 		private void WatchEntryUpdatedMessage(JobPageViewModel obj)
 		{
@@ -193,6 +231,9 @@ namespace ArabWaha.Employer.ViewModels
 
 		private async void LoadData()
 		{
+
+			
+
 			ApiService api = new ApiService();
 			CompanyApplicationList = await api.GetCompanyJobApplicationsAsync(0);
 			Jobs = CompanyApplicationList.Jobs;
@@ -220,6 +261,9 @@ namespace ArabWaha.Employer.ViewModels
 				foreach (var appin in itemx.Applications)
 					appin.ApplicationDateText = applicationDateText;
 			}
+
+
+			
 
 
 

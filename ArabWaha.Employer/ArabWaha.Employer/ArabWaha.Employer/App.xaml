@@ -612,7 +612,7 @@
             <FileImageSource x:Key="MenuIconContactUs">ContactImg.png</FileImageSource>
             <FileImageSource x:Key="MenuIconSettings">SettingImg.png</FileImageSource>
             <FileImageSource x:Key="MenuIconLogInOut">LogoutImg.png</FileImageSource>
-            <FileImageSource x:Key="ContactIcon">contactnameicon.png</FileImageSource>
+            <FileImageSource x:Key="ContactIcon">contacts.png</FileImageSource>
             <FileImageSource x:Key="LocationIcon">location.png</FileImageSource>
 
 
