@@ -63,8 +63,2008 @@ namespace ArabWaha.Employer.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::ArabWaha.Employer.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::ArabWaha.Employer.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::ArabWaha.Common.Droid.Resource.Animation.abc_fade_in = global::ArabWaha.Employer.Droid.Resource.Animation.abc_fade_in;
+			global::ArabWaha.Common.Droid.Resource.Animation.abc_fade_out = global::ArabWaha.Employer.Droid.Resource.Animation.abc_fade_out;
+			global::ArabWaha.Common.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::ArabWaha.Employer.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::ArabWaha.Common.Droid.Resource.Animation.abc_popup_enter = global::ArabWaha.Employer.Droid.Resource.Animation.abc_popup_enter;
+			global::ArabWaha.Common.Droid.Resource.Animation.abc_popup_exit = global::ArabWaha.Employer.Droid.Resource.Animation.abc_popup_exit;
+			global::ArabWaha.Common.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom = global::ArabWaha.Employer.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::ArabWaha.Common.Droid.Resource.Animation.abc_slide_in_bottom = global::ArabWaha.Employer.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::ArabWaha.Common.Droid.Resource.Animation.abc_slide_in_top = global::ArabWaha.Employer.Droid.Resource.Animation.abc_slide_in_top;
+			global::ArabWaha.Common.Droid.Resource.Animation.abc_slide_out_bottom = global::ArabWaha.Employer.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::ArabWaha.Common.Droid.Resource.Animation.abc_slide_out_top = global::ArabWaha.Employer.Droid.Resource.Animation.abc_slide_out_top;
+			global::ArabWaha.Common.Droid.Resource.Animation.design_appbar_state_list_animator = global::ArabWaha.Employer.Droid.Resource.Animation.design_appbar_state_list_animator;
+			global::ArabWaha.Common.Droid.Resource.Animation.design_bottom_sheet_slide_in = global::ArabWaha.Employer.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::ArabWaha.Common.Droid.Resource.Animation.design_bottom_sheet_slide_out = global::ArabWaha.Employer.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::ArabWaha.Common.Droid.Resource.Animation.design_fab_in = global::ArabWaha.Employer.Droid.Resource.Animation.design_fab_in;
+			global::ArabWaha.Common.Droid.Resource.Animation.design_fab_out = global::ArabWaha.Employer.Droid.Resource.Animation.design_fab_out;
+			global::ArabWaha.Common.Droid.Resource.Animation.design_snackbar_in = global::ArabWaha.Employer.Droid.Resource.Animation.design_snackbar_in;
+			global::ArabWaha.Common.Droid.Resource.Animation.design_snackbar_out = global::ArabWaha.Employer.Droid.Resource.Animation.design_snackbar_out;
+			global::ArabWaha.Common.Droid.Resource.Attribute.MediaRouteControllerWindowBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.MediaRouteControllerWindowBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarDivider = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarDivider;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarItemBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarItemBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarPopupTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarSize = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarSize;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarSplitStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarTabBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarTabStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarTabStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarTabTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarTheme;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionBarWidgetTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionDropDownStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionDropDownStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.actionLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionMenuTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionMenuTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.actionMenuTextColor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeCloseButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeCloseDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeCopyDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeCutDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeFindDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModePasteDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModePopupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeSelectAllDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeShareDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeSplitBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionModeWebSearchDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionOverflowButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionOverflowMenuStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionProviderClass = global::ArabWaha.Employer.Droid.Resource.Attribute.actionProviderClass;
+			global::ArabWaha.Common.Droid.Resource.Attribute.actionViewClass = global::ArabWaha.Employer.Droid.Resource.Attribute.actionViewClass;
+			global::ArabWaha.Common.Droid.Resource.Attribute.activityChooserViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.alertDialogButtonGroupStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.alertDialogCenterButtons = global::ArabWaha.Employer.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::ArabWaha.Common.Droid.Resource.Attribute.alertDialogStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.alertDialogStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.alertDialogTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.alertDialogTheme;
+			global::ArabWaha.Common.Droid.Resource.Attribute.allowStacking = global::ArabWaha.Employer.Droid.Resource.Attribute.allowStacking;
+			global::ArabWaha.Common.Droid.Resource.Attribute.alpha = global::ArabWaha.Employer.Droid.Resource.Attribute.alpha;
+			global::ArabWaha.Common.Droid.Resource.Attribute.arrowHeadLength = global::ArabWaha.Employer.Droid.Resource.Attribute.arrowHeadLength;
+			global::ArabWaha.Common.Droid.Resource.Attribute.arrowShaftLength = global::ArabWaha.Employer.Droid.Resource.Attribute.arrowShaftLength;
+			global::ArabWaha.Common.Droid.Resource.Attribute.autoCompleteTextViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.background = global::ArabWaha.Employer.Droid.Resource.Attribute.background;
+			global::ArabWaha.Common.Droid.Resource.Attribute.backgroundSplit = global::ArabWaha.Employer.Droid.Resource.Attribute.backgroundSplit;
+			global::ArabWaha.Common.Droid.Resource.Attribute.backgroundStacked = global::ArabWaha.Employer.Droid.Resource.Attribute.backgroundStacked;
+			global::ArabWaha.Common.Droid.Resource.Attribute.backgroundTint = global::ArabWaha.Employer.Droid.Resource.Attribute.backgroundTint;
+			global::ArabWaha.Common.Droid.Resource.Attribute.backgroundTintMode = global::ArabWaha.Employer.Droid.Resource.Attribute.backgroundTintMode;
+			global::ArabWaha.Common.Droid.Resource.Attribute.barLength = global::ArabWaha.Employer.Droid.Resource.Attribute.barLength;
+			global::ArabWaha.Common.Droid.Resource.Attribute.behavior_autoHide = global::ArabWaha.Employer.Droid.Resource.Attribute.behavior_autoHide;
+			global::ArabWaha.Common.Droid.Resource.Attribute.behavior_hideable = global::ArabWaha.Employer.Droid.Resource.Attribute.behavior_hideable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.behavior_overlapTop = global::ArabWaha.Employer.Droid.Resource.Attribute.behavior_overlapTop;
+			global::ArabWaha.Common.Droid.Resource.Attribute.behavior_peekHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.behavior_peekHeight;
+			global::ArabWaha.Common.Droid.Resource.Attribute.behavior_skipCollapsed = global::ArabWaha.Employer.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::ArabWaha.Common.Droid.Resource.Attribute.borderWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.borderWidth;
+			global::ArabWaha.Common.Droid.Resource.Attribute.borderlessButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.bottomSheetDialogTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::ArabWaha.Common.Droid.Resource.Attribute.bottomSheetStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.bottomSheetStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonBarButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonBarNegativeButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonBarNeutralButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonBarPositiveButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonGravity = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonGravity;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonPanelSideLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonStyleSmall = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonStyleSmall;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonTint = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonTint;
+			global::ArabWaha.Common.Droid.Resource.Attribute.buttonTintMode = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonTintMode;
+			global::ArabWaha.Common.Droid.Resource.Attribute.cardBackgroundColor = global::ArabWaha.Employer.Droid.Resource.Attribute.cardBackgroundColor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.cardCornerRadius = global::ArabWaha.Employer.Droid.Resource.Attribute.cardCornerRadius;
+			global::ArabWaha.Common.Droid.Resource.Attribute.cardElevation = global::ArabWaha.Employer.Droid.Resource.Attribute.cardElevation;
+			global::ArabWaha.Common.Droid.Resource.Attribute.cardMaxElevation = global::ArabWaha.Employer.Droid.Resource.Attribute.cardMaxElevation;
+			global::ArabWaha.Common.Droid.Resource.Attribute.cardPreventCornerOverlap = global::ArabWaha.Employer.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::ArabWaha.Common.Droid.Resource.Attribute.cardUseCompatPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.checkboxStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.checkboxStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.checkedTextViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.closeIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.closeIcon;
+			global::ArabWaha.Common.Droid.Resource.Attribute.closeItemLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.closeItemLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.collapseContentDescription = global::ArabWaha.Employer.Droid.Resource.Attribute.collapseContentDescription;
+			global::ArabWaha.Common.Droid.Resource.Attribute.collapseIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.collapseIcon;
+			global::ArabWaha.Common.Droid.Resource.Attribute.collapsedTitleGravity = global::ArabWaha.Employer.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::ArabWaha.Common.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.color = global::ArabWaha.Employer.Droid.Resource.Attribute.color;
+			global::ArabWaha.Common.Droid.Resource.Attribute.colorAccent = global::ArabWaha.Employer.Droid.Resource.Attribute.colorAccent;
+			global::ArabWaha.Common.Droid.Resource.Attribute.colorBackgroundFloating = global::ArabWaha.Employer.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::ArabWaha.Common.Droid.Resource.Attribute.colorButtonNormal = global::ArabWaha.Employer.Droid.Resource.Attribute.colorButtonNormal;
+			global::ArabWaha.Common.Droid.Resource.Attribute.colorControlActivated = global::ArabWaha.Employer.Droid.Resource.Attribute.colorControlActivated;
+			global::ArabWaha.Common.Droid.Resource.Attribute.colorControlHighlight = global::ArabWaha.Employer.Droid.Resource.Attribute.colorControlHighlight;
+			global::ArabWaha.Common.Droid.Resource.Attribute.colorControlNormal = global::ArabWaha.Employer.Droid.Resource.Attribute.colorControlNormal;
+			global::ArabWaha.Common.Droid.Resource.Attribute.colorPrimary = global::ArabWaha.Employer.Droid.Resource.Attribute.colorPrimary;
+			global::ArabWaha.Common.Droid.Resource.Attribute.colorPrimaryDark = global::ArabWaha.Employer.Droid.Resource.Attribute.colorPrimaryDark;
+			global::ArabWaha.Common.Droid.Resource.Attribute.colorSwitchThumbNormal = global::ArabWaha.Employer.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::ArabWaha.Common.Droid.Resource.Attribute.commitIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.commitIcon;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentInsetEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.contentInsetEnd;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentInsetEndWithActions = global::ArabWaha.Employer.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentInsetLeft = global::ArabWaha.Employer.Droid.Resource.Attribute.contentInsetLeft;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentInsetRight = global::ArabWaha.Employer.Droid.Resource.Attribute.contentInsetRight;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentInsetStart = global::ArabWaha.Employer.Droid.Resource.Attribute.contentInsetStart;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentInsetStartWithNavigation = global::ArabWaha.Employer.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.contentPadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentPaddingBottom = global::ArabWaha.Employer.Droid.Resource.Attribute.contentPaddingBottom;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentPaddingLeft = global::ArabWaha.Employer.Droid.Resource.Attribute.contentPaddingLeft;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentPaddingRight = global::ArabWaha.Employer.Droid.Resource.Attribute.contentPaddingRight;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentPaddingTop = global::ArabWaha.Employer.Droid.Resource.Attribute.contentPaddingTop;
+			global::ArabWaha.Common.Droid.Resource.Attribute.contentScrim = global::ArabWaha.Employer.Droid.Resource.Attribute.contentScrim;
+			global::ArabWaha.Common.Droid.Resource.Attribute.controlBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.controlBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.counterEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.counterEnabled;
+			global::ArabWaha.Common.Droid.Resource.Attribute.counterMaxLength = global::ArabWaha.Employer.Droid.Resource.Attribute.counterMaxLength;
+			global::ArabWaha.Common.Droid.Resource.Attribute.counterOverflowTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.counterTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.counterTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.customNavigationLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.customNavigationLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.defaultQueryHint = global::ArabWaha.Employer.Droid.Resource.Attribute.defaultQueryHint;
+			global::ArabWaha.Common.Droid.Resource.Attribute.dialogPreferredPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.dialogTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.dialogTheme;
+			global::ArabWaha.Common.Droid.Resource.Attribute.displayOptions = global::ArabWaha.Employer.Droid.Resource.Attribute.displayOptions;
+			global::ArabWaha.Common.Droid.Resource.Attribute.divider = global::ArabWaha.Employer.Droid.Resource.Attribute.divider;
+			global::ArabWaha.Common.Droid.Resource.Attribute.dividerHorizontal = global::ArabWaha.Employer.Droid.Resource.Attribute.dividerHorizontal;
+			global::ArabWaha.Common.Droid.Resource.Attribute.dividerPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.dividerPadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.dividerVertical = global::ArabWaha.Employer.Droid.Resource.Attribute.dividerVertical;
+			global::ArabWaha.Common.Droid.Resource.Attribute.drawableSize = global::ArabWaha.Employer.Droid.Resource.Attribute.drawableSize;
+			global::ArabWaha.Common.Droid.Resource.Attribute.drawerArrowStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.drawerArrowStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.dropDownListViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::ArabWaha.Common.Droid.Resource.Attribute.editTextBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.editTextBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.editTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.editTextColor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.editTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.editTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.elevation = global::ArabWaha.Employer.Droid.Resource.Attribute.elevation;
+			global::ArabWaha.Common.Droid.Resource.Attribute.errorEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.errorEnabled;
+			global::ArabWaha.Common.Droid.Resource.Attribute.errorTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.errorTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.expanded = global::ArabWaha.Employer.Droid.Resource.Attribute.expanded;
+			global::ArabWaha.Common.Droid.Resource.Attribute.expandedTitleGravity = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleGravity;
+			global::ArabWaha.Common.Droid.Resource.Attribute.expandedTitleMargin = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleMargin;
+			global::ArabWaha.Common.Droid.Resource.Attribute.expandedTitleMarginBottom = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::ArabWaha.Common.Droid.Resource.Attribute.expandedTitleMarginEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::ArabWaha.Common.Droid.Resource.Attribute.expandedTitleMarginStart = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::ArabWaha.Common.Droid.Resource.Attribute.expandedTitleMarginTop = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::ArabWaha.Common.Droid.Resource.Attribute.expandedTitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.externalRouteEnabledDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.fabSize = global::ArabWaha.Employer.Droid.Resource.Attribute.fabSize;
+			global::ArabWaha.Common.Droid.Resource.Attribute.foregroundInsidePadding = global::ArabWaha.Employer.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.gapBetweenBars = global::ArabWaha.Employer.Droid.Resource.Attribute.gapBetweenBars;
+			global::ArabWaha.Common.Droid.Resource.Attribute.goIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.goIcon;
+			global::ArabWaha.Common.Droid.Resource.Attribute.headerLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.headerLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.height = global::ArabWaha.Employer.Droid.Resource.Attribute.height;
+			global::ArabWaha.Common.Droid.Resource.Attribute.hideOnContentScroll = global::ArabWaha.Employer.Droid.Resource.Attribute.hideOnContentScroll;
+			global::ArabWaha.Common.Droid.Resource.Attribute.hintAnimationEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::ArabWaha.Common.Droid.Resource.Attribute.hintEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.hintEnabled;
+			global::ArabWaha.Common.Droid.Resource.Attribute.hintTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.hintTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.homeAsUpIndicator = global::ArabWaha.Employer.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::ArabWaha.Common.Droid.Resource.Attribute.homeLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.homeLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.icon = global::ArabWaha.Employer.Droid.Resource.Attribute.icon;
+			global::ArabWaha.Common.Droid.Resource.Attribute.iconifiedByDefault = global::ArabWaha.Employer.Droid.Resource.Attribute.iconifiedByDefault;
+			global::ArabWaha.Common.Droid.Resource.Attribute.imageButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.imageButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.indeterminateProgressStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.initialActivityCount = global::ArabWaha.Employer.Droid.Resource.Attribute.initialActivityCount;
+			global::ArabWaha.Common.Droid.Resource.Attribute.insetForeground = global::ArabWaha.Employer.Droid.Resource.Attribute.insetForeground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.isLightTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.isLightTheme;
+			global::ArabWaha.Common.Droid.Resource.Attribute.itemBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.itemBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.itemIconTint = global::ArabWaha.Employer.Droid.Resource.Attribute.itemIconTint;
+			global::ArabWaha.Common.Droid.Resource.Attribute.itemPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.itemPadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.itemTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.itemTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.itemTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.itemTextColor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.keylines = global::ArabWaha.Employer.Droid.Resource.Attribute.keylines;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout = global::ArabWaha.Employer.Droid.Resource.Attribute.layout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layoutManager = global::ArabWaha.Employer.Droid.Resource.Attribute.layoutManager;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout_anchor = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_anchor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout_anchorGravity = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_anchorGravity;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout_behavior = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_behavior;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout_collapseMode = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_collapseMode;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout_collapseParallaxMultiplier = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout_dodgeInsetEdges = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout_insetEdge = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_insetEdge;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout_keyline = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_keyline;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout_scrollFlags = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_scrollFlags;
+			global::ArabWaha.Common.Droid.Resource.Attribute.layout_scrollInterpolator = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listChoiceBackgroundIndicator = global::ArabWaha.Employer.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listDividerAlertDialog = global::ArabWaha.Employer.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listItemLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.listItemLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.listLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listMenuViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.listMenuViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listPopupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listPreferredItemHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listPreferredItemHeightLarge = global::ArabWaha.Employer.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listPreferredItemHeightSmall = global::ArabWaha.Employer.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listPreferredItemPaddingLeft = global::ArabWaha.Employer.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::ArabWaha.Common.Droid.Resource.Attribute.listPreferredItemPaddingRight = global::ArabWaha.Employer.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::ArabWaha.Common.Droid.Resource.Attribute.logo = global::ArabWaha.Employer.Droid.Resource.Attribute.logo;
+			global::ArabWaha.Common.Droid.Resource.Attribute.logoDescription = global::ArabWaha.Employer.Droid.Resource.Attribute.logoDescription;
+			global::ArabWaha.Common.Droid.Resource.Attribute.maxActionInlineWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::ArabWaha.Common.Droid.Resource.Attribute.maxButtonHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.maxButtonHeight;
+			global::ArabWaha.Common.Droid.Resource.Attribute.measureWithLargestChild = global::ArabWaha.Employer.Droid.Resource.Attribute.measureWithLargestChild;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteChooserPrimaryTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteChooserPrimaryTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteChooserSecondaryTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteChooserSecondaryTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteCloseDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteControllerPrimaryTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteControllerPrimaryTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteControllerSecondaryTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteControllerSecondaryTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteControllerTitleTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteControllerTitleTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRoutePauseDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRoutePlayDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.mediaRouteTvIconDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.menu = global::ArabWaha.Employer.Droid.Resource.Attribute.menu;
+			global::ArabWaha.Common.Droid.Resource.Attribute.multiChoiceItemLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.navigationContentDescription = global::ArabWaha.Employer.Droid.Resource.Attribute.navigationContentDescription;
+			global::ArabWaha.Common.Droid.Resource.Attribute.navigationIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.navigationIcon;
+			global::ArabWaha.Common.Droid.Resource.Attribute.navigationMode = global::ArabWaha.Employer.Droid.Resource.Attribute.navigationMode;
+			global::ArabWaha.Common.Droid.Resource.Attribute.overlapAnchor = global::ArabWaha.Employer.Droid.Resource.Attribute.overlapAnchor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.paddingEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.paddingEnd;
+			global::ArabWaha.Common.Droid.Resource.Attribute.paddingStart = global::ArabWaha.Employer.Droid.Resource.Attribute.paddingStart;
+			global::ArabWaha.Common.Droid.Resource.Attribute.panelBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.panelBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.panelMenuListTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.panelMenuListTheme;
+			global::ArabWaha.Common.Droid.Resource.Attribute.panelMenuListWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.panelMenuListWidth;
+			global::ArabWaha.Common.Droid.Resource.Attribute.passwordToggleContentDescription = global::ArabWaha.Employer.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::ArabWaha.Common.Droid.Resource.Attribute.passwordToggleDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::ArabWaha.Common.Droid.Resource.Attribute.passwordToggleEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::ArabWaha.Common.Droid.Resource.Attribute.passwordToggleTint = global::ArabWaha.Employer.Droid.Resource.Attribute.passwordToggleTint;
+			global::ArabWaha.Common.Droid.Resource.Attribute.passwordToggleTintMode = global::ArabWaha.Employer.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::ArabWaha.Common.Droid.Resource.Attribute.popupMenuStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.popupMenuStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.popupTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.popupTheme;
+			global::ArabWaha.Common.Droid.Resource.Attribute.popupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.popupWindowStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.preserveIconSpacing = global::ArabWaha.Employer.Droid.Resource.Attribute.preserveIconSpacing;
+			global::ArabWaha.Common.Droid.Resource.Attribute.pressedTranslationZ = global::ArabWaha.Employer.Droid.Resource.Attribute.pressedTranslationZ;
+			global::ArabWaha.Common.Droid.Resource.Attribute.progressBarPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.progressBarPadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.progressBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.progressBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.queryBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.queryBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.queryHint = global::ArabWaha.Employer.Droid.Resource.Attribute.queryHint;
+			global::ArabWaha.Common.Droid.Resource.Attribute.radioButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.radioButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.ratingBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.ratingBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.ratingBarStyleIndicator = global::ArabWaha.Employer.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::ArabWaha.Common.Droid.Resource.Attribute.ratingBarStyleSmall = global::ArabWaha.Employer.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::ArabWaha.Common.Droid.Resource.Attribute.reverseLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.reverseLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.rippleColor = global::ArabWaha.Employer.Droid.Resource.Attribute.rippleColor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.scrimAnimationDuration = global::ArabWaha.Employer.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::ArabWaha.Common.Droid.Resource.Attribute.scrimVisibleHeightTrigger = global::ArabWaha.Employer.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::ArabWaha.Common.Droid.Resource.Attribute.searchHintIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.searchHintIcon;
+			global::ArabWaha.Common.Droid.Resource.Attribute.searchIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.searchIcon;
+			global::ArabWaha.Common.Droid.Resource.Attribute.searchViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.searchViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.seekBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.seekBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.selectableItemBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.selectableItemBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::ArabWaha.Employer.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::ArabWaha.Common.Droid.Resource.Attribute.showAsAction = global::ArabWaha.Employer.Droid.Resource.Attribute.showAsAction;
+			global::ArabWaha.Common.Droid.Resource.Attribute.showDividers = global::ArabWaha.Employer.Droid.Resource.Attribute.showDividers;
+			global::ArabWaha.Common.Droid.Resource.Attribute.showText = global::ArabWaha.Employer.Droid.Resource.Attribute.showText;
+			global::ArabWaha.Common.Droid.Resource.Attribute.singleChoiceItemLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.spanCount = global::ArabWaha.Employer.Droid.Resource.Attribute.spanCount;
+			global::ArabWaha.Common.Droid.Resource.Attribute.spinBars = global::ArabWaha.Employer.Droid.Resource.Attribute.spinBars;
+			global::ArabWaha.Common.Droid.Resource.Attribute.spinnerDropDownItemStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.spinnerStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.spinnerStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.splitTrack = global::ArabWaha.Employer.Droid.Resource.Attribute.splitTrack;
+			global::ArabWaha.Common.Droid.Resource.Attribute.srcCompat = global::ArabWaha.Employer.Droid.Resource.Attribute.srcCompat;
+			global::ArabWaha.Common.Droid.Resource.Attribute.stackFromEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.stackFromEnd;
+			global::ArabWaha.Common.Droid.Resource.Attribute.state_above_anchor = global::ArabWaha.Employer.Droid.Resource.Attribute.state_above_anchor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.state_collapsed = global::ArabWaha.Employer.Droid.Resource.Attribute.state_collapsed;
+			global::ArabWaha.Common.Droid.Resource.Attribute.state_collapsible = global::ArabWaha.Employer.Droid.Resource.Attribute.state_collapsible;
+			global::ArabWaha.Common.Droid.Resource.Attribute.statusBarBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.statusBarBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.statusBarScrim = global::ArabWaha.Employer.Droid.Resource.Attribute.statusBarScrim;
+			global::ArabWaha.Common.Droid.Resource.Attribute.subMenuArrow = global::ArabWaha.Employer.Droid.Resource.Attribute.subMenuArrow;
+			global::ArabWaha.Common.Droid.Resource.Attribute.submitBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.submitBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.subtitle = global::ArabWaha.Employer.Droid.Resource.Attribute.subtitle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.subtitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.subtitleTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.subtitleTextColor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.subtitleTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.subtitleTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.suggestionRowLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.suggestionRowLayout;
+			global::ArabWaha.Common.Droid.Resource.Attribute.switchMinWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.switchMinWidth;
+			global::ArabWaha.Common.Droid.Resource.Attribute.switchPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.switchPadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.switchStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.switchStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.switchTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.switchTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.tabBackground;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabContentStart = global::ArabWaha.Employer.Droid.Resource.Attribute.tabContentStart;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabGravity = global::ArabWaha.Employer.Droid.Resource.Attribute.tabGravity;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabIndicatorColor = global::ArabWaha.Employer.Droid.Resource.Attribute.tabIndicatorColor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabIndicatorHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabMaxWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.tabMaxWidth;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabMinWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.tabMinWidth;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabMode = global::ArabWaha.Employer.Droid.Resource.Attribute.tabMode;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.tabPadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabPaddingBottom = global::ArabWaha.Employer.Droid.Resource.Attribute.tabPaddingBottom;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabPaddingEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.tabPaddingEnd;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabPaddingStart = global::ArabWaha.Employer.Droid.Resource.Attribute.tabPaddingStart;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabPaddingTop = global::ArabWaha.Employer.Droid.Resource.Attribute.tabPaddingTop;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabSelectedTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.tabTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tabTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.tabTextColor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textAllCaps = global::ArabWaha.Employer.Droid.Resource.Attribute.textAllCaps;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textAppearanceLargePopupMenu = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textAppearanceListItem = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceListItem;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textAppearanceListItemSmall = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textAppearancePopupMenuHeader = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textAppearanceSearchResultTitle = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textAppearanceSmallPopupMenu = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textColorAlertDialogListItem = global::ArabWaha.Employer.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textColorError = global::ArabWaha.Employer.Droid.Resource.Attribute.textColorError;
+			global::ArabWaha.Common.Droid.Resource.Attribute.textColorSearchUrl = global::ArabWaha.Employer.Droid.Resource.Attribute.textColorSearchUrl;
+			global::ArabWaha.Common.Droid.Resource.Attribute.theme = global::ArabWaha.Employer.Droid.Resource.Attribute.theme;
+			global::ArabWaha.Common.Droid.Resource.Attribute.thickness = global::ArabWaha.Employer.Droid.Resource.Attribute.thickness;
+			global::ArabWaha.Common.Droid.Resource.Attribute.thumbTextPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbTextPadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.thumbTint = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbTint;
+			global::ArabWaha.Common.Droid.Resource.Attribute.thumbTintMode = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbTintMode;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tickMark = global::ArabWaha.Employer.Droid.Resource.Attribute.tickMark;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tickMarkTint = global::ArabWaha.Employer.Droid.Resource.Attribute.tickMarkTint;
+			global::ArabWaha.Common.Droid.Resource.Attribute.tickMarkTintMode = global::ArabWaha.Employer.Droid.Resource.Attribute.tickMarkTintMode;
+			global::ArabWaha.Common.Droid.Resource.Attribute.title = global::ArabWaha.Employer.Droid.Resource.Attribute.title;
+			global::ArabWaha.Common.Droid.Resource.Attribute.titleEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.titleEnabled;
+			global::ArabWaha.Common.Droid.Resource.Attribute.titleMargin = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMargin;
+			global::ArabWaha.Common.Droid.Resource.Attribute.titleMarginBottom = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMarginBottom;
+			global::ArabWaha.Common.Droid.Resource.Attribute.titleMarginEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMarginEnd;
+			global::ArabWaha.Common.Droid.Resource.Attribute.titleMarginStart = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMarginStart;
+			global::ArabWaha.Common.Droid.Resource.Attribute.titleMarginTop = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMarginTop;
+			global::ArabWaha.Common.Droid.Resource.Attribute.titleMargins = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMargins;
+			global::ArabWaha.Common.Droid.Resource.Attribute.titleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.titleTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Attribute.titleTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.titleTextColor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.titleTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.titleTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.toolbarId = global::ArabWaha.Employer.Droid.Resource.Attribute.toolbarId;
+			global::ArabWaha.Common.Droid.Resource.Attribute.toolbarNavigationButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.toolbarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.toolbarStyle;
+			global::ArabWaha.Common.Droid.Resource.Attribute.track = global::ArabWaha.Employer.Droid.Resource.Attribute.track;
+			global::ArabWaha.Common.Droid.Resource.Attribute.trackTint = global::ArabWaha.Employer.Droid.Resource.Attribute.trackTint;
+			global::ArabWaha.Common.Droid.Resource.Attribute.trackTintMode = global::ArabWaha.Employer.Droid.Resource.Attribute.trackTintMode;
+			global::ArabWaha.Common.Droid.Resource.Attribute.useCompatPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.useCompatPadding;
+			global::ArabWaha.Common.Droid.Resource.Attribute.voiceIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.voiceIcon;
+			global::ArabWaha.Common.Droid.Resource.Attribute.windowActionBar = global::ArabWaha.Employer.Droid.Resource.Attribute.windowActionBar;
+			global::ArabWaha.Common.Droid.Resource.Attribute.windowActionBarOverlay = global::ArabWaha.Employer.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::ArabWaha.Common.Droid.Resource.Attribute.windowActionModeOverlay = global::ArabWaha.Employer.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::ArabWaha.Common.Droid.Resource.Attribute.windowFixedHeightMajor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.windowFixedHeightMinor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.windowFixedWidthMajor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.windowFixedWidthMinor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.windowMinWidthMajor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.windowMinWidthMinor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::ArabWaha.Common.Droid.Resource.Attribute.windowNoTitle = global::ArabWaha.Employer.Droid.Resource.Attribute.windowNoTitle;
+			global::ArabWaha.Common.Droid.Resource.Boolean.abc_action_bar_embed_tabs = global::ArabWaha.Employer.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::ArabWaha.Common.Droid.Resource.Boolean.abc_allow_stacked_button_bar = global::ArabWaha.Employer.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::ArabWaha.Common.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::ArabWaha.Employer.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::ArabWaha.Common.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::ArabWaha.Employer.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::ArabWaha.Common.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::ArabWaha.Employer.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_background_cache_hint_selector_material_light = global::ArabWaha.Employer.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_btn_colored_borderless_text_material = global::ArabWaha.Employer.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_color_highlight_material = global::ArabWaha.Employer.Droid.Resource.Color.abc_color_highlight_material;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_input_method_navigation_guard = global::ArabWaha.Employer.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::ArabWaha.Employer.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_primary_text_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_primary_text_material_light = global::ArabWaha.Employer.Droid.Resource.Color.abc_primary_text_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_search_url_text = global::ArabWaha.Employer.Droid.Resource.Color.abc_search_url_text;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_search_url_text_normal = global::ArabWaha.Employer.Droid.Resource.Color.abc_search_url_text_normal;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_search_url_text_pressed = global::ArabWaha.Employer.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_search_url_text_selected = global::ArabWaha.Employer.Droid.Resource.Color.abc_search_url_text_selected;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_secondary_text_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_secondary_text_material_light = global::ArabWaha.Employer.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_tint_btn_checkable = global::ArabWaha.Employer.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_tint_default = global::ArabWaha.Employer.Droid.Resource.Color.abc_tint_default;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_tint_edittext = global::ArabWaha.Employer.Droid.Resource.Color.abc_tint_edittext;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_tint_seek_thumb = global::ArabWaha.Employer.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_tint_spinner = global::ArabWaha.Employer.Droid.Resource.Color.abc_tint_spinner;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_tint_switch_thumb = global::ArabWaha.Employer.Droid.Resource.Color.abc_tint_switch_thumb;
+			global::ArabWaha.Common.Droid.Resource.Color.abc_tint_switch_track = global::ArabWaha.Employer.Droid.Resource.Color.abc_tint_switch_track;
+			global::ArabWaha.Common.Droid.Resource.Color.accent_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.accent_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.accent_material_light = global::ArabWaha.Employer.Droid.Resource.Color.accent_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.background_floating_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.background_floating_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.background_floating_material_light = global::ArabWaha.Employer.Droid.Resource.Color.background_floating_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.background_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.background_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.background_material_light = global::ArabWaha.Employer.Droid.Resource.Color.background_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.bright_foreground_disabled_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.bright_foreground_disabled_material_light = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.bright_foreground_inverse_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.bright_foreground_inverse_material_light = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.bright_foreground_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.bright_foreground_material_light = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.button_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.button_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.button_material_light = global::ArabWaha.Employer.Droid.Resource.Color.button_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.cardview_dark_background = global::ArabWaha.Employer.Droid.Resource.Color.cardview_dark_background;
+			global::ArabWaha.Common.Droid.Resource.Color.cardview_light_background = global::ArabWaha.Employer.Droid.Resource.Color.cardview_light_background;
+			global::ArabWaha.Common.Droid.Resource.Color.cardview_shadow_end_color = global::ArabWaha.Employer.Droid.Resource.Color.cardview_shadow_end_color;
+			global::ArabWaha.Common.Droid.Resource.Color.cardview_shadow_start_color = global::ArabWaha.Employer.Droid.Resource.Color.cardview_shadow_start_color;
+			global::ArabWaha.Common.Droid.Resource.Color.design_error = global::ArabWaha.Employer.Droid.Resource.Color.design_error;
+			global::ArabWaha.Common.Droid.Resource.Color.design_fab_shadow_end_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::ArabWaha.Common.Droid.Resource.Color.design_fab_shadow_mid_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::ArabWaha.Common.Droid.Resource.Color.design_fab_shadow_start_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::ArabWaha.Common.Droid.Resource.Color.design_fab_stroke_end_inner_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::ArabWaha.Common.Droid.Resource.Color.design_fab_stroke_end_outer_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::ArabWaha.Common.Droid.Resource.Color.design_fab_stroke_top_inner_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::ArabWaha.Common.Droid.Resource.Color.design_fab_stroke_top_outer_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::ArabWaha.Common.Droid.Resource.Color.design_snackbar_background_color = global::ArabWaha.Employer.Droid.Resource.Color.design_snackbar_background_color;
+			global::ArabWaha.Common.Droid.Resource.Color.design_textinput_error_color_dark = global::ArabWaha.Employer.Droid.Resource.Color.design_textinput_error_color_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.design_textinput_error_color_light = global::ArabWaha.Employer.Droid.Resource.Color.design_textinput_error_color_light;
+			global::ArabWaha.Common.Droid.Resource.Color.design_tint_password_toggle = global::ArabWaha.Employer.Droid.Resource.Color.design_tint_password_toggle;
+			global::ArabWaha.Common.Droid.Resource.Color.dim_foreground_disabled_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.dim_foreground_disabled_material_light = global::ArabWaha.Employer.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.dim_foreground_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.dim_foreground_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.dim_foreground_material_light = global::ArabWaha.Employer.Droid.Resource.Color.dim_foreground_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.foreground_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.foreground_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.foreground_material_light = global::ArabWaha.Employer.Droid.Resource.Color.foreground_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.highlighted_text_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.highlighted_text_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.highlighted_text_material_light = global::ArabWaha.Employer.Droid.Resource.Color.highlighted_text_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.hint_foreground_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.hint_foreground_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.hint_foreground_material_light = global::ArabWaha.Employer.Droid.Resource.Color.hint_foreground_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.material_blue_grey_800 = global::ArabWaha.Employer.Droid.Resource.Color.material_blue_grey_800;
+			global::ArabWaha.Common.Droid.Resource.Color.material_blue_grey_900 = global::ArabWaha.Employer.Droid.Resource.Color.material_blue_grey_900;
+			global::ArabWaha.Common.Droid.Resource.Color.material_blue_grey_950 = global::ArabWaha.Employer.Droid.Resource.Color.material_blue_grey_950;
+			global::ArabWaha.Common.Droid.Resource.Color.material_deep_teal_200 = global::ArabWaha.Employer.Droid.Resource.Color.material_deep_teal_200;
+			global::ArabWaha.Common.Droid.Resource.Color.material_deep_teal_500 = global::ArabWaha.Employer.Droid.Resource.Color.material_deep_teal_500;
+			global::ArabWaha.Common.Droid.Resource.Color.material_grey_100 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_100;
+			global::ArabWaha.Common.Droid.Resource.Color.material_grey_300 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_300;
+			global::ArabWaha.Common.Droid.Resource.Color.material_grey_50 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_50;
+			global::ArabWaha.Common.Droid.Resource.Color.material_grey_600 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_600;
+			global::ArabWaha.Common.Droid.Resource.Color.material_grey_800 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_800;
+			global::ArabWaha.Common.Droid.Resource.Color.material_grey_850 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_850;
+			global::ArabWaha.Common.Droid.Resource.Color.material_grey_900 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_900;
+			global::ArabWaha.Common.Droid.Resource.Color.primary_dark_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.primary_dark_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.primary_dark_material_light = global::ArabWaha.Employer.Droid.Resource.Color.primary_dark_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.primary_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.primary_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.primary_material_light = global::ArabWaha.Employer.Droid.Resource.Color.primary_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.primary_text_default_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.primary_text_default_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.primary_text_default_material_light = global::ArabWaha.Employer.Droid.Resource.Color.primary_text_default_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.primary_text_disabled_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.primary_text_disabled_material_light = global::ArabWaha.Employer.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.ripple_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.ripple_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.ripple_material_light = global::ArabWaha.Employer.Droid.Resource.Color.ripple_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.secondary_text_default_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.secondary_text_default_material_light = global::ArabWaha.Employer.Droid.Resource.Color.secondary_text_default_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.secondary_text_disabled_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.secondary_text_disabled_material_light = global::ArabWaha.Employer.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.switch_thumb_disabled_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.switch_thumb_disabled_material_light = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.switch_thumb_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.switch_thumb_material_light = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_material_light;
+			global::ArabWaha.Common.Droid.Resource.Color.switch_thumb_normal_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Color.switch_thumb_normal_material_light = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_content_inset_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_default_height_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_elevation_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_progress_bar_size = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_stacked_max_height = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_button_min_height_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_button_min_width_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_button_inset_horizontal_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_button_inset_vertical_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_button_padding_horizontal_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_button_padding_vertical_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_config_prefDialogWidth = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_control_corner_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_control_corner_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_control_inset_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_control_inset_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_control_padding_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_control_padding_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dialog_fixed_height_major = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dialog_fixed_height_minor = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dialog_fixed_width_major = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dialog_fixed_width_minor = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dialog_list_padding_vertical_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_list_padding_vertical_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dialog_min_width_major = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dialog_min_width_minor = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dialog_padding_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dialog_padding_top_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_disabled_alpha_material_dark = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_disabled_alpha_material_light = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dropdownitem_icon_width = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_edit_text_inset_top_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_floating_window_z = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_floating_window_z;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_panel_menu_list_width = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_progress_bar_height_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_search_view_preferred_height = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_search_view_preferred_width = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_seekbar_track_background_height_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_select_dialog_padding_start_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_switch_padding = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_switch_padding;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_body_1_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_body_2_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_button_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_caption_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_display_1_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_display_2_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_display_3_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_display_4_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_headline_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_large_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_medium_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_menu_header_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_menu_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_small_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_subhead_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_title_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::ArabWaha.Common.Droid.Resource.Dimension.abc_text_size_title_material_toolbar = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::ArabWaha.Common.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::ArabWaha.Employer.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::ArabWaha.Common.Droid.Resource.Dimension.cardview_default_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.cardview_default_elevation;
+			global::ArabWaha.Common.Droid.Resource.Dimension.cardview_default_radius = global::ArabWaha.Employer.Droid.Resource.Dimension.cardview_default_radius;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_appbar_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.design_appbar_elevation;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_bottom_navigation_active_text_size = global::ArabWaha.Employer.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_bottom_navigation_height = global::ArabWaha.Employer.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_bottom_navigation_item_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_bottom_navigation_margin = global::ArabWaha.Employer.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_bottom_navigation_text_size = global::ArabWaha.Employer.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min = global::ArabWaha.Employer.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_fab_border_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_border_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_fab_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_elevation;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_fab_image_size = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_image_size;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_fab_size_mini = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_size_mini;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_fab_size_normal = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_size_normal;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_fab_translation_z_pressed = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_navigation_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_elevation;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_navigation_icon_padding = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_navigation_icon_size = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_navigation_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_max_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_navigation_padding_bottom = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_navigation_separator_vertical_padding = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_snackbar_action_inline_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_snackbar_background_corner_radius = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_snackbar_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_snackbar_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_snackbar_min_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_snackbar_padding_horizontal = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_snackbar_padding_vertical = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_snackbar_text_size = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_tab_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_tab_max_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_tab_scrollable_min_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_tab_text_size = global::ArabWaha.Employer.Droid.Resource.Dimension.design_tab_text_size;
+			global::ArabWaha.Common.Droid.Resource.Dimension.design_tab_text_size_2line = global::ArabWaha.Employer.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::ArabWaha.Common.Droid.Resource.Dimension.disabled_alpha_material_dark = global::ArabWaha.Employer.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Dimension.disabled_alpha_material_light = global::ArabWaha.Employer.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::ArabWaha.Common.Droid.Resource.Dimension.highlight_alpha_material_colored = global::ArabWaha.Employer.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::ArabWaha.Common.Droid.Resource.Dimension.highlight_alpha_material_dark = global::ArabWaha.Employer.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::ArabWaha.Common.Droid.Resource.Dimension.highlight_alpha_material_light = global::ArabWaha.Employer.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::ArabWaha.Common.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::ArabWaha.Employer.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::ArabWaha.Common.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::ArabWaha.Employer.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::ArabWaha.Common.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::ArabWaha.Employer.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::ArabWaha.Common.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::ArabWaha.Common.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::ArabWaha.Common.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::ArabWaha.Common.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::ArabWaha.Common.Droid.Resource.Dimension.mr_dialog_fixed_width_major = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::ArabWaha.Common.Droid.Resource.Dimension.mr_dialog_fixed_width_minor = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::ArabWaha.Common.Droid.Resource.Dimension.notification_large_icon_height = global::ArabWaha.Employer.Droid.Resource.Dimension.notification_large_icon_height;
+			global::ArabWaha.Common.Droid.Resource.Dimension.notification_large_icon_width = global::ArabWaha.Employer.Droid.Resource.Dimension.notification_large_icon_width;
+			global::ArabWaha.Common.Droid.Resource.Dimension.notification_subtext_size = global::ArabWaha.Employer.Droid.Resource.Dimension.notification_subtext_size;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_action_bar_item_background_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_borderless_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_check_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_check_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_colored_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_default_mtrl_shape = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_radio_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_cab_background_internal_bg = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_cab_background_top_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_control_background_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_control_background_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_dialog_material_background = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_edit_text_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_edit_text_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_ab_back_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_clear_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_go_search_api_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_menu_overflow_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_search_api_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_star_black_16dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_star_black_36dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_star_black_48dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_star_half_black_16dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_star_half_black_36dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_star_half_black_48dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ic_voice_search_api_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_item_background_holo_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_item_background_holo_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_focused_holo = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_longpressed_holo = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_pressed_holo_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_pressed_holo_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_selector_holo_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_list_selector_holo_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_popup_background_mtrl_mult = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ratingbar_indicator_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ratingbar_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_ratingbar_small_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_seekbar_thumb_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_seekbar_tick_mark_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_seekbar_track_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_spinner_textfield_background_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_switch_thumb_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_tab_indicator_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_text_cursor_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_textfield_search_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::ArabWaha.Common.Droid.Resource.Drawable.abc_vector_test = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_vector_test;
+			global::ArabWaha.Common.Droid.Resource.Drawable.design_fab_background = global::ArabWaha.Employer.Droid.Resource.Drawable.design_fab_background;
+			global::ArabWaha.Common.Droid.Resource.Drawable.design_ic_visibility = global::ArabWaha.Employer.Droid.Resource.Drawable.design_ic_visibility;
+			global::ArabWaha.Common.Droid.Resource.Drawable.design_snackbar_background = global::ArabWaha.Employer.Droid.Resource.Drawable.design_snackbar_background;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_audiotrack_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_audiotrack_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_audiotrack_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_dialog_close_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_dialog_close_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_dialog_close_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_dialog_close_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_00 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_00;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_01 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_01;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_02 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_02;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_03 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_03;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_04 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_04;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_05 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_05;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_06 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_06;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_07 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_07;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_08 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_08;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_09 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_09;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_10 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_10;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_11 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_11;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_12 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_12;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_13 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_13;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_14 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_14;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_collapse_15 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_collapse_15;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_00 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_00;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_01 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_01;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_02 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_02;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_03 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_03;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_04 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_04;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_05 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_05;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_06 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_06;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_07 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_07;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_08 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_08;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_09 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_09;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_10 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_10;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_11 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_11;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_12 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_12;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_13 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_13;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_14 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_14;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_group_expand_15 = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_group_expand_15;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_media_pause_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_media_pause_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_media_pause_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_media_pause_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_media_play_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_media_play_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_media_play_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_media_play_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_00_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_00_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_01_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_01_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_02_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_02_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_03_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_03_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_04_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_04_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_05_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_05_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_06_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_06_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_07_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_07_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_08_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_08_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_09_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_09_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_10_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_10_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_11_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_11_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_12_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_12_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_13_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_13_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_14_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_14_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_15_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_15_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_16_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_16_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_17_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_17_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_18_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_18_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_19_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_19_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_20_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_20_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_21_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_21_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_22_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connected_22_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_00_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_01_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_02_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_03_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_04_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_05_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_06_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_07_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_08_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_09_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_10_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_11_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_12_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_13_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_14_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_15_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_16_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_17_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_18_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_19_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_20_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_21_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_connecting_22_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_disabled_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_disabled_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_disabled_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_disconnected_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_disconnected_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_mr_button_grey = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_vol_type_speaker_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_vol_type_speaker_group_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_vol_type_speaker_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_vol_type_speaker_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_vol_type_tv_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_vol_type_tv_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.ic_vol_type_tv_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_vol_type_tv_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_button_connected_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_button_connected_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_button_connected_light = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_button_connected_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_button_connecting_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_button_connecting_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_button_connecting_light = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_button_connecting_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_button_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_button_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_button_light = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_button_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_dialog_close_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_dialog_close_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_dialog_close_light = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_dialog_close_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_dialog_material_background_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_dialog_material_background_light = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_group_collapse = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_group_collapse;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_group_expand = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_group_expand;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_media_pause_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_media_pause_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_media_pause_light = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_media_pause_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_media_play_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_media_play_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_media_play_light = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_media_play_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::ArabWaha.Common.Droid.Resource.Drawable.mr_vol_type_audiotrack_light = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::ArabWaha.Common.Droid.Resource.Drawable.navigation_empty_icon = global::ArabWaha.Employer.Droid.Resource.Drawable.navigation_empty_icon;
+			global::ArabWaha.Common.Droid.Resource.Drawable.notification_template_icon_bg = global::ArabWaha.Employer.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::ArabWaha.Common.Droid.Resource.Id.action0 = global::ArabWaha.Employer.Droid.Resource.Id.action0;
+			global::ArabWaha.Common.Droid.Resource.Id.action_bar = global::ArabWaha.Employer.Droid.Resource.Id.action_bar;
+			global::ArabWaha.Common.Droid.Resource.Id.action_bar_activity_content = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_activity_content;
+			global::ArabWaha.Common.Droid.Resource.Id.action_bar_container = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_container;
+			global::ArabWaha.Common.Droid.Resource.Id.action_bar_root = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_root;
+			global::ArabWaha.Common.Droid.Resource.Id.action_bar_spinner = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_spinner;
+			global::ArabWaha.Common.Droid.Resource.Id.action_bar_subtitle = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_subtitle;
+			global::ArabWaha.Common.Droid.Resource.Id.action_bar_title = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_title;
+			global::ArabWaha.Common.Droid.Resource.Id.action_context_bar = global::ArabWaha.Employer.Droid.Resource.Id.action_context_bar;
+			global::ArabWaha.Common.Droid.Resource.Id.action_divider = global::ArabWaha.Employer.Droid.Resource.Id.action_divider;
+			global::ArabWaha.Common.Droid.Resource.Id.action_menu_divider = global::ArabWaha.Employer.Droid.Resource.Id.action_menu_divider;
+			global::ArabWaha.Common.Droid.Resource.Id.action_menu_presenter = global::ArabWaha.Employer.Droid.Resource.Id.action_menu_presenter;
+			global::ArabWaha.Common.Droid.Resource.Id.action_mode_bar = global::ArabWaha.Employer.Droid.Resource.Id.action_mode_bar;
+			global::ArabWaha.Common.Droid.Resource.Id.action_mode_bar_stub = global::ArabWaha.Employer.Droid.Resource.Id.action_mode_bar_stub;
+			global::ArabWaha.Common.Droid.Resource.Id.action_mode_close_button = global::ArabWaha.Employer.Droid.Resource.Id.action_mode_close_button;
+			global::ArabWaha.Common.Droid.Resource.Id.activity_chooser_view_content = global::ArabWaha.Employer.Droid.Resource.Id.activity_chooser_view_content;
+			global::ArabWaha.Common.Droid.Resource.Id.add = global::ArabWaha.Employer.Droid.Resource.Id.add;
+			global::ArabWaha.Common.Droid.Resource.Id.alertTitle = global::ArabWaha.Employer.Droid.Resource.Id.alertTitle;
+			global::ArabWaha.Common.Droid.Resource.Id.all = global::ArabWaha.Employer.Droid.Resource.Id.all;
+			global::ArabWaha.Common.Droid.Resource.Id.always = global::ArabWaha.Employer.Droid.Resource.Id.always;
+			global::ArabWaha.Common.Droid.Resource.Id.auto = global::ArabWaha.Employer.Droid.Resource.Id.auto;
+			global::ArabWaha.Common.Droid.Resource.Id.beginning = global::ArabWaha.Employer.Droid.Resource.Id.beginning;
+			global::ArabWaha.Common.Droid.Resource.Id.bottom = global::ArabWaha.Employer.Droid.Resource.Id.bottom;
+			global::ArabWaha.Common.Droid.Resource.Id.buttonPanel = global::ArabWaha.Employer.Droid.Resource.Id.buttonPanel;
+			global::ArabWaha.Common.Droid.Resource.Id.cancel_action = global::ArabWaha.Employer.Droid.Resource.Id.cancel_action;
+			global::ArabWaha.Common.Droid.Resource.Id.center = global::ArabWaha.Employer.Droid.Resource.Id.center;
+			global::ArabWaha.Common.Droid.Resource.Id.center_horizontal = global::ArabWaha.Employer.Droid.Resource.Id.center_horizontal;
+			global::ArabWaha.Common.Droid.Resource.Id.center_vertical = global::ArabWaha.Employer.Droid.Resource.Id.center_vertical;
+			global::ArabWaha.Common.Droid.Resource.Id.checkbox = global::ArabWaha.Employer.Droid.Resource.Id.checkbox;
+			global::ArabWaha.Common.Droid.Resource.Id.chronometer = global::ArabWaha.Employer.Droid.Resource.Id.chronometer;
+			global::ArabWaha.Common.Droid.Resource.Id.clip_horizontal = global::ArabWaha.Employer.Droid.Resource.Id.clip_horizontal;
+			global::ArabWaha.Common.Droid.Resource.Id.clip_vertical = global::ArabWaha.Employer.Droid.Resource.Id.clip_vertical;
+			global::ArabWaha.Common.Droid.Resource.Id.collapseActionView = global::ArabWaha.Employer.Droid.Resource.Id.collapseActionView;
+			global::ArabWaha.Common.Droid.Resource.Id.contentPanel = global::ArabWaha.Employer.Droid.Resource.Id.contentPanel;
+			global::ArabWaha.Common.Droid.Resource.Id.custom = global::ArabWaha.Employer.Droid.Resource.Id.custom;
+			global::ArabWaha.Common.Droid.Resource.Id.customPanel = global::ArabWaha.Employer.Droid.Resource.Id.customPanel;
+			global::ArabWaha.Common.Droid.Resource.Id.decor_content_parent = global::ArabWaha.Employer.Droid.Resource.Id.decor_content_parent;
+			global::ArabWaha.Common.Droid.Resource.Id.default_activity_button = global::ArabWaha.Employer.Droid.Resource.Id.default_activity_button;
+			global::ArabWaha.Common.Droid.Resource.Id.design_bottom_sheet = global::ArabWaha.Employer.Droid.Resource.Id.design_bottom_sheet;
+			global::ArabWaha.Common.Droid.Resource.Id.design_menu_item_action_area = global::ArabWaha.Employer.Droid.Resource.Id.design_menu_item_action_area;
+			global::ArabWaha.Common.Droid.Resource.Id.design_menu_item_action_area_stub = global::ArabWaha.Employer.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::ArabWaha.Common.Droid.Resource.Id.design_menu_item_text = global::ArabWaha.Employer.Droid.Resource.Id.design_menu_item_text;
+			global::ArabWaha.Common.Droid.Resource.Id.design_navigation_view = global::ArabWaha.Employer.Droid.Resource.Id.design_navigation_view;
+			global::ArabWaha.Common.Droid.Resource.Id.disableHome = global::ArabWaha.Employer.Droid.Resource.Id.disableHome;
+			global::ArabWaha.Common.Droid.Resource.Id.edit_query = global::ArabWaha.Employer.Droid.Resource.Id.edit_query;
+			global::ArabWaha.Common.Droid.Resource.Id.end = global::ArabWaha.Employer.Droid.Resource.Id.end;
+			global::ArabWaha.Common.Droid.Resource.Id.end_padder = global::ArabWaha.Employer.Droid.Resource.Id.end_padder;
+			global::ArabWaha.Common.Droid.Resource.Id.enterAlways = global::ArabWaha.Employer.Droid.Resource.Id.enterAlways;
+			global::ArabWaha.Common.Droid.Resource.Id.enterAlwaysCollapsed = global::ArabWaha.Employer.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::ArabWaha.Common.Droid.Resource.Id.exitUntilCollapsed = global::ArabWaha.Employer.Droid.Resource.Id.exitUntilCollapsed;
+			global::ArabWaha.Common.Droid.Resource.Id.expand_activities_button = global::ArabWaha.Employer.Droid.Resource.Id.expand_activities_button;
+			global::ArabWaha.Common.Droid.Resource.Id.expanded_menu = global::ArabWaha.Employer.Droid.Resource.Id.expanded_menu;
+			global::ArabWaha.Common.Droid.Resource.Id.fill = global::ArabWaha.Employer.Droid.Resource.Id.fill;
+			global::ArabWaha.Common.Droid.Resource.Id.fill_horizontal = global::ArabWaha.Employer.Droid.Resource.Id.fill_horizontal;
+			global::ArabWaha.Common.Droid.Resource.Id.fill_vertical = global::ArabWaha.Employer.Droid.Resource.Id.fill_vertical;
+			global::ArabWaha.Common.Droid.Resource.Id.@fixed = global::ArabWaha.Employer.Droid.Resource.Id.@fixed;
+			global::ArabWaha.Common.Droid.Resource.Id.home = global::ArabWaha.Employer.Droid.Resource.Id.home;
+			global::ArabWaha.Common.Droid.Resource.Id.homeAsUp = global::ArabWaha.Employer.Droid.Resource.Id.homeAsUp;
+			global::ArabWaha.Common.Droid.Resource.Id.icon = global::ArabWaha.Employer.Droid.Resource.Id.icon;
+			global::ArabWaha.Common.Droid.Resource.Id.ifRoom = global::ArabWaha.Employer.Droid.Resource.Id.ifRoom;
+			global::ArabWaha.Common.Droid.Resource.Id.image = global::ArabWaha.Employer.Droid.Resource.Id.image;
+			global::ArabWaha.Common.Droid.Resource.Id.info = global::ArabWaha.Employer.Droid.Resource.Id.info;
+			global::ArabWaha.Common.Droid.Resource.Id.item_touch_helper_previous_elevation = global::ArabWaha.Employer.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::ArabWaha.Common.Droid.Resource.Id.left = global::ArabWaha.Employer.Droid.Resource.Id.left;
+			global::ArabWaha.Common.Droid.Resource.Id.line1 = global::ArabWaha.Employer.Droid.Resource.Id.line1;
+			global::ArabWaha.Common.Droid.Resource.Id.line3 = global::ArabWaha.Employer.Droid.Resource.Id.line3;
+			global::ArabWaha.Common.Droid.Resource.Id.listMode = global::ArabWaha.Employer.Droid.Resource.Id.listMode;
+			global::ArabWaha.Common.Droid.Resource.Id.list_item = global::ArabWaha.Employer.Droid.Resource.Id.list_item;
+			global::ArabWaha.Common.Droid.Resource.Id.media_actions = global::ArabWaha.Employer.Droid.Resource.Id.media_actions;
+			global::ArabWaha.Common.Droid.Resource.Id.middle = global::ArabWaha.Employer.Droid.Resource.Id.middle;
+			global::ArabWaha.Common.Droid.Resource.Id.mini = global::ArabWaha.Employer.Droid.Resource.Id.mini;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_art = global::ArabWaha.Employer.Droid.Resource.Id.mr_art;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_chooser_list = global::ArabWaha.Employer.Droid.Resource.Id.mr_chooser_list;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_chooser_route_desc = global::ArabWaha.Employer.Droid.Resource.Id.mr_chooser_route_desc;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_chooser_route_icon = global::ArabWaha.Employer.Droid.Resource.Id.mr_chooser_route_icon;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_chooser_route_name = global::ArabWaha.Employer.Droid.Resource.Id.mr_chooser_route_name;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_close = global::ArabWaha.Employer.Droid.Resource.Id.mr_close;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_control_divider = global::ArabWaha.Employer.Droid.Resource.Id.mr_control_divider;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_control_play_pause = global::ArabWaha.Employer.Droid.Resource.Id.mr_control_play_pause;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_control_subtitle = global::ArabWaha.Employer.Droid.Resource.Id.mr_control_subtitle;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_control_title = global::ArabWaha.Employer.Droid.Resource.Id.mr_control_title;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_control_title_container = global::ArabWaha.Employer.Droid.Resource.Id.mr_control_title_container;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_custom_control = global::ArabWaha.Employer.Droid.Resource.Id.mr_custom_control;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_default_control = global::ArabWaha.Employer.Droid.Resource.Id.mr_default_control;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_dialog_area = global::ArabWaha.Employer.Droid.Resource.Id.mr_dialog_area;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_expandable_area = global::ArabWaha.Employer.Droid.Resource.Id.mr_expandable_area;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_group_expand_collapse = global::ArabWaha.Employer.Droid.Resource.Id.mr_group_expand_collapse;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_media_main_control = global::ArabWaha.Employer.Droid.Resource.Id.mr_media_main_control;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_name = global::ArabWaha.Employer.Droid.Resource.Id.mr_name;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_playback_control = global::ArabWaha.Employer.Droid.Resource.Id.mr_playback_control;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_title_bar = global::ArabWaha.Employer.Droid.Resource.Id.mr_title_bar;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_volume_control = global::ArabWaha.Employer.Droid.Resource.Id.mr_volume_control;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_volume_group_list = global::ArabWaha.Employer.Droid.Resource.Id.mr_volume_group_list;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_volume_item_icon = global::ArabWaha.Employer.Droid.Resource.Id.mr_volume_item_icon;
+			global::ArabWaha.Common.Droid.Resource.Id.mr_volume_slider = global::ArabWaha.Employer.Droid.Resource.Id.mr_volume_slider;
+			global::ArabWaha.Common.Droid.Resource.Id.multiply = global::ArabWaha.Employer.Droid.Resource.Id.multiply;
+			global::ArabWaha.Common.Droid.Resource.Id.navigation_header_container = global::ArabWaha.Employer.Droid.Resource.Id.navigation_header_container;
+			global::ArabWaha.Common.Droid.Resource.Id.never = global::ArabWaha.Employer.Droid.Resource.Id.never;
+			global::ArabWaha.Common.Droid.Resource.Id.none = global::ArabWaha.Employer.Droid.Resource.Id.none;
+			global::ArabWaha.Common.Droid.Resource.Id.normal = global::ArabWaha.Employer.Droid.Resource.Id.normal;
+			global::ArabWaha.Common.Droid.Resource.Id.parallax = global::ArabWaha.Employer.Droid.Resource.Id.parallax;
+			global::ArabWaha.Common.Droid.Resource.Id.parentPanel = global::ArabWaha.Employer.Droid.Resource.Id.parentPanel;
+			global::ArabWaha.Common.Droid.Resource.Id.pin = global::ArabWaha.Employer.Droid.Resource.Id.pin;
+			global::ArabWaha.Common.Droid.Resource.Id.progress_circular = global::ArabWaha.Employer.Droid.Resource.Id.progress_circular;
+			global::ArabWaha.Common.Droid.Resource.Id.progress_horizontal = global::ArabWaha.Employer.Droid.Resource.Id.progress_horizontal;
+			global::ArabWaha.Common.Droid.Resource.Id.radio = global::ArabWaha.Employer.Droid.Resource.Id.radio;
+			global::ArabWaha.Common.Droid.Resource.Id.right = global::ArabWaha.Employer.Droid.Resource.Id.right;
+			global::ArabWaha.Common.Droid.Resource.Id.screen = global::ArabWaha.Employer.Droid.Resource.Id.screen;
+			global::ArabWaha.Common.Droid.Resource.Id.scroll = global::ArabWaha.Employer.Droid.Resource.Id.scroll;
+			global::ArabWaha.Common.Droid.Resource.Id.scrollIndicatorDown = global::ArabWaha.Employer.Droid.Resource.Id.scrollIndicatorDown;
+			global::ArabWaha.Common.Droid.Resource.Id.scrollIndicatorUp = global::ArabWaha.Employer.Droid.Resource.Id.scrollIndicatorUp;
+			global::ArabWaha.Common.Droid.Resource.Id.scrollView = global::ArabWaha.Employer.Droid.Resource.Id.scrollView;
+			global::ArabWaha.Common.Droid.Resource.Id.scrollable = global::ArabWaha.Employer.Droid.Resource.Id.scrollable;
+			global::ArabWaha.Common.Droid.Resource.Id.search_badge = global::ArabWaha.Employer.Droid.Resource.Id.search_badge;
+			global::ArabWaha.Common.Droid.Resource.Id.search_bar = global::ArabWaha.Employer.Droid.Resource.Id.search_bar;
+			global::ArabWaha.Common.Droid.Resource.Id.search_button = global::ArabWaha.Employer.Droid.Resource.Id.search_button;
+			global::ArabWaha.Common.Droid.Resource.Id.search_close_btn = global::ArabWaha.Employer.Droid.Resource.Id.search_close_btn;
+			global::ArabWaha.Common.Droid.Resource.Id.search_edit_frame = global::ArabWaha.Employer.Droid.Resource.Id.search_edit_frame;
+			global::ArabWaha.Common.Droid.Resource.Id.search_go_btn = global::ArabWaha.Employer.Droid.Resource.Id.search_go_btn;
+			global::ArabWaha.Common.Droid.Resource.Id.search_mag_icon = global::ArabWaha.Employer.Droid.Resource.Id.search_mag_icon;
+			global::ArabWaha.Common.Droid.Resource.Id.search_plate = global::ArabWaha.Employer.Droid.Resource.Id.search_plate;
+			global::ArabWaha.Common.Droid.Resource.Id.search_src_text = global::ArabWaha.Employer.Droid.Resource.Id.search_src_text;
+			global::ArabWaha.Common.Droid.Resource.Id.search_voice_btn = global::ArabWaha.Employer.Droid.Resource.Id.search_voice_btn;
+			global::ArabWaha.Common.Droid.Resource.Id.select_dialog_listview = global::ArabWaha.Employer.Droid.Resource.Id.select_dialog_listview;
+			global::ArabWaha.Common.Droid.Resource.Id.shortcut = global::ArabWaha.Employer.Droid.Resource.Id.shortcut;
+			global::ArabWaha.Common.Droid.Resource.Id.showCustom = global::ArabWaha.Employer.Droid.Resource.Id.showCustom;
+			global::ArabWaha.Common.Droid.Resource.Id.showHome = global::ArabWaha.Employer.Droid.Resource.Id.showHome;
+			global::ArabWaha.Common.Droid.Resource.Id.showTitle = global::ArabWaha.Employer.Droid.Resource.Id.showTitle;
+			global::ArabWaha.Common.Droid.Resource.Id.snackbar_action = global::ArabWaha.Employer.Droid.Resource.Id.snackbar_action;
+			global::ArabWaha.Common.Droid.Resource.Id.snackbar_text = global::ArabWaha.Employer.Droid.Resource.Id.snackbar_text;
+			global::ArabWaha.Common.Droid.Resource.Id.snap = global::ArabWaha.Employer.Droid.Resource.Id.snap;
+			global::ArabWaha.Common.Droid.Resource.Id.spacer = global::ArabWaha.Employer.Droid.Resource.Id.spacer;
+			global::ArabWaha.Common.Droid.Resource.Id.split_action_bar = global::ArabWaha.Employer.Droid.Resource.Id.split_action_bar;
+			global::ArabWaha.Common.Droid.Resource.Id.src_atop = global::ArabWaha.Employer.Droid.Resource.Id.src_atop;
+			global::ArabWaha.Common.Droid.Resource.Id.src_in = global::ArabWaha.Employer.Droid.Resource.Id.src_in;
+			global::ArabWaha.Common.Droid.Resource.Id.src_over = global::ArabWaha.Employer.Droid.Resource.Id.src_over;
+			global::ArabWaha.Common.Droid.Resource.Id.start = global::ArabWaha.Employer.Droid.Resource.Id.start;
+			global::ArabWaha.Common.Droid.Resource.Id.status_bar_latest_event_content = global::ArabWaha.Employer.Droid.Resource.Id.status_bar_latest_event_content;
+			global::ArabWaha.Common.Droid.Resource.Id.submenuarrow = global::ArabWaha.Employer.Droid.Resource.Id.submenuarrow;
+			global::ArabWaha.Common.Droid.Resource.Id.submit_area = global::ArabWaha.Employer.Droid.Resource.Id.submit_area;
+			global::ArabWaha.Common.Droid.Resource.Id.tabMode = global::ArabWaha.Employer.Droid.Resource.Id.tabMode;
+			global::ArabWaha.Common.Droid.Resource.Id.text = global::ArabWaha.Employer.Droid.Resource.Id.text;
+			global::ArabWaha.Common.Droid.Resource.Id.text2 = global::ArabWaha.Employer.Droid.Resource.Id.text2;
+			global::ArabWaha.Common.Droid.Resource.Id.textSpacerNoButtons = global::ArabWaha.Employer.Droid.Resource.Id.textSpacerNoButtons;
+			global::ArabWaha.Common.Droid.Resource.Id.text_input_password_toggle = global::ArabWaha.Employer.Droid.Resource.Id.text_input_password_toggle;
+			global::ArabWaha.Common.Droid.Resource.Id.time = global::ArabWaha.Employer.Droid.Resource.Id.time;
+			global::ArabWaha.Common.Droid.Resource.Id.title = global::ArabWaha.Employer.Droid.Resource.Id.title;
+			global::ArabWaha.Common.Droid.Resource.Id.title_template = global::ArabWaha.Employer.Droid.Resource.Id.title_template;
+			global::ArabWaha.Common.Droid.Resource.Id.top = global::ArabWaha.Employer.Droid.Resource.Id.top;
+			global::ArabWaha.Common.Droid.Resource.Id.topPanel = global::ArabWaha.Employer.Droid.Resource.Id.topPanel;
+			global::ArabWaha.Common.Droid.Resource.Id.touch_outside = global::ArabWaha.Employer.Droid.Resource.Id.touch_outside;
+			global::ArabWaha.Common.Droid.Resource.Id.up = global::ArabWaha.Employer.Droid.Resource.Id.up;
+			global::ArabWaha.Common.Droid.Resource.Id.useLogo = global::ArabWaha.Employer.Droid.Resource.Id.useLogo;
+			global::ArabWaha.Common.Droid.Resource.Id.view_offset_helper = global::ArabWaha.Employer.Droid.Resource.Id.view_offset_helper;
+			global::ArabWaha.Common.Droid.Resource.Id.volume_item_container = global::ArabWaha.Employer.Droid.Resource.Id.volume_item_container;
+			global::ArabWaha.Common.Droid.Resource.Id.withText = global::ArabWaha.Employer.Droid.Resource.Id.withText;
+			global::ArabWaha.Common.Droid.Resource.Id.wrap_content = global::ArabWaha.Employer.Droid.Resource.Id.wrap_content;
+			global::ArabWaha.Common.Droid.Resource.Integer.abc_config_activityDefaultDur = global::ArabWaha.Employer.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::ArabWaha.Common.Droid.Resource.Integer.abc_config_activityShortDur = global::ArabWaha.Employer.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::ArabWaha.Common.Droid.Resource.Integer.app_bar_elevation_anim_duration = global::ArabWaha.Employer.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::ArabWaha.Common.Droid.Resource.Integer.bottom_sheet_slide_duration = global::ArabWaha.Employer.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::ArabWaha.Common.Droid.Resource.Integer.cancel_button_image_alpha = global::ArabWaha.Employer.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::ArabWaha.Common.Droid.Resource.Integer.design_snackbar_text_max_lines = global::ArabWaha.Employer.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::ArabWaha.Common.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::ArabWaha.Employer.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::ArabWaha.Common.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::ArabWaha.Employer.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::ArabWaha.Common.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::ArabWaha.Employer.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::ArabWaha.Common.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::ArabWaha.Employer.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::ArabWaha.Common.Droid.Resource.Interpolator.mr_fast_out_slow_in = global::ArabWaha.Employer.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::ArabWaha.Common.Droid.Resource.Interpolator.mr_linear_out_slow_in = global::ArabWaha.Employer.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_action_bar_title_item = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_action_bar_up_container = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_action_menu_item_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_action_menu_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_menu_layout;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_action_mode_bar = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_mode_bar;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_action_mode_close_item_material = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_activity_chooser_view = global::ArabWaha.Employer.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_activity_chooser_view_list_item = global::ArabWaha.Employer.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_alert_dialog_button_bar_material = global::ArabWaha.Employer.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_alert_dialog_material = global::ArabWaha.Employer.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_dialog_title_material = global::ArabWaha.Employer.Droid.Resource.Layout.abc_dialog_title_material;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_expanded_menu_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_list_menu_item_checkbox = global::ArabWaha.Employer.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_list_menu_item_icon = global::ArabWaha.Employer.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_list_menu_item_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_list_menu_item_radio = global::ArabWaha.Employer.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_popup_menu_header_item_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_popup_menu_item_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_screen_content_include = global::ArabWaha.Employer.Droid.Resource.Layout.abc_screen_content_include;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_screen_simple = global::ArabWaha.Employer.Droid.Resource.Layout.abc_screen_simple;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode = global::ArabWaha.Employer.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_screen_toolbar = global::ArabWaha.Employer.Droid.Resource.Layout.abc_screen_toolbar;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line = global::ArabWaha.Employer.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_search_view = global::ArabWaha.Employer.Droid.Resource.Layout.abc_search_view;
+			global::ArabWaha.Common.Droid.Resource.Layout.abc_select_dialog_material = global::ArabWaha.Employer.Droid.Resource.Layout.abc_select_dialog_material;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_bottom_sheet_dialog = global::ArabWaha.Employer.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_layout_snackbar = global::ArabWaha.Employer.Droid.Resource.Layout.design_layout_snackbar;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_layout_snackbar_include = global::ArabWaha.Employer.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_layout_tab_icon = global::ArabWaha.Employer.Droid.Resource.Layout.design_layout_tab_icon;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_layout_tab_text = global::ArabWaha.Employer.Droid.Resource.Layout.design_layout_tab_text;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_menu_item_action_area = global::ArabWaha.Employer.Droid.Resource.Layout.design_menu_item_action_area;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_navigation_item = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_item;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_navigation_item_header = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_item_header;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_navigation_item_separator = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_item_separator;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_navigation_item_subheader = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_navigation_menu = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_menu;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_navigation_menu_item = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_menu_item;
+			global::ArabWaha.Common.Droid.Resource.Layout.design_text_input_password_icon = global::ArabWaha.Employer.Droid.Resource.Layout.design_text_input_password_icon;
+			global::ArabWaha.Common.Droid.Resource.Layout.mr_chooser_dialog = global::ArabWaha.Employer.Droid.Resource.Layout.mr_chooser_dialog;
+			global::ArabWaha.Common.Droid.Resource.Layout.mr_chooser_list_item = global::ArabWaha.Employer.Droid.Resource.Layout.mr_chooser_list_item;
+			global::ArabWaha.Common.Droid.Resource.Layout.mr_controller_material_dialog_b = global::ArabWaha.Employer.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::ArabWaha.Common.Droid.Resource.Layout.mr_controller_volume_item = global::ArabWaha.Employer.Droid.Resource.Layout.mr_controller_volume_item;
+			global::ArabWaha.Common.Droid.Resource.Layout.mr_playback_control = global::ArabWaha.Employer.Droid.Resource.Layout.mr_playback_control;
+			global::ArabWaha.Common.Droid.Resource.Layout.mr_volume_control = global::ArabWaha.Employer.Droid.Resource.Layout.mr_volume_control;
+			global::ArabWaha.Common.Droid.Resource.Layout.notification_media_action = global::ArabWaha.Employer.Droid.Resource.Layout.notification_media_action;
+			global::ArabWaha.Common.Droid.Resource.Layout.notification_media_cancel_action = global::ArabWaha.Employer.Droid.Resource.Layout.notification_media_cancel_action;
+			global::ArabWaha.Common.Droid.Resource.Layout.notification_template_big_media = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_big_media;
+			global::ArabWaha.Common.Droid.Resource.Layout.notification_template_big_media_narrow = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::ArabWaha.Common.Droid.Resource.Layout.notification_template_lines = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_lines;
+			global::ArabWaha.Common.Droid.Resource.Layout.notification_template_media = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_media;
+			global::ArabWaha.Common.Droid.Resource.Layout.notification_template_part_chronometer = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::ArabWaha.Common.Droid.Resource.Layout.notification_template_part_time = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_part_time;
+			global::ArabWaha.Common.Droid.Resource.Layout.select_dialog_item_material = global::ArabWaha.Employer.Droid.Resource.Layout.select_dialog_item_material;
+			global::ArabWaha.Common.Droid.Resource.Layout.select_dialog_multichoice_material = global::ArabWaha.Employer.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::ArabWaha.Common.Droid.Resource.Layout.select_dialog_singlechoice_material = global::ArabWaha.Employer.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::ArabWaha.Common.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::ArabWaha.Employer.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::ArabWaha.Common.Droid.Resource.String.ApplicationName = global::ArabWaha.Employer.Droid.Resource.String.ApplicationName;
 			global::ArabWaha.Common.Droid.Resource.String.Hello = global::ArabWaha.Employer.Droid.Resource.String.Hello;
+			global::ArabWaha.Common.Droid.Resource.String.abc_action_bar_home_description = global::ArabWaha.Employer.Droid.Resource.String.abc_action_bar_home_description;
+			global::ArabWaha.Common.Droid.Resource.String.abc_action_bar_home_description_format = global::ArabWaha.Employer.Droid.Resource.String.abc_action_bar_home_description_format;
+			global::ArabWaha.Common.Droid.Resource.String.abc_action_bar_home_subtitle_description_format = global::ArabWaha.Employer.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::ArabWaha.Common.Droid.Resource.String.abc_action_bar_up_description = global::ArabWaha.Employer.Droid.Resource.String.abc_action_bar_up_description;
+			global::ArabWaha.Common.Droid.Resource.String.abc_action_menu_overflow_description = global::ArabWaha.Employer.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::ArabWaha.Common.Droid.Resource.String.abc_action_mode_done = global::ArabWaha.Employer.Droid.Resource.String.abc_action_mode_done;
+			global::ArabWaha.Common.Droid.Resource.String.abc_activity_chooser_view_see_all = global::ArabWaha.Employer.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::ArabWaha.Common.Droid.Resource.String.abc_activitychooserview_choose_application = global::ArabWaha.Employer.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::ArabWaha.Common.Droid.Resource.String.abc_capital_off = global::ArabWaha.Employer.Droid.Resource.String.abc_capital_off;
+			global::ArabWaha.Common.Droid.Resource.String.abc_capital_on = global::ArabWaha.Employer.Droid.Resource.String.abc_capital_on;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_body_1_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_body_1_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_body_2_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_body_2_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_button_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_button_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_caption_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_caption_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_display_1_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_display_1_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_display_2_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_display_2_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_display_3_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_display_3_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_display_4_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_display_4_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_headline_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_headline_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_menu_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_menu_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_subhead_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_subhead_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_font_family_title_material = global::ArabWaha.Employer.Droid.Resource.String.abc_font_family_title_material;
+			global::ArabWaha.Common.Droid.Resource.String.abc_search_hint = global::ArabWaha.Employer.Droid.Resource.String.abc_search_hint;
+			global::ArabWaha.Common.Droid.Resource.String.abc_searchview_description_clear = global::ArabWaha.Employer.Droid.Resource.String.abc_searchview_description_clear;
+			global::ArabWaha.Common.Droid.Resource.String.abc_searchview_description_query = global::ArabWaha.Employer.Droid.Resource.String.abc_searchview_description_query;
+			global::ArabWaha.Common.Droid.Resource.String.abc_searchview_description_search = global::ArabWaha.Employer.Droid.Resource.String.abc_searchview_description_search;
+			global::ArabWaha.Common.Droid.Resource.String.abc_searchview_description_submit = global::ArabWaha.Employer.Droid.Resource.String.abc_searchview_description_submit;
+			global::ArabWaha.Common.Droid.Resource.String.abc_searchview_description_voice = global::ArabWaha.Employer.Droid.Resource.String.abc_searchview_description_voice;
+			global::ArabWaha.Common.Droid.Resource.String.abc_shareactionprovider_share_with = global::ArabWaha.Employer.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::ArabWaha.Common.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::ArabWaha.Employer.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::ArabWaha.Common.Droid.Resource.String.abc_toolbar_collapse_description = global::ArabWaha.Employer.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::ArabWaha.Common.Droid.Resource.String.appbar_scrolling_view_behavior = global::ArabWaha.Employer.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::ArabWaha.Common.Droid.Resource.String.bottom_sheet_behavior = global::ArabWaha.Employer.Droid.Resource.String.bottom_sheet_behavior;
+			global::ArabWaha.Common.Droid.Resource.String.character_counter_pattern = global::ArabWaha.Employer.Droid.Resource.String.character_counter_pattern;
+			global::ArabWaha.Common.Droid.Resource.String.mr_button_content_description = global::ArabWaha.Employer.Droid.Resource.String.mr_button_content_description;
+			global::ArabWaha.Common.Droid.Resource.String.mr_cast_button_connected = global::ArabWaha.Employer.Droid.Resource.String.mr_cast_button_connected;
+			global::ArabWaha.Common.Droid.Resource.String.mr_cast_button_connecting = global::ArabWaha.Employer.Droid.Resource.String.mr_cast_button_connecting;
+			global::ArabWaha.Common.Droid.Resource.String.mr_cast_button_disconnected = global::ArabWaha.Employer.Droid.Resource.String.mr_cast_button_disconnected;
+			global::ArabWaha.Common.Droid.Resource.String.mr_chooser_searching = global::ArabWaha.Employer.Droid.Resource.String.mr_chooser_searching;
+			global::ArabWaha.Common.Droid.Resource.String.mr_chooser_title = global::ArabWaha.Employer.Droid.Resource.String.mr_chooser_title;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_album_art = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_album_art;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_casting_screen = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_casting_screen;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_close_description = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_close_description;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_collapse_group = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_collapse_group;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_disconnect = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_disconnect;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_expand_group = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_expand_group;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_no_info_available = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_no_info_available;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_no_media_selected = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_no_media_selected;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_pause = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_pause;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_play = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_play;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_stop = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_stop;
+			global::ArabWaha.Common.Droid.Resource.String.mr_controller_volume_slider = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_volume_slider;
+			global::ArabWaha.Common.Droid.Resource.String.mr_system_route_name = global::ArabWaha.Employer.Droid.Resource.String.mr_system_route_name;
+			global::ArabWaha.Common.Droid.Resource.String.mr_user_route_category_name = global::ArabWaha.Employer.Droid.Resource.String.mr_user_route_category_name;
+			global::ArabWaha.Common.Droid.Resource.String.search_menu_title = global::ArabWaha.Employer.Droid.Resource.String.search_menu_title;
+			global::ArabWaha.Common.Droid.Resource.String.status_bar_notification_info_overflow = global::ArabWaha.Employer.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::ArabWaha.Common.Droid.Resource.Style.AlertDialog_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Animation_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::ArabWaha.Employer.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::ArabWaha.Common.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::ArabWaha.Employer.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::ArabWaha.Employer.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_CardView = global::ArabWaha.Employer.Droid.Resource.Style.Base_CardView;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::ArabWaha.Employer.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::ArabWaha.Employer.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_EditText = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ListView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_SearchView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_Design_AppBarLayout = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::ArabWaha.Common.Droid.Resource.Style.Base_Widget_Design_TabLayout = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::ArabWaha.Common.Droid.Resource.Style.CardView = global::ArabWaha.Employer.Droid.Resource.Style.CardView;
+			global::ArabWaha.Common.Droid.Resource.Style.CardView_Dark = global::ArabWaha.Employer.Droid.Resource.Style.CardView_Dark;
+			global::ArabWaha.Common.Droid.Resource.Style.CardView_Light = global::ArabWaha.Employer.Droid.Resource.Style.CardView_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Platform_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Platform_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Platform_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::ArabWaha.Common.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Platform_V11_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Platform_V11_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Platform_V14_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Platform_V14_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::ArabWaha.Employer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::ArabWaha.Common.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Button = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Caption = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Display1 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Display2 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Display3 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Display4 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Headline = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Large = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Medium = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Menu = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Small = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Subhead = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_Design_Counter = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_Design_Error = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_Design_Hint = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_Design_Tab = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_StatusBar_EventContent = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::ArabWaha.Common.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_DayNight = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_Design = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_Design_Light = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_Design_NoActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_MediaRouter = global::ArabWaha.Employer.Droid.Resource.Style.Theme_MediaRouter;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_MediaRouter_Light = global::ArabWaha.Employer.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::ArabWaha.Employer.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::ArabWaha.Common.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel = global::ArabWaha.Employer.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::ArabWaha.Common.Droid.Resource.Style.ThemeOverlay_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::ArabWaha.Common.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::ArabWaha.Common.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::ArabWaha.Common.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::ArabWaha.Common.Droid.Resource.Style.ThemeOverlay_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ActionButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ActionMode = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Button = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_EditText = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ImageButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_SearchView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ListMenuView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ListView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ListView_Menu = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_PopupMenu = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_PopupWindow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ProgressBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_RatingBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_SearchView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_SeekBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Toolbar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_Design_AppBarLayout = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_Design_BottomSheet_Modal = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_Design_CollapsingToolbar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_Design_CoordinatorLayout = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_Design_FloatingActionButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_Design_NavigationView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_Design_Snackbar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_Design_TabLayout = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_Design_TextInputLayout = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ChooserText = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Dark;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Light = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Dark;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Light = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ControllerText = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Dark;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Light = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Dark;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Light = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title_Dark;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title_Light = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title_Light;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::ArabWaha.Common.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_background = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_background;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_contentInsetEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_contentInsetLeft = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_contentInsetRight = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_contentInsetStart = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_customNavigationLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_displayOptions = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_divider = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_divider;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_elevation = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_elevation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_height = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_height;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_hideOnContentScroll = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_homeLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_icon = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_icon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_itemPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_logo = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_logo;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_navigationMode = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_popupTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_progressBarPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_progressBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_subtitle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_title = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_title;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBarLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBarLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionMenuItemView = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMenuItemView;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionMenuView = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMenuView;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionMode = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionMode_background = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_background;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionMode_backgroundSplit = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionMode_closeItemLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionMode_height = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_height;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionMode_subtitleTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActionMode_titleTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActivityChooserView = global::ArabWaha.Employer.Droid.Resource.Styleable.ActivityChooserView;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount = global::ArabWaha.Employer.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AlertDialog = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AlertDialog_android_layout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AlertDialog_listItemLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AlertDialog_listLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppBarLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppBarLayout_android_background = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppBarLayout_elevation = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppBarLayout_expanded = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppBarLayoutStates = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppBarLayout_Layout = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatImageView = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatImageView;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatImageView_android_src = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatSeekBar = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatSeekBar_tickMark = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextHelper = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextView = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextView;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTextView_textAllCaps = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarSize = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_buttonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_colorAccent = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_colorPrimary = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_controlBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_panelBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_switchStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_windowActionBar = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.BottomSheetBehavior_Layout = global::ArabWaha.Employer.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::ArabWaha.Employer.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::ArabWaha.Employer.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ButtonBarLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ButtonBarLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ButtonBarLayout_allowStacking = global::ArabWaha.Employer.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_android_minHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_android_minWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_cardBackgroundColor = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_cardCornerRadius = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_cardElevation = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardElevation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_cardMaxElevation = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_cardUseCompatPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_contentPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_contentPadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_contentPaddingBottom = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_contentPaddingRight = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CardView_contentPaddingTop = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ColorStateListItem = global::ArabWaha.Employer.Droid.Resource.Styleable.ColorStateListItem;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ColorStateListItem_alpha = global::ArabWaha.Employer.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ColorStateListItem_android_alpha = global::ArabWaha.Employer.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ColorStateListItem_android_color = global::ArabWaha.Employer.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CompoundButton = global::ArabWaha.Employer.Droid.Resource.Styleable.CompoundButton;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CompoundButton_android_button = global::ArabWaha.Employer.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CompoundButton_buttonTint = global::ArabWaha.Employer.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::ArabWaha.Employer.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout_Layout = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::ArabWaha.Common.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DesignTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.DesignTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DesignTheme_textColorError = global::ArabWaha.Employer.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DrawerArrowToggle = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DrawerArrowToggle_barLength = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DrawerArrowToggle_color = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DrawerArrowToggle_spinBars = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::ArabWaha.Common.Droid.Resource.Styleable.DrawerArrowToggle_thickness = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton_elevation = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton_fabSize = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ForegroundLinearLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::ArabWaha.Employer.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::ArabWaha.Employer.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::ArabWaha.Employer.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ListPopupWindow = global::ArabWaha.Employer.Droid.Resource.Styleable.ListPopupWindow;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::ArabWaha.Employer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::ArabWaha.Employer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MediaRouteButton = global::ArabWaha.Employer.Droid.Resource.Styleable.MediaRouteButton;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MediaRouteButton_android_minHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MediaRouteButton_android_minWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuGroup = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuGroup_android_enabled = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuGroup_android_id = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuGroup_android_menuCategory = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuGroup_android_orderInCategory = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuGroup_android_visible = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_actionLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_actionProviderClass = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_actionViewClass = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_checkable = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_checked = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_enabled = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_icon = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_id = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_id;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_menuCategory = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_numericShortcut = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_onClick = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_orderInCategory = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_title = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_title;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_titleCondensed = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_android_visible = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuItem_showAsAction = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuView = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuView_android_headerBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuView_android_horizontalDivider = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuView_android_itemBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuView_android_itemTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuView_android_verticalDivider = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuView_preserveIconSpacing = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::ArabWaha.Common.Droid.Resource.Styleable.MenuView_subMenuArrow = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView_android_background = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_android_background;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView_android_maxWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView_elevation = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_elevation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView_headerLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView_itemBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView_itemIconTint = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView_itemTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView_itemTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.NavigationView_menu = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_menu;
+			global::ArabWaha.Common.Droid.Resource.Styleable.PopupWindow = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindow;
+			global::ArabWaha.Common.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.PopupWindowBackgroundState = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::ArabWaha.Common.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.RecyclerView = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView;
+			global::ArabWaha.Common.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::ArabWaha.Common.Droid.Resource.Styleable.RecyclerView_android_orientation = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.RecyclerView_layoutManager = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::ArabWaha.Common.Droid.Resource.Styleable.RecyclerView_reverseLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.RecyclerView_spanCount = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::ArabWaha.Common.Droid.Resource.Styleable.RecyclerView_stackFromEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ScrimInsetsFrameLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::ArabWaha.Employer.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ScrollingViewBehavior_Layout = global::ArabWaha.Employer.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::ArabWaha.Employer.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_android_focusable = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_android_imeOptions = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_android_inputType = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_android_maxWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_closeIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_commitIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_defaultQueryHint = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_goIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_goIcon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_iconifiedByDefault = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_layout = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_layout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_queryBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_queryHint = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_queryHint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_searchHintIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_searchIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_submitBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SearchView_voiceIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SnackbarLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.SnackbarLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SnackbarLayout_elevation = global::ArabWaha.Employer.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Spinner = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Spinner_android_entries = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner_android_entries;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Spinner_android_popupBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Spinner_android_prompt = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Spinner_popupTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_android_thumb = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_showText = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_splitTrack = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_switchMinWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_switchPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_thumbTint = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_thumbTintMode = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_track = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_track;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_trackTint = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.SwitchCompat_trackTintMode = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabItem = global::ArabWaha.Employer.Droid.Resource.Styleable.TabItem;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabItem_android_icon = global::ArabWaha.Employer.Droid.Resource.Styleable.TabItem_android_icon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabItem_android_layout = global::ArabWaha.Employer.Droid.Resource.Styleable.TabItem_android_layout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabItem_android_text = global::ArabWaha.Employer.Droid.Resource.Styleable.TabItem_android_text;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabContentStart = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabGravity = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabIndicatorColor = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabMaxWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabMinWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabMode = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabPaddingBottom = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabPaddingEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabPaddingStart = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabPaddingTop = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TabLayout_tabTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextAppearance_android_shadowColor = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextAppearance_android_shadowDx = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextAppearance_android_shadowDy = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextAppearance_android_shadowRadius = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextAppearance_android_textColor = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextAppearance_android_textSize = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextAppearance_android_textStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextAppearance_android_typeface = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextAppearance_textAllCaps = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_android_hint = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_android_textColorHint = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_counterEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_counterMaxLength = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_errorEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_hintEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_android_gravity = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_android_minHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_buttonGravity = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_collapseContentDescription = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_collapseIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_contentInsetEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_contentInsetLeft = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_contentInsetRight = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_contentInsetStart = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_logo = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_logo;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_logoDescription = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_maxButtonHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_navigationContentDescription = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_navigationIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_popupTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_subtitle = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_subtitleTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_title = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_title;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_titleMargin = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_titleMargins = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::ArabWaha.Common.Droid.Resource.Styleable.Toolbar_titleTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::ArabWaha.Common.Droid.Resource.Styleable.View = global::ArabWaha.Employer.Droid.Resource.Styleable.View;
+			global::ArabWaha.Common.Droid.Resource.Styleable.View_android_focusable = global::ArabWaha.Employer.Droid.Resource.Styleable.View_android_focusable;
+			global::ArabWaha.Common.Droid.Resource.Styleable.View_android_theme = global::ArabWaha.Employer.Droid.Resource.Styleable.View_android_theme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.View_paddingEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.View_paddingEnd;
+			global::ArabWaha.Common.Droid.Resource.Styleable.View_paddingStart = global::ArabWaha.Employer.Droid.Resource.Styleable.View_paddingStart;
+			global::ArabWaha.Common.Droid.Resource.Styleable.View_theme = global::ArabWaha.Employer.Droid.Resource.Styleable.View_theme;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ViewBackgroundHelper = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ViewStubCompat = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewStubCompat;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ViewStubCompat_android_id = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::ArabWaha.Common.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::CarouselView.FormsPlugin.Android.Resource.Animation.abc_fade_in = global::ArabWaha.Employer.Droid.Resource.Animation.abc_fade_in;
 			global::CarouselView.FormsPlugin.Android.Resource.Animation.abc_fade_out = global::ArabWaha.Employer.Droid.Resource.Animation.abc_fade_out;
 			global::CarouselView.FormsPlugin.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::ArabWaha.Employer.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -1903,6 +3903,1781 @@ namespace ArabWaha.Employer.Droid
 			global::PCLStorage.Resource.String.Hello = global::ArabWaha.Employer.Droid.Resource.String.Hello;
 			global::Splat.Resource.String.library_name = global::ArabWaha.Employer.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.RangeSlider.Resource.Attribute.absoluteMaxValue = global::ArabWaha.Employer.Droid.Resource.Attribute.absoluteMaxValue;
+			global::Xamarin.RangeSlider.Resource.Attribute.absoluteMinValue = global::ArabWaha.Employer.Droid.Resource.Attribute.absoluteMinValue;
+			global::Xamarin.RangeSlider.Resource.Attribute.activateOnDefaultValues = global::ArabWaha.Employer.Droid.Resource.Attribute.activateOnDefaultValues;
+			global::Xamarin.RangeSlider.Resource.Attribute.activeColor = global::ArabWaha.Employer.Droid.Resource.Attribute.activeColor;
+			global::Xamarin.RangeSlider.Resource.Attribute.alwaysActive = global::ArabWaha.Employer.Droid.Resource.Attribute.alwaysActive;
+			global::Xamarin.RangeSlider.Resource.Attribute.barHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.barHeight;
+			global::Xamarin.RangeSlider.Resource.Attribute.defaultColor = global::ArabWaha.Employer.Droid.Resource.Attribute.defaultColor;
+			global::Xamarin.RangeSlider.Resource.Attribute.internalPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.internalPadding;
+			global::Xamarin.RangeSlider.Resource.Attribute.maxThumbHidden = global::ArabWaha.Employer.Droid.Resource.Attribute.maxThumbHidden;
+			global::Xamarin.RangeSlider.Resource.Attribute.minThumbHidden = global::ArabWaha.Employer.Droid.Resource.Attribute.minThumbHidden;
+			global::Xamarin.RangeSlider.Resource.Attribute.showRangeLabels = global::ArabWaha.Employer.Droid.Resource.Attribute.showRangeLabels;
+			global::Xamarin.RangeSlider.Resource.Attribute.stepValue = global::ArabWaha.Employer.Droid.Resource.Attribute.stepValue;
+			global::Xamarin.RangeSlider.Resource.Attribute.stepValueContinuously = global::ArabWaha.Employer.Droid.Resource.Attribute.stepValueContinuously;
+			global::Xamarin.RangeSlider.Resource.Attribute.textAboveThumbsColor = global::ArabWaha.Employer.Droid.Resource.Attribute.textAboveThumbsColor;
+			global::Xamarin.RangeSlider.Resource.Attribute.textSize = global::ArabWaha.Employer.Droid.Resource.Attribute.textSize;
+			global::Xamarin.RangeSlider.Resource.Attribute.thumbDisabled = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbDisabled;
+			global::Xamarin.RangeSlider.Resource.Attribute.thumbNormal = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbNormal;
+			global::Xamarin.RangeSlider.Resource.Attribute.thumbPressed = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbPressed;
+			global::Xamarin.RangeSlider.Resource.Attribute.thumbShadow = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbShadow;
+			global::Xamarin.RangeSlider.Resource.Attribute.thumbShadowBlur = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbShadowBlur;
+			global::Xamarin.RangeSlider.Resource.Attribute.thumbShadowColor = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbShadowColor;
+			global::Xamarin.RangeSlider.Resource.Attribute.thumbShadowXOffset = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbShadowXOffset;
+			global::Xamarin.RangeSlider.Resource.Attribute.thumbShadowYOffset = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbShadowYOffset;
+			global::Xamarin.RangeSlider.Resource.Attribute.valuesAboveThumbs = global::ArabWaha.Employer.Droid.Resource.Attribute.valuesAboveThumbs;
+			global::Xamarin.RangeSlider.Resource.Drawable.seek_thumb_disabled = global::ArabWaha.Employer.Droid.Resource.Drawable.seek_thumb_disabled;
+			global::Xamarin.RangeSlider.Resource.Drawable.seek_thumb_normal = global::ArabWaha.Employer.Droid.Resource.Drawable.seek_thumb_normal;
+			global::Xamarin.RangeSlider.Resource.Drawable.seek_thumb_pressed = global::ArabWaha.Employer.Droid.Resource.Drawable.seek_thumb_pressed;
+			global::Xamarin.RangeSlider.Resource.String.app_name = global::ArabWaha.Employer.Droid.Resource.String.app_name;
+			global::Xamarin.RangeSlider.Resource.String.demo_max_label = global::ArabWaha.Employer.Droid.Resource.String.demo_max_label;
+			global::Xamarin.RangeSlider.Resource.String.demo_min_label = global::ArabWaha.Employer.Droid.Resource.String.demo_min_label;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_absoluteMaxValue = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_absoluteMaxValue;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_absoluteMinValue = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_absoluteMinValue;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_activateOnDefaultValues = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_activateOnDefaultValues;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_activeColor = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_activeColor;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_alwaysActive = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_alwaysActive;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_barHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_barHeight;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_defaultColor = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_defaultColor;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_internalPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_internalPadding;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_maxThumbHidden = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_maxThumbHidden;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_minThumbHidden = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_minThumbHidden;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_showRangeLabels = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_showRangeLabels;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_stepValue = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_stepValue;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_stepValueContinuously = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_stepValueContinuously;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_textAboveThumbsColor = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_textAboveThumbsColor;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_textSize = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_textSize;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_thumbDisabled = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbDisabled;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_thumbNormal = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbNormal;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_thumbPressed = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbPressed;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_thumbShadow = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbShadow;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_thumbShadowBlur = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbShadowBlur;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_thumbShadowColor = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbShadowColor;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_thumbShadowXOffset = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbShadowXOffset;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_thumbShadowYOffset = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbShadowYOffset;
+			global::Xamarin.RangeSlider.Resource.Styleable.RangeSliderControl_valuesAboveThumbs = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_valuesAboveThumbs;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.abc_fade_in = global::ArabWaha.Employer.Droid.Resource.Animation.abc_fade_in;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.abc_fade_out = global::ArabWaha.Employer.Droid.Resource.Animation.abc_fade_out;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.abc_grow_fade_in_from_bottom = global::ArabWaha.Employer.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.abc_popup_enter = global::ArabWaha.Employer.Droid.Resource.Animation.abc_popup_enter;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.abc_popup_exit = global::ArabWaha.Employer.Droid.Resource.Animation.abc_popup_exit;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.abc_shrink_fade_out_from_bottom = global::ArabWaha.Employer.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.abc_slide_in_bottom = global::ArabWaha.Employer.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.abc_slide_in_top = global::ArabWaha.Employer.Droid.Resource.Animation.abc_slide_in_top;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.abc_slide_out_bottom = global::ArabWaha.Employer.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.abc_slide_out_top = global::ArabWaha.Employer.Droid.Resource.Animation.abc_slide_out_top;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.design_bottom_sheet_slide_in = global::ArabWaha.Employer.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.design_bottom_sheet_slide_out = global::ArabWaha.Employer.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.design_fab_in = global::ArabWaha.Employer.Droid.Resource.Animation.design_fab_in;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.design_fab_out = global::ArabWaha.Employer.Droid.Resource.Animation.design_fab_out;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.design_snackbar_in = global::ArabWaha.Employer.Droid.Resource.Animation.design_snackbar_in;
+			global::Xamarin.RangeSlider.Forms.Resource.Animation.design_snackbar_out = global::ArabWaha.Employer.Droid.Resource.Animation.design_snackbar_out;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.MediaRouteControllerWindowBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.MediaRouteControllerWindowBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.absoluteMaxValue = global::ArabWaha.Employer.Droid.Resource.Attribute.absoluteMaxValue;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.absoluteMinValue = global::ArabWaha.Employer.Droid.Resource.Attribute.absoluteMinValue;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarDivider = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarDivider;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarItemBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarPopupTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarSize = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarSplitStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarTabBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarTabStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarTabTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionBarWidgetTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionDropDownStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.actionLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionMenuTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionMenuTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeCloseButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeCloseDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeCopyDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeCutDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeFindDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModePasteDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModePopupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeSelectAllDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeShareDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeSplitBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionModeWebSearchDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionOverflowButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionOverflowMenuStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionProviderClass = global::ArabWaha.Employer.Droid.Resource.Attribute.actionProviderClass;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.actionViewClass = global::ArabWaha.Employer.Droid.Resource.Attribute.actionViewClass;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.activateOnDefaultValues = global::ArabWaha.Employer.Droid.Resource.Attribute.activateOnDefaultValues;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.activeColor = global::ArabWaha.Employer.Droid.Resource.Attribute.activeColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.activityChooserViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.alertDialogButtonGroupStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.alertDialogCenterButtons = global::ArabWaha.Employer.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.alertDialogStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.alertDialogStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.alertDialogTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.alertDialogTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.allowStacking = global::ArabWaha.Employer.Droid.Resource.Attribute.allowStacking;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.alwaysActive = global::ArabWaha.Employer.Droid.Resource.Attribute.alwaysActive;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.arrowHeadLength = global::ArabWaha.Employer.Droid.Resource.Attribute.arrowHeadLength;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.arrowShaftLength = global::ArabWaha.Employer.Droid.Resource.Attribute.arrowShaftLength;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.autoCompleteTextViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.background = global::ArabWaha.Employer.Droid.Resource.Attribute.background;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.backgroundSplit = global::ArabWaha.Employer.Droid.Resource.Attribute.backgroundSplit;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.backgroundStacked = global::ArabWaha.Employer.Droid.Resource.Attribute.backgroundStacked;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.backgroundTint = global::ArabWaha.Employer.Droid.Resource.Attribute.backgroundTint;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.backgroundTintMode = global::ArabWaha.Employer.Droid.Resource.Attribute.backgroundTintMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.barHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.barHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.barLength = global::ArabWaha.Employer.Droid.Resource.Attribute.barLength;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.behavior_hideable = global::ArabWaha.Employer.Droid.Resource.Attribute.behavior_hideable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.behavior_overlapTop = global::ArabWaha.Employer.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.behavior_peekHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.borderWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.borderWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.borderlessButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.bottomSheetDialogTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.bottomSheetStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.buttonBarButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.buttonBarNegativeButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.buttonBarNeutralButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.buttonBarPositiveButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.buttonBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.buttonPanelSideLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.buttonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.buttonStyleSmall = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.buttonTint = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonTint;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.buttonTintMode = global::ArabWaha.Employer.Droid.Resource.Attribute.buttonTintMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.cardBackgroundColor = global::ArabWaha.Employer.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.cardCornerRadius = global::ArabWaha.Employer.Droid.Resource.Attribute.cardCornerRadius;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.cardElevation = global::ArabWaha.Employer.Droid.Resource.Attribute.cardElevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.cardMaxElevation = global::ArabWaha.Employer.Droid.Resource.Attribute.cardMaxElevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.cardPreventCornerOverlap = global::ArabWaha.Employer.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.cardUseCompatPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.checkboxStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.checkboxStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.checkedTextViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.closeIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.closeIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.closeItemLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.closeItemLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.collapseContentDescription = global::ArabWaha.Employer.Droid.Resource.Attribute.collapseContentDescription;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.collapseIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.collapseIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.collapsedTitleGravity = global::ArabWaha.Employer.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.collapsedTitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.color = global::ArabWaha.Employer.Droid.Resource.Attribute.color;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.colorAccent = global::ArabWaha.Employer.Droid.Resource.Attribute.colorAccent;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.colorButtonNormal = global::ArabWaha.Employer.Droid.Resource.Attribute.colorButtonNormal;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.colorControlActivated = global::ArabWaha.Employer.Droid.Resource.Attribute.colorControlActivated;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.colorControlHighlight = global::ArabWaha.Employer.Droid.Resource.Attribute.colorControlHighlight;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.colorControlNormal = global::ArabWaha.Employer.Droid.Resource.Attribute.colorControlNormal;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.colorPrimary = global::ArabWaha.Employer.Droid.Resource.Attribute.colorPrimary;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.colorPrimaryDark = global::ArabWaha.Employer.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.colorSwitchThumbNormal = global::ArabWaha.Employer.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.commitIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.commitIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.contentInsetEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.contentInsetEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.contentInsetLeft = global::ArabWaha.Employer.Droid.Resource.Attribute.contentInsetLeft;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.contentInsetRight = global::ArabWaha.Employer.Droid.Resource.Attribute.contentInsetRight;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.contentInsetStart = global::ArabWaha.Employer.Droid.Resource.Attribute.contentInsetStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.contentPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.contentPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.contentPaddingBottom = global::ArabWaha.Employer.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.contentPaddingLeft = global::ArabWaha.Employer.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.contentPaddingRight = global::ArabWaha.Employer.Droid.Resource.Attribute.contentPaddingRight;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.contentPaddingTop = global::ArabWaha.Employer.Droid.Resource.Attribute.contentPaddingTop;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.contentScrim = global::ArabWaha.Employer.Droid.Resource.Attribute.contentScrim;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.controlBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.controlBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.counterEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.counterEnabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.counterMaxLength = global::ArabWaha.Employer.Droid.Resource.Attribute.counterMaxLength;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.counterOverflowTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.counterTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.counterTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.customNavigationLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.customNavigationLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.defaultColor = global::ArabWaha.Employer.Droid.Resource.Attribute.defaultColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.defaultQueryHint = global::ArabWaha.Employer.Droid.Resource.Attribute.defaultQueryHint;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.dialogPreferredPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.dialogTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.dialogTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.displayOptions = global::ArabWaha.Employer.Droid.Resource.Attribute.displayOptions;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.divider = global::ArabWaha.Employer.Droid.Resource.Attribute.divider;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.dividerHorizontal = global::ArabWaha.Employer.Droid.Resource.Attribute.dividerHorizontal;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.dividerPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.dividerPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.dividerVertical = global::ArabWaha.Employer.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.drawableSize = global::ArabWaha.Employer.Droid.Resource.Attribute.drawableSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.drawerArrowStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.dropDownListViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.dropdownListPreferredItemHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.editTextBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.editTextBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.editTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.editTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.editTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.editTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.elevation = global::ArabWaha.Employer.Droid.Resource.Attribute.elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.errorEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.errorEnabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.errorTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.errorTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.expandActivityOverflowButtonDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.expanded = global::ArabWaha.Employer.Droid.Resource.Attribute.expanded;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.expandedTitleGravity = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.expandedTitleMargin = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.expandedTitleMarginBottom = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.expandedTitleMarginEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.expandedTitleMarginStart = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.expandedTitleMarginTop = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.expandedTitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.externalRouteEnabledDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.fabSize = global::ArabWaha.Employer.Droid.Resource.Attribute.fabSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.foregroundInsidePadding = global::ArabWaha.Employer.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.gapBetweenBars = global::ArabWaha.Employer.Droid.Resource.Attribute.gapBetweenBars;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.goIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.goIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.headerLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.headerLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.height = global::ArabWaha.Employer.Droid.Resource.Attribute.height;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.hideOnContentScroll = global::ArabWaha.Employer.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.hintAnimationEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.hintEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.hintEnabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.hintTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.hintTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.homeAsUpIndicator = global::ArabWaha.Employer.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.homeLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.homeLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.icon = global::ArabWaha.Employer.Droid.Resource.Attribute.icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.iconifiedByDefault = global::ArabWaha.Employer.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.imageButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.imageButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.indeterminateProgressStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.initialActivityCount = global::ArabWaha.Employer.Droid.Resource.Attribute.initialActivityCount;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.insetForeground = global::ArabWaha.Employer.Droid.Resource.Attribute.insetForeground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.internalPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.internalPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.isLightTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.isLightTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.itemBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.itemBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.itemIconTint = global::ArabWaha.Employer.Droid.Resource.Attribute.itemIconTint;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.itemPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.itemPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.itemTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.itemTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.itemTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.itemTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.keylines = global::ArabWaha.Employer.Droid.Resource.Attribute.keylines;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.layout = global::ArabWaha.Employer.Droid.Resource.Attribute.layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.layoutManager = global::ArabWaha.Employer.Droid.Resource.Attribute.layoutManager;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.layout_anchor = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_anchor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.layout_anchorGravity = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.layout_behavior = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_behavior;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.layout_collapseMode = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_collapseMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.layout_collapseParallaxMultiplier = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.layout_keyline = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_keyline;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.layout_scrollFlags = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.layout_scrollInterpolator = global::ArabWaha.Employer.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.listChoiceBackgroundIndicator = global::ArabWaha.Employer.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.listDividerAlertDialog = global::ArabWaha.Employer.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.listItemLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.listItemLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.listLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.listLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.listPopupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.listPreferredItemHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.listPreferredItemHeightLarge = global::ArabWaha.Employer.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.listPreferredItemHeightSmall = global::ArabWaha.Employer.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.listPreferredItemPaddingLeft = global::ArabWaha.Employer.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.listPreferredItemPaddingRight = global::ArabWaha.Employer.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.logo = global::ArabWaha.Employer.Droid.Resource.Attribute.logo;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.logoDescription = global::ArabWaha.Employer.Droid.Resource.Attribute.logoDescription;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.maxActionInlineWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.maxButtonHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.maxButtonHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.maxThumbHidden = global::ArabWaha.Employer.Droid.Resource.Attribute.maxThumbHidden;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.measureWithLargestChild = global::ArabWaha.Employer.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteAudioTrackDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteChooserPrimaryTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteChooserPrimaryTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteChooserSecondaryTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteChooserSecondaryTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteCloseDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteControllerPrimaryTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteControllerPrimaryTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteControllerSecondaryTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteControllerSecondaryTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteControllerTitleTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteControllerTitleTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteDefaultIconDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRoutePauseDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRoutePlayDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.mediaRouteTvIconDrawable = global::ArabWaha.Employer.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.menu = global::ArabWaha.Employer.Droid.Resource.Attribute.menu;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.minThumbHidden = global::ArabWaha.Employer.Droid.Resource.Attribute.minThumbHidden;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.multiChoiceItemLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.navigationContentDescription = global::ArabWaha.Employer.Droid.Resource.Attribute.navigationContentDescription;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.navigationIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.navigationIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.navigationMode = global::ArabWaha.Employer.Droid.Resource.Attribute.navigationMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.overlapAnchor = global::ArabWaha.Employer.Droid.Resource.Attribute.overlapAnchor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.paddingEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.paddingEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.paddingStart = global::ArabWaha.Employer.Droid.Resource.Attribute.paddingStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.panelBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.panelBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.panelMenuListTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.panelMenuListWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.popupMenuStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.popupMenuStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.popupTheme = global::ArabWaha.Employer.Droid.Resource.Attribute.popupTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.popupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.popupWindowStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.preserveIconSpacing = global::ArabWaha.Employer.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.pressedTranslationZ = global::ArabWaha.Employer.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.progressBarPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.progressBarPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.progressBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.progressBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.queryBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.queryBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.queryHint = global::ArabWaha.Employer.Droid.Resource.Attribute.queryHint;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.radioButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.radioButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.ratingBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.ratingBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.ratingBarStyleIndicator = global::ArabWaha.Employer.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.ratingBarStyleSmall = global::ArabWaha.Employer.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.reverseLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.reverseLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.rippleColor = global::ArabWaha.Employer.Droid.Resource.Attribute.rippleColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.searchHintIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.searchHintIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.searchIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.searchIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.searchViewStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.searchViewStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.seekBarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.seekBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.selectableItemBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.selectableItemBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.selectableItemBackgroundBorderless = global::ArabWaha.Employer.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.showAsAction = global::ArabWaha.Employer.Droid.Resource.Attribute.showAsAction;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.showDividers = global::ArabWaha.Employer.Droid.Resource.Attribute.showDividers;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.showRangeLabels = global::ArabWaha.Employer.Droid.Resource.Attribute.showRangeLabels;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.showText = global::ArabWaha.Employer.Droid.Resource.Attribute.showText;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.singleChoiceItemLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.spanCount = global::ArabWaha.Employer.Droid.Resource.Attribute.spanCount;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.spinBars = global::ArabWaha.Employer.Droid.Resource.Attribute.spinBars;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.spinnerDropDownItemStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.spinnerStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.spinnerStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.splitTrack = global::ArabWaha.Employer.Droid.Resource.Attribute.splitTrack;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.srcCompat = global::ArabWaha.Employer.Droid.Resource.Attribute.srcCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.stackFromEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.stackFromEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.state_above_anchor = global::ArabWaha.Employer.Droid.Resource.Attribute.state_above_anchor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.statusBarBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.statusBarBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.statusBarScrim = global::ArabWaha.Employer.Droid.Resource.Attribute.statusBarScrim;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.stepValue = global::ArabWaha.Employer.Droid.Resource.Attribute.stepValue;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.stepValueContinuously = global::ArabWaha.Employer.Droid.Resource.Attribute.stepValueContinuously;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.submitBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.submitBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.subtitle = global::ArabWaha.Employer.Droid.Resource.Attribute.subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.subtitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.subtitleTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.subtitleTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.subtitleTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.suggestionRowLayout = global::ArabWaha.Employer.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.switchMinWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.switchMinWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.switchPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.switchPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.switchStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.switchStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.switchTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.switchTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabBackground = global::ArabWaha.Employer.Droid.Resource.Attribute.tabBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabContentStart = global::ArabWaha.Employer.Droid.Resource.Attribute.tabContentStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabGravity = global::ArabWaha.Employer.Droid.Resource.Attribute.tabGravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabIndicatorColor = global::ArabWaha.Employer.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabIndicatorHeight = global::ArabWaha.Employer.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabMaxWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.tabMaxWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabMinWidth = global::ArabWaha.Employer.Droid.Resource.Attribute.tabMinWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabMode = global::ArabWaha.Employer.Droid.Resource.Attribute.tabMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.tabPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabPaddingBottom = global::ArabWaha.Employer.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabPaddingEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabPaddingStart = global::ArabWaha.Employer.Droid.Resource.Attribute.tabPaddingStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabPaddingTop = global::ArabWaha.Employer.Droid.Resource.Attribute.tabPaddingTop;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabSelectedTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.tabTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.tabTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.tabTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textAboveThumbsColor = global::ArabWaha.Employer.Droid.Resource.Attribute.textAboveThumbsColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textAllCaps = global::ArabWaha.Employer.Droid.Resource.Attribute.textAllCaps;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textAppearanceLargePopupMenu = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textAppearanceListItem = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textAppearanceListItemSmall = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textAppearanceSearchResultSubtitle = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textAppearanceSearchResultTitle = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textAppearanceSmallPopupMenu = global::ArabWaha.Employer.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textColorAlertDialogListItem = global::ArabWaha.Employer.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textColorError = global::ArabWaha.Employer.Droid.Resource.Attribute.textColorError;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textColorSearchUrl = global::ArabWaha.Employer.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.textSize = global::ArabWaha.Employer.Droid.Resource.Attribute.textSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.theme = global::ArabWaha.Employer.Droid.Resource.Attribute.theme;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.thickness = global::ArabWaha.Employer.Droid.Resource.Attribute.thickness;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.thumbDisabled = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbDisabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.thumbNormal = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbNormal;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.thumbPressed = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbPressed;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.thumbShadow = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbShadow;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.thumbShadowBlur = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbShadowBlur;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.thumbShadowColor = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbShadowColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.thumbShadowXOffset = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbShadowXOffset;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.thumbShadowYOffset = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbShadowYOffset;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.thumbTextPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.thumbTextPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.title = global::ArabWaha.Employer.Droid.Resource.Attribute.title;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.titleEnabled = global::ArabWaha.Employer.Droid.Resource.Attribute.titleEnabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.titleMarginBottom = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMarginBottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.titleMarginEnd = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMarginEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.titleMarginStart = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMarginStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.titleMarginTop = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMarginTop;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.titleMargins = global::ArabWaha.Employer.Droid.Resource.Attribute.titleMargins;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.titleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Attribute.titleTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.titleTextColor = global::ArabWaha.Employer.Droid.Resource.Attribute.titleTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.titleTextStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.titleTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.toolbarId = global::ArabWaha.Employer.Droid.Resource.Attribute.toolbarId;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.toolbarNavigationButtonStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.toolbarStyle = global::ArabWaha.Employer.Droid.Resource.Attribute.toolbarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.track = global::ArabWaha.Employer.Droid.Resource.Attribute.track;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.useCompatPadding = global::ArabWaha.Employer.Droid.Resource.Attribute.useCompatPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.valuesAboveThumbs = global::ArabWaha.Employer.Droid.Resource.Attribute.valuesAboveThumbs;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.voiceIcon = global::ArabWaha.Employer.Droid.Resource.Attribute.voiceIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.windowActionBar = global::ArabWaha.Employer.Droid.Resource.Attribute.windowActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.windowActionBarOverlay = global::ArabWaha.Employer.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.windowActionModeOverlay = global::ArabWaha.Employer.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.windowFixedHeightMajor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.windowFixedHeightMinor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.windowFixedWidthMajor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.windowFixedWidthMinor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.windowMinWidthMajor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.windowMinWidthMinor = global::ArabWaha.Employer.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Xamarin.RangeSlider.Forms.Resource.Attribute.windowNoTitle = global::ArabWaha.Employer.Droid.Resource.Attribute.windowNoTitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Boolean.abc_action_bar_embed_tabs = global::ArabWaha.Employer.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Xamarin.RangeSlider.Forms.Resource.Boolean.abc_allow_stacked_button_bar = global::ArabWaha.Employer.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Xamarin.RangeSlider.Forms.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::ArabWaha.Employer.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Xamarin.RangeSlider.Forms.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::ArabWaha.Employer.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Xamarin.RangeSlider.Forms.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::ArabWaha.Employer.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_background_cache_hint_selector_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_background_cache_hint_selector_material_light = global::ArabWaha.Employer.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_color_highlight_material = global::ArabWaha.Employer.Droid.Resource.Color.abc_color_highlight_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_input_method_navigation_guard = global::ArabWaha.Employer.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_primary_text_disable_only_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_primary_text_disable_only_material_light = global::ArabWaha.Employer.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_primary_text_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_primary_text_material_light = global::ArabWaha.Employer.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_search_url_text = global::ArabWaha.Employer.Droid.Resource.Color.abc_search_url_text;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_search_url_text_normal = global::ArabWaha.Employer.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_search_url_text_pressed = global::ArabWaha.Employer.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_search_url_text_selected = global::ArabWaha.Employer.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_secondary_text_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.abc_secondary_text_material_light = global::ArabWaha.Employer.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.accent_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.accent_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.accent_material_light = global::ArabWaha.Employer.Droid.Resource.Color.accent_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.background_floating_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.background_floating_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.background_floating_material_light = global::ArabWaha.Employer.Droid.Resource.Color.background_floating_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.background_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.background_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.background_material_light = global::ArabWaha.Employer.Droid.Resource.Color.background_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.bright_foreground_disabled_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.bright_foreground_disabled_material_light = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.bright_foreground_inverse_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.bright_foreground_inverse_material_light = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.bright_foreground_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.bright_foreground_material_light = global::ArabWaha.Employer.Droid.Resource.Color.bright_foreground_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.button_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.button_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.button_material_light = global::ArabWaha.Employer.Droid.Resource.Color.button_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.cardview_dark_background = global::ArabWaha.Employer.Droid.Resource.Color.cardview_dark_background;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.cardview_light_background = global::ArabWaha.Employer.Droid.Resource.Color.cardview_light_background;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.cardview_shadow_end_color = global::ArabWaha.Employer.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.cardview_shadow_start_color = global::ArabWaha.Employer.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.design_fab_shadow_end_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.design_fab_shadow_mid_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.design_fab_shadow_start_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.design_fab_stroke_end_inner_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.design_fab_stroke_end_outer_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.design_fab_stroke_top_inner_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.design_fab_stroke_top_outer_color = global::ArabWaha.Employer.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.design_snackbar_background_color = global::ArabWaha.Employer.Droid.Resource.Color.design_snackbar_background_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.design_textinput_error_color_dark = global::ArabWaha.Employer.Droid.Resource.Color.design_textinput_error_color_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.design_textinput_error_color_light = global::ArabWaha.Employer.Droid.Resource.Color.design_textinput_error_color_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.dim_foreground_disabled_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.dim_foreground_disabled_material_light = global::ArabWaha.Employer.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.dim_foreground_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.dim_foreground_material_light = global::ArabWaha.Employer.Droid.Resource.Color.dim_foreground_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.foreground_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.foreground_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.foreground_material_light = global::ArabWaha.Employer.Droid.Resource.Color.foreground_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.highlighted_text_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.highlighted_text_material_light = global::ArabWaha.Employer.Droid.Resource.Color.highlighted_text_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.hint_foreground_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.hint_foreground_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.hint_foreground_material_light = global::ArabWaha.Employer.Droid.Resource.Color.hint_foreground_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_blue_grey_800 = global::ArabWaha.Employer.Droid.Resource.Color.material_blue_grey_800;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_blue_grey_900 = global::ArabWaha.Employer.Droid.Resource.Color.material_blue_grey_900;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_blue_grey_950 = global::ArabWaha.Employer.Droid.Resource.Color.material_blue_grey_950;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_deep_teal_200 = global::ArabWaha.Employer.Droid.Resource.Color.material_deep_teal_200;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_deep_teal_500 = global::ArabWaha.Employer.Droid.Resource.Color.material_deep_teal_500;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_grey_100 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_100;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_grey_300 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_300;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_grey_50 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_50;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_grey_600 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_600;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_grey_800 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_800;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_grey_850 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_850;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.material_grey_900 = global::ArabWaha.Employer.Droid.Resource.Color.material_grey_900;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.primary_dark_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.primary_dark_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.primary_dark_material_light = global::ArabWaha.Employer.Droid.Resource.Color.primary_dark_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.primary_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.primary_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.primary_material_light = global::ArabWaha.Employer.Droid.Resource.Color.primary_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.primary_text_default_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.primary_text_default_material_light = global::ArabWaha.Employer.Droid.Resource.Color.primary_text_default_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.primary_text_disabled_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.primary_text_disabled_material_light = global::ArabWaha.Employer.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.ripple_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.ripple_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.ripple_material_light = global::ArabWaha.Employer.Droid.Resource.Color.ripple_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.secondary_text_default_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.secondary_text_default_material_light = global::ArabWaha.Employer.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.secondary_text_disabled_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.secondary_text_disabled_material_light = global::ArabWaha.Employer.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.switch_thumb_disabled_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.switch_thumb_disabled_material_light = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.switch_thumb_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.switch_thumb_material_light = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.switch_thumb_normal_material_dark = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Color.switch_thumb_normal_material_light = global::ArabWaha.Employer.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_content_inset_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_default_height_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_default_padding_end_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_default_padding_start_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_progress_bar_size = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_stacked_max_height = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_button_min_height_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_button_min_width_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_action_button_min_width_overflow_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_alert_dialog_button_bar_height = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_button_inset_horizontal_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_button_inset_vertical_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_button_padding_horizontal_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_button_padding_vertical_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_config_prefDialogWidth = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_control_corner_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_control_inset_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_control_padding_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dialog_fixed_height_major = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dialog_fixed_height_minor = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dialog_fixed_width_major = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dialog_fixed_width_minor = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dialog_list_padding_vertical_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_list_padding_vertical_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dialog_min_width_major = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dialog_min_width_minor = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dialog_padding_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dialog_padding_top_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_disabled_alpha_material_dark = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_disabled_alpha_material_light = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dropdownitem_icon_width = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dropdownitem_text_padding_left = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_dropdownitem_text_padding_right = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_edit_text_inset_bottom_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_edit_text_inset_top_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_floating_window_z = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_list_item_padding_horizontal_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_panel_menu_list_width = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_search_view_preferred_width = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_seekbar_track_background_height_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_seekbar_track_progress_height_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_select_dialog_padding_start_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_switch_padding = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_switch_padding;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_body_1_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_body_2_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_button_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_caption_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_display_1_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_display_2_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_display_3_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_display_4_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_headline_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_large_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_medium_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_menu_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_small_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_subhead_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_title_material = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.abc_text_size_title_material_toolbar = global::ArabWaha.Employer.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.cardview_compat_inset_shadow = global::ArabWaha.Employer.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.cardview_default_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.cardview_default_radius = global::ArabWaha.Employer.Droid.Resource.Dimension.cardview_default_radius;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_appbar_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_bottom_sheet_modal_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_fab_border_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_border_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_fab_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_fab_image_size = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_image_size;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_fab_size_mini = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_fab_size_normal = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_fab_translation_z_pressed = global::ArabWaha.Employer.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_navigation_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_navigation_icon_padding = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_navigation_icon_size = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_navigation_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_navigation_padding_bottom = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_navigation_separator_vertical_padding = global::ArabWaha.Employer.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_snackbar_action_inline_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_snackbar_background_corner_radius = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_snackbar_elevation = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_snackbar_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_snackbar_min_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_snackbar_padding_horizontal = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_snackbar_padding_vertical = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_snackbar_text_size = global::ArabWaha.Employer.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_tab_max_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_tab_max_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_tab_scrollable_min_width = global::ArabWaha.Employer.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_tab_text_size = global::ArabWaha.Employer.Droid.Resource.Dimension.design_tab_text_size;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.design_tab_text_size_2line = global::ArabWaha.Employer.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.disabled_alpha_material_dark = global::ArabWaha.Employer.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.disabled_alpha_material_light = global::ArabWaha.Employer.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.highlight_alpha_material_colored = global::ArabWaha.Employer.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.highlight_alpha_material_dark = global::ArabWaha.Employer.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.highlight_alpha_material_light = global::ArabWaha.Employer.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::ArabWaha.Employer.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::ArabWaha.Employer.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::ArabWaha.Employer.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.mr_controller_volume_group_list_item_height = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.mr_controller_volume_group_list_max_height = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.mr_dialog_fixed_width_major = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.mr_dialog_fixed_width_minor = global::ArabWaha.Employer.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.notification_large_icon_height = global::ArabWaha.Employer.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.notification_large_icon_width = global::ArabWaha.Employer.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Dimension.notification_subtext_size = global::ArabWaha.Employer.Droid.Resource.Dimension.notification_subtext_size;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_action_bar_item_background_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_borderless_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_check_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_colored_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_default_mtrl_shape = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_radio_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_cab_background_internal_bg = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_cab_background_top_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_control_background_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_control_background_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_edit_text_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ic_star_black_16dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ic_star_black_36dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ic_star_half_black_16dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ic_star_half_black_36dp = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_item_background_holo_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_item_background_holo_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_divider_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_focused_holo = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_longpressed_holo = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_pressed_holo_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_pressed_holo_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_selector_disabled_holo_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_selector_holo_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_list_selector_holo_light = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_popup_background_mtrl_mult = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ratingbar_indicator_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_ratingbar_small_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_seekbar_thumb_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_seekbar_track_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_spinner_textfield_background_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_switch_thumb_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_switch_track_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_tab_indicator_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_text_cursor_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.abc_textfield_search_material = global::ArabWaha.Employer.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.design_fab_background = global::ArabWaha.Employer.Droid.Resource.Drawable.design_fab_background;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.design_snackbar_background = global::ArabWaha.Employer.Droid.Resource.Drawable.design_snackbar_background;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.ic_audiotrack_light = global::ArabWaha.Employer.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.mr_dialog_material_background_dark = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.mr_dialog_material_background_light = global::ArabWaha.Employer.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.notification_template_icon_bg = global::ArabWaha.Employer.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.seek_thumb_disabled = global::ArabWaha.Employer.Droid.Resource.Drawable.seek_thumb_disabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.seek_thumb_normal = global::ArabWaha.Employer.Droid.Resource.Drawable.seek_thumb_normal;
+			global::Xamarin.RangeSlider.Forms.Resource.Drawable.seek_thumb_pressed = global::ArabWaha.Employer.Droid.Resource.Drawable.seek_thumb_pressed;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action0 = global::ArabWaha.Employer.Droid.Resource.Id.action0;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_bar = global::ArabWaha.Employer.Droid.Resource.Id.action_bar;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_bar_activity_content = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_activity_content;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_bar_container = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_container;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_bar_root = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_root;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_bar_spinner = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_spinner;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_bar_subtitle = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_bar_title = global::ArabWaha.Employer.Droid.Resource.Id.action_bar_title;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_context_bar = global::ArabWaha.Employer.Droid.Resource.Id.action_context_bar;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_divider = global::ArabWaha.Employer.Droid.Resource.Id.action_divider;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_menu_divider = global::ArabWaha.Employer.Droid.Resource.Id.action_menu_divider;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_menu_presenter = global::ArabWaha.Employer.Droid.Resource.Id.action_menu_presenter;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_mode_bar = global::ArabWaha.Employer.Droid.Resource.Id.action_mode_bar;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_mode_bar_stub = global::ArabWaha.Employer.Droid.Resource.Id.action_mode_bar_stub;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.action_mode_close_button = global::ArabWaha.Employer.Droid.Resource.Id.action_mode_close_button;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.activity_chooser_view_content = global::ArabWaha.Employer.Droid.Resource.Id.activity_chooser_view_content;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.alertTitle = global::ArabWaha.Employer.Droid.Resource.Id.alertTitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.always = global::ArabWaha.Employer.Droid.Resource.Id.always;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.beginning = global::ArabWaha.Employer.Droid.Resource.Id.beginning;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.bottom = global::ArabWaha.Employer.Droid.Resource.Id.bottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.buttonPanel = global::ArabWaha.Employer.Droid.Resource.Id.buttonPanel;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.cancel_action = global::ArabWaha.Employer.Droid.Resource.Id.cancel_action;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.center = global::ArabWaha.Employer.Droid.Resource.Id.center;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.center_horizontal = global::ArabWaha.Employer.Droid.Resource.Id.center_horizontal;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.center_vertical = global::ArabWaha.Employer.Droid.Resource.Id.center_vertical;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.checkbox = global::ArabWaha.Employer.Droid.Resource.Id.checkbox;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.chronometer = global::ArabWaha.Employer.Droid.Resource.Id.chronometer;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.clip_horizontal = global::ArabWaha.Employer.Droid.Resource.Id.clip_horizontal;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.clip_vertical = global::ArabWaha.Employer.Droid.Resource.Id.clip_vertical;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.collapseActionView = global::ArabWaha.Employer.Droid.Resource.Id.collapseActionView;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.contentPanel = global::ArabWaha.Employer.Droid.Resource.Id.contentPanel;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.custom = global::ArabWaha.Employer.Droid.Resource.Id.custom;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.customPanel = global::ArabWaha.Employer.Droid.Resource.Id.customPanel;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.decor_content_parent = global::ArabWaha.Employer.Droid.Resource.Id.decor_content_parent;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.default_activity_button = global::ArabWaha.Employer.Droid.Resource.Id.default_activity_button;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.design_bottom_sheet = global::ArabWaha.Employer.Droid.Resource.Id.design_bottom_sheet;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.design_menu_item_action_area = global::ArabWaha.Employer.Droid.Resource.Id.design_menu_item_action_area;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.design_menu_item_action_area_stub = global::ArabWaha.Employer.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.design_menu_item_text = global::ArabWaha.Employer.Droid.Resource.Id.design_menu_item_text;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.design_navigation_view = global::ArabWaha.Employer.Droid.Resource.Id.design_navigation_view;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.disableHome = global::ArabWaha.Employer.Droid.Resource.Id.disableHome;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.edit_query = global::ArabWaha.Employer.Droid.Resource.Id.edit_query;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.end = global::ArabWaha.Employer.Droid.Resource.Id.end;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.end_padder = global::ArabWaha.Employer.Droid.Resource.Id.end_padder;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.enterAlways = global::ArabWaha.Employer.Droid.Resource.Id.enterAlways;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.enterAlwaysCollapsed = global::ArabWaha.Employer.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.exitUntilCollapsed = global::ArabWaha.Employer.Droid.Resource.Id.exitUntilCollapsed;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.expand_activities_button = global::ArabWaha.Employer.Droid.Resource.Id.expand_activities_button;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.expanded_menu = global::ArabWaha.Employer.Droid.Resource.Id.expanded_menu;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.fill = global::ArabWaha.Employer.Droid.Resource.Id.fill;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.fill_horizontal = global::ArabWaha.Employer.Droid.Resource.Id.fill_horizontal;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.fill_vertical = global::ArabWaha.Employer.Droid.Resource.Id.fill_vertical;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.@fixed = global::ArabWaha.Employer.Droid.Resource.Id.@fixed;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.home = global::ArabWaha.Employer.Droid.Resource.Id.home;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.homeAsUp = global::ArabWaha.Employer.Droid.Resource.Id.homeAsUp;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.icon = global::ArabWaha.Employer.Droid.Resource.Id.icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.ifRoom = global::ArabWaha.Employer.Droid.Resource.Id.ifRoom;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.image = global::ArabWaha.Employer.Droid.Resource.Id.image;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.info = global::ArabWaha.Employer.Droid.Resource.Id.info;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.item_touch_helper_previous_elevation = global::ArabWaha.Employer.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.left = global::ArabWaha.Employer.Droid.Resource.Id.left;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.line1 = global::ArabWaha.Employer.Droid.Resource.Id.line1;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.line3 = global::ArabWaha.Employer.Droid.Resource.Id.line3;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.listMode = global::ArabWaha.Employer.Droid.Resource.Id.listMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.list_item = global::ArabWaha.Employer.Droid.Resource.Id.list_item;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.media_actions = global::ArabWaha.Employer.Droid.Resource.Id.media_actions;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.middle = global::ArabWaha.Employer.Droid.Resource.Id.middle;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mini = global::ArabWaha.Employer.Droid.Resource.Id.mini;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_art = global::ArabWaha.Employer.Droid.Resource.Id.mr_art;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_chooser_list = global::ArabWaha.Employer.Droid.Resource.Id.mr_chooser_list;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_chooser_route_desc = global::ArabWaha.Employer.Droid.Resource.Id.mr_chooser_route_desc;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_chooser_route_icon = global::ArabWaha.Employer.Droid.Resource.Id.mr_chooser_route_icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_chooser_route_name = global::ArabWaha.Employer.Droid.Resource.Id.mr_chooser_route_name;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_close = global::ArabWaha.Employer.Droid.Resource.Id.mr_close;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_control_divider = global::ArabWaha.Employer.Droid.Resource.Id.mr_control_divider;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_control_play_pause = global::ArabWaha.Employer.Droid.Resource.Id.mr_control_play_pause;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_control_subtitle = global::ArabWaha.Employer.Droid.Resource.Id.mr_control_subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_control_title = global::ArabWaha.Employer.Droid.Resource.Id.mr_control_title;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_control_title_container = global::ArabWaha.Employer.Droid.Resource.Id.mr_control_title_container;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_custom_control = global::ArabWaha.Employer.Droid.Resource.Id.mr_custom_control;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_default_control = global::ArabWaha.Employer.Droid.Resource.Id.mr_default_control;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_dialog_area = global::ArabWaha.Employer.Droid.Resource.Id.mr_dialog_area;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_expandable_area = global::ArabWaha.Employer.Droid.Resource.Id.mr_expandable_area;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_group_expand_collapse = global::ArabWaha.Employer.Droid.Resource.Id.mr_group_expand_collapse;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_media_main_control = global::ArabWaha.Employer.Droid.Resource.Id.mr_media_main_control;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_name = global::ArabWaha.Employer.Droid.Resource.Id.mr_name;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_playback_control = global::ArabWaha.Employer.Droid.Resource.Id.mr_playback_control;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_title_bar = global::ArabWaha.Employer.Droid.Resource.Id.mr_title_bar;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_volume_control = global::ArabWaha.Employer.Droid.Resource.Id.mr_volume_control;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_volume_group_list = global::ArabWaha.Employer.Droid.Resource.Id.mr_volume_group_list;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_volume_item_icon = global::ArabWaha.Employer.Droid.Resource.Id.mr_volume_item_icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.mr_volume_slider = global::ArabWaha.Employer.Droid.Resource.Id.mr_volume_slider;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.multiply = global::ArabWaha.Employer.Droid.Resource.Id.multiply;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.navigation_header_container = global::ArabWaha.Employer.Droid.Resource.Id.navigation_header_container;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.never = global::ArabWaha.Employer.Droid.Resource.Id.never;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.none = global::ArabWaha.Employer.Droid.Resource.Id.none;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.normal = global::ArabWaha.Employer.Droid.Resource.Id.normal;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.parallax = global::ArabWaha.Employer.Droid.Resource.Id.parallax;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.parentPanel = global::ArabWaha.Employer.Droid.Resource.Id.parentPanel;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.pin = global::ArabWaha.Employer.Droid.Resource.Id.pin;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.progress_circular = global::ArabWaha.Employer.Droid.Resource.Id.progress_circular;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.progress_horizontal = global::ArabWaha.Employer.Droid.Resource.Id.progress_horizontal;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.radio = global::ArabWaha.Employer.Droid.Resource.Id.radio;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.right = global::ArabWaha.Employer.Droid.Resource.Id.right;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.screen = global::ArabWaha.Employer.Droid.Resource.Id.screen;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.scroll = global::ArabWaha.Employer.Droid.Resource.Id.scroll;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.scrollIndicatorDown = global::ArabWaha.Employer.Droid.Resource.Id.scrollIndicatorDown;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.scrollIndicatorUp = global::ArabWaha.Employer.Droid.Resource.Id.scrollIndicatorUp;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.scrollView = global::ArabWaha.Employer.Droid.Resource.Id.scrollView;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.scrollable = global::ArabWaha.Employer.Droid.Resource.Id.scrollable;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.search_badge = global::ArabWaha.Employer.Droid.Resource.Id.search_badge;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.search_bar = global::ArabWaha.Employer.Droid.Resource.Id.search_bar;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.search_button = global::ArabWaha.Employer.Droid.Resource.Id.search_button;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.search_close_btn = global::ArabWaha.Employer.Droid.Resource.Id.search_close_btn;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.search_edit_frame = global::ArabWaha.Employer.Droid.Resource.Id.search_edit_frame;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.search_go_btn = global::ArabWaha.Employer.Droid.Resource.Id.search_go_btn;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.search_mag_icon = global::ArabWaha.Employer.Droid.Resource.Id.search_mag_icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.search_plate = global::ArabWaha.Employer.Droid.Resource.Id.search_plate;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.search_src_text = global::ArabWaha.Employer.Droid.Resource.Id.search_src_text;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.search_voice_btn = global::ArabWaha.Employer.Droid.Resource.Id.search_voice_btn;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.select_dialog_listview = global::ArabWaha.Employer.Droid.Resource.Id.select_dialog_listview;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.shortcut = global::ArabWaha.Employer.Droid.Resource.Id.shortcut;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.showCustom = global::ArabWaha.Employer.Droid.Resource.Id.showCustom;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.showHome = global::ArabWaha.Employer.Droid.Resource.Id.showHome;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.showTitle = global::ArabWaha.Employer.Droid.Resource.Id.showTitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.snackbar_action = global::ArabWaha.Employer.Droid.Resource.Id.snackbar_action;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.snackbar_text = global::ArabWaha.Employer.Droid.Resource.Id.snackbar_text;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.snap = global::ArabWaha.Employer.Droid.Resource.Id.snap;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.spacer = global::ArabWaha.Employer.Droid.Resource.Id.spacer;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.split_action_bar = global::ArabWaha.Employer.Droid.Resource.Id.split_action_bar;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.src_atop = global::ArabWaha.Employer.Droid.Resource.Id.src_atop;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.src_in = global::ArabWaha.Employer.Droid.Resource.Id.src_in;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.src_over = global::ArabWaha.Employer.Droid.Resource.Id.src_over;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.start = global::ArabWaha.Employer.Droid.Resource.Id.start;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.status_bar_latest_event_content = global::ArabWaha.Employer.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.submit_area = global::ArabWaha.Employer.Droid.Resource.Id.submit_area;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.tabMode = global::ArabWaha.Employer.Droid.Resource.Id.tabMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.text = global::ArabWaha.Employer.Droid.Resource.Id.text;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.text2 = global::ArabWaha.Employer.Droid.Resource.Id.text2;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.textSpacerNoButtons = global::ArabWaha.Employer.Droid.Resource.Id.textSpacerNoButtons;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.time = global::ArabWaha.Employer.Droid.Resource.Id.time;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.title = global::ArabWaha.Employer.Droid.Resource.Id.title;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.title_template = global::ArabWaha.Employer.Droid.Resource.Id.title_template;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.top = global::ArabWaha.Employer.Droid.Resource.Id.top;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.topPanel = global::ArabWaha.Employer.Droid.Resource.Id.topPanel;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.touch_outside = global::ArabWaha.Employer.Droid.Resource.Id.touch_outside;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.up = global::ArabWaha.Employer.Droid.Resource.Id.up;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.useLogo = global::ArabWaha.Employer.Droid.Resource.Id.useLogo;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.view_offset_helper = global::ArabWaha.Employer.Droid.Resource.Id.view_offset_helper;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.volume_item_container = global::ArabWaha.Employer.Droid.Resource.Id.volume_item_container;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.withText = global::ArabWaha.Employer.Droid.Resource.Id.withText;
+			global::Xamarin.RangeSlider.Forms.Resource.Id.wrap_content = global::ArabWaha.Employer.Droid.Resource.Id.wrap_content;
+			global::Xamarin.RangeSlider.Forms.Resource.Integer.abc_config_activityDefaultDur = global::ArabWaha.Employer.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Xamarin.RangeSlider.Forms.Resource.Integer.abc_config_activityShortDur = global::ArabWaha.Employer.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Xamarin.RangeSlider.Forms.Resource.Integer.bottom_sheet_slide_duration = global::ArabWaha.Employer.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Xamarin.RangeSlider.Forms.Resource.Integer.cancel_button_image_alpha = global::ArabWaha.Employer.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Integer.design_snackbar_text_max_lines = global::ArabWaha.Employer.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Xamarin.RangeSlider.Forms.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::ArabWaha.Employer.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::Xamarin.RangeSlider.Forms.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::ArabWaha.Employer.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::Xamarin.RangeSlider.Forms.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::ArabWaha.Employer.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::Xamarin.RangeSlider.Forms.Resource.Integer.status_bar_notification_info_maxnum = global::ArabWaha.Employer.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.RangeSlider.Forms.Resource.Interpolator.mr_fast_out_slow_in = global::ArabWaha.Employer.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::Xamarin.RangeSlider.Forms.Resource.Interpolator.mr_linear_out_slow_in = global::ArabWaha.Employer.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_action_bar_title_item = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_action_bar_up_container = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_action_bar_view_list_nav_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_action_menu_item_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_action_menu_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_action_mode_bar = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_action_mode_close_item_material = global::ArabWaha.Employer.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_activity_chooser_view = global::ArabWaha.Employer.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_activity_chooser_view_list_item = global::ArabWaha.Employer.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_alert_dialog_button_bar_material = global::ArabWaha.Employer.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_alert_dialog_material = global::ArabWaha.Employer.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_dialog_title_material = global::ArabWaha.Employer.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_expanded_menu_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_list_menu_item_checkbox = global::ArabWaha.Employer.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_list_menu_item_icon = global::ArabWaha.Employer.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_list_menu_item_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_list_menu_item_radio = global::ArabWaha.Employer.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_popup_menu_item_layout = global::ArabWaha.Employer.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_screen_content_include = global::ArabWaha.Employer.Droid.Resource.Layout.abc_screen_content_include;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_screen_simple = global::ArabWaha.Employer.Droid.Resource.Layout.abc_screen_simple;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_screen_simple_overlay_action_mode = global::ArabWaha.Employer.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_screen_toolbar = global::ArabWaha.Employer.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_search_dropdown_item_icons_2line = global::ArabWaha.Employer.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_search_view = global::ArabWaha.Employer.Droid.Resource.Layout.abc_search_view;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.abc_select_dialog_material = global::ArabWaha.Employer.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_bottom_sheet_dialog = global::ArabWaha.Employer.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_layout_snackbar = global::ArabWaha.Employer.Droid.Resource.Layout.design_layout_snackbar;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_layout_snackbar_include = global::ArabWaha.Employer.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_layout_tab_icon = global::ArabWaha.Employer.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_layout_tab_text = global::ArabWaha.Employer.Droid.Resource.Layout.design_layout_tab_text;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_menu_item_action_area = global::ArabWaha.Employer.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_navigation_item = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_item;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_navigation_item_header = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_item_header;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_navigation_item_separator = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_navigation_item_subheader = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_navigation_menu = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_menu;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.design_navigation_menu_item = global::ArabWaha.Employer.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.mr_chooser_dialog = global::ArabWaha.Employer.Droid.Resource.Layout.mr_chooser_dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.mr_chooser_list_item = global::ArabWaha.Employer.Droid.Resource.Layout.mr_chooser_list_item;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.mr_controller_material_dialog_b = global::ArabWaha.Employer.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.mr_controller_volume_item = global::ArabWaha.Employer.Droid.Resource.Layout.mr_controller_volume_item;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.mr_playback_control = global::ArabWaha.Employer.Droid.Resource.Layout.mr_playback_control;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.mr_volume_control = global::ArabWaha.Employer.Droid.Resource.Layout.mr_volume_control;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.notification_media_action = global::ArabWaha.Employer.Droid.Resource.Layout.notification_media_action;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.notification_media_cancel_action = global::ArabWaha.Employer.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.notification_template_big_media = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_big_media;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.notification_template_big_media_narrow = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.notification_template_lines = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_lines;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.notification_template_media = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_media;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.notification_template_part_chronometer = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.notification_template_part_time = global::ArabWaha.Employer.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.select_dialog_item_material = global::ArabWaha.Employer.Droid.Resource.Layout.select_dialog_item_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.select_dialog_multichoice_material = global::ArabWaha.Employer.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.select_dialog_singlechoice_material = global::ArabWaha.Employer.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarin.RangeSlider.Forms.Resource.Layout.support_simple_spinner_dropdown_item = global::ArabWaha.Employer.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.RangeSlider.Forms.Resource.String.ApplicationName = global::ArabWaha.Employer.Droid.Resource.String.ApplicationName;
+			global::Xamarin.RangeSlider.Forms.Resource.String.Hello = global::ArabWaha.Employer.Droid.Resource.String.Hello;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_action_bar_home_description = global::ArabWaha.Employer.Droid.Resource.String.abc_action_bar_home_description;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_action_bar_home_description_format = global::ArabWaha.Employer.Droid.Resource.String.abc_action_bar_home_description_format;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_action_bar_home_subtitle_description_format = global::ArabWaha.Employer.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_action_bar_up_description = global::ArabWaha.Employer.Droid.Resource.String.abc_action_bar_up_description;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_action_menu_overflow_description = global::ArabWaha.Employer.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_action_mode_done = global::ArabWaha.Employer.Droid.Resource.String.abc_action_mode_done;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_activity_chooser_view_see_all = global::ArabWaha.Employer.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_activitychooserview_choose_application = global::ArabWaha.Employer.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_capital_off = global::ArabWaha.Employer.Droid.Resource.String.abc_capital_off;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_capital_on = global::ArabWaha.Employer.Droid.Resource.String.abc_capital_on;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_search_hint = global::ArabWaha.Employer.Droid.Resource.String.abc_search_hint;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_searchview_description_clear = global::ArabWaha.Employer.Droid.Resource.String.abc_searchview_description_clear;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_searchview_description_query = global::ArabWaha.Employer.Droid.Resource.String.abc_searchview_description_query;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_searchview_description_search = global::ArabWaha.Employer.Droid.Resource.String.abc_searchview_description_search;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_searchview_description_submit = global::ArabWaha.Employer.Droid.Resource.String.abc_searchview_description_submit;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_searchview_description_voice = global::ArabWaha.Employer.Droid.Resource.String.abc_searchview_description_voice;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_shareactionprovider_share_with = global::ArabWaha.Employer.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_shareactionprovider_share_with_application = global::ArabWaha.Employer.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Xamarin.RangeSlider.Forms.Resource.String.abc_toolbar_collapse_description = global::ArabWaha.Employer.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Xamarin.RangeSlider.Forms.Resource.String.app_name = global::ArabWaha.Employer.Droid.Resource.String.app_name;
+			global::Xamarin.RangeSlider.Forms.Resource.String.appbar_scrolling_view_behavior = global::ArabWaha.Employer.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Xamarin.RangeSlider.Forms.Resource.String.bottom_sheet_behavior = global::ArabWaha.Employer.Droid.Resource.String.bottom_sheet_behavior;
+			global::Xamarin.RangeSlider.Forms.Resource.String.character_counter_pattern = global::ArabWaha.Employer.Droid.Resource.String.character_counter_pattern;
+			global::Xamarin.RangeSlider.Forms.Resource.String.demo_max_label = global::ArabWaha.Employer.Droid.Resource.String.demo_max_label;
+			global::Xamarin.RangeSlider.Forms.Resource.String.demo_min_label = global::ArabWaha.Employer.Droid.Resource.String.demo_min_label;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_button_content_description = global::ArabWaha.Employer.Droid.Resource.String.mr_button_content_description;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_chooser_searching = global::ArabWaha.Employer.Droid.Resource.String.mr_chooser_searching;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_chooser_title = global::ArabWaha.Employer.Droid.Resource.String.mr_chooser_title;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_controller_casting_screen = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_casting_screen;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_controller_close_description = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_close_description;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_controller_collapse_group = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_collapse_group;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_controller_disconnect = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_disconnect;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_controller_expand_group = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_expand_group;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_controller_no_info_available = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_no_info_available;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_controller_no_media_selected = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_no_media_selected;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_controller_pause = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_pause;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_controller_play = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_play;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_controller_stop = global::ArabWaha.Employer.Droid.Resource.String.mr_controller_stop;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_system_route_name = global::ArabWaha.Employer.Droid.Resource.String.mr_system_route_name;
+			global::Xamarin.RangeSlider.Forms.Resource.String.mr_user_route_category_name = global::ArabWaha.Employer.Droid.Resource.String.mr_user_route_category_name;
+			global::Xamarin.RangeSlider.Forms.Resource.String.status_bar_notification_info_overflow = global::ArabWaha.Employer.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.AlertDialog_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.AlertDialog_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Animation_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Animation_AppCompat_DropDownUp = global::ArabWaha.Employer.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Animation_Design_BottomSheetDialog = global::ArabWaha.Employer.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_AlertDialog_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_AlertDialog_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Animation_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::ArabWaha.Employer.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_CardView = global::ArabWaha.Employer.Droid.Resource.Style.Base_CardView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_DialogWindowTitle_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Button = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Large = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Small = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Title = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::ArabWaha.Employer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::ArabWaha.Employer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_ThemeOverlay_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::ArabWaha.Employer.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::ArabWaha.Employer.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V21_Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V21_Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V22_Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V22_Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V23_Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V23_Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V7_Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V7_Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::ArabWaha.Employer.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ActionMode = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Button = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Button_Small = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_EditText = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ImageButton = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ListView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_RatingBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_SearchView = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_SeekBar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Toolbar = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Base_Widget_Design_TabLayout = global::ArabWaha.Employer.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.CardView = global::ArabWaha.Employer.Droid.Resource.Style.CardView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.CardView_Dark = global::ArabWaha.Employer.Droid.Resource.Style.CardView_Dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.CardView_Light = global::ArabWaha.Employer.Droid.Resource.Style.CardView_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Platform_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Platform_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Platform_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Platform_V11_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Platform_V11_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Platform_V14_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Platform_V14_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Platform_Widget_AppCompat_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::ArabWaha.Employer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::ArabWaha.Employer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Body1 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Body2 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Button = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Caption = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Display1 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Display2 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Display3 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Display4 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Headline = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Large = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Medium = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Menu = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Small = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Subhead = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_Design_Counter = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_Design_Counter_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_Design_Error = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_Design_Hint = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_Design_Snackbar_Message = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_Design_Tab = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_StatusBar_EventContent = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::ArabWaha.Employer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_CompactMenu = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_DayNight = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_Light_Dialog = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_AppCompat_NoActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_Design = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_Design_BottomSheetDialog = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_Design_Light = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_Design_Light_NoActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_Design_NoActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_MediaRouter = global::ArabWaha.Employer.Droid.Resource.Style.Theme_MediaRouter;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_MediaRouter_Light = global::ArabWaha.Employer.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::ArabWaha.Employer.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Theme_MediaRouter_LightControlPanel = global::ArabWaha.Employer.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.ThemeOverlay_AppCompat = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.ThemeOverlay_AppCompat_Dark = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.ThemeOverlay_AppCompat_Light = global::ArabWaha.Employer.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ActionButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ActionMode = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ActivityChooserView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Button = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Button_Borderless = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Button_Colored = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Button_Small = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ButtonBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_EditText = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ImageButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_SearchView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ListPopupWindow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ListView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ListView_DropDown = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ListView_Menu = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_PopupMenu = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_PopupWindow = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ProgressBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_RatingBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_RatingBar_Small = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_SearchView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_SeekBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Spinner = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Toolbar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::ArabWaha.Employer.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_Design_AppBarLayout = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_Design_BottomSheet_Modal = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_Design_CollapsingToolbar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_Design_CoordinatorLayout = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_Design_FloatingActionButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_Design_NavigationView = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_Design_Snackbar = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_Design_TabLayout = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_Design_TextInputLayout = global::ArabWaha.Employer.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ChooserText = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ChooserText_Primary = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Light = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Primary_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ChooserText_Secondary = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Light = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ChooserText_Secondary_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ControllerText = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ControllerText_Primary = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Light = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Primary_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ControllerText_Secondary = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Light = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Secondary_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ControllerText_Title = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ControllerText_Title_Dark = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title_Dark;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_ControllerText_Title_Light = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_ControllerText_Title_Light;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::ArabWaha.Employer.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_background = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_background;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_backgroundSplit = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_backgroundStacked = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_contentInsetEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_contentInsetLeft = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_contentInsetRight = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_contentInsetStart = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_customNavigationLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_displayOptions = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_divider = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_divider;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_elevation = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_height = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_height;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_hideOnContentScroll = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_homeAsUpIndicator = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_homeLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_icon = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_itemPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_logo = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_logo;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_navigationMode = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_popupTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_progressBarPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_progressBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_subtitle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_subtitleTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_title = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_title;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBar_titleTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBarLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBarLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionMenuItemView = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionMenuItemView_android_minWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionMenuView = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMenuView;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionMode = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionMode_background = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_background;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionMode_backgroundSplit = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionMode_closeItemLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionMode_height = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_height;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionMode_subtitleTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActionMode_titleTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActivityChooserView = global::ArabWaha.Employer.Droid.Resource.Styleable.ActivityChooserView;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ActivityChooserView_initialActivityCount = global::ArabWaha.Employer.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AlertDialog = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AlertDialog_android_layout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AlertDialog_listItemLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AlertDialog_listLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppBarLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppBarLayout_android_background = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppBarLayout_elevation = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppBarLayout_expanded = global::ArabWaha.Employer.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatImageView = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatImageView;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatImageView_android_src = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatImageView_srcCompat = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTextView = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextView;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTextView_android_textAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTextView_textAllCaps = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarDivider = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarSize = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_buttonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_checkboxStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_colorAccent = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_colorControlActivated = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_colorControlNormal = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_colorPrimary = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_controlBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_dialogTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_dividerVertical = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_editTextBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_editTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_editTextStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_panelBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_searchViewStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_seekBarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_spinnerStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_switchStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_toolbarStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_windowActionBar = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.AppCompatTheme_windowNoTitle = global::ArabWaha.Employer.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ButtonBarLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ButtonBarLayout_allowStacking = global::ArabWaha.Employer.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_android_minHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_android_minWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_cardBackgroundColor = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_cardCornerRadius = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_cardElevation = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_cardMaxElevation = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_cardPreventCornerOverlap = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_cardUseCompatPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_contentPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_contentPaddingBottom = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_contentPaddingLeft = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_contentPaddingRight = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CardView_contentPaddingTop = global::ArabWaha.Employer.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_title = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::ArabWaha.Employer.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CompoundButton = global::ArabWaha.Employer.Droid.Resource.Styleable.CompoundButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CompoundButton_android_button = global::ArabWaha.Employer.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CompoundButton_buttonTint = global::ArabWaha.Employer.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CompoundButton_buttonTintMode = global::ArabWaha.Employer.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CoordinatorLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CoordinatorLayout_keylines = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DesignTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.DesignTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DesignTheme_bottomSheetStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DesignTheme_textColorError = global::ArabWaha.Employer.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DrawerArrowToggle = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DrawerArrowToggle_barLength = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DrawerArrowToggle_color = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DrawerArrowToggle_drawableSize = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DrawerArrowToggle_spinBars = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.DrawerArrowToggle_thickness = global::ArabWaha.Employer.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.FloatingActionButton = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.FloatingActionButton_backgroundTint = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.FloatingActionButton_borderWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.FloatingActionButton_elevation = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.FloatingActionButton_fabSize = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.FloatingActionButton_rippleColor = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.FloatingActionButton_useCompatPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ForegroundLinearLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::ArabWaha.Employer.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::ArabWaha.Employer.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::ArabWaha.Employer.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_android_gravity = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_android_orientation = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_divider = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_showDividers = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_Layout = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::ArabWaha.Employer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ListPopupWindow = global::ArabWaha.Employer.Droid.Resource.Styleable.ListPopupWindow;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::ArabWaha.Employer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::ArabWaha.Employer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MediaRouteButton = global::ArabWaha.Employer.Droid.Resource.Styleable.MediaRouteButton;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MediaRouteButton_android_minHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MediaRouteButton_android_minWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::ArabWaha.Employer.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuGroup = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuGroup_android_checkableBehavior = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuGroup_android_enabled = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuGroup_android_id = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuGroup_android_menuCategory = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuGroup_android_orderInCategory = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuGroup_android_visible = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_actionLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_actionProviderClass = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_actionViewClass = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_checkable = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_checked = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_enabled = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_icon = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_id = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_menuCategory = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_numericShortcut = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_onClick = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_orderInCategory = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_title = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_titleCondensed = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_android_visible = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuItem_showAsAction = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuView = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuView_android_headerBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuView_android_horizontalDivider = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuView_android_itemBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuView_android_itemTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuView_android_verticalDivider = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuView_android_windowAnimationStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.MenuView_preserveIconSpacing = global::ArabWaha.Employer.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView_android_background = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView_android_maxWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView_elevation = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView_headerLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView_itemBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView_itemIconTint = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView_itemTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView_itemTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.NavigationView_menu = global::ArabWaha.Employer.Droid.Resource.Styleable.NavigationView_menu;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.PopupWindow = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindow;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.PopupWindow_android_popupBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.PopupWindow_overlapAnchor = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.PopupWindowBackgroundState = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::ArabWaha.Employer.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_absoluteMaxValue = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_absoluteMaxValue;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_absoluteMinValue = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_absoluteMinValue;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_activateOnDefaultValues = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_activateOnDefaultValues;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_activeColor = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_activeColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_alwaysActive = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_alwaysActive;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_barHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_barHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_defaultColor = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_defaultColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_internalPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_internalPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_maxThumbHidden = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_maxThumbHidden;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_minThumbHidden = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_minThumbHidden;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_showRangeLabels = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_showRangeLabels;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_stepValue = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_stepValue;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_stepValueContinuously = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_stepValueContinuously;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_textAboveThumbsColor = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_textAboveThumbsColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_textSize = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_textSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_thumbDisabled = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbDisabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_thumbNormal = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbNormal;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_thumbPressed = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbPressed;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_thumbShadow = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbShadow;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_thumbShadowBlur = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbShadowBlur;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_thumbShadowColor = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbShadowColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_thumbShadowXOffset = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbShadowXOffset;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_thumbShadowYOffset = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_thumbShadowYOffset;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RangeSliderControl_valuesAboveThumbs = global::ArabWaha.Employer.Droid.Resource.Styleable.RangeSliderControl_valuesAboveThumbs;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RecyclerView = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RecyclerView_android_orientation = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RecyclerView_layoutManager = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RecyclerView_reverseLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RecyclerView_spanCount = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.RecyclerView_stackFromEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ScrimInsetsFrameLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::ArabWaha.Employer.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_android_focusable = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_android_imeOptions = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_android_inputType = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_android_maxWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_closeIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_commitIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_defaultQueryHint = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_goIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_iconifiedByDefault = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_layout = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_queryBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_queryHint = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_searchHintIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_searchIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_submitBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_suggestionRowLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SearchView_voiceIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SnackbarLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.SnackbarLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SnackbarLayout_android_maxWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SnackbarLayout_elevation = global::ArabWaha.Employer.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Spinner = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Spinner_android_dropDownWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Spinner_android_entries = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Spinner_android_popupBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Spinner_android_prompt = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Spinner_popupTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat_android_textOff = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat_android_textOn = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat_android_thumb = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat_showText = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat_splitTrack = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat_switchMinWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat_switchPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat_switchTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat_thumbTextPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.SwitchCompat_track = global::ArabWaha.Employer.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabItem = global::ArabWaha.Employer.Droid.Resource.Styleable.TabItem;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabItem_android_icon = global::ArabWaha.Employer.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabItem_android_layout = global::ArabWaha.Employer.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabItem_android_text = global::ArabWaha.Employer.Droid.Resource.Styleable.TabItem_android_text;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabBackground = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabContentStart = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabGravity = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabIndicatorColor = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabIndicatorHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabMaxWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabMinWidth = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabMode = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabPadding = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabPaddingBottom = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabPaddingEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabPaddingStart = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabPaddingTop = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabSelectedTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TabLayout_tabTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextAppearance_android_shadowColor = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextAppearance_android_shadowDx = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextAppearance_android_shadowDy = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextAppearance_android_shadowRadius = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextAppearance_android_textColor = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextAppearance_android_textSize = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextAppearance_android_textStyle = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextAppearance_android_typeface = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextAppearance_textAllCaps = global::ArabWaha.Employer.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_android_hint = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_android_textColorHint = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_counterEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_counterMaxLength = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_counterTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_errorEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_errorTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_hintEnabled = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.TextInputLayout_hintTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_android_gravity = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_android_minHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_collapseContentDescription = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_collapseIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_contentInsetEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_contentInsetLeft = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_contentInsetRight = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_contentInsetStart = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_logo = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_logo;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_logoDescription = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_maxButtonHeight = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_navigationContentDescription = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_navigationIcon = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_popupTheme = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_subtitle = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_subtitleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_subtitleTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_title = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_title;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_titleMarginBottom = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_titleMarginEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_titleMarginStart = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_titleMarginTop = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_titleMargins = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_titleTextAppearance = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.Toolbar_titleTextColor = global::ArabWaha.Employer.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.View = global::ArabWaha.Employer.Droid.Resource.Styleable.View;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.View_android_focusable = global::ArabWaha.Employer.Droid.Resource.Styleable.View_android_focusable;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.View_android_theme = global::ArabWaha.Employer.Droid.Resource.Styleable.View_android_theme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.View_paddingEnd = global::ArabWaha.Employer.Droid.Resource.Styleable.View_paddingEnd;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.View_paddingStart = global::ArabWaha.Employer.Droid.Resource.Styleable.View_paddingStart;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.View_theme = global::ArabWaha.Employer.Droid.Resource.Styleable.View_theme;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ViewBackgroundHelper = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ViewBackgroundHelper_android_background = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ViewStubCompat = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewStubCompat;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ViewStubCompat_android_id = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ViewStubCompat_android_inflatedId = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Xamarin.RangeSlider.Forms.Resource.Styleable.ViewStubCompat_android_layout = global::ArabWaha.Employer.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 		}
 		
 		public partial class Animation
@@ -1974,6 +5749,12 @@ namespace ArabWaha.Employer.Droid
 			
 			// aapt resource value: 0x7f01001b
 			public const int MediaRouteControllerWindowBackground = 2130771995;
+			
+			// aapt resource value: 0x7f01016a
+			public const int absoluteMaxValue = 2130772330;
+			
+			// aapt resource value: 0x7f010169
+			public const int absoluteMinValue = 2130772329;
 			
 			// aapt resource value: 0x7f010076
 			public const int actionBarDivider = 2130772086;
@@ -2074,44 +5855,50 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f0100e3
 			public const int actionViewClass = 2130772195;
 			
+			// aapt resource value: 0x7f01017d
+			public const int activateOnDefaultValues = 2130772349;
+			
+			// aapt resource value: 0x7f010173
+			public const int activeColor = 2130772339;
+			
 			// aapt resource value: 0x7f010099
 			public const int activityChooserViewStyle = 2130772121;
 			
-			// aapt resource value: 0x7f010175
-			public const int ahBarColor = 2130772341;
+			// aapt resource value: 0x7f01018d
+			public const int ahBarColor = 2130772365;
 			
-			// aapt resource value: 0x7f01017d
-			public const int ahBarLength = 2130772349;
+			// aapt resource value: 0x7f010195
+			public const int ahBarLength = 2130772373;
 			
-			// aapt resource value: 0x7f01017c
-			public const int ahBarWidth = 2130772348;
+			// aapt resource value: 0x7f010194
+			public const int ahBarWidth = 2130772372;
 			
-			// aapt resource value: 0x7f01017a
-			public const int ahCircleColor = 2130772346;
+			// aapt resource value: 0x7f010192
+			public const int ahCircleColor = 2130772370;
 			
-			// aapt resource value: 0x7f010179
-			public const int ahDelayMillis = 2130772345;
+			// aapt resource value: 0x7f010191
+			public const int ahDelayMillis = 2130772369;
 			
-			// aapt resource value: 0x7f01017b
-			public const int ahRadius = 2130772347;
+			// aapt resource value: 0x7f010193
+			public const int ahRadius = 2130772371;
 			
-			// aapt resource value: 0x7f010176
-			public const int ahRimColor = 2130772342;
+			// aapt resource value: 0x7f01018e
+			public const int ahRimColor = 2130772366;
 			
-			// aapt resource value: 0x7f010177
-			public const int ahRimWidth = 2130772343;
+			// aapt resource value: 0x7f01018f
+			public const int ahRimWidth = 2130772367;
 			
-			// aapt resource value: 0x7f010178
-			public const int ahSpinSpeed = 2130772344;
+			// aapt resource value: 0x7f010190
+			public const int ahSpinSpeed = 2130772368;
 			
-			// aapt resource value: 0x7f010172
-			public const int ahText = 2130772338;
+			// aapt resource value: 0x7f01018a
+			public const int ahText = 2130772362;
 			
-			// aapt resource value: 0x7f010173
-			public const int ahTextColor = 2130772339;
+			// aapt resource value: 0x7f01018b
+			public const int ahTextColor = 2130772363;
 			
-			// aapt resource value: 0x7f010174
-			public const int ahTextSize = 2130772340;
+			// aapt resource value: 0x7f01018c
+			public const int ahTextSize = 2130772364;
 			
 			// aapt resource value: 0x7f0100bd
 			public const int alertDialogButtonGroupStyle = 2130772157;
@@ -2130,6 +5917,9 @@ namespace ArabWaha.Employer.Droid
 			
 			// aapt resource value: 0x7f0100d3
 			public const int alpha = 2130772179;
+			
+			// aapt resource value: 0x7f01016e
+			public const int alwaysActive = 2130772334;
 			
 			// aapt resource value: 0x7f010010
 			public const int ambientEnabled = 2130771984;
@@ -2157,6 +5947,9 @@ namespace ArabWaha.Employer.Droid
 			
 			// aapt resource value: 0x7f010116
 			public const int backgroundTintMode = 2130772246;
+			
+			// aapt resource value: 0x7f010171
+			public const int barHeight = 2130772337;
 			
 			// aapt resource value: 0x7f0100dc
 			public const int barLength = 2130772188;
@@ -2374,6 +6167,9 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f010045
 			public const int customNavigationLayout = 2130772037;
 			
+			// aapt resource value: 0x7f010172
+			public const int defaultColor = 2130772338;
+			
 			// aapt resource value: 0x7f0100ec
 			public const int defaultQueryHint = 2130772204;
 			
@@ -2518,6 +6314,9 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f010148
 			public const int insetForeground = 2130772296;
 			
+			// aapt resource value: 0x7f010170
+			public const int internalPadding = 2130772336;
+			
 			// aapt resource value: 0x7f010038
 			public const int isLightTheme = 2130772024;
 			
@@ -2626,6 +6425,9 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f010109
 			public const int maxButtonHeight = 2130772233;
 			
+			// aapt resource value: 0x7f01016c
+			public const int maxThumbHidden = 2130772332;
+			
 			// aapt resource value: 0x7f0100de
 			public const int measureWithLargestChild = 2130772190;
 			
@@ -2673,6 +6475,9 @@ namespace ArabWaha.Employer.Droid
 			
 			// aapt resource value: 0x7f010142
 			public const int menu = 2130772290;
+			
+			// aapt resource value: 0x7f01016b
+			public const int minThumbHidden = 2130772331;
 			
 			// aapt resource value: 0x7f010059
 			public const int multiChoiceItemLayout = 2130772057;
@@ -2797,6 +6602,9 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f0100df
 			public const int showDividers = 2130772191;
 			
+			// aapt resource value: 0x7f01016d
+			public const int showRangeLabels = 2130772333;
+			
 			// aapt resource value: 0x7f010100
 			public const int showText = 2130772224;
 			
@@ -2838,6 +6646,12 @@ namespace ArabWaha.Employer.Droid
 			
 			// aapt resource value: 0x7f010127
 			public const int statusBarScrim = 2130772263;
+			
+			// aapt resource value: 0x7f01017e
+			public const int stepValue = 2130772350;
+			
+			// aapt resource value: 0x7f01017f
+			public const int stepValueContinuously = 2130772351;
 			
 			// aapt resource value: 0x7f0100e6
 			public const int subMenuArrow = 2130772198;
@@ -2920,6 +6734,9 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f010154
 			public const int tabTextColor = 2130772308;
 			
+			// aapt resource value: 0x7f010174
+			public const int textAboveThumbsColor = 2130772340;
+			
 			// aapt resource value: 0x7f010060
 			public const int textAllCaps = 2130772064;
 			
@@ -2953,11 +6770,38 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f0100a3
 			public const int textColorSearchUrl = 2130772131;
 			
+			// aapt resource value: 0x7f010180
+			public const int textSize = 2130772352;
+			
 			// aapt resource value: 0x7f010114
 			public const int theme = 2130772244;
 			
 			// aapt resource value: 0x7f0100dd
 			public const int thickness = 2130772189;
+			
+			// aapt resource value: 0x7f010177
+			public const int thumbDisabled = 2130772343;
+			
+			// aapt resource value: 0x7f010175
+			public const int thumbNormal = 2130772341;
+			
+			// aapt resource value: 0x7f010176
+			public const int thumbPressed = 2130772342;
+			
+			// aapt resource value: 0x7f010178
+			public const int thumbShadow = 2130772344;
+			
+			// aapt resource value: 0x7f01017c
+			public const int thumbShadowBlur = 2130772348;
+			
+			// aapt resource value: 0x7f010179
+			public const int thumbShadowColor = 2130772345;
+			
+			// aapt resource value: 0x7f01017a
+			public const int thumbShadowXOffset = 2130772346;
+			
+			// aapt resource value: 0x7f01017b
+			public const int thumbShadowYOffset = 2130772347;
 			
 			// aapt resource value: 0x7f0100fb
 			public const int thumbTextPadding = 2130772219;
@@ -3055,35 +6899,38 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f01000d
 			public const int useViewLifecycle = 2130771981;
 			
+			// aapt resource value: 0x7f01016f
+			public const int valuesAboveThumbs = 2130772335;
+			
 			// aapt resource value: 0x7f0100f1
 			public const int voiceIcon = 2130772209;
 			
-			// aapt resource value: 0x7f01016a
-			public const int vpiCentered = 2130772330;
+			// aapt resource value: 0x7f010182
+			public const int vpiCentered = 2130772354;
 			
-			// aapt resource value: 0x7f010169
-			public const int vpiCirclePageIndicatorStyle = 2130772329;
+			// aapt resource value: 0x7f010181
+			public const int vpiCirclePageIndicatorStyle = 2130772353;
 			
-			// aapt resource value: 0x7f01016f
-			public const int vpiFillColor = 2130772335;
+			// aapt resource value: 0x7f010187
+			public const int vpiFillColor = 2130772359;
 			
-			// aapt resource value: 0x7f01016c
-			public const int vpiOrientation = 2130772332;
+			// aapt resource value: 0x7f010184
+			public const int vpiOrientation = 2130772356;
 			
-			// aapt resource value: 0x7f01016b
-			public const int vpiPageColor = 2130772331;
+			// aapt resource value: 0x7f010183
+			public const int vpiPageColor = 2130772355;
 			
-			// aapt resource value: 0x7f01016e
-			public const int vpiRadius = 2130772334;
+			// aapt resource value: 0x7f010186
+			public const int vpiRadius = 2130772358;
 			
-			// aapt resource value: 0x7f01016d
-			public const int vpiSnap = 2130772333;
+			// aapt resource value: 0x7f010185
+			public const int vpiSnap = 2130772357;
 			
-			// aapt resource value: 0x7f010170
-			public const int vpiStrokeColor = 2130772336;
+			// aapt resource value: 0x7f010188
+			public const int vpiStrokeColor = 2130772360;
 			
-			// aapt resource value: 0x7f010171
-			public const int vpiStrokeWidth = 2130772337;
+			// aapt resource value: 0x7f010189
+			public const int vpiStrokeWidth = 2130772361;
 			
 			// aapt resource value: 0x7f010061
 			public const int windowActionBar = 2130772065;
@@ -4454,8 +8301,8 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f020095
 			public const int filter_work_type = 2130837653;
 			
-			// aapt resource value: 0x7f02018a
-			public const int focused = 2130837898;
+			// aapt resource value: 0x7f02018d
+			public const int focused = 2130837901;
 			
 			// aapt resource value: 0x7f020096
 			public const int halfstarbl = 2130837654;
@@ -5063,8 +8910,8 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f02015f
 			public const int navigation_empty_icon = 2130837855;
 			
-			// aapt resource value: 0x7f020189
-			public const int notification_template_icon_bg = 2130837897;
+			// aapt resource value: 0x7f02018c
+			public const int notification_template_icon_bg = 2130837900;
 			
 			// aapt resource value: 0x7f020160
 			public const int Plus = 2130837856;
@@ -5138,59 +8985,68 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f020177
 			public const int search_search = 2130837879;
 			
-			// aapt resource value: 0x7f02018b
-			public const int selected = 2130837899;
-			
 			// aapt resource value: 0x7f020178
-			public const int ServicesImg = 2130837880;
+			public const int seek_thumb_disabled = 2130837880;
 			
 			// aapt resource value: 0x7f020179
-			public const int SettingImg = 2130837881;
+			public const int seek_thumb_normal = 2130837881;
 			
 			// aapt resource value: 0x7f02017a
-			public const int settings_about = 2130837882;
+			public const int seek_thumb_pressed = 2130837882;
+			
+			// aapt resource value: 0x7f02018e
+			public const int selected = 2130837902;
 			
 			// aapt resource value: 0x7f02017b
-			public const int settings_language = 2130837883;
+			public const int ServicesImg = 2130837883;
 			
 			// aapt resource value: 0x7f02017c
-			public const int settings_logo = 2130837884;
+			public const int SettingImg = 2130837884;
 			
 			// aapt resource value: 0x7f02017d
-			public const int settins_reset_password = 2130837885;
+			public const int settings_about = 2130837885;
 			
 			// aapt resource value: 0x7f02017e
-			public const int sfclosebutton = 2130837886;
+			public const int settings_language = 2130837886;
 			
 			// aapt resource value: 0x7f02017f
-			public const int SplashScreenImage = 2130837887;
+			public const int settings_logo = 2130837887;
 			
 			// aapt resource value: 0x7f020180
-			public const int starfilled = 2130837888;
+			public const int settins_reset_password = 2130837888;
 			
 			// aapt resource value: 0x7f020181
-			public const int starfilledy = 2130837889;
+			public const int sfclosebutton = 2130837889;
 			
 			// aapt resource value: 0x7f020182
-			public const int startblue = 2130837890;
+			public const int SplashScreenImage = 2130837890;
 			
 			// aapt resource value: 0x7f020183
-			public const int startempty = 2130837891;
+			public const int starfilled = 2130837891;
 			
 			// aapt resource value: 0x7f020184
-			public const int startemptyy = 2130837892;
+			public const int starfilledy = 2130837892;
 			
 			// aapt resource value: 0x7f020185
-			public const int styleinfo = 2130837893;
+			public const int startblue = 2130837893;
 			
 			// aapt resource value: 0x7f020186
-			public const int terms_background = 2130837894;
+			public const int startempty = 2130837894;
 			
 			// aapt resource value: 0x7f020187
-			public const int trash = 2130837895;
+			public const int startemptyy = 2130837895;
 			
 			// aapt resource value: 0x7f020188
-			public const int x = 2130837896;
+			public const int styleinfo = 2130837896;
+			
+			// aapt resource value: 0x7f020189
+			public const int terms_background = 2130837897;
+			
+			// aapt resource value: 0x7f02018a
+			public const int trash = 2130837898;
+			
+			// aapt resource value: 0x7f02018b
+			public const int x = 2130837899;
 			
 			static Drawable()
 			{
@@ -6142,14 +9998,14 @@ namespace ArabWaha.Employer.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f06005c
-			public const int ApplicationName = 2131099740;
-			
-			// aapt resource value: 0x7f06005b
-			public const int Hello = 2131099739;
+			// aapt resource value: 0x7f060058
+			public const int ApplicationName = 2131099736;
 			
 			// aapt resource value: 0x7f060057
-			public const int No_Appointments = 2131099735;
+			public const int Hello = 2131099735;
+			
+			// aapt resource value: 0x7f06005c
+			public const int No_Appointments = 2131099740;
 			
 			// aapt resource value: 0x7f060033
 			public const int abc_action_bar_home_description = 2131099699;
@@ -6244,8 +10100,8 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f060045
 			public const int abc_toolbar_collapse_description = 2131099717;
 			
-			// aapt resource value: 0x7f060058
-			public const int all_day = 2131099736;
+			// aapt resource value: 0x7f06005d
+			public const int all_day = 2131099741;
 			
 			// aapt resource value: 0x7f060059
 			public const int app_name = 2131099737;
@@ -6352,239 +10208,245 @@ namespace ArabWaha.Employer.Droid
 			// aapt resource value: 0x7f06001e
 			public const int common_signin_button_text_long = 2131099678;
 			
-			// aapt resource value: 0x7f06005d
-			public const int hockeyapp_crash_dialog_app_name_fallback = 2131099741;
-			
-			// aapt resource value: 0x7f06005e
-			public const int hockeyapp_crash_dialog_message = 2131099742;
-			
-			// aapt resource value: 0x7f06005f
-			public const int hockeyapp_crash_dialog_negative_button = 2131099743;
-			
-			// aapt resource value: 0x7f060060
-			public const int hockeyapp_crash_dialog_neutral_button = 2131099744;
-			
-			// aapt resource value: 0x7f060061
-			public const int hockeyapp_crash_dialog_positive_button = 2131099745;
-			
-			// aapt resource value: 0x7f060062
-			public const int hockeyapp_crash_dialog_title = 2131099746;
-			
-			// aapt resource value: 0x7f060063
-			public const int hockeyapp_dialog_error_message = 2131099747;
-			
-			// aapt resource value: 0x7f060064
-			public const int hockeyapp_dialog_error_title = 2131099748;
-			
-			// aapt resource value: 0x7f060065
-			public const int hockeyapp_dialog_negative_button = 2131099749;
-			
-			// aapt resource value: 0x7f060066
-			public const int hockeyapp_dialog_positive_button = 2131099750;
-			
-			// aapt resource value: 0x7f060067
-			public const int hockeyapp_download_failed_dialog_message = 2131099751;
-			
-			// aapt resource value: 0x7f060068
-			public const int hockeyapp_download_failed_dialog_negative_button = 2131099752;
-			
-			// aapt resource value: 0x7f060069
-			public const int hockeyapp_download_failed_dialog_positive_button = 2131099753;
-			
-			// aapt resource value: 0x7f06006a
-			public const int hockeyapp_download_failed_dialog_title = 2131099754;
-			
-			// aapt resource value: 0x7f06006b
-			public const int hockeyapp_error_no_network_message = 2131099755;
-			
-			// aapt resource value: 0x7f06006c
-			public const int hockeyapp_expiry_info_text = 2131099756;
-			
-			// aapt resource value: 0x7f06006d
-			public const int hockeyapp_expiry_info_title = 2131099757;
-			
-			// aapt resource value: 0x7f06006e
-			public const int hockeyapp_feedback_attach_file = 2131099758;
-			
-			// aapt resource value: 0x7f06006f
-			public const int hockeyapp_feedback_attach_picture = 2131099759;
-			
-			// aapt resource value: 0x7f060070
-			public const int hockeyapp_feedback_attachment_button_text = 2131099760;
-			
-			// aapt resource value: 0x7f060071
-			public const int hockeyapp_feedback_attachment_error = 2131099761;
-			
-			// aapt resource value: 0x7f060072
-			public const int hockeyapp_feedback_attachment_loading = 2131099762;
-			
-			// aapt resource value: 0x7f060073
-			public const int hockeyapp_feedback_email_hint = 2131099763;
-			
-			// aapt resource value: 0x7f060074
-			public const int hockeyapp_feedback_email_hint_required = 2131099764;
-			
-			// aapt resource value: 0x7f060075
-			public const int hockeyapp_feedback_failed_text = 2131099765;
-			
-			// aapt resource value: 0x7f060076
-			public const int hockeyapp_feedback_failed_title = 2131099766;
-			
-			// aapt resource value: 0x7f060077
-			public const int hockeyapp_feedback_fetching_feedback_text = 2131099767;
-			
-			// aapt resource value: 0x7f060078
-			public const int hockeyapp_feedback_generic_error = 2131099768;
-			
-			// aapt resource value: 0x7f060079
-			public const int hockeyapp_feedback_last_updated_text = 2131099769;
-			
-			// aapt resource value: 0x7f06007a
-			public const int hockeyapp_feedback_max_attachments_allowed = 2131099770;
-			
-			// aapt resource value: 0x7f06007b
-			public const int hockeyapp_feedback_message_hint = 2131099771;
-			
-			// aapt resource value: 0x7f06007c
-			public const int hockeyapp_feedback_message_hint_required = 2131099772;
-			
-			// aapt resource value: 0x7f06007d
-			public const int hockeyapp_feedback_name_hint = 2131099773;
-			
-			// aapt resource value: 0x7f06007e
-			public const int hockeyapp_feedback_name_hint_required = 2131099774;
-			
-			// aapt resource value: 0x7f06007f
-			public const int hockeyapp_feedback_refresh_button_text = 2131099775;
-			
-			// aapt resource value: 0x7f060080
-			public const int hockeyapp_feedback_response_button_text = 2131099776;
-			
-			// aapt resource value: 0x7f060081
-			public const int hockeyapp_feedback_select_file = 2131099777;
-			
-			// aapt resource value: 0x7f060082
-			public const int hockeyapp_feedback_select_picture = 2131099778;
-			
-			// aapt resource value: 0x7f060083
-			public const int hockeyapp_feedback_send_button_text = 2131099779;
-			
-			// aapt resource value: 0x7f060084
-			public const int hockeyapp_feedback_send_generic_error = 2131099780;
-			
-			// aapt resource value: 0x7f060085
-			public const int hockeyapp_feedback_send_network_error = 2131099781;
-			
-			// aapt resource value: 0x7f060086
-			public const int hockeyapp_feedback_sending_feedback_text = 2131099782;
-			
-			// aapt resource value: 0x7f060087
-			public const int hockeyapp_feedback_subject_hint = 2131099783;
-			
-			// aapt resource value: 0x7f060088
-			public const int hockeyapp_feedback_subject_hint_required = 2131099784;
-			
-			// aapt resource value: 0x7f060089
-			public const int hockeyapp_feedback_title = 2131099785;
-			
-			// aapt resource value: 0x7f06008a
-			public const int hockeyapp_feedback_validate_email_empty = 2131099786;
-			
-			// aapt resource value: 0x7f06008b
-			public const int hockeyapp_feedback_validate_email_error = 2131099787;
-			
-			// aapt resource value: 0x7f06008c
-			public const int hockeyapp_feedback_validate_name_error = 2131099788;
-			
-			// aapt resource value: 0x7f06008d
-			public const int hockeyapp_feedback_validate_subject_error = 2131099789;
-			
-			// aapt resource value: 0x7f06008e
-			public const int hockeyapp_feedback_validate_text_error = 2131099790;
-			
-			// aapt resource value: 0x7f06008f
-			public const int hockeyapp_login_email_hint = 2131099791;
-			
-			// aapt resource value: 0x7f060090
-			public const int hockeyapp_login_email_hint_required = 2131099792;
-			
-			// aapt resource value: 0x7f060091
-			public const int hockeyapp_login_headline_text = 2131099793;
-			
-			// aapt resource value: 0x7f060092
-			public const int hockeyapp_login_headline_text_email_only = 2131099794;
-			
-			// aapt resource value: 0x7f060093
-			public const int hockeyapp_login_login_button_text = 2131099795;
-			
-			// aapt resource value: 0x7f060094
-			public const int hockeyapp_login_missing_credentials_toast = 2131099796;
-			
-			// aapt resource value: 0x7f060095
-			public const int hockeyapp_login_password_hint = 2131099797;
-			
-			// aapt resource value: 0x7f060096
-			public const int hockeyapp_login_password_hint_required = 2131099798;
-			
-			// aapt resource value: 0x7f060097
-			public const int hockeyapp_paint_dialog_message = 2131099799;
-			
-			// aapt resource value: 0x7f060098
-			public const int hockeyapp_paint_dialog_negative_button = 2131099800;
-			
-			// aapt resource value: 0x7f060099
-			public const int hockeyapp_paint_dialog_neutral_button = 2131099801;
-			
-			// aapt resource value: 0x7f06009a
-			public const int hockeyapp_paint_dialog_positive_button = 2131099802;
-			
-			// aapt resource value: 0x7f06009b
-			public const int hockeyapp_paint_indicator_toast = 2131099803;
-			
-			// aapt resource value: 0x7f06009c
-			public const int hockeyapp_paint_menu_clear = 2131099804;
-			
-			// aapt resource value: 0x7f06009d
-			public const int hockeyapp_paint_menu_save = 2131099805;
-			
-			// aapt resource value: 0x7f06009e
-			public const int hockeyapp_paint_menu_undo = 2131099806;
-			
-			// aapt resource value: 0x7f06009f
-			public const int hockeyapp_permission_dialog_negative_button = 2131099807;
-			
-			// aapt resource value: 0x7f0600a0
-			public const int hockeyapp_permission_dialog_positive_button = 2131099808;
-			
-			// aapt resource value: 0x7f0600a1
-			public const int hockeyapp_permission_update_message = 2131099809;
-			
-			// aapt resource value: 0x7f0600a2
-			public const int hockeyapp_permission_update_title = 2131099810;
-			
-			// aapt resource value: 0x7f0600a3
-			public const int hockeyapp_update_button = 2131099811;
-			
-			// aapt resource value: 0x7f0600a4
-			public const int hockeyapp_update_dialog_message = 2131099812;
-			
-			// aapt resource value: 0x7f0600a5
-			public const int hockeyapp_update_dialog_negative_button = 2131099813;
-			
-			// aapt resource value: 0x7f0600a6
-			public const int hockeyapp_update_dialog_positive_button = 2131099814;
-			
-			// aapt resource value: 0x7f0600a7
-			public const int hockeyapp_update_dialog_title = 2131099815;
-			
-			// aapt resource value: 0x7f0600a8
-			public const int hockeyapp_update_mandatory_toast = 2131099816;
-			
-			// aapt resource value: 0x7f0600a9
-			public const int hockeyapp_update_version_details_label = 2131099817;
+			// aapt resource value: 0x7f06005b
+			public const int demo_max_label = 2131099739;
 			
 			// aapt resource value: 0x7f06005a
-			public const int library_name = 2131099738;
+			public const int demo_min_label = 2131099738;
+			
+			// aapt resource value: 0x7f06005f
+			public const int hockeyapp_crash_dialog_app_name_fallback = 2131099743;
+			
+			// aapt resource value: 0x7f060060
+			public const int hockeyapp_crash_dialog_message = 2131099744;
+			
+			// aapt resource value: 0x7f060061
+			public const int hockeyapp_crash_dialog_negative_button = 2131099745;
+			
+			// aapt resource value: 0x7f060062
+			public const int hockeyapp_crash_dialog_neutral_button = 2131099746;
+			
+			// aapt resource value: 0x7f060063
+			public const int hockeyapp_crash_dialog_positive_button = 2131099747;
+			
+			// aapt resource value: 0x7f060064
+			public const int hockeyapp_crash_dialog_title = 2131099748;
+			
+			// aapt resource value: 0x7f060065
+			public const int hockeyapp_dialog_error_message = 2131099749;
+			
+			// aapt resource value: 0x7f060066
+			public const int hockeyapp_dialog_error_title = 2131099750;
+			
+			// aapt resource value: 0x7f060067
+			public const int hockeyapp_dialog_negative_button = 2131099751;
+			
+			// aapt resource value: 0x7f060068
+			public const int hockeyapp_dialog_positive_button = 2131099752;
+			
+			// aapt resource value: 0x7f060069
+			public const int hockeyapp_download_failed_dialog_message = 2131099753;
+			
+			// aapt resource value: 0x7f06006a
+			public const int hockeyapp_download_failed_dialog_negative_button = 2131099754;
+			
+			// aapt resource value: 0x7f06006b
+			public const int hockeyapp_download_failed_dialog_positive_button = 2131099755;
+			
+			// aapt resource value: 0x7f06006c
+			public const int hockeyapp_download_failed_dialog_title = 2131099756;
+			
+			// aapt resource value: 0x7f06006d
+			public const int hockeyapp_error_no_network_message = 2131099757;
+			
+			// aapt resource value: 0x7f06006e
+			public const int hockeyapp_expiry_info_text = 2131099758;
+			
+			// aapt resource value: 0x7f06006f
+			public const int hockeyapp_expiry_info_title = 2131099759;
+			
+			// aapt resource value: 0x7f060070
+			public const int hockeyapp_feedback_attach_file = 2131099760;
+			
+			// aapt resource value: 0x7f060071
+			public const int hockeyapp_feedback_attach_picture = 2131099761;
+			
+			// aapt resource value: 0x7f060072
+			public const int hockeyapp_feedback_attachment_button_text = 2131099762;
+			
+			// aapt resource value: 0x7f060073
+			public const int hockeyapp_feedback_attachment_error = 2131099763;
+			
+			// aapt resource value: 0x7f060074
+			public const int hockeyapp_feedback_attachment_loading = 2131099764;
+			
+			// aapt resource value: 0x7f060075
+			public const int hockeyapp_feedback_email_hint = 2131099765;
+			
+			// aapt resource value: 0x7f060076
+			public const int hockeyapp_feedback_email_hint_required = 2131099766;
+			
+			// aapt resource value: 0x7f060077
+			public const int hockeyapp_feedback_failed_text = 2131099767;
+			
+			// aapt resource value: 0x7f060078
+			public const int hockeyapp_feedback_failed_title = 2131099768;
+			
+			// aapt resource value: 0x7f060079
+			public const int hockeyapp_feedback_fetching_feedback_text = 2131099769;
+			
+			// aapt resource value: 0x7f06007a
+			public const int hockeyapp_feedback_generic_error = 2131099770;
+			
+			// aapt resource value: 0x7f06007b
+			public const int hockeyapp_feedback_last_updated_text = 2131099771;
+			
+			// aapt resource value: 0x7f06007c
+			public const int hockeyapp_feedback_max_attachments_allowed = 2131099772;
+			
+			// aapt resource value: 0x7f06007d
+			public const int hockeyapp_feedback_message_hint = 2131099773;
+			
+			// aapt resource value: 0x7f06007e
+			public const int hockeyapp_feedback_message_hint_required = 2131099774;
+			
+			// aapt resource value: 0x7f06007f
+			public const int hockeyapp_feedback_name_hint = 2131099775;
+			
+			// aapt resource value: 0x7f060080
+			public const int hockeyapp_feedback_name_hint_required = 2131099776;
+			
+			// aapt resource value: 0x7f060081
+			public const int hockeyapp_feedback_refresh_button_text = 2131099777;
+			
+			// aapt resource value: 0x7f060082
+			public const int hockeyapp_feedback_response_button_text = 2131099778;
+			
+			// aapt resource value: 0x7f060083
+			public const int hockeyapp_feedback_select_file = 2131099779;
+			
+			// aapt resource value: 0x7f060084
+			public const int hockeyapp_feedback_select_picture = 2131099780;
+			
+			// aapt resource value: 0x7f060085
+			public const int hockeyapp_feedback_send_button_text = 2131099781;
+			
+			// aapt resource value: 0x7f060086
+			public const int hockeyapp_feedback_send_generic_error = 2131099782;
+			
+			// aapt resource value: 0x7f060087
+			public const int hockeyapp_feedback_send_network_error = 2131099783;
+			
+			// aapt resource value: 0x7f060088
+			public const int hockeyapp_feedback_sending_feedback_text = 2131099784;
+			
+			// aapt resource value: 0x7f060089
+			public const int hockeyapp_feedback_subject_hint = 2131099785;
+			
+			// aapt resource value: 0x7f06008a
+			public const int hockeyapp_feedback_subject_hint_required = 2131099786;
+			
+			// aapt resource value: 0x7f06008b
+			public const int hockeyapp_feedback_title = 2131099787;
+			
+			// aapt resource value: 0x7f06008c
+			public const int hockeyapp_feedback_validate_email_empty = 2131099788;
+			
+			// aapt resource value: 0x7f06008d
+			public const int hockeyapp_feedback_validate_email_error = 2131099789;
+			
+			// aapt resource value: 0x7f06008e
+			public const int hockeyapp_feedback_validate_name_error = 2131099790;
+			
+			// aapt resource value: 0x7f06008f
+			public const int hockeyapp_feedback_validate_subject_error = 2131099791;
+			
+			// aapt resource value: 0x7f060090
+			public const int hockeyapp_feedback_validate_text_error = 2131099792;
+			
+			// aapt resource value: 0x7f060091
+			public const int hockeyapp_login_email_hint = 2131099793;
+			
+			// aapt resource value: 0x7f060092
+			public const int hockeyapp_login_email_hint_required = 2131099794;
+			
+			// aapt resource value: 0x7f060093
+			public const int hockeyapp_login_headline_text = 2131099795;
+			
+			// aapt resource value: 0x7f060094
+			public const int hockeyapp_login_headline_text_email_only = 2131099796;
+			
+			// aapt resource value: 0x7f060095
+			public const int hockeyapp_login_login_button_text = 2131099797;
+			
+			// aapt resource value: 0x7f060096
+			public const int hockeyapp_login_missing_credentials_toast = 2131099798;
+			
+			// aapt resource value: 0x7f060097
+			public const int hockeyapp_login_password_hint = 2131099799;
+			
+			// aapt resource value: 0x7f060098
+			public const int hockeyapp_login_password_hint_required = 2131099800;
+			
+			// aapt resource value: 0x7f060099
+			public const int hockeyapp_paint_dialog_message = 2131099801;
+			
+			// aapt resource value: 0x7f06009a
+			public const int hockeyapp_paint_dialog_negative_button = 2131099802;
+			
+			// aapt resource value: 0x7f06009b
+			public const int hockeyapp_paint_dialog_neutral_button = 2131099803;
+			
+			// aapt resource value: 0x7f06009c
+			public const int hockeyapp_paint_dialog_positive_button = 2131099804;
+			
+			// aapt resource value: 0x7f06009d
+			public const int hockeyapp_paint_indicator_toast = 2131099805;
+			
+			// aapt resource value: 0x7f06009e
+			public const int hockeyapp_paint_menu_clear = 2131099806;
+			
+			// aapt resource value: 0x7f06009f
+			public const int hockeyapp_paint_menu_save = 2131099807;
+			
+			// aapt resource value: 0x7f0600a0
+			public const int hockeyapp_paint_menu_undo = 2131099808;
+			
+			// aapt resource value: 0x7f0600a1
+			public const int hockeyapp_permission_dialog_negative_button = 2131099809;
+			
+			// aapt resource value: 0x7f0600a2
+			public const int hockeyapp_permission_dialog_positive_button = 2131099810;
+			
+			// aapt resource value: 0x7f0600a3
+			public const int hockeyapp_permission_update_message = 2131099811;
+			
+			// aapt resource value: 0x7f0600a4
+			public const int hockeyapp_permission_update_title = 2131099812;
+			
+			// aapt resource value: 0x7f0600a5
+			public const int hockeyapp_update_button = 2131099813;
+			
+			// aapt resource value: 0x7f0600a6
+			public const int hockeyapp_update_dialog_message = 2131099814;
+			
+			// aapt resource value: 0x7f0600a7
+			public const int hockeyapp_update_dialog_negative_button = 2131099815;
+			
+			// aapt resource value: 0x7f0600a8
+			public const int hockeyapp_update_dialog_positive_button = 2131099816;
+			
+			// aapt resource value: 0x7f0600a9
+			public const int hockeyapp_update_dialog_title = 2131099817;
+			
+			// aapt resource value: 0x7f0600aa
+			public const int hockeyapp_update_mandatory_toast = 2131099818;
+			
+			// aapt resource value: 0x7f0600ab
+			public const int hockeyapp_update_version_details_label = 2131099819;
+			
+			// aapt resource value: 0x7f06005e
+			public const int library_name = 2131099742;
 			
 			// aapt resource value: 0x7f06001f
 			public const int mr_button_content_description = 2131099679;
@@ -8711,14 +12573,14 @@ namespace ArabWaha.Employer.Droid
 			
 			public static int[] CirclePageIndicator = new int[]
 			{
-					2130772330,
-					2130772331,
-					2130772332,
-					2130772333,
-					2130772334,
-					2130772335,
-					2130772336,
-					2130772337};
+					2130772354,
+					2130772355,
+					2130772356,
+					2130772357,
+					2130772358,
+					2130772359,
+					2130772360,
+					2130772361};
 			
 			// aapt resource value: 0
 			public const int CirclePageIndicator_vpiCentered = 0;
@@ -9375,18 +13237,18 @@ namespace ArabWaha.Employer.Droid
 			
 			public static int[] ProgressWheel = new int[]
 			{
-					2130772338,
-					2130772339,
-					2130772340,
-					2130772341,
-					2130772342,
-					2130772343,
-					2130772344,
-					2130772345,
-					2130772346,
-					2130772347,
-					2130772348,
-					2130772349};
+					2130772362,
+					2130772363,
+					2130772364,
+					2130772365,
+					2130772366,
+					2130772367,
+					2130772368,
+					2130772369,
+					2130772370,
+					2130772371,
+					2130772372,
+					2130772373};
 			
 			// aapt resource value: 3
 			public const int ProgressWheel_ahBarColor = 3;
@@ -9423,6 +13285,105 @@ namespace ArabWaha.Employer.Droid
 			
 			// aapt resource value: 2
 			public const int ProgressWheel_ahTextSize = 2;
+			
+			public static int[] RangeSliderControl = new int[]
+			{
+					2130772329,
+					2130772330,
+					2130772331,
+					2130772332,
+					2130772333,
+					2130772334,
+					2130772335,
+					2130772336,
+					2130772337,
+					2130772338,
+					2130772339,
+					2130772340,
+					2130772341,
+					2130772342,
+					2130772343,
+					2130772344,
+					2130772345,
+					2130772346,
+					2130772347,
+					2130772348,
+					2130772349,
+					2130772350,
+					2130772351,
+					2130772352};
+			
+			// aapt resource value: 1
+			public const int RangeSliderControl_absoluteMaxValue = 1;
+			
+			// aapt resource value: 0
+			public const int RangeSliderControl_absoluteMinValue = 0;
+			
+			// aapt resource value: 20
+			public const int RangeSliderControl_activateOnDefaultValues = 20;
+			
+			// aapt resource value: 10
+			public const int RangeSliderControl_activeColor = 10;
+			
+			// aapt resource value: 5
+			public const int RangeSliderControl_alwaysActive = 5;
+			
+			// aapt resource value: 8
+			public const int RangeSliderControl_barHeight = 8;
+			
+			// aapt resource value: 9
+			public const int RangeSliderControl_defaultColor = 9;
+			
+			// aapt resource value: 7
+			public const int RangeSliderControl_internalPadding = 7;
+			
+			// aapt resource value: 3
+			public const int RangeSliderControl_maxThumbHidden = 3;
+			
+			// aapt resource value: 2
+			public const int RangeSliderControl_minThumbHidden = 2;
+			
+			// aapt resource value: 4
+			public const int RangeSliderControl_showRangeLabels = 4;
+			
+			// aapt resource value: 21
+			public const int RangeSliderControl_stepValue = 21;
+			
+			// aapt resource value: 22
+			public const int RangeSliderControl_stepValueContinuously = 22;
+			
+			// aapt resource value: 11
+			public const int RangeSliderControl_textAboveThumbsColor = 11;
+			
+			// aapt resource value: 23
+			public const int RangeSliderControl_textSize = 23;
+			
+			// aapt resource value: 14
+			public const int RangeSliderControl_thumbDisabled = 14;
+			
+			// aapt resource value: 12
+			public const int RangeSliderControl_thumbNormal = 12;
+			
+			// aapt resource value: 13
+			public const int RangeSliderControl_thumbPressed = 13;
+			
+			// aapt resource value: 15
+			public const int RangeSliderControl_thumbShadow = 15;
+			
+			// aapt resource value: 19
+			public const int RangeSliderControl_thumbShadowBlur = 19;
+			
+			// aapt resource value: 16
+			public const int RangeSliderControl_thumbShadowColor = 16;
+			
+			// aapt resource value: 17
+			public const int RangeSliderControl_thumbShadowXOffset = 17;
+			
+			// aapt resource value: 18
+			public const int RangeSliderControl_thumbShadowYOffset = 18;
+			
+			// aapt resource value: 6
+			public const int RangeSliderControl_valuesAboveThumbs = 6;
 			
 			public static int[] RecyclerView = new int[]
 			{
@@ -9995,7 +13956,7 @@ namespace ArabWaha.Employer.Droid
 			
 			public static int[] ViewPagerIndicator = new int[]
 			{
-					2130772329};
+					2130772353};
 			
 			// aapt resource value: 0
 			public const int ViewPagerIndicator_vpiCirclePageIndicatorStyle = 0;

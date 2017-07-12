@@ -1,4 +1,4 @@
-﻿﻿using ArabWaha.Models;
+﻿using ArabWaha.Models;
 using ArabWaha.Web;
 using System;
 using System.Collections.Generic;
@@ -39,9 +39,9 @@ namespace ArabWaha.Core.Services
                 var base64String = Convert.ToBase64String(bytes);
                 string authHeader = String.Format("Basic {0}", base64String);
 
-				DbAccessor db = new DbAccessor();
+                DbAccessor db = new DbAccessor();
 
-				var result = await AWHttpClient.Instance.RegisterUser(authHeader, Constants.DevicePlatform);
+                var result = await AWHttpClient.Instance.RegisterUser(authHeader, Constants.DevicePlatform);
                 if (result.StatusCode == "201") //success case
                 {
                     if (!isGuest)
@@ -55,8 +55,22 @@ namespace ArabWaha.Core.Services
 
 
                     //Get the Cookie and XCSRF Token
-                    //var resultXCSRF = await AWHttpClient.Instance.GetXCSRFToken();
 
+                    var resultXCSRF = await AWHttpClient.Instance.GetXCSRFToken();
+
+
+					//TODO Getting issue with GetIndividualProfileBatch
+                    //Get Invidual Profile details set
+                    try
+                    {
+						//Assigning the NesIndividualId for testing purpose
+						DebugDataSingleton.Instance.NesIndividualID = "209006279";
+                        var individualProfileDetails = await AWHttpClient.Instance.GetIndividualProfileBatch();
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
 
                     //Get the MyCompanyDetails
                     var myCompanyDetails = await AWHttpClient.Instance.GetCompanyDetails();
@@ -80,9 +94,9 @@ namespace ArabWaha.Core.Services
 
 
 
-					//Get the MatchingCandidates List for a particular Job Post ID
-					var matchingCandidatesSet = await AWHttpClient.Instance.GetMatchingCandidatesList("1000278384");
-					//TODO parse the matchingCandidatesSet to get the required response
+                    //Get the MatchingCandidates List for a particular Job Post ID
+                    var matchingCandidatesSet = await AWHttpClient.Instance.GetMatchingCandidatesList("1000278384");
+                    //TODO parse the matchingCandidatesSet to get the required response
 
 
 
@@ -99,36 +113,37 @@ namespace ArabWaha.Core.Services
 
 
 
-					//Forgot UserName 
-					//var forgotUser = await AWHttpClient.Instance.ForgotUserName("ashutoshg@aecl.com");
+                    //Forgot UserName 
+                    //var forgotUser = await AWHttpClient.Instance.ForgotUserName("ashutoshg@aecl.com");
 
-					//ForgotPassword
-					//var forgotPwd = await AWHttpClient.Instance.ForgotPassword("Pubemp002");
+                    //ForgotPassword
+                    //var forgotPwd = await AWHttpClient.Instance.ForgotPassword("Pubemp002");
 
 
-					//Get ApplicationsList
+                    //Get ApplicationsList
                     var applicationsList = await AWHttpClient.Instance.GetApplications();
 
 
-					//Get ApplicationsDetails
-                    var applicationDetails = await AWHttpClient.Instance.GetApplicationDetails("112716","46654815");
+                    //Get ApplicationsDetails
+                    var applicationDetails = await AWHttpClient.Instance.GetApplicationDetails("112716", "46654815");
 
 
 					//Get JobsList
                     //var jobsList = await AWHttpClient.Instance.GetJobsList();
 
 
-					//Get AssignedJobs
+                    //Get AssignedJobs
                     var assignedJobs = await AWHttpClient.Instance.GetAssignedJobs();
 
 
-					//Get WatchListJobs
+                    //Get WatchListJobs
                     var watchlistJobs = await AWHttpClient.Instance.GetWatchlistJobs();
 
 
 
 
-					return true;
+
+                    return true;
                 }
                 return false;
             }
