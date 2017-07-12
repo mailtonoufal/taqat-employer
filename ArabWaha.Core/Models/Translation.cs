@@ -371,9 +371,82 @@
 			public string programdetlblprogrequirements { get; set; }
 			public string programdetlblwhocanbenefit { get; set; }
 			public string programdetlblhowtoregister { get; set; }
-           
 
+            public string filterlblsortby { get; set; }
+			public string filterlbldistance { get; set; }
+			public string filterlblrelevance { get; set; }
+			public string filterlblmatscorehigh { get; set; }
+			public string filterlblmatscorelow { get; set; }
+			public string filterlblstartdaterecent { get; set; }
+			public string filterlblstartdatefuture { get; set; }
+			public string filterlblgendermale { get; set; }
+            public string filterlblgenderfemale { get; set; }
 
+			public string filterlbltitle { get; set; }
+			public string filterlblcancel { get; set; }
+			public string filterlblapply { get; set; }
+			
+			public string filterlbljobtype { get; set; }
+			public string filterlbljtpermanent { get; set; }
+			public string filterlbljtcontract { get; set; }
+			public string filterlbljtminijob { get; set; }
+			public string filterlbljtinternship { get; set; }
+			public string filterlbljtsummerjob { get; set; }
+			public string filterlbljttamheer { get; set; }
+            public string filterlbljtemploymentdriven { get; set; }
+
+			public string filterlblworktype { get; set; }
+			public string filterlblworktypefulltime { get; set; }
+			public string filterlblworktypeparttime { get; set; }
+
+			public string filterlblshifttype { get; set; }
+			public string filterlblshifttypeday { get; set; }
+			public string filterlblshifttypenight { get; set; }
+			public string filterlblshifttypetwoshifts { get; set; }
+
+			public string filterlbltravelreq { get; set; }
+			public string filterlbltravelreqyes { get; set; }
+			public string filterlbltravelreqno { get; set; }
+
+			public string filterlblsalary { get; set; }
+			public string filterlblsalaryrange { get; set; }
+
+			public string filterlblreqeducation { get; set; }
+			public string filterlblreqedulessthanelementary { get; set; }
+			public string filterlblreqeduelementary { get; set; }
+			public string filterlblreqeduhighschool { get; set; }
+			public string filterlblreqedubachelordeg { get; set; }
+			public string filterlblreqedumasterdeg { get; set; }
+			public string filterlblreqedudoctoratedeg { get; set; }
+
+			public string filterlblspecialization { get; set; }
+			public string filterlblspecservices { get; set; }
+			public string filterlblspecgenericprog { get; set; }
+			public string filterlblspeceducation { get; set; }
+			public string filterlblspecarts { get; set; }
+			public string filterlblspecsocial { get; set; }
+			public string filterlblspecbusiness { get; set; }
+			public string filterlblspecnaturalsciences { get; set; }
+			public string filterlblspecinformation { get; set; }
+			public string filterlblspecengineering { get; set; }
+			public string filterlblspecagriculture { get; set; }
+			public string filterlblspechealth { get; set; }
+
+			public string filterlblgender { get; set; }
+			public string filterlblgenmale { get; set; }
+			public string filterlblgenfemale { get; set; }
+			public string filterlblgenothers { get; set; }
+
+			public string filterlblstartdate { get; set; }
+			public string filterlblselectdate { get; set; }
+
+			public string filterlblpostedsince { get; set; }
+			public string filterlblpostedsincetwodays { get; set; }
+			public string filterlblpostedsinceoneweek { get; set; }
+			public string filterlblpostedsincetwoweeks { get; set; }
+			public string filterlblpostedsincethreeweeks { get; set; }
+			public string filterlblpostedsincefourweeks { get; set; }
+			
 		}
 
 		public Questionary questionary { get; set; }

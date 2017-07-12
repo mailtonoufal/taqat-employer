@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"  xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers" xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ArabWaha.Employer.Layouts.Filter.JobTypeFilter">
+	<ContentView.Content>
+        <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24" />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="{StaticResource BlueToolBarColor}" />
+                    <Label Text="{lEx:CMSTranslate filterlbljobtype}" Grid.Row="0" Grid.Column="2"  
+                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center"
+                           Style="{StaticResource HeaderTextSmallWhite}"/>
+                    <Image Source="{StaticResource MenuIconPrograms}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.FilterSectionImage}" />
+
+                    <controls:RepeaterView x:Name="JobTypeList" ItemsSource="{Binding JobTypeList}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3">
+                        <controls:RepeaterView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="9*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <!--<forms:RangeSlider Grid.Row="0" Grid.Column="2" x:Name="RangeSlider" MinimumValue="1" MaximumValue="100" HorizontalOptions="FillAndExpand" LowerValue="1" UpperValue="100" StepValue="0" StepValueContinuously="False" VerticalOptions="Center" TextSize="15" BarHeight="10" />-->
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Text}" Style="{StaticResource InfoBodyTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                        Command="{Binding Path=BindingContext.LabelCheckedCommand, Source={x:Reference Name=AppPage}}"
+                                                        CommandParameter="{Binding .}"
+                                                        NumberOfTapsRequired="1" />
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <controls:CheckBox Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.FilterSectionImage}"  Checked="{Binding Selected}"   Command="{Binding Path=BindingContext.JobTypeCheckedCommand, Source={x:Reference Name=JobTypeList}}"    CommandParameter="{Binding .}" HorizontalOptions="Center" VerticalOptions="Center"></controls:CheckBox>
+                                </Grid>
+                            </DataTemplate>
+                        </controls:RepeaterView.ItemTemplate>
+                    </controls:RepeaterView>
+                    <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="White" />
+
+                </Grid>
+	</ContentView.Content>
+</ContentView>

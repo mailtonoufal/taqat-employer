@@ -296,6 +296,45 @@
       <DependentUpon>CalendarMonthView.xaml</DependentUpon>
     </Compile>
     <Compile Include="IHijriService.cs" />
+    <Compile Include="Layouts\Filter\SortByFilter.xaml.cs">
+      <DependentUpon>SortByFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\JobTypeFilter.xaml.cs">
+      <DependentUpon>JobTypeFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\WorkTypeFilter.xaml.cs">
+      <DependentUpon>WorkTypeFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\ShiftTypeFilter.xaml.cs">
+      <DependentUpon>ShiftTypeFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\TravelingRequiredFilter.xaml.cs">
+      <DependentUpon>TravelingRequiredFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\TeleWorkingFilter.xaml.cs">
+      <DependentUpon>TeleWorkingFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\SalaryFilter.xaml.cs">
+      <DependentUpon>SalaryFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\RequiredEducationFilter.xaml.cs">
+      <DependentUpon>RequiredEducationFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\SpecializationFilter.xaml.cs">
+      <DependentUpon>SpecializationFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\GenderFilter.xaml.cs">
+      <DependentUpon>GenderFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\StartDateFilter.xaml.cs">
+      <DependentUpon>StartDateFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Filter\PostedSinceFilter.xaml.cs">
+      <DependentUpon>PostedSinceFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StaticData\SortByEntryCMS.cs" />
+    <Compile Include="StaticData\EntryBaseCMS.cs" />
+    <Compile Include="StaticData\CMSEntryHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -315,6 +354,42 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Layouts\Calendar\CalendarMonthView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\SortByFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\JobTypeFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\WorkTypeFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\ShiftTypeFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\TravelingRequiredFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\TeleWorkingFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\SalaryFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\RequiredEducationFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\SpecializationFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\GenderFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\StartDateFilter.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Filter\PostedSinceFilter.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -787,6 +862,7 @@
     <Folder Include="Views\PersonalDetails\" />
     <Folder Include="ViewModels\PersonalDetails\" />
     <Folder Include="Layouts\Calendar\" />
+    <Folder Include="Layouts\Filter\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
