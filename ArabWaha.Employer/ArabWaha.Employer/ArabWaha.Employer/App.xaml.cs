@@ -17,6 +17,7 @@ using NStackPortable;
 using ArabWaha.Employer.StaticData;
 using MapsPCL;
 using Xamarin.Forms.Maps;
+using Autofac;
 
 namespace ArabWaha.Employer
 {
@@ -157,6 +158,9 @@ namespace ArabWaha.Employer
 			Container.RegisterTypeForNavigation<PersonalDetailsPage, PersonalDetailsViewModel>();
 			Container.RegisterTypeForNavigation<EditPersonalDetailsPage>();
 			Container.RegisterTypeForNavigation<AssignCandidateToJobPost>();
+			Container.RegisterTypeForNavigation<FilterCalendarPage, FilterCalendarPageViewModel>();
+
+
 		}
 
 		#region Singleton instance for nav and user checking

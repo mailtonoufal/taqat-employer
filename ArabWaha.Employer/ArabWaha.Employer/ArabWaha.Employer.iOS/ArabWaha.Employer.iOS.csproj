@@ -393,6 +393,27 @@
     <Reference Include="Xamarin.RangeSlider.Forms.iOS">
       <HintPath>..\..\..\Packages\Xamarin.Forms.RangeSlider.0.6.17\lib\Xamarin.iOS10\Xamarin.RangeSlider.Forms.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\..\..\Packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Autofac.Forms">
+      <HintPath>..\..\..\Packages\Prism.Autofac.Forms.6.3.0\lib\Xamarin.iOS1.0\Prism.Autofac.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup">
+      <HintPath>..\..\..\Packages\Rg.Plugins.Popup.1.0.4\lib\Xamarin.IOS\Rg.Plugins.Popup.dll</HintPath>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup.IOS">
+      <HintPath>..\..\..\Packages\Rg.Plugins.Popup.1.0.4\lib\Xamarin.IOS\Rg.Plugins.Popup.IOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Rg.Plugins.Popup.Platform">
+      <HintPath>..\..\..\Packages\Rg.Plugins.Popup.1.0.4\lib\Xamarin.IOS\Rg.Plugins.Popup.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="DryIoc">
+      <HintPath>..\..\..\Packages\DryIoc.dll.2.10.1\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\DryIoc.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.DryIoc.Forms">
+      <HintPath>..\..\..\Packages\Prism.DryIoc.Forms.6.3.0.1\lib\Xamarin.iOS1.0\Prism.DryIoc.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Background.png" />
