@@ -9,6 +9,7 @@ using ArabWaha.Common;
 using System.Diagnostics;
 using ArabWaha.Core.DBAccess;
 using ArabWaha.Core.Models.Company;
+using ArabWaha.Core.BusinessLogic;
 
 namespace ArabWaha.Core.Services
 {
@@ -59,19 +60,7 @@ namespace ArabWaha.Core.Services
                     var resultXCSRF = await AWHttpClient.Instance.GetXCSRFToken();
 
 
-					//TODO Getting issue with GetIndividualProfileBatch
-                    //Get Invidual Profile details set
-                    try
-                    {
-						//Assigning the NesIndividualId for testing purpose
-						DebugDataSingleton.Instance.NesIndividualID = "209006279";
-                        var individualProfileDetails = await AWHttpClient.Instance.GetIndividualProfileBatch();
-                    }
-                    catch (Exception ex)
-                    {
-
-                    }
-
+					
                     //Get the MyCompanyDetails
                     var myCompanyDetails = await AWHttpClient.Instance.GetCompanyDetails();
                     if (myCompanyDetails.IsSuccess)
@@ -125,7 +114,7 @@ namespace ArabWaha.Core.Services
 
 
                     //Get ApplicationsDetails
-                    var applicationDetails = await AWHttpClient.Instance.GetApplicationDetails("112716", "46654815");
+                    var applicationDetails = await AWHttpClient.Instance.GetApplicationDetails("46654815");
 
 
 					//Get JobsList
@@ -140,10 +129,42 @@ namespace ArabWaha.Core.Services
                     var watchlistJobs = await AWHttpClient.Instance.GetWatchlistJobs();
 
 
+					//Get InvidualProfiledetailsset BatchRequest
+					try
+					{
+						//Assigning the NesIndividualId for testing purpose
+						DebugDataSingleton.Instance.NesIndividualID = "9006279";
+						var individualProfileDetails = await AWHttpClient.Instance.GetIndividualProfileBatch();
+					}
+					catch (Exception ex)
+					{
+                        Debug.WriteLine(ex.Message);
+					}
 
 
 
-                    return true;
+					//JobDetailSet Batch Request
+                    try
+                    {
+						var applicationResult = await ApplicationManager.GetApplicationDetails("4652493", "46654815");
+					}
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine(ex.Message);
+                    }
+                   
+
+
+					//SendInvitation
+					var invitaion = await AWHttpClient.Instance.SendInvitation("1000236819","kuch bi!","Job_Summer","6304741","OFFREP");
+
+
+
+					//GetAppeal
+					var appealList = await AWHttpClient.Instance.GetAppeal("8000002777");
+
+
+					return true;
                 }
                 return false;
             }

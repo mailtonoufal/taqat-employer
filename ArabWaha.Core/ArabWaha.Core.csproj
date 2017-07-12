@@ -180,6 +180,10 @@
     <Compile Include="Models\Applications\Application.cs" />
     <Compile Include="Models\Applications\ApplicationDetails.cs" />
     <Compile Include="Models\JobLists\Job.cs" />
+    <Compile Include="BusinessLogic\ApplicationManager.cs" />
+    <Compile Include="Models\AppliedJob\InterviewRoot.cs" />
+    <Compile Include="Models\Profile\Invitation.cs" />
+    <Compile Include="Models\Appeal\Appeal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FubarCoder.RestSharp.Portable.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=be81bb0f53eab22f, processorArchitecture=MSIL">
@@ -266,6 +270,8 @@
     <Folder Include="Models\Candidates\" />
     <Folder Include="Models\User\" />
     <Folder Include="Models\Applications\" />
+    <Folder Include="BusinessLogic\" />
+    <Folder Include="Models\Appeal\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

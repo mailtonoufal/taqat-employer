@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace ArabWaha
@@ -41,6 +42,8 @@ namespace ArabWaha
 		/// <value>The application date.</value>
 		[JsonProperty("applicationDate")]
 		public DateTime ApplicationDate { get; set; }
+
+		private string applicationStatusLocal = string.Empty;
 		/// <summary>
 		/// Gets or sets the application status.
 		/// </summary>
@@ -48,9 +51,32 @@ namespace ArabWaha
 		[JsonProperty("applicationStatus")]
 		public string ApplicationStatus { get; set; }
 
+		//public string ApplicationStatus
+		//{
+		//	get
+		//	{
+		//		var dictionoryValue = LocalizationHelper.GetString(applicationStatusLocal);
+		//		if (string.IsNullOrEmpty(dictionoryValue)) dictionoryValue = applicationStatusLocal;
+		//		return dictionoryValue;
+		//	}
+		//	set
+		//	{
+		//		applicationStatusLocal = value;
+		//	}
+		//}
+
 		[JsonProperty("coverletterId")]
 		public string CoverletterId { get; set; }
 
+		//[JsonProperty("applicationStatus")]
+		public string ApplicationStatusCode { get { return applicationStatusLocal; } }
+
+	}
+
+	public class IndividualApplicationDetailList
+	{
+		[JsonProperty("results")]
+		public List<IndividualApplicationDetail> IndividualApplicationDetail { get; set; }
 	}
 
 	public class IndividualApplicationDetailRoot
@@ -60,7 +86,7 @@ namespace ArabWaha
 		/// </summary>
 		/// <value>The individual application detail.</value>
 		[JsonProperty("d")]
-		public IndividualApplicationDetail individualApplicationDetail { get; set; }
+		public IndividualApplicationDetailList IndividualApplicationDetailList { get; set; }
 	}
 
 }
