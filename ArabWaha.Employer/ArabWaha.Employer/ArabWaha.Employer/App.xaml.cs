@@ -17,6 +17,7 @@ using NStackPortable;
 using ArabWaha.Employer.StaticData;
 using MapsPCL;
 using Xamarin.Forms.Maps;
+using Autofac;
 
 namespace ArabWaha.Employer
 {
@@ -73,9 +74,13 @@ namespace ArabWaha.Employer
 			var geocoder = new Geocoder();
 
 			var addresses = await geocoder.GetAddressesForPositionAsync(GlobalSetting.position);
+			//{System.Linq.Enumerable.WhereSelectArrayIterator<CoreLocation.CLPlacemark,string>}
+
 			foreach (var address in addresses)
 			{
-				return address.Replace("\n", ", ");
+				var arrAddress = address.Split(new char[] { '\n' });
+
+				return arrAddress[1];
 			}
 
 			return null;
@@ -157,6 +162,9 @@ namespace ArabWaha.Employer
 			Container.RegisterTypeForNavigation<PersonalDetailsPage, PersonalDetailsViewModel>();
 			Container.RegisterTypeForNavigation<EditPersonalDetailsPage>();
 			Container.RegisterTypeForNavigation<AssignCandidateToJobPost>();
+			Container.RegisterTypeForNavigation<FilterCalendarPage, FilterCalendarPageViewModel>();
+
+
 		}
 
 		#region Singleton instance for nav and user checking

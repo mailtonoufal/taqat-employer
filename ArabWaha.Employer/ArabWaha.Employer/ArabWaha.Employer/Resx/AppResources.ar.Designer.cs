@@ -1721,6 +1721,12 @@ namespace ArabWaha.Employer.Resx {
             }
         }
         
+        internal static string ContactUsLabel {
+            get {
+                return ResourceManager.GetString("ContactUsLabel", resourceCulture);
+            }
+        }
+        
         internal static string LabelSearchJobsText {
             get {
                 return ResourceManager.GetString("LabelSearchJobsText", resourceCulture);

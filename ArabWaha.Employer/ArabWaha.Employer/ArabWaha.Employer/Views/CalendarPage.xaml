@@ -18,8 +18,7 @@
 		</awc:AWHeader>
 
 		<StackLayout>
-			
-			<ContentView Content="{Binding MonthView}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+			<ContentView Content="{Binding MonthView}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 			</ContentView>
 		</StackLayout>
 	</StackLayout>

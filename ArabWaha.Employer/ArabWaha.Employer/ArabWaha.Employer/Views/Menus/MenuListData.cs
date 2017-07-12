@@ -1,4 +1,4 @@
-﻿using ArabWaha.Core.Services;
+﻿﻿using ArabWaha.Core.Services;
 using ArabWaha.Employer.Views;
 using System;
 using System.Collections.Generic;
@@ -34,15 +34,15 @@ namespace ArabWaha.Employer.Views.Menus
 				IconImage = Application.Current.Resources["MenuIconHome"] as FileImageSource
 			});
 
-			this.Add(new MasterPageItem
-			{
-				// - need to move  to tresource/NSTack  "Applications" : "التطبيقات",
-				Title = isEnglishText ? "Applications" : "التطبيقات",
-				IconSource = "arrow_white.png",
-				TargetType = nameof(AssignCandidateToJobPost),
-				PageType = typeof(AssignCandidateToJobPost),
-				IconImage = Application.Current.Resources["MenuIconApplications"] as FileImageSource
-			});
+			//this.Add(new MasterPageItem
+			//{
+			//	// - need to move  to tresource/NSTack  "Applications" : "التطبيقات",
+			//	Title = isEnglishText ? "Applications" : "التطبيقات",
+			//	IconSource = "arrow_white.png",
+			//	TargetType = nameof(AssignCandidateToJobPost),
+			//	PageType = typeof(AssignCandidateToJobPost),
+			//	IconImage = Application.Current.Resources["MenuIconApplications"] as FileImageSource
+			//});
 			if (IsAuth)
 			{
 				this.Add(new MasterPageItem

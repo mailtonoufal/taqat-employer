@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
@@ -7,7 +7,7 @@
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
              x:Class="ArabWaha.Employer.Views.SettingsPage"
-             Title="{lEx:Translate TextSettingPageTitle}">
+             Title="{Binding settingspagetitle}">
 
     <StackLayout BackgroundColor="{StaticResource GreyPageColor}" Style="{StaticResource MainTopLevelStackLayout}">
 
@@ -60,17 +60,17 @@
                 <Image Source="{StaticResource SettingsComplaintsIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="3" Grid.Column="4" VerticalOptions="Center" />
                 <Image Source="{StaticResource SettingsAboutIcon}" HeightRequest="32" WidthRequest="32" Aspect="AspectFit" Grid.Row="4" Grid.Column="4" VerticalOptions="Center" />
 
-                <Label Text="{lEx:Translate TextLanguage}" Grid.Row="1" Grid.Column="3" Style="{StaticResource SettingsBodyMainLabel}" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End"/>
+                <Label Text="{Binding textlanguage}" Grid.Row="1" Grid.Column="3" Style="{StaticResource SettingsBodyMainLabel}" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End"/>
                 <Label Text="{Binding CurrentLanguage}" Grid.Row="1" Grid.Column="2" Style="{StaticResource SettingsBodyMainLabelGray}" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"/>
-                <Label Text="{lEx:Translate TextSettingsResetPassword}" Grid.Row="2" Grid.Column="3" VerticalTextAlignment="Center"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
-                <Label Text="{lEx:Translate TextComplaints}" Grid.Row="3" Grid.Column="3"  HorizontalOptions="FillAndExpand"  VerticalTextAlignment="Center"  HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
-                <Label Text="{lEx:Translate TextAboutPageTitle}" Grid.Row="4" Grid.Column="3" HorizontalOptions="FillAndExpand"  VerticalTextAlignment="Center"  HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
+                <Label Text="{Binding textsettingsresetpw}" Grid.Row="2" Grid.Column="3" VerticalTextAlignment="Center"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
+                <Label Text="{Binding textcomplaints}" Grid.Row="3" Grid.Column="3"  HorizontalOptions="FillAndExpand"  VerticalTextAlignment="Center"  HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
+                <Label Text="{Binding textaboutpagetitle}" Grid.Row="4" Grid.Column="3" HorizontalOptions="FillAndExpand"  VerticalTextAlignment="Center"  HorizontalTextAlignment="End" Style="{StaticResource SettingsBodyMainLabel}"  />
 
             </Grid>
 
         </StackLayout>
         <StackLayout  >
-            <Button Text="{lEx:Translate LabelButtonLogOutText}" 
+            <Button Text="{Binding settingslogoutbtn}" 
                     Command="{Binding LogoutCommand}" IsVisible="{Binding IsAuth}" Style="{StaticResource RedButtonFlat}"
                     HeightRequest="50"
                     />

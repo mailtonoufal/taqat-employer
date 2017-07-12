@@ -818,6 +818,9 @@
   <data name="LabelJobApplications" xml:space="preserve">
     <value>Job Applications</value>
   </data>
+	<data name="LabelApplication" xml:space="preserve">
+    <value>Application</value>
+  </data>
   <data name="LabelJobPosts" xml:space="preserve">
     <value>Job Posts</value>
   </data>
@@ -886,6 +889,15 @@
   </data>
   <data name="ProfileIDLabel" xml:space="preserve">
     <value>Profile ID</value>
+  </data>
+ <data name="PhoneLabel" xml:space="preserve">
+    <value>9200 4583 000</value>
+  </data>
+	 <data name="MailLabel" xml:space="preserve">
+    <value>Callcenter@hrdf.org.sa</value>
+  </data>
+	 <data name="ContactUsLabel" xml:space="preserve">
+    <value>If you have any question please call us on\nLine Available from sunday to Thursday\n\nYou can also email for any technical questions.</value>
   </data>
   <data name="NameLabel" xml:space="preserve">
     <value>Name</value>
@@ -1034,10 +1046,7 @@
   <data name="LabelButtonLogOutText" xml:space="preserve">
     <value>Log Out</value>
   </data>
-
-
-
-	 <data name="LabelProgramsWhocanBenefitText" xml:space="preserve">
+ <data name="LabelProgramsWhocanBenefitText" xml:space="preserve">
     <value>Salary</value>
   </data>
 </root>

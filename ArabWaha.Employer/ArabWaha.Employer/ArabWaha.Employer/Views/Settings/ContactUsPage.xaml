@@ -7,7 +7,7 @@
              xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses" 
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"
              x:Class="ArabWaha.Employer.Views.ContactUsPage"
-             Title="{lEx:Translate TextContactPageTitle}">
+             Title="{Binding ContactPageTitle}" x:Name="contactuspage">
 
 
     <StackLayout Style="{StaticResource MainTopLevelStackLayout}" BackgroundColor="{StaticResource GreyPageColor}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
@@ -42,18 +42,18 @@
                        VerticalOptions="Start" WidthRequest="180" HeightRequest="110" />
 
 
-                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}"  Text="9200 4583 000"  Style="{StaticResource ComplaintsTitleTextBlue}"  
+                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}"  Text="{Binding PhonecontactLabel}"  Style="{StaticResource ComplaintsTitleTextBlue}"  
                        HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center"  FontSize="14"/>
                 <Image Source="{StaticResource phoneicon}" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Aspect="AspectFit" VerticalOptions="Center" />
 
 
 
-                <Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}"  Text="Callcenter@hrdf.org.sa" Style="{StaticResource ComplaintsTitleTextBlue}"  
+                <Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}"  Text="{Binding MailcontactLabel}" Style="{StaticResource ComplaintsTitleTextBlue}"  
                        HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center" FontSize="14"/>
                 <Image Source="{StaticResource SettingsComplaintsIcon}" Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Aspect="AspectFit" VerticalOptions="Center" />
 
 
-                <Label Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding ContactUsText}" 
+                <Label Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding ContactLabelText}" 
                          Style="{StaticResource ComplaintsTitleTextBlue}"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" FontSize="14"/>
 
             </Grid>

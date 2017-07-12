@@ -19,6 +19,7 @@ using Acr.UserDialogs;
 using System.Threading.Tasks;
 using System.Text;
 using ArabWaha.Employer.StaticData;
+using ArabWaha.Models;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -99,6 +100,19 @@ namespace ArabWaha.Employer.ViewModels
                     filterJoin = String.Format("and Keyword eq '{0}' ", _searchText);
 					searchFilter.Append(filterJoin);
 				}
+                if (GlobalSetting.position !=null)
+                {
+                    filterJoin = String.Format("and geoLocationLatitude eq '{0}' ", GlobalSetting.position.Latitude);
+					searchFilter.Append(filterJoin);
+                    filterJoin = String.Format("and geoLocationLongitude eq '{0}' ", GlobalSetting.position.Longitude);
+					searchFilter.Append(filterJoin);
+                }
+                filterJoin = String.Format("and language eq '{0}' ", DebugDataSingleton.Instance.Language);
+				searchFilter.Append(filterJoin);
+				//filterJoin = String.Format("and regionOrProvince eq '{0}' ",);
+				searchFilter.Append(filterJoin);
+               
+
                 var result = await AWHttpClient.Instance.GetCandidatesList(searchFilter.ToString());
 				if (result.Result.candidateObjectList.candidateList != null && result.Result.candidateObjectList.candidateList.Count > 0)
 				{
