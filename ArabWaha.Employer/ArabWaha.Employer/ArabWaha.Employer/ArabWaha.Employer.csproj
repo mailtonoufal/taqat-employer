@@ -292,6 +292,10 @@
     <Compile Include="Layouts\Applications\AssignCandidateToJobPost.xaml.cs">
       <DependentUpon>AssignCandidateToJobPost.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Layouts\Calendar\CalendarMonthView.xaml.cs">
+      <DependentUpon>CalendarMonthView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IHijriService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -308,6 +312,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Layouts\Applications\AssignCandidateToJobPost.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Calendar\CalendarMonthView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -427,6 +434,12 @@
     </Reference>
     <Reference Include="FubarCoder.RestSharp.Portable.Core">
       <HintPath>..\..\..\Packages\FubarCoder.RestSharp.Portable.Core.4.0.8\lib\portable45-net45+win8+wp8+wpa81\FubarCoder.RestSharp.Portable.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.RangeSlider.Common">
+      <HintPath>..\..\..\Packages\Xamarin.RangeSlider.0.6.17\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.RangeSlider.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.RangeSlider.Forms">
+      <HintPath>..\..\..\Packages\Xamarin.Forms.RangeSlider.0.6.17\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.RangeSlider.Forms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -773,6 +786,7 @@
     <Folder Include="Layouts\Welcome\" />
     <Folder Include="Views\PersonalDetails\" />
     <Folder Include="ViewModels\PersonalDetails\" />
+    <Folder Include="Layouts\Calendar\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

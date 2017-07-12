@@ -4,12 +4,16 @@
             xmlns:local="clr-namespace:ArabWaha.Employer.Controls"
             xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"  
              xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"
+     xmlns:controlx="clr-namespace:ArabWaha.Employer.Controls"
             xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"   
             x:Class="ArabWaha.Employer.Layouts.ApplicationsView">
   <ContentView.Content>
-        <StackLayout Grid.Row="1" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+      <StackLayout Grid.Row="1" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-                <ListView x:Name="ParentListView" ItemsSource="{Binding Jobs}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
+
+
+
+           <!--<ListView x:Name="ParentListView" ItemsSource="{Binding Jobs}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" CachingStrategy = "RecycleElement"
                       HasUnevenRows="True" SeparatorVisibility="None"
                       SelectedItem ="{Binding SelectedItem, Mode=TwoWay}" >
                     <ListView.ItemTemplate>
@@ -30,7 +34,7 @@
                                         <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3"
                                                   VerticalOptions="FillAndExpand"  />
 
-                                        <Label Text="{Binding JobDetails.GetJobPostTitle}" Grid.Row="0" Grid.Column="1"  
+                                       <Label Text="{Binding JobDetails.GetJobPostTitle}" Grid.Row="0" Grid.Column="1"  
                                                Style="{StaticResource FormHeaderLabelBlue}"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" VerticalTextAlignment="Center"
                                                 HorizontalOptions="FillAndExpand">
                                             <Label.GestureRecognizers>
@@ -61,9 +65,9 @@
                                                                 </Grid.RowDefinitions>
                                                                 <Grid.ColumnDefinitions>
                                                                     <ColumnDefinition Width="5" />
-                                                                    <ColumnDefinition Width="15" /> <!-- image here-->
+                                                                    <ColumnDefinition Width="15" /> 
                                                                     <ColumnDefinition Width="*" />
-                                                                    <ColumnDefinition Width="15" /> <!-- image here-->                                                                    
+                                                                    <ColumnDefinition Width="15" />                                                                    
                                                                     <ColumnDefinition Width="5" />
                                                                 </Grid.ColumnDefinitions>
 
@@ -83,8 +87,9 @@
                                                                        Grid.Row="3" Grid.Column="2" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"
                                                                        Style="{StaticResource CellBodyTextSmallGray}"/>
 
-                                                                <Image Source="{StaticResource ContactIcon}" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.ImageColumn}" />
-                                                                <Image Source="{StaticResource LocationIcon}" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.ImageColumn}" />
+                                                                <Image Source="{StaticResource ContactIcon}" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeJobImgColNo}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalOptions}" />
+                                                                <Image Source="{StaticResource LocationIcon}" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeJobImgColNo}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalOptions}"/>
+                                                                 Grid.Column="{x:Static gb:GlobalSetting.ImageColumn}"
 
                                                                 <StackLayout BackgroundColor="{StaticResource LightGraySeperatorColor}" HorizontalOptions="FillAndExpand" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5"/>
                                                             </Grid>
@@ -99,7 +104,88 @@
 
                         </DataTemplate>
                     </ListView.ItemTemplate>
-                </ListView>
+                </ListView>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ListView ItemsSource="{Binding applicationlistsample}" x:Name="listapplication"
+                      HorizontalOptions="FillAndExpand" 
+                      VerticalOptions="FillAndExpand"
+                      HasUnevenRows="True" 
+                     SeparatorVisibility="None"
+                      SelectedItem ="{Binding SelectedItem, Mode=TwoWay}" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                       
+                           
+                                  <StackLayout  BackgroundColor="White">
+                                                        <Grid Margin="0" >
+                                                                <Grid.RowDefinitions>
+                                                                    <RowDefinition Height="*" />
+                                                                    <RowDefinition Height="*" />
+                                                                    <RowDefinition Height="*" />
+                                                                    <RowDefinition Height="*" />
+                                                                    <RowDefinition Height="3" />
+                                                                    <RowDefinition Height="1" />
+                                                                </Grid.RowDefinitions>
+                                                                <Grid.ColumnDefinitions>
+                                                                    <ColumnDefinition Width="5" />
+                                                                    <ColumnDefinition Width="15" /> 
+                                                                    <ColumnDefinition Width="*" />
+                                                                    <ColumnDefinition Width="15" />                                                                    
+                                                                    <ColumnDefinition Width="5" />
+                                                                </Grid.ColumnDefinitions>
+
+                                                                <Label Text="{Binding jobPostId}" 
+                                                                       Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" HorizontalOptions="FillAndExpand"
+                                                                       Style="{StaticResource FormHeaderLabelBlue}" />
+
+                                                                <Label Text="{Binding dateOfApplication}" 
+                                                                        Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" HorizontalOptions="FillAndExpand"
+                                                                       Style="{StaticResource CellBodyTextSmallGray}"/>
+
+                                                                <Label Text="{Binding applicant}" 
+                                                                       Grid.Row="2" Grid.Column="2"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"
+                                                                       Style="{StaticResource CellBodyTextSmallGray}"/>
+                                                                
+                                                                <Label Text="{Binding Location}" 
+                                                                       Grid.Row="3" Grid.Column="2" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignText}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center"
+                                                                       Style="{StaticResource CellBodyTextSmallGray}"/>
+
+                                                                <Image Source="{StaticResource ContactIcon}" Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeJobImgColNo}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalOptions}" />
+                                                                <Image Source="{StaticResource LocationIcon}" Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeJobImgColNo}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalOptions}"/>
+                                                              <!--   Grid.Column="{x:Static gb:GlobalSetting.ImageColumn}"-->
+
+                                                                <StackLayout BackgroundColor="{StaticResource LightGraySeperatorColor}" HorizontalOptions="FillAndExpand" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5"/>
+                                                            </Grid>
+                                    
+                             
+                        </StackLayout>
+                    </ViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        
+
+
+
+               
+
+             
             </StackLayout>
         </StackLayout>
 

@@ -13,122 +13,174 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using ArabWaha.Employer.StaticData;
+using ArabWaha.Employer.Layouts.Calendar;
 
 namespace ArabWaha.Employer.ViewModels
 {
-    public class CalendarPageViewModel : AWMVVMBase
-    {
-            public CalendarPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
-            {
-                IsBusy = false;
+	public class CalendarPageViewModel : AWMVVMBase
+	{
+		public CalendarPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
+		{
+			IsBusy = false;
 
-                // make sure we have a default item collection
-                EventsCollection = new ScheduleAppointmentCollection();
+			// make sure we have a default item collection
+			EventsCollection = new ScheduleAppointmentCollection();
 
-                // test locale. 
-                Locale = GlobalSetting.CultureCode;
+			// test locale. 
+			Locale = GlobalSetting.CultureCode;
 
-                AppointmentCommand = new DelegateCommand<ScheduleAppointment>(ShowAppointment);
+			AppointmentCommand = new DelegateCommand<ScheduleAppointment>(ShowAppointment);
 
-                LoadEventData();
-            }
+			LoadEventData();
 
-            private string _locale;
-            public string Locale
-            {
-                get
-                {
-                    return _locale;
-                }
+			MonthViewDate = DateTime.Now;
+			MonthView = new CalendarMonthView(MonthViewDate);
 
-                set
-                {
-                    SetProperty<string>(ref _locale, value);
-                }
-            }
+			OnPrevCommand = new DelegateCommand(SetPreviousMonth);
+			OnNextCommand = new DelegateCommand(SetNextMonth);
+		}
 
-            async void LoadEventData()
-            {
-                ApiService api = new ApiService();
-                var eventsCollection = await api.GetEventsAsync();
+		private string _locale;
+		public string Locale
+		{
+			get
+			{
+				return _locale;
+			}
 
-                foreach (var item in eventsCollection)
-                    AddToSchedule(item);
-            }
+			set
+			{
+				SetProperty<string>(ref _locale, value);
+			}
+		}
 
-            public void OnNavigatedFrom(NavigationParameters parameters)
-            {
-                // set selected item in the parameters
-            }
+		private ContentView _MonthView;
 
-            public async void OnNavigatedTo(NavigationParameters parameters)
-            {
-                // check for UpdateEvent with event id to update in calendar
-                var data = parameters.Where(x => x.Key == "UpdateEvent").FirstOrDefault();
-                if (data.Value != null)
-                {
-                    var eventid = data.Value.ToString();
+		public ContentView MonthView
+		{
+			get
+			{
+				return _MonthView;
+			}
+			set
+			{
+				if (value != null)
+					SetProperty<ContentView>(ref _MonthView, value);
+			}
+		}
 
-                    var currentevent = EventsCollection.Where(x => x.Notes == eventid).FirstOrDefault();
-                    if (currentevent == null) return;
+		private DateTime _MonthViewDate;
 
-                    ApiService api = new ApiService();
-                    var singleEvent = await api.GetEventSingleAsync(eventid);
-                    if (singleEvent == null) return;
+		public DateTime MonthViewDate
+		{
+			get
+			{
+				return _MonthViewDate;
+			}
+			set
+			{
+				if (value != null)
+					SetProperty<DateTime>(ref _MonthViewDate, value);
+			}
+		}
 
-                    currentevent.Subject = singleEvent.TitleInfo;
+		public DelegateCommand OnPrevCommand { get; set; }
+		public DelegateCommand OnNextCommand { get; set; }
 
-                }
+		async void LoadEventData()
+		{
+			ApiService api = new ApiService();
+			var eventsCollection = await api.GetEventsAsync();
+
+			foreach (var item in eventsCollection)
+				AddToSchedule(item);
+		}
+
+		public void OnNavigatedFrom(NavigationParameters parameters)
+		{
+			// set selected item in the parameters
+		}
+
+		public async void OnNavigatedTo(NavigationParameters parameters)
+		{
+			// check for UpdateEvent with event id to update in calendar
+			var data = parameters.Where(x => x.Key == "UpdateEvent").FirstOrDefault();
+			if (data.Value != null)
+			{
+				var eventid = data.Value.ToString();
+
+				var currentevent = EventsCollection.Where(x => x.Notes == eventid).FirstOrDefault();
+				if (currentevent == null) return;
+
+				ApiService api = new ApiService();
+				var singleEvent = await api.GetEventSingleAsync(eventid);
+				if (singleEvent == null) return;
+
+				currentevent.Subject = singleEvent.TitleInfo;
+
+			}
 
 
-            }
+		}
 
-            public DelegateCommand<ScheduleAppointment> AppointmentCommand { get; set; }
+		public DelegateCommand<ScheduleAppointment> AppointmentCommand { get; set; }
 
-            private async void ShowAppointment(ScheduleAppointment appointment)
-            {
-                ApiService api = new ApiService();
-                var ev = await api.GetEventSingleAsync(appointment.Notes);
+		private async void ShowAppointment(ScheduleAppointment appointment)
+		{
+			ApiService api = new ApiService();
+			var ev = await api.GetEventSingleAsync(appointment.Notes);
 
-                // now process the event as parameter
-                if (ev == null) return;
+			// now process the event as parameter
+			if (ev == null) return;
 
-                NavigationParameters navP = new NavigationParameters();
-                navP.Add("DETAILS", ev);
-                await _nav.NavigateAsync(nameof(EventsDetailPage), navP);
-            }
+			NavigationParameters navP = new NavigationParameters();
+			navP.Add("DETAILS", ev);
+			await _nav.NavigateAsync(nameof(EventsDetailPage), navP);
+		}
 
 
-            #region datasource events
-            // EventsCollection
-            private ScheduleAppointmentCollection _eventsCollection;
-            public ScheduleAppointmentCollection EventsCollection
-            {
-                get
-                {
-                    return _eventsCollection;
-                }
-                set
-                {
-                    SetProperty<ScheduleAppointmentCollection>(ref _eventsCollection, value);
-                }
-            }
+		#region datasource events
+		// EventsCollection
+		private ScheduleAppointmentCollection _eventsCollection;
+		public ScheduleAppointmentCollection EventsCollection
+		{
+			get
+			{
+				return _eventsCollection;
+			}
+			set
+			{
+				SetProperty<ScheduleAppointmentCollection>(ref _eventsCollection, value);
+			}
+		}
 
-            private void AddToSchedule(EventDetails newEvent)
-            {
-                // contruct from event
-                EventsCollection.Add(new ScheduleAppointment
-                {
-                    Subject = newEvent.TitleInfo,
-                    Location = newEvent.EventLocation,
-                    StartTime = UtilHelper.GetDatefromSqlDate(newEvent.EventStart),
-                    EndTime = UtilHelper.GetDatefromSqlDate(newEvent.EventEnd),
-                    Color = Color.Red,
-                    Notes = newEvent.EventId.ToString()
-                });
-            }
+		private void AddToSchedule(EventDetails newEvent)
+		{
+			// contruct from event
+			EventsCollection.Add(new ScheduleAppointment
+			{
+				Subject = newEvent.TitleInfo,
+				Location = newEvent.EventLocation,
+				StartTime = UtilHelper.GetDatefromSqlDate(newEvent.EventStart),
+				EndTime = UtilHelper.GetDatefromSqlDate(newEvent.EventEnd),
+				Color = Color.Red,
+				Notes = newEvent.EventId.ToString()
+			});
+		}
 
-            #endregion
+		private void SetPreviousMonth()
+		{
+			MonthViewDate = MonthViewDate.AddMonths(-1);
+			MonthView = new CalendarMonthView(MonthViewDate);
+		}
 
-        }
-    }
+		private void SetNextMonth()
+		{
+			MonthViewDate = MonthViewDate.AddMonths(1);
+			MonthView = new CalendarMonthView(MonthViewDate);
+		}
+
+		#endregion
+
+	}
+}

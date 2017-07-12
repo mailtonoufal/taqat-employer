@@ -8,11 +8,19 @@ using Xamarin.Forms;
 
 namespace ArabWaha.Employer.Layouts
 {
-    public partial class ApplicationsWatchListView : ContentView
-    {
-        public ApplicationsWatchListView()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class ApplicationsWatchListView : ContentView
+	{
+		public ApplicationsWatchListView()
+		{
+			try
+			{
+				InitializeComponent();
+			}
+			catch (Exception ex)
+			{
+
+			}
+
+		}
+	}
 }

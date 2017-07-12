@@ -89,8 +89,8 @@ namespace ArabWaha.Core.Services
 
                     //Get the CandidateList
 
-                    var candidateList = await AWHttpClient.Instance.GetCandidatesList("JobType eq *");
-                    //TODO parse the candidateList to get the required response
+                    //var candidateList = await AWHttpClient.Instance.GetCandidatesList("JobType eq *");
+					//TODO parse the candidateList to get the required response
 
 
 
@@ -100,16 +100,16 @@ namespace ArabWaha.Core.Services
 
 
 
-                    //Get the Personal Details
-                    var personalDetails = await AWHttpClient.Instance.GetPersonalDetails();
-                    if (personalDetails.IsSuccess)
-                    {
-                        if (personalDetails.Result != null && personalDetails.Result.personalDetailsObject != null && myCompanyDetails.Result.myCompanyObjectList.myCompanyList.Count > 0)
-                        {
-                            var details = personalDetails.Result.personalDetailsObject.personalDetailsList[0];
-
-                        }
-                    }
+					//Get the Personal Details
+					//var personalDetails = await AWHttpClient.Instance.GetPersonalDetails();
+					//if (personalDetails.IsSuccess)
+					//{
+     //                   if (personalDetails.Result != null && personalDetails.Result.personalDetailsObject != null && myCompanyDetails.Result.myCompanyObjectList.myCompanyList.Count > 0)
+					//	{
+     //                       var details = personalDetails.Result.personalDetailsObject.personalDetailsList[0];
+							
+					//	}
+					//}
 
 
 
@@ -128,8 +128,8 @@ namespace ArabWaha.Core.Services
                     var applicationDetails = await AWHttpClient.Instance.GetApplicationDetails("112716", "46654815");
 
 
-                    //Get JobsList
-                    var jobsList = await AWHttpClient.Instance.GetJobsList();
+					//Get JobsList
+                    //var jobsList = await AWHttpClient.Instance.GetJobsList();
 
 
                     //Get AssignedJobs

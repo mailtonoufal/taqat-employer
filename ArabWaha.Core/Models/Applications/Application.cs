@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace ArabWaha.Core.Models.Applications
 {
-	public class Application
+	public class ApplicationData
 	{
 		public string applicationId { get; set; }
 		public string applicant { get; set; }
@@ -17,7 +17,7 @@ namespace ArabWaha.Core.Models.Applications
 	public class ApplicationsList
 	{
 		[JsonProperty("results")]
-        public List<Application> applicationsList { get; set; }
+        public List<ApplicationData> applicationsList { get; set; }
 	}
 
 	public class ApplicationsListObject

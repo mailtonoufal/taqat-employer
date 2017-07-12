@@ -86,7 +86,7 @@ namespace ArabWaha.Employer.ViewModels
                 string filterJoin = string.Empty;
                 if (GlobalSetting.FilterQuery == null || GlobalSetting.FilterQuery.Length < 0)
                 {
-					filterJoin = String.Format("JobType eq * ");
+					filterJoin = String.Format("JobType eq '*' ");
 					searchFilter.Append(filterJoin);
                 }
                 if (_searchLocaiton !=null && _searchLocaiton.Length>0)
@@ -173,7 +173,11 @@ namespace ArabWaha.Employer.ViewModels
 			// Get the parameters 
 			SearchText = (string)parameters["SearchText"];
 			SearchLocation = (string)parameters["SearchLocation"];
-            await ProcessSearch();
+            //if (GlobalSetting.FilterQuery !=null && GlobalSetting.FilterQuery.Length>0)
+            //{
+                await ProcessSearch();
+            //}
+
 		}
 
 		public void OnNavigatingTo(NavigationParameters parameters)

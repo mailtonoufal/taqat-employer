@@ -26,6 +26,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using ArabWaha.Employer.StaticData;
 using ArabWaha.Web;
+using ArabWaha.Core.Models.JobLists;
 
 namespace ArabWaha.Employer.ViewModels
 {
@@ -66,13 +67,15 @@ namespace ArabWaha.Employer.ViewModels
 			SearchBarCommand = new DelegateCommand(ExecuteSearch);
 
 			// job commands
-			DeleteJobCommand = new DelegateCommand<EmployerJobDetail>(ProcessDeleteJob);
-			EditJobCommand = new DelegateCommand<EmployerJobDetail>(ProcessEditJob);
-			ViewJobCommand = new DelegateCommand<EmployerJobDetail>(ProcessViewJob);
+			DeleteJobCommand = new DelegateCommand<Job>(ProcessDeleteJob);
+			EditJobCommand = new DelegateCommand<Job>(ProcessEditJob);
+			ViewJobCommand = new DelegateCommand<Job>(ProcessViewJob);
+			JobPostsSelectedCommand = new DelegateCommand<Job>(ProcessJobPostsSelectedCommand);
+
 			ProgramSelectedCommand = new DelegateCommand<Program>(ProcessProgramSelected);
 			ServicesSelectedCommand = new DelegateCommand<EmployerService>(ProcessServicesSelectedCommand);
 			AddNewJobCommand = new DelegateCommand(ProcessAddNewJobCommand);
-			JobPostsSelectedCommand = new DelegateCommand<EmployerJobDetail>(ProcessJobPostsSelectedCommand);
+
 			// load views    
 			LoadContentViews();
 		}
@@ -108,18 +111,19 @@ namespace ArabWaha.Employer.ViewModels
 
 			Task.Run(async () =>
 			{
-				ApiService apiServ = new ApiService();
-				JobPageSource = await apiServ.GetEmployerPostedJobsAsync(1);
+				var jobListRoot = await AWHttpClient.Instance.GetJobsList();
+				JobPageSource = new ObservableCollection<Job>(jobListRoot.Result.jobsListObject.jobsList);
+
 
 				TranslateExtension tran = new TranslateExtension();
 
 				// mod the text here for translations 
 				foreach (var t in JobPageSource)
 				{
-					t.JobStatusText = tran.GetProviderValueString("LabelJobStatus");
-					t.PostedText = tran.GetProviderValueString("LabelJobPosted");
+					//t.JobStatusText = tran.GetProviderValueString("LabelJobStatus");
+					//t.PostedText = tran.GetProviderValueString("LabelJobPosted");
 
-					if (string.IsNullOrEmpty(t.CompanyLogo)) t.CompanyLogo = "jobcompanyicon.png";
+					//if (string.IsNullOrEmpty(t.CompanyLogo)) t.CompanyLogo = "jobcompanyicon.png";
 				}
 
 				JobContent = new HomeJobPostsContent();
@@ -255,11 +259,11 @@ namespace ArabWaha.Employer.ViewModels
 		}
 
 		// JOB edit / delete commands
-		public DelegateCommand<EmployerJobDetail> DeleteJobCommand { get; set; }
+		public DelegateCommand<Job> DeleteJobCommand { get; set; }
 		//        public DelegateCommand<EmployerJobDetail> EditJobCommand;
 		//public ICommand EditJobCommand { get; }
 
-		private async void ProcessDeleteJob(EmployerJobDetail vals)
+		private async void ProcessDeleteJob(Job vals)
 		{
 			TranslateExtension tran = new TranslateExtension();
 			string confirm = tran.GetProviderValueString("ButtonConfirmDelete");
@@ -270,15 +274,15 @@ namespace ArabWaha.Employer.ViewModels
 			if (res.Equals(delete))
 			{
 				ApiService apiServ = new ApiService();
-				if (await apiServ.DeleteEmployerJobasync(vals.JobPostId))
+				if (await apiServ.DeleteEmployerJobasync(vals.jobPostId))
 				{
 					JobPageSource.Remove(vals);
 				}
 			}
 		}
 
-		public DelegateCommand<EmployerJobDetail> EditJobCommand { get; set; }
-		async void ProcessEditJob(EmployerJobDetail vals)
+		public DelegateCommand<Job> EditJobCommand { get; set; }
+		async void ProcessEditJob(Job vals)
 		{
 			if (vals != null)
 			{
@@ -289,8 +293,8 @@ namespace ArabWaha.Employer.ViewModels
 			}
 		}
 
-		public DelegateCommand<EmployerJobDetail> ViewJobCommand { get; set; }
-		async void ProcessViewJob(EmployerJobDetail vals)
+		public DelegateCommand<Job> ViewJobCommand { get; set; }
+		async void ProcessViewJob(Job vals)
 		{
 			if (vals != null)
 			{
@@ -331,8 +335,8 @@ namespace ArabWaha.Employer.ViewModels
 			await _nav.NavigateAsync(nameof(JobNewPostPage), paramx, false, true);
 		}
 
-		public DelegateCommand<EmployerJobDetail> JobPostsSelectedCommand { get; set; }
-		async void ProcessJobPostsSelectedCommand(EmployerJobDetail vals)
+		public DelegateCommand<Job> JobPostsSelectedCommand { get; set; }
+		async void ProcessJobPostsSelectedCommand(Job vals)
 		{
 			NavigationParameters paramx = new NavigationParameters();
 			paramx.Add("JOB", vals);
@@ -352,12 +356,13 @@ namespace ArabWaha.Employer.ViewModels
 			set { SetProperty<ObservableCollection<Announcement>>(ref _homePageSource, value); }
 		}
 
-		private ObservableCollection<EmployerJobDetail> _jobPageSource;
-		public ObservableCollection<EmployerJobDetail> JobPageSource
+		private ObservableCollection<Job> _jobPageSource;
+		public ObservableCollection<Job> JobPageSource
 		{
 			get { return _jobPageSource; }
-			set { SetProperty<ObservableCollection<EmployerJobDetail>>(ref _jobPageSource, value); }
+			set { SetProperty<ObservableCollection<Job>>(ref _jobPageSource, value); }
 		}
+
 
 		// ProgramsPageSource
 		private ObservableCollection<Program> _programsPageSource;
@@ -472,15 +477,15 @@ namespace ArabWaha.Employer.ViewModels
 					ApiService apiServ = new ApiService();
 					var updated = await apiServ.GetEmployerPostedJobsSingleAsync(val);
 
-					var existing = JobPageSource.Where(x => x.JobPostId == val).FirstOrDefault();
-					if (existing != null)
-					{
-						var index = JobPageSource.IndexOf(existing);
-						JobPageSource.Remove(existing);
-						JobPageSource.Insert(index, updated);
-					}
-					else
-						JobPageSource.Add(updated); // must be a new job
+					var existing = JobPageSource.Where(x => x.jobPostId == val).FirstOrDefault();
+					//if (existing != null)
+					//{
+					//	var index = JobPageSource.IndexOf(existing);
+					//	JobPageSource.Remove(existing);
+					//	JobPageSource.Insert(index, updated);
+					//}
+					//else
+					//	JobPageSource.Add(updated); // must be a new job
 
 
 				}

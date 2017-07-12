@@ -149,6 +149,8 @@
     <Compile Include="Renders\LineEntryRenderer.cs" />
     <Compile Include="Renders\CustomiseSearchBarRenderer.cs" />
     <Compile Include="GetMyLocation.cs" />
+    <Compile Include="RangeSliderInitialization.cs" />
+    <Compile Include="GetHijriDate.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -181,6 +183,29 @@
     <BundleResource Include="Resources\arrow_forward.png" />
     <BundleResource Include="Resources\trash.png" />
     <BundleResource Include="Resources\Plus.png" />
+    <BundleResource Include="Resources\slider-default_trackBackground%402x.png" />
+    <BundleResource Include="Resources\slider-default7-trackCrossedOver%402x.png" />
+    <BundleResource Include="Resources\slider-default7-trackCrossedOver.png" />
+    <BundleResource Include="Resources\slider-default7-trackBackground%402x.png" />
+    <BundleResource Include="Resources\slider-default7-trackBackground.png" />
+    <BundleResource Include="Resources\slider-default7-track%402x.png" />
+    <BundleResource Include="Resources\slider-default7-track.png" />
+    <BundleResource Include="Resources\slider-default7-handle%402x.png" />
+    <BundleResource Include="Resources\slider-default7-handle.png" />
+    <BundleResource Include="Resources\slider-default7-handle-disabled%402x.png" />
+    <BundleResource Include="Resources\slider-default7-handle-disabled.png" />
+    <BundleResource Include="Resources\slider-default-trackCrossedOver%402x.png" />
+    <BundleResource Include="Resources\slider-default-trackCrossedOver.png" />
+    <BundleResource Include="Resources\slider-default-trackBackground.png" />
+    <BundleResource Include="Resources\slider-default-track%402x.png" />
+    <BundleResource Include="Resources\slider-default-track.png" />
+    <BundleResource Include="Resources\slider-default-handle%402x.png" />
+    <BundleResource Include="Resources\slider-default-handle.png" />
+    <BundleResource Include="Resources\slider-default-handle-highlighted%402x.png" />
+    <BundleResource Include="Resources\slider-default-handle-highlighted.png" />
+    <BundleResource Include="Resources\slider-default-handle-disabled%402x.png" />
+    <BundleResource Include="Resources\slider-default-handle-disabled.png" />
+    <BundleResource Include="Resources\contacts.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CarouselView.FormsPlugin.Abstractions">
@@ -355,6 +380,18 @@
     </Reference>
     <Reference Include="System.Net.Http.Primitives">
       <HintPath>..\..\..\Packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.RangeSlider.Common">
+      <HintPath>..\..\..\Packages\Xamarin.RangeSlider.0.6.17\lib\Xamarin.iOS10\Xamarin.RangeSlider.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.RangeSlider.iOS">
+      <HintPath>..\..\..\Packages\Xamarin.RangeSlider.0.6.17\lib\Xamarin.iOS10\Xamarin.RangeSlider.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.RangeSlider.Forms">
+      <HintPath>..\..\..\Packages\Xamarin.Forms.RangeSlider.0.6.17\lib\Xamarin.iOS10\Xamarin.RangeSlider.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.RangeSlider.Forms.iOS">
+      <HintPath>..\..\..\Packages\Xamarin.Forms.RangeSlider.0.6.17\lib\Xamarin.iOS10\Xamarin.RangeSlider.Forms.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

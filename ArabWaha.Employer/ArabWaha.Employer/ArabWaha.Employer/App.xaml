@@ -57,7 +57,7 @@
           <Style x:Key="MainTopLevelStackLayout" TargetType="StackLayout">
             <Setter Property="Padding">
               <Setter.Value>
-                <OnPlatform x:TypeArguments="Thickness" iOS="0, 10, 0, 0" WinPhone="20,20,20,20" />
+                <OnPlatform x:TypeArguments="Thickness" iOS="0, 0, 0, 0" WinPhone="20,20,20,20" />
               </Setter.Value>
             </Setter>
             <Setter Property="BackgroundColor" Value="{StaticResource GreyPageColor}" />
@@ -612,7 +612,7 @@
             <FileImageSource x:Key="MenuIconContactUs">ContactImg.png</FileImageSource>
             <FileImageSource x:Key="MenuIconSettings">SettingImg.png</FileImageSource>
             <FileImageSource x:Key="MenuIconLogInOut">LogoutImg.png</FileImageSource>
-            <FileImageSource x:Key="ContactIcon">contactnameicon.png</FileImageSource>
+            <FileImageSource x:Key="ContactIcon">contacts.png</FileImageSource>
             <FileImageSource x:Key="LocationIcon">location.png</FileImageSource>
 
 

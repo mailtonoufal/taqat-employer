@@ -227,7 +227,7 @@ namespace ArabWaha.Web
             }
         }
 
-        internal async Task<ServiceResult<WatchJobListRoot>> GetWatchlistJobs()
+        public async Task<ServiceResult<WatchJobListRoot>> GetWatchlistJobs()
         {
             ServiceResult<WatchJobListRoot> returnVal = null;
 
@@ -280,7 +280,7 @@ namespace ArabWaha.Web
             }
         }
 
-        internal async Task<ServiceResult<JobsListObject>> GetJobsList()
+		public async Task<ServiceResult<JobsListObject>> GetJobsList()
         {
             ServiceResult<JobsListObject> returnVal = null;
 
@@ -333,7 +333,7 @@ namespace ArabWaha.Web
             }
         }
 
-        internal async Task<ServiceResult<ApplicationsListObject>> GetApplications()
+        public  async Task<ServiceResult<ApplicationsListObject>> GetApplications()
         {
             ServiceResult<ApplicationsListObject> returnVal = null;
 
