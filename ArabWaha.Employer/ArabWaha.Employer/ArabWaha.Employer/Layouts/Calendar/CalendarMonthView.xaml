@@ -2,7 +2,7 @@
 <ContentView 
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-	x:Class="ArabWaha.Employer.Layouts.Calendar.CalendarMonthView"
+	x:Class="ArabWaha.Employer.Layouts.CalendarMonthView"
 	xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData">
 	<ContentView.Content>
 		<Grid x:Name="MonthGrid">

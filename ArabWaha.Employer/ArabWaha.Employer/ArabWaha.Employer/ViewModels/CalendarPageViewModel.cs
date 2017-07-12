@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using ArabWaha.Employer.StaticData;
-using ArabWaha.Employer.Layouts.Calendar;
+using ArabWaha.Employer.Layouts;
 
 namespace ArabWaha.Employer.ViewModels
 {
