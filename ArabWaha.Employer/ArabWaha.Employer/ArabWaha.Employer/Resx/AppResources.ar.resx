@@ -1010,6 +1010,9 @@
   <data name="LabelProgramsIntroduction" xml:space="preserve">
     <value>المقدمة</value>
   </data>
+	 <data name="ContactUsLabel" xml:space="preserve">
+    <value>إذا كان لديك أي سؤال يرجى الاتصال بنا على \ أونلين متاح من الأحد إلى الخميس \ ويمكنك أيضا البريد الإلكتروني عن أي أسئلة تقنية.</value>
+  </data>
   <data name="LabelSearchJobsText" xml:space="preserve">
     <value>البحث عن المواهب</value>
   </data>

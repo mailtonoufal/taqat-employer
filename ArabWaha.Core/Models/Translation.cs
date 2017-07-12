@@ -374,6 +374,18 @@
            
 
 
+            public string contactuslblphone { get; set; }
+			public string contactuslblmail { get; set; }
+            public string contactuslbltext { get; set; }
+			public string contactuslbltitle { get; set; }
+
+			public string settingslbltxtlang { get; set; }
+            public string settingslblresetpwd { get; set; }
+			public string settingslblcomplaints { get; set; }
+            public string settingslblpagetitle { get; set; }
+			public string settingslbllogoutbtn { get; set; }
+            public string settingslbltitle { get; set; }
+
 		}
 
 		public Questionary questionary { get; set; }

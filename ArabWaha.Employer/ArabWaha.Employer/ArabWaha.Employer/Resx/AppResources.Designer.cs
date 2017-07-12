@@ -1337,6 +1337,12 @@ namespace ArabWaha.Employer.Resx {
             }
         }
         
+        internal static string LabelApplication {
+            get {
+                return ResourceManager.GetString("LabelApplication", resourceCulture);
+            }
+        }
+        
         internal static string LabelJobPosts {
             get {
                 return ResourceManager.GetString("LabelJobPosts", resourceCulture);
@@ -1472,6 +1478,24 @@ namespace ArabWaha.Employer.Resx {
         internal static string ProfileIDLabel {
             get {
                 return ResourceManager.GetString("ProfileIDLabel", resourceCulture);
+            }
+        }
+        
+        internal static string PhoneLabel {
+            get {
+                return ResourceManager.GetString("PhoneLabel", resourceCulture);
+            }
+        }
+        
+        internal static string MailLabel {
+            get {
+                return ResourceManager.GetString("MailLabel", resourceCulture);
+            }
+        }
+        
+        internal static string ContactUsLabel {
+            get {
+                return ResourceManager.GetString("ContactUsLabel", resourceCulture);
             }
         }
         

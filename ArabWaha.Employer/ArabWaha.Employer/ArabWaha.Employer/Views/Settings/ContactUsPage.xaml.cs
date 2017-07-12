@@ -1,4 +1,5 @@
-﻿using ArabWaha.Employer.BaseCalsses;
+﻿using System.Diagnostics;
+using ArabWaha.Employer.BaseCalsses;
 using Xamarin.Forms;
 
 namespace ArabWaha.Employer.Views
@@ -7,7 +8,15 @@ namespace ArabWaha.Employer.Views
     {
         public ContactUsPage()
         {
-            InitializeComponent();
+            try
+            {
+				InitializeComponent();
+            }
+            catch (System.Exception ex)
+            {
+                Debug.WriteLine("ERROR:" + ex.Message);
+            }
+           
         }
     }
 }

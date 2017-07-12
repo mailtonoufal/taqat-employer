@@ -121,7 +121,7 @@ namespace ArabWaha.Web
             return await ExecuteRequest<SearchRoot>(request);
         }
 
-        internal async Task<ServiceResult<ApplicationDetailsObject>> GetApplicationDetails(string nesIndividualID, string applicationID)
+        public async Task<ServiceResult<ApplicationDetailsObject>> GetApplicationDetails(string nesIndividualID, string applicationID)
         {
             ServiceResult<ApplicationDetailsObject> returnVal = null;
 
