@@ -132,7 +132,7 @@ namespace ArabWaha
 			sbRequest.AppendLine("Content-Type:application/http");
 			sbRequest.AppendLine("Content-Transfer-Encoding: binary");
 			sbRequest.AppendLine("\r");
-			sbRequest.AppendLine("GET GetIndividualProfileDetailsSet(nesIndividualId=" + DebugDataSingleton.Instance.NesIndividualID + ")?$format=json HTTP/1.1");
+			sbRequest.AppendLine("GET GetIndividualProfileDetailsSet?$filter=nesIndividualId%20eq%20" + DebugDataSingleton.Instance.NesIndividualID + "&$format=json HTTP/1.1");
 			sbRequest.AppendLine("\r");
 			sbRequest.AppendLine("\r");
 			sbRequest.AppendLine("--batch");
@@ -174,10 +174,18 @@ namespace ArabWaha
 			sbRequest.AppendLine("Content-Type:application/http");
 			sbRequest.AppendLine("Content-Transfer-Encoding: binary");
 			sbRequest.AppendLine("\r");
-			sbRequest.AppendLine("GET TrainingandCertificateSet?$filter=nesIndividualId%20eq" + DebugDataSingleton.Instance.NesIndividualID + "&$format=json HTTP/1.1");
+			sbRequest.AppendLine("GET TrainingandCertificateSet?$filter=nesIndividualId%20eq%20'" + DebugDataSingleton.Instance.NesIndividualID + "'&$format=json HTTP/1.1");
 			sbRequest.AppendLine("\r");
 			sbRequest.AppendLine("\r");
-			sbRequest.AppendLine("--batch--");
+            sbRequest.AppendLine("--batch--");
+		    sbRequest.AppendLine("Content-Type:application/http");
+			sbRequest.AppendLine("Content-Transfer-Encoding: binary");
+			sbRequest.AppendLine("\r");
+			sbRequest.AppendLine("GET EmploymentPreferencesSet?$filter=nesIndividualId%20eq%20" + DebugDataSingleton.Instance.NesIndividualID + "&$format=json HTTP/1.1");
+			sbRequest.AppendLine("\r");
+			sbRequest.AppendLine("\r");
+			sbRequest.AppendLine("--batch");
+
 
 			batchRequest = sbRequest.ToString();
 

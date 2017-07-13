@@ -53,20 +53,89 @@ namespace ArabWaha
 			try
 			{
 				List<BatchResponseDetail> batchResponseDetailList = Parse(Response);
-				if (batchResponseDetailList[0].IndividualBatchResponse != null)
-					profileBatchDetailContainer.ProfileBatchDetail_1 = JsonConvert.DeserializeObject<ProfileBatchDetail>(batchResponseDetailList[0].IndividualBatchResponse.ToString());
-				if (batchResponseDetailList[1].IndividualBatchResponse != null)
-					profileBatchDetailContainer.ProfileBatchDetail_2 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[1].IndividualBatchResponse.ToString());
-				if (batchResponseDetailList[2].IndividualBatchResponse != null)
-					profileBatchDetailContainer.ProfileBatchDetail_3 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[2].IndividualBatchResponse.ToString());
-				if (batchResponseDetailList[3].IndividualBatchResponse != null)
-					profileBatchDetailContainer.ProfileBatchDetail_4 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[3].IndividualBatchResponse.ToString());
-				if (batchResponseDetailList[4].IndividualBatchResponse != null)
-					profileBatchDetailContainer.ProfileBatchDetail_5 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[4].IndividualBatchResponse.ToString());
-				if (batchResponseDetailList[5].IndividualBatchResponse != null)
-					profileBatchDetailContainer.ProfileBatchDetail_6 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[5].IndividualBatchResponse.ToString());
-				if (batchResponseDetailList[6].IndividualBatchResponse != null)
-					profileBatchDetailContainer.ProfileBatchDetail_7 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[6].IndividualBatchResponse.ToString());
+                try
+                {
+					if (batchResponseDetailList[0].IndividualBatchResponse != null)
+						profileBatchDetailContainer.ProfileBatchDetail_1 = JsonConvert.DeserializeObject<ProfileBatchDetail>(batchResponseDetailList[0].IndividualBatchResponse.ToString());
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                }
+
+                try
+                {
+					if (batchResponseDetailList[1].IndividualBatchResponse != null)
+						profileBatchDetailContainer.ProfileBatchDetail_2 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[1].IndividualBatchResponse.ToString());
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                }
+
+                try
+                {
+					if (batchResponseDetailList[2].IndividualBatchResponse != null)
+						profileBatchDetailContainer.ProfileBatchDetail_3 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[2].IndividualBatchResponse.ToString());
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                }
+
+                try
+                {
+					if (batchResponseDetailList[3].IndividualBatchResponse != null)
+						profileBatchDetailContainer.ProfileBatchDetail_4 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[3].IndividualBatchResponse.ToString());
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                }
+
+
+                try
+                {
+					if (batchResponseDetailList[4].IndividualBatchResponse != null)
+						profileBatchDetailContainer.ProfileBatchDetail_5 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[4].IndividualBatchResponse.ToString());
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                }
+
+
+                try
+                {
+					if (batchResponseDetailList[5].IndividualBatchResponse != null)
+						profileBatchDetailContainer.ProfileBatchDetail_6 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[5].IndividualBatchResponse.ToString());
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                }
+
+
+                try
+                {
+					if (batchResponseDetailList[6].IndividualBatchResponse != null)
+						profileBatchDetailContainer.ProfileBatchDetail_7 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[6].IndividualBatchResponse.ToString());
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                }
+               
+                try
+                {
+					if (batchResponseDetailList[7].IndividualBatchResponse != null)
+						profileBatchDetailContainer.ProfileBatchDetail_8 = JsonConvert.DeserializeObject<ProfileBatchDetailResult>(batchResponseDetailList[7].IndividualBatchResponse.ToString());
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                }
+
 
 			}
 			catch (Exception ex)
