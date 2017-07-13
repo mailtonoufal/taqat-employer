@@ -1,4 +1,4 @@
-﻿using ArabWaha.Core.ModelsEmployer;
+﻿﻿using ArabWaha.Core.ModelsEmployer;
 using ArabWaha.Core.ModelsEmployer.Jobs;
 using ArabWaha.Core.ModelsEmployer.Programs;
 using ArabWaha.Core.ModelsEmployer.Services;
@@ -134,7 +134,7 @@ namespace ArabWaha.Employer.ViewModels
 		public ApplicationsPageViewModel(INavigationService navigationService, IPageDialogService dialog) : base(navigationService, dialog)
 		{
 
-
+			ApplicationSelectedCommand = new DelegateCommand<ApplicationData>(ProcessProgramSelected);
 
 			TranslateExtension tran = new TranslateExtension();
 
@@ -346,6 +346,30 @@ namespace ArabWaha.Employer.ViewModels
 				await _nav.NavigateAsync(nameof(JobPage), paramx, false, true);
 			}
 		}
+
+
+		
+
+
+
+
+
+
+        public DelegateCommand<ApplicationData> ApplicationSelectedCommand { get; set; }
+		async void ProcessProgramSelected(ApplicationData vals)
+		{
+			if (vals != null)
+			{
+				NavigationParameters paramx = new NavigationParameters();
+				paramx.Add("Data", vals);
+                await _nav.NavigateAsync(nameof(ApplicationDetailsPage), paramx, false, true);
+			}
+		}
+
+
+
+
+
 
 		#endregion
 

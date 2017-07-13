@@ -1,14 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<?xml version="1.0" encoding="utf-8" ?>
+<local:AWMenuContainerPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             xmlns:local="clr-namespace:ArabWaha.Employer.Controls"    
+               xmlns:local="clr-namespace:ArabWaha.Employer.BaseCalsses;assembly=ArabWaha.Employer"
+   
              xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers"                          
              xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms"                          
              prism:ViewModelLocator.AutowireViewModel="True"
+     xmlns:awc="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms" 
+     xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"   
+             xmlns:controlx="clr-namespace:ArabWaha.Employer.Controls"
              x:Class="ArabWaha.Employer.Views.ApplicationDetailsPage"
              Title="{Binding Title}">
-    <StackLayout Padding="10">
+   <!-- xmlns:local="clr-namespace:ArabWaha.Employer.Controls"-->
+   <!-- <StackLayout Padding="10">
         <StackLayout VerticalOptions="Start" HorizontalOptions="Fill">
             <Label Text="{Binding JobApplications.JobDetails.JobPostTitle}" Style="{StaticResource HeaderTextMediumBlue }" HorizontalOptions="End" HorizontalTextAlignment="End"></Label>
             <Label Text="{Binding JobApplications.JobDetails.CompanyName}" Style="{StaticResource InfoHeaderTextSmallBlue}" HorizontalOptions="End"></Label>
@@ -37,6 +42,289 @@
                 </controls:RepeaterView>
             </StackLayout>
         </ScrollView>
-    </StackLayout>
+    </StackLayout>-->
+
+    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+    <StackLayout>
+
+
+     <StackLayout Padding="0,5,0,5" >
+                                <Grid Margin="2" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="10" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnIdiom x:TypeArguments="GridLength" Tablet="20" Phone="15" />
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnIdiom x:TypeArguments="GridLength" Tablet="20" Phone="15" />
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                        <RowDefinition Height="25" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnIdiom x:TypeArguments="GridLength" Tablet="Auto" Phone="Auto" />
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                        <RowDefinition Height="10" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="{x:Static gb:GlobalSetting.HomeJobFirstColWidth}" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="{x:Static gb:GlobalSetting.HomeJobThirdColWidth}" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="8" Grid.Column="0" Grid.ColumnSpan="5" VerticalOptions="FillAndExpand" />
+
+
+                                    <Label Text="Android Developer, Java" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" />
+                    
+                                    <!--<Label Text="{Binding Posted, StringFormat='Posted: {0} Ago'}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                                    <Label Text="{Binding Status, StringFormat='Job Status: {0}'}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />-->
+
+                                    <Label Text="Posted: 2 Months Ago" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                    <Label Text="Job status: Open" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                    <Label Text="Google" Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeJobLabelColNo}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                    <Label Text="Advanced Electronics" Grid.Row="5" Grid.Column="2" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                    <Label Text="Location" Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.HomeJobLabelColNo}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                    <Label Text="Riyadh, KSA" Grid.Row="6" Grid.Column="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                    <Frame OutlineColor="Gray" Grid.Row="5" Grid.RowSpan="2" Grid.Column="{x:Static gb:GlobalSetting.HomeJobImgColNo}"  Padding="0" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Image Source="jobcompanyicon.png" WidthRequest="45" HeightRequest="45" Aspect="AspectFit"  />
+                                    </Frame>
+
+                                </Grid>
+                            </StackLayout>
+
+
+
+
+
+
+
+                <controlx:XpertAccordion HeaderText="Description" AccordionIsExpanded="True" >
+
+                    <controlx:XpertAccordion.AccordionContents>
+                      <StackLayout Padding ="10,5,10,5">
+                        <Label Text="Description" FontAttributes="None" TextColor="#012149" FontSize="13"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                         
+                      </StackLayout>
+                    </controlx:XpertAccordion.AccordionContents>
+                </controlx:XpertAccordion>
+
+
+
+
+
+
+
+      <controlx:XpertAccordion HeaderText="Job Information" AccordionIsExpanded="True" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" >
+                   
+                    <controlx:XpertAccordion.AccordionContents>
+                        <StackLayout BackgroundColor="White">
+                            <Grid >
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                  <RowDefinition Height="Auto"/>
+                                  <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="5"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Job Status"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Job Post ID"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Job Type"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Salary"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Sector"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                              <Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Minimum Experience"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                              <Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Desired Start Date"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                             
+
+                                <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="Published"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="343533"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="Permanent" HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                 
+                                   
+                               
+                                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="15,0000 SAR"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                 
+                                <Label Grid.Row="4" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="Information Technology"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                             <Label Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="5yrs"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+
+                             <Label Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="29/04/17"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                 
+                            </Grid>
+                        </StackLayout>
+                    </controlx:XpertAccordion.AccordionContents>
+                </controlx:XpertAccordion>
+
+
+
+
+
+
+
+
+
+
+
+     <controlx:XpertAccordion HeaderText="Applicant Information" AccordionIsExpanded="True" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" >
+                   
+                    <controlx:XpertAccordion.AccordionContents>
+
+
+                    <StackLayout>
+             <StackLayout Padding="0,5,0,5" >
+                                <Grid Margin="2" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="10" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnIdiom x:TypeArguments="GridLength" Tablet="20" Phone="15" />
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnIdiom x:TypeArguments="GridLength" Tablet="20" Phone="15" />
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                        <RowDefinition Height="25" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnIdiom x:TypeArguments="GridLength" Tablet="Auto" Phone="Auto" />
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                        <RowDefinition Height="10" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5" />
+                                        <ColumnDefinition Width="{x:Static gb:GlobalSetting.HomeJobFirstColWidth}" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="{x:Static gb:GlobalSetting.HomeJobThirdColWidth}" />
+                                        <ColumnDefinition Width="5" />
+                                    </Grid.ColumnDefinitions>
+                                    <BoxView BackgroundColor="White" Grid.Row="0" Grid.RowSpan="8" Grid.Column="0" Grid.ColumnSpan="5" VerticalOptions="FillAndExpand" />
+
+                                    <Label Text="Android Java Developer" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Style="{StaticResource InfoBodyTextBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" />
+
+                                    <!--<Label Text="{Binding Posted, StringFormat='Posted: {0} Ago'}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />
+                                    <Label Text="{Binding Status, StringFormat='Job Status: {0}'}" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Style="{StaticResource CellBodyTextSmallGray}" HorizontalOptions="End" HorizontalTextAlignment="End" />-->
+
+                                    <Label Text="Application Date:2/9/17" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                    <Label Text="status" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                    <Label Text="location" Grid.Row="5" Grid.Column="{x:Static gb:GlobalSetting.HomeJobLabelColNo}" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                    <Label Text="CompanyName" Grid.Row="5" Grid.Column="2" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                    <Label Text="posAddress" Grid.Row="6" Grid.Column="{x:Static gb:GlobalSetting.HomeJobLabelColNo}" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                                    <Label Text="C.Ind" Grid.Row="6" Grid.Column="2" Style="{StaticResource CellBodyTextMedGray}" HorizontalOptions="{x:Static gb:GlobalSetting.HorizontalLayoutOptions}" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+
+                                    <Frame OutlineColor="Gray" Grid.Row="5" Grid.RowSpan="2" Grid.Column="{x:Static gb:GlobalSetting.HomeJobImgColNo}"  Padding="0" WidthRequest="45" HeightRequest="45" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Image Source="jobcompanyicon.png" WidthRequest="45" HeightRequest="45" Aspect="AspectFit"  />
+                                    </Frame>
+
+                                </Grid>
+                            </StackLayout>
+
+                           
+
+
+
+
+             <StackLayout BackgroundColor="White">
+                            <Grid >
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+
+                                    <RowDefinition Height="5" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="5"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Occupations"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Application ID"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Job ID"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgImgColNo}" Text="Profile ID"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}"  TextColor="#012149" FontSize="13"/>
+                               
+
+                                <Label Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="Sales"   HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                <Label Grid.Row="1" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="11230"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                <Label Grid.Row="2" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="3419" HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                 
+                                   
+                               
+                                <Label Grid.Row="3" Grid.Column="{x:Static gb:GlobalSetting.HomeProgLabelColNo}" Text="9866"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.SkipText}" TextColor="#A5B6C4" FontSize="13"/>
+                                 
+                              
+                            </Grid>
+                        </StackLayout>
+
+
+
+
+             </StackLayout>
+
+
+
+            
+
+             </controlx:XpertAccordion.AccordionContents>
+                </controlx:XpertAccordion>
+
+
+
+
+
+
+
+
+
+          <controlx:XpertAccordion HeaderText="Attachments" AccordionIsExpanded="True" >
+
+                    <controlx:XpertAccordion.AccordionContents>
+                      <StackLayout Padding ="10,5,10,5">
+                        <Label Text="Description" FontAttributes="None" TextColor="#012149" FontSize="13"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                          <Label Text="Document" FontAttributes="None" TextColor="#012149" FontSize="13"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                 <Label Text="Reference" FontAttributes="None" TextColor="#012149" FontSize="13"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" />
+                      </StackLayout>
+                    </controlx:XpertAccordion.AccordionContents>
+                </controlx:XpertAccordion>
+
+
     
-</ContentPage>
+    <Button Text="Contact" TextColor="#1EC55B" BackgroundColor="Green"/>
+     <Button Text="Send feedback" TextColor="#1EB4F3" BackgroundColor="Blue"/>
+
+
+
+        </StackLayout>
+        </ScrollView>
+</local:AWMenuContainerPage>

@@ -1,12 +1,21 @@
-﻿using Xamarin.Forms;
+﻿using ArabWaha.Employer.BaseCalsses;
+using Xamarin.Forms;
 
 namespace ArabWaha.Employer.Views
 {
-    public partial class ApplicationDetailsPage : ContentPage
+    public partial class ApplicationDetailsPage : AWMenuContainerPage
     {
         public ApplicationDetailsPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch (System.Exception ex)
+            {
+
+            }
+
         }
     }
 }
