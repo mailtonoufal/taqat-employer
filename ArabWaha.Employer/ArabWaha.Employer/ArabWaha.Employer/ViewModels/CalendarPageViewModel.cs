@@ -34,7 +34,7 @@ namespace ArabWaha.Employer.ViewModels
 			LoadEventData();
 
 			MonthViewDate = DateTime.Now;
-			MonthView = new CalendarMonthView(MonthViewDate);
+			MonthView = new CalendarMonthView(MonthViewDate, DateTime.MinValue);
 
 			OnPrevCommand = new DelegateCommand(SetPreviousMonth);
 			OnNextCommand = new DelegateCommand(SetNextMonth);
@@ -171,13 +171,13 @@ namespace ArabWaha.Employer.ViewModels
 		private void SetPreviousMonth()
 		{
 			MonthViewDate = MonthViewDate.AddMonths(-1);
-			MonthView = new CalendarMonthView(MonthViewDate);
+			MonthView = new CalendarMonthView(MonthViewDate, DateTime.MinValue);
 		}
 
 		private void SetNextMonth()
 		{
 			MonthViewDate = MonthViewDate.AddMonths(1);
-			MonthView = new CalendarMonthView(MonthViewDate);
+			MonthView = new CalendarMonthView(MonthViewDate, DateTime.MinValue);
 		}
 
 		#endregion

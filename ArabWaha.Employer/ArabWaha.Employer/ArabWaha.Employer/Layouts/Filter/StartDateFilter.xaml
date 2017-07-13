@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData"  xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers" xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ArabWaha.Employer.Layouts.Filter.StartDateFilter">
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:gb="clr-namespace:ArabWaha.Employer.StaticData" xmlns:lEx="clr-namespace:ArabWaha.Employer.Helpers" xmlns:controls="clr-namespace:ArabWaha.Common.Forms.Controls;assembly=ArabWaha.Common.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ArabWaha.Employer.Layouts.Filter.StartDateFilter">
 	<ContentView.Content>
-         <Grid BackgroundColor="White">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="35" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="10" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="5" />
-                        <ColumnDefinition Width="24" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="24" />
-                        <ColumnDefinition Width="5" />
-                    </Grid.ColumnDefinitions>
-                    <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="{StaticResource BlueToolBarColor}" />
-                    <Label Text="{lEx:CMSTranslate filterlblstartdate}" Grid.Row="0" Grid.Column="2"  
-                           HorizontalOptions="FillAndExpand"  HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center"
-                           Style="{StaticResource HeaderTextSmallWhite}"/>
-                    <Image Source="{StaticResource FilterTeleworkingIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.FilterSectionImage}" />
-                    <StackLayout VerticalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" >
-                     <Label  Text="{lEx:CMSTranslate filterlblselectdate}" VerticalOptions="Center"  Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Margin="24,0,24,0">
-                        </Label>
-                    </StackLayout>
-                </Grid>
+		<Grid BackgroundColor="White">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="35" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="10" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="5" />
+				<ColumnDefinition Width="24" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="24" />
+				<ColumnDefinition Width="5" />
+			</Grid.ColumnDefinitions>
+			<BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="{StaticResource BlueToolBarColor}" />
+			<Label Text="{lEx:CMSTranslate filterlblstartdate}" Grid.Row="0" Grid.Column="2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" VerticalTextAlignment="Center" Style="{StaticResource HeaderTextSmallWhite}" />
+			<Image Source="{StaticResource FilterTeleworkingIcon}" Aspect="AspectFit" HeightRequest="24" WidthRequest="24" Grid.Row="0" Grid.Column="{x:Static gb:GlobalSetting.FilterSectionImage}" />
+			<StackLayout VerticalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5">
+				<Label Text="{lEx:CMSTranslate filterlblselectdate}" VerticalOptions="Center" Style="{StaticResource HeaderTextSmallBlue}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="{x:Static gb:GlobalSetting.AlignLabelText}" Margin="24,0,24,0" x:Name="lblStartDate">
+				</Label>
+			</StackLayout>
+		</Grid>
 	</ContentView.Content>
 </ContentView>
