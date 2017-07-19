@@ -322,7 +322,7 @@ namespace ArabWaha.Employer.ViewModels
                 }
                 else
                 {
-                    Dialog.ShowErrorAlert("Something went wrong");
+                    Dialog.ShowErrorAlert("Username field is empty, please type your Username");
                 }
 
             }
@@ -337,10 +337,10 @@ namespace ArabWaha.Employer.ViewModels
 			{
 				await _nav.GoBackAsync();
 			}
-			else
-			{
-				Dialog.ShowErrorAlert("Something went wrong");
-			}
+			//else
+			//{
+			//	Dialog.ShowErrorAlert("Something went wrong");
+			//}
 		}
 		private async Task ForgotUsername()
 		{
